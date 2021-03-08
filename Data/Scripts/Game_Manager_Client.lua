@@ -3,6 +3,8 @@ local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
 local transition_loader = script:GetCustomProperty("transition_loader"):WaitForObject()
 local loading = script:GetCustomProperty("loading"):WaitForObject()
 
+local transition_time = script:GetCustomProperty("transition_time")
+
 local transition_color = transition_loader:GetColor()
 local loading_color = loading:GetColor()
 
@@ -18,10 +20,15 @@ end
 
 Task.Spawn(function()
 	Events.BroadcastToServer("game_ready")
-end, 1)
+end, transition_time)
 
 Events.Connect("start_game", function()
-	transition_tween = YOOTIL.Tween:new(2, {a = 1}, {a = 0})
+	Events.Broadcast("make_it_rain", "grave_area")
+
+	transition_tween = YOOTIL.Tween:new(transition_time, {a = 1}, {a = 0})
+
+	Events.Broadcast("show_dynamic_ui")
+	Events.Broadcast("show_static_ui")
 
 	transition_tween:on_complete(function()
 		transition_loader.visibility = Visibility.FORCE_OFF
@@ -30,7 +37,7 @@ Events.Connect("start_game", function()
 
 		transition_tween = nil
 
-		Events.BroadcastToServer("enable_player")
+		Events.BroadcastToServer("enable_player", local_player)
 	end)
 
 	transition_tween:on_change(function(v)
@@ -41,5 +48,5 @@ Events.Connect("start_game", function()
 		loading:SetColor(loading_color)
 	end)
 
-	transition_tween:set_delay(2)
+	transition_tween:set_delay(transition_time)
 end)

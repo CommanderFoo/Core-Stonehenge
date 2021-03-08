@@ -16,6 +16,10 @@ Objects {
   }
   ParentId: 1636163160051171366
   ChildIds: 8918359137435581373
+  ChildIds: 14348710363904795712
+  ChildIds: 4100779181729332834
+  ChildIds: 6380753851518955502
+  ChildIds: 16900010184290640698
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -24,6 +28,130 @@ Objects {
   }
   NetworkContext {
     Type: Server
+  }
+}
+Objects {
+  Id: 16900010184290640698
+  Name: "Player_Server"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1946733176415873648
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 9136894214218418066
+    }
+  }
+}
+Objects {
+  Id: 6380753851518955502
+  Name: "Inventory_Server"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1946733176415873648
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:lookup"
+      ObjectReference {
+        SelfId: 17488655066859996786
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 8637592817044267496
+    }
+  }
+}
+Objects {
+  Id: 4100779181729332834
+  Name: "Interaction_Inspector_Server"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1946733176415873648
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:interactables"
+      ObjectReference {
+        SelfId: 13207548860357947295
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 16636176596742416215
+    }
+  }
+}
+Objects {
+  Id: 14348710363904795712
+  Name: "Object_Inspector_Server"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1946733176415873648
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 12577538547396390703
+    }
   }
 }
 Objects {
@@ -72,6 +200,11 @@ Objects {
   ChildIds: 2047586879273444450
   ChildIds: 12260364437696698950
   ChildIds: 17736113158384268222
+  ChildIds: 3060149095482998545
+  ChildIds: 14207237045317547549
+  ChildIds: 4875479315074189847
+  ChildIds: 12574640119200630924
+  ChildIds: 5161737726342901287
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -79,6 +212,282 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 5161737726342901287
+  Name: "Inventory_Client"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14858104107515101237
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:lookup"
+      ObjectReference {
+        SelfId: 17488655066859996786
+      }
+    }
+    Overrides {
+      Name: "cs:items_container"
+      ObjectReference {
+        SelfId: 424584652366831368
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 12499386015335153304
+    }
+  }
+}
+Objects {
+  Id: 12574640119200630924
+  Name: "Interaction_Inspector_Client"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14858104107515101237
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:inspect_cam"
+      ObjectReference {
+        SelfId: 14572394429066107306
+      }
+    }
+    Overrides {
+      Name: "cs:default_cam"
+      ObjectReference {
+        SelfId: 3840927660290209183
+        SubObjectId: 5052201122922792879
+        InstanceId: 1023850042715320700
+        TemplateId: 5189858054097932166
+      }
+    }
+    Overrides {
+      Name: "cs:debug"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:lerp_time"
+      Float: 0.2
+    }
+    Overrides {
+      Name: "cs:inspect_ui"
+      ObjectReference {
+        SelfId: 10400721808396098963
+      }
+    }
+    Overrides {
+      Name: "cs:back_button"
+      ObjectReference {
+        SelfId: 13099482719251150093
+      }
+    }
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
+      }
+    }
+    Overrides {
+      Name: "cs:interactables"
+      ObjectReference {
+        SelfId: 13207548860357947295
+      }
+    }
+    Overrides {
+      Name: "cs:cursor"
+      ObjectReference {
+        SelfId: 16074639967968450711
+      }
+    }
+    Overrides {
+      Name: "cs:glove"
+      AssetReference {
+        Id: 18264982001259645559
+      }
+    }
+    Overrides {
+      Name: "cs:magnify"
+      AssetReference {
+        Id: 17409003921622131677
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5531262730846410578
+    }
+  }
+}
+Objects {
+  Id: 4875479315074189847
+  Name: "Object_Inspector_Client"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14858104107515101237
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:cursor"
+      ObjectReference {
+        SelfId: 16074639967968450711
+      }
+    }
+    Overrides {
+      Name: "cs:put_down_button"
+      ObjectReference {
+        SelfId: 7344388710328431946
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 9005596899860770616
+    }
+  }
+}
+Objects {
+  Id: 14207237045317547549
+  Name: "Mouse_Context_Client"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14858104107515101237
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:magnify"
+      AssetReference {
+        Id: 17409003921622131677
+      }
+    }
+    Overrides {
+      Name: "cs:glove"
+      AssetReference {
+        Id: 18264982001259645559
+      }
+    }
+    Overrides {
+      Name: "cs:default"
+      AssetReference {
+        Id: 14730016063174144111
+      }
+    }
+    Overrides {
+      Name: "cs:reticle"
+      ObjectReference {
+        SelfId: 59690698900990467
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 2382159957336445003
+    }
+  }
+}
+Objects {
+  Id: 3060149095482998545
+  Name: "UI_Manager_Client"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14858104107515101237
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:dynamic"
+      ObjectReference {
+        SelfId: 3139108800441333692
+      }
+    }
+    Overrides {
+      Name: "cs:static"
+      ObjectReference {
+        SelfId: 10400721808396098963
+      }
+    }
+    Overrides {
+      Name: "cs:main_menu"
+      ObjectReference {
+        SelfId: 3730129137196217546
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6559562423505441195
+    }
   }
 }
 Objects {
@@ -142,6 +551,10 @@ Objects {
         Id: 16622261663679835299
       }
     }
+    Overrides {
+      Name: "cs:transition_time"
+      Float: 0.1
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -171,12 +584,6 @@ Objects {
   }
   ParentId: 14858104107515101237
   UnregisteredParameters {
-    Overrides {
-      Name: "cs:rain_volume"
-      ObjectReference {
-        SelfId: 7979889722684355965
-      }
-    }
     Overrides {
       Name: "cs:sky_dome"
       ObjectReference {
@@ -210,25 +617,11 @@ Objects {
     Overrides {
       Name: "cs:sarsen_rocks_wet"
       ObjectReference {
-        SelfId: 841534158063459245
       }
     }
     Overrides {
       Name: "cs:bluestone_rocks_wet"
       ObjectReference {
-        SelfId: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:rain_sound"
-      ObjectReference {
-        SelfId: 17816937463263935439
-      }
-    }
-    Overrides {
-      Name: "cs:thunder_sound"
-      ObjectReference {
-        SelfId: 11119204773295177232
       }
     }
     Overrides {
@@ -236,6 +629,50 @@ Objects {
       AssetReference {
         Id: 16622261663679835299
       }
+    }
+    Overrides {
+      Name: "cs:main_rain_sound"
+      ObjectReference {
+        SelfId: 17816937463263935439
+      }
+    }
+    Overrides {
+      Name: "cs:main_rain_volume"
+      ObjectReference {
+        SelfId: 7979889722684355965
+      }
+    }
+    Overrides {
+      Name: "cs:main_thunder_sound"
+      ObjectReference {
+        SelfId: 11119204773295177232
+      }
+    }
+    Overrides {
+      Name: "cs:grave_rain_volume"
+      ObjectReference {
+        SelfId: 13144281133781666567
+      }
+    }
+    Overrides {
+      Name: "cs:grave_rain_sound"
+      ObjectReference {
+        SelfId: 14718297377006626584
+      }
+    }
+    Overrides {
+      Name: "cs:grave_thunder_sound"
+      ObjectReference {
+        SelfId: 17744281982204423308
+      }
+    }
+    Overrides {
+      Name: "cs:grave_rain_density"
+      Int: 15
+    }
+    Overrides {
+      Name: "cs:main_rain_density"
+      Int: 200
     }
   }
   Collidable_v2 {
@@ -270,6 +707,12 @@ Objects {
       Name: "cs:bird_sounds"
       ObjectReference {
         SelfId: 10805811681648458774
+      }
+    }
+    Overrides {
+      Name: "cs:pickup_sound"
+      ObjectReference {
+        SelfId: 8627870878544148169
       }
     }
   }

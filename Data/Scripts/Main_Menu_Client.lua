@@ -12,6 +12,8 @@ local hover_color = script:GetCustomProperty("hover_color")
 local normal_text_color = script:GetCustomProperty("normal_text_color")
 local hover_text_color = script:GetCustomProperty("hover_text_color")
 
+local transition_time = script:GetCustomProperty("transition_time")
+
 local menu = {
 	
 	buttons = {
@@ -198,7 +200,7 @@ for i, b in ipairs(menu.buttons) do
 end
 
 function load_game(new_game)
-	transition_tween = YOOTIL.Tween:new(1, {a = 0}, {a = 1})
+	transition_tween = YOOTIL.Tween:new(transition_time, {a = 0}, {a = 1})
 
 	transition_tween:on_start(function()
 		UI.SetCanCursorInteractWithUI(false)
@@ -245,7 +247,7 @@ Events.Connect("transition_to_menu", function()
 		menu.buttons[1]:FindDescendantByName("Label"):SetColor(disabled_color)
 	end
 
-	transition_tween = YOOTIL.Tween:new(1, {a = 1}, {a = 0})
+	transition_tween = YOOTIL.Tween:new(transition_time, {a = 1}, {a = 0})
 
 	transition_tween:on_complete(function()
 		transition_loader.visibility = Visibility.FORCE_OFF

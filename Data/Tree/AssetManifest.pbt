@@ -8,6 +8,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16759257907029005232
+  Name: "Meta Retro Pickup 02 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_meta_retro_pickup_02_Cue_ref"
+  }
+}
+Assets {
   Id: 15664566670144931286
   Name: "Ambient Nature Rain Heavy Splatty 01 SFX"
   PlatformAssetType: 7
@@ -32,6 +41,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_grass_generic_002"
+  }
+}
+Assets {
+  Id: 14730016063174144111
+  Name: "UI Basic Shape Circle"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Basic_Shape_Circle"
+  }
+}
+Assets {
+  Id: 13487040045798304362
+  Name: "Teko"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "TekoRegular_ref"
   }
 }
 Assets {
@@ -86,6 +113,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_tree_redwood_001"
+  }
+}
+Assets {
+  Id: 7351182505846778490
+  Name: "BG Flat 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_020"
+  }
+}
+Assets {
+  Id: 6628731841327595102
+  Name: "Cube"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_002"
   }
 }
 Assets {

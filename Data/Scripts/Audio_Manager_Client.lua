@@ -1,4 +1,5 @@
 local bird_sounds = script:GetCustomProperty("bird_sounds"):WaitForObject()
+local pickup_sound = script:GetCustomProperty("pickup_sound"):WaitForObject()
 
 local total_bird_sounds = #bird_sounds:GetChildren()
 local bird_sound_task = nil
@@ -20,6 +21,18 @@ function stop_bird_sounds()
 		bird_sounds:GetChildren()[i]:Stop()
 	end
 end
+
+function random_pitch(sound)
+	sound.pitch = math.random(-400, 400)
+end
+
+Events.Connect("play_sound", function(type)
+	if(type == "pickup") then
+		random_pitch(pickup_sound)
+
+		pickup_sound:Play()
+	end
+end)
 
 Events.Connect("play_bird_sounds", function()
 	if(bird_sound_task == nil) then

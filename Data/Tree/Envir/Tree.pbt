@@ -1,6 +1,47 @@
 Name: "Envir"
 RootId: 14580783129908760267
 Objects {
+  Id: 1240675483828384662
+  Name: "Pipe"
+  Transform {
+    Location {
+      X: -16955.0938
+      Y: -4226.16309
+      Z: 1550.68738
+    }
+    Rotation {
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 4.79580116
+    }
+  }
+  ParentId: 14580783129908760267
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14471607567670662559
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
   Id: 4188664967307898937
   Name: "Gravestone Area"
   Transform {
@@ -1888,28 +1929,13 @@ Objects {
     }
   }
   ParentId: 4188664967307898937
-  ChildIds: 356508517498712161
-  ChildIds: 11617183047897796266
-  ChildIds: 2465349457314799981
-  ChildIds: 3572244885073795389
-  ChildIds: 16526318284153003078
-  ChildIds: 5770062638295967843
-  ChildIds: 17325283903121561733
-  ChildIds: 6559421302460336330
-  ChildIds: 14757870699643907937
-  ChildIds: 17541741467402755309
-  ChildIds: 14987521550436560313
-  ChildIds: 529529926735026386
-  ChildIds: 8907030718342923866
-  ChildIds: 213337887495896674
-  ChildIds: 11817858067541140931
-  ChildIds: 11271013605873686029
-  ChildIds: 12559586165365118614
+  ChildIds: 6855998285300623664
   ChildIds: 8496410531865410841
   ChildIds: 9408917788321494286
   ChildIds: 419168730489940372
   ChildIds: 7276074652052533629
   ChildIds: 12205929606259470738
+  ChildIds: 6159118508667754113
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1925,6 +1951,74 @@ Objects {
     InstanceId: 2447249753747821056
     TemplateId: 18157687920752881275
     WasRoot: true
+  }
+}
+Objects {
+  Id: 6159118508667754113
+  Name: "Outline Effect"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16673226795458881467
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6659953299352052383
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Outline Effect"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.4
+            Y: 0.4
+            Z: 0.4
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -141.903122
+            Y: -199.948303
+            Z: 24.5292969
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -68.0825195
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8810891986624322585
+      value {
+        Overrides {
+          Name: "bp:Object To Outline"
+          ObjectReference {
+            SelfId: 6855998285300623664
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8824026322400858462
+      value {
+        Overrides {
+          Name: "cs:show_distance"
+          Float: 750
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1989782424554441499
+    }
   }
 }
 Objects {
@@ -2453,13 +2547,57 @@ Objects {
   }
 }
 Objects {
+  Id: 6855998285300623664
+  Name: "Grave"
+  Transform {
+    Location {
+      X: 0.00539794611
+      Y: 0.00060880027
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16673226795458881467
+  ChildIds: 356508517498712161
+  ChildIds: 11617183047897796266
+  ChildIds: 2465349457314799981
+  ChildIds: 3572244885073795389
+  ChildIds: 16526318284153003078
+  ChildIds: 5770062638295967843
+  ChildIds: 17325283903121561733
+  ChildIds: 6559421302460336330
+  ChildIds: 14757870699643907937
+  ChildIds: 17541741467402755309
+  ChildIds: 14987521550436560313
+  ChildIds: 529529926735026386
+  ChildIds: 8907030718342923866
+  ChildIds: 213337887495896674
+  ChildIds: 11817858067541140931
+  ChildIds: 11271013605873686029
+  ChildIds: 12559586165365118614
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
   Id: 12559586165365118614
   Name: "Cube - Bottom-Aligned"
   Transform {
     Location {
-      X: 0.0916430131
-      Y: 0.0101130931
-      Z: 31.1428585
+      X: 0.0859374553
+      Y: 0.00957028661
+      Z: 31.1428719
     }
     Rotation {
     }
@@ -2469,7 +2607,7 @@ Objects {
       Z: 0.609606862
     }
   }
-  ParentId: 16673226795458881467
+  ParentId: 6855998285300623664
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2511,19 +2649,19 @@ Objects {
   Name: "Cube - Bottom-Aligned"
   Transform {
     Location {
-      X: 0.0916748047
-      Y: 0.0101242065
+      X: 0.0859374553
+      Y: 0.00957028661
       Z: 131.260056
     }
     Rotation {
     }
     Scale {
-      X: 0.0996669382
+      X: 0.0996669456
       Y: 0.0915486366
       Z: 0.021780489
     }
   }
-  ParentId: 16673226795458881467
+  ParentId: 6855998285300623664
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2565,9 +2703,9 @@ Objects {
   Name: "Cube - Bottom-Aligned"
   Transform {
     Location {
-      X: 0.0916748047
-      Y: 0.0101242065
-      Z: 137.908188
+      X: 0.0859374553
+      Y: 0.00957028661
+      Z: 137.908203
     }
     Rotation {
     }
@@ -2577,7 +2715,7 @@ Objects {
       Z: 0.0221456047
     }
   }
-  ParentId: 16673226795458881467
+  ParentId: 6855998285300623664
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2619,9 +2757,9 @@ Objects {
   Name: "Cube - Bottom-Aligned"
   Transform {
     Location {
-      X: -0.0048828125
-      Y: 0.0101242065
-      Z: 141.757629
+      X: -0.0101562422
+      Y: 0.00957030896
+      Z: 141.757614
     }
     Rotation {
       Pitch: 90
@@ -2632,7 +2770,7 @@ Objects {
       Z: 0.0721907541
     }
   }
-  ParentId: 16673226795458881467
+  ParentId: 6855998285300623664
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2674,9 +2812,9 @@ Objects {
   Name: "Cube - Bottom-Aligned"
   Transform {
     Location {
-      X: 0.0916748047
-      Y: 0.0101242065
-      Z: 131.592743
+      X: 0.0859374553
+      Y: 0.00957028661
+      Z: 131.592773
     }
     Rotation {
     }
@@ -2686,7 +2824,7 @@ Objects {
       Z: 0.143221021
     }
   }
-  ParentId: 16673226795458881467
+  ParentId: 6855998285300623664
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2728,20 +2866,20 @@ Objects {
   Name: "Cube - Bottom-Aligned"
   Transform {
     Location {
-      X: -8.65710449
-      Y: 0.0219726563
+      X: -8.66249752
+      Y: 0.0212911163
       Z: 121.908691
     }
     Rotation {
-      Yaw: -90.0000229
+      Yaw: -89.9999924
     }
     Scale {
-      X: 0.0726501793
-      Y: 0.0297694821
+      X: 0.0726501867
+      Y: 0.029769484
       Z: 0.0507053137
     }
   }
-  ParentId: 16673226795458881467
+  ParentId: 6855998285300623664
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2783,20 +2921,20 @@ Objects {
   Name: "Cube - Bottom-Aligned"
   Transform {
     Location {
-      X: 8.83459473
-      Y: 0.0115585327
+      X: 8.8289032
+      Y: 0.0109353894
       Z: 121.908691
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
-      X: 0.0726501793
-      Y: 0.0297694821
+      X: 0.0726501867
+      Y: 0.029769484
       Z: 0.0507053137
     }
   }
-  ParentId: 16673226795458881467
+  ParentId: 6855998285300623664
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2838,9 +2976,9 @@ Objects {
   Name: "Cube - Bottom-Aligned"
   Transform {
     Location {
-      X: 0.0916748047
-      Y: 0.0101242065
-      Z: 95.3973389
+      X: 0.0859374553
+      Y: 0.00957028661
+      Z: 95.3973618
     }
     Rotation {
     }
@@ -2850,7 +2988,7 @@ Objects {
       Z: 0.315869778
     }
   }
-  ParentId: 16673226795458881467
+  ParentId: 6855998285300623664
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2892,12 +3030,12 @@ Objects {
   Name: "Cube - Bottom-Aligned"
   Transform {
     Location {
-      X: 0.0916748047
-      Y: 5.48844147
-      Z: 125.871376
+      X: 0.0859387666
+      Y: 5.48788786
+      Z: 125.871391
     }
     Rotation {
-      Yaw: 179.999924
+      Yaw: 179.999908
     }
     Scale {
       X: 0.0710668936
@@ -2905,7 +3043,7 @@ Objects {
       Z: 0.0507053137
     }
   }
-  ParentId: 16673226795458881467
+  ParentId: 6855998285300623664
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2947,9 +3085,9 @@ Objects {
   Name: "Cube - Bottom-Aligned"
   Transform {
     Location {
-      X: 0.0916748047
-      Y: -5.18844604
-      Z: 125.871376
+      X: 0.085936211
+      Y: -5.18905973
+      Z: 125.871391
     }
     Rotation {
     }
@@ -2959,7 +3097,7 @@ Objects {
       Z: 0.0507053137
     }
   }
-  ParentId: 16673226795458881467
+  ParentId: 6855998285300623664
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3001,9 +3139,9 @@ Objects {
   Name: "Cube - Bottom-Aligned"
   Transform {
     Location {
-      X: 0.0916748047
-      Y: 0.0101242065
-      Z: 104.515221
+      X: 0.0859374553
+      Y: 0.00957028661
+      Z: 104.515236
     }
     Rotation {
     }
@@ -3013,7 +3151,7 @@ Objects {
       Z: 0.327233166
     }
   }
-  ParentId: 16673226795458881467
+  ParentId: 6855998285300623664
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3055,9 +3193,9 @@ Objects {
   Name: "Cube - Bottom-Aligned"
   Transform {
     Location {
-      X: 0.0916748047
-      Y: 0.0101242065
-      Z: 95.3973389
+      X: 0.0859374553
+      Y: 0.00957028661
+      Z: 95.3973618
     }
     Rotation {
     }
@@ -3067,7 +3205,7 @@ Objects {
       Z: 0.315869778
     }
   }
-  ParentId: 16673226795458881467
+  ParentId: 6855998285300623664
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3109,14 +3247,14 @@ Objects {
   Name: "Cube - Bottom-Aligned"
   Transform {
     Location {
-      X: -1.76196289
-      Y: 0.0101242065
+      X: -1.76718676
+      Y: 0.00957072806
       Z: 113.451714
     }
     Rotation {
       Pitch: 6.83018879e-05
-      Yaw: -89.9999924
-      Roll: 89.9999466
+      Yaw: -89.9999542
+      Roll: 89.9999161
     }
     Scale {
       X: 0.2
@@ -3124,7 +3262,7 @@ Objects {
       Z: 0.368364245
     }
   }
-  ParentId: 16673226795458881467
+  ParentId: 6855998285300623664
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3166,14 +3304,14 @@ Objects {
   Name: "Cube - Bottom-Aligned"
   Transform {
     Location {
-      X: 1.94702148
-      Y: 0.0101318359
-      Z: 113.451721
+      X: 1.94140553
+      Y: 0.00956984423
+      Z: 113.451714
     }
     Rotation {
       Pitch: 6.83018879e-05
-      Yaw: 89.999939
-      Roll: 89.9999542
+      Yaw: 89.9999084
+      Roll: 89.9999237
     }
     Scale {
       X: 0.2
@@ -3181,7 +3319,7 @@ Objects {
       Z: 0.368364245
     }
   }
-  ParentId: 16673226795458881467
+  ParentId: 6855998285300623664
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3223,9 +3361,9 @@ Objects {
   Name: "Cube - Bottom-Aligned"
   Transform {
     Location {
-      X: 0.0916748047
-      Y: 0.0101242065
-      Z: 3.53541565
+      X: 0.0859374553
+      Y: 0.00957028661
+      Z: 3.53540039
     }
     Rotation {
     }
@@ -3235,7 +3373,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16673226795458881467
+  ParentId: 6855998285300623664
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3277,9 +3415,9 @@ Objects {
   Name: "Stone Block Standard"
   Transform {
     Location {
-      X: -1.27429199
-      Y: -1.49529266
-      Z: 4.36891556
+      X: -1.27968717
+      Y: -1.49589741
+      Z: 4.36889648
     }
     Rotation {
     }
@@ -3289,7 +3427,7 @@ Objects {
       Z: 0.469646066
     }
   }
-  ParentId: 16673226795458881467
+  ParentId: 6855998285300623664
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3331,8 +3469,8 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Cap"
   Transform {
     Location {
-      X: 0.0916748047
-      Y: 1.06075287
+      X: 0.0859377
+      Y: 1.06015587
     }
     Rotation {
       Pitch: -9.56226431e-05
@@ -3345,7 +3483,7 @@ Objects {
       Z: 0.4
     }
   }
-  ParentId: 16673226795458881467
+  ParentId: 6855998285300623664
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Trim:utile"

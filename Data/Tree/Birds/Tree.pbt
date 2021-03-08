@@ -30,7 +30,7 @@ Objects {
     }
     Volume: 1
     Falloff: 9000
-    Radius: 2500
+    Radius: 3709.25708
     EnableOcclusion: true
     IsSpatializationEnabled: true
     IsAttenuationEnabled: true
@@ -65,7 +65,7 @@ Objects {
     }
     Volume: 1
     Falloff: 9000
-    Radius: 2500
+    Radius: 3709.25708
     EnableOcclusion: true
     IsSpatializationEnabled: true
     IsAttenuationEnabled: true
@@ -103,7 +103,7 @@ Objects {
     AudioBP {
       Volume: 1
       Falloff: 9000
-      Radius: 2500
+      Radius: 3709.25708
       EnableOcclusion: true
       IsSpatializationEnabled: true
       IsAttenuationEnabled: true
@@ -140,7 +140,7 @@ Objects {
     }
     Volume: 1
     Falloff: 9000
-    Radius: 2500
+    Radius: 3709.25708
     EnableOcclusion: true
     IsSpatializationEnabled: true
     IsAttenuationEnabled: true

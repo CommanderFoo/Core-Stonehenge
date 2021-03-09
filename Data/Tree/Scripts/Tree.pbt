@@ -205,6 +205,8 @@ Objects {
   ChildIds: 4875479315074189847
   ChildIds: 12574640119200630924
   ChildIds: 5161737726342901287
+  ChildIds: 3918715364034492105
+  ChildIds: 6144095686271325409
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -212,6 +214,132 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 6144095686271325409
+  Name: "Notifications_Client"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14858104107515101237
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
+      }
+    }
+    Overrides {
+      Name: "cs:notification"
+      ObjectReference {
+        SelfId: 8705112589880056221
+      }
+    }
+    Overrides {
+      Name: "cs:background"
+      ObjectReference {
+        SelfId: 11491370129659431548
+      }
+    }
+    Overrides {
+      Name: "cs:text"
+      ObjectReference {
+        SelfId: 2694120064592384546
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 11438460264907104405
+    }
+  }
+}
+Objects {
+  Id: 3918715364034492105
+  Name: "Quest_Manager_Client"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14858104107515101237
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
+      }
+    }
+    Overrides {
+      Name: "cs:quest_holder"
+      AssetReference {
+        Id: 8028526601050382838
+      }
+    }
+    Overrides {
+      Name: "cs:quest_item"
+      AssetReference {
+        Id: 18263410488187278100
+      }
+    }
+    Overrides {
+      Name: "cs:quest_data"
+      ObjectReference {
+        SelfId: 15892015409261034309
+      }
+    }
+    Overrides {
+      Name: "cs:quest_container"
+      ObjectReference {
+        SelfId: 3139108800441333692
+      }
+    }
+    Overrides {
+      Name: "cs:quest_lookup"
+      ObjectReference {
+        SelfId: 15892015409261034309
+      }
+    }
+    Overrides {
+      Name: "cs:quest_item_complete_color"
+      Color {
+        R: 1
+        G: 0.99600023
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 2590048331469800252
+    }
   }
 }
 Objects {
@@ -336,6 +464,21 @@ Objects {
         Id: 17409003921622131677
       }
     }
+    Overrides {
+      Name: "cs:back_hover_color"
+      Color {
+        R: 0.0177083015
+        G: 0.0177083015
+        B: 0.0177083015
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:back_unhover_color"
+      Color {
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -374,7 +517,22 @@ Objects {
     Overrides {
       Name: "cs:put_down_button"
       ObjectReference {
-        SelfId: 7344388710328431946
+        SelfId: 8617543916545524678
+      }
+    }
+    Overrides {
+      Name: "cs:put_down_hover_color"
+      Color {
+        R: 0.0177083015
+        G: 0.0177083015
+        B: 0.0177083015
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:put_down_unhover_color"
+      Color {
+        A: 1
       }
     }
   }

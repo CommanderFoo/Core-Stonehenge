@@ -4,8 +4,13 @@ local items_container = script:GetCustomProperty("items_container"):WaitForObjec
 local inventory = {}
 
 function add(obj_ref)
-	local obj = obj_ref:GetObject()
-	local data = get_item_from_lookup(obj.id)
+	local id = obj_ref
+
+	if(type(id) ~= "string") then
+		id = obj_ref:GetObject().id
+	end
+	
+	local data = get_item_from_lookup(id)
 	
 	if(data ~= nil and Object.IsValid(data)) then
 		local inventory_id = data:GetCustomProperty("id")
@@ -23,14 +28,19 @@ function add(obj_ref)
 
 			Events.BroadcastToServer("inventory_add", inventory_id, quantity, obj_ref, data:GetCustomProperty("remove_from_world"))
 		end
-
-		refresh_ui()
 	end
+
+	refresh_ui()
 end
 
 function increase(obj_ref, quantity)
-	local obj = obj_ref:GetObject()
-	local data = get_item_from_lookup(obj.id)
+	local id = obj_ref
+
+	if(type(id) ~= "string") then
+		id = obj_ref:GetObject().id
+	end
+	
+	local data = get_item_from_lookup(id)
 	
 	if(data ~= nil and Object.IsValid(data)) then
 		local inventory_id = data:GetCustomProperty("id")
@@ -43,8 +53,13 @@ function increase(obj_ref, quantity)
 end
 
 function decrease(obj_ref, quantity)
-	local obj = obj_ref:GetObject()
-	local data = get_item_from_lookup(obj.id)
+	local id = obj_ref
+
+	if(type(id) ~= "string") then
+		id = obj_ref:GetObject().id
+	end
+	
+	local data = get_item_from_lookup(id)
 	
 	if(data ~= nil and Object.IsValid(data)) then
 		local inventory_id = data:GetCustomProperty("id")
@@ -57,8 +72,13 @@ function decrease(obj_ref, quantity)
 end
 
 function remove(obj_ref)
-	local obj = obj_ref:GetObject()
-	local data = get_item_from_lookup(obj.id)
+	local id = obj_ref
+
+	if(type(id) ~= "string") then
+		id = obj_ref:GetObject().id
+	end
+	
+	local data = get_item_from_lookup(id)
 	
 	if(data ~= nil and Object.IsValid(data)) then
 		local inventory_id = data:GetCustomProperty("id")

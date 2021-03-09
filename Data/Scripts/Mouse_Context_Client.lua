@@ -37,7 +37,6 @@ function Tick(dt)
 	if(hit ~= nil and Object.IsValid(hit.other)) then
 		local obj = hit.other.parent
 		
-		print(obj.name)
 		obj_type = obj:GetCustomProperty("type")
 
 		if(obj_type and not obj_type:find("sub_")) then

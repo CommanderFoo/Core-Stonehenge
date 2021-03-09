@@ -1,13 +1,13 @@
 Assets {
-  Id: 17916930565914598543
-  Name: "Random Book 1 UI"
+  Id: 10102641314703158064
+  Name: "Letter UI"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 9252116692543917023
+      RootId: 1744009424199400997
       Objects {
-        Id: 9252116692543917023
-        Name: "Random Book 1 UI"
+        Id: 1744009424199400997
+        Name: "Letter UI"
         Transform {
           Scale {
             X: 1
@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 1297168082297559160
+        ParentId: 7390034436368229710
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -32,11 +32,12 @@ Assets {
           }
           Image {
             Brush {
-              Id: 9856877556590816424
+              Id: 7115843047682761744
             }
             Color {
-              R: 0.270079136
-              B: 0.820000052
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
             TeamSettings {
@@ -58,12 +59,12 @@ Assets {
       }
     }
     Assets {
-      Id: 9856877556590816424
-      Name: "Fantasy Book 014"
+      Id: 7115843047682761744
+      Name: "Fantasy Letter 001"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Equip_Book_014"
+        AssetId: "UI_Fantasy_Equip_Letter_001"
       }
     }
     PrimaryAssetId {

@@ -44,7 +44,7 @@ function make_it_rain(where)
 		current_rain_density = main_rain_density
 	end
 
-	tween = YOOTIL.Tween:new(3, {a = 1, b = 5, c = 3, d = 0}, {a = .3, b = 2, c = .9, d = current_rain_density})
+	tween = YOOTIL.Tween:new(3, {a = 1, b = 5, c = 3, d = 0}, {a = .3, b = 2.5, c = .9, d = current_rain_density})
 
 	tween:on_change(function(v)
 		sky_dome:SetSmartProperty("brightness", v.a)
@@ -105,7 +105,7 @@ function make_it_sunny()
 		end
 	end)
 
-	tween = YOOTIL.Tween:new(3, {a = .3, b = 2, c = .9, d = current_rain_density}, {a = 1, b = 5, c = 3, d = 0})
+	tween = YOOTIL.Tween:new(3, {a = .3, b = 2.5, c = .9, d = current_rain_density}, {a = 1, b = 5, c = 3, d = 0})
 
 	tween:on_change(function(v)
 		sky_dome:SetSmartProperty("brightness", v.a)

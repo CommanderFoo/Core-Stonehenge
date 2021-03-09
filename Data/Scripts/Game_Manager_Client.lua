@@ -33,6 +33,8 @@ Events.Connect("start_game", function()
 	transition_tween:on_complete(function()
 		transition_loader.visibility = Visibility.FORCE_OFF
 
+		Events.Broadcast("next_quest")
+
 		Events.Broadcast("play_bird_sounds")
 
 		transition_tween = nil

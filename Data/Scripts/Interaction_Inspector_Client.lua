@@ -8,6 +8,8 @@ local lerp_time = script:GetCustomProperty("lerp_time")
 local debug = script:GetCustomProperty("debug")
 
 local back_button = script:GetCustomProperty("back_button"):WaitForObject()
+local back_hover_color = script:GetCustomProperty("back_hover_color")
+local back_unhover_color = script:GetCustomProperty("back_unhover_color")
 
 local cursor = script:GetCustomProperty("cursor"):WaitForObject()
 local glove = script:GetCustomProperty("glove")
@@ -62,10 +64,22 @@ for k, trigger in ipairs(interactables:FindDescendantsByType("Trigger")) do
 
 		UI.SetCanCursorInteractWithUI(true)
 		--UI.SetCursorVisible(true)
+
+		Events.Broadcast("quest_item_complete", 2)
 	end)
 end
 
+back_button.hoveredEvent:Connect(function()
+	back_button:FindDescendantByName("Background"):SetColor(back_hover_color)
+end)
+
+back_button.unhoveredEvent:Connect(function()
+	back_button:FindDescendantByName("Background"):SetColor(back_unhover_color)
+end)
+
 back_button.clickedEvent:Connect(function()
+	Events.Broadcast("put_down_object")
+	
 	back_button.visibility = Visibility.FORCE_OFF
 	local_player:ClearOverrideCamera(lerp_time)
 
@@ -97,8 +111,7 @@ local_player.bindingPressedEvent:Connect(function(p, binding)
 
 	if(over_pickup and binding == "ability_primary" and Object.IsValid(pickup_obj)) then
 		if(obj_type == "sub_look") then
-			print("look")
-			Events.Broadcast("inspect_object", pickup_obj:GetReference())
+			Events.Broadcast("inspect_object", pickup_obj:GetReference(), true)
 		else
 			Events.Broadcast("inventory_add", pickup_obj:GetReference(), true)
 			Events.Broadcast("play_sound", "pickup")

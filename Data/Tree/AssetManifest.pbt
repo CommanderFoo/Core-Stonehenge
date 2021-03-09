@@ -71,6 +71,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11419045190388910930
+  Name: "Crosshair 025"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Crosshair_025"
+  }
+}
+Assets {
   Id: 11256811629916886732
   Name: "Flower Bellflower 01"
   PlatformAssetType: 1
@@ -143,12 +152,30 @@ Assets {
   }
 }
 Assets {
+  Id: 5248208841683454128
+  Name: "Metamorphous"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "MetamorphousRegular_ref"
+  }
+}
+Assets {
   Id: 3496369810733992264
   Name: "Tree Redwood Small"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_tree_redwood_005"
+  }
+}
+Assets {
+  Id: 1260970173436881805
+  Name: "Icon Arrow Up"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_ArrowUp"
   }
 }
 Assets {

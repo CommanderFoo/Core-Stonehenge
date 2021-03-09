@@ -1,5 +1,7 @@
 local cursor = script:GetCustomProperty("cursor"):WaitForObject()
 local put_down_button = script:GetCustomProperty("put_down_button"):WaitForObject()
+local put_down_hover_color = script:GetCustomProperty("put_down_hover_color")
+local put_down_unhover_color = script:GetCustomProperty("put_down_unhover_color")
 
 local local_player = Game.GetLocalPlayer()
 
@@ -8,6 +10,7 @@ local orig_obj = nil
 local orig_ref = nil
 local mouse_pressed = false
 local can_rotate = false
+local is_sub_object = false
 
 local_player.bindingPressedEvent:Connect(function(p, binding)
 	if(binding == "ability_primary") then
@@ -21,8 +24,12 @@ local_player.bindingReleasedEvent:Connect(function(p, binding)
 	end
 end)
 
-function inspect_object(obj_ref)
-	Events.BroadcastToServer("disable_player", local_player)
+function inspect_object(obj_ref, sub_object)
+	if(not sub_object) then
+		Events.BroadcastToServer("disable_player", local_player)
+	end
+
+	is_sub_object = sub_object
 
 	orig_ref = obj_ref
 	orig_obj = obj_ref:GetObject()
@@ -51,14 +58,28 @@ function inspect_object(obj_ref)
 	can_rotate = true
 end
 
-put_down_button.clickedEvent:Connect(function()
+put_down_button.hoveredEvent:Connect(function()
+	put_down_button:FindDescendantByName("Background"):SetColor(put_down_hover_color)
+end)
+
+put_down_button.unhoveredEvent:Connect(function()
+	put_down_button:FindDescendantByName("Background"):SetColor(put_down_unhover_color)
+end)
+
+function put_down_object()
+	if(obj == nil) then
+		return
+	end
+	
 	can_rotate = false
 
 	put_down_button.visibility = Visibility.FORCE_OFF
 
 	mouse_pressed = false
 
-	cursor.visibility = Visibility.FORCE_OFF
+	if(not is_sub_object) then
+		cursor.visibility = Visibility.FORCE_OFF
+	end
 
 	obj:MoveTo(orig_obj:GetWorldPosition(), .5)
 	obj:RotateTo(orig_obj:GetWorldRotation(), .5)
@@ -72,16 +93,21 @@ put_down_button.clickedEvent:Connect(function()
 
 	orig_ref = nil
 
-	Events.BroadcastToServer("enable_player", local_player)
-	Events.BroadcastToServer("enable_all_interaction_labels")
+	if(not is_sub_object) then
+		Events.BroadcastToServer("enable_player", local_player)
+		Events.BroadcastToServer("enable_all_interaction_labels")
 	
-	UI.SetCanCursorInteractWithUI(false)
+		UI.SetCanCursorInteractWithUI(false)
 
-	Events.Broadcast("show_reticle")
+		Events.Broadcast("show_reticle")
 
-	cursor.visibility = Visibility.FORCE_OFF
+		cursor.visibility = Visibility.FORCE_OFF
+	end
+	
 	put_down_button.visibility = Visibility.FORCE_OFF
-end)
+end
+
+put_down_button.clickedEvent:Connect(put_down_object)
 
 function Tick()
 	if(mouse_pressed and obj ~= nil and can_rotate) then
@@ -116,3 +142,4 @@ function Tick()
 end
 
 Events.Connect("inspect_object", inspect_object)
+Events.Connect("put_down_object", put_down_object)

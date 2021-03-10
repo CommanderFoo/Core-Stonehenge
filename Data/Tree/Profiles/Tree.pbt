@@ -105,11 +105,11 @@ Objects {
     }
     Overrides {
       Name: "cs:tween_duration"
-      Float: 15
+      Float: 10
     }
     Overrides {
       Name: "cs:tween_delay"
-      Float: 2
+      Float: 1
     }
     Overrides {
       Name: "cs:tween"
@@ -156,7 +156,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:sky_dome_brightness"
-      Float: 0.2
+      Float: 0.3
     }
     Overrides {
       Name: "cs:sky_dome_color"
@@ -214,7 +214,7 @@ Objects {
     }
     Overrides {
       Name: "cs:sky_light_intensity"
-      Float: 0.5
+      Float: 1
     }
     Overrides {
       Name: "cs:rotate_sky"

@@ -1,6 +1,6 @@
 Game.playerJoinedEvent:Connect(function(player)
-	disable_player(player, true)
-	set_player_stance(player, "unarmed_sit_ground_crossed")
+	--disable_player(player, true)
+	--set_player_stance(player, "unarmed_sit_ground_crossed")
 
 	player:SetVisibility(false)
 end)

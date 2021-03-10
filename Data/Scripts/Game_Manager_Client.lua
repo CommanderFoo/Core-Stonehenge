@@ -23,6 +23,8 @@ Task.Spawn(function()
 end, transition_time)
 
 Events.Connect("start_game", function()
+	Events.Broadcast("set_player_camera", "tent", 0)
+	Events.Broadcast("show_tent_button")
 	Events.Broadcast("set_weather_profile", "sunrise")
 	Events.Broadcast("set_weather_profile", "daytime")
 

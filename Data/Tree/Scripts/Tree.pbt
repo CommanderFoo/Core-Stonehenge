@@ -207,6 +207,8 @@ Objects {
   ChildIds: 5161737726342901287
   ChildIds: 3918715364034492105
   ChildIds: 6144095686271325409
+  ChildIds: 1654015060712776403
+  ChildIds: 17390153026596301370
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -214,6 +216,143 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 17390153026596301370
+  Name: "Pointer_Client"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14858104107515101237
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:cursor_ui"
+      ObjectReference {
+        SelfId: 16074639967968450711
+      }
+    }
+    Overrides {
+      Name: "cs:reticle_ui"
+      ObjectReference {
+        SelfId: 59690698900990467
+      }
+    }
+    Overrides {
+      Name: "cs:look"
+      AssetReference {
+        Id: 17409003921622131677
+      }
+    }
+    Overrides {
+      Name: "cs:pickup"
+      AssetReference {
+        Id: 18264982001259645559
+      }
+    }
+    Overrides {
+      Name: "cs:default"
+      AssetReference {
+        Id: 14730016063174144111
+      }
+    }
+    Overrides {
+      Name: "cs:reticle_default_size"
+      Vector2 {
+        X: 12
+        Y: 12
+      }
+    }
+    Overrides {
+      Name: "cs:cursor_default_size"
+      Vector2 {
+        X: 25
+        Y: 25
+      }
+    }
+    Overrides {
+      Name: "cs:reticle_big_size"
+      Vector2 {
+        X: 80
+        Y: 80
+      }
+    }
+    Overrides {
+      Name: "cs:cursor_big_size"
+      Vector2 {
+        X: 80
+        Y: 80
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 3878207078180523128
+    }
+  }
+}
+Objects {
+  Id: 1654015060712776403
+  Name: "Tent_Client"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14858104107515101237
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:leave_tent_button"
+      ObjectReference {
+        SelfId: 4652850791220885552
+      }
+    }
+    Overrides {
+      Name: "cs:leave_tent_hover_color"
+      Color {
+        R: 0.0177083015
+        G: 0.0177083015
+        B: 0.0177083015
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:leave_tent_unhover_color"
+      Color {
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6420445481963981208
+    }
   }
 }
 Objects {
@@ -406,15 +545,6 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:default_cam"
-      ObjectReference {
-        SelfId: 3840927660290209183
-        SubObjectId: 5052201122922792879
-        InstanceId: 1023850042715320700
-        TemplateId: 5189858054097932166
-      }
-    }
-    Overrides {
       Name: "cs:debug"
       Bool: true
     }
@@ -444,24 +574,6 @@ Objects {
       Name: "cs:interactables"
       ObjectReference {
         SelfId: 13207548860357947295
-      }
-    }
-    Overrides {
-      Name: "cs:cursor"
-      ObjectReference {
-        SelfId: 16074639967968450711
-      }
-    }
-    Overrides {
-      Name: "cs:glove"
-      AssetReference {
-        Id: 18264982001259645559
-      }
-    }
-    Overrides {
-      Name: "cs:magnify"
-      AssetReference {
-        Id: 17409003921622131677
       }
     }
     Overrides {
@@ -550,7 +662,7 @@ Objects {
 }
 Objects {
   Id: 14207237045317547549
-  Name: "Mouse_Context_Client"
+  Name: "Raycast_Client"
   Transform {
     Location {
     }
@@ -564,30 +676,6 @@ Objects {
   }
   ParentId: 14858104107515101237
   UnregisteredParameters {
-    Overrides {
-      Name: "cs:magnify"
-      AssetReference {
-        Id: 17409003921622131677
-      }
-    }
-    Overrides {
-      Name: "cs:glove"
-      AssetReference {
-        Id: 18264982001259645559
-      }
-    }
-    Overrides {
-      Name: "cs:default"
-      AssetReference {
-        Id: 14730016063174144111
-      }
-    }
-    Overrides {
-      Name: "cs:reticle"
-      ObjectReference {
-        SelfId: 59690698900990467
-      }
-    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -663,6 +751,29 @@ Objects {
     }
   }
   ParentId: 14858104107515101237
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:default_camera"
+      ObjectReference {
+        SelfId: 8479646325199133209
+        SubObjectId: 503681998163126313
+        InstanceId: 1023850042715320700
+        TemplateId: 5189858054097932166
+      }
+    }
+    Overrides {
+      Name: "cs:inspection_camera"
+      ObjectReference {
+        SelfId: 14572394429066107306
+      }
+    }
+    Overrides {
+      Name: "cs:tent_camera"
+      ObjectReference {
+        SelfId: 7178935870193632763
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

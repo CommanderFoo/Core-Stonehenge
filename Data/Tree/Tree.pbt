@@ -705,6 +705,7 @@ Objects {
   }
   ParentId: 4781671109827199097
   ChildIds: 14572394429066107306
+  ChildIds: 7178935870193632763
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -715,12 +716,55 @@ Objects {
   }
 }
 Objects {
+  Id: 7178935870193632763
+  Name: "Tent Camera"
+  Transform {
+    Location {
+      X: 8046.70361
+      Y: -2400.49146
+      Z: 300
+    }
+    Rotation {
+      Yaw: 180
+    }
+    Scale {
+      X: 1
+      Y: 0.999999821
+      Z: 1
+    }
+  }
+  ParentId: 16188106690642622860
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Camera {
+    FreeControl: true
+    MinDistance: 300
+    MaxDistance: 600
+    PositionOffset {
+    }
+    RotationOffset {
+    }
+    FieldOfView: 90
+    ViewWidth: 1200
+    RotationMode {
+      Value: "mc:erotationmode:default"
+    }
+    MinPitch: -89
+    MaxPitch: 89
+  }
+}
+Objects {
   Id: 14572394429066107306
   Name: "World Inspector Camera"
   Transform {
     Location {
     }
     Rotation {
+      Yaw: 180
     }
     Scale {
       X: 1
@@ -5405,8 +5449,8 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 8
-    Height: 8
+    Width: 12
+    Height: 12
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -5456,6 +5500,7 @@ Objects {
   ParentId: 2789780480952860209
   ChildIds: 13099482719251150093
   ChildIds: 8617543916545524678
+  ChildIds: 4652850791220885552
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5482,6 +5527,263 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 4652850791220885552
+  Name: "Leave Tent (Temp)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10400721808396098963
+  ChildIds: 15233939349946407539
+  ChildIds: 5377291815514500778
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  Control {
+    Width: 288
+    Height: 70
+    UIY: -60
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Button {
+      FontColor {
+        A: 1
+      }
+      FontSize: 20
+      ButtonColor {
+        R: 1
+        G: 1
+        B: 1
+      }
+      HoveredColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      PressedColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      DisabledColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Brush {
+        Id: 841534158063459245
+      }
+      IsButtonEnabled: true
+      OnlyUseMainColor: true
+      ClickMode {
+        Value: "mc:ebuttonclickmode:default"
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 5377291815514500778
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4652850791220885552
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 27
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    Text {
+      Label: "Leave Tent (Temp)"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 16
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+      Font {
+        Id: 5248208841683454128
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 15233939349946407539
+  Name: "Border"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4652850791220885552
+  ChildIds: 11649114331150960071
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 200
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Image {
+      Brush {
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 11649114331150960071
+  Name: "Background"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15233939349946407539
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: -2
+    Height: -2
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    UseParentHeight: true
+    Image {
+      Brush {
+      }
+      Color {
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
         }
       }
     }

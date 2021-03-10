@@ -1,17 +1,13 @@
-local magnify = script:GetCustomProperty("magnify")
-local glove = script:GetCustomProperty("glove")
-local default = script:GetCustomProperty("default")
-local reticle = script:GetCustomProperty("reticle"):WaitForObject()
-
 local local_player = Game.GetLocalPlayer()
 local distance = 500
 
 local over_pickup = false
 local pickup_obj = nil
 local obj_type = nil
+local can_raycast = false
 
 local_player.bindingPressedEvent:Connect(function(p, binding)
-	if(over_pickup and binding == "ability_primary" and Object.IsValid(pickup_obj)) then
+	if(can_raycast and over_pickup and binding == "ability_primary" and Object.IsValid(pickup_obj)) then
 		if(obj_type == "look") then
 			Events.Broadcast("inspect_object", pickup_obj:GetReference())
 		else
@@ -22,6 +18,10 @@ local_player.bindingPressedEvent:Connect(function(p, binding)
 end)
 
 function Tick(dt)
+	if(not can_raycast) then
+		return
+	end
+
 	local ray_start = local_player:GetViewWorldPosition()
 	local forward = local_player:GetViewWorldRotation() * Vector3.FORWARD
 	local ray_end = ray_start + forward * distance
@@ -34,6 +34,8 @@ function Tick(dt)
 	pickup_obj = nil
 	obj_type = nil
 
+	local reticle = "default"
+
 	if(hit ~= nil and Object.IsValid(hit.other)) then
 		local obj = hit.other.parent
 		
@@ -41,28 +43,23 @@ function Tick(dt)
 
 		if(obj_type and not obj_type:find("sub_")) then
 			if(obj_type == "look") then
-				img = magnify
+				reticle = "look"
 			elseif(obj_type == "pickup") then
-				img = glove
+				reticle = "pickup"
 			end
 
 			over_pickup = true
 			pickup_obj = obj
-
-			width = 60
-			height = 60
 		end
 	end
 
-	reticle:SetImage(img)
-	reticle.width = width
-	reticle.height = height
+	Events.Broadcast("change_reticle", reticle)
 end
 
-Events.Connect("hide_reticle", function()
-	reticle.visibility = Visibility.FORCE_OFF
+Events.Connect("disable_raycast", function()
+	can_raycast = false
 end)
 
-Events.Connect("show_reticle", function()
-	reticle.visibility = Visibility.FORCE_ON
+Events.Connect("enable_raycast", function()
+	can_raycast = true
 end)

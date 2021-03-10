@@ -3,21 +3,13 @@ local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
 local interactables = script:GetCustomProperty("interactables"):WaitForObject()
 
 local inspect_cam = script:GetCustomProperty("inspect_cam"):WaitForObject()
-local default_cam = script:GetCustomProperty("default_cam"):WaitForObject()
+
 local lerp_time = script:GetCustomProperty("lerp_time")
 local debug = script:GetCustomProperty("debug")
 
 local back_button = script:GetCustomProperty("back_button"):WaitForObject()
 local back_hover_color = script:GetCustomProperty("back_hover_color")
 local back_unhover_color = script:GetCustomProperty("back_unhover_color")
-
-local cursor = script:GetCustomProperty("cursor"):WaitForObject()
-local glove = script:GetCustomProperty("glove")
-local magnify = script:GetCustomProperty("magnify")
-
-local default_cursor = cursor:GetImage()
-local default_cursor_width = cursor.width
-local default_cursor_height = cursor.height
 
 local local_player = Game.GetLocalPlayer()
 local key_down = false
@@ -34,7 +26,7 @@ for k, trigger in ipairs(interactables:FindDescendantsByType("Trigger")) do
 		current_trigger = obj
 		
 		Events.BroadcastToServer("hide_interaction_label", obj:GetReference())
-		Events.Broadcast("hide_reticle")
+		Events.Broadcast("hide_cursor")
 		
 		local cam_pos = obj:GetCustomProperty("cam_pos")
 		local cam_rot = obj:GetCustomProperty("cam_rot")
@@ -50,20 +42,22 @@ for k, trigger in ipairs(interactables:FindDescendantsByType("Trigger")) do
 			cam_fov = default_cam.fieldOfView
 		end
 
-		inspect_cam:SetWorldPosition(cam_pos)
-		inspect_cam:SetWorldRotation(cam_rot)
-		inspect_cam.fieldOfView = cam_fov
-
-		local_player:SetOverrideCamera(inspect_cam, lerp_time)
+		Events.Broadcast("set_player_camera", "inspection", lerp_time, {
+			
+			position = cam_pos,
+			rotation = cam_rot,
+			fov = cam_fov
+		
+		})
 
 		Task.Wait(lerp_time)
 		back_button.visibility = Visibility.FORCE_ON
 		
 		is_inspecting = true
-		cursor.visibility = Visibility.FORCE_ON
+		
+		Events.Broadcast("show_cursor")
 
 		UI.SetCanCursorInteractWithUI(true)
-		--UI.SetCursorVisible(true)
 
 		Events.Broadcast("quest_item_complete", 2)
 	end)
@@ -81,7 +75,8 @@ back_button.clickedEvent:Connect(function()
 	Events.Broadcast("put_down_object")
 	
 	back_button.visibility = Visibility.FORCE_OFF
-	local_player:ClearOverrideCamera(lerp_time)
+
+	Events.Broadcast("clear_player_camera", lerp_time)
 
 	Task.Wait(lerp_time)
 
@@ -90,13 +85,11 @@ back_button.clickedEvent:Connect(function()
 		current_trigger = nil
 	end
 
-	cursor.visibility = Visibility.FORCE_OFF
+	Events.Broadcast("hide_cursor")
 	is_inspecting = false
 
 	UI.SetCanCursorInteractWithUI(false)
-	UI.SetCursorVisible(false)
-
-	Events.Broadcast("show_reticle")
+	Events.Broadcast("enable_raycast")
 end)
 
 local_player.bindingPressedEvent:Connect(function(p, binding)
@@ -163,19 +156,10 @@ function Tick()
 	end
 
 	if(is_inspecting) then
-		local m_pos = UI.GetCursorPosition()
-
-		cursor.x = m_pos.x
-		cursor.y = m_pos.y
-
-		local cursor_img = default_cursor
-		local cursor_img_width = default_cursor_width
-		local cursor_img_height = default_cursor_height
-
-		over_pickup = false
 		pickup_obj = nil
 		obj_type = nil
 
+		local cursor = "default"
 		local hit = UI.GetCursorHitResult()
 
 		if(hit ~= nil and Object.IsValid(hit.other)) then
@@ -188,13 +172,10 @@ function Tick()
 		
 				if(obj_type) then
 					if(obj_type == "sub_pickup") then
-						cursor_img = glove
+						cursor = "pickup"
 					elseif(obj_type == "sub_look") then
-						cursor_img = magnify
+						cursor = "look"
 					end
-
-					cursor_img_height = 60
-					cursor_img_width = 60
 
 					over_pickup = true
 					pickup_obj = obj
@@ -202,8 +183,6 @@ function Tick()
 			end
 		end
 
-		cursor:SetImage(cursor_img)
-		cursor.width = cursor_img_width
-		cursor.height = cursor_img_height
+		Events.Broadcast("show_cursor", cursor)
 	end
 end

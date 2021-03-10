@@ -25,6 +25,8 @@ local_player.bindingReleasedEvent:Connect(function(p, binding)
 end)
 
 function inspect_object(obj_ref, sub_object)
+	Events.Broadcast("disable_raycast")
+
 	if(not sub_object) then
 		Events.BroadcastToServer("disable_player", local_player)
 	end
@@ -48,10 +50,8 @@ function inspect_object(obj_ref, sub_object)
 
 	UI.SetCanCursorInteractWithUI(true)
 
-	Events.Broadcast("hide_reticle")
+	Events.Broadcast("show_cursor")
 	Events.BroadcastToServer("hide_all_interaction_labels")
-
-	cursor.visibility = Visibility.FORCE_ON
 
 	put_down_button.visibility = Visibility.FORCE_ON
 
@@ -77,10 +77,6 @@ function put_down_object()
 
 	mouse_pressed = false
 
-	if(not is_sub_object) then
-		cursor.visibility = Visibility.FORCE_OFF
-	end
-
 	obj:MoveTo(orig_obj:GetWorldPosition(), .5)
 	obj:RotateTo(orig_obj:GetWorldRotation(), .5)
 
@@ -99,12 +95,12 @@ function put_down_object()
 	
 		UI.SetCanCursorInteractWithUI(false)
 
-		Events.Broadcast("show_reticle")
-
-		cursor.visibility = Visibility.FORCE_OFF
+		Events.Broadcast("hide_cursor")
 	end
 	
 	put_down_button.visibility = Visibility.FORCE_OFF
+
+	Events.Broadcast("enable_raycast")
 end
 
 put_down_button.clickedEvent:Connect(put_down_object)
@@ -131,13 +127,6 @@ function Tick()
 
 			obj:SetWorldRotation(rot)
 		end
-	end
-
-	if(obj ~= nil) then
-		local m_pos = UI.GetCursorPosition()
-
-		cursor.x = m_pos.x
-		cursor.y = m_pos.y
 	end
 end
 

@@ -271,7 +271,7 @@ function set_weather_profile(profile)
 end
 
 -- @TODO: Disable this at some point
-
+--[[
 local_player.bindingPressedEvent:Connect(function(player, binding)
 	if(binding == "ability_extra_1") then
 		set_weather_profile("sunrise")
@@ -281,6 +281,7 @@ local_player.bindingPressedEvent:Connect(function(player, binding)
 		set_weather_profile("nighttime")
 	end
 end)
+--]]
 
 function Tick(dt)
 	if(tween ~= nil) then

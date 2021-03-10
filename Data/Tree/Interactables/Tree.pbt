@@ -1,7 +1,7 @@
 Name: "Interactables"
 RootId: 13207548860357947295
 Objects {
-  Id: 6142473020984377152
+  Id: 15442623458383359855
   Name: "Item Pickup Example"
   Transform {
     Scale {
@@ -23,9 +23,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -17176.0625
-            Y: -4313.21484
-            Z: 1616.66882
+            X: 6435
+            Y: -2610
+            Z: 50
           }
         }
         Overrides {
@@ -49,13 +49,60 @@ Objects {
   }
 }
 Objects {
+  Id: 6862434550525866960
+  Name: "Item Look Example"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13207548860357947295
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1855112757633191298
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Item Look Example"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 6600
+            Y: -2635
+            Z: 95
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6872563654101206001
+    }
+  }
+}
+Objects {
   Id: 15427196770349038411
-  Name: "Grave Stone"
+  Name: "Test"
   Transform {
     Location {
-      X: -16847.9609
-      Y: -4653.31641
-      Z: 1599.26099
+      X: 6862.30664
+      Y: -3058.04297
     }
     Rotation {
     }
@@ -69,6 +116,7 @@ Objects {
   ChildIds: 9911623708852988703
   ChildIds: 307046500729566719
   ChildIds: 16449868953798213689
+  ChildIds: 7490509781291996604
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -77,6 +125,45 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 7490509781291996604
+  Name: "Cube"
+  Transform {
+    Location {
+      Z: 138.812653
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.97808623
+      Y: 1.71732581
+      Z: 2.47917938
+    }
+  }
+  ParentId: 15427196770349038411
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6628731841327595102
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
   }
 }
 Objects {
@@ -102,9 +189,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 53.0546875
+            X: 115.570313
             Y: 39.7084961
-            Z: 188.563843
+            Z: 143.651459
           }
         }
         Overrides {
@@ -168,9 +255,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -56.3144531
-            Y: 68.9238281
-            Z: 204.453979
+            X: -79.7211914
+            Y: 101.772217
+            Z: 156.191772
           }
         }
         Overrides {
@@ -208,8 +295,8 @@ Objects {
   Name: "Trigger"
   Transform {
     Location {
-      Y: 211.048828
-      Z: 187.359253
+      Y: 262.132324
+      Z: 187.359
     }
     Rotation {
     }
@@ -224,25 +311,25 @@ Objects {
     Overrides {
       Name: "cs:cam_pos"
       Vector {
-        X: -16833.9609
-        Y: -4442.26807
-        Z: 1841.62
+        X: 6862.30664
+        Y: -2891.04297
+        Z: 239
       }
     }
     Overrides {
       Name: "cs:cam_rot"
       Rotator {
-        Pitch: -12
+        Pitch: -22
         Yaw: -90
       }
     }
     Overrides {
       Name: "cs:cam_fov"
-      Float: 58.7006302
+      Float: 50
     }
     Overrides {
       Name: "cs:quest_id"
-      Int: 2
+      Int: 0
     }
   }
   WantsNetworking: true
@@ -254,7 +341,7 @@ Objects {
   }
   Trigger {
     Interactable: true
-    InteractionLabel: "Inspect Grave"
+    InteractionLabel: "Inspect Test"
     TeamSettings {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true

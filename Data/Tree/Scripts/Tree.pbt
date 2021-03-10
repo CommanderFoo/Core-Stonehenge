@@ -20,6 +20,7 @@ Objects {
   ChildIds: 4100779181729332834
   ChildIds: 6380753851518955502
   ChildIds: 16900010184290640698
+  ChildIds: 12953654997927075209
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -28,6 +29,33 @@ Objects {
   }
   NetworkContext {
     Type: Server
+  }
+}
+Objects {
+  Id: 12953654997927075209
+  Name: "Player Sit in Tent (temporary)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1946733176415873648
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 17032766439732759738
+    }
   }
 }
 Objects {

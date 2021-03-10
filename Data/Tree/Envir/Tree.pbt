@@ -1148,47 +1148,6 @@ Objects {
   }
 }
 Objects {
-  Id: 1240675483828384662
-  Name: "Pipe"
-  Transform {
-    Location {
-      X: -16955.0938
-      Y: -4226.16309
-      Z: 1550.68738
-    }
-    Rotation {
-    }
-    Scale {
-      X: 20
-      Y: 20
-      Z: 4.79580116
-    }
-  }
-  ParentId: 14580783129908760267
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14471607567670662559
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
   Id: 11536132110693567345
   Name: "Grave Area"
   Transform {

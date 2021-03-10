@@ -19,7 +19,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:quest_id"
-      Int: 2
+      Int: 1
     }
     Overrides {
       Name: "cs:quest_title"
@@ -85,131 +85,6 @@ Objects {
     Overrides {
       Name: "cs:line_width"
       Int: 22
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4937853632588239016
-    }
-  }
-}
-Objects {
-  Id: 18147484002457798299
-  Name: "Graveyard Quest"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15892015409261034309
-  ChildIds: 8913320271934862762
-  ChildIds: 4621709518521021192
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:quest_id"
-      Int: 1
-    }
-    Overrides {
-      Name: "cs:quest_title"
-      String: "Graveyard"
-    }
-    Overrides {
-      Name: "cs:quest_line_width"
-      Int: 144
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 3474319897268104530
-    }
-  }
-}
-Objects {
-  Id: 4621709518521021192
-  Name: "Quest_Data_Item"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 18147484002457798299
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:id"
-      Int: 2
-    }
-    Overrides {
-      Name: "cs:title"
-      String: "Inspect grave"
-    }
-    Overrides {
-      Name: "cs:line_width"
-      Int: 144
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4937853632588239016
-    }
-  }
-}
-Objects {
-  Id: 8913320271934862762
-  Name: "Quest_Data_Item"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 18147484002457798299
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:id"
-      Int: 1
-    }
-    Overrides {
-      Name: "cs:title"
-      String: "Explore the area"
-    }
-    Overrides {
-      Name: "cs:line_width"
-      Int: 177
     }
   }
   Collidable_v2 {

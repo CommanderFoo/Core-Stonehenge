@@ -23,7 +23,11 @@ Task.Spawn(function()
 end, transition_time)
 
 Events.Connect("start_game", function()
-	Events.Broadcast("make_it_rain", "grave_area")
+	
+	-- @TODO: Remove grave area specific code / rain / thunder etc
+	-- Disable this for now as we no longer use this area.
+
+	--Events.Broadcast("make_it_rain", "grave_area")
 
 	transition_tween = YOOTIL.Tween:new(transition_time, {a = 1}, {a = 0})
 
@@ -39,7 +43,13 @@ Events.Connect("start_game", function()
 
 		transition_tween = nil
 
-		Events.BroadcastToServer("enable_player", local_player)
+		-- @TODO: enable player depending on last game state
+		-- First time player the player should be disabled from moving
+		-- Letter should be in hand with an option to leave the tent
+		-- So for now this is disabled until we get to the point where
+		-- game state is saved
+
+		--Events.BroadcastToServer("enable_player", local_player)
 	end)
 
 	transition_tween:on_change(function(v)

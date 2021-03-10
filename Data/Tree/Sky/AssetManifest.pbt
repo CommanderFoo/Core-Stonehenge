@@ -25,3 +25,12 @@ Assets {
     AssetId: "CORESKY_Sky"
   }
 }
+Assets {
+  Id: 5599558274285934961
+  Name: "Star Dome"
+  PlatformAssetType: 19
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "CORESKY_StarDome"
+  }
+}

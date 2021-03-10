@@ -21,7 +21,6 @@ local menu = {
 		script:GetCustomProperty("continue"):WaitForObject(),
 		script:GetCustomProperty("new_game"):WaitForObject(),
 		script:GetCustomProperty("options"):WaitForObject(),
-		script:GetCustomProperty("about"):WaitForObject(),
 		script:GetCustomProperty("credits"):WaitForObject()
 
 	},
@@ -31,7 +30,6 @@ local menu = {
 		false,
 		script:GetCustomProperty("new_game_panel"):WaitForObject(),
 		script:GetCustomProperty("options_panel"):WaitForObject(),
-		script:GetCustomProperty("about_panel"):WaitForObject(),
 		script:GetCustomProperty("credits_panel"):WaitForObject()
 
 	}

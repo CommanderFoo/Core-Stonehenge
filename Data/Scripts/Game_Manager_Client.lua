@@ -23,11 +23,8 @@ Task.Spawn(function()
 end, transition_time)
 
 Events.Connect("start_game", function()
-	
-	-- @TODO: Remove grave area specific code / rain / thunder etc
-	-- Disable this for now as we no longer use this area.
-
-	--Events.Broadcast("make_it_rain", "grave_area")
+	Events.Broadcast("set_weather_profile", "sunrise")
+	Events.Broadcast("set_weather_profile", "daytime")
 
 	transition_tween = YOOTIL.Tween:new(transition_time, {a = 1}, {a = 0})
 

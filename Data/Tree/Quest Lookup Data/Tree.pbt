@@ -31,7 +31,7 @@ Objects {
     }
     Overrides {
       Name: "cs:quest_delay"
-      Float: 3
+      Float: 1
     }
     Overrides {
       Name: "cs:quest_notification"

@@ -1148,32 +1148,6 @@ Objects {
   }
 }
 Objects {
-  Id: 11536132110693567345
-  Name: "Grave Area"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 14580783129908760267
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Grave Area"
-  }
-}
-Objects {
   Id: 16533621880108686647
   Name: "Rocks Visual"
   Transform {

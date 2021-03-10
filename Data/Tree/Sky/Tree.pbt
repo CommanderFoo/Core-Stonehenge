@@ -1,15 +1,64 @@
 Name: "Sky"
 RootId: 11846917625011430490
 Objects {
+  Id: 12462703319380739545
+  Name: "Star Dome"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11846917625011430490
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Star Brightness"
+      Float: 1.14964938
+    }
+    Overrides {
+      Name: "bp:Star Visibility"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Star Color Cycle"
+      Float: 180
+    }
+    Overrides {
+      Name: "bp:Star Color Intensity"
+      Float: 1.58889627
+    }
+    Overrides {
+      Name: "bp:Real Stars"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 5599558274285934961
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
   Id: 10505154200474359396
   Name: "Sun Light"
   Transform {
     Location {
     }
     Rotation {
-      Pitch: -45.845253
-      Yaw: 33.937191
-      Roll: 8.92735386
+      Pitch: -50
     }
     Scale {
       X: 1
@@ -187,6 +236,10 @@ Objects {
         Value: "mc:eambientcubemapssmall:0"
       }
     }
+    Overrides {
+      Name: "bp:Blend Amount"
+      Float: 0
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -345,6 +398,15 @@ Objects {
     Overrides {
       Name: "bp:Disable Cloud Mask"
       Bool: false
+    }
+    Overrides {
+      Name: "bp:Overall Tint"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {

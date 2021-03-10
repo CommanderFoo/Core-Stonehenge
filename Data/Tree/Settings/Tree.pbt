@@ -110,6 +110,12 @@ Objects {
           Name: "IsMountEnabled"
           Bool: false
         }
+        Overrides {
+          Name: "PlayerLookControlMode"
+          Enum {
+            Value: "mc:elookcontrolmode:relative"
+          }
+        }
       }
     }
     ParameterOverrideMap {

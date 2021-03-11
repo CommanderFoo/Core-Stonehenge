@@ -305,22 +305,22 @@ Objects {
     Overrides {
       Name: "cs:cursor_default_size"
       Vector2 {
-        X: 25
-        Y: 25
+        X: 20
+        Y: 20
       }
     }
     Overrides {
       Name: "cs:reticle_big_size"
       Vector2 {
-        X: 80
-        Y: 80
+        X: 70
+        Y: 70
       }
     }
     Overrides {
       Name: "cs:cursor_big_size"
       Vector2 {
-        X: 80
-        Y: 80
+        X: 70
+        Y: 70
       }
     }
   }

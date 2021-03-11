@@ -109,7 +109,7 @@ local_player.bindingPressedEvent:Connect(function(p, binding)
 
 	if(over_pickup and binding == "ability_primary" and Object.IsValid(pickup_obj)) then
 		if(obj_type == "sub_look") then
-			Events.Broadcast("inspect_object", pickup_obj:GetReference(), true)
+			Events.Broadcast("inspect_object", pickup_obj:GetReference(), true, inspect_cam.fieldOfView)
 		else
 			Events.Broadcast("inventory_add", pickup_obj:GetReference(), true)
 			Events.Broadcast("play_sound", "pickup")

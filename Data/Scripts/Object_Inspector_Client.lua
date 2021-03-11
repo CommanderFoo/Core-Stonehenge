@@ -24,7 +24,7 @@ local_player.bindingReleasedEvent:Connect(function(p, binding)
 	end
 end)
 
-function inspect_object(obj_ref, sub_object)
+function inspect_object(obj_ref, sub_object, fov)
 	Events.Broadcast("can_open_inventory", false)
 	Events.Broadcast("enable_inventory")
 	Events.Broadcast("disable_raycast")
@@ -45,11 +45,22 @@ function inspect_object(obj_ref, sub_object)
 	Events.BroadcastToServer("object_inspector_hide", obj_ref)
 
 	obj:SetWorldPosition(orig_obj:GetWorldPosition())
-	obj:MoveTo(local_player:GetViewWorldPosition(), 1)
 
-	Task.Wait(.5)
-	obj:StopMove()
+	local offset = 120
 
+	if(fov and fov < 90) then
+		offset = 300 - fov
+	end
+
+	local obj_pos = orig_obj:GetWorldPosition()
+	local view_pos = local_player:GetViewWorldPosition()
+	local dir = (view_pos - obj_pos):GetNormalized()
+	local move_to_pos = view_pos + dir * -offset
+
+	if((obj_pos - view_pos).size > offset) then
+		obj:MoveTo(move_to_pos, .5)
+	end
+	
 	UI.SetCanCursorInteractWithUI(true)
 	Events.Broadcast("show_cursor")
 	Events.BroadcastToServer("hide_all_interaction_labels")

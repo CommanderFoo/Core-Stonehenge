@@ -1,6 +1,61 @@
 Name: "Interactables"
 RootId: 13207548860357947295
 Objects {
+  Id: 466089342510191448
+  Name: "Item Look Example"
+  Transform {
+    Location {
+      X: 6600
+      Y: -2635
+      Z: 95
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13207548860357947295
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1855112757633191298
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Item Look Example"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 6611.01172
+            Y: -2396.34375
+            Z: 282.469971
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6872563654101206001
+    }
+  }
+}
+Objects {
   Id: 15442623458383359855
   Name: "Item Pickup Example"
   Transform {

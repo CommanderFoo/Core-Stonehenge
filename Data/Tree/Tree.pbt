@@ -1233,10 +1233,7 @@ Objects {
       Brush {
       }
       Color {
-        R: 0.172186702
-        G: 0.309374958
-        B: 0.240371808
-        A: 1
+        A: 0.5
       }
       TeamSettings {
       }
@@ -1297,10 +1294,10 @@ Objects {
       Brush {
       }
       Color {
-        R: 0.0302084293
-        G: 0.0302084293
-        B: 0.0302084293
-        A: 1
+        R: 1
+        G: 1
+        B: 1
+        A: 0.14
       }
       TeamSettings {
       }
@@ -1415,10 +1412,7 @@ Objects {
       Brush {
       }
       Color {
-        R: 0.172186702
-        G: 0.309374958
-        B: 0.240371808
-        A: 1
+        A: 0.5
       }
       TeamSettings {
       }
@@ -1479,10 +1473,10 @@ Objects {
       Brush {
       }
       Color {
-        R: 0.0302084293
-        G: 0.0302084293
-        B: 0.0302084293
-        A: 1
+        R: 1
+        G: 1
+        B: 1
+        A: 0.14
       }
       TeamSettings {
       }
@@ -1808,9 +1802,6 @@ Objects {
       Brush {
       }
       Color {
-        R: 0.172186702
-        G: 0.309374958
-        B: 0.240371808
         A: 1
       }
       TeamSettings {
@@ -1872,10 +1863,10 @@ Objects {
       Brush {
       }
       Color {
-        R: 0.0302084293
-        G: 0.0302084293
-        B: 0.0302084293
-        A: 1
+        R: 1
+        G: 1
+        B: 1
+        A: 0.14
       }
       TeamSettings {
       }

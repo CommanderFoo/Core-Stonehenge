@@ -1,6 +1,11 @@
 local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
 
-local background = script:GetCustomProperty("background"):WaitForObject()
+local thoughts = script:GetCustomProperty("thoughts"):WaitForObject()
+
+local bubble_1 = script:GetCustomProperty("bubble_1"):WaitForObject()
+local bubble_2 = script:GetCustomProperty("bubble_2"):WaitForObject()
+local bubble_3 = script:GetCustomProperty("bubble_3"):WaitForObject()
+
 local text = script:GetCustomProperty("text"):WaitForObject()
 
 local in_time = script:GetCustomProperty("in_time")
@@ -12,14 +17,19 @@ local current_item = nil
 local in_tween = nil
 local out_tween = nil
 
+local received_thoughts = {}
+
 function on_change(c)
-	local bg_color = background:GetColor()
+	local bubble_color = bubble_1:GetColor()
 	local txt_color = text:GetColor()
 	
-	bg_color.a = c.bg
+	bubble_color.a = c.bg
 	txt_color.a = c.t
 
-	background:SetColor(bg_color)
+	bubble_1:SetColor(bubble_color)
+	bubble_2:SetColor(bubble_color)
+	bubble_3:SetColor(bubble_color)
+
 	text:SetColor(txt_color)
 end
 
@@ -56,6 +66,30 @@ function Tick(dt)
 	end
 end
 
-Events.Connect("add_notification", function(msg)
-	queue:push(msg)
+function get_thought(id)
+	local children = thoughts:GetChildren()
+
+	for i = 1, #children do
+		local data = thoughts:GetChildren()[i]
+
+		if(data:GetCustomProperty("id") == id) then
+			return data:GetCustomProperty("id"), data:GetCustomProperty("message")
+		end
+	end
+
+	return nil
+end
+
+function add_thought_to_notebook(id, msg)
+	received_thoughts[id] = message
+end
+
+Events.Connect("add_thought", function(id, msg)
+	local thought_id, thought_message = get_thought(id)
+
+	if(thought_id and thought_message) then
+		queue:push(thought_message)
+		add_thought_to_notebook(thought_id, thought_message)
+		Events.BroadcastToServer("save_thought", thought_id)
+	end
 end)

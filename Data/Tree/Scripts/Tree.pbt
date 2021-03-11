@@ -20,6 +20,7 @@ Objects {
   ChildIds: 4100779181729332834
   ChildIds: 6380753851518955502
   ChildIds: 16900010184290640698
+  ChildIds: 17645753054259915518
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -28,6 +29,33 @@ Objects {
   }
   NetworkContext {
     Type: Server
+  }
+}
+Objects {
+  Id: 17645753054259915518
+  Name: "Character_Thoughts_Server"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1946733176415873648
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 803564226933659270
+    }
   }
 }
 Objects {
@@ -234,6 +262,7 @@ Objects {
   ChildIds: 6144095686271325409
   ChildIds: 1654015060712776403
   ChildIds: 17390153026596301370
+  ChildIds: 4042031689843970374
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -241,6 +270,83 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 4042031689843970374
+  Name: "Character_Thoughts_Client"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14858104107515101237
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
+      }
+    }
+    Overrides {
+      Name: "cs:bubble_1"
+      ObjectReference {
+        SelfId: 14646185269157999619
+      }
+    }
+    Overrides {
+      Name: "cs:bubble_2"
+      ObjectReference {
+        SelfId: 10011664948261367810
+      }
+    }
+    Overrides {
+      Name: "cs:bubble_3"
+      ObjectReference {
+        SelfId: 12026465710188293109
+      }
+    }
+    Overrides {
+      Name: "cs:text"
+      ObjectReference {
+        SelfId: 13703844660524301647
+      }
+    }
+    Overrides {
+      Name: "cs:in_time"
+      Float: 0.5
+    }
+    Overrides {
+      Name: "cs:stay_time"
+      Float: 10
+    }
+    Overrides {
+      Name: "cs:out_time"
+      Float: 0.5
+    }
+    Overrides {
+      Name: "cs:thoughts"
+      ObjectReference {
+        SelfId: 3531142988586757998
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 11161198488565903587
+    }
   }
 }
 Objects {
@@ -409,12 +515,6 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:notification"
-      ObjectReference {
-        SelfId: 8705112589880056221
-      }
-    }
-    Overrides {
       Name: "cs:background"
       ObjectReference {
         SelfId: 11491370129659431548
@@ -425,6 +525,18 @@ Objects {
       ObjectReference {
         SelfId: 2694120064592384546
       }
+    }
+    Overrides {
+      Name: "cs:in_time"
+      Float: 0.5
+    }
+    Overrides {
+      Name: "cs:stay_time"
+      Float: 6
+    }
+    Overrides {
+      Name: "cs:out_time"
+      Float: 0.5
     }
   }
   Collidable_v2 {

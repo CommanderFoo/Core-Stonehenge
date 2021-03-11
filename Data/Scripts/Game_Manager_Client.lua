@@ -43,6 +43,8 @@ Events.Connect("start_game", function()
 
 		Events.Broadcast("show_tent_button")
 		
+		Events.Broadcast("add_thought", 1)
+		
 		transition_tween = nil
 
 		-- @TODO: enable player depending on last game state

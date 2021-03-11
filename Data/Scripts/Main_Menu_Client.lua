@@ -201,8 +201,7 @@ function load_game(new_game)
 	transition_tween = YOOTIL.Tween:new(transition_time, {a = 0}, {a = 1})
 
 	transition_tween:on_start(function()
-		UI.SetCanCursorInteractWithUI(false)
-		UI.SetCursorVisible(false)
+		Events.Broadcast("hide_cursor")
 
 		transition_loader.visibility = Visibility.FORCE_ON
 	end)
@@ -253,7 +252,7 @@ Events.Connect("transition_to_menu", function()
 		Events.Broadcast("play_bird_sounds")
 
 		UI.SetCanCursorInteractWithUI(true)
-		UI.SetCursorVisible(true)
+		Events.Broadcast("show_cursor")
 
 		transition_tween = nil
 	end)

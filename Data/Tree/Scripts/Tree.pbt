@@ -523,6 +523,12 @@ Objects {
   ParentId: 14858104107515101237
   UnregisteredParameters {
     Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
+      }
+    }
+    Overrides {
       Name: "cs:lookup"
       ObjectReference {
         SelfId: 17488655066859996786
@@ -532,6 +538,16 @@ Objects {
       Name: "cs:slots"
       ObjectReference {
         SelfId: 424584652366831368
+      }
+    }
+    Overrides {
+      Name: "cs:key_binding"
+      String: "i"
+    }
+    Overrides {
+      Name: "cs:inventory_ui"
+      ObjectReference {
+        SelfId: 2327109826205371697
       }
     }
   }

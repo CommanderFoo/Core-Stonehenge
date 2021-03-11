@@ -25,6 +25,8 @@ local_player.bindingReleasedEvent:Connect(function(p, binding)
 end)
 
 function inspect_object(obj_ref, sub_object)
+	Events.Broadcast("can_open_inventory", false)
+	Events.Broadcast("enable_inventory")
 	Events.Broadcast("disable_raycast")
 
 	if(not sub_object) then
@@ -49,7 +51,6 @@ function inspect_object(obj_ref, sub_object)
 	obj:StopMove()
 
 	UI.SetCanCursorInteractWithUI(true)
-
 	Events.Broadcast("show_cursor")
 	Events.BroadcastToServer("hide_all_interaction_labels")
 
@@ -92,8 +93,6 @@ function put_down_object()
 	if(not is_sub_object) then
 		Events.BroadcastToServer("enable_player", local_player)
 		Events.BroadcastToServer("enable_all_interaction_labels")
-	
-		UI.SetCanCursorInteractWithUI(false)
 
 		Events.Broadcast("hide_cursor")
 	end
@@ -101,6 +100,8 @@ function put_down_object()
 	put_down_button.visibility = Visibility.FORCE_OFF
 
 	Events.Broadcast("enable_raycast")
+	Events.Broadcast("can_open_inventory", true)
+	Events.Broadcast("disable_inventory")
 end
 
 put_down_button.clickedEvent:Connect(put_down_object)

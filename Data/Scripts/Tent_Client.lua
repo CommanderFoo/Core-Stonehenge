@@ -17,22 +17,23 @@ leave_tent_button.unhoveredEvent:Connect(function()
 end)
 
 leave_tent_button.clickedEvent:Connect(function()
-	UI.SetCanCursorInteractWithUI(false)
 	leave_tent_button.visibility = Visibility.FORCE_OFF
 
-	if(move_to_spawn) then
-		Events.Broadcast("move_spawn", spawn_pos, spawn_rot)
-	end
-
-	Events.BroadcastToServer("enable_player", local_player)
-	Events.Broadcast("clear_player_camera", 0.5)
+	Events.Broadcast("disable_inventory")
+	Events.Broadcast("can_open_inventory", true)
+	Events.Broadcast("clear_player_camera", 0.2)
 	Events.Broadcast("hide_cursor")
 	Events.Broadcast("enable_raycast")
+
+	Task.Wait(.2)
+	Events.BroadcastToServer("enable_player", local_player)
 end)
 
 Events.Connect("show_tent_button", function()
 	Events.Broadcast("disable_raycast")
 	Events.Broadcast("show_cursor")
+	Events.Broadcast("enable_inventory")
+
 	UI.SetCanCursorInteractWithUI(true)
 	leave_tent_button.visibility = Visibility.FORCE_ON
 end)

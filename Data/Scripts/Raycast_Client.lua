@@ -51,9 +51,9 @@ function Tick(dt)
 			over_pickup = true
 			pickup_obj = obj
 		end
-	end
 
-	Events.Broadcast("change_reticle", reticle)
+		Events.Broadcast("change_reticle", reticle)
+	end
 end
 
 Events.Connect("disable_raycast", function()

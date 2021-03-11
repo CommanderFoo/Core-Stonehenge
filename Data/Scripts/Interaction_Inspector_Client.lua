@@ -25,6 +25,9 @@ for k, trigger in ipairs(interactables:FindDescendantsByType("Trigger")) do
 	trigger.interactedEvent:Connect(function(obj, player)
 		current_trigger = obj
 		
+		Events.Broadcast("can_open_inventory", false)
+		Events.Broadcast("enable_inventory")
+
 		Events.BroadcastToServer("hide_interaction_label", obj:GetReference())
 		Events.Broadcast("hide_cursor")
 		
@@ -88,8 +91,10 @@ back_button.clickedEvent:Connect(function()
 	Events.Broadcast("hide_cursor")
 	is_inspecting = false
 
-	UI.SetCanCursorInteractWithUI(false)
 	Events.Broadcast("enable_raycast")
+
+	Events.Broadcast("can_open_inventory", true)
+	Events.Broadcast("disable_inventory")
 end)
 
 local_player.bindingPressedEvent:Connect(function(p, binding)

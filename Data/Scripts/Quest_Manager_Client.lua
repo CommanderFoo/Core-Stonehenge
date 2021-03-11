@@ -15,7 +15,7 @@ local current_quest_items = {}
 
 local quest_tween = nil
 
-function next_quest()
+function next_quest(broadcast_event_after)
 	if(has_quest) then
 		remove_current_quest()
 	end
@@ -72,6 +72,10 @@ function next_quest()
 
 		if(string.len(quest_data.quest_inventory_item) > 1) then
 			Events.Broadcast("inventory_add", quest_data.quest_inventory_item)
+		end
+
+		if(broadcast_event_after) then
+			Events.Broadcast(broadcast_event_after)
 		end
 	end)
 

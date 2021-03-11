@@ -7,7 +7,7 @@ Assets {
       RootId: 9252116692543917023
       Objects {
         Id: 9252116692543917023
-        Name: "Random Book 1 UI"
+        Name: "UI Item Example"
         Transform {
           Scale {
             X: 1
@@ -23,8 +23,8 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: 80
-          Height: 80
+          Width: 90
+          Height: 90
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -35,9 +35,10 @@ Assets {
               Id: 9856877556590816424
             }
             Color {
-              R: 0.270079136
-              B: 0.820000052
-              A: 1
+              R: 1
+              G: 1
+              B: 1
+              A: 0.5
             }
             TeamSettings {
             }

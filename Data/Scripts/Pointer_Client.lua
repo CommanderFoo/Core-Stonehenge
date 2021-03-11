@@ -33,6 +33,8 @@ Events.Connect("show_cursor", function(type)
 	local type = type or "default"
 
 	if(cursor[type]) then
+		--UI.SetCanCursorInteractWithUI(true)
+
 		reticle_ui.visibility = Visibility.FORCE_OFF
 		current_cursor = cursor[type]
 		cursor_ui.visibility = Visibility.FORCE_ON
@@ -51,6 +53,7 @@ Events.Connect("show_cursor", function(type)
 end)
 
 Events.Connect("hide_cursor", function()
+	UI.SetCanCursorInteractWithUI(false)
 	display_cursor = false
 	cursor_ui.visibility = Visibility.FORCE_OFF
 	reticle_ui.visibility = Visibility.FORCE_ON

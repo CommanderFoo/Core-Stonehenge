@@ -24,20 +24,22 @@ end, transition_time)
 
 Events.Connect("start_game", function()
 	Events.Broadcast("set_player_camera", "tent", 0)
-	Events.Broadcast("show_tent_button")
-	Events.Broadcast("set_weather_profile", "sunrise")
+
+	-- @TODO: Enable this
+	--Events.Broadcast("set_weather_profile", "sunrise")
 	Events.Broadcast("set_weather_profile", "daytime")
 
 	transition_tween = YOOTIL.Tween:new(transition_time, {a = 1}, {a = 0})
 
-	Events.Broadcast("show_dynamic_ui")
+	--Events.Broadcast("show_dynamic_ui")
 	Events.Broadcast("show_static_ui")
 
 	transition_tween:on_complete(function()
 		transition_loader.visibility = Visibility.FORCE_OFF
 
-		Events.Broadcast("next_quest")
-
+		Events.Broadcast("show_tent_button")
+		Events.Broadcast("show_inventory")
+		Events.Broadcast("next_quest", "enable_inventory")
 		Events.Broadcast("play_bird_sounds")
 
 		transition_tween = nil

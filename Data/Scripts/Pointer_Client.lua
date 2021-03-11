@@ -9,7 +9,9 @@ local cursor = {
 
 	["look"] = script:GetCustomProperty("look"),
 	["pickup"] = script:GetCustomProperty("pickup"),
-	["default"] = script:GetCustomProperty("default")
+	["default"] = script:GetCustomProperty("default"),
+	["inventory_look"] = script:GetCustomProperty("look"),
+	["combine"] = script:GetCustomProperty("combine")
 
 }
 
@@ -39,7 +41,7 @@ Events.Connect("show_cursor", function(type)
 		current_cursor = cursor[type]
 		cursor_ui.visibility = Visibility.FORCE_ON
 
-		if(type == "default") then
+		if(type == "default" or type == "inventory_look" or type == "combine") then
 			cursor_ui.width = cursor_default_size.x
 			cursor_ui.height = cursor_default_size.y
 		else

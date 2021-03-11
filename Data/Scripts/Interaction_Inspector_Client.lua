@@ -20,13 +20,11 @@ local current_trigger = nil
 local over_pickup = false
 local pickup_obj = nil
 local obj_type = nil
+local over_inventory = false
 
 for k, trigger in ipairs(interactables:FindDescendantsByType("Trigger")) do
 	trigger.interactedEvent:Connect(function(obj, player)
 		current_trigger = obj
-		
-		Events.Broadcast("can_open_inventory", false)
-		Events.Broadcast("enable_inventory")
 
 		Events.BroadcastToServer("hide_interaction_label", obj:GetReference())
 		Events.Broadcast("hide_cursor")
@@ -58,6 +56,8 @@ for k, trigger in ipairs(interactables:FindDescendantsByType("Trigger")) do
 		
 		is_inspecting = true
 		
+		Events.Broadcast("can_open_inventory", false)
+		Events.Broadcast("enable_inventory")
 		Events.Broadcast("show_cursor")
 
 		UI.SetCanCursorInteractWithUI(true)
@@ -160,7 +160,7 @@ function Tick()
 		inspect_cam:SetWorldRotation(rot)
 	end
 
-	if(is_inspecting) then
+	if(is_inspecting and not over_inventory) then
 		pickup_obj = nil
 		obj_type = nil
 
@@ -191,3 +191,7 @@ function Tick()
 		Events.Broadcast("show_cursor", cursor)
 	end
 end
+
+Events.Connect("over_inventory", function(is_over)
+	over_inventory = is_over
+end)

@@ -5,6 +5,7 @@ local over_pickup = false
 local pickup_obj = nil
 local obj_type = nil
 local can_raycast = false
+local over_inventory
 
 local_player.bindingPressedEvent:Connect(function(p, binding)
 	if(can_raycast and over_pickup and binding == "ability_primary" and Object.IsValid(pickup_obj)) then
@@ -18,7 +19,7 @@ local_player.bindingPressedEvent:Connect(function(p, binding)
 end)
 
 function Tick(dt)
-	if(not can_raycast) then
+	if(not can_raycast or over_inventory) then
 		return
 	end
 
@@ -62,4 +63,8 @@ end)
 
 Events.Connect("enable_raycast", function()
 	can_raycast = true
+end)
+
+Events.Connect("over_inventory", function(is_over)
+	over_inventory = is_over
 end)

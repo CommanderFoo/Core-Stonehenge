@@ -28,6 +28,14 @@ Assets {
           Id: 841534158063459245
         }
       }
+      Overrides {
+        Name: "cs:can_look"
+        Bool: false
+      }
+      Overrides {
+        Name: "cs:can_combine"
+        Bool: false
+      }
     }
   }
   SerializationVersion: 76

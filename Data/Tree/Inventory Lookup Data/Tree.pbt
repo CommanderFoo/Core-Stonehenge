@@ -34,6 +34,10 @@ Objects {
         Id: 17916930565914598543
       }
     }
+    Overrides {
+      Name: "cs:can_combine"
+      Bool: true
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -128,6 +132,10 @@ Objects {
         Id: 17916930565914598543
       }
     }
+    Overrides {
+      Name: "cs:can_combine"
+      Bool: true
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -174,6 +182,10 @@ Objects {
       AssetReference {
         Id: 10102641314703158064
       }
+    }
+    Overrides {
+      Name: "cs:can_look"
+      Bool: true
     }
   }
   Collidable_v2 {

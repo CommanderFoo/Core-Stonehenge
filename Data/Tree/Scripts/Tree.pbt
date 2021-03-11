@@ -290,6 +290,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:combine"
+      AssetReference {
+        Id: 17427903691638175796
+      }
+    }
+    Overrides {
       Name: "cs:reticle_default_size"
       Vector2 {
         X: 12

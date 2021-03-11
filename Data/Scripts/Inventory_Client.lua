@@ -22,6 +22,25 @@ for i = 1, max_slots do
 		icon = nil
 
 	}
+
+	inventory[i].button.hoveredEvent:Connect(function()
+		if(inventory[i].data ~= nil) then
+			Events.Broadcast("over_inventory", true)
+
+			local type = "inventory_look"
+
+			if(inventory[i].data:GetCustomProperty("can_combine")) then
+				type = "combine"
+			end
+
+			Events.Broadcast("show_cursor", type)
+		end
+	end)
+
+	inventory[i].button.unhoveredEvent:Connect(function()
+		Events.Broadcast("show_cursor", "default")
+		Events.Broadcast("over_inventory", false)
+	end)
 end
 
 function get_free_slot()

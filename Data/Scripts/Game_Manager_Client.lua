@@ -37,11 +37,12 @@ Events.Connect("start_game", function()
 	transition_tween:on_complete(function()
 		transition_loader.visibility = Visibility.FORCE_OFF
 
-		Events.Broadcast("show_tent_button")
 		Events.Broadcast("show_inventory")
 		Events.Broadcast("next_quest", "enable_inventory")
 		Events.Broadcast("play_bird_sounds")
 
+		Events.Broadcast("show_tent_button")
+		
 		transition_tween = nil
 
 		-- @TODO: enable player depending on last game state

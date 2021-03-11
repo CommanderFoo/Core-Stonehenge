@@ -35,5 +35,7 @@ Events.Connect("show_tent_button", function()
 	Events.Broadcast("enable_inventory")
 
 	UI.SetCanCursorInteractWithUI(true)
+
+	Task.Wait(1)
 	leave_tent_button.visibility = Visibility.FORCE_ON
 end)

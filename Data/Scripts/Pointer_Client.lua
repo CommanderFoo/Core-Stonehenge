@@ -22,9 +22,10 @@ local current_cursor = cursor["default"]
 function Tick()
 	if(display_cursor) then
 		local m_pos = UI.GetCursorPosition()
+		local screen = UI.GetScreenSize()
 
-		cursor_ui.x = m_pos.x
-		cursor_ui.y = m_pos.y
+		cursor_ui.x = m_pos.x - (screen.x / 2)
+		cursor_ui.y = m_pos.y - (screen.y / 2)
 	else
 		cursor_ui.x = 0
 		cursor_ui.y = 0
@@ -41,7 +42,7 @@ Events.Connect("show_cursor", function(type)
 		current_cursor = cursor[type]
 		cursor_ui.visibility = Visibility.FORCE_ON
 
-		if(type == "default" or type == "inventory_look" or type == "combine") then
+		if(type == "default") then
 			cursor_ui.width = cursor_default_size.x
 			cursor_ui.height = cursor_default_size.y
 		else

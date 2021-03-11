@@ -5,6 +5,10 @@ local slots = script:GetCustomProperty("slots"):WaitForObject()
 local key_binding = script:GetCustomProperty("key_binding")
 local inventory_ui = script:GetCustomProperty("inventory_ui"):WaitForObject()
 
+local hover_color = script:GetCustomProperty("hover_color")
+local unhover_color = script:GetCustomProperty("unhover_color")
+local active_color = script:GetCustomProperty("active_color")
+
 local local_player = Game.GetLocalPlayer()
 
 local inventory = {}
@@ -12,6 +16,7 @@ local max_slots = #slots:GetChildren()
 local inventory_active = false
 local can_open_inventory = false
 local can_use_inventory = false
+local active_slot = nil
 
 for i = 1, max_slots do
 	inventory[i] = {
@@ -19,12 +24,15 @@ for i = 1, max_slots do
 		data = nil,
 		quantity = 0,
 		button = slots:GetChildren()[i],
+		background = slots:GetChildren()[i]:FindChildByName("Background"),
 		icon = nil
 
 	}
 
 	inventory[i].button.hoveredEvent:Connect(function()
 		if(inventory[i].data ~= nil) then
+			inventory[i].background:SetColor(hover_color)
+
 			Events.Broadcast("over_inventory", true)
 
 			local type = "inventory_look"
@@ -38,9 +46,33 @@ for i = 1, max_slots do
 	end)
 
 	inventory[i].button.unhoveredEvent:Connect(function()
-		Events.Broadcast("show_cursor", "default")
-		Events.Broadcast("over_inventory", false)
+		if(not inventory[i].active) then
+			inventory[i].background:SetColor(unhover_color)
+
+			Events.Broadcast("show_cursor", "default")
+			Events.Broadcast("over_inventory", false)
+		end
 	end)
+
+	--[[
+	inventory[i].button.clickedEvent:Connect(function()
+		clean_up_active_data()
+
+		if(inventory[i].data ~= nil) then
+			inventory[i].background:SetColor(active_color)
+			inventory[i].active = true
+			active_slot = inventory[i]
+		end
+	end)
+	--]]
+end
+
+function clean_up_active_data()
+	if(active_slot ~= nil) then
+		active_slot.active = false
+		active_slot.background:SetColor(unhover_color)
+		active_slot = nil
+	end
 end
 
 function get_free_slot()
@@ -217,6 +249,8 @@ function disable_inventory()
 			inventory[i].icon:SetColor(Color.New(1, 1, 1, .5))
 		end
 	end
+
+	clean_up_active_data()
 end
 
 function show_inventory()
@@ -225,6 +259,7 @@ end
 
 function hide_inventory()
 	inventory_ui.visibility = Visibility.FORCE_OFF
+	clean_up_active_data()
 end
 
 --[[

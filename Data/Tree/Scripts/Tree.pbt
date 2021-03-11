@@ -556,6 +556,30 @@ Objects {
         SelfId: 2327109826205371697
       }
     }
+    Overrides {
+      Name: "cs:hover_color"
+      Color {
+        R: 0.109375156
+        G: 0.109375156
+        B: 0.109375156
+        A: 0.3
+      }
+    }
+    Overrides {
+      Name: "cs:unhover_color"
+      Color {
+        A: 0.3
+      }
+    }
+    Overrides {
+      Name: "cs:active_color"
+      Color {
+        R: 0.109375156
+        G: 0.109375156
+        B: 0.109375156
+        A: 0.3
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

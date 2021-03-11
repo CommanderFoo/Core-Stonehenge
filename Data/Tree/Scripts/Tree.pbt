@@ -45,6 +45,31 @@ Objects {
     }
   }
   ParentId: 1946733176415873648
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:spawn_point"
+      ObjectReference {
+        SelfId: 16813558807825262224
+      }
+    }
+    Overrides {
+      Name: "cs:spawn_pos"
+      Vector {
+        X: 7553.3208
+        Y: -2377.02344
+        Z: 250.106232
+      }
+    }
+    Overrides {
+      Name: "cs:spawn_rot"
+      Vector {
+      }
+    }
+    Overrides {
+      Name: "cs:move_spawn"
+      Bool: true
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -504,7 +529,7 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:items_container"
+      Name: "cs:slots"
       ObjectReference {
         SelfId: 424584652366831368
       }
@@ -771,6 +796,12 @@ Objects {
       Name: "cs:tent_camera"
       ObjectReference {
         SelfId: 7178935870193632763
+      }
+    }
+    Overrides {
+      Name: "cs:spawn_point"
+      ObjectReference {
+        SelfId: 16813558807825262224
       }
     }
   }

@@ -1,8 +1,9 @@
 Game.playerJoinedEvent:Connect(function(player)
-	--disable_player(player, true)
+	disable_player(player, true)
 	--set_player_stance(player, "unarmed_sit_ground_crossed")
 
 	player:SetVisibility(false)
+
 end)
 
 function disable_player(player, allow_camera)
@@ -24,6 +25,7 @@ end
 function set_player_stance(player, stance)
 	player.animationStance = stance
 end
+
 
 Events.Connect("set_player_stance", set_player_stance)
 Events.Connect("disable_player", disable_player)

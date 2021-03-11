@@ -19,7 +19,6 @@ Objects {
   }
   ParentId: 14580783129908760267
   ChildIds: 3357941039625446513
-  ChildIds: 16813558807825262224
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -28,37 +27,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-}
-Objects {
-  Id: 16813558807825262224
-  Name: "Spawn Point"
-  Transform {
-    Location {
-      X: -800
-      Z: 500
-    }
-    Rotation {
-      Yaw: 2.01397347
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4644876479372150459
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  PlayerSpawnPoint {
-    TeamInt: 1
-    PlayerScaleMultiplier: 1
   }
 }
 Objects {
@@ -84,7 +52,7 @@ Objects {
   ChildIds: 3099834130747018429
   ChildIds: 2873890790058773441
   ChildIds: 12900844608420408019
-  ChildIds: 6288594926407137994
+  ChildIds: 12469826784523437157
   ChildIds: 16499265690316895446
   ChildIds: 3272321133416699616
   ChildIds: 6541033542089532109
@@ -2292,9 +2260,15 @@ Objects {
   }
 }
 Objects {
-  Id: 6288594926407137994
+  Id: 12469826784523437157
   Name: "Game Portal"
   Transform {
+    Location {
+      Z: 300
+    }
+    Rotation {
+      Yaw: -90
+    }
     Scale {
       X: 1
       Y: 1
@@ -2302,68 +2276,290 @@ Objects {
     }
   }
   ParentId: 3357941039625446513
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 6520129888362863184
-      value {
-        Overrides {
-          Name: "bp:Color A"
-          Color {
-            G: 0.572097063
-            B: 0.696666598
-            A: 1
-          }
-        }
-        Overrides {
-          Name: "bp:Color B"
-          Color {
-            G: 0.0233994704
-            B: 0.176666617
-            A: 1
-          }
-        }
-        Overrides {
-          Name: "bp:Color C"
-          Color {
-            R: 0.50333333
-            G: 0.193333343
-            A: 1
-          }
-        }
+  ChildIds: 8886855080979727440
+  ChildIds: 11782799264375650451
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:DestinationGame"
+      String: "b983bc/core-plaza"
+    }
+    Overrides {
+      Name: "cs:DestinationGame:tooltip"
+      String: "The id of the game that this will portal players to. Example: The game ID for the URL https://www.coregames.com/games/577d80/core-royale is 577d80/core-royale."
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 12469826784523437157
+    SubobjectId: 14546490105472636833
+    InstanceId: 6288594926407137994
+    TemplateId: 5805811203765593128
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 11782799264375650451
+  Name: "Geo"
+  Transform {
+    Location {
+      Z: 150
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12469826784523437157
+  ChildIds: 17089268504873773998
+  ChildIds: 3761082911724984055
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 11782799264375650451
+    SubobjectId: 14363900378802400087
+    InstanceId: 6288594926407137994
+    TemplateId: 5805811203765593128
+  }
+}
+Objects {
+  Id: 3761082911724984055
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11782799264375650451
+  ChildIds: 4516579760662579604
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+  InstanceHistory {
+    SelfId: 3761082911724984055
+    SubobjectId: 5827717503969477939
+    InstanceId: 6288594926407137994
+    TemplateId: 5805811203765593128
+  }
+}
+Objects {
+  Id: 4516579760662579604
+  Name: "Portal VFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -89.9999619
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3761082911724984055
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 0.4
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Background Texture"
+      Enum {
+        Value: "mc:eportalbackground:15"
       }
     }
-    ParameterOverrideMap {
-      key: 14546490105472636833
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Game Portal"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            Z: 300
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -90
-          }
-        }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
       }
     }
-    TemplateAsset {
-      Id: 5805811203765593128
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
     }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0.247848794
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        G: 0.572097063
+        B: 0.696666598
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        G: 0.0233994704
+        B: 0.176666617
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.50333333
+        G: 0.193333343
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 6677237403455816226
+    }
+  }
+  InstanceHistory {
+    SelfId: 4516579760662579604
+    SubobjectId: 6520129888362863184
+    InstanceId: 6288594926407137994
+    TemplateId: 5805811203765593128
+  }
+}
+Objects {
+  Id: 17089268504873773998
+  Name: "Ring - Thin"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Roll: 89.9999542
+    }
+    Scale {
+      X: 5
+      Y: 5
+      Z: 5
+    }
+  }
+  ParentId: 11782799264375650451
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10184847056121543272
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.205078766
+        G: 0.205078766
+        B: 0.205078766
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16353917461806733124
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 17089268504873773998
+    SubobjectId: 9942679019600230506
+    InstanceId: 6288594926407137994
+    TemplateId: 5805811203765593128
+  }
+}
+Objects {
+  Id: 8886855080979727440
+  Name: "Trigger"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 3.00000024
+      Y: 0.5
+      Z: 3
+    }
+  }
+  ParentId: 12469826784523437157
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    Interactable: true
+    InteractionLabel: "Take Portal to Another Core World"
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 8886855080979727440
+    SubobjectId: 2271583699116595092
+    InstanceId: 6288594926407137994
+    TemplateId: 5805811203765593128
   }
 }
 Objects {
@@ -3745,6 +3941,7 @@ Objects {
     Location {
       X: 6692.4917
       Y: -2385.73022
+      Z: -13.6765137
     }
     Rotation {
     }
@@ -3909,8 +4106,8 @@ Objects {
   Transform {
     Location {
       X: 1105.37939
-      Y: -448.200439
-      Z: 92.2763062
+      Y: -460.683105
+      Z: 121.106766
     }
     Rotation {
     }

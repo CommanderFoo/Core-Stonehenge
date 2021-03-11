@@ -1,30 +1,35 @@
 local inventory = {}
 
-function add(player, inventory_id, quantity, obj_ref, remove_from_world)
+function add(player, slot_index, inventory_id, quantity, obj_ref, remove_from_world)
 	if(remove_from_world) then
 		local obj = obj_ref:GetObject()
 		
 		obj:Destroy()
 	end
 
-	inventory[inventory_id] = quantity
+	inventory[slot_index] = {
+		
+		inventory_id = inventory_id,
+		quantity = quantity
+
+	}
 end
 
-function increase(player, inventory_id, quantity)
-	if(inventory[inventory_id] ~= nil) then
-		inventory[inventory_id] = inventory[inventory_id] + quantity
+function increase(player, slot_index, quantity)
+	if(inventory[slot_index] ~= nil) then
+		inventory[slot_index].quantity = inventory[slot_index].quantity + quantity
 	end
 end
 
-function remove(player, inventory_id)
-	if(inventory[inventory_id] ~= nil) then
-		inventory[inventory_id] = nil
+function remove(player, slot_index)
+	if(inventory[slot_index] ~= nil) then
+		inventory[slot_index] = nil
 	end
 end
 
-function decrease(player, inventory_id, quantity)
-	if(inventory[inventory_id] ~= nil) then
-		inventory[inventory_id] = math.max(0, inventory[inventory_id] - quantity)
+function decrease(player, slot_index, quantity)
+	if(inventory[slot_index] ~= nil) then
+		inventory[slot_index] = math.max(0, inventory[slot_index].quantity - quantity)
 	end
 end
 

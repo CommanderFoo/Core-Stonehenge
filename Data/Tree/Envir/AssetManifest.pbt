@@ -35,6 +35,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16353917461806733124
+  Name: "Ring - Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_torus_003"
+  }
+}
+Assets {
   Id: 11536722980747302158
   Name: "Point To Point Electrical Beam VFX"
   PlatformAssetType: 8
@@ -68,6 +77,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_end_table_001"
+  }
+}
+Assets {
+  Id: 10184847056121543272
+  Name: "Basic Material"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_basic_pbr_material_001"
   }
 }
 Assets {
@@ -158,6 +176,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_001"
+  }
+}
+Assets {
+  Id: 6677237403455816226
+  Name: "Portal VFX"
+  PlatformAssetType: 6
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_portal"
   }
 }
 Assets {

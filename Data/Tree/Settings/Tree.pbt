@@ -1,6 +1,38 @@
 Name: "Settings"
 RootId: 10440749520176002398
 Objects {
+  Id: 16813558807825262224
+  Name: "Spawn Point"
+  Transform {
+    Location {
+      X: 7553.3208
+      Y: -2377.02344
+      Z: 250.106232
+    }
+    Rotation {
+      Yaw: 180
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10440749520176002398
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  PlayerSpawnPoint {
+    TeamInt: 1
+    PlayerScaleMultiplier: 1
+  }
+}
+Objects {
   Id: 7367735074338159388
   Name: "Game Settings"
   Transform {

@@ -152,6 +152,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2685428558813474443
+  Name: "Frame Outline Thin 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameOutline_020"
+  }
+}
+Assets {
   Id: 1260970173436881805
   Name: "Icon Arrow Up"
   PlatformAssetType: 9

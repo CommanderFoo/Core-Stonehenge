@@ -60,38 +60,6 @@ Objects {
   }
 }
 Objects {
-  Id: 16813558807825262224
-  Name: "Spawn Point"
-  Transform {
-    Location {
-      X: 7540.42285
-      Y: -2408.92798
-      Z: 229.412872
-    }
-    Rotation {
-      Yaw: -177.986191
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 10440749520176002398
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  PlayerSpawnPoint {
-    TeamInt: 1
-    PlayerScaleMultiplier: 1
-  }
-}
-Objects {
   Id: 1023850042715320700
   Name: "First Person Camera Settings"
   Transform {

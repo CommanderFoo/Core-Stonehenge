@@ -36,11 +36,11 @@ Objects {
     }
     Overrides {
       Name: "cs:can_combine"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:can_look"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "cs:model_asset"
@@ -219,11 +219,11 @@ Objects {
     }
     Overrides {
       Name: "cs:can_combine"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:can_look"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "cs:model_asset"

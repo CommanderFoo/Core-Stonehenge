@@ -1,3 +1,79 @@
+local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
+
+local interactables = script:GetCustomProperty("interactables"):WaitForObject()
+
+local inspect_cam = script:GetCustomProperty("inspect_cam"):WaitForObject()
+
+local lerp_time = script:GetCustomProperty("lerp_time")
+local debug = script:GetCustomProperty("debug")
+
+local back_button = script:GetCustomProperty("back_button"):WaitForObject()
+local back_hover_color = script:GetCustomProperty("back_hover_color")
+local back_unhover_color = script:GetCustomProperty("back_unhover_color")
+
+local local_player = Game.GetLocalPlayer()
+
+local current_trigger = nil
+
+for k, trigger in ipairs(interactables:FindDescendantsByType("Trigger")) do
+	trigger.interactedEvent:Connect(function(obj, player)
+		current_trigger = obj
+
+		Events.BroadcastToServer("hide_interaction_label", obj:GetReference())
+		Events.Broadcast("interacting", true)
+		Events.Broadcast("enable_inventory")
+		
+		local cam_pos = obj:GetCustomProperty("cam_pos")
+		local cam_rot = obj:GetCustomProperty("cam_rot")
+
+		if(debug) then
+			if(YOOTIL.Vector3.is_zero(cam_pos)) then
+				cam_pos = obj:GetWorldPosition()
+			end
+		end
+
+		Events.Broadcast("set_player_camera", "inspection", lerp_time, {
+			
+			position = cam_pos,
+			rotation = cam_rot
+		
+		})
+
+		Task.Wait(lerp_time)
+
+		Events.Broadcast("enable_inventory")
+		UI.SetCanCursorInteractWithUI(true)
+		back_button.visibility = Visibility.FORCE_ON
+	end)
+end
+
+back_button.hoveredEvent:Connect(function()
+	back_button:FindDescendantByName("Background"):SetColor(back_hover_color)
+end)
+
+back_button.unhoveredEvent:Connect(function()
+	back_button:FindDescendantByName("Background"):SetColor(back_unhover_color)
+end)
+
+back_button.clickedEvent:Connect(function()
+	Events.Broadcast("put_down_object")
+	
+	back_button.visibility = Visibility.FORCE_OFF
+
+	Events.Broadcast("clear_player_camera", lerp_time)
+
+	Task.Wait(lerp_time)
+
+	if(current_trigger ~= nil) then
+		Events.BroadcastToServer("show_interaction_label", current_trigger:GetReference())
+		current_trigger = nil
+	end
+
+	Events.Broadcast("interacting", false, inventory_open)
+	Events.Broadcast("hide_cursor")
+	Events.Broadcast("disable_inventory")
+end)
+
 --[[local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
 
 local interactables = script:GetCustomProperty("interactables"):WaitForObject()

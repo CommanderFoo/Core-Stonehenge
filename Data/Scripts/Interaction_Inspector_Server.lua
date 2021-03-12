@@ -18,7 +18,7 @@ Events.Connect("hide_all_interaction_labels", function()
 	end
 end)
 
-Events.Connect("enable_all_interaction_labels", function()
+Events.Connect("show_all_interaction_labels", function()
 	for k, i in pairs(interactables:FindDescendantsByType("Trigger")) do
 		i.isInteractable = true
 	end

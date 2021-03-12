@@ -654,10 +654,6 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:cam_fov"
-      Float: 50
-    }
-    Overrides {
       Name: "cs:quest_id"
       Int: 0
     }

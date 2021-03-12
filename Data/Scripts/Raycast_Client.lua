@@ -7,7 +7,6 @@ local inventory_open = false
 local over_pickup = false
 local pickup_obj = nil
 local obj_type = nil
-local inspecting = false
 local over_inventory = false
 
 local_player.bindingPressedEvent:Connect(function(p, binding)
@@ -116,8 +115,14 @@ Events.Connect("inspecting", function(state, inventory_state)
 	elseif(not inventory_open) then
 		ui_raycasting = false
 	end
+end)
 
-	inspecting = state
+Events.Connect("interacting", function(state, inventory_state)
+	if(state) then
+		ui_raycasting = true
+	elseif(not inventory_open) then
+		ui_raycasting = false
+	end
 end)
 
 Events.Connect("over_inventory", function(state)

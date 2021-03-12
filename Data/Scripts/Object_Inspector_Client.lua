@@ -102,17 +102,14 @@ function put_down_object()
 
 	if(not is_sub_object and not inventory_open) then
 		Events.BroadcastToServer("enable_player", local_player)
-		Events.BroadcastToServer("enable_all_interaction_labels")
+		Events.BroadcastToServer("show_all_interaction_labels")
 	end
 	
 	put_down_button.visibility = Visibility.FORCE_OFF
 
 	Events.Broadcast("inspecting", false, inventory_open)
-
-	if(not inventory_open) then
-		Events.Broadcast("hide_cursor")
-		Events.Broadcast("disable_inventory")
-	end
+	Events.Broadcast("hide_cursor")
+	Events.Broadcast("disable_inventory")
 end
 
 put_down_button.clickedEvent:Connect(put_down_object)

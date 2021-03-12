@@ -20,6 +20,7 @@ local inventory_active = false
 local can_open_inventory = false
 local active_slot = nil
 local is_inspecting = false
+local is_interacting = false
 local active_looking_obj = nil
 local mouse_pressed = false
 
@@ -302,7 +303,7 @@ function enable_inventory()
 		if(inventory[i].icon ~= nil) then
 			local color = Color.New(1, 1, 1, 1)
 
-			if(is_inspecting and inventory[i].data:GetCustomProperty("can_look")) then
+			if((is_inspecting or is_interacting) and inventory[i].data:GetCustomProperty("can_look")) then
 				color.a = .5
 				inventory[i].disabled = true
 			else
@@ -340,18 +341,22 @@ function hide_inventory()
 end
 
 local_player.bindingPressedEvent:Connect(function(p, binding)
-	if(not is_inspecting and can_open_inventory and YOOTIL.Input[key_binding] == binding) then
+	if(not is_inspecting and not is_interacting and can_open_inventory and YOOTIL.Input[key_binding] == binding) then
 		if(inventory_active) then
 			disable_inventory()
 			Events.Broadcast("hide_cursor")
 			Events.BroadcastToServer("enable_player", local_player)
 			UI.SetCanCursorInteractWithUI(false)
 			Events.Broadcast("inventory_open", false)
+
+			Events.BroadcastToServer("show_all_interaction_labels")
 		else
 			enable_inventory()
 			Events.BroadcastToServer("disable_player", local_player)
 			Events.Broadcast("inventory_open", true)
 			UI.SetCanCursorInteractWithUI(true)
+
+			Events.BroadcastToServer("hide_all_interaction_labels")
 		end
 	end
 end)
@@ -370,6 +375,10 @@ end)
 
 Events.Connect("inspecting", function(state)
 	is_inspecting = state
+end)
+
+Events.Connect("interacting", function(state)
+	is_interacting = state
 end)
 
 Game.playerJoinedEvent:Connect(function(player)

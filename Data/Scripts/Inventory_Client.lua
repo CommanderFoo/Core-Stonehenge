@@ -9,15 +9,19 @@ local hover_color = script:GetCustomProperty("hover_color")
 local unhover_color = script:GetCustomProperty("unhover_color")
 local active_color = script:GetCustomProperty("active_color")
 
+local look_helper = script:GetCustomProperty("look_helper"):WaitForObject()
+local helper = look_helper:FindChildByName("Helper")
+
 local local_player = Game.GetLocalPlayer()
 
 local inventory = {}
 local max_slots = #slots:GetChildren()
 local inventory_active = false
 local can_open_inventory = false
-local can_use_inventory = false
 local active_slot = nil
 local is_inspecting = false
+local active_looking_obj = nil
+local mouse_pressed = false
 
 for i = 1, max_slots do
 	inventory[i] = {
@@ -27,7 +31,8 @@ for i = 1, max_slots do
 		button = slots:GetChildren()[i],
 		background = slots:GetChildren()[i]:FindChildByName("Background"),
 		icon = nil,
-		disabled = false
+		disabled = false,
+		inspecting = false
 
 	}
 
@@ -59,17 +64,72 @@ for i = 1, max_slots do
 
 	inventory[i].button.clickedEvent:Connect(function()
 		if(inventory[i].data ~= nil and not inventory[i].disabled) then
-			clean_up_active_data()
+			local same_slot = inventory[i] == active_slot
 
-			inventory[i].background:SetColor(active_color)
-			inventory[i].active = true
-			active_slot = inventory[i]
+			if(active_slot and active_slot.inspecting) then
+				clean_up_active_data()
+			end
+
+			if(not same_slot) then
+				inventory[i].background:SetColor(active_color)
+				inventory[i].active = true
+				active_slot = inventory[i]
+				active_slot.inspecting = true
+
+				if(inventory[i].data:GetCustomProperty("can_look")) then
+					active_looking_obj = World.SpawnAsset(inventory[i].data:GetCustomProperty("model_asset"))
+					active_looking_obj:SetWorldPosition(helper:GetWorldPosition())
+				end
+			end
 		end
 	end)
 end
 
+local_player.bindingPressedEvent:Connect(function(p, binding)
+	if(binding == "ability_primary") then
+		mouse_pressed = true
+	end
+end)
+
+local_player.bindingReleasedEvent:Connect(function(p, binding)
+	if(binding == "ability_primary") then
+		mouse_pressed = false
+	end
+end)
+
+function Tick()
+	if(mouse_pressed and active_looking_obj ~= nil) then
+		local cur_pos = UI.GetCursorPosition()
+		local screen = UI.GetScreenSize()
+		local rot = active_looking_obj:GetWorldRotation()
+		local screen_pos = UI.GetScreenPosition(active_looking_obj:GetWorldPosition())
+
+		if(screen_pos ~= nil) then
+			if(cur_pos.y > (screen_pos.y + 100)) then
+				rot.z = rot.z + .7
+			elseif(cur_pos.y < (screen_pos.y - 100)) then
+				rot.z = rot.z - .7
+			end
+
+			if(cur_pos.x > (screen_pos.x + 100)) then
+				rot.y = rot.y + .7
+			elseif(cur_pos.x < (screen_pos.x - 100)) then
+				rot.y = rot.y - .7
+			end
+
+			active_looking_obj:SetWorldRotation(rot)
+		end
+	end
+end
+
 function clean_up_active_data()
 	if(active_slot ~= nil) then
+		if(Object.IsValid(active_looking_obj)) then
+			active_looking_obj:Destroy()
+			active_looking_obj = nil
+		end
+
+		active_slot.inspecting = false
 		active_slot.active = false
 		active_slot.background:SetColor(unhover_color)
 		active_slot = nil
@@ -99,7 +159,7 @@ end
 function add(obj_ref)
 	local id = obj_ref
 
-	if(type(id) ~= "string") then
+	if(type(id) == "userdata") then
 		id = obj_ref:GetObject().id
 	end
 	
@@ -111,7 +171,7 @@ function add(obj_ref)
 		local existing_slot_index, existing_slot_entry = get_existing_slot(inventory_id)
 
 		if(existing_slot_index and existing_slot_entry) then
-			increase(obj_ref, quantity)
+			increase(obj_ref, quantity, true)
 		else
 			local free_slot_index, free_slot_entry = get_free_slot()
 
@@ -132,7 +192,7 @@ function add(obj_ref)
 	end
 end
 
-function increase(obj_ref, quantity)
+function increase(obj_ref, quantity, remove_object)
 	local id = obj_ref
 
 	if(type(id) ~= "string") then
@@ -143,13 +203,17 @@ function increase(obj_ref, quantity)
 
 	if(data ~= nil and Object.IsValid(data)) then
 		local inventory_id = data:GetCustomProperty("id")
-		local quantity = data:GetCustomProperty("quantity")
+		local quantity = data:GetCustomProperty("quantity") or 1
 		local existing_slot_index, existing_slot_entry = get_existing_slot(inventory_id)
 
 		if(existing_slot_index and existing_slot_entry) then
-			existing_slot_index.quantity = existing_slot_index.quantity + quantity
+			existing_slot_entry.quantity = existing_slot_entry.quantity + quantity
 
-			Events.BroadcastToServer("inventory_increase", existing_slot_index, quantity)
+			if(not remove_object) then
+				obj_ref = nil
+			end
+
+			Events.BroadcastToServer("inventory_increase", existing_slot_index, quantity, obj_ref, data:GetCustomProperty("remove_from_world"))
 		end
 	end
 end
@@ -212,11 +276,12 @@ end
 
 function get_item_from_lookup(muid)
 	local children = lookup:GetChildren()
-
+	local id = tostring(muid)
+	
 	for i = 1, #children do
 		local child = lookup:GetChildren()[i]
 
-		if(child.name == muid) then
+		if((string.len(id) < 6 and tostring(child:GetCustomProperty("id")) == tostring(id)) or child.name == muid) then
 			return child
 		end
 	end
@@ -231,7 +296,6 @@ function clear_ui()
 end
 
 function enable_inventory()
-	can_use_inventory = true
 	inventory_active = true
 
 	for i = 1, max_slots do
@@ -239,9 +303,10 @@ function enable_inventory()
 			local color = Color.New(1, 1, 1, 1)
 
 			if(is_inspecting and inventory[i].data:GetCustomProperty("can_look")) then
-				print(1)
 				color.a = .5
 				inventory[i].disabled = true
+			else
+				inventory[i].disabled = false
 			end
 			
 			inventory[i].icon:SetColor(color)
@@ -254,7 +319,6 @@ function disable_inventory()
 		return
 	end
 
-	can_use_inventory = false
 	inventory_active = false
 
 	for i = 1, max_slots do
@@ -278,7 +342,6 @@ end
 local_player.bindingPressedEvent:Connect(function(p, binding)
 	if(not is_inspecting and can_open_inventory and YOOTIL.Input[key_binding] == binding) then
 		if(inventory_active) then
-			--Events.Broadcast("clear_inspecting")
 			disable_inventory()
 			Events.Broadcast("hide_cursor")
 			Events.BroadcastToServer("enable_player", local_player)
@@ -307,4 +370,8 @@ end)
 
 Events.Connect("inspecting", function(state)
 	is_inspecting = state
+end)
+
+Game.playerJoinedEvent:Connect(function(player)
+	look_helper:AttachToLocalView()
 end)

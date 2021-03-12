@@ -27,6 +27,7 @@ Events.Connect("start_game", function()
 
 	-- @TODO: Debug remove when done
 
+	Events.Broadcast("inventory_add", 6)
 	Events.BroadcastToServer("enable_player", local_player)
 	Events.Broadcast("hide_cursor")
 	Events.Broadcast("show_inventory")

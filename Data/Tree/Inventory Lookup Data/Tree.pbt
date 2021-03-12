@@ -42,6 +42,12 @@ Objects {
       Name: "cs:can_look"
       Bool: true
     }
+    Overrides {
+      Name: "cs:model_asset"
+      AssetReference {
+        Id: 5285701219960278763
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -95,7 +101,13 @@ Objects {
     }
     Overrides {
       Name: "cs:can_look"
-      Bool: false
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:model_asset"
+      AssetReference {
+        Id: 5285701219960278763
+      }
     }
   }
   Collidable_v2 {
@@ -152,6 +164,12 @@ Objects {
       Name: "cs:can_look"
       Bool: true
     }
+    Overrides {
+      Name: "cs:model_asset"
+      AssetReference {
+        Id: 2748302153268683930
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -205,7 +223,13 @@ Objects {
     }
     Overrides {
       Name: "cs:can_look"
-      Bool: false
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:model_asset"
+      AssetReference {
+        Id: 277679414720616864
+      }
     }
   }
   Collidable_v2 {
@@ -262,6 +286,12 @@ Objects {
       Name: "cs:can_look"
       Bool: true
     }
+    Overrides {
+      Name: "cs:model_asset"
+      AssetReference {
+        Id: 14387900785056799154
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -316,6 +346,12 @@ Objects {
     Overrides {
       Name: "cs:can_look"
       Bool: true
+    }
+    Overrides {
+      Name: "cs:model_asset"
+      AssetReference {
+        Id: 2846776622655224838
+      }
     }
   }
   Collidable_v2 {

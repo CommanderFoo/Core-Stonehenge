@@ -92,9 +92,13 @@ Objects {
   }
 }
 Objects {
-  Id: 1023850042715320700
+  Id: 9843494520129937759
   Name: "First Person Camera Settings"
   Transform {
+    Location {
+    }
+    Rotation {
+    }
     Scale {
       X: 1
       Y: 1
@@ -102,60 +106,188 @@ Objects {
     }
   }
   ParentId: 10440749520176002398
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 503681998163126313
-      value {
-        Overrides {
-          Name: "IsMountEnabled"
-          Bool: false
-        }
-        Overrides {
-          Name: "PlayerLookControlMode"
-          Enum {
-            Value: "mc:elookcontrolmode:relative"
-          }
-        }
+  ChildIds: 8479646325199133209
+  ChildIds: 16150491161066528130
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 9843494520129937759
+    SubobjectId: 18143788354451018607
+    InstanceId: 1023850042715320700
+    TemplateId: 5189858054097932166
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 16150491161066528130
+  Name: "Client Context"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9843494520129937759
+  ChildIds: 3840927660290209183
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+  InstanceHistory {
+    SelfId: 16150491161066528130
+    SubobjectId: 10624734070703239090
+    InstanceId: 1023850042715320700
+    TemplateId: 5189858054097932166
+  }
+}
+Objects {
+  Id: 3840927660290209183
+  Name: "First Person Camera"
+  Transform {
+    Location {
+      Z: 500
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16150491161066528130
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Camera {
+    UseAsDefault: true
+    AttachToLocalPlayer: true
+    FreeControl: true
+    MinDistance: 300
+    MaxDistance: 600
+    PositionOffset {
+    }
+    RotationOffset {
+    }
+    FieldOfView: 100
+    ViewWidth: 1200
+    UseCameraSocket: true
+    RotationMode {
+      Value: "mc:erotationmode:lookangle"
+    }
+    MinPitch: -89
+    MaxPitch: 89
+  }
+  InstanceHistory {
+    SelfId: 3840927660290209183
+    SubobjectId: 5052201122922792879
+    InstanceId: 1023850042715320700
+    TemplateId: 5189858054097932166
+  }
+}
+Objects {
+  Id: 8479646325199133209
+  Name: "First Person Player Settings"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9843494520129937759
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Settings {
+    IsDefault: true
+    PlayerMovementSettings {
+      WalkSpeed: 640
+      MaxAcceleration: 1800
+      WalkableFloorAngle: 44
+      JumpMaxCount: 1
+      JumpVelocity: 900
+      GroundFriction: 8
+      GravityScale: 1.9
+      MaxSwimSpeed: 420
+      Buoyancy: 1
+      TouchForceFactor: 1
+      BrakingDecelerationFlying: 600
+      MaxFlightSpeed: 600
+      MovementControlMode {
+        Value: "mc:emovementcontrolmode:viewrelative"
       }
-    }
-    ParameterOverrideMap {
-      key: 5052201122922792879
-      value {
-        Overrides {
-          Name: "CameraIsDefault"
-          Bool: true
-        }
+      LookControlMode {
+        Value: "mc:elookcontrolmode:relative"
       }
-    }
-    ParameterOverrideMap {
-      key: 18143788354451018607
-      value {
-        Overrides {
-          Name: "Name"
-          String: "First Person Camera Settings"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
+      FacingMode {
+        Value: "mc:efacingmode:faceaimalways"
       }
+      DefaultRotationRate: 540
+      SlideRotationRate: 20
+      LookAtCursorProjectionPlane {
+        Value: "mc:eprojectionplane:xy"
+      }
+      MountedMaxAcceleration: 1800
+      MountedWalkSpeed: 960
+      MountedJumpMaxCount: 1
+      MountedJumpVelocity: 900
+      IsSlideEnabled: true
+      IsCrouchEnabled: true
+      IsJumpEnabled: true
+      CanMoveForward: true
+      CanMoveBackward: true
+      CanMoveLeft: true
+      CanMoveRight: true
+      AbilityAimMode {
+        Value: "mc:eabilityaimmode:viewrelative"
+      }
+      AppearanceChannelingTime: 2
+      MountChannelingTime: 2
+      FlipOnMultiJump: true
+      CanMoveUp: true
+      CanMoveDown: true
+      MaxHitpoints: 100
     }
-    TemplateAsset {
-      Id: 5189858054097932166
-    }
+  }
+  InstanceHistory {
+    SelfId: 8479646325199133209
+    SubobjectId: 503681998163126313
+    InstanceId: 1023850042715320700
+    TemplateId: 5189858054097932166
   }
 }

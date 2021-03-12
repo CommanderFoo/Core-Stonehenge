@@ -678,7 +678,7 @@ Objects {
   }
   ParentId: 4781671109827199097
   ChildIds: 14572394429066107306
-  ChildIds: 7178935870193632763
+  ChildIds: 5507221062264159847
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -689,44 +689,83 @@ Objects {
   }
 }
 Objects {
-  Id: 7178935870193632763
-  Name: "Tent Camera"
+  Id: 5507221062264159847
+  Name: "Look Helper"
   Transform {
     Location {
-      X: 8046.70361
-      Y: -2400.49146
-      Z: 300
     }
     Rotation {
-      Yaw: 180
     }
     Scale {
       X: 1
-      Y: 0.999999821
+      Y: 1
       Z: 1
     }
   }
   ParentId: 16188106690642622860
+  ChildIds: 1193308099021011693
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
-  Camera {
-    MinDistance: 300
-    MaxDistance: 600
-    PositionOffset {
+  CoreMesh {
+    MeshAsset {
+      Id: 6628731841327595102
     }
-    RotationOffset {
+    Teams {
     }
-    FieldOfView: 90
-    ViewWidth: 1200
-    RotationMode {
-      Value: "mc:erotationmode:default"
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
     }
-    MinPitch: -89
-    MaxPitch: 89
+  }
+}
+Objects {
+  Id: 1193308099021011693
+  Name: "Helper"
+  Transform {
+    Location {
+      X: 120
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5507221062264159847
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10683065336905200881
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6628731841327595102
+    }
+    Teams {
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
   }
 }
 Objects {

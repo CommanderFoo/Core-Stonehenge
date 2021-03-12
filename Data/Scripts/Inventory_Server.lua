@@ -1,10 +1,16 @@
 local inventory = {}
 
+function remove_world_object(obj_ref)
+	if(type(obj_ref) == "userdata") then
+		local obj = obj_ref:GetObject()
+	
+		obj:Destroy()
+	end
+end
+
 function add(player, slot_index, inventory_id, quantity, obj_ref, remove_from_world)
 	if(remove_from_world) then
-		local obj = obj_ref:GetObject()
-		
-		obj:Destroy()
+		remove_world_object(obj_ref)
 	end
 
 	inventory[slot_index] = {
@@ -15,8 +21,12 @@ function add(player, slot_index, inventory_id, quantity, obj_ref, remove_from_wo
 	}
 end
 
-function increase(player, slot_index, quantity)
+function increase(player, slot_index, quantity, obj_ref, remove_from_world)
 	if(inventory[slot_index] ~= nil) then
+		if(remove_from_world) then
+			remove_world_object(obj_ref)
+		end
+
 		inventory[slot_index].quantity = inventory[slot_index].quantity + quantity
 	end
 end

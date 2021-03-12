@@ -11,12 +11,14 @@ function disable_player(player, allow_camera)
 	end
 
 	player.maxJumpCount = 0
+	player.isCrouchEnabled = false
 end
 
 function enable_player(player)
 	player.movementControlMode = MovementControlMode.VIEW_RELATIVE
 	player.lookControlMode = LookControlMode.RELATIVE
 	player.maxJumpCount = 1
+	player.isCrouchEnabled = true
 end
 
 function set_player_stance(player, stance)

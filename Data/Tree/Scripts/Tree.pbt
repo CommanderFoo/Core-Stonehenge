@@ -758,6 +758,12 @@ Objects {
         A: 0.3
       }
     }
+    Overrides {
+      Name: "cs:look_helper"
+      ObjectReference {
+        SelfId: 5507221062264159847
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1019,7 +1025,7 @@ Objects {
     Overrides {
       Name: "cs:tent_camera"
       ObjectReference {
-        SelfId: 7178935870193632763
+        SelfId: 841534158063459245
       }
     }
     Overrides {

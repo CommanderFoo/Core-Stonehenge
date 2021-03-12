@@ -89,6 +89,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10683065336905200881
+  Name: "Invisible"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_invisible_001"
+  }
+}
+Assets {
   Id: 9864727025224026139
   Name: "Flower Daisy Patch 01"
   PlatformAssetType: 1

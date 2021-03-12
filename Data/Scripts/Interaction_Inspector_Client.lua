@@ -1,4 +1,4 @@
-local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
+--[[local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
 
 local interactables = script:GetCustomProperty("interactables"):WaitForObject()
 
@@ -194,4 +194,4 @@ end
 
 Events.Connect("over_inventory", function(is_over)
 	over_inventory = is_over
-end)
+end)--]]

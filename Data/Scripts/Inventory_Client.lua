@@ -17,6 +17,7 @@ local inventory_active = false
 local can_open_inventory = false
 local can_use_inventory = false
 local active_slot = nil
+local is_inspecting = false
 
 for i = 1, max_slots do
 	inventory[i] = {
@@ -25,12 +26,13 @@ for i = 1, max_slots do
 		quantity = 0,
 		button = slots:GetChildren()[i],
 		background = slots:GetChildren()[i]:FindChildByName("Background"),
-		icon = nil
+		icon = nil,
+		disabled = false
 
 	}
 
 	inventory[i].button.hoveredEvent:Connect(function()
-		if(inventory[i].data ~= nil) then
+		if(inventory[i].data ~= nil and not inventory[i].disabled) then
 			inventory[i].background:SetColor(hover_color)
 
 			Events.Broadcast("over_inventory", true)
@@ -46,10 +48,9 @@ for i = 1, max_slots do
 	end)
 
 	inventory[i].button.unhoveredEvent:Connect(function()
-		if(not inventory[i].active) then
+		if(inventory[i].data ~= nil and not inventory[i].disabled and not inventory[i].active) then
 			inventory[i].background:SetColor(unhover_color)
 
-			Events.Broadcast("show_cursor", "default")
 			Events.Broadcast("over_inventory", false)
 		end
 	end)
@@ -235,12 +236,26 @@ function enable_inventory()
 
 	for i = 1, max_slots do
 		if(inventory[i].icon ~= nil) then
-			inventory[i].icon:SetColor(Color.New(1, 1, 1, 1))
+			local color = Color.New(1, 1, 1, 1)
+
+			print(is_inspecting, inventory[i].data:GetCustomProperty("can_look"))
+
+			if(is_inspecting and inventory[i].data:GetCustomProperty("can_look")) then
+				print(1)
+				color.a = .5
+				inventory[i].disabled = true
+			end
+			
+			inventory[i].icon:SetColor(color)
 		end
 	end
 end
 
 function disable_inventory()
+	if(player_opened) then
+		return
+	end
+
 	can_use_inventory = false
 	inventory_active = false
 
@@ -262,20 +277,23 @@ function hide_inventory()
 	clean_up_active_data()
 end
 
---[[
 local_player.bindingPressedEvent:Connect(function(p, binding)
-	if(can_open_inventory and YOOTIL.Input[key_binding] == binding) then
+	if(not is_inspecting and can_open_inventory and YOOTIL.Input[key_binding] == binding) then
 		if(inventory_active) then
+			--Events.Broadcast("clear_inspecting")
 			disable_inventory()
 			Events.Broadcast("hide_cursor")
+			Events.BroadcastToServer("enable_player", local_player)
+			UI.SetCanCursorInteractWithUI(false)
+			Events.Broadcast("inventory_open", false)
 		else
 			enable_inventory()
+			Events.BroadcastToServer("disable_player", local_player)
+			Events.Broadcast("inventory_open", true)
 			UI.SetCanCursorInteractWithUI(true)
-			Events.Broadcast("show_cursor")
 		end
 	end
 end)
---]]
 
 Events.Connect("inventory_add", add)
 Events.Connect("inventory_remove", remove)
@@ -287,4 +305,8 @@ Events.Connect("disable_inventory", disable_inventory)
 Events.Connect("show_inventory", show_inventory)
 Events.Connect("can_open_inventory", function(can_open)
 	can_open_inventory = can_open
+end)
+
+Events.Connect("inspecting", function(state)
+	is_inspecting = state
 end)

@@ -170,12 +170,12 @@ Objects {
       Asset {
         Id: 9286436399806663046
       }
-      DistanceBetweenInstances: 1000
+      DistanceBetweenInstances: 800
       MaterialChannel: 3
       SpawnDistance: 51200
       CullDistance {
         Min: 12000
-        Max: 18000
+        Max: 30000
       }
       CastShadow: true
       AffectDistanceFieldLighting: true
@@ -232,7 +232,7 @@ Objects {
       SpawnDistance: 51200
       CullDistance {
         Min: 12000
-        Max: 18000
+        Max: 30000
       }
       CastShadow: true
       AffectDistanceFieldLighting: true
@@ -289,7 +289,7 @@ Objects {
       SpawnDistance: 51200
       CullDistance {
         Min: 12000
-        Max: 18000
+        Max: 30000
       }
       CastShadow: true
       AffectDistanceFieldLighting: true
@@ -3292,12 +3292,12 @@ Objects {
   ParentId: 2789780480952860209
   ChildIds: 13099482719251150093
   ChildIds: 8617543916545524678
-  ChildIds: 4652850791220885552
+  ChildIds: 14939853782447752341
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:forceon"
   }
   Control {
     RenderTransformPivot {
@@ -3325,8 +3325,8 @@ Objects {
   }
 }
 Objects {
-  Id: 4652850791220885552
-  Name: "Leave Tent (Temp)"
+  Id: 14939853782447752341
+  Name: "Letter"
   Transform {
     Location {
     }
@@ -3339,6 +3339,54 @@ Objects {
     }
   }
   ParentId: 10400721808396098963
+  ChildIds: 7863758836019585317
+  ChildIds: 3429005816187991918
+  ChildIds: 4652850791220885552
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  Control {
+    Width: 500
+    Height: 400
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 4652850791220885552
+  Name: "Close Letter"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14939853782447752341
   ChildIds: 15233939349946407539
   ChildIds: 5377291815514500778
   Collidable_v2 {
@@ -3348,9 +3396,9 @@ Objects {
     Value: "mc:evisibilitysetting:forceoff"
   }
   Control {
-    Width: 288
+    Width: 200
     Height: 70
-    UIY: -60
+    UIY: 100
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -3438,7 +3486,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "Leave Tent (Temp)"
+      Label: "Close Letter"
       Color {
         R: 1
         G: 1
@@ -3563,6 +3611,124 @@ Objects {
       }
       Color {
         A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 3429005816187991918
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14939853782447752341
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: -20
+    UIX: 20
+    UIY: 20
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    UseParentHeight: true
+    Text {
+      Label: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed enim dui, varius ac lectus et, commodo dignissim dolor. Ut hendrerit velit sed est tristique, quis porta odio rhoncus. Quisque in molestie risus, nec finibus magna. Proin non sagittis turpis. Etiam ut consectetur diam. Sed risus turpis, congue quis odio vitae. "
+      Color {
+        A: 1
+      }
+      Size: 16
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+      Font {
+        Id: 5248208841683454128
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 7863758836019585317
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14939853782447752341
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 200
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Image {
+      Brush {
+      }
+      Color {
+        R: 1
+        G: 0.800857067
+        B: 0.754
+        A: 0.825000048
       }
       TeamSettings {
       }

@@ -24,6 +24,10 @@ function next_quest(broadcast_event_after)
 
 	local quest_data = get_quest_from_lookup(current_quest_id)
 
+	if(not quest_data) then
+		return
+	end
+
 	current_quest_holder = World.SpawnAsset(quest_holder, { parent = quest_container })
 
 	current_quest_title = current_quest_holder:FindChildByName("Quest Title")

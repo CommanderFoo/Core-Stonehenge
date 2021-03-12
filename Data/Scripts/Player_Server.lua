@@ -1,7 +1,6 @@
 Game.playerJoinedEvent:Connect(function(player)
 	disable_player(player)
 	player:SetVisibility(false)
-
 end)
 
 function disable_player(player, allow_camera)

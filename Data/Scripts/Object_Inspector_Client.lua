@@ -11,6 +11,7 @@ local orig_ref = nil
 local mouse_pressed = false
 local can_rotate = false
 local is_sub_object = false
+local inventory_open = false
 
 local_player.bindingPressedEvent:Connect(function(p, binding)
 	if(binding == "ability_primary") then
@@ -25,9 +26,12 @@ local_player.bindingReleasedEvent:Connect(function(p, binding)
 end)
 
 function inspect_object(obj_ref, sub_object, fov)
-	Events.Broadcast("can_open_inventory", false)
+	if(inventory_open) then
+		return
+	end
+
+	Events.Broadcast("inspecting", true)
 	Events.Broadcast("enable_inventory")
-	Events.Broadcast("disable_raycast")
 
 	if(not sub_object) then
 		Events.BroadcastToServer("disable_player", local_player)
@@ -48,10 +52,6 @@ function inspect_object(obj_ref, sub_object, fov)
 
 	local offset = 120
 
-	if(fov and fov < 90) then
-		offset = 300 - fov
-	end
-
 	local obj_pos = orig_obj:GetWorldPosition()
 	local view_pos = local_player:GetViewWorldPosition()
 	local dir = (view_pos - obj_pos):GetNormalized()
@@ -62,7 +62,6 @@ function inspect_object(obj_ref, sub_object, fov)
 	end
 	
 	UI.SetCanCursorInteractWithUI(true)
-	Events.Broadcast("show_cursor")
 	Events.BroadcastToServer("hide_all_interaction_labels")
 
 	put_down_button.visibility = Visibility.FORCE_ON
@@ -101,18 +100,19 @@ function put_down_object()
 
 	orig_ref = nil
 
-	if(not is_sub_object) then
+	if(not is_sub_object and not inventory_open) then
 		Events.BroadcastToServer("enable_player", local_player)
 		Events.BroadcastToServer("enable_all_interaction_labels")
-
-		Events.Broadcast("hide_cursor")
 	end
 	
 	put_down_button.visibility = Visibility.FORCE_OFF
 
-	Events.Broadcast("enable_raycast")
-	Events.Broadcast("can_open_inventory", true)
-	Events.Broadcast("disable_inventory")
+	Events.Broadcast("inspecting", false, inventory_open)
+
+	if(not inventory_open) then
+		Events.Broadcast("hide_cursor")
+		Events.Broadcast("disable_inventory")
+	end
 end
 
 put_down_button.clickedEvent:Connect(put_down_object)
@@ -144,3 +144,9 @@ end
 
 Events.Connect("inspect_object", inspect_object)
 Events.Connect("put_down_object", put_down_object)
+
+Events.Connect("inventory_open", function(state)
+	inventory_open = state
+end)
+
+Events.Connect("clear_inspecting", put_down_object)

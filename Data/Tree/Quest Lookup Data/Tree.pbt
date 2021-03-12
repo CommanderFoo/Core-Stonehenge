@@ -2,7 +2,7 @@ Name: "Quest Lookup Data"
 RootId: 15892015409261034309
 Objects {
   Id: 10153709130360841429
-  Name: "Old Friend Quest"
+  Name: "Journey"
   Transform {
     Location {
     }
@@ -23,11 +23,11 @@ Objects {
     }
     Overrides {
       Name: "cs:quest_title"
-      String: "Old Friend"
+      String: "Journey"
     }
     Overrides {
       Name: "cs:quest_line_width"
-      Int: 150
+      Int: 104
     }
     Overrides {
       Name: "cs:quest_delay"
@@ -35,7 +35,7 @@ Objects {
     }
     Overrides {
       Name: "cs:quest_notification"
-      String: "A letter has been delivered to your inventory."
+      String: ""
     }
     Overrides {
       Name: "cs:quest_notification_delay"
@@ -43,7 +43,7 @@ Objects {
     }
     Overrides {
       Name: "cs:quest_inventory_item"
-      String: "8C33CABFE8112B30:Letter UI"
+      String: ""
     }
   }
   Collidable_v2 {
@@ -80,11 +80,11 @@ Objects {
     }
     Overrides {
       Name: "cs:title"
-      String: "Read letter"
+      String: "Enter Stonehenge"
     }
     Overrides {
       Name: "cs:line_width"
-      Int: 22
+      Int: 200
     }
   }
   Collidable_v2 {

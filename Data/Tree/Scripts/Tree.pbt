@@ -1,6 +1,66 @@
 Name: "Scripts"
 RootId: 1636163160051171366
 Objects {
+  Id: 12281289070681835054
+  Name: "Quest Scripts"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1636163160051171366
+  ChildIds: 9638173608822482136
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 9638173608822482136
+  Name: "Quest_Stonehenge_Entered_Client"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12281289070681835054
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:trigger"
+      ObjectReference {
+        SelfId: 11880388740167428060
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 11400212477240912278
+    }
+  }
+}
+Objects {
   Id: 1946733176415873648
   Name: "Server"
   Transform {
@@ -425,8 +485,8 @@ Objects {
     Overrides {
       Name: "cs:cursor_big_size"
       Vector2 {
-        X: 70
-        Y: 70
+        X: 60
+        Y: 60
       }
     }
   }
@@ -444,7 +504,7 @@ Objects {
 }
 Objects {
   Id: 1654015060712776403
-  Name: "Tent_Client"
+  Name: "Letter_Client"
   Transform {
     Location {
     }
@@ -459,13 +519,13 @@ Objects {
   ParentId: 14858104107515101237
   UnregisteredParameters {
     Overrides {
-      Name: "cs:leave_tent_button"
+      Name: "cs:letter_button"
       ObjectReference {
         SelfId: 4652850791220885552
       }
     }
     Overrides {
-      Name: "cs:leave_tent_hover_color"
+      Name: "cs:letter_hover_color"
       Color {
         R: 0.0177083015
         G: 0.0177083015
@@ -474,9 +534,15 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:leave_tent_unhover_color"
+      Name: "cs:letter_unhover_color"
       Color {
         A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:letter"
+      ObjectReference {
+        SelfId: 14939853782447752341
       }
     }
   }

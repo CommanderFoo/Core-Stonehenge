@@ -23,37 +23,30 @@ Task.Spawn(function()
 end, transition_time)
 
 Events.Connect("start_game", function()
-	Events.Broadcast("set_player_camera", "tent", 0)
+	Events.Broadcast("show_static_ui")
 
-	-- @TODO: Enable this
-	--Events.Broadcast("set_weather_profile", "sunrise")
-	Events.Broadcast("set_weather_profile", "daytime")
+	-- @TODO: Debug remove when done
+
+	Events.BroadcastToServer("enable_player", local_player)
+	Events.Broadcast("hide_cursor")
+	Events.Broadcast("show_inventory")
+	Events.Broadcast("can_open_inventory", true)
+	Events.Broadcast("next_quest")
+	Events.Broadcast("enable_raycast")
+
+
+	-- @TODO: Enable after debug is removed
+	
+	--Events.Broadcast("show_letter")
 
 	transition_tween = YOOTIL.Tween:new(transition_time, {a = 1}, {a = 0})
-
-	--Events.Broadcast("show_dynamic_ui")
-	Events.Broadcast("show_static_ui")
 
 	transition_tween:on_complete(function()
 		transition_loader.visibility = Visibility.FORCE_OFF
 
-		Events.Broadcast("show_inventory")
-		Events.Broadcast("next_quest", "enable_inventory")
 		Events.Broadcast("play_bird_sounds")
-
-		Events.Broadcast("show_tent_button")
-		
-		Events.Broadcast("add_thought", 1)
 		
 		transition_tween = nil
-
-		-- @TODO: enable player depending on last game state
-		-- First time player the player should be disabled from moving
-		-- Letter should be in hand with an option to leave the tent
-		-- So for now this is disabled until we get to the point where
-		-- game state is saved
-
-		--Events.BroadcastToServer("enable_player", local_player)
 	end)
 
 	transition_tween:on_change(function(v)

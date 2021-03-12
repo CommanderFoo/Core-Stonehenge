@@ -62,10 +62,11 @@ Events.Connect("hide_cursor", function()
 	reticle_ui.visibility = Visibility.FORCE_ON
 end)
 
-Events.Connect("change_reticle", function(type)
-	display_cursor = false
-	cursor_ui.visibility = Visibility.FORCE_OFF
+Events.Connect("hide_reticle", function()
+	reticle_ui.visibility = Visibility.FORCE_OFF
+end)
 
+Events.Connect("change_reticle", function(type)
 	reticle_ui:SetImage(cursor[type])
 
 	if(type == "default") then

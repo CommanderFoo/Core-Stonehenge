@@ -37,10 +37,12 @@ for i = 1, max_slots do
 
 			Events.Broadcast("over_inventory", true)
 
-			local type = "inventory_look"
+			local type = "default"
 
 			if(inventory[i].data:GetCustomProperty("can_combine")) then
 				type = "combine"
+			elseif(inventory[i].data:GetCustomProperty("can_look")) then
+				type = "inventory_look"
 			end
 
 			Events.Broadcast("show_cursor", type)
@@ -50,22 +52,20 @@ for i = 1, max_slots do
 	inventory[i].button.unhoveredEvent:Connect(function()
 		if(inventory[i].data ~= nil and not inventory[i].disabled and not inventory[i].active) then
 			inventory[i].background:SetColor(unhover_color)
-
-			Events.Broadcast("over_inventory", false)
 		end
+
+		Events.Broadcast("over_inventory", false)
 	end)
 
-	--[[
 	inventory[i].button.clickedEvent:Connect(function()
-		clean_up_active_data()
+		if(inventory[i].data ~= nil and not inventory[i].disabled) then
+			clean_up_active_data()
 
-		if(inventory[i].data ~= nil) then
 			inventory[i].background:SetColor(active_color)
 			inventory[i].active = true
 			active_slot = inventory[i]
 		end
 	end)
-	--]]
 end
 
 function clean_up_active_data()
@@ -237,8 +237,6 @@ function enable_inventory()
 	for i = 1, max_slots do
 		if(inventory[i].icon ~= nil) then
 			local color = Color.New(1, 1, 1, 1)
-
-			print(is_inspecting, inventory[i].data:GetCustomProperty("can_look"))
 
 			if(is_inspecting and inventory[i].data:GetCustomProperty("can_look")) then
 				print(1)

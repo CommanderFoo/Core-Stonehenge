@@ -23,6 +23,7 @@ local is_inspecting = false
 local is_interacting = false
 local active_looking_obj = nil
 local mouse_pressed = false
+local tween = nil
 
 for i = 1, max_slots do
 	inventory[i] = {
@@ -80,6 +81,23 @@ for i = 1, max_slots do
 				if(inventory[i].data:GetCustomProperty("can_look")) then
 					active_looking_obj = World.SpawnAsset(inventory[i].data:GetCustomProperty("model_asset"))
 					active_looking_obj:SetWorldPosition(helper:GetWorldPosition())
+					active_looking_obj:SetWorldScale(Vector3.New(0, 0, 0))
+
+					tween = YOOTIL.Tween:new(.3, { s = 0 }, { s = 1 })
+					
+					tween:on_change(function(c)
+						local scale = active_looking_obj:GetWorldScale()
+
+						scale.x = c.s
+						scale.y = c.s
+						scale.z = c.s
+
+						active_looking_obj:SetWorldScale(scale)
+					end)
+
+					tween:on_complete(function()
+						tween = nil
+					end)
 				end
 			end
 		end
@@ -98,7 +116,7 @@ local_player.bindingReleasedEvent:Connect(function(p, binding)
 	end
 end)
 
-function Tick()
+function Tick(dt)
 	if(mouse_pressed and active_looking_obj ~= nil) then
 		local cur_pos = UI.GetCursorPosition()
 		local screen = UI.GetScreenSize()
@@ -121,10 +139,18 @@ function Tick()
 			active_looking_obj:SetWorldRotation(rot)
 		end
 	end
+
+	if(tween ~= nil) then
+		tween:tween(dt)
+	end
 end
 
 function clean_up_active_data()
 	if(active_slot ~= nil) then
+		if(tween ~= nil) then
+			tween = nil
+		end
+
 		if(Object.IsValid(active_looking_obj)) then
 			active_looking_obj:Destroy()
 			active_looking_obj = nil
@@ -190,6 +216,8 @@ function add(obj_ref)
 				print("We run out of free inventory slots, this shouldn't be possible.")
 			end
 		end
+
+		update_items()
 	end
 end
 
@@ -296,9 +324,7 @@ function clear_ui()
 	end
 end
 
-function enable_inventory()
-	inventory_active = true
-
+function update_items()
 	for i = 1, max_slots do
 		if(inventory[i].icon ~= nil) then
 			local color = Color.New(1, 1, 1, 1)
@@ -313,6 +339,12 @@ function enable_inventory()
 			inventory[i].icon:SetColor(color)
 		end
 	end
+end
+
+function enable_inventory()
+	inventory_active = true
+
+	update_items()
 end
 
 function disable_inventory()

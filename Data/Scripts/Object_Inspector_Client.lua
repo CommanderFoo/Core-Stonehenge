@@ -10,7 +10,7 @@ local orig_obj = nil
 local orig_ref = nil
 local mouse_pressed = false
 local can_rotate = false
-local is_sub_object = false
+local is_interacting = false
 local inventory_open = false
 
 local_player.bindingPressedEvent:Connect(function(p, binding)
@@ -25,7 +25,7 @@ local_player.bindingReleasedEvent:Connect(function(p, binding)
 	end
 end)
 
-function inspect_object(obj_ref, sub_object, fov)
+function inspect_object(obj_ref)
 	if(inventory_open) then
 		return
 	end
@@ -33,11 +33,9 @@ function inspect_object(obj_ref, sub_object, fov)
 	Events.Broadcast("inspecting", true)
 	Events.Broadcast("enable_inventory")
 
-	if(not sub_object) then
+	if(not is_interacting) then
 		Events.BroadcastToServer("disable_player", local_player)
 	end
-
-	is_sub_object = sub_object
 
 	orig_ref = obj_ref
 	orig_obj = obj_ref:GetObject()
@@ -62,7 +60,10 @@ function inspect_object(obj_ref, sub_object, fov)
 	end
 	
 	UI.SetCanCursorInteractWithUI(true)
-	Events.BroadcastToServer("hide_all_interaction_labels")
+
+	if(not is_interacting) then
+		Events.BroadcastToServer("hide_all_interaction_labels")
+	end
 
 	put_down_button.visibility = Visibility.FORCE_ON
 
@@ -100,16 +101,19 @@ function put_down_object()
 
 	orig_ref = nil
 
-	if(not is_sub_object and not inventory_open) then
+	if(not is_interacting and not inventory_open) then
 		Events.BroadcastToServer("enable_player", local_player)
 		Events.BroadcastToServer("show_all_interaction_labels")
 	end
 	
 	put_down_button.visibility = Visibility.FORCE_OFF
 
-	Events.Broadcast("inspecting", false, inventory_open)
-	Events.Broadcast("hide_cursor")
-	Events.Broadcast("disable_inventory")
+	if(not is_interacting) then
+		Events.Broadcast("inspecting", false, inventory_open)
+
+		Events.Broadcast("hide_cursor")
+		Events.Broadcast("disable_inventory")
+	end
 end
 
 put_down_button.clickedEvent:Connect(put_down_object)
@@ -147,3 +151,6 @@ Events.Connect("inventory_open", function(state)
 end)
 
 Events.Connect("clear_inspecting", put_down_object)
+Events.Connect("interacting", function(state)
+	is_interacting = state
+end)

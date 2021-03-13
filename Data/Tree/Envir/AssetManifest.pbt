@@ -44,6 +44,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15121849152362257563
+  Name: "Grass Short"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_grass_generic_002"
+  }
+}
+Assets {
   Id: 11536722980747302158
   Name: "Point To Point Electrical Beam VFX"
   PlatformAssetType: 8

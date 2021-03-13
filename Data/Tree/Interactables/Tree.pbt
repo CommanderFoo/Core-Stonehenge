@@ -537,6 +537,10 @@ Objects {
             Z: 1
           }
         }
+        Overrides {
+          Name: "cs:type"
+          String: "sub_pickup"
+        }
       }
     }
     ParameterOverrideMap {
@@ -602,6 +606,10 @@ Objects {
             Y: 1
             Z: 1
           }
+        }
+        Overrides {
+          Name: "cs:type"
+          String: "sub_look"
         }
       }
     }

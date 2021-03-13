@@ -1,4 +1,13 @@
 Assets {
+  Id: 15275369997730986123
+  Name: "Rock 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_001"
+  }
+}
+Assets {
   Id: 15142431304654880679
   Name: "Rock Flat 02"
   PlatformAssetType: 1

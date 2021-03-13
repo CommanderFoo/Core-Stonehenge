@@ -8,13 +8,15 @@ local over_pickup = false
 local pickup_obj = nil
 local obj_type = nil
 local over_inventory = false
+local is_inspecting = false
+local is_interacting = false
 
 local_player.bindingPressedEvent:Connect(function(p, binding)
 	if(can_raycast and over_pickup and binding == "ability_primary" and Object.IsValid(pickup_obj)) then
-		if(obj_type == "look") then
-			Events.Broadcast("inspect_object", pickup_obj:GetReference())
+		if(string.find(obj_type, "look")) then
+			Events.Broadcast("inspect_object", pickup_obj:GetReference(), is_interacting)
 		else
-			Events.Broadcast("inventory_add", pickup_obj:GetReference(), true)
+			Events.Broadcast("inventory_add", pickup_obj:GetReference())
 			Events.Broadcast("play_sound", "pickup")
 		end
 	end
@@ -57,7 +59,7 @@ function Tick()
 			local hit_pos = hit.other:GetWorldPosition()
 			local view_pos = local_player:GetViewWorldPosition()
 			
-			if((hit_pos - view_pos).size > distance) then
+			if(not is_interacting and (hit_pos - view_pos).size > distance) then
 				valid_cast = false
 			end
 		end
@@ -66,9 +68,9 @@ function Tick()
 			obj_type = obj:GetCustomProperty("type")
 
 			if(obj_type) then
-				if(obj_type == "look") then
+				if(string.find(obj_type, "look")) then
 					pointer = "look"
-				elseif(obj_type == "pickup") then
+				elseif(string.find(obj_type, "pickup")) then
 					pointer = "pickup"
 				end
 	
@@ -77,6 +79,12 @@ function Tick()
 				else
 					over_pickup = true
 					pickup_obj = obj
+
+					if(not is_interacting and string.find(obj_type, "sub_")) then
+						over_pickup = false
+						pickup_obj = nil
+						pointer = "default"
+					end
 				end
 			end
 		end
@@ -115,6 +123,8 @@ Events.Connect("inspecting", function(state, inventory_state)
 	elseif(not inventory_open) then
 		ui_raycasting = false
 	end
+
+	is_inspecting = state
 end)
 
 Events.Connect("interacting", function(state, inventory_state)
@@ -123,6 +133,8 @@ Events.Connect("interacting", function(state, inventory_state)
 	elseif(not inventory_open) then
 		ui_raycasting = false
 	end
+
+	is_interacting = state
 end)
 
 Events.Connect("over_inventory", function(state)

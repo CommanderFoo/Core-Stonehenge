@@ -15,13 +15,19 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 13207548860357947295
         ChildIds: 2154645756386092891
         ChildIds: 920695890700633329
         UnregisteredParameters {
           Overrides {
             Name: "cs:type"
             String: "look"
+          }
+          Overrides {
+            Name: "cs:main"
+            ObjectReference {
+              SubObjectId: 2154645756386092891
+            }
           }
         }
         WantsNetworking: true

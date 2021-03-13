@@ -17,10 +17,31 @@ Assets {
         }
         ParentId: 15427196770349038411
         ChildIds: 12977088586266084573
+        ChildIds: 10231518687034223236
         UnregisteredParameters {
           Overrides {
             Name: "cs:type"
             String: "sub_look"
+          }
+          Overrides {
+            Name: "cs:main"
+            ObjectReference {
+              SubObjectId: 12977088586266084573
+            }
+          }
+          Overrides {
+            Name: "cs:alt"
+            ObjectReference {
+              SubObjectId: 10231518687034223236
+            }
+          }
+          Overrides {
+            Name: "cs:use_alt"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:use_alt:isrep"
+            Bool: true
           }
         }
         WantsNetworking: true
@@ -75,6 +96,47 @@ Assets {
           }
         }
       }
+      Objects {
+        Id: 10231518687034223236
+        Name: "Cube - Arcade 01"
+        Transform {
+          Location {
+            Y: 1.89599609
+            Z: -18.7377472
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.419676811
+            Y: 0.419676811
+            Z: 0.419676811
+          }
+        }
+        ParentId: 11656462785356384221
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 942597030047407748
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
     }
     Assets {
       Id: 5285701219960278763
@@ -83,6 +145,15 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_prop_fan_book_001_ref"
+      }
+    }
+    Assets {
+      Id: 942597030047407748
+      Name: "Cube - Arcade 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_arcade_cube_001"
       }
     }
     PrimaryAssetId {

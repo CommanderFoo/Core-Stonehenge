@@ -2,10 +2,11 @@ local cursor = script:GetCustomProperty("cursor"):WaitForObject()
 local put_down_button = script:GetCustomProperty("put_down_button"):WaitForObject()
 local put_down_hover_color = script:GetCustomProperty("put_down_hover_color")
 local put_down_unhover_color = script:GetCustomProperty("put_down_unhover_color")
+local spawned_objects = script:GetCustomProperty("spawned_objects"):WaitForObject()
 
 local local_player = Game.GetLocalPlayer()
 
-local obj = nil
+local look_obj = nil
 local orig_obj = nil
 local orig_ref = nil
 local mouse_pressed = false
@@ -51,13 +52,26 @@ function inspect_object(obj_ref)
 		return
 	end
 
-	obj = World.SpawnAsset(orig_obj.sourceTemplateId)
+	look_obj = World.SpawnAsset(orig_obj.sourceTemplateId, { parent = spawned_objects })
+	look_obj:GetCustomProperty("main"):GetObject().collision = Collision.FORCE_OFF
 
-	obj.collision = Collision.FORCE_OFF
+	if(orig_obj:GetCustomProperty("use_alt")) then
+		local alt = look_obj:GetCustomProperty("alt")
 
-	Events.BroadcastToServer("object_inspector_hide", obj_ref)
+		if(alt) then
+			alt:GetObject().visibility = Visibility.INHERIT
+			alt:GetObject().collision = Collision.FORCE_OFF
 
-	obj:SetWorldPosition(orig_obj:GetWorldPosition())
+			local main = look_obj:GetCustomProperty("main"):GetObject()
+
+			main.visibility = Visibility.FORCE_OFF
+			main.collision = Collision.FORCE_OFF
+		end
+	end
+
+	Events.BroadcastToServer("inspector_hide", obj_ref)
+
+	look_obj:SetWorldPosition(orig_obj:GetWorldPosition())
 
 	local offset = 160
 
@@ -67,7 +81,7 @@ function inspect_object(obj_ref)
 	local move_to_pos = view_pos + dir * -offset
 
 	if((obj_pos - view_pos).size > offset) then
-		obj:MoveTo(move_to_pos, .5)
+		look_obj:MoveTo(move_to_pos, .5)
 	end
 	
 	zoomed = true
@@ -94,7 +108,7 @@ put_down_button.unhoveredEvent:Connect(function()
 end)
 
 function put_down_object()
-	if(obj == nil) then
+	if(look_obj == nil) then
 		return
 	end
 	
@@ -104,20 +118,19 @@ function put_down_object()
 
 	mouse_pressed = false
 
-	obj:MoveTo(orig_obj:GetWorldPosition(), .5)
-	obj:RotateTo(orig_obj:GetWorldRotation(), .5)
+	look_obj:MoveTo(orig_obj:GetWorldPosition(), .5)
+	look_obj:RotateTo(orig_obj:GetWorldRotation(), .5)
 
 	zoomed = false
 
 	Task.Wait(.5)
 
-	Events.BroadcastToServer("object_inspector_show", orig_ref)
+	Events.BroadcastToServer("inspector_show", orig_ref)
 	
-	obj:Destroy()
-	obj = nil
-
+	look_obj:Destroy()
+	look_obj = nil
 	orig_ref = nil
-
+	
 	if(not is_interacting and not inventory_open) then
 		Events.BroadcastToServer("enable_player", local_player)
 		Events.BroadcastToServer("show_all_interaction_labels")
@@ -136,11 +149,11 @@ end
 put_down_button.clickedEvent:Connect(put_down_object)
 
 function Tick()
-	if(mouse_pressed and obj ~= nil and can_rotate) then
+	if(mouse_pressed and look_obj ~= nil and can_rotate) then
 		local cur_pos = UI.GetCursorPosition()
 		local screen = UI.GetScreenSize()
-		local rot = obj:GetWorldRotation()
-		local screen_pos = UI.GetScreenPosition(obj:GetWorldPosition())
+		local rot = look_obj:GetWorldRotation()
+		local screen_pos = UI.GetScreenPosition(look_obj:GetWorldPosition())
 
 		if(screen_pos ~= nil) then
 			if(cur_pos.y > (screen_pos.y + 100)) then
@@ -155,7 +168,7 @@ function Tick()
 				rot.y = rot.y - .7
 			end
 
-			obj:SetWorldRotation(rot)
+			look_obj:SetWorldRotation(rot)
 		end
 	end
 end
@@ -166,6 +179,12 @@ function use_item()
 
 		if(Object.IsValid(obj)) then
 			if(using_item:GetCustomProperty("use_with") == obj.id) then
+				if(Object.IsValid(look_obj)) then
+					look_obj:GetCustomProperty("alt"):GetObject().visibility = Visibility.INHERIT
+					look_obj:GetCustomProperty("main"):GetObject().visibility = Visibility.FORCE_OFF
+				end
+
+				Events.BroadcastToServer("inspector_switch", obj:GetReference())
 				Events.Broadcast("inventory_remove", using_item:GetCustomProperty("id"))
 				Events.Broadcast("override_cursor", false)
 				

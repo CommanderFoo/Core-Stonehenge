@@ -269,61 +269,6 @@ Objects {
   }
 }
 Objects {
-  Id: 466089342510191448
-  Name: "Item Look Example"
-  Transform {
-    Location {
-      X: 6600
-      Y: -2635
-      Z: 95
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13207548860357947295
-  WantsNetworking: true
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 1855112757633191298
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Item Look Example"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 6611.01172
-            Y: -2396.34375
-            Z: 282.469971
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 6872563654101206001
-    }
-  }
-}
-Objects {
   Id: 6862434550525866960
   Name: "Item Look Example"
   Transform {
@@ -335,6 +280,12 @@ Objects {
   }
   ParentId: 13207548860357947295
   WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 1855112757633191298
@@ -354,14 +305,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }

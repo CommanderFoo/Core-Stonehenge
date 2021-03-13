@@ -902,6 +902,12 @@ Objects {
         A: 1
       }
     }
+    Overrides {
+      Name: "cs:spawned_objects"
+      ObjectReference {
+        SelfId: 17291568425683070553
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

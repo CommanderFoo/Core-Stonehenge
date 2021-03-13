@@ -28,6 +28,7 @@ Objects {
   ChildIds: 13207548860357947295
   ChildIds: 5021902761380162581
   ChildIds: 8800454525094024065
+  ChildIds: 17291568425683070553
   ChildIds: 11591319365004402937
   UnregisteredParameters {
   }
@@ -337,6 +338,33 @@ Objects {
         Max: 102400
       }
     }
+  }
+}
+Objects {
+  Id: 17291568425683070553
+  Name: "Spawned Objects"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Spawned Objects"
   }
 }
 Objects {

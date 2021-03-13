@@ -29,6 +29,13 @@ Objects {
   ChildIds: 5021902761380162581
   ChildIds: 8800454525094024065
   ChildIds: 11591319365004402937
+  ChildIds: 16575490586798734636
+  ChildIds: 14226364027159424952
+  ChildIds: 8383243661965337320
+  ChildIds: 10153533730732639724
+  ChildIds: 4805296679715927378
+  ChildIds: 2647917496991393825
+  ChildIds: 2639930851743734809
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -38,6 +45,332 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 2639930851743734809
+  Name: "Rock Flat 01"
+  Transform {
+    Location {
+      X: 752.957764
+      Y: -3302.44019
+      Z: 139.866455
+    }
+    Rotation {
+      Pitch: 87.9595184
+    }
+    Scale {
+      X: 1.02424014
+      Y: 0.794672668
+      Z: 0.590836525
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 6061518345080760809
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6097986739863572337
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 2647917496991393825
+  Name: "Rock Flat 01"
+  Transform {
+    Location {
+      X: 2350
+      Y: -3550
+      Z: 59.5557861
+    }
+    Rotation {
+      Pitch: 90
+      Roll: -30
+    }
+    Scale {
+      X: -0.5
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6097986739863572337
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 4805296679715927378
+  Name: "Rock 01"
+  Transform {
+    Location {
+      X: 4025.74707
+      Y: -3495.98901
+      Z: 550.061096
+    }
+    Rotation {
+      Pitch: -4.54101563
+      Yaw: -127.166016
+      Roll: 81.1917419
+    }
+    Scale {
+      X: 0.752104223
+      Y: 0.910971761
+      Z: 0.225813523
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 347859619137269343
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15275369997730986123
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 10153533730732639724
+  Name: "Rock Flat 01"
+  Transform {
+    Location {
+      X: 3584.39722
+      Y: -4094.11572
+      Z: 234.345032
+    }
+    Rotation {
+      Pitch: 92.943985
+      Yaw: -55.1918335
+    }
+    Scale {
+      X: 1.00000072
+      Y: 0.744971454
+      Z: 0.300770313
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 6061518345080760809
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6097986739863572337
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 8383243661965337320
+  Name: "Rock 02"
+  Transform {
+    Location {
+      X: 4371.17773
+      Y: -2358.10913
+      Z: 300.122314
+    }
+    Rotation {
+      Pitch: -101.148193
+    }
+    Scale {
+      X: 0.903829157
+      Y: 0.581163287
+      Z: 0.242788032
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 347859619137269343
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6524217407079190017
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 14226364027159424952
+  Name: "Rocks"
+  Transform {
+    Location {
+      X: -1500
+      Y: -832.019043
+      Z: 122.325195
+    }
+    Rotation {
+      Yaw: 147.537399
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 16575490586798734636
+  Name: "Grass Short"
+  Transform {
+    Location {
+      X: 8010.19971
+      Y: -1968.01965
+      Z: 122.531738
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Grass:id"
+      AssetReference {
+        Id: 17030976479418775151
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15121849152362257563
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
   }
 }
 Objects {
@@ -84,6 +417,7 @@ Objects {
         Max: 90
       }
       Scaling {
+        Scaling: Free
         ScaleX {
           Min: 1
           Max: 1
@@ -97,13 +431,12 @@ Objects {
           Max: 1
         }
       }
-      RotationAlignment: AlignToWorldUp
       RandomYaw: true
       RandomPitchAngle: 6
       Materials {
         key: "Nature_Grass"
         value {
-          Id: 841534158063459245
+          Id: 17030976479418775151
         }
       }
       LocalPositionOffset {
@@ -203,13 +536,13 @@ Objects {
       Materials {
         key: "Nature_Branch"
         value {
-          Id: 841534158063459245
+          Id: 17088408420053602451
         }
       }
       Materials {
         key: "Nature_Trunk"
         value {
-          Id: 841534158063459245
+          Id: 9682415816199651129
         }
       }
       LocalPositionOffset {
@@ -260,7 +593,7 @@ Objects {
       Materials {
         key: "Nature_Branch"
         value {
-          Id: 841534158063459245
+          Id: 15770955986279307691
         }
       }
       Materials {
@@ -317,256 +650,11 @@ Objects {
       Materials {
         key: "Nature_Branch"
         value {
-          Id: 841534158063459245
+          Id: 15770955986279307691
         }
       }
       Materials {
         key: "Nature_Trunk"
-        value {
-          Id: 841534158063459245
-        }
-      }
-      LocalPositionOffset {
-      }
-      LocalRotationOffset {
-      }
-      GlobalPositionOffset {
-      }
-      Height {
-        Min: -102400
-        Max: 102400
-      }
-    }
-    Foliage {
-      Asset {
-        Id: 11256811629916886732
-      }
-      DistanceBetweenInstances: 1500
-      MaterialChannel: 2
-      SpawnDistance: 22400
-      CullDistance {
-        Min: 10000
-        Max: 20000
-      }
-      ReceivesDecals: true
-      GroundSlopeAngle {
-        Max: 90
-      }
-      Scaling {
-        ScaleX {
-          Min: 1
-          Max: 1
-        }
-        ScaleY {
-          Min: 1
-          Max: 1
-        }
-        ScaleZ {
-          Min: 1
-          Max: 1
-        }
-      }
-      RotationAlignment: AlignToWorldUp
-      RandomYaw: true
-      RandomPitchAngle: 6
-      Materials {
-        key: "Nature_Leaves"
-        value {
-          Id: 841534158063459245
-        }
-      }
-      LocalPositionOffset {
-      }
-      LocalRotationOffset {
-      }
-      GlobalPositionOffset {
-      }
-      Height {
-        Min: -102400
-        Max: 102400
-      }
-    }
-    Foliage {
-      Asset {
-        Id: 12308320582608440522
-      }
-      DistanceBetweenInstances: 1550
-      MaterialChannel: 2
-      SpawnDistance: 22400
-      CullDistance {
-        Min: 10000
-        Max: 20000
-      }
-      ReceivesDecals: true
-      GroundSlopeAngle {
-        Max: 90
-      }
-      Scaling {
-        ScaleX {
-          Min: 1
-          Max: 1
-        }
-        ScaleY {
-          Min: 1
-          Max: 1
-        }
-        ScaleZ {
-          Min: 1
-          Max: 1
-        }
-      }
-      RotationAlignment: AlignToWorldUp
-      RandomYaw: true
-      RandomPitchAngle: 6
-      Materials {
-        key: "Nature_Leaves"
-        value {
-          Id: 841534158063459245
-        }
-      }
-      LocalPositionOffset {
-      }
-      LocalRotationOffset {
-      }
-      GlobalPositionOffset {
-      }
-      Height {
-        Min: -102400
-        Max: 102400
-      }
-    }
-    Foliage {
-      Asset {
-        Id: 5593308949369683067
-      }
-      DistanceBetweenInstances: 1580
-      MaterialChannel: 2
-      SpawnDistance: 22400
-      CullDistance {
-        Min: 10000
-        Max: 20000
-      }
-      ReceivesDecals: true
-      GroundSlopeAngle {
-        Max: 90
-      }
-      Scaling {
-        ScaleX {
-          Min: 1
-          Max: 1
-        }
-        ScaleY {
-          Min: 1
-          Max: 1
-        }
-        ScaleZ {
-          Min: 1
-          Max: 1
-        }
-      }
-      RotationAlignment: AlignToWorldUp
-      RandomYaw: true
-      RandomPitchAngle: 6
-      Materials {
-        key: "Nature_Leaves"
-        value {
-          Id: 841534158063459245
-        }
-      }
-      LocalPositionOffset {
-      }
-      LocalRotationOffset {
-      }
-      GlobalPositionOffset {
-      }
-      Height {
-        Min: -102400
-        Max: 102400
-      }
-    }
-    Foliage {
-      Asset {
-        Id: 11119861280448740737
-      }
-      DistanceBetweenInstances: 1610
-      MaterialChannel: 2
-      SpawnDistance: 25600
-      CullDistance {
-        Min: 10000
-        Max: 20000
-      }
-      ReceivesDecals: true
-      GroundSlopeAngle {
-        Max: 90
-      }
-      Scaling {
-        ScaleX {
-          Min: 1
-          Max: 1
-        }
-        ScaleY {
-          Min: 1
-          Max: 1
-        }
-        ScaleZ {
-          Min: 1
-          Max: 1
-        }
-      }
-      RotationAlignment: AlignToWorldUp
-      RandomYaw: true
-      RandomPitchAngle: 6
-      Materials {
-        key: "Nature_Leaves"
-        value {
-          Id: 841534158063459245
-        }
-      }
-      LocalPositionOffset {
-      }
-      LocalRotationOffset {
-      }
-      GlobalPositionOffset {
-      }
-      Height {
-        Min: -102400
-        Max: 102400
-      }
-    }
-    Foliage {
-      Asset {
-        Id: 9864727025224026139
-      }
-      DistanceBetweenInstances: 1000
-      MaterialChannel: 2
-      SpawnDistance: 20000
-      CullDistance {
-        Min: 10000
-        Max: 20000
-      }
-      ReceivesDecals: true
-      GroundSlopeAngle {
-        Max: 90
-      }
-      Scaling {
-        ScaleX {
-          Min: 1
-          Max: 1
-        }
-        ScaleY {
-          Min: 1
-          Max: 1
-        }
-        ScaleZ {
-          Min: 1
-          Max: 1
-        }
-      }
-      RotationAlignment: AlignToWorldUp
-      RandomYaw: true
-      RandomPitchAngle: 6
-      Materials {
-        key: "Nature_Flower"
         value {
           Id: 841534158063459245
         }

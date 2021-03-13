@@ -21,11 +21,12 @@ Objects {
     }
   }
   ParentId: 9631043015305279992
+  ChildIds: 4535467645674196443
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 10585766595898868021
+        Id: 347859619137269343
       }
     }
   }
@@ -54,6 +55,54 @@ Objects {
   }
 }
 Objects {
+  Id: 4535467645674196443
+  Name: "Decal Stains Round 01"
+  Transform {
+    Location {
+      X: 134.153656
+      Y: -82.7203217
+      Z: -63.1541405
+    }
+    Rotation {
+      Pitch: -1.99900496
+      Yaw: 76.8803406
+      Roll: -175.872437
+    }
+    Scale {
+      X: 0.555777788
+      Y: 0.468606
+      Z: 0.275574446
+    }
+  }
+  ParentId: 8917879694899684775
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.0473191366
+        G: 0.140625
+        B: 0.0329589844
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 7561221500312249307
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
   Id: 16764763864488080294
   Name: "80"
   Transform {
@@ -78,7 +127,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 10585766595898868021
+        Id: 6061518345080760809
       }
     }
   }
@@ -130,7 +179,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 10585766595898868021
+        Id: 6061518345080760809
       }
     }
   }
@@ -179,11 +228,12 @@ Objects {
     }
   }
   ParentId: 9631043015305279992
+  ChildIds: 15518073098380430634
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 10585766595898868021
+        Id: 17384217126992658879
       }
     }
   }
@@ -208,6 +258,54 @@ Objects {
         Mass: 100
         LinearDamping: 0.01
       }
+    }
+  }
+}
+Objects {
+  Id: 15518073098380430634
+  Name: "Decal Stains Round 01"
+  Transform {
+    Location {
+      X: -141.17395
+      Y: 76.7084961
+      Z: -74.9262466
+    }
+    Rotation {
+      Pitch: -6.42704391
+      Yaw: -163.744202
+      Roll: -148.641632
+    }
+    Scale {
+      X: 1.53517807
+      Y: -0.322499752
+      Z: 0.737838745
+    }
+  }
+  ParentId: 13824855072847399013
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.0473191366
+        G: 0.140625
+        B: 0.0329589844
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 7561221500312249307
+    }
+    TeamSettings {
+    }
+    DecalBP {
     }
   }
 }
@@ -340,7 +438,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 10585766595898868021
+        Id: 17384217126992658879
       }
     }
   }
@@ -387,11 +485,12 @@ Objects {
     }
   }
   ParentId: 9631043015305279992
+  ChildIds: 13873107574130316147
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 10585766595898868021
+        Id: 347859619137269343
       }
     }
   }
@@ -420,6 +519,54 @@ Objects {
   }
 }
 Objects {
+  Id: 13873107574130316147
+  Name: "Decal Stains Round 01"
+  Transform {
+    Location {
+      X: 3.74146938
+      Y: -6.11722422
+      Z: -116.722664
+    }
+    Rotation {
+      Pitch: 1.95072925
+      Yaw: -90.8846054
+      Roll: -176.614197
+    }
+    Scale {
+      X: 0.369424701
+      Y: 0.305303484
+      Z: 0.960541129
+    }
+  }
+  ParentId: 18444516398440173252
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.0473191366
+        G: 0.140625
+        B: 0.0329589844
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 7561221500312249307
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
   Id: 11307716013814790726
   Name: "156"
   Transform {
@@ -444,7 +591,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 10585766595898868021
+        Id: 6061518345080760809
       }
     }
   }
@@ -496,7 +643,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 10585766595898868021
+        Id: 17384217126992658879
       }
     }
   }
@@ -548,7 +695,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 10585766595898868021
+        Id: 17384217126992658879
       }
     }
   }
@@ -599,7 +746,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 10585766595898868021
+        Id: 6061518345080760809
       }
     }
   }
@@ -650,7 +797,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 10585766595898868021
+        Id: 347859619137269343
       }
     }
   }
@@ -703,7 +850,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 10585766595898868021
+        Id: 6061518345080760809
       }
     }
   }
@@ -741,9 +888,9 @@ Objects {
       Z: 107.809433
     }
     Rotation {
-      Pitch: 3.8199265
-      Yaw: 42.1216087
-      Roll: 180
+      Pitch: 4.19647503
+      Yaw: 42.145504
+      Roll: -179.658508
     }
     Scale {
       X: 0.843153775
@@ -752,11 +899,12 @@ Objects {
     }
   }
   ParentId: 9631043015305279992
+  ChildIds: 913255925878974753
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 10585766595898868021
+        Id: 6061518345080760809
       }
     }
   }
@@ -785,6 +933,54 @@ Objects {
   }
 }
 Objects {
+  Id: 913255925878974753
+  Name: "Decal Stains Round 01"
+  Transform {
+    Location {
+      X: -125.412918
+      Y: -4.42255259
+      Z: -71.394165
+    }
+    Rotation {
+      Pitch: -3.61243916
+      Yaw: 94.8251343
+      Roll: -165.453079
+    }
+    Scale {
+      X: 0.963399291
+      Y: 0.620627522
+      Z: 0.364972562
+    }
+  }
+  ParentId: 5141433416906507495
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.0473191366
+        G: 0.140625
+        B: 0.0329589844
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 7561221500312249307
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
   Id: 13399665426817606035
   Name: "8"
   Transform {
@@ -808,7 +1004,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 10585766595898868021
+        Id: 17384217126992658879
       }
     }
   }
@@ -859,7 +1055,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 10585766595898868021
+        Id: 6061518345080760809
       }
     }
   }
@@ -911,7 +1107,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 10585766595898868021
+        Id: 17384217126992658879
       }
     }
   }
@@ -960,11 +1156,12 @@ Objects {
     }
   }
   ParentId: 9631043015305279992
+  ChildIds: 17589541439521201702
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 10585766595898868021
+        Id: 17384217126992658879
       }
     }
   }
@@ -993,6 +1190,54 @@ Objects {
   }
 }
 Objects {
+  Id: 17589541439521201702
+  Name: "Decal Stains Round 01"
+  Transform {
+    Location {
+      X: 108.943459
+      Y: -19.4545
+      Z: -124.395012
+    }
+    Rotation {
+      Pitch: -1.09836268
+      Yaw: -37.0011864
+      Roll: 175.071823
+    }
+    Scale {
+      X: 0.586705863
+      Y: 0.504244208
+      Z: 1.26898479
+    }
+  }
+  ParentId: 1301164945240362852
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.0473191366
+        G: 0.140625
+        B: 0.0329589844
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 7561221500312249307
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
   Id: 13277615482823439019
   Name: "55b"
   Transform {
@@ -1013,11 +1258,12 @@ Objects {
     }
   }
   ParentId: 9631043015305279992
+  ChildIds: 17545782703823416545
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 10585766595898868021
+        Id: 347859619137269343
       }
     }
   }
@@ -1046,6 +1292,54 @@ Objects {
   }
 }
 Objects {
+  Id: 17545782703823416545
+  Name: "Decal Stains Round 01"
+  Transform {
+    Location {
+      X: -157.636856
+      Y: 79.2619781
+      Z: -40.547718
+    }
+    Rotation {
+      Pitch: -9.43477917
+      Yaw: -145.837891
+      Roll: -135.77243
+    }
+    Scale {
+      X: 1.73911524
+      Y: 0.546718478
+      Z: 0.402573138
+    }
+  }
+  ParentId: 13277615482823439019
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.0473191366
+        G: 0.140625
+        B: 0.0329589844
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 7561221500312249307
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
   Id: 16518421102946950198
   Name: "55a"
   Transform {
@@ -1070,7 +1364,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 10585766595898868021
+        Id: 6061518345080760809
       }
     }
   }

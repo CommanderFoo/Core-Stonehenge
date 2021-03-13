@@ -7,14 +7,16 @@ Objects {
     Location {
       X: 480.364502
       Y: -1271.94604
-      Z: 278.661682
+      Z: 266.230286
     }
     Rotation {
-      Yaw: -142.236191
+      Pitch: -0.0703735352
+      Yaw: -142.23735
+      Roll: 0.0912647918
     }
     Scale {
-      X: 1.15891016
-      Y: 0.999997616
+      X: 1.15890718
+      Y: 0.862055063
       Z: 0.786058366
     }
   }
@@ -23,7 +25,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 8382280223196247578
+        Id: 347859619137269343
       }
     }
   }
@@ -56,7 +58,7 @@ Objects {
   Name: "158"
   Transform {
     Location {
-      X: -1632.43433
+      X: -1734.57495
       Y: -63.6286621
       Z: 278.661743
     }
@@ -64,8 +66,8 @@ Objects {
       Yaw: 112.346039
     }
     Scale {
-      X: 1.50470507
-      Y: 0.999999344
+      X: 1.50470746
+      Y: 0.741594553
       Z: 0.786058366
     }
   }
@@ -74,7 +76,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 8382280223196247578
+        Id: 347859619137269343
       }
     }
   }
@@ -107,19 +109,19 @@ Objects {
   Name: "122"
   Transform {
     Location {
-      X: -2331.23047
-      Y: -782.130371
-      Z: 247.592163
+      X: -2272.74121
+      Y: -820.493896
+      Z: 239.859131
     }
     Rotation {
-      Pitch: 4.8714819
-      Yaw: -59.3120117
-      Roll: -179.736771
+      Pitch: -2.04214478
+      Yaw: -59.4129333
+      Roll: 176.171356
     }
     Scale {
-      X: 1.50470507
-      Y: 0.999999344
-      Z: 0.616095
+      X: 1.5
+      Y: 0.75
+      Z: 0.5
     }
   }
   ParentId: 13530288488501231798
@@ -127,7 +129,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 8382280223196247578
+        Id: 347859619137269343
       }
     }
   }
@@ -160,7 +162,7 @@ Objects {
   Name: "101"
   Transform {
     Location {
-      X: 781.009277
+      X: 723.478516
       Y: -963.895264
       Z: 278.661682
     }
@@ -168,8 +170,8 @@ Objects {
       Yaw: 49.8571815
     }
     Scale {
-      X: 1.30366111
-      Y: 1.00000703
+      X: 1.30366027
+      Y: 0.764469504
       Z: 0.786058366
     }
   }
@@ -178,7 +180,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 8382280223196247578
+        Id: 6061518345080760809
       }
     }
   }
@@ -211,7 +213,7 @@ Objects {
   Name: "102"
   Transform {
     Location {
-      X: 1023.7251
+      X: 1006.90527
       Y: -583.652344
       Z: 278.661682
     }
@@ -219,8 +221,8 @@ Objects {
       Yaw: -117.587769
     }
     Scale {
-      X: 1.27926302
-      Y: 0.99999994
+      X: 1.27926195
+      Y: 0.715262055
       Z: 0.786058366
     }
   }
@@ -229,7 +231,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 8382280223196247578
+        Id: 347859619137269343
       }
     }
   }
@@ -267,7 +269,9 @@ Objects {
       Z: 278.661682
     }
     Rotation {
-      Yaw: -86.2908325
+      Pitch: -0.885040283
+      Yaw: -86.3977051
+      Roll: 13.7865639
     }
     Scale {
       X: 1.50470507
@@ -280,7 +284,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 8382280223196247578
+        Id: 347859619137269343
       }
     }
   }
@@ -318,11 +322,11 @@ Objects {
       Z: 278.661682
     }
     Rotation {
-      Yaw: -58.2168579
+      Yaw: -51.3872375
     }
     Scale {
-      X: 1.50470507
-      Y: 0.999999344
+      X: 1.50470471
+      Y: 0.936435
       Z: 0.786058366
     }
   }
@@ -331,7 +335,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 8382280223196247578
+        Id: 6061518345080760809
       }
     }
   }
@@ -372,8 +376,8 @@ Objects {
       Yaw: -43.9655762
     }
     Scale {
-      X: 1.50470507
-      Y: 0.999999344
+      X: 1.50470805
+      Y: 0.834492683
       Z: 0.786058366
     }
   }
@@ -382,7 +386,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 8382280223196247578
+        Id: 347859619137269343
       }
     }
   }
@@ -416,15 +420,17 @@ Objects {
   Transform {
     Location {
       X: -629.172852
-      Y: 1215.2981
-      Z: 278.661682
+      Y: 1181.02942
+      Z: 280.120178
     }
     Rotation {
-      Yaw: -24.3074951
+      Pitch: -4.07632446
+      Yaw: -23.9835815
+      Roll: -9.078125
     }
     Scale {
-      X: 1.50470507
-      Y: 0.999999344
+      X: 1.50470865
+      Y: 0.715505242
       Z: 0.786058366
     }
   }
@@ -433,7 +439,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 8382280223196247578
+        Id: 6061518345080760809
       }
     }
   }

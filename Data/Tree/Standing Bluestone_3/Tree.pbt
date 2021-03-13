@@ -1,6 +1,59 @@
 Name: "Standing Bluestone_3"
 RootId: 7177162049275711345
 Objects {
+  Id: 309227506893581069
+  Name: "rock"
+  Transform {
+    Location {
+      X: 1198.61279
+      Y: -755.608154
+      Z: 406.299194
+    }
+    Rotation {
+      Pitch: 85.0205
+      Yaw: 126.036163
+      Roll: -4.77520752
+    }
+    Scale {
+      X: 0.52467227
+      Y: 0.459826767
+      Z: 0.484435022
+    }
+  }
+  ParentId: 7177162049275711345
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 347859619137269343
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6097986739863572337
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
   Id: 10906273870229241413
   Name: "33"
   Transform {

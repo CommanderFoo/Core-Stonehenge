@@ -26,6 +26,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15275369997730986123
+  Name: "Rock 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_001"
+  }
+}
+Assets {
   Id: 15121849152362257563
   Name: "Grass Short"
   PlatformAssetType: 1
@@ -53,15 +62,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12308320582608440522
-  Name: "Flower Wild Lily 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_foliage_gen_flower_wild_lily_001_ref"
-  }
-}
-Assets {
   Id: 11419045190388910930
   Name: "Crosshair 025"
   PlatformAssetType: 9
@@ -71,39 +71,12 @@ Assets {
   }
 }
 Assets {
-  Id: 11256811629916886732
-  Name: "Flower Bellflower 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_foliage_gen_flower_bell_001_ref"
-  }
-}
-Assets {
-  Id: 11119861280448740737
-  Name: "Flower Bellflower 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_foliage_gen_flower_bell_002_ref"
-  }
-}
-Assets {
   Id: 10683065336905200881
   Name: "Invisible"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_invisible_001"
-  }
-}
-Assets {
-  Id: 9864727025224026139
-  Name: "Flower Daisy Patch 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_flower_daisy_001"
   }
 }
 Assets {
@@ -134,12 +107,21 @@ Assets {
   }
 }
 Assets {
-  Id: 5593308949369683067
-  Name: "Flower Wild Lily Patch 01"
+  Id: 6524217407079190017
+  Name: "Rock 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_foliage_gen_flower_wild_lily_patch_001_ref"
+    AssetId: "sm_rock_generic_002_sm_rock_generic_002_LOD0"
+  }
+}
+Assets {
+  Id: 6097986739863572337
+  Name: "Rock Flat 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_004"
   }
 }
 Assets {

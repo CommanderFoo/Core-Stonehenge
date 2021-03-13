@@ -36,6 +36,24 @@ Assets {
         Name: "cs:can_combine"
         Bool: false
       }
+      Overrides {
+        Name: "cs:combines_with"
+        Int: 0
+      }
+      Overrides {
+        Name: "cs:combined_ui_item"
+        AssetReference {
+          Id: 841534158063459245
+        }
+      }
+      Overrides {
+        Name: "cs:can_use"
+        Bool: false
+      }
+      Overrides {
+        Name: "cs:use_with"
+        String: ""
+      }
     }
   }
   SerializationVersion: 76

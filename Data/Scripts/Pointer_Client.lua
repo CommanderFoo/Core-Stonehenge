@@ -11,13 +11,18 @@ local cursor = {
 	["pickup"] = script:GetCustomProperty("pickup"),
 	["default"] = script:GetCustomProperty("default"),
 	["inventory_look"] = script:GetCustomProperty("look"),
-	["combine"] = script:GetCustomProperty("combine")
+	["combine"] = script:GetCustomProperty("combine"),
+	["use"] = script:GetCustomProperty("combine")
 
 }
 
 local display_cursor = false
 local move_cursor = true
 local current_cursor = cursor["default"]
+local current_type = "default"
+local override = false
+local last_cursor = nil
+local last_size = false
 
 function Tick()
 	if(display_cursor) then
@@ -33,11 +38,13 @@ function Tick()
 end
 
 Events.Connect("show_cursor", function(type)
+	if(override) then
+		return
+	end
+
 	local type = type or "default"
 
 	if(cursor[type]) then
-		--UI.SetCanCursorInteractWithUI(true)
-
 		reticle_ui.visibility = Visibility.FORCE_OFF
 		current_cursor = cursor[type]
 		cursor_ui.visibility = Visibility.FORCE_ON
@@ -50,6 +57,7 @@ Events.Connect("show_cursor", function(type)
 			cursor_ui.height = cursor_big_size.y
 		end
 
+		current_type = type
 		cursor_ui:SetImage(current_cursor)
 		display_cursor = true
 	end
@@ -78,4 +86,24 @@ Events.Connect("change_reticle", function(type)
 	end
 
 	reticle_ui.visibility = Visibility.FORCE_ON
+end)
+
+Events.Connect("override_cursor", function(type)
+	if(not type) then
+		if(last_cursor ~= nil) then
+			cursor_ui:SetImage(last_cursor)
+			cursor_ui.width = last_size.x
+			cursor_ui.height = last_size.y
+		end
+		
+		override = false
+	else
+		last_cursor = current_type
+		last_size = Vector2.New(cursor_ui.width, cursor_ui.height)
+
+		override = true
+		cursor_ui:SetImage(cursor[type])
+		cursor_ui.width = cursor_big_size.x
+		cursor_ui.height = cursor_big_size.y
+	end
 end)

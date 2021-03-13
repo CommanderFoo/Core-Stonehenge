@@ -24,6 +24,7 @@ local is_interacting = false
 local active_looking_obj = nil
 local mouse_pressed = false
 local tween = nil
+local using = false
 
 for i = 1, max_slots do
 	inventory[i] = {
@@ -46,10 +47,14 @@ for i = 1, max_slots do
 
 			local type = "default"
 
-			if(inventory[i].data:GetCustomProperty("can_combine")) then
-				type = "combine"
-			elseif(inventory[i].data:GetCustomProperty("can_look")) then
-				type = "inventory_look"
+			if((is_inspecting or is_interacting) and inventory[i].data:GetCustomProperty("can_use")) then
+				type = "use"
+			else
+				if(inventory[i].data:GetCustomProperty("can_combine")) then
+					type = "combine"
+				elseif(inventory[i].data:GetCustomProperty("can_look")) then
+					type = "inventory_look"
+				end
 			end
 
 			Events.Broadcast("show_cursor", type)
@@ -73,13 +78,19 @@ for i = 1, max_slots do
 			end
 
 			if(not same_slot) then
+				local data = inventory[i].data
+
 				inventory[i].background:SetColor(active_color)
 				inventory[i].active = true
 				active_slot = inventory[i]
 				active_slot.inspecting = true
 
-				if(inventory[i].data:GetCustomProperty("can_look")) then
-					active_looking_obj = World.SpawnAsset(inventory[i].data:GetCustomProperty("model_asset"))
+				if(data:GetCustomProperty("can_use") and is_interacting or is_inspecting) then
+					using = true
+					Events.Broadcast("override_cursor", "use")
+					Events.Broadcast("using_item", inventory[i].data)
+				elseif(data:GetCustomProperty("can_look")) then
+					active_looking_obj = World.SpawnAsset(data:GetCustomProperty("model_asset"))
 					active_looking_obj:SetWorldPosition(helper:GetWorldPosition())
 					active_looking_obj:SetWorldScale(Vector3.New(0, 0, 0))
 
@@ -156,6 +167,12 @@ function clean_up_active_data()
 			active_looking_obj = nil
 		end
 
+		if(using) then
+			Events.Broadcast("using_item", nil)
+			Events.Broadcast("override_cursor", false)
+			using = false
+		end
+
 		active_slot.inspecting = false
 		active_slot.active = false
 		active_slot.background:SetColor(unhover_color)
@@ -224,7 +241,7 @@ end
 function increase(obj_ref, quantity, remove_object)
 	local id = obj_ref
 
-	if(type(id) ~= "string") then
+	if(type(id) == "userdata") then
 		id = obj_ref:GetObject().id
 	end
 	
@@ -250,7 +267,7 @@ end
 function decrease(obj_ref, quantity)
 	local id = obj_ref
 
-	if(type(id) ~= "string") then
+	if(type(id) == "userdata") then
 		id = obj_ref:GetObject().id
 	end
 	
@@ -276,7 +293,7 @@ end
 function remove(obj_ref)
 	local id = obj_ref
 
-	if(type(id) ~= "string") then
+	if(type(id) == "userdata") then
 		id = obj_ref:GetObject().id
 	end
 	
@@ -287,6 +304,13 @@ function remove(obj_ref)
 		local existing_slot_index, existing_slot_entry = get_existing_slot(inventory_id)
 
 		if(existing_slot_index and existing_slot_entry) then
+			if(active_slot == existing_slot_entry) then
+				active_slot.inspecting = false
+				active_slot.active = false
+				active_slot.background:SetColor(unhover_color)
+				active_slot = nil
+			end
+
 			existing_slot_entry.data = nil
 			existing_slot_entry.quantity = 0
 			existing_slot_entry.icon:Destroy()
@@ -326,10 +350,10 @@ end
 
 function update_items()
 	for i = 1, max_slots do
-		if(inventory[i].icon ~= nil) then
+		if(Object.IsValid(inventory[i].icon)) then
 			local color = Color.New(1, 1, 1, 1)
 
-			if((is_inspecting or is_interacting) and inventory[i].data:GetCustomProperty("can_look")) then
+			if((is_inspecting or is_interacting) and inventory[i].data:GetCustomProperty("can_look") and not inventory[i].data:GetCustomProperty("can_use")) then
 				color.a = .5
 				inventory[i].disabled = true
 			else
@@ -355,7 +379,7 @@ function disable_inventory()
 	inventory_active = false
 
 	for i = 1, max_slots do
-		if(inventory[i].icon ~= nil) then
+		if(Object.IsValid(inventory[i].icon)) then
 			inventory[i].icon:SetColor(Color.New(1, 1, 1, .5))
 		end
 	end
@@ -375,6 +399,7 @@ end
 local_player.bindingPressedEvent:Connect(function(p, binding)
 	if(not is_inspecting and not is_interacting and can_open_inventory and YOOTIL.Input[key_binding] == binding) then
 		if(inventory_active) then
+			Events.Broadcast("override_cursor", false)
 			disable_inventory()
 			Events.Broadcast("hide_cursor")
 			Events.BroadcastToServer("enable_player", local_player)

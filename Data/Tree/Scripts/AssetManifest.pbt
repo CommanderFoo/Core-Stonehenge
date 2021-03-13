@@ -8,15 +8,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17427903691638175796
-  Name: "Icon Settings"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_Settings"
-  }
-}
-Assets {
   Id: 17409003921622131677
   Name: "Fantasy Magnifying Glass 001"
   PlatformAssetType: 9
@@ -32,5 +23,14 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Basic_Shape_Circle"
+  }
+}
+Assets {
+  Id: 4408248990867641932
+  Name: "Survival Tool Wrench 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Survival_Equip_Tool_025"
   }
 }

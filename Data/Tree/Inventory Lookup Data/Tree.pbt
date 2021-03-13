@@ -336,7 +336,7 @@ Objects {
     Overrides {
       Name: "cs:ui_asset"
       AssetReference {
-        Id: 17916930565914598543
+        Id: 16650379058080253417
       }
     }
     Overrides {
@@ -345,12 +345,22 @@ Objects {
     }
     Overrides {
       Name: "cs:can_look"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "cs:model_asset"
       AssetReference {
         Id: 14387900785056799154
+      }
+    }
+    Overrides {
+      Name: "cs:combines_with"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:combined_ui_item"
+      AssetReference {
+        Id: 9516743151407257515
       }
     }
   }
@@ -413,6 +423,24 @@ Objects {
       AssetReference {
         Id: 2846776622655224838
       }
+    }
+    Overrides {
+      Name: "cs:combines_with"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:combined_ui_item"
+      AssetReference {
+        Id: 9516743151407257515
+      }
+    }
+    Overrides {
+      Name: "cs:can_use"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:use_with"
+      String: "C44726DA0EF89EF7:Item Look Sub Example"
     }
   }
   Collidable_v2 {

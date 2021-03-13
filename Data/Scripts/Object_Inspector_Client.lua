@@ -12,10 +12,15 @@ local mouse_pressed = false
 local can_rotate = false
 local is_interacting = false
 local inventory_open = false
+local using_item = nil
+local raycast_obj = nil
+local zoomed = false
 
 local_player.bindingPressedEvent:Connect(function(p, binding)
 	if(binding == "ability_primary") then
 		mouse_pressed = true
+
+		use_item()
 	end
 end)
 
@@ -40,6 +45,10 @@ function inspect_object(obj_ref)
 	orig_ref = obj_ref
 	orig_obj = obj_ref:GetObject()
 
+	if(using_item and orig_obj:GetCustomProperty("use_with")) then
+		return
+	end
+
 	obj = World.SpawnAsset(orig_obj.sourceTemplateId)
 
 	obj.collision = Collision.FORCE_OFF
@@ -59,6 +68,8 @@ function inspect_object(obj_ref)
 		obj:MoveTo(move_to_pos, .5)
 	end
 	
+	zoomed = true
+
 	UI.SetCanCursorInteractWithUI(true)
 
 	if(not is_interacting) then
@@ -67,7 +78,9 @@ function inspect_object(obj_ref)
 
 	put_down_button.visibility = Visibility.FORCE_ON
 
-	can_rotate = true
+	if(using_item == nil) then
+		can_rotate = true
+	end
 end
 
 put_down_button.hoveredEvent:Connect(function()
@@ -91,6 +104,8 @@ function put_down_object()
 
 	obj:MoveTo(orig_obj:GetWorldPosition(), .5)
 	obj:RotateTo(orig_obj:GetWorldRotation(), .5)
+
+	zoomed = false
 
 	Task.Wait(.5)
 
@@ -143,6 +158,23 @@ function Tick()
 	end
 end
 
+function use_item()
+	print(using_item, orig_obj)
+
+	if(Object.IsValid(using_item) and Object.IsValid(orig_obj)) then
+		if(using_item:GetCustomProperty("use_with") == orig_obj.id) then
+			Events.Broadcast("inventory_remove", using_item:GetCustomProperty("id"))
+			Events.Broadcast("override_cursor", false)
+			Events.Broadcast("using_item", nil)
+
+			if(zoomed) then
+				Task.Wait(.5)
+				can_rotate = true
+			end
+		end
+	end
+end
+
 Events.Connect("inspect_object", inspect_object)
 Events.Connect("put_down_object", put_down_object)
 
@@ -153,4 +185,19 @@ end)
 Events.Connect("clear_inspecting", put_down_object)
 Events.Connect("interacting", function(state)
 	is_interacting = state
+end)
+
+Events.Connect("using_item", function(item)
+	using_item = item
+	
+	if(item) then
+		can_rotate = false
+	else
+		can_rotate = true
+	end
+end)
+
+Events.Connect("raycast_object", function(obj)
+	raycast_object = obj
+	--use_item()
 end)

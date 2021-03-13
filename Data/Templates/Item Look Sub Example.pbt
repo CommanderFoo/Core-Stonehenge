@@ -41,7 +41,6 @@ Assets {
           Location {
           }
           Rotation {
-            Roll: 178.650192
           }
           Scale {
             X: 1

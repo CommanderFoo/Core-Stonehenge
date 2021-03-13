@@ -1,61 +1,6 @@
 Name: "Interactables"
 RootId: 13207548860357947295
 Objects {
-  Id: 14909378763419180088
-  Name: "Item Pickup Example"
-  Transform {
-    Location {
-      X: 7346.01904
-      Y: -2183.15088
-      Z: 141.361725
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13207548860357947295
-  WantsNetworking: true
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 6049751545661728224
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Item Pickup Example"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 7252.1377
-            Y: -1976.32703
-            Z: 141.361725
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 7681314977375388580
-    }
-  }
-}
-Objects {
   Id: 3337016151185435880
   Name: "Item Pickup Example"
   Transform {
@@ -250,8 +195,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 7224.93555
-            Y: -2500.01172
+            X: 7790.87109
+            Y: -1809.43054
             Z: 141.361694
           }
         }
@@ -298,8 +243,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 7027.76611
-            Y: -2227.16968
+            X: 7555.20703
+            Y: -1753.57837
             Z: 141.361694
           }
         }
@@ -578,6 +523,12 @@ Objects {
   }
   ParentId: 15427196770349038411
   WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 11656462785356384221
@@ -594,28 +545,6 @@ Objects {
             Z: 156.191772
           }
         }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
-          Name: "cs:type"
-          String: "sub_look"
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 12977088586266084573
-      value {
         Overrides {
           Name: "Rotation"
           Rotator {

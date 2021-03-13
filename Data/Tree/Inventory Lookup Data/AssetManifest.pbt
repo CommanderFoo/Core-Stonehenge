@@ -8,6 +8,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9516743151407257515
+  Name: "Fantasy Glasses 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Glasses_001"
+  }
+}
+Assets {
   Id: 5285701219960278763
   Name: "Fantasy Book 01"
   PlatformAssetType: 1

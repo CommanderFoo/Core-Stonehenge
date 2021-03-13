@@ -10,14 +10,19 @@ local obj_type = nil
 local over_inventory = false
 local is_inspecting = false
 local is_interacting = false
+local using_item = nil
 
 local_player.bindingPressedEvent:Connect(function(p, binding)
 	if(can_raycast and over_pickup and binding == "ability_primary" and Object.IsValid(pickup_obj)) then
 		if(string.find(obj_type, "look")) then
-			Events.Broadcast("inspect_object", pickup_obj:GetReference(), is_interacting)
+			if(not using_item) then
+				Events.Broadcast("inspect_object", pickup_obj:GetReference(), is_interacting)
+			end
 		else
-			Events.Broadcast("inventory_add", pickup_obj:GetReference())
-			Events.Broadcast("play_sound", "pickup")
+			if(using_item == nil) then
+				Events.Broadcast("inventory_add", pickup_obj:GetReference())
+				Events.Broadcast("play_sound", "pickup")
+			end
 		end
 	end
 end)
@@ -70,6 +75,7 @@ function Tick()
 			if(obj_type) then
 				if(string.find(obj_type, "look")) then
 					pointer = "look"
+					Events.Broadcast("raycast_object", pickup_obj)
 				elseif(string.find(obj_type, "pickup")) then
 					pointer = "pickup"
 				end
@@ -139,4 +145,8 @@ end)
 
 Events.Connect("over_inventory", function(state)
 	over_inventory = state
+end)
+
+Events.Connect("using_item", function(item)
+	using_item = item
 end)

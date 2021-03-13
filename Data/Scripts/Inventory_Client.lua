@@ -87,7 +87,8 @@ for i = 1, max_slots do
 
 				if(data:GetCustomProperty("can_use") and is_interacting or is_inspecting) then
 					using = true
-					Events.Broadcast("override_cursor", "use")
+
+					Events.Broadcast("override_cursor", "use", inventory[i].icon.sourceTemplateId)
 					Events.Broadcast("using_item", inventory[i].data)
 				elseif(data:GetCustomProperty("can_look")) then
 					active_looking_obj = World.SpawnAsset(data:GetCustomProperty("model_asset"))
@@ -351,16 +352,23 @@ end
 function update_items()
 	for i = 1, max_slots do
 		if(Object.IsValid(inventory[i].icon)) then
-			local color = Color.New(1, 1, 1, 1)
+			local children = inventory[i].icon:GetChildren()
+			local alpha = .5
 
 			if((is_inspecting or is_interacting) and inventory[i].data:GetCustomProperty("can_look") and not inventory[i].data:GetCustomProperty("can_use")) then
-				color.a = .5
 				inventory[i].disabled = true
+				alpha = .5
 			else
+				if(inventory_active) then
+					alpha = 1
+				end
+
 				inventory[i].disabled = false
 			end
-			
-			inventory[i].icon:SetColor(color)
+
+			for ci, c in ipairs(children) do			
+				c:SetColor(Color.New(1, 1, 1, alpha))
+			end
 		end
 	end
 end
@@ -380,7 +388,17 @@ function disable_inventory()
 
 	for i = 1, max_slots do
 		if(Object.IsValid(inventory[i].icon)) then
-			inventory[i].icon:SetColor(Color.New(1, 1, 1, .5))
+			local children = inventory[i].icon:GetChildren()
+
+			for ci, c in ipairs(children) do
+				local color = Color.New(1, 1, 1, 1)
+
+				if(inventory[i].disabled) then
+					color.a = .5
+				end
+				
+				c:SetColor(Color.New(1, 1, 1, .5))
+			end
 		end
 	end
 

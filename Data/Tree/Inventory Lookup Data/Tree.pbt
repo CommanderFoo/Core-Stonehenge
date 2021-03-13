@@ -407,7 +407,7 @@ Objects {
     Overrides {
       Name: "cs:ui_asset"
       AssetReference {
-        Id: 17916930565914598543
+        Id: 11235362866752491243
       }
     }
     Overrides {

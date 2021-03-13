@@ -489,6 +489,12 @@ Objects {
         Y: 60
       }
     }
+    Overrides {
+      Name: "cs:inventory_cursor"
+      ObjectReference {
+        SelfId: 10320949908323721065
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

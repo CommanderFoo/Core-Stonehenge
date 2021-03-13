@@ -17,6 +17,8 @@ local_player.bindingPressedEvent:Connect(function(p, binding)
 		if(string.find(obj_type, "look")) then
 			if(not using_item) then
 				Events.Broadcast("inspect_object", pickup_obj:GetReference(), is_interacting)
+			else
+				Events.Broadcast("raycast_object", pickup_obj)
 			end
 		else
 			if(using_item == nil) then
@@ -75,7 +77,6 @@ function Tick()
 			if(obj_type) then
 				if(string.find(obj_type, "look")) then
 					pointer = "look"
-					Events.Broadcast("raycast_object", pickup_obj)
 				elseif(string.find(obj_type, "pickup")) then
 					pointer = "pickup"
 				end

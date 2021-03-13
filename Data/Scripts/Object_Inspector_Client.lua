@@ -20,7 +20,9 @@ local_player.bindingPressedEvent:Connect(function(p, binding)
 	if(binding == "ability_primary") then
 		mouse_pressed = true
 
-		use_item()
+		if(Object.IsValid(orig_obj) and raycast_obj == nil) then
+			use_item()
+		end
 	end
 end)
 
@@ -57,7 +59,7 @@ function inspect_object(obj_ref)
 
 	obj:SetWorldPosition(orig_obj:GetWorldPosition())
 
-	local offset = 120
+	local offset = 160
 
 	local obj_pos = orig_obj:GetWorldPosition()
 	local view_pos = local_player:GetViewWorldPosition()
@@ -159,17 +161,20 @@ function Tick()
 end
 
 function use_item()
-	print(using_item, orig_obj)
+	if(Object.IsValid(using_item)) then
+		local obj = orig_obj or raycast_obj
 
-	if(Object.IsValid(using_item) and Object.IsValid(orig_obj)) then
-		if(using_item:GetCustomProperty("use_with") == orig_obj.id) then
-			Events.Broadcast("inventory_remove", using_item:GetCustomProperty("id"))
-			Events.Broadcast("override_cursor", false)
-			Events.Broadcast("using_item", nil)
+		if(Object.IsValid(obj)) then
+			if(using_item:GetCustomProperty("use_with") == obj.id) then
+				Events.Broadcast("inventory_remove", using_item:GetCustomProperty("id"))
+				Events.Broadcast("override_cursor", false)
+				
+				if(zoomed) then
+					Task.Wait(.5)
+					can_rotate = true
+				end
 
-			if(zoomed) then
-				Task.Wait(.5)
-				can_rotate = true
+				Events.Broadcast("using_item", nil)
 			end
 		end
 	end
@@ -198,6 +203,6 @@ Events.Connect("using_item", function(item)
 end)
 
 Events.Connect("raycast_object", function(obj)
-	raycast_object = obj
-	--use_item()
+	raycast_obj = obj
+	use_item()
 end)

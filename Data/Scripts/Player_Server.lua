@@ -1,6 +1,7 @@
 Game.playerJoinedEvent:Connect(function(player)
 	disable_player(player)
 	player:SetVisibility(false)
+	player.animationStance = "unarmed_sit_ground_crossed"
 end)
 
 function disable_player(player, allow_camera)

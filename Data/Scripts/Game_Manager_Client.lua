@@ -39,7 +39,7 @@ Events.Connect("start_game", function()
 
 	-- @TODO: Enable after debug is removed
 	
-	--Events.Broadcast("show_letter")
+	Events.Broadcast("show_letter")
 
 	transition_tween = YOOTIL.Tween:new(transition_time, {a = 1}, {a = 0})
 

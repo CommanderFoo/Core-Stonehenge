@@ -8,6 +8,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17266765302244254460
+  Name: "Fantasy Cape 014"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Gear_Cape_015"
+  }
+}
+Assets {
   Id: 16759257907029005232
   Name: "Meta Retro Pickup 02 SFX"
   PlatformAssetType: 7
@@ -17,12 +26,48 @@ Assets {
   }
 }
 Assets {
+  Id: 15602181346006066812
+  Name: "BG Gradient 004"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundFlat_022"
+  }
+}
+Assets {
+  Id: 15594862770329451622
+  Name: "Fantasy Frame 003"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Frame_003"
+  }
+}
+Assets {
+  Id: 15508973441828404286
+  Name: "Fantasy Bread 004"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Food_Bread_004"
+  }
+}
+Assets {
   Id: 15475042365980567946
   Name: "Tree Redwood Medium"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_tree_redwood_002"
+  }
+}
+Assets {
+  Id: 15275989760242259074
+  Name: "UI Gradient Circular 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Basic_Shape_001"
   }
 }
 Assets {
@@ -44,12 +89,39 @@ Assets {
   }
 }
 Assets {
+  Id: 13696473080664636351
+  Name: "Fantasy Bread 007"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Food_Bread_007"
+  }
+}
+Assets {
+  Id: 13587610217960839778
+  Name: "BG Highlighted 004"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundHighlighted_022"
+  }
+}
+Assets {
   Id: 13487040045798304362
   Name: "Teko"
   PlatformAssetType: 28
   PrimaryAsset {
     AssetType: "FontAssetRef"
     AssetId: "TekoRegular_ref"
+  }
+}
+Assets {
+  Id: 12927726019170466110
+  Name: "Fantasy Ability Purple 003"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Ability_Purple_003"
   }
 }
 Assets {
@@ -62,12 +134,39 @@ Assets {
   }
 }
 Assets {
+  Id: 11376239422298037652
+  Name: "Fantasy Compass 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Compass_001"
+  }
+}
+Assets {
   Id: 10683065336905200881
   Name: "Invisible"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_invisible_001"
+  }
+}
+Assets {
+  Id: 10076833270907625934
+  Name: "Fantasy Craft Crystal 046"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Crafting_Crystal_046"
+  }
+}
+Assets {
+  Id: 9825560984220533392
+  Name: "BG Flat 004"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_22"
   }
 }
 Assets {
@@ -98,12 +197,39 @@ Assets {
   }
 }
 Assets {
+  Id: 5954460029906525647
+  Name: "BG Gradient 006"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundFlat_015"
+  }
+}
+Assets {
+  Id: 5602189958603134029
+  Name: "Amarante"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "AmaranteRegular_ref"
+  }
+}
+Assets {
   Id: 5248208841683454128
   Name: "Metamorphous"
   PlatformAssetType: 28
   PrimaryAsset {
     AssetType: "FontAssetRef"
     AssetId: "MetamorphousRegular_ref"
+  }
+}
+Assets {
+  Id: 4107982543433808349
+  Name: "Frame Beveled 006"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameSolid8px__015"
   }
 }
 Assets {
@@ -122,6 +248,24 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameOutline_020"
+  }
+}
+Assets {
+  Id: 2491937061868780933
+  Name: "Frame Outlined Thick 004"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameFlat_022"
+  }
+}
+Assets {
+  Id: 1749204029973281763
+  Name: "Fantasy Bread 005"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Food_Bread_005"
   }
 }
 Assets {

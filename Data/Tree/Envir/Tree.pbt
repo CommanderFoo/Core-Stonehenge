@@ -1,6 +1,73 @@
 Name: "Envir"
 RootId: 14580783129908760267
 Objects {
+  Id: 114449065823725813
+  Name: "Staging Area"
+  Transform {
+    Location {
+      X: 16600
+      Y: -7000
+      Z: 19.4561768
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14580783129908760267
+  ChildIds: 10236216713861285479
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 10236216713861285479
+  Name: "Staging Grid"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 22.4824181
+      Y: 21.2804813
+      Z: 0.992107034
+    }
+  }
+  ParentId: 114449065823725813
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 198353679974341757
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
   Id: 5822866965878578211
   Name: "Foliage"
   Transform {
@@ -77,7 +144,7 @@ Objects {
 }
 Objects {
   Id: 4644876479372150459
-  Name: "Grid Staging Area"
+  Name: "Chamber Mockup"
   Transform {
     Location {
       X: -17700

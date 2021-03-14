@@ -106,6 +106,10 @@ function Tick()
 	end
 end
 
+Events.Connect("force_ui_raycast", function()
+	ui_raycasting = true
+end)
+
 Events.Connect("disable_raycast", function()
 	can_raycast = false
 end)

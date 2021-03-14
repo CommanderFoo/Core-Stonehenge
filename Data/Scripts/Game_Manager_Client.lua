@@ -27,18 +27,15 @@ Events.Connect("start_game", function()
 
 	-- @TODO: Debug remove when done
 
-	Events.Broadcast("inventory_add", 1)
+	--Events.Broadcast("inventory_add", 1)
 
-	Events.BroadcastToServer("enable_player", local_player)
-	Events.Broadcast("hide_cursor")
-	Events.Broadcast("show_inventory")
-	Events.Broadcast("can_open_inventory", true)
-	Events.Broadcast("next_quest")
-	Events.Broadcast("enable_raycast")
-
-
-	-- @TODO: Enable after debug is removed
+	--Events.BroadcastToServer("enable_player", local_player)
 	
+	--Events.Broadcast("show_inventory")
+	--Events.Broadcast("can_open_inventory", true)
+	
+	--Events.Broadcast("enable_raycast")
+
 	Events.Broadcast("show_letter")
 
 	transition_tween = YOOTIL.Tween:new(transition_time, {a = 1}, {a = 0})

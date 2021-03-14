@@ -1,6 +1,32 @@
 Name: "Interactables"
 RootId: 13207548860357947295
 Objects {
+  Id: 14496764963604168968
+  Name: "Tent"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13207548860357947295
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Tent"
+  }
+}
+Objects {
   Id: 3337016151185435880
   Name: "Item Pickup Example"
   Transform {
@@ -33,61 +59,6 @@ Objects {
             X: 7346.01904
             Y: -2183.15088
             Z: 141.361725
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 7681314977375388580
-    }
-  }
-}
-Objects {
-  Id: 2227288689026491629
-  Name: "Item Pickup Example"
-  Transform {
-    Location {
-      X: 6999.42529
-      Y: -2513.43042
-      Z: 141.361694
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13207548860357947295
-  WantsNetworking: true
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 6049751545661728224
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Item Pickup Example"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 7247.09766
-            Y: -2315.28882
-            Z: 141.361694
           }
         }
         Overrides {

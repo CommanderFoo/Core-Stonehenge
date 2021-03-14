@@ -94,7 +94,7 @@ Assets {
               Value: "mc:etextjustify:left"
             }
             Font {
-              Id: 5248208841683454128
+              Id: 5602189958603134029
             }
           }
           AnchorLayout {
@@ -172,12 +172,12 @@ Assets {
       }
     }
     Assets {
-      Id: 5248208841683454128
-      Name: "Metamorphous"
+      Id: 5602189958603134029
+      Name: "Amarante"
       PlatformAssetType: 28
       PrimaryAsset {
         AssetType: "FontAssetRef"
-        AssetId: "MetamorphousRegular_ref"
+        AssetId: "AmaranteRegular_ref"
       }
     }
     PrimaryAssetId {

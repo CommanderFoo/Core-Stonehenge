@@ -89,6 +89,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14497564898634231046
+  Name: "Icon Close"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Close"
+  }
+}
+Assets {
   Id: 13696473080664636351
   Name: "Fantasy Bread 007"
   PlatformAssetType: 9

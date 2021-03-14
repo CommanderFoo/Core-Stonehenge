@@ -25,6 +25,7 @@ local active_looking_obj = nil
 local mouse_pressed = false
 local tween = nil
 local using = false
+local inventory_in_tween = nil
 
 for i = 1, max_slots do
 	inventory[i] = {
@@ -109,6 +110,10 @@ for i = 1, max_slots do
 
 					tween:on_complete(function()
 						tween = nil
+
+						if(data:GetCustomProperty("quest_item_look_id")) then
+							Events.Broadcast("quest_item_complete", data:GetCustomProperty("quest_item_look_id"))
+						end
 					end)
 				end
 			end
@@ -154,6 +159,10 @@ function Tick(dt)
 
 	if(tween ~= nil) then
 		tween:tween(dt)
+	end
+
+	if(inventory_in_tween ~= nil) then
+		inventory_in_tween:tween(dt)
 	end
 end
 
@@ -227,6 +236,10 @@ function add(obj_ref)
 
 				if(inventory_active) then
 					free_slot_entry.icon:SetColor(Color.New(1, 1, 1, 1))
+				end
+
+				if(data:GetCustomProperty("quest_item_id")) then
+					Events.Broadcast("quest_item_complete", data:GetCustomProperty("quest_item_id"))
 				end
 
 				Events.BroadcastToServer("inventory_add", free_slot_index, inventory_id, quantity, obj_ref, data:GetCustomProperty("remove_from_world"))
@@ -406,7 +419,17 @@ function disable_inventory()
 end
 
 function show_inventory()
-	inventory_ui.visibility = Visibility.FORCE_ON
+	inventory_in_tween = YOOTIL.Tween:new(1, { x = 140 }, { x = -30 })
+	
+	inventory_in_tween:on_change(function(c)
+		inventory_ui.x = c.x
+	end)
+
+	inventory_in_tween:on_complete(function()
+		inventory_in_tween = nil
+	end)
+
+	inventory_in_tween:set_easing("outBack")
 end
 
 function hide_inventory()

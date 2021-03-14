@@ -52,14 +52,15 @@ local Tween = {}
 
 Tween.Easings = require(script:GetCustomProperty("YOOTIL_Tween_Easings"))
 
-Tween.ease = function(from, to, original, time, duration, ease)
+Tween.ease = function(from, to, original, time, duration, ease, constant)
 	for k, v in pairs(to) do
 		local t = time
 		local b = original[k]
 		local c = v - original[k]
 		local d = duration
+		local s = constant or nil
 
-		from[k] = Tween.Easings[ease](t, b, c, d)
+		from[k] = Tween.Easings[ease](t, b, c, d, s)
 	end
 
 	return from
@@ -106,7 +107,7 @@ function Tween:tween(delta)
 			self.start_evt_invoked = true
 		end
 
-		self.from = Tween.ease(self.from, self.to, self.original, self.time - self.delay_tween, self.duration, self.easing or "linear")
+		self.from = Tween.ease(self.from, self.to, self.original, self.time - self.delay_tween, self.duration, self.easing or "linear", self.easing_constant)
 
 		if(type(self.change_evt) == "function") then
 			self.change_evt(self.from)
@@ -142,9 +143,13 @@ function Tween:reset()
 	return self
 end
 
-function Tween:set_easing(ease)
+function Tween:set_easing(ease, constant)
 	if(self.easing == nil and ease and Tween.Easings[ease]) then
 		self.easing = ease
+
+		if(constant) then
+			self.easing_constant = constant
+		end
 	end
 
 	return self
@@ -230,7 +235,8 @@ end
 		 original_to = Tween.copy_table(to),
 		 change_evt = nil,
 		 start_evt_invoked = false,
-		 tween_paused = false
+		 tween_paused = false,
+		 easing_constant = nil
  
 	 }, self)
  end

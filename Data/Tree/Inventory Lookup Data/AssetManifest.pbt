@@ -1,4 +1,13 @@
 Assets {
+  Id: 14836011899368154040
+  Name: "Barrier LIght"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_barrier_light_001"
+  }
+}
+Assets {
   Id: 14387900785056799154
   Name: "Fantasy Book 03"
   PlatformAssetType: 1

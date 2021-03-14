@@ -1,6 +1,71 @@
 Name: "Inventory Lookup Data"
 RootId: 17488655066859996786
 Objects {
+  Id: 835235775052658493
+  Name: "4BA94AB9BECA0EE8:Spectral Viewer Pickup"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17488655066859996786
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:id"
+      Int: 8
+    }
+    Overrides {
+      Name: "cs:quantity"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:remove_from_world"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:ui_asset"
+      AssetReference {
+        Id: 508699135448469578
+      }
+    }
+    Overrides {
+      Name: "cs:can_look"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:model_asset"
+      AssetReference {
+        Id: 14836011899368154040
+      }
+    }
+    Overrides {
+      Name: "cs:quest_item_id"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:quest_item_look_id"
+      Int: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 698065707954771193
+    }
+  }
+}
+Objects {
   Id: 4158873796296739067
   Name: "291A931CEEF3EB75:Item Pickup Sub Example"
   Transform {

@@ -102,7 +102,7 @@ function remove_current_quest()
 		current_quest_holder:Destroy()
 	end)
 
-	quest_tween:set_delay(2)
+	quest_tween:set_delay(1)
 
 	has_quest = false
 end
@@ -113,14 +113,14 @@ function Tick(dt)
 	end
 end
 
-function mark_quest_item_complete(id)
+function mark_quest_item_complete(id, delay)
 	if(current_quest_items[id]) then
 		current_quest_items[id].item:SetColor(quest_item_complete_color)
 		current_quest_items[id].complete = true
 
 		if(is_quest_complete()) then
 			remove_current_quest()
-			Task.Wait(3)
+			Task.Wait(2)
 			next_quest()
 		end
 	end

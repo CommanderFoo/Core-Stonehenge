@@ -525,30 +525,69 @@ Objects {
   ParentId: 14858104107515101237
   UnregisteredParameters {
     Overrides {
-      Name: "cs:letter_button"
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
+      }
+    }
+    Overrides {
+      Name: "cs:letter_container"
       ObjectReference {
-        SelfId: 4652850791220885552
+        SelfId: 14922594782307179426
       }
     }
     Overrides {
-      Name: "cs:letter_hover_color"
-      Color {
-        R: 0.0177083015
-        G: 0.0177083015
-        B: 0.0177083015
-        A: 1
+      Name: "cs:lid"
+      ObjectReference {
+        SelfId: 17149079169545624155
       }
     }
     Overrides {
-      Name: "cs:letter_unhover_color"
-      Color {
-        A: 1
+      Name: "cs:seal"
+      ObjectReference {
+        SelfId: 6702977518861662880
       }
     }
     Overrides {
       Name: "cs:letter"
       ObjectReference {
-        SelfId: 14922594782307179426
+        SelfId: 11874334747391800717
+      }
+    }
+    Overrides {
+      Name: "cs:button"
+      ObjectReference {
+        SelfId: 8193909688984415477
+      }
+    }
+    Overrides {
+      Name: "cs:front"
+      ObjectReference {
+        SelfId: 10501625170870324669
+      }
+    }
+    Overrides {
+      Name: "cs:close_button"
+      ObjectReference {
+        SelfId: 10432539958817231375
+      }
+    }
+    Overrides {
+      Name: "cs:close_bg"
+      ObjectReference {
+        SelfId: 14561649432826111640
+      }
+    }
+    Overrides {
+      Name: "cs:close_x"
+      ObjectReference {
+        SelfId: 17065667157771370052
+      }
+    }
+    Overrides {
+      Name: "cs:location"
+      ObjectReference {
+        SelfId: 1156943006971659154
       }
     }
   }

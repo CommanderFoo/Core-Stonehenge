@@ -325,6 +325,12 @@ local function inBack(t, b, c, d, s)
   return c * t * t * ((s + 1) * t - s) + b
 end
 
+local function inBackMore(t, b, c, d, s)
+  if not s then s = 2.70158 end
+  t = t / d
+  return c * t * t * ((s + 1) * t - s) + b
+end
+
 local function outBack(t, b, c, d, s)
   if not s then s = 1.70158 end
   t = t / d - 1
@@ -429,4 +435,5 @@ return {
   outBounce = outBounce,
   inOutBounce = inOutBounce,
   outInBounce = outInBounce,
+
 }

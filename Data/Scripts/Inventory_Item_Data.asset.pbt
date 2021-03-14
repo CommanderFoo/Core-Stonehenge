@@ -33,26 +33,20 @@ Assets {
         Bool: false
       }
       Overrides {
-        Name: "cs:can_combine"
-        Bool: false
-      }
-      Overrides {
-        Name: "cs:combines_with"
-        Int: 0
-      }
-      Overrides {
-        Name: "cs:combined_ui_item"
-        AssetReference {
-          Id: 841534158063459245
-        }
-      }
-      Overrides {
         Name: "cs:can_use"
         Bool: false
       }
       Overrides {
         Name: "cs:use_with"
         String: ""
+      }
+      Overrides {
+        Name: "cs:quest_item_id"
+        Int: 0
+      }
+      Overrides {
+        Name: "cs:quest_item_look_id"
+        Int: 0
       }
     }
   }

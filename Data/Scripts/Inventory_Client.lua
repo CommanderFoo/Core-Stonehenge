@@ -379,7 +379,6 @@ function update_items()
 				inventory[i].disabled = false
 			end
 
-			print(alpha)
 			for ci, c in ipairs(children) do			
 				c:SetColor(Color.New(1, 1, 1, alpha))
 			end

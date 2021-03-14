@@ -91,10 +91,11 @@ close_button.clickedEvent:Connect(function()
 
 					Events.Broadcast("hide_cursor")
 					Events.Broadcast("enable_raycast")
-					Events.BroadcastToServer("enable_player", local_player, "unarmed_idle_relaxed")
+					Events.BroadcastToServer("enable_player", local_player, "unarmed_stance")
 					Events.Broadcast("show_inventory")
 					Events.Broadcast("can_open_inventory", true)
-					
+					Events.Broadcast("set_weather_profile", "daytime")
+
 				end)
 			end)
 		end)
@@ -104,8 +105,7 @@ close_button.clickedEvent:Connect(function()
 end)
 
 button.clickedEvent:Connect(function()
-	Events.Broadcast("set_weather_profile", "daytime")
-
+	
 	-- Wax tween
 
 	wax_tween = YOOTIL.Tween:new(.85, { x = seal.x, y = seal.y }, { x = seal.x + 140, y = seal.y + UI.GetScreenSize().y })

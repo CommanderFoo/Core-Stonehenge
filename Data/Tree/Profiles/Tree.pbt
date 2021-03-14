@@ -105,11 +105,11 @@ Objects {
     }
     Overrides {
       Name: "cs:tween_duration"
-      Float: 20
+      Float: 15
     }
     Overrides {
       Name: "cs:tween_delay"
-      Float: 2
+      Float: 0
     }
     Overrides {
       Name: "cs:tween"

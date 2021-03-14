@@ -194,6 +194,7 @@ function use_item()
 				end
 
 				Events.Broadcast("using_item", nil)
+				using_item = nil
 			end
 		end
 	end

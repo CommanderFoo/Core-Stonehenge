@@ -27,16 +27,16 @@ Events.Connect("start_game", function()
 
 	-- @TODO: Debug remove when done
 
-	--Events.Broadcast("inventory_add", 1)
-
-	--Events.BroadcastToServer("enable_player", local_player)
+	Events.Broadcast("inventory_add", 1)
+	Events.BroadcastToServer("enable_player", local_player)
+	Events.Broadcast("show_inventory")
+	Events.Broadcast("can_open_inventory", true)
+	Events.Broadcast("enable_raycast")
+	Events.Broadcast("set_weather_profile", "daytime")
 	
-	--Events.Broadcast("show_inventory")
-	--Events.Broadcast("can_open_inventory", true)
-	
-	--Events.Broadcast("enable_raycast")
+	-- @TODO: Enable this to test the letter
 
-	Events.Broadcast("show_letter")
+	--Events.Broadcast("show_letter")
 
 	transition_tween = YOOTIL.Tween:new(transition_time, {a = 1}, {a = 0})
 

@@ -39,8 +39,6 @@ local location_in_tween = nil
 local location_out_tween = nil
 
 close_button.clickedEvent:Connect(function()
-	Events.Broadcast("show_inventory")
-
 	close_button.visibility = Visibility.FORCE_OFF
 	
 	-- Letter up
@@ -158,7 +156,7 @@ button.clickedEvent:Connect(function()
 				letter_open_down_tween:on_complete(function()
 					letter_open_down_tween = nil
 
-					Task.Wait(5)
+					Task.Wait(3)
 
 					-- Fade in close letter button
 

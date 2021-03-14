@@ -29,12 +29,6 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:ui_asset"
-      AssetReference {
-        Id: 508699135448469578
-      }
-    }
-    Overrides {
       Name: "cs:can_look"
       Bool: true
     }
@@ -51,6 +45,12 @@ Objects {
     Overrides {
       Name: "cs:quest_item_look_id"
       Int: 1
+    }
+    Overrides {
+      Name: "cs:ui_asset"
+      AssetReference {
+        Id: 1522146674609678815
+      }
     }
   }
   Collidable_v2 {
@@ -96,12 +96,8 @@ Objects {
     Overrides {
       Name: "cs:ui_asset"
       AssetReference {
-        Id: 17916930565914598543
+        Id: 3609031534812979658
       }
-    }
-    Overrides {
-      Name: "cs:can_combine"
-      Bool: false
     }
     Overrides {
       Name: "cs:can_look"
@@ -157,12 +153,8 @@ Objects {
     Overrides {
       Name: "cs:ui_asset"
       AssetReference {
-        Id: 17916930565914598543
+        Id: 3609031534812979658
       }
-    }
-    Overrides {
-      Name: "cs:can_combine"
-      Bool: true
     }
     Overrides {
       Name: "cs:can_look"
@@ -218,12 +210,8 @@ Objects {
     Overrides {
       Name: "cs:ui_asset"
       AssetReference {
-        Id: 17916930565914598543
+        Id: 3609031534812979658
       }
-    }
-    Overrides {
-      Name: "cs:can_combine"
-      Bool: false
     }
     Overrides {
       Name: "cs:can_look"
@@ -279,12 +267,8 @@ Objects {
     Overrides {
       Name: "cs:ui_asset"
       AssetReference {
-        Id: 17916930565914598543
+        Id: 3609031534812979658
       }
-    }
-    Overrides {
-      Name: "cs:can_combine"
-      Bool: false
     }
     Overrides {
       Name: "cs:can_look"
@@ -340,12 +324,8 @@ Objects {
     Overrides {
       Name: "cs:ui_asset"
       AssetReference {
-        Id: 17916930565914598543
+        Id: 3609031534812979658
       }
-    }
-    Overrides {
-      Name: "cs:can_combine"
-      Bool: true
     }
     Overrides {
       Name: "cs:can_look"
@@ -397,12 +377,6 @@ Objects {
     Overrides {
       Name: "cs:remove_from_world"
       Bool: true
-    }
-    Overrides {
-      Name: "cs:ui_asset"
-      AssetReference {
-        Id: 16650379058080253417
-      }
     }
     Overrides {
       Name: "cs:can_combine"
@@ -470,12 +444,6 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:ui_asset"
-      AssetReference {
-        Id: 11235362866752491243
-      }
-    }
-    Overrides {
       Name: "cs:can_combine"
       Bool: false
     }
@@ -506,6 +474,12 @@ Objects {
     Overrides {
       Name: "cs:use_with"
       String: "C44726DA0EF89EF7:Item Look Sub Example"
+    }
+    Overrides {
+      Name: "cs:ui_asset"
+      AssetReference {
+        Id: 3609031534812979658
+      }
     }
   }
   Collidable_v2 {

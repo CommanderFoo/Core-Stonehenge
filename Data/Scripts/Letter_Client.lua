@@ -91,9 +91,10 @@ close_button.clickedEvent:Connect(function()
 
 					Events.Broadcast("hide_cursor")
 					Events.Broadcast("enable_raycast")
-					Events.BroadcastToServer("enable_player", local_player)
+					Events.BroadcastToServer("enable_player", local_player, "unarmed_idle_relaxed")
 					Events.Broadcast("show_inventory")
 					Events.Broadcast("can_open_inventory", true)
+					
 				end)
 			end)
 		end)
@@ -250,7 +251,6 @@ end
 Events.Connect("show_letter", function()
 	Events.Broadcast("set_weather_profile", "sunrise")
 	Events.Broadcast("disable_raycast")
-	Events.BroadcastToServer("disable_player", local_player)
 
 	UI.SetCanCursorInteractWithUI(true)
 

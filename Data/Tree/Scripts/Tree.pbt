@@ -1134,7 +1134,7 @@ Objects {
     }
     Overrides {
       Name: "cs:transition_time"
-      Float: 0.1
+      Float: 1.5
     }
   }
   Collidable_v2 {

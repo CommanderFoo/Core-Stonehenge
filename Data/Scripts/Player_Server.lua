@@ -1,25 +1,28 @@
 Game.playerJoinedEvent:Connect(function(player)
-	disable_player(player)
+	disable_player(player, "unarmed_sit_ground_crossed")
 	player:SetVisibility(false)
-	player.animationStance = "unarmed_sit_ground_crossed"
 end)
 
-function disable_player(player, allow_camera)
+function disable_player(player, stance)
 	player.movementControlMode = MovementControlMode.NONE
-
-	if(not allow_camera) then
-		player.lookControlMode = LookControlMode.NONE
-	end
-
+	player.lookControlMode = LookControlMode.NONE
 	player.maxJumpCount = 0
 	player.isCrouchEnabled = false
+
+	if(stance) then
+		set_player_stance(player, stance)
+	end
 end
 
-function enable_player(player)
+function enable_player(player, stance)
 	player.movementControlMode = MovementControlMode.VIEW_RELATIVE
 	player.lookControlMode = LookControlMode.RELATIVE
 	player.maxJumpCount = 1
 	player.isCrouchEnabled = true
+
+	if(stance) then
+		set_player_stance(player, stance)
+	end
 end
 
 function set_player_stance(player, stance)

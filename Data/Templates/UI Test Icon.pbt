@@ -1,13 +1,13 @@
 Assets {
-  Id: 17916930565914598543
-  Name: "UI Item Example"
+  Id: 3609031534812979658
+  Name: "UI Test Icon"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 9252116692543917023
+      RootId: 16488096320251308035
       Objects {
-        Id: 9252116692543917023
-        Name: "UI Item Example"
+        Id: 16488096320251308035
+        Name: "UI Test Icon"
         Transform {
           Scale {
             X: 1
@@ -15,8 +15,59 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 10320949908323721065
-        ChildIds: 17799389417310730743
+        ParentId: 17234408292425121700
+        ChildIds: 15525324312806124960
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 100
+          Height: 100
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentWidth: true
+          UseParentHeight: true
+          Panel {
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 15525324312806124960
+        Name: "Image"
+        Transform {
+          Location {
+            X: 5781.47754
+            Y: -4117.23633
+            Z: -23.137207
+          }
+          Rotation {
+            Yaw: -114.570152
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 16488096320251308035
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -34,7 +85,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 9856877556590816424
+              Id: 3623351081479753818
             }
             Color {
               R: 1
@@ -59,83 +110,14 @@ Assets {
           }
         }
       }
-      Objects {
-        Id: 17799389417310730743
-        Name: "UI Image"
-        Transform {
-          Location {
-            X: 4610.37842
-            Y: -4796.17871
-            Z: 10.7058048
-          }
-          Rotation {
-            Yaw: -134.695236
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 9252116692543917023
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Control {
-          RenderTransformPivot {
-            Anchor {
-              Value: "mc:euianchor:middlecenter"
-            }
-          }
-          UseParentWidth: true
-          UseParentHeight: true
-          Image {
-            Brush {
-              Id: 973686557043957374
-            }
-            Color {
-              R: 1
-              G: 0.671047568
-              B: 0.0580000281
-              A: 1
-            }
-            TeamSettings {
-            }
-          }
-          AnchorLayout {
-            SelfAnchor {
-              Anchor {
-                Value: "mc:euianchor:middlecenter"
-              }
-            }
-            TargetAnchor {
-              Anchor {
-                Value: "mc:euianchor:middlecenter"
-              }
-            }
-          }
-        }
-      }
     }
     Assets {
-      Id: 9856877556590816424
-      Name: "Fantasy Book 014"
+      Id: 3623351081479753818
+      Name: "Fantasy Book 005"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Equip_Book_014"
-      }
-    }
-    Assets {
-      Id: 973686557043957374
-      Name: "Fantasy Book 001"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Equip_Book_001"
+        AssetId: "UI_Fantasy_Equip_Book_005"
       }
     }
     PrimaryAssetId {

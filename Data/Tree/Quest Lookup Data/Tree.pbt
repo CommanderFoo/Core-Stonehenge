@@ -35,7 +35,7 @@ Objects {
     }
     Overrides {
       Name: "cs:quest_notification"
-      String: "Enter inventory mode by pressing \"I\" and click the item to inspect it."
+      String: "Press \"I\" to enter and exit Inventory mode.  Click on the item in your inventory to inspect it."
     }
     Overrides {
       Name: "cs:quest_notification_delay"

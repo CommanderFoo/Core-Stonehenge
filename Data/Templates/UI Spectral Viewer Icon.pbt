@@ -1,13 +1,13 @@
 Assets {
-  Id: 508699135448469578
-  Name: "UI Spectral Viewer"
+  Id: 1522146674609678815
+  Name: "UI Spectral Viewer Icon"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 7947780244665984986
+      RootId: 5122242524076149150
       Objects {
-        Id: 7947780244665984986
-        Name: "UI Spectral Viewer"
+        Id: 5122242524076149150
+        Name: "UI Spectral Viewer Icon"
         Transform {
           Scale {
             X: 1
@@ -15,7 +15,59 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 3139108800441333692
+        ParentId: 17234408292425121700
+        ChildIds: 1109390840516043344
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 100
+          Height: 100
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentWidth: true
+          UseParentHeight: true
+          Panel {
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 1109390840516043344
+        Name: "Image"
+        Transform {
+          Location {
+            X: 5781.47754
+            Y: -4117.23633
+            Z: -23.137207
+          }
+          Rotation {
+            Yaw: -114.570152
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 5122242524076149150
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }

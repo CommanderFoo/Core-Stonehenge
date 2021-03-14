@@ -202,6 +202,7 @@ function load_game(new_game)
 
 	transition_tween:on_start(function()
 		Events.Broadcast("hide_cursor")
+		Events.Broadcast("hide_reticle")
 
 		transition_loader.visibility = Visibility.FORCE_ON
 	end)

@@ -29,6 +29,7 @@ Objects {
   ChildIds: 5021902761380162581
   ChildIds: 8800454525094024065
   ChildIds: 17291568425683070553
+  ChildIds: 3639717789116575446
   ChildIds: 11591319365004402937
   UnregisteredParameters {
   }
@@ -430,6 +431,57 @@ Objects {
         Max: 102400
       }
     }
+  }
+}
+Objects {
+  Id: 3639717789116575446
+  Name: "Alien Symbols"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 5427305723747309504
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 5427305723747309504
+  Name: "Stonehenge Rocks"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3639717789116575446
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Stonehenge Rocks"
   }
 }
 Objects {
@@ -844,6 +896,12 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: 48.0297203
+          }
+        }
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:forceoff"
           }
         }
       }

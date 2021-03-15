@@ -25,3 +25,12 @@ Assets {
     AssetId: "fxbp_post_process_ao"
   }
 }
+Assets {
+  Id: 662098462057092856
+  Name: "Pulse Scan Post Process"
+  PlatformAssetType: 20
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_ppm_pulse_scan"
+  }
+}

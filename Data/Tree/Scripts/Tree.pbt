@@ -318,6 +318,7 @@ Objects {
   ChildIds: 17390153026596301370
   ChildIds: 4042031689843970374
   ChildIds: 1134763625187610630
+  ChildIds: 7873356878715661556
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -325,6 +326,66 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 7873356878715661556
+  Name: "Ocular_Device_Client"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14858104107515101237
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:key"
+      String: "r"
+    }
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
+      }
+    }
+    Overrides {
+      Name: "cs:ui_icon"
+      ObjectReference {
+        SelfId: 2710473637831060469
+        SubObjectId: 3707761901807326545
+        InstanceId: 12612610737163539623
+        TemplateId: 16712513435738967268
+      }
+    }
+    Overrides {
+      Name: "cs:pulse"
+      ObjectReference {
+        SelfId: 4960270495175141519
+      }
+    }
+    Overrides {
+      Name: "cs:rock_symbols"
+      ObjectReference {
+        SelfId: 5427305723747309504
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 16917844430360128832
+    }
   }
 }
 Objects {
@@ -1222,6 +1283,10 @@ Objects {
     Overrides {
       Name: "cs:transition_time"
       Float: 1.5
+    }
+    Overrides {
+      Name: "cs:debug"
+      Bool: true
     }
   }
   Collidable_v2 {

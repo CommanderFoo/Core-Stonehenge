@@ -244,7 +244,7 @@ function use_item()
 						o:SetWorldScale(cur_scale)
 					end)
 
-					hide_tween:set_delay(1)
+					hide_tween:set_delay(3)
 
 					Events.Broadcast("add_ocular_ui")
 					Events.Broadcast("add_notification", "You have assembled the Ocular Device.  Use it by holding \"F\" to discover invisible clues around the area.")

@@ -2,6 +2,7 @@ local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
 
 local transition_loader = script:GetCustomProperty("transition_loader"):WaitForObject()
 local loading = script:GetCustomProperty("loading"):WaitForObject()
+local debug = script:GetCustomProperty("debug")
 
 local transition_time = script:GetCustomProperty("transition_time")
 
@@ -27,17 +28,21 @@ Events.Connect("start_game", function()
 
 	-- @TODO: Debug remove when done
 
-	--[[
-	Events.BroadcastToServer("enable_player", local_player, "unarmed_stance")
-	Events.Broadcast("show_inventory")
-	Events.Broadcast("show_collectables")
-	Events.Broadcast("can_open_inventory", true)
-	Events.Broadcast("can_open_collectables", true)
-	Events.Broadcast("enable_raycast")
-	Events.Broadcast("set_weather_profile", "daytime")
-	--]]
+	-- Use the "debug" property instead now.
 
-	Events.Broadcast("set_weather_profile", "sunrise")
+	if(debug) then
+		transition_time = 0
+		
+		Events.BroadcastToServer("enable_player", local_player, "unarmed_stance")
+		Events.Broadcast("show_inventory")
+		Events.Broadcast("show_collectables")
+		Events.Broadcast("can_open_inventory", true)
+		Events.Broadcast("can_open_collectables", true)
+		Events.Broadcast("enable_raycast")
+		Events.Broadcast("set_weather_profile", "daytime")
+	else
+		Events.Broadcast("set_weather_profile", "sunrise")
+	end
 	
 	transition_tween = YOOTIL.Tween:new(transition_time, {a = 1}, {a = 0})
 
@@ -45,9 +50,9 @@ Events.Connect("start_game", function()
 
 		-- @TODO: Enable on public release
 
-		-- [[
-		Events.Broadcast("show_letter")
-		--]]
+		if(not debug) then
+			Events.Broadcast("show_letter")
+		end
 
 		transition_loader.visibility = Visibility.FORCE_OFF		
 		transition_tween = nil

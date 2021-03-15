@@ -1,6 +1,120 @@
 Name: "Post Processing"
 RootId: 5146307863390194199
 Objects {
+  Id: 4960270495175141519
+  Name: "Pulse Scan Post Process"
+  Transform {
+    Location {
+      X: 6354.34082
+      Y: -2384.4751
+      Z: 247.005768
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5146307863390194199
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Brightness"
+      Float: 0.918636262
+    }
+    Overrides {
+      Name: "bp:Pulse Scale"
+      Float: 0.99
+    }
+    Overrides {
+      Name: "bp:Pulse Range"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Pulse Falloff Sharpness"
+      Float: 8.01600075
+    }
+    Overrides {
+      Name: "bp:Pulse Width"
+      Float: 1.75718927
+    }
+    Overrides {
+      Name: "bp:Line Highlight Width"
+      Float: 7.27052641
+    }
+    Overrides {
+      Name: "bp:Draw Edge Lines"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Draw Pulse"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Draw Hot Leading Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Texture Pulse"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Texture Scale"
+      Float: 2.17310238
+    }
+    Overrides {
+      Name: "bp:Texture Pattern"
+      Enum {
+        Value: "mc:escanpulsetexturepattern:newenumerator2"
+      }
+    }
+    Overrides {
+      Name: "bp:Pulse Min Range"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Pulse Color"
+      Color {
+        R: 0.0677084923
+        G: 0.0677084923
+        B: 0.0677084923
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Line Color"
+      Color {
+        R: 0.154000044
+        G: 0.0684444606
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Pulse Leading Edge Color"
+      Color {
+        R: 0.205208302
+        G: 0.205208302
+        B: 0.205208302
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 662098462057092856
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
   Id: 14889859277598113452
   Name: "Environment Fog Default VFX"
   Transform {

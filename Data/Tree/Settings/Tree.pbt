@@ -194,7 +194,7 @@ Objects {
     }
     RotationOffset {
     }
-    FieldOfView: 100
+    FieldOfView: 90
     ViewWidth: 1200
     UseCameraSocket: true
     RotationMode {

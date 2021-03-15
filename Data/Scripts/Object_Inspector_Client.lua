@@ -1,8 +1,12 @@
+local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
+
 local cursor = script:GetCustomProperty("cursor"):WaitForObject()
 local put_down_button = script:GetCustomProperty("put_down_button"):WaitForObject()
 local put_down_hover_color = script:GetCustomProperty("put_down_hover_color")
 local put_down_unhover_color = script:GetCustomProperty("put_down_unhover_color")
 local spawned_objects = script:GetCustomProperty("spawned_objects"):WaitForObject()
+local object_look_offset = script:GetCustomProperty("object_look_offset")
+local put_down_text = script:GetCustomProperty("put_down_text"):WaitForObject()
 
 local local_player = Game.GetLocalPlayer()
 
@@ -13,6 +17,7 @@ local mouse_pressed = false
 local can_rotate = false
 local is_interacting = false
 local inventory_open = false
+local collectables_open = false
 local using_item = nil
 local raycast_obj = nil
 local zoomed = false
@@ -34,12 +39,13 @@ local_player.bindingReleasedEvent:Connect(function(p, binding)
 end)
 
 function inspect_object(obj_ref)
-	if(inventory_open) then
+	if(inventory_open or collectables_open) then
 		return
 	end
 
 	Events.Broadcast("inspecting", true)
 	Events.Broadcast("enable_inventory")
+	Events.Broadcast("can_open_collectables", false)
 
 	if(not is_interacting) then
 		Events.BroadcastToServer("disable_player", local_player)
@@ -50,6 +56,10 @@ function inspect_object(obj_ref)
 
 	if(using_item and orig_obj:GetCustomProperty("use_with")) then
 		return
+	end
+
+	if(orig_obj:GetCustomProperty("quest_item_id")) then
+		Events.Broadcast("quest_item_complete", orig_obj:GetCustomProperty("quest_item_id"))
 	end
 
 	look_obj = World.SpawnAsset(orig_obj.sourceTemplateId, { parent = spawned_objects })
@@ -73,7 +83,7 @@ function inspect_object(obj_ref)
 
 	look_obj:SetWorldPosition(orig_obj:GetWorldPosition())
 
-	local offset = 160
+	local offset = object_look_offset
 
 	local obj_pos = orig_obj:GetWorldPosition()
 	local view_pos = local_player:GetViewWorldPosition()
@@ -92,6 +102,9 @@ function inspect_object(obj_ref)
 		Events.BroadcastToServer("hide_all_interaction_labels")
 	end
 
+	if(orig_obj:GetCustomProperty("name")) then
+		put_down_text.text = "Put " .. orig_obj:GetCustomProperty("name") .. " Down"
+	end
 	put_down_button.visibility = Visibility.FORCE_ON
 
 	if(using_item == nil) then
@@ -107,7 +120,7 @@ put_down_button.unhoveredEvent:Connect(function()
 	put_down_button:FindDescendantByName("Background"):SetColor(put_down_unhover_color)
 end)
 
-function put_down_object()
+function put_down_object(hide)
 	if(look_obj == nil) then
 		return
 	end
@@ -118,14 +131,22 @@ function put_down_object()
 
 	mouse_pressed = false
 
-	look_obj:MoveTo(orig_obj:GetWorldPosition(), .5)
-	look_obj:RotateTo(orig_obj:GetWorldRotation(), .5)
+	if(hide) then
+		look_obj.visibility = Visibility.FORCE_OFF
+	else
+		look_obj:MoveTo(orig_obj:GetWorldPosition(), .5)
+		look_obj:RotateTo(orig_obj:GetWorldRotation(), .5)
+	end
 
 	zoomed = false
 
-	Task.Wait(.5)
+	if(not hide) then
+		Task.Wait(.5)
+	end
 
-	Events.BroadcastToServer("inspector_show", orig_ref)
+	if(not hide) then
+		Events.BroadcastToServer("inspector_show", orig_ref)
+	end
 	
 	look_obj:Destroy()
 	look_obj = nil
@@ -135,20 +156,23 @@ function put_down_object()
 		Events.BroadcastToServer("enable_player", local_player)
 		Events.BroadcastToServer("show_all_interaction_labels")
 	end
-	
-	put_down_button.visibility = Visibility.FORCE_OFF
 
 	if(not is_interacting) then
 		Events.Broadcast("inspecting", false, inventory_open)
 
 		Events.Broadcast("hide_cursor")
 		Events.Broadcast("disable_inventory")
+		Events.Broadcast("can_open_collectables", true)
 	end
 end
 
-put_down_button.clickedEvent:Connect(put_down_object)
+put_down_button.clickedEvent:Connect(function()
+	put_down_object()
+end)
 
-function Tick()
+local hide_tween = nil
+
+function Tick(dt)
 	if(mouse_pressed and look_obj ~= nil and can_rotate) then
 		local cur_pos = UI.GetCursorPosition()
 		local screen = UI.GetScreenSize()
@@ -171,6 +195,10 @@ function Tick()
 			look_obj:SetWorldRotation(rot)
 		end
 	end
+
+	if(hide_tween ~= nil) then
+		hide_tween:tween(dt)
+	end
 end
 
 function use_item()
@@ -187,12 +215,44 @@ function use_item()
 				Events.BroadcastToServer("inspector_switch", obj:GetReference())
 				Events.Broadcast("inventory_remove", using_item:GetCustomProperty("id"))
 				Events.Broadcast("override_cursor", false)
-				
-				if(zoomed) then
+
+				-- Lens frame is special case
+
+				if(using_item:GetCustomProperty("id") == 2) then
+					Events.Broadcast("quest_item_complete", 4)
+
+					local o = look_obj:GetCustomProperty("alt"):GetObject()
+					local scale = o:GetWorldScale()
+					can_rotate = false
+
+					put_down_button.visibility = Visibility.FORCE_OFF
+					
+					hide_tween = YOOTIL.Tween:new(.5, { x = scale.x, y = scale.y, z = scale.z }, { x = 0, y = 0, z = 0 })
+					hide_tween:on_complete(function()
+						o.visibility = Visibility.FORCE_OFF
+						put_down_object(true)
+						hide_tween = nil
+					end)
+
+					hide_tween:on_change(function(c)
+						local cur_scale = o:GetWorldScale()
+
+						cur_scale.x = c.x
+						cur_scale.y = c.y
+						cur_scale.z = c.z
+
+						o:SetWorldScale(cur_scale)
+					end)
+
+					hide_tween:set_delay(1)
+
+					Events.Broadcast("add_ocular_ui")
+					Events.Broadcast("add_notification", "You have assembled the Ocular Device.  Use it by holding \"F\" to discover invisible clues around the area.")
+				elseif(zoomed) then
 					Task.Wait(.5)
 					can_rotate = true
 				end
-
+				
 				Events.Broadcast("using_item", nil)
 				using_item = nil
 			end
@@ -201,13 +261,18 @@ function use_item()
 end
 
 Events.Connect("inspect_object", inspect_object)
-Events.Connect("put_down_object", put_down_object)
+Events.Connect("put_down_object", function()
+	put_down_object()
+end)
 
 Events.Connect("inventory_open", function(state)
 	inventory_open = state
 end)
 
-Events.Connect("clear_inspecting", put_down_object)
+Events.Connect("clear_inspecting", function()
+	put_down_object()
+end)
+
 Events.Connect("interacting", function(state)
 	is_interacting = state
 end)

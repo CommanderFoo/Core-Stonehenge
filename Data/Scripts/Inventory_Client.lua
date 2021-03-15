@@ -235,7 +235,7 @@ function add(obj_ref)
 				free_slot_entry.icon = World.SpawnAsset(data:GetCustomProperty("ui_asset"), { parent = free_slot_entry.button })				
 
 				if(inventory_active) then
-					free_slot_entry.icon:SetColor(Color.New(1, 1, 1, 1))
+					enable_slot(free_slot_entry.icon)
 				end
 
 				if(data:GetCustomProperty("quest_item_id")) then
@@ -249,6 +249,14 @@ function add(obj_ref)
 		end
 
 		update_items()
+	end
+end
+
+function enable_slot(icon)
+	local children = icon:GetChildren()
+
+	for ci, c in ipairs(children) do			
+		c:SetColor(Color.New(1, 1, 1, 1))
 	end
 end
 
@@ -419,7 +427,8 @@ function disable_inventory()
 end
 
 function show_inventory()
-	inventory_in_tween = YOOTIL.Tween:new(1, { x = 140 }, { x = -30 })
+	inventory_ui.visibility = Visibility.FORCE_ON
+	inventory_in_tween = YOOTIL.Tween:new(1, { x = 130 }, { x = -30 })
 	
 	inventory_in_tween:on_change(function(c)
 		inventory_ui.x = c.x
@@ -446,12 +455,13 @@ local_player.bindingPressedEvent:Connect(function(p, binding)
 			Events.BroadcastToServer("enable_player", local_player)
 			UI.SetCanCursorInteractWithUI(false)
 			Events.Broadcast("inventory_open", false)
-
+			Events.Broadcast("can_open_collectables", true)
 			Events.BroadcastToServer("show_all_interaction_labels")
 		else
 			enable_inventory()
 			Events.BroadcastToServer("disable_player", local_player)
 			Events.Broadcast("inventory_open", true)
+			Events.Broadcast("can_open_collectables", false)
 			UI.SetCanCursorInteractWithUI(true)
 
 			Events.BroadcastToServer("hide_all_interaction_labels")

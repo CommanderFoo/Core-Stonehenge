@@ -68,6 +68,16 @@ function next_quest(broadcast_event_after)
 		current_quest_holder.x = c.x
 	end)
 
+	quest_tween:on_start(function()
+		if(quest_data.broadcast_event and string.len(quest_data.broadcast_event) > 1) then
+			Events.Broadcast(quest_data.broadcast_event)
+		end
+		
+		if(quest_data.quest_thought_id and quest_data.quest_thought_id > 0) then
+			Events.Broadcast("add_thought", quest_data.quest_thought_id)
+		end
+	end)
+
 	quest_tween:on_complete(function()
 		if(string.len(quest_data.quest_notification) > 1) then
 			Task.Wait(quest_data.quest_notification_delay)
@@ -118,6 +128,17 @@ function mark_quest_item_complete(id, delay)
 		current_quest_items[id].item:SetColor(quest_item_complete_color)
 		current_quest_items[id].complete = true
 
+		local thought = current_quest_items[id].data:GetCustomProperty("thought_id")
+		local notification = current_quest_items[id].data:GetCustomProperty("notification")
+
+		if(thought and thought > 0) then
+			Events.Broadcast("add_thought", thought)
+		end
+
+		if(notification and string.len(notification) > 1) then
+			Events.Broadcast("add_notification", notification)
+		end
+
 		if(is_quest_complete()) then
 			remove_current_quest()
 			Task.Wait(2)
@@ -153,6 +174,8 @@ function get_quest_from_lookup(id)
 				quest_notification = quest_data:GetCustomProperty("quest_notification"),
 				quest_notification_delay = quest_data:GetCustomProperty("quest_notification_delay"),
 				quest_inventory_item = quest_data:GetCustomProperty("quest_inventory_item"),
+				quest_thought_id = quest_data:GetCustomProperty("quest_thought_id"),
+				broadcast_event = quest_data:GetCustomProperty("broadcast_event"),
 				children = quest_data:GetChildren()
 
 			}

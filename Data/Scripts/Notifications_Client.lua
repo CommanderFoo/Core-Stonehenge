@@ -26,14 +26,15 @@ end
 function Tick(dt)
 	if(queue:length() > 0 and current_item == nil) then
 		current_item = queue:pop()
-		in_tween = YOOTIL.Tween:new(in_time, { bg = 0, t = 0 }, { bg = 0.6, t = 1 })
-		out_tween = YOOTIL.Tween:new(out_time, { bg = 0.6, t = 1 }, { bg = 0, t = 0 })
+
+		in_tween = YOOTIL.Tween:new(current_item.in_time or in_time, { bg = 0, t = 0 }, { bg = 0.6, t = 1 })
+		out_tween = YOOTIL.Tween:new(current_item.out_time or out_time, { bg = 0.6, t = 1 }, { bg = 0, t = 0 })
 	end
 
 	if(current_item ~= nil) then
 		if(in_tween and in_tween:active()) then
 			in_tween:on_start(function()
-				text.text = current_item
+				text.text = current_item.msg or current_item
 			end)
 
 			in_tween:on_complete(function()
@@ -50,7 +51,7 @@ function Tick(dt)
 			
 			out_tween:on_change(on_change)
 			
-			out_tween:set_delay(stay_time)
+			out_tween:set_delay(current_item.stay_time or stay_time)
 			out_tween:tween(dt)
 		end
 	end

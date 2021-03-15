@@ -16,6 +16,14 @@ Assets {
         Name: "cs:line_width"
         Int: 150
       }
+      Overrides {
+        Name: "cs:notification"
+        String: ""
+      }
+      Overrides {
+        Name: "cs:thought_id"
+        Int: 0
+      }
     }
   }
   SerializationVersion: 76

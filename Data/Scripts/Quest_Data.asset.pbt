@@ -32,6 +32,14 @@ Assets {
         Name: "cs:quest_inventory_item"
         String: ""
       }
+      Overrides {
+        Name: "cs:quest_thought_id"
+        Int: 0
+      }
+      Overrides {
+        Name: "cs:broadcast_event"
+        String: ""
+      }
     }
   }
   SerializationVersion: 76

@@ -22,6 +22,7 @@ for k, trigger in ipairs(interactables:FindDescendantsByType("Trigger")) do
 		Events.BroadcastToServer("hide_interaction_label", obj:GetReference())
 		Events.Broadcast("interacting", true)
 		Events.Broadcast("enable_inventory")
+		Events.Broadcast("can_open_collectables", false)
 		
 		local cam_pos = obj:GetCustomProperty("cam_pos")
 		local cam_rot = obj:GetCustomProperty("cam_rot")
@@ -32,6 +33,12 @@ for k, trigger in ipairs(interactables:FindDescendantsByType("Trigger")) do
 			end
 		end
 
+		local raycast_distance = obj:GetCustomProperty("raycast_distance")
+
+		if(raycast_distance and raycast_distance > 0) then
+			Events.Broadcast("set_raycast_distance", raycast_distance)
+		end
+		
 		Events.Broadcast("set_player_camera", "inspection", lerp_time, {
 			
 			position = cam_pos,
@@ -56,6 +63,7 @@ back_button.unhoveredEvent:Connect(function()
 end)
 
 back_button.clickedEvent:Connect(function()
+	Events.Broadcast("reset_raycast_distance")
 	Events.Broadcast("put_down_object")
 	
 	back_button.visibility = Visibility.FORCE_OFF
@@ -72,6 +80,7 @@ back_button.clickedEvent:Connect(function()
 	Events.Broadcast("interacting", false, inventory_open)
 	Events.Broadcast("hide_cursor")
 	Events.Broadcast("disable_inventory")
+	Events.Broadcast("can_open_collectables", true)
 end)
 
 local_player.bindingPressedEvent:Connect(function(p, binding)

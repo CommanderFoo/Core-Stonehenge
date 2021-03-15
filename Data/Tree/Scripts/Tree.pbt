@@ -1,7 +1,7 @@
 Name: "Scripts"
 RootId: 1636163160051171366
 Objects {
-  Id: 12281289070681835054
+  Id: 6791516816529527173
   Name: "Quest Scripts"
   Transform {
     Location {
@@ -15,49 +15,15 @@ Objects {
     }
   }
   ParentId: 1636163160051171366
-  ChildIds: 9638173608822482136
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  NetworkContext {
-  }
-}
-Objects {
-  Id: 9638173608822482136
-  Name: "Quest_Stonehenge_Entered_Client"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12281289070681835054
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:trigger"
-      ObjectReference {
-        SelfId: 11880388740167428060
-      }
-    }
-  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  Script {
-    ScriptAsset {
-      Id: 11400212477240912278
-    }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Quest Scripts"
   }
 }
 Objects {
@@ -81,6 +47,7 @@ Objects {
   ChildIds: 6380753851518955502
   ChildIds: 16900010184290640698
   ChildIds: 17645753054259915518
+  ChildIds: 5347877517916026926
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -89,6 +56,33 @@ Objects {
   }
   NetworkContext {
     Type: Server
+  }
+}
+Objects {
+  Id: 5347877517916026926
+  Name: "Collectables_Server"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1946733176415873648
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 4479593274906937095
+    }
   }
 }
 Objects {
@@ -323,6 +317,7 @@ Objects {
   ChildIds: 1654015060712776403
   ChildIds: 17390153026596301370
   ChildIds: 4042031689843970374
+  ChildIds: 1134763625187610630
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -330,6 +325,57 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 1134763625187610630
+  Name: "Collectables_Client"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14858104107515101237
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:collectables"
+      ObjectReference {
+        SelfId: 12880808633388443842
+      }
+    }
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
+      }
+    }
+    Overrides {
+      Name: "cs:key"
+      String: "g"
+    }
+    Overrides {
+      Name: "cs:items"
+      ObjectReference {
+        SelfId: 17030958101355480687
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15989810206148254743
+    }
   }
 }
 Objects {
@@ -771,7 +817,7 @@ Objects {
     }
     Overrides {
       Name: "cs:key_binding"
-      String: "i"
+      String: "e"
     }
     Overrides {
       Name: "cs:inventory_ui"
@@ -953,6 +999,22 @@ Objects {
         SelfId: 17291568425683070553
       }
     }
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
+      }
+    }
+    Overrides {
+      Name: "cs:object_look_offset"
+      Float: 140
+    }
+    Overrides {
+      Name: "cs:put_down_text"
+      ObjectReference {
+        SelfId: 18054116493108083243
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -982,6 +1044,10 @@ Objects {
   }
   ParentId: 14858104107515101237
   UnregisteredParameters {
+    Overrides {
+      Name: "cs:distance"
+      Float: 500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1027,6 +1093,27 @@ Objects {
       Name: "cs:main_menu"
       ObjectReference {
         SelfId: 3730129137196217546
+      }
+    }
+    Overrides {
+      Name: "cs:ocular_device"
+      ObjectReference {
+        SelfId: 15264119490670403032
+        SubObjectId: 14212269066307920764
+        InstanceId: 12612610737163539623
+        TemplateId: 16712513435738967268
+      }
+    }
+    Overrides {
+      Name: "cs:ocular_device_icon"
+      AssetReference {
+        Id: 17404098457123408068
+      }
+    }
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
       }
     }
   }
@@ -1134,7 +1221,7 @@ Objects {
     }
     Overrides {
       Name: "cs:transition_time"
-      Float: 0
+      Float: 1.5
     }
   }
   Collidable_v2 {

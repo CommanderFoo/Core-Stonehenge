@@ -1,8 +1,8 @@
 Name: "Tent"
 RootId: 14496764963604168968
 Objects {
-  Id: 3551961518992772019
-  Name: "Spectral Viewer Pickup"
+  Id: 10169360158717497169
+  Name: "Look - Ocular Frame"
   Transform {
     Scale {
       X: 1
@@ -12,20 +12,26 @@ Objects {
   }
   ParentId: 14496764963604168968
   WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 17925031349245252806
+      key: 423913690008197879
       value {
         Overrides {
           Name: "Name"
-          String: "Spectral Viewer Pickup"
+          String: "Look - Ocular Frame"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: 7928.01025
-            Y: -2278.44971
-            Z: 199.200623
+            X: 7820.29297
+            Y: -2855.47217
+            Z: 232.684692
           }
         }
         Overrides {
@@ -36,7 +42,54 @@ Objects {
       }
     }
     TemplateAsset {
-      Id: 3962746357223024414
+      Id: 9541816162618524212
+    }
+  }
+}
+Objects {
+  Id: 12399703717518679345
+  Name: "Pickup - Ocular Lens"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14496764963604168968
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17925031349245252806
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Pickup - Ocular Lens"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 7913.81641
+            Y: -2250.91919
+            Z: 216.705368
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Roll: 90
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13970346404228691034
     }
   }
 }

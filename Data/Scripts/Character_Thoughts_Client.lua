@@ -81,10 +81,10 @@ function get_thought(id)
 end
 
 function add_thought_to_notebook(id, msg)
-	received_thoughts[id] = message
+	received_thoughts[id] = msg
 end
 
-Events.Connect("add_thought", function(id, msg)
+Events.Connect("add_thought", function(id)
 	local thought_id, thought_message = get_thought(id)
 
 	if(thought_id and thought_message) then

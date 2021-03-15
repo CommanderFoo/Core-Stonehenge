@@ -46,7 +46,7 @@ close_button.clickedEvent:Connect(function()
 	letter_close_up_tween = YOOTIL.Tween:new(.7, { y = letter.y }, { y = letter.y - (letter.height - 160) })
 
 	letter_close_up_tween:on_change(function(c)
-		letter.y = math.floor(c.y)
+		letter.y = c.y
 	end)
 
 	letter_close_up_tween:set_easing("outQuint")
@@ -93,6 +93,8 @@ close_button.clickedEvent:Connect(function()
 					Events.Broadcast("enable_raycast")
 					Events.BroadcastToServer("enable_player", local_player, "unarmed_stance")
 					Events.Broadcast("show_inventory")
+					Events.Broadcast("show_collectables")
+					Events.Broadcast("can_open_collectables", true)
 					Events.Broadcast("can_open_inventory", true)
 					Events.Broadcast("set_weather_profile", "daytime")
 
@@ -111,8 +113,8 @@ button.clickedEvent:Connect(function()
 	wax_tween = YOOTIL.Tween:new(.85, { x = seal.x, y = seal.y }, { x = seal.x + 140, y = seal.y + UI.GetScreenSize().y })
 	
 	wax_tween:on_change(function(c)
-		seal.x = math.floor(c.x)
-		seal.y = math.floor(c.y)
+		seal.x = c.x
+		seal.y = c.y
 	end)
 
 	wax_tween:on_complete(function()
@@ -249,7 +251,6 @@ function Tick(dt)
 end
 
 Events.Connect("show_letter", function()
-	Events.Broadcast("set_weather_profile", "sunrise")
 	Events.Broadcast("disable_raycast")
 
 	UI.SetCanCursorInteractWithUI(true)

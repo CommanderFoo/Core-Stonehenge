@@ -1,7 +1,7 @@
 Name: "Character Thoughts"
 RootId: 3531142988586757998
 Objects {
-  Id: 5679310756479649752
+  Id: 6282019947101826862
   Name: "Character_Thought_Data"
   Transform {
     Location {
@@ -22,7 +22,7 @@ Objects {
     }
     Overrides {
       Name: "cs:message"
-      String: "I never had time to read books"
+      String: "I like Sweetcorn."
     }
   }
   Collidable_v2 {
@@ -59,7 +59,7 @@ Objects {
     }
     Overrides {
       Name: "cs:message"
-      String: "I love sunrises, used to watch them all the time."
+      String: "I wonder what this is used for, it doesn\'t look man made."
     }
   }
   Collidable_v2 {

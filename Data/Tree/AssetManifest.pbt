@@ -8,21 +8,21 @@ Assets {
   }
 }
 Assets {
+  Id: 17336501940827540737
+  Name: "Survival Pot 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Survival_Equip_Pot_001"
+  }
+}
+Assets {
   Id: 17266765302244254460
   Name: "Fantasy Cape 014"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Gear_Cape_015"
-  }
-}
-Assets {
-  Id: 16947933713670808803
-  Name: "Tree Oak Bare 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_oak_002"
   }
 }
 Assets {
@@ -242,15 +242,6 @@ Assets {
   }
 }
 Assets {
-  Id: 5248208841683454128
-  Name: "Metamorphous"
-  PlatformAssetType: 28
-  PrimaryAsset {
-    AssetType: "FontAssetRef"
-    AssetId: "MetamorphousRegular_ref"
-  }
-}
-Assets {
   Id: 4107982543433808349
   Name: "Frame Beveled 006"
   PlatformAssetType: 9
@@ -287,29 +278,11 @@ Assets {
   }
 }
 Assets {
-  Id: 2290831223625684165
-  Name: "Flower Wild Lily 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_foliage_gen_flower_wild_lily_001_ref"
-  }
-}
-Assets {
   Id: 1749204029973281763
   Name: "Fantasy Bread 005"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Food_Bread_005"
-  }
-}
-Assets {
-  Id: 1260970173436881805
-  Name: "Icon Arrow Up"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_ArrowUp"
   }
 }

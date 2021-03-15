@@ -1,20 +1,21 @@
 Name: "Quest Trigger Areas"
 RootId: 8800454525094024065
 Objects {
-  Id: 11880388740167428060
-  Name: "Stonehenge Enter Quest"
+  Id: 13959005270884086005
+  Name: "Excavation Site Trigger"
   Transform {
     Location {
-      X: 9751.40234
-      Y: -1107.13574
-      Z: 382.858917
+      X: 3399.59
+      Y: 1656.4939
+      Z: 574.707886
     }
     Rotation {
+      Yaw: -34.7207642
     }
     Scale {
-      X: 9.4359169
-      Y: 28.4843311
-      Z: 15.7617407
+      X: 30.9650898
+      Y: 29.3600826
+      Z: 10.8144531
     }
   }
   ParentId: 8800454525094024065

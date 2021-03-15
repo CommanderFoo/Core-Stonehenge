@@ -9,7 +9,7 @@ Assets {
       Overrides {
         Name: "cmp:Material2"
         AssetReference {
-          Id: 4341056843478302246
+          Id: 8787233930870400864
         }
       }
       Overrides {
@@ -45,22 +45,22 @@ Assets {
       Overrides {
         Name: "cmpc:Material1"
         Color {
-          R: 0.48627454
-          G: 0.58431375
-          B: 0.631372571
+          R: 0.691700578
+          G: 0.732638657
+          B: 0.526584
           A: 1
         }
       }
       Overrides {
         Name: "cmp:Material1"
         AssetReference {
-          Id: 4341056843478302246
+          Id: 8787233930870400864
         }
       }
       Overrides {
         Name: "cmp:Material1_Sides"
         AssetReference {
-          Id: 4341056843478302246
+          Id: 8787233930870400864
         }
       }
       Overrides {
@@ -75,9 +75,9 @@ Assets {
       Overrides {
         Name: "cmpc:Material1_Sides"
         Color {
-          R: 0.484929681
-          G: 0.584824562
-          B: 0.631944656
+          R: 0.925827742
+          G: 1
+          B: 0.626666665
           A: 1
         }
       }
@@ -92,12 +92,12 @@ Assets {
       }
     }
     Assets {
-      Id: 4341056843478302246
-      Name: "Grass Basic"
+      Id: 8787233930870400864
+      Name: "Dirt 01"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_grass_001_uv"
+        AssetId: "dirt_001"
       }
     }
     Assets {
@@ -119,21 +119,21 @@ Assets {
       }
     }
     Assets {
-      Id: 4341056843478302246
-      Name: "Grass Basic"
+      Id: 8787233930870400864
+      Name: "Dirt 01"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_grass_001_uv"
+        AssetId: "dirt_001"
       }
     }
     Assets {
-      Id: 4341056843478302246
-      Name: "Grass Basic"
+      Id: 8787233930870400864
+      Name: "Dirt 01"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_grass_001_uv"
+        AssetId: "dirt_001"
       }
     }
   }

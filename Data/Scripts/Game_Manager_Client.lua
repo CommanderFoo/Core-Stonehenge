@@ -28,7 +28,7 @@ Events.Connect("start_game", function()
 	-- @TODO: Debug remove when done
 	--Events.Broadcast("inventory_add", 1)
 
-	--[[
+	-- [[
 	Events.BroadcastToServer("enable_player", local_player, "unarmed_stance")
 	Events.Broadcast("show_inventory")
 	Events.Broadcast("can_open_inventory", true)
@@ -42,7 +42,7 @@ Events.Connect("start_game", function()
 
 		-- @TODO: Enable on public release
 
-		Events.Broadcast("show_letter")
+		--Events.Broadcast("show_letter")
 
 		transition_loader.visibility = Visibility.FORCE_OFF
 

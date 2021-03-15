@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16947933713670808803
+  Name: "Tree Oak Bare 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_oak_002"
+  }
+}
+Assets {
   Id: 16759257907029005232
   Name: "Meta Retro Pickup 02 SFX"
   PlatformAssetType: 7
@@ -53,15 +62,6 @@ Assets {
   }
 }
 Assets {
-  Id: 15475042365980567946
-  Name: "Tree Redwood Medium"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_redwood_002"
-  }
-}
-Assets {
   Id: 15275989760242259074
   Name: "UI Gradient Circular 001"
   PlatformAssetType: 9
@@ -77,6 +77,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_grass_generic_002"
+  }
+}
+Assets {
+  Id: 14901047705038900015
+  Name: "Flower Daisy Patch 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_flower_daisy_001"
   }
 }
 Assets {
@@ -179,12 +188,12 @@ Assets {
   }
 }
 Assets {
-  Id: 9286436399806663046
-  Name: "Tree Redwood Big"
+  Id: 8938438425858112672
+  Name: "Tree Oak 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_redwood_001"
+    AssetId: "sm_tree_oak_001"
   }
 }
 Assets {
@@ -224,6 +233,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5507311160135344215
+  Name: "Tree Birch 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_birch_001"
+  }
+}
+Assets {
   Id: 5248208841683454128
   Name: "Metamorphous"
   PlatformAssetType: 28
@@ -242,12 +260,12 @@ Assets {
   }
 }
 Assets {
-  Id: 3496369810733992264
-  Name: "Tree Redwood Small"
+  Id: 3499609589785175313
+  Name: "Tree Birch Bare 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_redwood_005"
+    AssetId: "sm_tree_birch_002"
   }
 }
 Assets {
@@ -266,6 +284,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameFlat_022"
+  }
+}
+Assets {
+  Id: 2290831223625684165
+  Name: "Flower Wild Lily 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_flower_wild_lily_001_ref"
   }
 }
 Assets {

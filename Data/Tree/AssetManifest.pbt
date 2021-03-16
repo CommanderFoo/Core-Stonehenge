@@ -8,6 +8,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17712953198217056119
+  Name: "Humanoid 1 Nancy"
+  PlatformAssetType: 26
+  PrimaryAsset {
+    AssetType: "SkinnedMeshAssetRef"
+    AssetId: "npc_human_gal_head_basic_002_ref"
+  }
+}
+Assets {
   Id: 17336501940827540737
   Name: "Survival Pot 001"
   PlatformAssetType: 9
@@ -32,6 +41,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_meta_retro_pickup_02_Cue_ref"
+  }
+}
+Assets {
+  Id: 16531665223778603413
+  Name: "Fantasy Plate 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Food_Plate_001"
   }
 }
 Assets {
@@ -158,6 +176,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Equip_Compass_001"
+  }
+}
+Assets {
+  Id: 11037788400527121018
+  Name: "Humanoid 1 Rig"
+  PlatformAssetType: 25
+  PrimaryAsset {
+    AssetType: "SkeletonAssetRef"
+    AssetId: "npc_gal_wireframe_001_ref"
   }
 }
 Assets {

@@ -23,15 +23,31 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 3107.59375
-            Y: 1710.65417
-            Z: -387.079
+            X: 3088.9751
+            Y: 2449.63232
+            Z: -226.124557
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Roll: -0.543426454
+            Pitch: 14.5589437
+            Yaw: 135.856781
+            Roll: -34.3966064
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.639861703
+            Y: 0.639861703
+            Z: 0.639861703
+          }
+        }
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:forceon"
           }
         }
       }
@@ -64,15 +80,55 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 3618.24121
-            Y: 1706.54736
-            Z: -510.186462
+            X: 3172.98242
+            Y: 2336.02197
+            Z: -223.630127
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
             Roll: -0.543426514
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.665367126
+            Y: 0.665367126
+            Z: 0.665367126
+          }
+        }
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:forceon"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5550989309426583940
+      value {
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.867539644
+            Y: 0.867539644
+            Z: 0.867539644
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 18.3165855
+            Yaw: -6.15853882
+            Roll: -37.9851379
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
           }
         }
       }

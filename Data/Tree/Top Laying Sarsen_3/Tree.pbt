@@ -28,6 +28,18 @@ Objects {
         Id: 347859619137269343
       }
     }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.765576482
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1.79310763
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -58,17 +70,17 @@ Objects {
   Name: "158"
   Transform {
     Location {
-      X: -1734.57495
-      Y: -63.6286621
+      X: -1771.21851
+      Y: -38.8269043
       Z: 278.661743
     }
     Rotation {
       Yaw: 112.346039
     }
     Scale {
-      X: 1.50470746
-      Y: 0.741594553
-      Z: 0.786058366
+      X: 1.2295754
+      Y: 0.628492
+      Z: 0.666356266
     }
   }
   ParentId: 13530288488501231798
@@ -78,6 +90,18 @@ Objects {
       AssetReference {
         Id: 347859619137269343
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1.33635342
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1.73846734
     }
   }
   Collidable_v2 {
@@ -132,6 +156,14 @@ Objects {
         Id: 347859619137269343
       }
     }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.853157938
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -162,17 +194,19 @@ Objects {
   Name: "101"
   Transform {
     Location {
-      X: 723.478516
+      X: 749.000488
       Y: -963.895264
-      Z: 278.661682
+      Z: 264.118408
     }
     Rotation {
-      Yaw: 49.8571815
+      Pitch: -1.21716309
+      Yaw: 47.8817062
+      Roll: -11.8734131
     }
     Scale {
-      X: 1.30366027
-      Y: 0.764469504
-      Z: 0.786058366
+      X: 1.30366063
+      Y: 0.76496166
+      Z: 0.609361589
     }
   }
   ParentId: 13530288488501231798
@@ -215,7 +249,7 @@ Objects {
     Location {
       X: 1006.90527
       Y: -583.652344
-      Z: 278.661682
+      Z: 262.637634
     }
     Rotation {
       Yaw: -117.587769
@@ -223,7 +257,7 @@ Objects {
     Scale {
       X: 1.27926195
       Y: 0.715262055
-      Z: 0.786058366
+      Z: 0.688148201
     }
   }
   ParentId: 13530288488501231798
@@ -274,9 +308,9 @@ Objects {
       Roll: 13.7865639
     }
     Scale {
-      X: 1.50470507
-      Y: 0.999999344
-      Z: 0.786058366
+      X: 1.50470531
+      Y: 0.88475132
+      Z: 0.786059558
     }
   }
   ParentId: 13530288488501231798
@@ -318,15 +352,15 @@ Objects {
   Transform {
     Location {
       X: 891.791504
-      Y: 1254.86743
-      Z: 278.661682
+      Y: 1238.22815
+      Z: 287.318909
     }
     Rotation {
       Yaw: -51.3872375
     }
     Scale {
-      X: 1.50470471
-      Y: 0.936435
+      X: 1.36923766
+      Y: 0.936431944
       Z: 0.786058366
     }
   }
@@ -368,12 +402,12 @@ Objects {
   Name: "152"
   Transform {
     Location {
-      X: 212.693359
-      Y: 693.37085
+      X: 185.967773
+      Y: 678.071167
       Z: 278.661682
     }
     Rotation {
-      Yaw: -43.9655762
+      Yaw: -38.2668457
     }
     Scale {
       X: 1.50470805
@@ -421,17 +455,17 @@ Objects {
     Location {
       X: -629.172852
       Y: 1181.02942
-      Z: 280.120178
+      Z: 274.232971
     }
     Rotation {
-      Pitch: -4.07632446
-      Yaw: -23.9835815
-      Roll: -9.078125
+      Pitch: 2.76390409
+      Yaw: -23.8046875
+      Roll: -13.9523926
     }
     Scale {
-      X: 1.50470865
-      Y: 0.715505242
-      Z: 0.786058366
+      X: 1.50470793
+      Y: 0.558382094
+      Z: 0.611460745
     }
   }
   ParentId: 13530288488501231798

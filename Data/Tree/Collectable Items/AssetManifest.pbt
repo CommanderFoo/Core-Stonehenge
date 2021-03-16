@@ -1,9 +1,9 @@
 Assets {
-  Id: 8595582568317201205
-  Name: "Fantasy Clay Pot 02"
-  PlatformAssetType: 1
+  Id: 16609254708742162583
+  Name: "Plastic Shiny"
+  PlatformAssetType: 2
   PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_fantasy_clay_pot_002_ref"
+    AssetType: "MaterialAssetRef"
+    AssetId: "plastic_shiny_001"
   }
 }

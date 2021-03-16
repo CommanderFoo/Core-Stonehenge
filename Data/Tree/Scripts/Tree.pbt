@@ -1286,7 +1286,7 @@ Objects {
     }
     Overrides {
       Name: "cs:debug"
-      Bool: true
+      Bool: false
     }
   }
   Collidable_v2 {

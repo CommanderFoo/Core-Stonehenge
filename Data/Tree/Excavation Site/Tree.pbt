@@ -5,17 +5,17 @@ Objects {
   Name: "Inspect Trigger"
   Transform {
     Location {
-      X: 3301.65601
-      Y: 1627.12231
-      Z: 586.084229
+      X: 2974.76172
+      Y: 2587.03125
+      Z: -223.673218
     }
     Rotation {
-      Yaw: -32.6372528
+      Yaw: -35.2316589
     }
     Scale {
-      X: 25.4968719
-      Y: 22.2636
-      Z: 14.1601601
+      X: 10.7252455
+      Y: 9.36516571
+      Z: 5.95646477
     }
   }
   ParentId: 11515639102854451372
@@ -23,16 +23,14 @@ Objects {
     Overrides {
       Name: "cs:cam_pos"
       Vector {
-        X: 3972.62891
-        Y: 1172.39294
-        Z: 491.982
+        X: 4791
+        Y: 5503
       }
     }
     Overrides {
       Name: "cs:cam_rot"
       Rotator {
-        Pitch: -53.996
-        Yaw: 146.985
+        Yaw: 180
       }
     }
     Overrides {

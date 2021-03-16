@@ -1,6 +1,59 @@
 Name: "Fallen Sarsen_3"
 RootId: 9631043015305279992
 Objects {
+  Id: 14872264994575335249
+  Name: "59b"
+  Transform {
+    Location {
+      X: 1319.10034
+      Y: -959.588867
+      Z: 157.538116
+    }
+    Rotation {
+      Pitch: -83.2418823
+      Yaw: 31.9357491
+      Roll: -79.6611
+    }
+    Scale {
+      X: 0.464685082
+      Y: 0.607794166
+      Z: 0.335660905
+    }
+  }
+  ParentId: 9631043015305279992
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 8447574563388359200
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6524217407079190017
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
   Id: 8917879694899684775
   Name: "12"
   Transform {
@@ -333,7 +386,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 10585766595898868021
+        Id: 6061518345080760809
       }
     }
   }
@@ -385,7 +438,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 10585766595898868021
+        Id: 17384217126992658879
       }
     }
   }
@@ -492,6 +545,14 @@ Objects {
       AssetReference {
         Id: 347859619137269343
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 3.76862741
     }
   }
   Collidable_v2 {

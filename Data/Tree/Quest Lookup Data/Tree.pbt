@@ -795,7 +795,6 @@ Objects {
     }
   }
   ParentId: 15892015409261034309
-  ChildIds: 5367863482717051193
   ChildIds: 4284498519471295561
   ChildIds: 1595262085970736641
   UnregisteredParameters {
@@ -861,7 +860,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:id"
-      Int: 3
+      Int: 2
     }
     Overrides {
       Name: "cs:title"
@@ -913,7 +912,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:id"
-      Int: 2
+      Int: 1
     }
     Overrides {
       Name: "cs:title"
@@ -922,58 +921,6 @@ Objects {
     Overrides {
       Name: "cs:line_width"
       Int: 202
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4937853632588239016
-    }
-  }
-}
-Objects {
-  Id: 5367863482717051193
-  Name: "Quest_Data_Item"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12824635175985002222
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:id"
-      Int: 1
-    }
-    Overrides {
-      Name: "cs:title"
-      String: "Pickup Ocular Pulse Lens"
-    }
-    Overrides {
-      Name: "cs:line_width"
-      Int: 204
-    }
-    Overrides {
-      Name: "cs:notification"
-      String: "You have found the Ocular Pulse Lens.  This is one part of the Ocular Pulse Device."
-    }
-    Overrides {
-      Name: "cs:thought_id"
-      Int: 1
     }
   }
   Collidable_v2 {

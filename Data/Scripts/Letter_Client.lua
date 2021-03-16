@@ -251,6 +251,7 @@ function Tick(dt)
 end
 
 Events.Connect("show_letter", function()
+	Events.Broadcast("inventory_add", 2)
 	Events.Broadcast("disable_raycast")
 
 	UI.SetCanCursorInteractWithUI(true)

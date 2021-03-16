@@ -219,7 +219,7 @@ function use_item()
 				-- Lens frame is special case
 
 				if(using_item:GetCustomProperty("id") == 2) then
-					Events.Broadcast("quest_item_complete", 3)
+					Events.Broadcast("quest_item_complete", 2)
 
 					local o = look_obj:GetCustomProperty("alt"):GetObject()
 					local scale = o:GetWorldScale()

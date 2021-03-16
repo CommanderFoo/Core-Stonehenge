@@ -3388,7 +3388,6 @@ Objects {
   ParentId: 9405132596137673921
   ChildIds: 2797603465198075810
   ChildIds: 14324808918653436519
-  ChildIds: 17969247824541863791
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3400,60 +3399,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-}
-Objects {
-  Id: 17969247824541863791
-  Name: "Rock Block 01"
-  Transform {
-    Location {
-      X: -13482.1406
-      Y: -2865.04492
-      Z: -45.4954224
-    }
-    Rotation {
-      Pitch: 69.9701691
-      Yaw: -53.4010315
-      Roll: 90.0021515
-    }
-    Scale {
-      X: 0.796297133
-      Y: 1.39381266
-      Z: 4.56824112
-    }
-  }
-  ParentId: 15181510770275873651
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 6061518345080760809
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7950434917656616929
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
   }
 }
 Objects {

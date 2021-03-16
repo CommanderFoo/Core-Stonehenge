@@ -92,7 +92,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Size"
-      Float: 30
+      Float: 20
     }
     Overrides {
       Name: "bp:Light Shaft Bloom"

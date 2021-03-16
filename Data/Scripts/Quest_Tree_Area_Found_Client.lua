@@ -29,6 +29,7 @@ end)
 
 Events.Connect("tree_area_quest_complete", function()
 	Events.Broadcast("set_weather_profile", "nighttime")
+	Events.Broadcast("set_weather_rocks_wet", true)
 	Events.Broadcast("enable_ocular_device", true)
 	Events.Broadcast("add_notification", "The Ocular Pulse Device is fully charged.  Using it will reveal hidden items.")
 end)

@@ -5,17 +5,17 @@ Objects {
   Name: "Inspect Trigger"
   Transform {
     Location {
-      X: 2974.76172
-      Y: 2587.03125
-      Z: -223.673218
+      X: 3038.94287
+      Y: 2545.04443
+      Z: -297.634155
     }
     Rotation {
       Yaw: -35.2316589
     }
     Scale {
-      X: 10.7252455
-      Y: 9.36516571
-      Z: 5.95646477
+      X: 10.7252407
+      Y: 7.17576694
+      Z: 4.96152592
     }
   }
   ParentId: 11515639102854451372
@@ -23,14 +23,16 @@ Objects {
     Overrides {
       Name: "cs:cam_pos"
       Vector {
-        X: 4791
-        Y: 5503
+        X: 8006.40381
+        Y: 7865.72
+        Z: -184.571
       }
     }
     Overrides {
       Name: "cs:cam_rot"
       Rotator {
-        Yaw: 180
+        Pitch: -34.501
+        Yaw: 120.992
       }
     }
     Overrides {
@@ -48,6 +50,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Trigger {
     Interactable: true
@@ -78,10 +83,13 @@ Objects {
   ParentId: 11515639102854451372
   WantsNetworking: true
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
     IsFilePartition: true
@@ -108,10 +116,13 @@ Objects {
     Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Quest Items"
+    FilePartitionName: "Quest Items_1"
   }
 }

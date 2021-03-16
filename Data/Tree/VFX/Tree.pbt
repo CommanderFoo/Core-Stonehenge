@@ -51,6 +51,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Blueprint {
     BlueprintAsset {
       Id: 10364379817274561825
@@ -58,9 +61,9 @@ Objects {
     TeamSettings {
     }
     Vfx {
-      Relevance {
-        Value: "mc:evfxrelevance:medium"
-      }
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
   }
 }

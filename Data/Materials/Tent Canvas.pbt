@@ -2,7 +2,7 @@ Assets {
   Id: 15993422133760117570
   Name: "Tent Canvas"
   PlatformAssetType: 13
-  SerializationVersion: 76
+  SerializationVersion: 78
   CustomMaterialAsset {
     BaseMaterialId: 16027930921305223857
     ParameterOverrides {

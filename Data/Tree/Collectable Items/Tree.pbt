@@ -12,18 +12,13 @@ Objects {
   }
   ParentId: 16845918078398887905
   WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
-    ParameterOverrideMap {
-      key: 96987639932561616
-      value {
-        Overrides {
-          Name: "ma:Shared_BaseMaterial:id"
-          AssetReference {
-            Id: 16609254708742162583
-          }
-        }
-      }
-    }
     ParameterOverrideMap {
       key: 3028825213074767551
       value {
@@ -47,58 +42,18 @@ Objects {
             Roll: -0.256634802
           }
         }
-      }
-    }
-    ParameterOverrideMap {
-      key: 13045447801275589795
-      value {
         Overrides {
-          Name: "Position"
-          Vector {
-            X: 728.835327
-            Y: 922.819763
-            Z: 126.046555
-          }
+          Name: "Lifespan"
+          Float: 0
+        }
+        Overrides {
+          Name: "cs:collectable_id"
+          Int: 1
         }
       }
     }
     TemplateAsset {
       Id: 7301685750702353961
-    }
-  }
-}
-Objects {
-  Id: 16585221260281261380
-  Name: "Pickup Sub Collectable - Pot"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16845918078398887905
-  WantsNetworking: true
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 7571116976348559697
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Pickup Sub Collectable - Pot"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 6681942669990604598
     }
   }
 }

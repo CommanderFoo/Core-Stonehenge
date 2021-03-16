@@ -7,7 +7,7 @@ Assets {
       RootId: 5122242524076149150
       Objects {
         Id: 5122242524076149150
-        Name: "UI - Ocular Lens"
+        Name: "UI - Ocular Lens Icon"
         Transform {
           Scale {
             X: 1
@@ -22,6 +22,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 100
@@ -74,6 +77,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           RenderTransformPivot {
             Anchor {
@@ -91,7 +97,7 @@ Assets {
               R: 1
               G: 1
               B: 1
-              A: 0.5
+              A: 1
             }
             TeamSettings {
             }
@@ -125,5 +131,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 76
+  SerializationVersion: 78
 }

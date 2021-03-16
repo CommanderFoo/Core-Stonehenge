@@ -4,6 +4,7 @@ local reticle_default_size = script:GetCustomProperty("reticle_default_size")
 local cursor_default_size = script:GetCustomProperty("cursor_default_size")
 local reticle_big_size = script:GetCustomProperty("reticle_big_size")
 local cursor_big_size = script:GetCustomProperty("cursor_big_size")
+local cursor_big_use = script:GetCustomProperty("cursor_big_use")
 local inventory_cursor = script:GetCustomProperty("inventory_cursor"):WaitForObject()
 
 local cursor = {
@@ -70,6 +71,12 @@ Events.Connect("show_cursor", function(type)
 		cursor_ui:SetImage(current_cursor)
 		display_cursor = true
 	end
+
+	if(type == "pickup") then
+		cursor_ui.rotationAngle = 155
+	else
+		cursor_ui.rotationAngle = 0
+	end
 end)
 
 Events.Connect("hide_cursor", function()
@@ -95,6 +102,12 @@ Events.Connect("change_reticle", function(type)
 	end
 
 	reticle_ui.visibility = Visibility.FORCE_ON
+
+	if(type == "pickup") then
+		reticle_ui.rotationAngle = 120
+	else
+		reticle_ui.rotationAngle = 0
+	end
 end)
 
 Events.Connect("override_cursor", function(type, tpl_id)
@@ -114,5 +127,13 @@ Events.Connect("override_cursor", function(type, tpl_id)
 		override = true
 		cursor_ui.visibility = Visibility.FORCE_OFF
 		inventory_cursor.visibility = Visibility.FORCE_ON
+		inventory_cursor.width = cursor_big_use.x
+		inventory_cursor.height = cursor_big_use.y
+
+		if(type == "pickup") then
+			cursor_ui.rotationAngle = 120
+		else
+			cursor_ui.rotationAngle = 0
+		end
 	end
 end)

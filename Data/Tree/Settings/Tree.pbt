@@ -27,6 +27,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   PlayerSpawnPoint {
     TeamInt: 1
     PlayerScaleMultiplier: 1
@@ -52,6 +55,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Settings {
     IsDefault: true
@@ -88,6 +94,22 @@ Objects {
         MediumDistance: 7000
         HighDistance: 9000
       }
+      RelevanceSettings {
+        key: "decal"
+        value {
+          LowDistance: 4500
+          MediumDistance: 7000
+          HighDistance: 9000
+        }
+      }
+      RelevanceSettings {
+        key: "vfx"
+        value {
+          LowDistance: 4500
+          MediumDistance: 7000
+          HighDistance: 9000
+        }
+      }
     }
   }
 }
@@ -115,6 +137,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
     IsGroup: true
@@ -151,6 +176,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   NetworkContext {
   }
   InstanceHistory {
@@ -183,6 +211,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Camera {
     UseAsDefault: true
@@ -233,10 +264,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Settings {
     IsDefault: true
     PlayerMovementSettings {
-      WalkSpeed: 640
+      WalkSpeed: 6640
       MaxAcceleration: 1800
       WalkableFloorAngle: 44
       JumpMaxCount: 1

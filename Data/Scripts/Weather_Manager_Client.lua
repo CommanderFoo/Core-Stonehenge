@@ -12,10 +12,9 @@ local sky_light = script:GetCustomProperty("sky_light"):WaitForObject()
 local sun_light = script:GetCustomProperty("sun_light"):WaitForObject()
 local star_dome = script:GetCustomProperty("star_dome"):WaitForObject()
 
-local sarsen_rocks = script:GetCustomProperty("sarsen_rocks"):WaitForObject()
-local bluestone_rocks = script:GetCustomProperty("bluestone_rocks"):WaitForObject()
-local sarsen_rocks_wet = script:GetCustomProperty("sarsen_rocks_wet"):WaitForObject()
-local bluestone_rocks_wet = script:GetCustomProperty("bluestone_rocks_wet"):WaitForObject()
+local rocks_dry = script:GetCustomProperty("rocks_dry"):WaitForObject()
+local rocks_wet = script:GetCustomProperty("rocks_wet"):WaitForObject()
+
 
 local thunder_task = nil
 
@@ -231,12 +230,17 @@ function set_weather_profile(profile)
 			if(data:GetCustomProperty("rain")) then
 				current_rain_volume:SetSmartProperty("Density", data:GetCustomProperty("rain_density"))
 				current_rain_volume:Play()
-				current_rain_sound:Play()
+
+				if(not current_rain_sound.isPlaying) then
+					current_rain_sound:Play()
+				end
 
 				if(data:GetCustomProperty("thunder")) then
 					Task.Spawn(function()
-						current_thunder_sound:Play()
-				
+						if(not current_thunder_sound.isPlaying) then
+							current_thunder_sound:Play()
+						end
+
 						thunder_task = Task.Spawn(make_it_thunder, 6)
 				
 						thunder_task.repeatCount = -1
@@ -259,14 +263,24 @@ function set_weather_profile(profile)
 		end)
 
 		tween:on_complete(function()
-			current_rain_volume:SetSmartProperty("Density", 0)
-			current_rain_volume:Stop()
-			current_rain_sound:Stop()
-			current_thunder_sound:Stop()
+			--current_rain_volume:SetSmartProperty("Density", 0)
+			--current_rain_volume:Stop()
+			--current_rain_sound:Stop()
+			--current_thunder_sound:Stop()
 		end)
 
 		tween:set_delay(data:GetCustomProperty("tween_delay"))
 		tween:set_easing(data:GetCustomProperty("tween_ease"))
+	end
+end
+
+function set_rocks_wet(state)
+	if(state) then
+		rocks_wet.visibility = Visibility.FORCE_ON
+		rocks_dry.visibility = Visibility.FORCE_OFF
+	else
+		rocks_wet.visibility = Visibility.FORCE_OFF
+		rocks_dry.visibility = Visibility.FORCE_ON
 	end
 end
 
@@ -278,6 +292,9 @@ local_player.bindingPressedEvent:Connect(function(player, binding)
 	elseif(binding == "ability_extra_2") then
 		set_weather_profile("daytime")
 	elseif(binding == "ability_extra_3") then
+		set_rocks_wet(true)
+		set_weather_profile("daytime rain")
+	elseif(binding == "ability_extra_4") then
 		set_weather_profile("nighttime")
 	end
 end)
@@ -298,3 +315,4 @@ function Tick(dt)
 end
 
 Events.Connect("set_weather_profile", set_weather_profile)
+Events.Connect("set_weather_rocks_wet", set_rocks_wet)

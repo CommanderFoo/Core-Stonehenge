@@ -1,13 +1,4 @@
 Assets {
-  Id: 18264982001259645559
-  Name: "Survival Gear Gloves 001"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Survival_Gear_Gloves_001"
-  }
-}
-Assets {
   Id: 17409003921622131677
   Name: "Fantasy Magnifying Glass 001"
   PlatformAssetType: 9
@@ -23,6 +14,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Basic_Shape_Circle"
+  }
+}
+Assets {
+  Id: 11070061874830331890
+  Name: "Fantasy Glove 003"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Gear_Glove_003"
   }
 }
 Assets {

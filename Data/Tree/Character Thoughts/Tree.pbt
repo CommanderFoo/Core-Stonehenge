@@ -1,7 +1,7 @@
 Name: "Character Thoughts"
 RootId: 3531142988586757998
 Objects {
-  Id: 6282019947101826862
+  Id: 128385257526483418
   Name: "Character_Thought_Data"
   Transform {
     Location {
@@ -22,7 +22,7 @@ Objects {
     }
     Overrides {
       Name: "cs:message"
-      String: "I like Sweetcorn."
+      String: "There looks to be something different about this rock.  Hmm."
     }
   }
   Collidable_v2 {
@@ -30,6 +30,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Script {
     ScriptAsset {
@@ -67,6 +70,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Script {
     ScriptAsset {

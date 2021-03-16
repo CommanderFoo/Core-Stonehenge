@@ -43,6 +43,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Blueprint {
     BlueprintAsset {
       Id: 5599558274285934961
@@ -89,7 +92,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Size"
-      Float: 10
+      Float: 30
     }
     Overrides {
       Name: "bp:Light Shaft Bloom"
@@ -110,9 +113,9 @@ Objects {
     Overrides {
       Name: "bp:Sun Disc Color"
       Color {
-        R: 0.367708355
-        G: 0.367708355
-        B: 0.367708355
+        R: 1
+        G: 0.840095222
+        B: 0.562000036
         A: 1
       }
     }
@@ -151,6 +154,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Blueprint {
     BlueprintAsset {
@@ -246,6 +252,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Blueprint {
     BlueprintAsset {
@@ -414,6 +423,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Blueprint {
     BlueprintAsset {

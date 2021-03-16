@@ -1,8 +1,440 @@
 Name: "Inventory Lookup Data"
 RootId: 17488655066859996786
 Objects {
+  Id: 8992649414163095251
+  Name: "C3969FAEA434B2B3:Look - White Catalyst Holder"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17488655066859996786
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:id"
+      Int: 10
+    }
+    Overrides {
+      Name: "cs:quantity"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:remove_from_world"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:can_look"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:can_use"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:use_with"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:ui_asset"
+      AssetReference {
+        Id: 2068460591027209120
+      }
+    }
+    Overrides {
+      Name: "cs:quest_item_id"
+      Int: 0
+    }
+    Overrides {
+      Name: "cs:model_asset"
+      AssetReference {
+        Id: 143747440703481674
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 698065707954771193
+    }
+  }
+}
+Objects {
+  Id: 12229926676956825471
+  Name: "AC9E1CADD4A04EE0:Look - Blue Catalyst Holder"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17488655066859996786
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:id"
+      Int: 9
+    }
+    Overrides {
+      Name: "cs:quantity"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:remove_from_world"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:can_look"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:can_use"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:use_with"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:ui_asset"
+      AssetReference {
+        Id: 2068460591027209120
+      }
+    }
+    Overrides {
+      Name: "cs:quest_item_id"
+      Int: 0
+    }
+    Overrides {
+      Name: "cs:model_asset"
+      AssetReference {
+        Id: 2771890355141040469
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 698065707954771193
+    }
+  }
+}
+Objects {
+  Id: 7173272288582947904
+  Name: "69FB22F32EA01627:Look - Red Catalyst Holder"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17488655066859996786
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:id"
+      Int: 8
+    }
+    Overrides {
+      Name: "cs:quantity"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:remove_from_world"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:can_look"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:can_use"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:use_with"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:ui_asset"
+      AssetReference {
+        Id: 2068460591027209120
+      }
+    }
+    Overrides {
+      Name: "cs:quest_item_id"
+      Int: 0
+    }
+    Overrides {
+      Name: "cs:model_asset"
+      AssetReference {
+        Id: 16435211269895572556
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 698065707954771193
+    }
+  }
+}
+Objects {
+  Id: 10427151512936745502
+  Name: "E87D5DAF63AA493F:Look - Yellow Catalyst Holder"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17488655066859996786
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:id"
+      Int: 7
+    }
+    Overrides {
+      Name: "cs:quantity"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:remove_from_world"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:can_look"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:can_use"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:use_with"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:ui_asset"
+      AssetReference {
+        Id: 2068460591027209120
+      }
+    }
+    Overrides {
+      Name: "cs:quest_item_id"
+      Int: 0
+    }
+    Overrides {
+      Name: "cs:model_asset"
+      AssetReference {
+        Id: 11707131961769597204
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 698065707954771193
+    }
+  }
+}
+Objects {
+  Id: 18386759668939952622
+  Name: "D40F1076F63EC485:Pickup - White Catalyst"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17488655066859996786
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:id"
+      Int: 6
+    }
+    Overrides {
+      Name: "cs:quantity"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:remove_from_world"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:can_look"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:model_asset"
+      AssetReference {
+        Id: 16894366056749400076
+      }
+    }
+    Overrides {
+      Name: "cs:can_use"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:use_with"
+      String: "C3969FAEA434B2B3:Look - White Catalyst Holder"
+    }
+    Overrides {
+      Name: "cs:ui_asset"
+      AssetReference {
+        Id: 2068460591027209120
+      }
+    }
+    Overrides {
+      Name: "cs:quest_item_id"
+      Int: 4
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 698065707954771193
+    }
+  }
+}
+Objects {
+  Id: 8814832264712410070
+  Name: "DAF9CC1E57379B51:Pickup - Blue Catalyst"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17488655066859996786
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:id"
+      Int: 5
+    }
+    Overrides {
+      Name: "cs:quantity"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:remove_from_world"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:can_look"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:model_asset"
+      AssetReference {
+        Id: 13491022136320254863
+      }
+    }
+    Overrides {
+      Name: "cs:can_use"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:use_with"
+      String: "AC9E1CADD4A04EE0:Look - Blue Catalyst Holder"
+    }
+    Overrides {
+      Name: "cs:ui_asset"
+      AssetReference {
+        Id: 12978861095057038676
+      }
+    }
+    Overrides {
+      Name: "cs:quest_item_id"
+      Int: 3
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 698065707954771193
+    }
+  }
+}
+Objects {
   Id: 2183362412676363005
-  Name: "BE6F6101FAB9352E:Pickup - Black Crystal"
+  Name: "BE6F6101FAB9352E:Pickup - Yellow Catalyst"
   Transform {
     Location {
     }
@@ -44,7 +476,7 @@ Objects {
     }
     Overrides {
       Name: "cs:use_with"
-      String: ""
+      String: "E87D5DAF63AA493F:Look - Yellow Catalyst Holder"
     }
     Overrides {
       Name: "cs:ui_asset"
@@ -54,7 +486,7 @@ Objects {
     }
     Overrides {
       Name: "cs:quest_item_id"
-      Int: 4
+      Int: 3
     }
   }
   Collidable_v2 {
@@ -62,6 +494,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Script {
     ScriptAsset {
@@ -71,7 +506,7 @@ Objects {
 }
 Objects {
   Id: 6680568989184606811
-  Name: "DAAA24C92DE3C45A:Pickup - White Crystal"
+  Name: "DAAA24C92DE3C45A:Pickup - Red Catalyst"
   Transform {
     Location {
     }
@@ -113,7 +548,7 @@ Objects {
     }
     Overrides {
       Name: "cs:use_with"
-      String: ""
+      String: "69FB22F32EA01627:Look - Red Catalyst Holder"
     }
     Overrides {
       Name: "cs:ui_asset"
@@ -123,7 +558,7 @@ Objects {
     }
     Overrides {
       Name: "cs:quest_item_id"
-      Int: 3
+      Int: 4
     }
   }
   Collidable_v2 {
@@ -131,6 +566,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Script {
     ScriptAsset {
@@ -192,7 +630,7 @@ Objects {
     }
     Overrides {
       Name: "cs:quest_item_id"
-      Int: 2
+      Int: 1
     }
   }
   Collidable_v2 {
@@ -200,6 +638,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Script {
     ScriptAsset {
@@ -261,7 +702,7 @@ Objects {
     }
     Overrides {
       Name: "cs:quest_item_id"
-      Int: 3
+      Int: 2
     }
   }
   Collidable_v2 {
@@ -269,6 +710,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Script {
     ScriptAsset {

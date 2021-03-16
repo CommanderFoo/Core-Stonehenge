@@ -21,6 +21,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Folder {
     IsFilePartition: true
     FilePartitionName: "Quest Scripts"
@@ -54,6 +57,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   NetworkContext {
     Type: Server
   }
@@ -78,6 +84,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Script {
     ScriptAsset {
@@ -105,6 +114,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Script {
     ScriptAsset {
@@ -158,6 +170,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Script {
     ScriptAsset {
       Id: 9136894214218418066
@@ -192,6 +207,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Script {
     ScriptAsset {
@@ -228,6 +246,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Script {
     ScriptAsset {
       Id: 16636176596742416215
@@ -255,6 +276,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Script {
     ScriptAsset {
       Id: 12577538547396390703
@@ -281,6 +305,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Script {
     ScriptAsset {
@@ -324,6 +351,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   NetworkContext {
   }
@@ -375,12 +405,24 @@ Objects {
         SelfId: 5427305723747309504
       }
     }
+    Overrides {
+      Name: "cs:cooldown_ui"
+      ObjectReference {
+        SelfId: 17793329956414984492
+        SubObjectId: 16143029675258965896
+        InstanceId: 12612610737163539623
+        TemplateId: 16712513435738967268
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Script {
     ScriptAsset {
@@ -432,6 +474,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Script {
     ScriptAsset {
@@ -510,6 +555,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Script {
     ScriptAsset {
       Id: 11161198488565903587
@@ -553,7 +601,7 @@ Objects {
     Overrides {
       Name: "cs:pickup"
       AssetReference {
-        Id: 18264982001259645559
+        Id: 11070061874830331890
       }
     }
     Overrides {
@@ -602,12 +650,22 @@ Objects {
         SelfId: 10320949908323721065
       }
     }
+    Overrides {
+      Name: "cs:cursor_big_use"
+      Vector2 {
+        X: 100
+        Y: 100
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Script {
     ScriptAsset {
@@ -704,6 +762,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Script {
     ScriptAsset {
       Id: 6420445481963981208
@@ -762,6 +823,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Script {
     ScriptAsset {
@@ -835,6 +899,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Script {
     ScriptAsset {
@@ -923,6 +990,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Script {
     ScriptAsset {
       Id: 12499386015335153304
@@ -1005,6 +1075,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Script {
     ScriptAsset {
       Id: 5531262730846410578
@@ -1083,6 +1156,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Script {
     ScriptAsset {
       Id: 9005596899860770616
@@ -1115,6 +1191,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Script {
     ScriptAsset {
@@ -1184,6 +1263,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Script {
     ScriptAsset {
       Id: 6559562423505441195
@@ -1240,6 +1322,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Script {
     ScriptAsset {
       Id: 12383539238061812337
@@ -1286,7 +1371,7 @@ Objects {
     }
     Overrides {
       Name: "cs:debug"
-      Bool: false
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -1294,6 +1379,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Script {
     ScriptAsset {
@@ -1336,28 +1424,6 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:sarsen_rocks"
-      ObjectReference {
-        SelfId: 3454851153808035443
-      }
-    }
-    Overrides {
-      Name: "cs:bluestone_rocks"
-      ObjectReference {
-        SelfId: 9321656404648590740
-      }
-    }
-    Overrides {
-      Name: "cs:sarsen_rocks_wet"
-      ObjectReference {
-      }
-    }
-    Overrides {
-      Name: "cs:bluestone_rocks_wet"
-      ObjectReference {
-      }
-    }
-    Overrides {
       Name: "cs:YOOTIL"
       AssetReference {
         Id: 16622261663679835299
@@ -1397,12 +1463,27 @@ Objects {
         SelfId: 12462703319380739545
       }
     }
+    Overrides {
+      Name: "cs:rocks_dry"
+      ObjectReference {
+        SelfId: 121114553617679531
+      }
+    }
+    Overrides {
+      Name: "cs:rocks_wet"
+      ObjectReference {
+        SelfId: 4140940305163899051
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Script {
     ScriptAsset {
@@ -1444,6 +1525,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Script {
     ScriptAsset {

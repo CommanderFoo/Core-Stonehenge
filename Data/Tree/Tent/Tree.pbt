@@ -18,6 +18,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 423913690008197879
@@ -38,6 +41,10 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
+        }
+        Overrides {
+          Name: "cs:quest_item_id"
+          Int: 2
         }
       }
     }
@@ -64,6 +71,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 17925031349245252806
@@ -75,9 +85,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 7913.81641
+            X: 8281.28906
             Y: -2250.91919
-            Z: 216.705368
+            Z: 215.556427
           }
         }
         Overrides {

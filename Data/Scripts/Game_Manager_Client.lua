@@ -40,6 +40,12 @@ Events.Connect("start_game", function()
 		Events.Broadcast("can_open_collectables", true)
 		Events.Broadcast("enable_raycast")
 		Events.Broadcast("set_weather_profile", "daytime")
+
+		Events.Broadcast("inventory_add", 3)
+		Events.Broadcast("inventory_add", 4)
+		Events.Broadcast("inventory_add", 5)
+		Events.Broadcast("inventory_add", 6)
+
 	else
 		Events.Broadcast("set_weather_profile", "sunrise")
 	end

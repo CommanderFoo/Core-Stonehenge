@@ -2,7 +2,7 @@ Assets {
   Id: 7146992406129924198
   Name: "Custom Base Material from Office Pencil 01"
   PlatformAssetType: 13
-  SerializationVersion: 76
+  SerializationVersion: 78
   CustomMaterialAsset {
     BaseMaterialId: 16246201574211332869
     ParameterOverrides {

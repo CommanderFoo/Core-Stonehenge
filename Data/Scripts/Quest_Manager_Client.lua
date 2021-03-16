@@ -12,30 +12,31 @@ local has_quest = false
 local current_quest_holder = nil
 local current_quest_title = nil
 local current_quest_items = {}
+local current_quest_data = nil
 
 local quest_tween = nil
 
-function next_quest(broadcast_event_after)
+function next_quest()
 	if(has_quest) then
 		remove_current_quest()
 	end
 
 	current_quest_id = current_quest_id + 1
 
-	local quest_data = get_quest_from_lookup(current_quest_id)
+	current_quest_data = get_quest_from_lookup(current_quest_id)
 
-	if(not quest_data) then
+	if(not current_quest_data) then
 		return
 	end
 
 	current_quest_holder = World.SpawnAsset(quest_holder, { parent = quest_container })
 
 	current_quest_title = current_quest_holder:FindChildByName("Quest Title")
-	current_quest_title.text = quest_data.quest_title
+	current_quest_title.text = current_quest_data.quest_title
 
-	current_quest_title:FindChildByName("Line").width = quest_data.quest_line_width
+	current_quest_title:FindChildByName("Line").width = current_quest_data.quest_line_width
 	
-	local quest_items = quest_data.children
+	local quest_items = current_quest_data.children
 
 	local y_offset = 60
 
@@ -63,33 +64,29 @@ function next_quest(broadcast_event_after)
 
 	quest_tween = YOOTIL.Tween:new(.5, { x = -300 }, { x = 80 })
 	quest_tween:set_easing("outBack")
-	quest_tween:set_delay(quest_data.quest_delay)
+	quest_tween:set_delay(current_quest_data.quest_delay)
 	quest_tween:on_change(function(c)
 		current_quest_holder.x = c.x
 	end)
 
 	quest_tween:on_start(function()
-		if(quest_data.broadcast_event and string.len(quest_data.broadcast_event) > 1) then
-			Events.Broadcast(quest_data.broadcast_event)
+		if(current_quest_data.broadcast_event_on_start and string.len(current_quest_data.broadcast_event_on_start) > 1) then
+			Events.Broadcast(current_quest_data.broadcast_event_on_start)
 		end
 		
-		if(quest_data.quest_thought_id and quest_data.quest_thought_id > 0) then
-			Events.Broadcast("add_thought", quest_data.quest_thought_id)
+		if(current_quest_data.quest_thought_id and current_quest_data.quest_thought_id > 0) then
+			Events.Broadcast("add_thought", current_quest_data.quest_thought_id)
 		end
 	end)
 
 	quest_tween:on_complete(function()
-		if(string.len(quest_data.quest_notification) > 1) then
-			Task.Wait(quest_data.quest_notification_delay)
-			Events.Broadcast("add_notification", quest_data.quest_notification)
+		if(string.len(current_quest_data.quest_notification) > 1) then
+			Task.Wait(current_quest_data.quest_notification_delay)
+			Events.Broadcast("add_notification", current_quest_data.quest_notification)
 		end
 
-		if(string.len(quest_data.quest_inventory_item) > 1) then
-			Events.Broadcast("inventory_add", quest_data.quest_inventory_item)
-		end
-
-		if(broadcast_event_after) then
-			Events.Broadcast(broadcast_event_after)
+		if(string.len(current_quest_data.quest_inventory_item) > 1) then
+			Events.Broadcast("inventory_add", current_quest_data.quest_inventory_item)
 		end
 	end)
 
@@ -112,8 +109,7 @@ function remove_current_quest()
 		current_quest_holder:Destroy()
 	end)
 
-	quest_tween:set_delay(1)
-
+	current_quest_data = nil
 	has_quest = false
 end
 
@@ -140,8 +136,12 @@ function mark_quest_item_complete(id, delay)
 		end
 
 		if(is_quest_complete()) then
+			if(current_quest_data and current_quest_data.broadcast_event_on_complete and string.len(current_quest_data.broadcast_event_on_complete) > 1) then
+				Events.Broadcast(current_quest_data.broadcast_event_on_complete)
+			end
+
 			remove_current_quest()
-			Task.Wait(2)
+			Task.Wait(1)
 			next_quest()
 		end
 	end
@@ -175,7 +175,8 @@ function get_quest_from_lookup(id)
 				quest_notification_delay = quest_data:GetCustomProperty("quest_notification_delay"),
 				quest_inventory_item = quest_data:GetCustomProperty("quest_inventory_item"),
 				quest_thought_id = quest_data:GetCustomProperty("quest_thought_id"),
-				broadcast_event = quest_data:GetCustomProperty("broadcast_event"),
+				broadcast_event_on_start = quest_data:GetCustomProperty("broadcast_event_on_start"),
+				broadcast_event_on_complete = quest_data:GetCustomProperty("broadcast_event_on_complete"),
 				children = quest_data:GetChildren()
 
 			}

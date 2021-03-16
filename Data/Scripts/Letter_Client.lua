@@ -75,7 +75,7 @@ close_button.clickedEvent:Connect(function()
 				--Events.Broadcast("force_ui_raycast")
 				--Events.Broadcast("enable_raycast")	
 
-				Events.Broadcast("quest_item_complete", 1)
+				Events.Broadcast("quest_item_complete", 2)
 	
 				lid_close_tween = nil
 
@@ -159,7 +159,7 @@ button.clickedEvent:Connect(function()
 				letter_open_down_tween:on_complete(function()
 					letter_open_down_tween = nil
 
-					Task.Wait(3)
+					Task.Wait(2)
 
 					-- Fade in close letter button
 

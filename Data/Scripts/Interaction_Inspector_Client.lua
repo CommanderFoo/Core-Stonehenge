@@ -26,7 +26,7 @@ for k, trigger in ipairs(interactables:FindDescendantsByType("Trigger")) do
 		
 		local cam_pos = obj:GetCustomProperty("cam_pos")
 		local cam_rot = obj:GetCustomProperty("cam_rot")
-
+		
 		if(debug) then
 			if(YOOTIL.Vector3.is_zero(cam_pos)) then
 				cam_pos = obj:GetWorldPosition()
@@ -51,6 +51,10 @@ for k, trigger in ipairs(interactables:FindDescendantsByType("Trigger")) do
 		Events.Broadcast("enable_inventory")
 		UI.SetCanCursorInteractWithUI(true)
 		back_button.visibility = Visibility.FORCE_ON
+
+		if(obj:GetCustomProperty("thought_id") and obj:GetCustomProperty("thought_id") > 0) then
+			Events.Broadcast("add_thought", obj:GetCustomProperty("thought_id"))
+		end
 	end)
 end
 

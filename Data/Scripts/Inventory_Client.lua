@@ -255,8 +255,12 @@ end
 function enable_slot(icon)
 	local children = icon:GetChildren()
 
-	for ci, c in ipairs(children) do			
-		c:SetColor(Color.New(1, 1, 1, 1))
+	for ci, c in ipairs(children) do
+		local col = c:GetColor()
+		
+		col.a = 1
+
+		c:SetColor(col)
 	end
 end
 
@@ -387,8 +391,12 @@ function update_items()
 				inventory[i].disabled = false
 			end
 
-			for ci, c in ipairs(children) do			
-				c:SetColor(Color.New(1, 1, 1, alpha))
+			for ci, c in ipairs(children) do
+				local col = c:GetColor()
+				
+				col.a = alpha
+
+				c:SetColor(col)
 			end
 		end
 	end
@@ -412,13 +420,11 @@ function disable_inventory()
 			local children = inventory[i].icon:GetChildren()
 
 			for ci, c in ipairs(children) do
-				local color = Color.New(1, 1, 1, 1)
-
-				if(inventory[i].disabled) then
-					color.a = .5
-				end
+				local color = c:GetColor()
 				
-				c:SetColor(Color.New(1, 1, 1, .5))
+				color.a = .5
+
+				c:SetColor(color)
 			end
 		end
 	end

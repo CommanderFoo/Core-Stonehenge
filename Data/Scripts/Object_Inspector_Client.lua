@@ -219,7 +219,7 @@ function use_item()
 				-- Lens frame is special case
 
 				if(using_item:GetCustomProperty("id") == 2) then
-					Events.Broadcast("quest_item_complete", 4)
+					Events.Broadcast("quest_item_complete", 3)
 
 					local o = look_obj:GetCustomProperty("alt"):GetObject()
 					local scale = o:GetWorldScale()
@@ -247,7 +247,7 @@ function use_item()
 					hide_tween:set_delay(3)
 
 					Events.Broadcast("add_ocular_ui")
-					Events.Broadcast("add_notification", "You have assembled the Ocular Device.  Use it by holding \"F\" to discover invisible clues around the area.")
+					Events.Broadcast("add_notification", "You have assembled the Ocular Pulse Device.  It is charging up.  Once charged you can press \"R\" to use it.")
 				elseif(zoomed) then
 					Task.Wait(.5)
 					can_rotate = true

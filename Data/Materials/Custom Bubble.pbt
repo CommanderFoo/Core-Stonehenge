@@ -2,7 +2,7 @@ Assets {
   Id: 6549301953995516344
   Name: "Flag "
   PlatformAssetType: 13
-  SerializationVersion: 76
+  SerializationVersion: 78
   CustomMaterialAsset {
     BaseMaterialId: 2419801972700833283
     ParameterOverrides {

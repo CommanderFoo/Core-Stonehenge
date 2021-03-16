@@ -4,15 +4,23 @@ local key = script:GetCustomProperty("key")
 local ui_icon = script:GetCustomProperty("ui_icon"):WaitForObject()
 local pulse = script:GetCustomProperty("pulse"):WaitForObject()
 local rock_symbols = script:GetCustomProperty("rock_symbols"):WaitForObject()
+local cooldown_ui = script:GetCustomProperty("cooldown_ui"):WaitForObject()
 
 local local_player = Game.GetLocalPlayer()
+
 local can_use = true
+local ocular_enabled = false
 
 local fade_in_tweens = {}
 local fade_out_tweens = {}
 
 local pulse_max_range_out_tween = nil
 local pulse_min_range_out_tween = nil
+
+local cooldown_tween = nil
+
+local last_pulse = 0
+local pulse_cooldown = 5
 
 function find_rock_symbols_in_range()
 	local symbols = {}
@@ -42,11 +50,6 @@ function fade_in_symbols(symbols)
 			end)
 
 			t:on_change(function(c)
-				--local col = sym:GetSmartProperty("Color")
-
-				--col.a = c.a
-
-				--sym:SetSmartProperty("Color", col)
 				sym:SetSmartProperty("Emissive Boost", c.e)
 			end)
 
@@ -65,11 +68,6 @@ function fade_out_symbols(symbols)
 			local t = YOOTIL.Tween:new(1, { e = 5, a = 1 }, { e = 0, a = 0 })
 
 			t:on_change(function(c)
-				--local col = sym:GetSmartProperty("Color")
-
-				--col.a = c.a
-
-				--sym:SetSmartProperty("Color", col)
 				sym:SetSmartProperty("Emissive Boost", c.e)
 			end)
 
@@ -84,7 +82,27 @@ function fade_out_symbols(symbols)
 end
 
 local_player.bindingPressedEvent:Connect(function(p, binding)
-	if(YOOTIL.Input[key] == binding and can_use) then
+	if(ocular_enabled and YOOTIL.Input[key] == binding and can_use) then
+		last_pulse = time()
+
+		cooldown_tween = YOOTIL.Tween:new(1, { h = -100 }, { h = 0 })
+
+		cooldown_tween:on_change(function(c)
+			cooldown_ui.height = math.floor(c.h)
+		end)
+
+		cooldown_tween:on_complete(function()
+			cooldown_tween = YOOTIL.Tween:new(pulse_cooldown - 1, { h = 0 }, { h = -100 })
+
+			cooldown_tween:on_change(function(c)
+				cooldown_ui.height = math.floor(c.h)
+			end)
+
+			cooldown_tween:on_complete(function()
+				cooldown_tween = nil
+			end)
+		end)
+
 		ui_icon:SetColor(Color.New(1, 1, 1, 1))
 
 		-- Max range
@@ -123,6 +141,16 @@ local_player.bindingPressedEvent:Connect(function(p, binding)
 end)
 
 function Tick(dt)
+	if(not ocular_enabled) then 
+		return
+	end
+
+	if(time() > (last_pulse + pulse_cooldown)) then
+		can_use = true
+	else
+		can_use = false
+	end
+
 	if(pulse_max_range_out_tween ~= nil) then
 		pulse_max_range_out_tween:tween(dt)
 	end
@@ -142,8 +170,12 @@ function Tick(dt)
 			t:tween(dt)
 		end
 	end
+
+	if(cooldown_tween ~= nil) then
+		cooldown_tween:tween(dt)
+	end
 end
 
-Events.Connect("can_use_ocular_device", function(state)
-	can_use = state
+Events.Connect("enable_ocular_device", function(state)
+	ocular_enabled = state
 end)

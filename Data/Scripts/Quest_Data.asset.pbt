@@ -40,7 +40,15 @@ Assets {
         Name: "cs:broadcast_event"
         String: ""
       }
+      Overrides {
+        Name: "cs:broadcast_event_on_start"
+        String: ""
+      }
+      Overrides {
+        Name: "cs:broadcast_event_on_complete"
+        String: ""
+      }
     }
   }
-  SerializationVersion: 76
+  SerializationVersion: 78
 }

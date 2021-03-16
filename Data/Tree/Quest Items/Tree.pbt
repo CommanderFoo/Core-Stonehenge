@@ -1,8 +1,8 @@
 Name: "Quest Items"
-RootId: 2071753453346508907
+RootId: 13435184631131098900
 Objects {
-  Id: 5615940596932917341
-  Name: "Pickup - White Gem"
+  Id: 3979927789413486730
+  Name: "Pickup - Blue Catalyst"
   Transform {
     Scale {
       X: 1
@@ -10,56 +10,53 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2071753453346508907
+  ParentId: 13435184631131098900
   WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 4416796020647399533
       value {
         Overrides {
           Name: "Name"
-          String: "Pickup - White Crystal"
+          String: "Pickup - Blue Catalyst"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: 3088.9751
-            Y: 2449.63232
-            Z: -226.124557
+            X: -2604.26807
+            Y: -3418.63599
+            Z: -121.076172
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: 14.5589437
-            Yaw: 135.856781
-            Roll: -34.3966064
           }
         }
         Overrides {
           Name: "Scale"
           Vector {
-            X: 0.639861703
-            Y: 0.639861703
-            Z: 0.639861703
-          }
-        }
-        Overrides {
-          Name: "Visible"
-          Enum {
-            Value: "mc:evisibilitysetting:forceon"
+            X: 0.665
+            Y: 0.665
+            Z: 0.665
           }
         }
       }
     }
     TemplateAsset {
-      Id: 7921135844285914357
+      Id: 13491022136320254863
     }
   }
 }
 Objects {
-  Id: 11147857424518806933
-  Name: "Pickup - Black Crystal"
+  Id: 10822946951335808226
+  Name: "Pickup - White Catalyst"
   Transform {
     Scale {
       X: 1
@@ -67,74 +64,40 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2071753453346508907
+  ParentId: 13435184631131098900
   WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 4416796020647399533
       value {
         Overrides {
           Name: "Name"
-          String: "Pickup - Black Crystal"
+          String: "Pickup - White Catalyst"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: 3172.98242
-            Y: 2336.02197
-            Z: -223.630127
+            X: -2722.65869
+            Y: -3370.88306
+            Z: -117.320015
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Roll: -0.543426514
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.665367126
-            Y: 0.665367126
-            Z: 0.665367126
-          }
-        }
-        Overrides {
-          Name: "Visible"
-          Enum {
-            Value: "mc:evisibilitysetting:forceon"
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 5550989309426583940
-      value {
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.867539644
-            Y: 0.867539644
-            Z: 0.867539644
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 18.3165855
-            Yaw: -6.15853882
-            Roll: -37.9851379
-          }
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
+            Pitch: -27.3808594
           }
         }
       }
     }
     TemplateAsset {
-      Id: 2868003098755762293
+      Id: 16894366056749400076
     }
   }
 }

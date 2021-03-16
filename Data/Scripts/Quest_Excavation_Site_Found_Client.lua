@@ -7,8 +7,10 @@ local quest_complete = false
 quest_trigger.beginOverlapEvent:Connect(function(t, p)
 	if(p:IsA("Player")) then
 		if(can_complete_quest) then
-			Events.Broadcast("quest_item_complete", 1)
-			quest_complete = true
+			if(not quest_complete) then
+				Events.Broadcast("quest_item_complete", 1)
+				quest_complete = true
+			end
 		end
 	end
 end)
@@ -21,6 +23,10 @@ trigger.interactedEvent:Connect(function()
 	end
 end)
 
-Events.Connect("can_see_excavation_quest_items", function()
+Events.Connect("can_collect_excavation_quest_items", function()
 	can_complete_quest = true
+end)
+
+Events.Connect("excavation_quest_done", function()
+	Events.Broadcast("set_weather_profile", "daytime rain")
 end)

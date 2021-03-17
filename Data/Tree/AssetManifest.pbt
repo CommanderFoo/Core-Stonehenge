@@ -1,4 +1,13 @@
 Assets {
+  Id: 17844208075156300609
+  Name: "Fantasy Bucket 003"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Bucket_003"
+  }
+}
+Assets {
   Id: 17765335935549099671
   Name: "Grass Tall"
   PlatformAssetType: 1
@@ -14,6 +23,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Gear_Cape_015"
+  }
+}
+Assets {
+  Id: 17016874880932319790
+  Name: "Fantasy Coins 004"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Coins_004"
   }
 }
 Assets {
@@ -62,12 +80,30 @@ Assets {
   }
 }
 Assets {
+  Id: 15402981652644526301
+  Name: "Survival Food Candy 003"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Survival_Food_003"
+  }
+}
+Assets {
   Id: 15275989760242259074
   Name: "UI Gradient Circular 001"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Basic_Shape_001"
+  }
+}
+Assets {
+  Id: 15172516143499941752
+  Name: "Fantasy Crate 003"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Crate_003"
   }
 }
 Assets {
@@ -107,6 +143,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13815925060460279398
+  Name: "Fantasy Spell Ingredient 028"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Ingredient_028"
+  }
+}
+Assets {
   Id: 13696473080664636351
   Name: "Fantasy Bread 007"
   PlatformAssetType: 9
@@ -143,6 +188,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12086170380502213050
+  Name: "Fantasy Tool 011"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Tool_011"
+  }
+}
+Assets {
   Id: 11376239422298037652
   Name: "Fantasy Compass 001"
   PlatformAssetType: 9
@@ -170,6 +224,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10571247426956195297
+  Name: "Fantasy Key 003"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Key_003"
+  }
+}
+Assets {
   Id: 10076833270907625934
   Name: "Fantasy Craft Crystal 046"
   PlatformAssetType: 9
@@ -188,12 +251,30 @@ Assets {
   }
 }
 Assets {
+  Id: 9440580825021071479
+  Name: "Survival Pencil 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Survival_Equip_Pencil_001"
+  }
+}
+Assets {
   Id: 8938438425858112672
   Name: "Tree Oak 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_tree_oak_001"
+  }
+}
+Assets {
+  Id: 7722105788698937656
+  Name: "Fantasy Craft Crystal 043"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Crafting_Crystal_043"
   }
 }
 Assets {
@@ -206,6 +287,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7029850831792435968
+  Name: "Fantasy Card 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Card_001"
+  }
+}
+Assets {
   Id: 6628731841327595102
   Name: "Cube"
   PlatformAssetType: 1
@@ -215,12 +305,39 @@ Assets {
   }
 }
 Assets {
+  Id: 6597638455064053728
+  Name: "Fantasy Timepiece 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Timepiece_002"
+  }
+}
+Assets {
+  Id: 6165636852037245457
+  Name: "Fantasy Trophy 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Trophy_001"
+  }
+}
+Assets {
   Id: 5954460029906525647
   Name: "BG Gradient 006"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundFlat_015"
+  }
+}
+Assets {
+  Id: 5938268602112903215
+  Name: "Fantasy Mushroom 005"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Food_Mushroom_005"
   }
 }
 Assets {
@@ -278,11 +395,47 @@ Assets {
   }
 }
 Assets {
+  Id: 2049929914632513206
+  Name: "Fantasy Spell Ingredient 030"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Ingredient_030"
+  }
+}
+Assets {
+  Id: 1808738903976987071
+  Name: "Survival Tool Shovel 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Survival_Equip_Tool_010"
+  }
+}
+Assets {
   Id: 1749204029973281763
   Name: "Fantasy Bread 005"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Food_Bread_005"
+  }
+}
+Assets {
+  Id: 1421234571519112901
+  Name: "Fantasy Nails 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Nails_001"
+  }
+}
+Assets {
+  Id: 1189157434629388196
+  Name: "Fantasy Tool 017"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Tool_017"
   }
 }

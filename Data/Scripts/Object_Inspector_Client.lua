@@ -45,7 +45,8 @@ function inspect_object(obj_ref)
 
 	Events.Broadcast("inspecting", true)
 	Events.Broadcast("enable_inventory")
-	Events.Broadcast("can_open_collectables", false)
+	--Events.Broadcast("can_open_collectables", false) ------
+	Events.Broadcast("can_open_collectables", true)
 
 	if(not is_interacting) then
 		Events.BroadcastToServer("disable_player", local_player)

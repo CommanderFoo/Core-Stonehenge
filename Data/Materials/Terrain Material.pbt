@@ -81,6 +81,12 @@ Assets {
           A: 1
         }
       }
+      Overrides {
+        Name: "cmp:Material4_Sides"
+        AssetReference {
+          Id: 8787233930870400864
+        }
+      }
     }
     Assets {
       Id: 11557887931759397682
@@ -116,6 +122,15 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_grass_001_uv"
+      }
+    }
+    Assets {
+      Id: 8787233930870400864
+      Name: "Dirt 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "dirt_001"
       }
     }
     Assets {

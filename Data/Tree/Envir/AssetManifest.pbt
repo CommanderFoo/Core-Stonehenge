@@ -1,13 +1,4 @@
 Assets {
-  Id: 18027856645882494617
-  Name: "Office Pencil 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_off_desktop_pen_03_ref"
-  }
-}
-Assets {
   Id: 17765335935549099671
   Name: "Grass Tall"
   PlatformAssetType: 1
@@ -32,6 +23,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F6_Text_024"
+  }
+}
+Assets {
+  Id: 16947933713670808803
+  Name: "Tree Oak Bare 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_oak_002"
   }
 }
 Assets {
@@ -395,6 +395,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10690864167827508535
+  Name: "Hill 05"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_hill_005"
+  }
+}
+Assets {
   Id: 10683065336905200881
   Name: "Invisible"
   PlatformAssetType: 2
@@ -494,12 +503,30 @@ Assets {
   }
 }
 Assets {
+  Id: 8938438425858112672
+  Name: "Tree Oak 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_oak_001"
+  }
+}
+Assets {
   Id: 8803369277840038394
   Name: "Cylinder - Polished"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_hq_test_001"
+  }
+}
+Assets {
+  Id: 8787233930870400864
+  Name: "Dirt 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "dirt_001"
   }
 }
 Assets {
@@ -629,6 +656,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6049790631763201750
+  Name: "Tree Birch 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_birch_003"
+  }
+}
+Assets {
   Id: 6011827191939106029
   Name: "Craftsman Wall Interior 01 Corner"
   PlatformAssetType: 1
@@ -752,6 +788,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fantasy_bottle_003"
+  }
+}
+Assets {
+  Id: 3499609589785175313
+  Name: "Tree Birch Bare 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_birch_002"
   }
 }
 Assets {

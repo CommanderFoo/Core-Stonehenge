@@ -26,7 +26,7 @@ Assets {
           }
           Overrides {
             Name: "cs:collectable_id"
-            Int: 2
+            Int: 1
           }
         }
         WantsNetworking: true
@@ -48,14 +48,14 @@ Assets {
         Name: "Cylinder - Rounded Bottom-Aligned"
         Transform {
           Location {
-            X: 728.835327
-            Y: 922.811584
-            Z: 125.18158
+            X: -3.50106144
+            Y: 1.9108777
+            Z: -7.24212694
           }
           Rotation {
             Pitch: -0.0698864907
-            Yaw: 172.609879
-            Roll: -0.538909793
+            Yaw: 172.609833
+            Roll: -0.538909733
           }
           Scale {
             X: 0.44815138
@@ -108,13 +108,13 @@ Assets {
         Name: "Cone - Truncated Hollow Wide"
         Transform {
           Location {
-            X: 728.835205
-            Y: 922.840271
-            Z: 128.199966
+            X: -3.50121808
+            Y: 1.939533
+            Z: -4.22380781
           }
           Rotation {
             Pitch: 0.0698864907
-            Yaw: -7.39008331
+            Yaw: -7.39011669
             Roll: -179.46106
           }
           Scale {
@@ -169,14 +169,14 @@ Assets {
         Name: "Decorations"
         Transform {
           Location {
-            X: 725.642
-            Y: 917.983887
-            Z: 125.727142
+            X: -6.69446421
+            Y: -2.91686869
+            Z: -6.69744492
           }
           Rotation {
             Pitch: -0.0698864907
-            Yaw: 172.609879
-            Roll: -0.538909793
+            Yaw: 172.609833
+            Roll: -0.538909733
           }
           Scale {
             X: 0.175076142

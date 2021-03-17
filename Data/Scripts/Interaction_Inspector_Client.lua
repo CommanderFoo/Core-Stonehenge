@@ -22,7 +22,8 @@ for k, trigger in ipairs(interactables:FindDescendantsByType("Trigger")) do
 		Events.BroadcastToServer("hide_interaction_label", obj:GetReference())
 		Events.Broadcast("interacting", true)
 		Events.Broadcast("enable_inventory")
-		Events.Broadcast("can_open_collectables", false)
+		--Events.Broadcast("can_open_collectables", false) ---------
+		Events.Broadcast("can_open_collectables", true)
 		
 		local cam_pos = obj:GetCustomProperty("cam_pos")
 		local cam_rot = obj:GetCustomProperty("cam_rot")

@@ -17,7 +17,7 @@ local ray_distance = distance
 
 local_player.bindingPressedEvent:Connect(function(p, binding)
 	if(can_raycast and over_pickup and binding == "ability_primary" and Object.IsValid(pickup_obj)) then
-		if(string.find(obj_type, "look")) then
+		if(string.find(obj_type, "look") or string.find(obj_type, "remove")) then
 			if(not using_item) then
 				Events.Broadcast("inspect_object", pickup_obj:GetReference(), is_interacting)
 			else

@@ -45,8 +45,7 @@ function inspect_object(obj_ref)
 
 	Events.Broadcast("inspecting", true)
 	Events.Broadcast("enable_inventory")
-	--Events.Broadcast("can_open_collectables", false) ------
-	Events.Broadcast("can_open_collectables", true)
+	Events.Broadcast("can_open_collectables", false)
 
 	if(not is_interacting) then
 		Events.BroadcastToServer("disable_player", local_player)
@@ -55,7 +54,7 @@ function inspect_object(obj_ref)
 	orig_ref = obj_ref
 	orig_obj = obj_ref:GetObject()
 
-	if(using_item and orig_obj:GetCustomProperty("use_with")) then
+	if(using_item and orig_obj:GetCustomProperty("use_with") or string.find(orig_obj:GetCustomProperty("type"), "remove")) then
 		return
 	end
 
@@ -213,15 +212,22 @@ function use_item()
 					look_obj:GetCustomProperty("main"):GetObject().visibility = Visibility.FORCE_OFF
 				end
 
-				Events.BroadcastToServer("inspector_switch", obj:GetReference())
-				Events.Broadcast("inventory_remove", using_item:GetCustomProperty("id"))
+				local type = obj:GetCustomProperty("type")
+
+				if(not string.find(type, "remove")) then
+					Events.BroadcastToServer("inspector_switch", obj:GetReference())
+					Events.Broadcast("inventory_remove", using_item:GetCustomProperty("id"))
+				end
+
 				Events.Broadcast("override_cursor", false)
 
-				-- Lens frame is special case
+				-- Special cases
+				-- These should not be hardcoded, but time is running out.
 
 				if(using_item:GetCustomProperty("id") == 2) then
 					Events.Broadcast("quest_item_complete", 2)
-
+					Events.BroadcastToServer("save", "ocular_built", 1)
+					
 					local o = look_obj:GetCustomProperty("alt"):GetObject()
 					local scale = o:GetWorldScale()
 					can_rotate = false
@@ -248,7 +254,32 @@ function use_item()
 					hide_tween:set_delay(3)
 
 					Events.Broadcast("add_ocular_ui")
-					Events.Broadcast("add_notification", "You have assembled the Ocular Pulse Device.  It is charging up.  Once charged you can press \"R\" to use it.")
+					Events.Broadcast("add_notification", "You have assembled the Ocular Pulse Device. Press \"R\" to use it to reveal special clues in the area.")
+					Events.Broadcast("enable_ocular_device", true)
+				elseif(using_item:GetCustomProperty("id") == 11 and string.find(type, "remove")) then
+					Events.BroadcastToServer("inspector_hide", obj:GetReference())
+					Events.Broadcast("quest_item_complete", 3)
+					Events.Broadcast("inventory_clear_active")
+				elseif(using_item:GetCustomProperty("id") == 3 and string.find(type, "remove")) then
+					Events.Broadcast("inventory_remove", using_item:GetCustomProperty("id"))
+					Events.Broadcast("quest_item_complete", 2)
+					Events.Broadcast("inventory_clear_active")
+					Events.Broadcast("enable_symbol", "yellow")
+				elseif(using_item:GetCustomProperty("id") == 4 and string.find(type, "remove")) then
+					Events.Broadcast("inventory_remove", using_item:GetCustomProperty("id"))
+					Events.Broadcast("quest_item_complete", 3)
+					Events.Broadcast("inventory_clear_active")
+					Events.Broadcast("enable_symbol", "red")
+				elseif(using_item:GetCustomProperty("id") == 5 and string.find(type, "remove")) then
+					Events.Broadcast("inventory_remove", using_item:GetCustomProperty("id"))
+					Events.Broadcast("quest_item_complete", 4)
+					Events.Broadcast("inventory_clear_active")
+					Events.Broadcast("enable_symbol", "blue")
+				elseif(using_item:GetCustomProperty("id") == 6 and string.find(type, "remove")) then
+					Events.Broadcast("inventory_remove", using_item:GetCustomProperty("id"))
+					Events.Broadcast("quest_item_complete", 5)
+					Events.Broadcast("inventory_clear_active")
+					Events.Broadcast("enable_symbol", "white")
 				elseif(zoomed) then
 					Task.Wait(.5)
 					can_rotate = true
@@ -256,6 +287,8 @@ function use_item()
 				
 				Events.Broadcast("using_item", nil)
 				using_item = nil
+				orig_obj = nil
+				raycast_obj = nil
 			end
 		end
 	end

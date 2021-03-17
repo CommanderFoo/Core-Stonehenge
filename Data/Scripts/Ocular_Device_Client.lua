@@ -5,6 +5,16 @@ local ui_icon = script:GetCustomProperty("ui_icon"):WaitForObject()
 local pulse = script:GetCustomProperty("pulse"):WaitForObject()
 local rock_symbols = script:GetCustomProperty("rock_symbols"):WaitForObject()
 local cooldown_ui = script:GetCustomProperty("cooldown_ui"):WaitForObject()
+local ui_container = script:GetCustomProperty("ui_container"):WaitForObject()
+
+local rock_colors = {
+
+	["red"] = script:GetCustomProperty("red"):WaitForObject(),
+	["yellow"] = script:GetCustomProperty("yellow"):WaitForObject(),
+	["blue"] = script:GetCustomProperty("blue"):WaitForObject(),
+	["white"] = script:GetCustomProperty("white"):WaitForObject()
+
+}
 
 local local_player = Game.GetLocalPlayer()
 
@@ -20,7 +30,16 @@ local pulse_min_range_out_tween = nil
 local cooldown_tween = nil
 
 local last_pulse = 0
-local pulse_cooldown = 5
+local pulse_cooldown = 8
+
+local color_done = {
+
+	yellow = false,
+	red = false,
+	blue = false,
+	white = false
+
+}
 
 function find_rock_symbols_in_range()
 	local symbols = {}
@@ -28,12 +47,14 @@ function find_rock_symbols_in_range()
 	local alien_symbol_groups = rock_symbols:GetChildren()
 
 	for i, g in ipairs(alien_symbol_groups) do
-		local child_symbols = g:GetChildren()
-		local symbol_pos = child_symbols[1]:GetWorldPosition()
-		local dist = (start_pos - symbol_pos).size
+		if(not color_done[g.name]) then
+			local child_symbols = g:GetChildren()
+			local symbol_pos = child_symbols[1]:GetWorldPosition()
+			local dist = (start_pos - symbol_pos).size
 
-		if(dist < 4000) then
-			table.insert(symbols, child_symbols)
+			if(dist < 4000) then
+				table.insert(symbols, child_symbols)
+			end
 		end
 	end
 
@@ -43,7 +64,7 @@ end
 function fade_in_symbols(symbols)
 	for k, v in pairs(symbols) do
 		for i, sym in ipairs(v) do
-			local t = YOOTIL.Tween:new(1, { e = 0, a = 0 }, { e = 5, a = 1 })
+			local t = YOOTIL.Tween:new(1, { e = 0, a = 0 }, { e = 7, a = 1 })
 
 			t:on_start(function()
 				sym.visibility = Visibility.FORCE_ON
@@ -65,7 +86,7 @@ end
 function fade_out_symbols(symbols)
 	for k, v in pairs(symbols) do
 		for i, sym in ipairs(v) do
-			local t = YOOTIL.Tween:new(1, { e = 5, a = 1 }, { e = 0, a = 0 })
+			local t = YOOTIL.Tween:new(1, { e = 7, a = 1 }, { e = 0, a = 0 })
 
 			t:on_change(function(c)
 				sym:SetSmartProperty("Emissive Boost", c.e)
@@ -178,4 +199,28 @@ end
 
 Events.Connect("enable_ocular_device", function(state)
 	ocular_enabled = state
+end)
+
+Events.Connect("enable_ocular_device_ui", function()
+	ui_container.visibility = Visibility.FORCE_ON
+end)
+
+Events.Connect("enable_symbol", function(color)
+	local r = rock_colors[color]
+
+	color_done[color] = true
+
+	if(r:FindChildByName("Front")) then
+		r:FindChildByName("Front"):SetSmartProperty("Color Emissive", Color[string.upper(color)])
+		r:FindChildByName("Front"):SetSmartProperty("Color", Color[string.upper(color)])
+		r:FindChildByName("Front").visibility = Visibility.FORCE_ON
+		r:FindChildByName("Front"):SetSmartProperty("Emissive Boost", 7)
+	end
+
+	if(r:FindChildByName("Back")) then
+		r:FindChildByName("Back"):SetSmartProperty("Color Emissive", Color[string.upper(color)])
+		r:FindChildByName("Back"):SetSmartProperty("Color", Color[string.upper(color)])
+		r:FindChildByName("Back").visibility = Visibility.FORCE_ON
+		r:FindChildByName("Back"):SetSmartProperty("Emissive Boost", 7)
+	end
 end)

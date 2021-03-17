@@ -15,10 +15,10 @@ Objects {
     }
   }
   ParentId: 15892015409261034309
-  ChildIds: 8905212993159020082
   ChildIds: 7696317456945908825
-  ChildIds: 7686509823073333011
-  ChildIds: 14203880575790763663
+  ChildIds: 2171600327790302336
+  ChildIds: 707726403978052213
+  ChildIds: 10248714431777542754
   UnregisteredParameters {
     Overrides {
       Name: "cs:quest_id"
@@ -30,7 +30,7 @@ Objects {
     }
     Overrides {
       Name: "cs:quest_line_width"
-      Int: 122
+      Int: 148
     }
     Overrides {
       Name: "cs:quest_delay"
@@ -58,11 +58,11 @@ Objects {
     }
     Overrides {
       Name: "cs:broadcast_event_on_start"
-      String: ""
+      String: "can_use_catalysts"
     }
     Overrides {
       Name: "cs:broadcast_event_on_complete"
-      String: ""
+      String: "open_up_cave"
     }
   }
   Collidable_v2 {
@@ -81,7 +81,51 @@ Objects {
   }
 }
 Objects {
-  Id: 14203880575790763663
+  Id: 10248714431777542754
+  Name: "Quest_Data_Item"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5881419441155335281
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:id"
+      Int: 5
+    }
+    Overrides {
+      Name: "cs:title"
+      String: "Break White Catalyst on White Rock"
+    }
+    Overrides {
+      Name: "cs:line_width"
+      Int: 289
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 4937853632588239016
+    }
+  }
+}
+Objects {
+  Id: 707726403978052213
   Name: "Quest_Data_Item"
   Transform {
     Location {
@@ -102,11 +146,11 @@ Objects {
     }
     Overrides {
       Name: "cs:title"
-      String: "Something Something"
+      String: "Break Blue Catalyst on Blue Rock"
     }
     Overrides {
       Name: "cs:line_width"
-      Int: 168
+      Int: 268
     }
   }
   Collidable_v2 {
@@ -125,7 +169,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7686509823073333011
+  Id: 2171600327790302336
   Name: "Quest_Data_Item"
   Transform {
     Location {
@@ -146,15 +190,11 @@ Objects {
     }
     Overrides {
       Name: "cs:title"
-      String: "Something Something"
+      String: "Break Red Catalyst on Red Rock"
     }
     Overrides {
       Name: "cs:line_width"
-      Int: 158
-    }
-    Overrides {
-      Name: "cs:notification"
-      String: ""
+      Int: 250
     }
   }
   Collidable_v2 {
@@ -194,55 +234,11 @@ Objects {
     }
     Overrides {
       Name: "cs:title"
-      String: "Something Something"
+      String: "Break Yellow Catalyst on Yellow Rock"
     }
     Overrides {
       Name: "cs:line_width"
-      Int: 116
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4937853632588239016
-    }
-  }
-}
-Objects {
-  Id: 8905212993159020082
-  Name: "Quest_Data_Item"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 5881419441155335281
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:id"
-      Int: 1
-    }
-    Overrides {
-      Name: "cs:title"
-      String: "Something Something"
-    }
-    Overrides {
-      Name: "cs:line_width"
-      Int: 142
+      Int: 298
     }
   }
   Collidable_v2 {
@@ -262,7 +258,7 @@ Objects {
 }
 Objects {
   Id: 12054503144465172460
-  Name: "Fallen Tree"
+  Name: "Lily Area"
   Transform {
     Location {
     }
@@ -277,6 +273,7 @@ Objects {
   ParentId: 15892015409261034309
   ChildIds: 3111667377562538676
   ChildIds: 17345346907515904514
+  ChildIds: 1607511599348592017
   ChildIds: 2052197456219407188
   ChildIds: 10617329812309681692
   UnregisteredParameters {
@@ -286,7 +283,7 @@ Objects {
     }
     Overrides {
       Name: "cs:quest_title"
-      String: "Fallen Tree"
+      String: "Lily Grove"
     }
     Overrides {
       Name: "cs:quest_line_width"
@@ -358,7 +355,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:id"
-      Int: 4
+      Int: 5
     }
     Overrides {
       Name: "cs:title"
@@ -402,7 +399,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:id"
-      Int: 3
+      Int: 4
     }
     Overrides {
       Name: "cs:title"
@@ -415,6 +412,50 @@ Objects {
     Overrides {
       Name: "cs:notification"
       String: ""
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 4937853632588239016
+    }
+  }
+}
+Objects {
+  Id: 1607511599348592017
+  Name: "Quest_Data_Item"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12054503144465172460
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:id"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:title"
+      String: "Dig Up Dirt"
+    }
+    Overrides {
+      Name: "cs:line_width"
+      Int: 116
     }
   }
   Collidable_v2 {
@@ -498,7 +539,7 @@ Objects {
     }
     Overrides {
       Name: "cs:title"
-      String: "Find Fallen Tree"
+      String: "Find Lily Grove"
     }
     Overrides {
       Name: "cs:line_width"
@@ -539,6 +580,7 @@ Objects {
   ChildIds: 11632421897833687391
   ChildIds: 7126444996426621598
   ChildIds: 14132659536540270233
+  ChildIds: 1451655099051690949
   UnregisteredParameters {
     Overrides {
       Name: "cs:quest_id"
@@ -550,7 +592,7 @@ Objects {
     }
     Overrides {
       Name: "cs:quest_line_width"
-      Int: 170
+      Int: 163
     }
     Overrides {
       Name: "cs:quest_delay"
@@ -570,7 +612,7 @@ Objects {
     }
     Overrides {
       Name: "cs:quest_thought_id"
-      Int: 2
+      Int: 0
     }
     Overrides {
       Name: "cs:broadcast_event"
@@ -597,6 +639,50 @@ Objects {
   Script {
     ScriptAsset {
       Id: 3474319897268104530
+    }
+  }
+}
+Objects {
+  Id: 1451655099051690949
+  Name: "Quest_Data_Item"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2429445940070818286
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:id"
+      Int: 5
+    }
+    Overrides {
+      Name: "cs:title"
+      String: "Pickup Shovel"
+    }
+    Overrides {
+      Name: "cs:line_width"
+      Int: 113
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 4937853632588239016
     }
   }
 }

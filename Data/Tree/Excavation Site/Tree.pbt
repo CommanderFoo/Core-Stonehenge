@@ -43,6 +43,10 @@ Objects {
       Name: "cs:raycast_distance"
       Int: 500
     }
+    Overrides {
+      Name: "cs:show_collectables"
+      Bool: true
+    }
   }
   WantsNetworking: true
   Collidable_v2 {
@@ -123,6 +127,6 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Quest Items_1"
+    FilePartitionName: "Quest Items_2"
   }
 }

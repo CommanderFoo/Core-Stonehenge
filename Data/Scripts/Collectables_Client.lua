@@ -15,19 +15,8 @@ local can_open = false
 local_player.bindingPressedEvent:Connect(function(p, binding)
 	if(can_open and YOOTIL.Input[key] == binding) then
 		if(not is_open) then
-			tween = YOOTIL.Tween:new(.7, { x = collectables.x }, { x = 30 })
-	
-			tween:on_change(function(c)
-				collectables.x = c.x
-			end)
-
-			tween:on_complete(function()
-				tween = nil
-			end)
-
-			tween:set_easing("outBack")
-			is_open = true
-
+			show()
+			
 			Events.BroadcastToServer("disable_player", local_player)
 			Events.Broadcast("can_open_inventory", false)
 			Events.Broadcast("collectables_open", true)
@@ -35,29 +24,56 @@ local_player.bindingPressedEvent:Connect(function(p, binding)
 
 			Events.BroadcastToServer("hide_all_interaction_labels")
 		else
-			tween = YOOTIL.Tween:new(.5, { x = collectables.x }, { x = -405 })
-	
-			tween:on_change(function(c)
-				collectables.x = c.x
-			end)
-
-			tween:on_complete(function()
-				tween = nil
-			end)
-
-			tween:set_easing("inBack")
-			is_open = false
+			close()
 
 			Events.Broadcast("hide_cursor")
 			Events.BroadcastToServer("enable_player", local_player)
 			Events.Broadcast("can_open_inventory", true)
 			Events.Broadcast("collectables_open", false)
 			UI.SetCanCursorInteractWithUI(false)
-
+		
 			Events.BroadcastToServer("show_all_interaction_labels")
 		end
 	end
 end)
+
+function show()
+	if(is_open) then
+		return
+	end
+
+	tween = YOOTIL.Tween:new(.7, { x = collectables.x }, { x = 30 })
+	
+	tween:on_change(function(c)
+		collectables.x = c.x
+	end)
+
+	tween:on_complete(function()
+		tween = nil
+	end)
+
+	tween:set_easing("outBack")
+	is_open = true
+end
+
+function close()
+	if(not is_open) then
+		return
+	end
+
+	tween = YOOTIL.Tween:new(.5, { x = collectables.x }, { x = -405 })
+	
+	tween:on_change(function(c)
+		collectables.x = c.x
+	end)
+
+	tween:on_complete(function()
+		tween = nil
+	end)
+
+	tween:set_easing("inBack")
+	is_open = false
+end
 
 function enable_collectable(id)
 	for i, c in ipairs(children) do
@@ -90,11 +106,19 @@ function Tick(dt)
 	end
 end
 
+Events.Connect("show_collectables", function(state)
+	if(state) then
+		show()
+	else
+		close()
+	end
+end)
+
 Events.Connect("can_open_collectables", function(state)
 	can_open = state
 end)
 
-Events.Connect("show_collectables", function()
+Events.Connect("enable_collectables", function()
 	collectables.visibility = Visibility.FORCE_ON
 end)
 

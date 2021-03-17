@@ -4,6 +4,7 @@ local lookup = script:GetCustomProperty("lookup"):WaitForObject()
 local slots = script:GetCustomProperty("slots"):WaitForObject()
 local key_binding = script:GetCustomProperty("key_binding")
 local inventory_ui = script:GetCustomProperty("inventory_ui"):WaitForObject()
+local data_holder = script:GetCustomProperty("data_holder"):WaitForObject()
 
 local hover_color = script:GetCustomProperty("hover_color")
 local unhover_color = script:GetCustomProperty("unhover_color")
@@ -210,7 +211,7 @@ function get_existing_slot(inventory_id)
 	return nil, nil
 end
 
-function add(obj_ref)
+function add(obj_ref, q, no_broadcast)
 	local id = obj_ref
 
 	if(type(id) == "userdata") then
@@ -221,7 +222,7 @@ function add(obj_ref)
 	
 	if(data ~= nil and Object.IsValid(data)) then
 		local inventory_id = data:GetCustomProperty("id")
-		local quantity = data:GetCustomProperty("quantity")
+		local quantity = q or data:GetCustomProperty("quantity")
 		local existing_slot_index, existing_slot_entry = get_existing_slot(inventory_id)
 
 		if(existing_slot_index and existing_slot_entry) then
@@ -242,7 +243,9 @@ function add(obj_ref)
 					Events.Broadcast("quest_item_complete", data:GetCustomProperty("quest_item_id"))
 				end
 
-				Events.BroadcastToServer("inventory_add", free_slot_index, inventory_id, quantity, obj_ref, data:GetCustomProperty("remove_from_world"))
+				if(not no_broadcast) then
+					Events.BroadcastToServer("inventory_add", free_slot_index, inventory_id, quantity, obj_ref, data:GetCustomProperty("remove_from_world"))
+				end
 			else
 				print("We run out of free inventory slots, this shouldn't be possible.")
 			end
@@ -349,8 +352,6 @@ end
 function clear()
 	inventory = {}
 	Events.BroadcastToServer("inventory_clear")
-
-	refresh_ui()
 end
 
 function get_item_from_lookup(muid)
@@ -475,6 +476,7 @@ local_player.bindingPressedEvent:Connect(function(p, binding)
 	end
 end)
 
+Events.Connect("inventory_clear_active", clean_up_active_data)
 Events.Connect("inventory_add", add)
 Events.Connect("inventory_remove", remove)
 Events.Connect("inventory_increase", increase)
@@ -497,4 +499,26 @@ end)
 
 Game.playerJoinedEvent:Connect(function(player)
 	look_helper:AttachToLocalView()
+end)
+
+Events.Connect("inventory_data", function(data)
+	if(data) then
+		for i, v in pairs(data) do
+			add(v.id, v.q)
+		end
+	end
+end)
+
+data_holder.networkedPropertyChangedEvent:Connect(function(obj, prop)
+	if(prop == "inventory_data") then
+		local data = data_holder:GetCustomProperty("inventory_data")
+
+		if(data) then
+			for entry in string.gmatch(data, "([^|]+)") do
+				local index, id, quantity = entry:match("([^,]+),([^,]+),([^,]+)")
+
+				add(id, quantity, true)
+			end
+		end
+	end
 end)

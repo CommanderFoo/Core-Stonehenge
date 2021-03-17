@@ -8,15 +8,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17428478002193899720
-  Name: "Manticore Logo"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_logo_manticore_01"
-  }
-}
-Assets {
   Id: 17225486284988076514
   Name: "Text 05: Y"
   PlatformAssetType: 1
@@ -395,15 +386,6 @@ Assets {
   }
 }
 Assets {
-  Id: 10690864167827508535
-  Name: "Hill 05"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_hill_005"
-  }
-}
-Assets {
   Id: 10683065336905200881
   Name: "Invisible"
   PlatformAssetType: 2
@@ -509,24 +491,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_tree_oak_001"
-  }
-}
-Assets {
-  Id: 8803369277840038394
-  Name: "Cylinder - Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_hq_test_001"
-  }
-}
-Assets {
-  Id: 8787233930870400864
-  Name: "Dirt 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "dirt_001"
   }
 }
 Assets {
@@ -755,15 +719,6 @@ Assets {
   }
 }
 Assets {
-  Id: 4289160600405295316
-  Name: "Metal Basic 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_basic_001"
-  }
-}
-Assets {
   Id: 4068737808063019829
   Name: "Craftsman Dining Chair"
   PlatformAssetType: 1
@@ -824,15 +779,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_metal_gold_001"
-  }
-}
-Assets {
-  Id: 2433235999455009803
-  Name: "Ring"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_torus_004"
   }
 }
 Assets {

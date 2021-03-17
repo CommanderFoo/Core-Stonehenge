@@ -1,6 +1,150 @@
 Name: "Inventory Lookup Data"
 RootId: 17488655066859996786
 Objects {
+  Id: 3272224715579736306
+  Name: "5DD6A7B2E1A30DFA:Look - Dirt"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17488655066859996786
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:id"
+      Int: 12
+    }
+    Overrides {
+      Name: "cs:quantity"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:remove_from_world"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:can_look"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:can_use"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:use_with"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:ui_asset"
+      AssetReference {
+        Id: 9609427507836849740
+      }
+    }
+    Overrides {
+      Name: "cs:quest_item_id"
+      Int: 0
+    }
+    Overrides {
+      Name: "cs:model_asset"
+      AssetReference {
+        Id: 1866812002155985152
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 698065707954771193
+    }
+  }
+}
+Objects {
+  Id: 8009959117816307281
+  Name: "F20D4886DA59DB32:Pickup - Trowel"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17488655066859996786
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:id"
+      Int: 11
+    }
+    Overrides {
+      Name: "cs:quantity"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:remove_from_world"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:can_look"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:can_use"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:use_with"
+      String: "5DD6A7B2E1A30DFA:Look - Dirt"
+    }
+    Overrides {
+      Name: "cs:ui_asset"
+      AssetReference {
+        Id: 9609427507836849740
+      }
+    }
+    Overrides {
+      Name: "cs:quest_item_id"
+      Int: 5
+    }
+    Overrides {
+      Name: "cs:model_asset"
+      AssetReference {
+        Id: 6993920025212198406
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 698065707954771193
+    }
+  }
+}
+Objects {
   Id: 8992649414163095251
   Name: "C3969FAEA434B2B3:Look - White Catalyst Holder"
   Transform {
@@ -246,7 +390,7 @@ Objects {
     }
     Overrides {
       Name: "cs:can_look"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "cs:can_use"
@@ -342,7 +486,7 @@ Objects {
     }
     Overrides {
       Name: "cs:quest_item_id"
-      Int: 4
+      Int: 5
     }
   }
   Collidable_v2 {
@@ -414,79 +558,7 @@ Objects {
     }
     Overrides {
       Name: "cs:quest_item_id"
-      Int: 3
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 698065707954771193
-    }
-  }
-}
-Objects {
-  Id: 2183362412676363005
-  Name: "BE6F6101FAB9352E:Pickup - Yellow Catalyst"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17488655066859996786
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:id"
       Int: 4
-    }
-    Overrides {
-      Name: "cs:quantity"
-      Int: 1
-    }
-    Overrides {
-      Name: "cs:remove_from_world"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:can_look"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:model_asset"
-      AssetReference {
-        Id: 2868003098755762293
-      }
-    }
-    Overrides {
-      Name: "cs:can_use"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:use_with"
-      String: "E87D5DAF63AA493F:Look - Yellow Catalyst Holder"
-    }
-    Overrides {
-      Name: "cs:ui_asset"
-      AssetReference {
-        Id: 16138989306755419428
-      }
-    }
-    Overrides {
-      Name: "cs:quest_item_id"
-      Int: 3
     }
   }
   Collidable_v2 {
@@ -522,7 +594,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:id"
-      Int: 3
+      Int: 4
     }
     Overrides {
       Name: "cs:quantity"
@@ -559,6 +631,78 @@ Objects {
     Overrides {
       Name: "cs:quest_item_id"
       Int: 4
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 698065707954771193
+    }
+  }
+}
+Objects {
+  Id: 2183362412676363005
+  Name: "BE6F6101FAB9352E:Pickup - Yellow Catalyst"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17488655066859996786
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:id"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:quantity"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:remove_from_world"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:can_look"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:model_asset"
+      AssetReference {
+        Id: 2868003098755762293
+      }
+    }
+    Overrides {
+      Name: "cs:can_use"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:use_with"
+      String: "E87D5DAF63AA493F:Look - Yellow Catalyst Holder"
+    }
+    Overrides {
+      Name: "cs:ui_asset"
+      AssetReference {
+        Id: 16138989306755419428
+      }
+    }
+    Overrides {
+      Name: "cs:quest_item_id"
+      Int: 3
     }
   }
   Collidable_v2 {
@@ -630,7 +774,7 @@ Objects {
     }
     Overrides {
       Name: "cs:quest_item_id"
-      Int: 1
+      Int: 0
     }
   }
   Collidable_v2 {

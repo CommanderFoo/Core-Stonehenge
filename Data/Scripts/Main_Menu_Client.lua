@@ -14,6 +14,8 @@ local hover_text_color = script:GetCustomProperty("hover_text_color")
 
 local transition_time = script:GetCustomProperty("transition_time")
 
+local overwrite_button = script:GetCustomProperty("overwrite_button"):WaitForObject()
+
 local menu = {
 	
 	buttons = {
@@ -66,7 +68,7 @@ function display_panel(index)
 
 			local panel = menu.panels[index]
 
-			panel_tween = YOOTIL.Tween:new(.3, {w = 0, h = 0}, {w = panel:GetCustomProperty("width"), h = panel:GetCustomProperty("height")})
+			panel_tween = YOOTIL.Tween:new(.4, {w = 0, h = 0}, {w = panel:GetCustomProperty("width"), h = panel:GetCustomProperty("height")})
 
 			panel_tween:on_start(function()
 				panel.width = 0
@@ -104,6 +106,20 @@ function display_panel(index)
 		end
 	end
 end
+
+overwrite_button.clickedEvent:Connect(function()
+	load_game(2)
+end)
+
+overwrite_button.hoveredEvent:Connect(function()
+	overwrite_button:FindDescendantByName("Background"):SetColor(hover_color)
+	overwrite_button:FindChildByName("Text"):SetColor(hover_text_color)
+end)
+
+overwrite_button.unhoveredEvent:Connect(function()
+	overwrite_button:FindDescendantByName("Background"):SetColor(normal_color)
+	overwrite_button:FindChildByName("Text"):SetColor(normal_text_color)
+end)
 
 for i, b in ipairs(menu.buttons) do
 	local top_layer = b:FindDescendantByName("Top Layer")
@@ -147,10 +163,12 @@ for i, b in ipairs(menu.buttons) do
 					menu.panels[active_panel].visibility = Visibility.FORCE_OFF
 				end
 
-				load_game(true)
+				load_game(i)
 
 				return
 			end
+		elseif(i == 1) then
+			load_game(i)
 		end
 
 		display_panel(i)
@@ -197,7 +215,7 @@ for i, b in ipairs(menu.buttons) do
 	end)
 end
 
-function load_game(new_game)
+function load_game(i)
 	transition_tween = YOOTIL.Tween:new(transition_time, {a = 0}, {a = 1})
 
 	transition_tween:on_start(function()
@@ -217,7 +235,7 @@ function load_game(new_game)
 		camera:StopRotate()
 		target:StopRotate()
 
-		Events.BroadcastToServer("load_game")
+		Events.BroadcastToServer("load_game", i)
 	end)
 
 	transition_tween:on_change(function(v)

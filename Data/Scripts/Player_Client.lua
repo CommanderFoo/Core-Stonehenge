@@ -33,3 +33,10 @@ end
 
 Events.Connect("set_player_camera", set_player_camera)
 Events.Connect("clear_player_camera", clear_player_camera)
+
+local_player.bindingPressedEvent:Connect(function(p, binding)
+	if(binding == "ability_extra_29") then -- P
+		print(local_player:GetWorldPosition())
+		print(local_player:GetWorldRotation())
+	end
+end)

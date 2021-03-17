@@ -6,19 +6,17 @@ local quest_complete = false
 
 quest_trigger.beginOverlapEvent:Connect(function(t, p)
 	if(p:IsA("Player")) then
-		if(can_complete_quest) then
-			if(not quest_complete) then
-				Events.Broadcast("quest_item_complete", 1)
-				quest_complete = true
-			end
+		if(can_complete_quest and not quest_complete) then
+			Events.Broadcast("quest_item_complete", 1)
 		end
 	end
 end)
 
 trigger.interactedEvent:Connect(function()
-	Events.BroadcastToServer("enable_excavation_items", quest_complete)
+	Events.BroadcastToServer("enable_excavation_items", can_complete_quest)
 
-	if(can_complete_quest) then
+	if(can_complete_quest and not quest_complete) then
+		quest_complete = true
 		Events.Broadcast("quest_item_complete", 2)
 	end
 end)

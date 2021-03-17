@@ -2,7 +2,7 @@ Name: "Stonehenge Rocks"
 RootId: 5427305723747309504
 Objects {
   Id: 1539912988044419087
-  Name: "Alien Race 4"
+  Name: "White"
   Transform {
     Location {
     }
@@ -98,7 +98,7 @@ Objects {
 }
 Objects {
   Id: 297934853354924220
-  Name: "Alien Race 3"
+  Name: "Blue"
   Transform {
     Location {
     }
@@ -194,7 +194,7 @@ Objects {
 }
 Objects {
   Id: 5928711526132361686
-  Name: "Alien Race 2"
+  Name: "Yellow"
   Transform {
     Location {
     }
@@ -358,7 +358,7 @@ Objects {
 }
 Objects {
   Id: 5054897444001026669
-  Name: "Alien Race 1"
+  Name: "Red"
   Transform {
     Location {
     }

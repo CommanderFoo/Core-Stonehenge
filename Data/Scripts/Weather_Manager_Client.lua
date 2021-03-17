@@ -50,12 +50,12 @@ end
 -- @TODO:  Lightning strikes hitting the ground at random spots
 -- @TODO:  Switch rocks to wet if raining
 
-function set_weather_profile(profile)
+function set_weather_profile(profile, no_tween)
 	local data = get_weather_profile(profile)
 
 	current_profile = data
 
-	if(not data:GetCustomProperty("tween")) then
+	if(no_tween or not data:GetCustomProperty("tween")) then
 		sky_dome:SetSmartProperty("Overall Tint", data:GetCustomProperty("sky_dome_color"))
 		sky_dome:SetSmartProperty("Brightness", data:GetCustomProperty("sky_dome_brightness"))
 

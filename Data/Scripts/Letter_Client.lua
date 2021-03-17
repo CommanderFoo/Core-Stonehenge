@@ -89,15 +89,16 @@ close_button.clickedEvent:Connect(function()
 					container_down_tween = nil
 					letter_container.visibility = Visibility.FORCE_OFF
 
+					Events.Broadcast("inventory_add", 2)
 					Events.Broadcast("hide_cursor")
 					Events.Broadcast("enable_raycast")
-					Events.BroadcastToServer("enable_player", local_player, "unarmed_stance")
+					Events.BroadcastToServer("enable_player", local_player)
 					Events.Broadcast("show_inventory")
-					Events.Broadcast("show_collectables")
+					Events.Broadcast("enable_collectables")
 					Events.Broadcast("can_open_collectables", true)
 					Events.Broadcast("can_open_inventory", true)
 					Events.Broadcast("set_weather_profile", "daytime")
-
+	
 				end)
 			end)
 		end)
@@ -251,7 +252,6 @@ function Tick(dt)
 end
 
 Events.Connect("show_letter", function()
-	Events.Broadcast("inventory_add", 2)
 	Events.Broadcast("disable_raycast")
 
 	UI.SetCanCursorInteractWithUI(true)
@@ -275,8 +275,6 @@ Events.Connect("show_letter", function()
 
 	container_up_tween:set_easing("outQuint")
 	container_up_tween:set_delay(.5)
-
-	Events.Broadcast("next_quest")
 
 	-- Location
 

@@ -16,17 +16,25 @@ local current_quest_data = nil
 
 local quest_tween = nil
 
-function next_quest()
+function next_quest(id)
 	if(has_quest) then
 		remove_current_quest()
 	end
 
-	current_quest_id = current_quest_id + 1
+	if(id == 0) then
+		id = 1
+	end
+
+	current_quest_id = id or (current_quest_id + 1)
 
 	current_quest_data = get_quest_from_lookup(current_quest_id)
 
 	if(not current_quest_data) then
 		return
+	end
+
+	if(not id) then
+		Events.BroadcastToServer("save", "quest_id", current_quest_id)
 	end
 
 	current_quest_holder = World.SpawnAsset(quest_holder, { parent = quest_container })

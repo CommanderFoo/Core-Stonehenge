@@ -5,9 +5,9 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
-      X: 3308.15723
-      Y: 1783.04053
-      Z: -241.121826
+      X: 8169.62256
+      Y: -2422.09473
+      Z: 300.661
     }
     Rotation {
       Yaw: 180
@@ -270,13 +270,13 @@ Objects {
   Settings {
     IsDefault: true
     PlayerMovementSettings {
-      WalkSpeed: 640
+      WalkSpeed: 6640
       MaxAcceleration: 1800
       WalkableFloorAngle: 44
       JumpMaxCount: 1
       JumpVelocity: 900
       GroundFriction: 8
-      GravityScale: 1.9
+      GravityScale: 2
       MaxSwimSpeed: 420
       Buoyancy: 1
       TouchForceFactor: 1

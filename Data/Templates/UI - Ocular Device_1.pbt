@@ -219,7 +219,7 @@ Assets {
               R: 1
               G: 1
               B: 1
-              A: 0.25
+              A: 1
             }
             TeamSettings {
             }

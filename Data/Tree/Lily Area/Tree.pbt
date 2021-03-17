@@ -27,7 +27,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Quest Items"
+    FilePartitionName: "Quest Items_1"
   }
 }
 Objects {
@@ -35,17 +35,17 @@ Objects {
   Name: "Inspect Trigger"
   Transform {
     Location {
-      X: -2543.9209
-      Y: -3542.30713
-      Z: 536.362061
+      X: -6035.08691
+      Y: -6469.01807
+      Z: 47.615387
     }
     Rotation {
-      Yaw: -35.2316895
+      Yaw: -56.3414612
     }
     Scale {
-      X: 17.1757793
-      Y: 16.8792801
-      Z: 14.4259186
+      X: 25.9621048
+      Y: 34.4203415
+      Z: 25.8218212
     }
   }
   ParentId: 7545929439889716735
@@ -53,16 +53,16 @@ Objects {
     Overrides {
       Name: "cs:cam_pos"
       Vector {
-        X: 2308.29712
-        Y: 2319.2439
-        Z: 216.023
+        X: -551.116
+        Y: -699.208
+        Z: 284.803
       }
     }
     Overrides {
       Name: "cs:cam_rot"
       Rotator {
-        Pitch: -35.498
-        Yaw: -117.999
+        Pitch: -24.823
+        Yaw: -143.533
       }
     }
     Overrides {
@@ -72,6 +72,10 @@ Objects {
     Overrides {
       Name: "cs:raycast_distance"
       Int: 500
+    }
+    Overrides {
+      Name: "cs:show_collectables"
+      Bool: true
     }
   }
   WantsNetworking: true

@@ -1,5 +1,5 @@
 Game.playerJoinedEvent:Connect(function(player)
-	disable_player(player, "unarmed_sit_ground_crossed")
+	disable_player(player)
 	player:SetVisibility(false)
 end)
 
@@ -28,7 +28,6 @@ end
 function set_player_stance(player, stance)
 	player.animationStance = stance
 end
-
 
 Events.Connect("set_player_stance", set_player_stance)
 Events.Connect("disable_player", disable_player)

@@ -22,8 +22,11 @@ for k, trigger in ipairs(interactables:FindDescendantsByType("Trigger")) do
 		Events.BroadcastToServer("hide_interaction_label", obj:GetReference())
 		Events.Broadcast("interacting", true)
 		Events.Broadcast("enable_inventory")
-		--Events.Broadcast("can_open_collectables", false) ---------
-		Events.Broadcast("can_open_collectables", true)
+		Events.Broadcast("can_open_collectables", false)
+
+		if(obj:GetCustomProperty("show_collectables")) then
+			Events.Broadcast("show_collectables", true)
+		end
 		
 		local cam_pos = obj:GetCustomProperty("cam_pos")
 		local cam_rot = obj:GetCustomProperty("cam_rot")
@@ -85,6 +88,7 @@ back_button.clickedEvent:Connect(function()
 	Events.Broadcast("interacting", false, inventory_open)
 	Events.Broadcast("hide_cursor")
 	Events.Broadcast("disable_inventory")
+	Events.Broadcast("show_collectables", false)
 	Events.Broadcast("can_open_collectables", true)
 end)
 

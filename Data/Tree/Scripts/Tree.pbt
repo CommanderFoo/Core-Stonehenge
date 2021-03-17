@@ -51,6 +51,7 @@ Objects {
   ChildIds: 16900010184290640698
   ChildIds: 17645753054259915518
   ChildIds: 5347877517916026926
+  ChildIds: 14937095057764392733
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -62,6 +63,36 @@ Objects {
   }
   NetworkContext {
     Type: Server
+  }
+}
+Objects {
+  Id: 14937095057764392733
+  Name: "Save_Data_Server"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1946733176415873648
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 17101986807999713984
+    }
   }
 }
 Objects {
@@ -163,6 +194,28 @@ Objects {
       Name: "cs:move_spawn"
       Bool: true
     }
+    Overrides {
+      Name: "cs:clear_save_data"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:tent_quest_items"
+      ObjectReference {
+        SelfId: 12936176732858694209
+      }
+    }
+    Overrides {
+      Name: "cs:excavation_quest_items"
+      ObjectReference {
+        SelfId: 2071753453346508907
+      }
+    }
+    Overrides {
+      Name: "cs:lily_quest_items"
+      ObjectReference {
+        SelfId: 13435184631131098900
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -199,6 +252,12 @@ Objects {
       Name: "cs:lookup"
       ObjectReference {
         SelfId: 17488655066859996786
+      }
+    }
+    Overrides {
+      Name: "cs:data_holder"
+      ObjectReference {
+        SelfId: 11472370763536327097
       }
     }
   }
@@ -300,6 +359,30 @@ Objects {
     }
   }
   ParentId: 1946733176415873648
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:clear_save_data"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:tent_quest_items"
+      ObjectReference {
+        SelfId: 12936176732858694209
+      }
+    }
+    Overrides {
+      Name: "cs:excavation_quest_items"
+      ObjectReference {
+        SelfId: 2071753453346508907
+      }
+    }
+    Overrides {
+      Name: "cs:lily_area_quest_items"
+      ObjectReference {
+        SelfId: 13435184631131098900
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -346,6 +429,7 @@ Objects {
   ChildIds: 4042031689843970374
   ChildIds: 1134763625187610630
   ChildIds: 7873356878715661556
+  ChildIds: 2244137841673158829
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -356,6 +440,165 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 2244137841673158829
+  Name: "Main_Menu_Client"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14858104107515101237
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
+      }
+    }
+    Overrides {
+      Name: "cs:camera"
+      ObjectReference {
+        SelfId: 4613551129224905692
+      }
+    }
+    Overrides {
+      Name: "cs:target"
+      ObjectReference {
+        SelfId: 9376105881924438415
+      }
+    }
+    Overrides {
+      Name: "cs:transition_loader"
+      ObjectReference {
+        SelfId: 6431924018740162976
+      }
+    }
+    Overrides {
+      Name: "cs:loading"
+      ObjectReference {
+        SelfId: 13338400529217129791
+      }
+    }
+    Overrides {
+      Name: "cs:continue"
+      ObjectReference {
+        SelfId: 16517006136869305030
+      }
+    }
+    Overrides {
+      Name: "cs:new_game"
+      ObjectReference {
+        SelfId: 17089957316357998493
+      }
+    }
+    Overrides {
+      Name: "cs:options"
+      ObjectReference {
+        SelfId: 826041659225257727
+      }
+    }
+    Overrides {
+      Name: "cs:credits"
+      ObjectReference {
+        SelfId: 18013574652269747608
+      }
+    }
+    Overrides {
+      Name: "cs:disabled_color"
+      Color {
+        R: 0.134375095
+        G: 0.134375095
+        B: 0.134375095
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:normal_color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:hover_color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:normal_text_color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:hover_text_color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:new_game_panel"
+      ObjectReference {
+        SelfId: 13742357328192066368
+      }
+    }
+    Overrides {
+      Name: "cs:options_panel"
+      ObjectReference {
+        SelfId: 4808761175952349579
+      }
+    }
+    Overrides {
+      Name: "cs:credits_panel"
+      ObjectReference {
+        SelfId: 13459724195718423762
+      }
+    }
+    Overrides {
+      Name: "cs:menu_container"
+      ObjectReference {
+        SelfId: 7058333658414099637
+      }
+    }
+    Overrides {
+      Name: "cs:transition_time"
+      Float: 0.1
+    }
+    Overrides {
+      Name: "cs:overwrite_button"
+      ObjectReference {
+        SelfId: 16731724209154621925
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 3977737838903603412
+    }
   }
 }
 Objects {
@@ -412,6 +655,39 @@ Objects {
         SubObjectId: 16143029675258965896
         InstanceId: 12612610737163539623
         TemplateId: 16712513435738967268
+      }
+    }
+    Overrides {
+      Name: "cs:ui_container"
+      ObjectReference {
+        SelfId: 15264119490670403032
+        SubObjectId: 14212269066307920764
+        InstanceId: 12612610737163539623
+        TemplateId: 16712513435738967268
+      }
+    }
+    Overrides {
+      Name: "cs:red"
+      ObjectReference {
+        SelfId: 5054897444001026669
+      }
+    }
+    Overrides {
+      Name: "cs:yellow"
+      ObjectReference {
+        SelfId: 5928711526132361686
+      }
+    }
+    Overrides {
+      Name: "cs:blue"
+      ObjectReference {
+        SelfId: 297934853354924220
+      }
+    }
+    Overrides {
+      Name: "cs:white"
+      ObjectReference {
+        SelfId: 1539912988044419087
       }
     }
   }
@@ -983,6 +1259,12 @@ Objects {
         SelfId: 5507221062264159847
       }
     }
+    Overrides {
+      Name: "cs:data_holder"
+      ObjectReference {
+        SelfId: 11472370763536327097
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1367,11 +1649,11 @@ Objects {
     }
     Overrides {
       Name: "cs:transition_time"
-      Float: 1.5
+      Float: 1
     }
     Overrides {
       Name: "cs:debug"
-      Bool: true
+      Bool: false
     }
   }
   Collidable_v2 {

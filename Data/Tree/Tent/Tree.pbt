@@ -1,9 +1,13 @@
 Name: "Tent"
 RootId: 14496764963604168968
 Objects {
-  Id: 10169360158717497169
-  Name: "Look - Ocular Frame"
+  Id: 12936176732858694209
+  Name: "Quest Items"
   Transform {
+    Location {
+    }
+    Rotation {
+    }
     Scale {
       X: 1
       Y: 1
@@ -21,35 +25,8 @@ Objects {
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 423913690008197879
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Look - Ocular Frame"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 7820.29297
-            Y: -2855.47217
-            Z: 232.684692
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "cs:quest_item_id"
-          Int: 1
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 9541816162618524212
-    }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Quest Items_3"
   }
 }

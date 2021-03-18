@@ -16,7 +16,7 @@ local_player.bindingPressedEvent:Connect(function(p, binding)
 	if(can_open and YOOTIL.Input[key] == binding) then
 		if(not is_open) then
 			show()
-			
+			Events.Broadcast("play_music", "menu_inspect_inventory")
 			Events.BroadcastToServer("disable_player", local_player)
 			Events.Broadcast("can_open_inventory", false)
 			Events.Broadcast("collectables_open", true)
@@ -25,7 +25,7 @@ local_player.bindingPressedEvent:Connect(function(p, binding)
 			Events.BroadcastToServer("hide_all_interaction_labels")
 		else
 			close()
-
+			Events.Broadcast("stop_music")
 			Events.Broadcast("hide_cursor")
 			Events.BroadcastToServer("enable_player", local_player)
 			Events.Broadcast("can_open_inventory", true)

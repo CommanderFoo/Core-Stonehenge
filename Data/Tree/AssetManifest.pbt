@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17624168504224828761
+  Name: "Sci-fi Item Callout VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_scifi_callout"
+  }
+}
+Assets {
   Id: 17266765302244254460
   Name: "Fantasy Cape 014"
   PlatformAssetType: 9
@@ -32,15 +41,6 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Equip_Coins_004"
-  }
-}
-Assets {
-  Id: 16759257907029005232
-  Name: "Meta Retro Pickup 02 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_meta_retro_pickup_02_Cue_ref"
   }
 }
 Assets {
@@ -107,6 +107,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15124183262850421414
+  Name: "Electric Zap 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_electric_zap_01_ref"
+  }
+}
+Assets {
   Id: 15121849152362257563
   Name: "Grass Short"
   PlatformAssetType: 1
@@ -140,6 +149,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "Icon_Close"
+  }
+}
+Assets {
+  Id: 14176064801652816628
+  Name: "Dust Puff VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_dust_puff"
   }
 }
 Assets {
@@ -197,6 +215,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11715829009177289731
+  Name: "Epic Explosions Set 01 SFX"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "sfxabp_epic_explosion_set_01_ref"
+  }
+}
+Assets {
   Id: 11376239422298037652
   Name: "Fantasy Compass 001"
   PlatformAssetType: 9
@@ -212,6 +239,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Gear_Glove_003"
+  }
+}
+Assets {
+  Id: 10801705342605323080
+  Name: "Point To Point Electrical Beam VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_ptp_electrical_beam"
   }
 }
 Assets {
@@ -239,6 +275,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Crafting_Crystal_046"
+  }
+}
+Assets {
+  Id: 9911077975793651985
+  Name: "Plasma Ball Projectile VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_plasmaball_projectile"
   }
 }
 Assets {
@@ -422,12 +467,30 @@ Assets {
   }
 }
 Assets {
+  Id: 1740082063109802512
+  Name: "Explosion Kit Rock Burst VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_mil_dirt_impact_explosikit_debris"
+  }
+}
+Assets {
   Id: 1421234571519112901
   Name: "Fantasy Nails 001"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Equip_Nails_001"
+  }
+}
+Assets {
+  Id: 1275509858991654837
+  Name: "Electricity  Power Blast  Impact 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_electricity_power_blast_impact_01_Cue_ref"
   }
 }
 Assets {

@@ -31,7 +31,7 @@ local_player.bindingPressedEvent:Connect(function(p, binding)
 					Events.Broadcast("inventory_add", pickup_obj:GetReference())
 				end
 
-				Events.Broadcast("play_sound", "pickup")
+				Events.Broadcast("play_sound", "pickup", true)
 			end
 		end
 	end

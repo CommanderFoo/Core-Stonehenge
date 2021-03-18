@@ -48,13 +48,17 @@ Assets {
         Name: "Main"
         Transform {
           Location {
+            X: -6.30664063
+            Y: 6.26123047
+            Z: -8.8747406
           }
           Rotation {
+            Yaw: 50.7545471
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.93376899
+            Y: 1.75570321
+            Z: 0.344710112
           }
         }
         ParentId: 423913690008197879

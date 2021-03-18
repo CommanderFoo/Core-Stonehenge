@@ -26,15 +26,6 @@ Assets {
   }
 }
 Assets {
-  Id: 7561221500312249307
-  Name: "Decal Stains Round 01"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_decal_stain_round_001"
-  }
-}
-Assets {
   Id: 6524217407079190017
   Name: "Rock 02"
   PlatformAssetType: 1

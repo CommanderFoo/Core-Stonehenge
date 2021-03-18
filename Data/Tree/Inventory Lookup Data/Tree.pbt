@@ -74,7 +74,7 @@ Objects {
 }
 Objects {
   Id: 8009959117816307281
-  Name: "F20D4886DA59DB32:Pickup - Trowel"
+  Name: "F20D4886DA59DB32:Pickup - Shovel"
   Transform {
     Location {
     }
@@ -126,6 +126,18 @@ Objects {
       Name: "cs:model_asset"
       AssetReference {
         Id: 6993920025212198406
+      }
+    }
+    Overrides {
+      Name: "cs:override_scale"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:scale"
+      Vector {
+        X: 0.1
+        Y: 0.1
+        Z: 0.1
       }
     }
   }

@@ -44,15 +44,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16902588904876268774
-  Name: "Bush 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_bush_generic_001"
-  }
-}
-Assets {
   Id: 16734101155038105666
   Name: "Wooden Bucket"
   PlatformAssetType: 1
@@ -89,6 +80,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16322641182932861150
+  Name: "Military Sandbag 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_mil_sandbag_001"
+  }
+}
+Assets {
   Id: 15403062398953975630
   Name: "Fantasy Castle Accessory Roof 01 "
   PlatformAssetType: 1
@@ -116,6 +116,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15049846606931455745
+  Name: "Simple Crate 150cm"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_crate_simple_150cm_001"
+  }
+}
+Assets {
   Id: 14953676844700166582
   Name: "Teardrop - Truncated"
   PlatformAssetType: 1
@@ -140,6 +149,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F6_Text_040"
+  }
+}
+Assets {
+  Id: 14581672509999327805
+  Name: "Branches Cluster Big"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_gen_branches_big_001"
   }
 }
 Assets {
@@ -413,6 +431,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10016794863224341395
+  Name: "Small Crate Lid"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_crate_narrow_lid_simple_160cm_001"
+  }
+}
+Assets {
   Id: 9805942287566312257
   Name: "Glass 01"
   PlatformAssetType: 2
@@ -476,6 +503,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9194196705030718365
+  Name: "Military Sandbag Wall - End 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_mil_sandbag_wall_001"
+  }
+}
+Assets {
   Id: 8938438425858112672
   Name: "Tree Oak 01"
   PlatformAssetType: 1
@@ -530,6 +566,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7691097888897065990
+  Name: "Military Sandbag 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_mil_sandbag_003"
+  }
+}
+Assets {
   Id: 7591405424643006620
   Name: "Text 03: $"
   PlatformAssetType: 1
@@ -581,6 +626,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fan_book_pile_003_ref"
+  }
+}
+Assets {
+  Id: 7060791482286517528
+  Name: "Military Sandbag Wall 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_mil_sandbag_wall_002"
   }
 }
 Assets {
@@ -683,15 +737,6 @@ Assets {
   }
 }
 Assets {
-  Id: 5441071377960324669
-  Name: "Bark Oak 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_bark_oak_001_uv"
-  }
-}
-Assets {
   Id: 5159907707418171248
   Name: "Main Street Awning 02"
   PlatformAssetType: 1
@@ -716,15 +761,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_pillar_wall_001_arch_01"
-  }
-}
-Assets {
-  Id: 4100463808968966480
-  Name: "Bush 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_bush_generic_002"
   }
 }
 Assets {
@@ -764,6 +800,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3092595844519167267
+  Name: "Large Wood Board 8m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_large_board_6m"
+  }
+}
+Assets {
   Id: 2758719130896277310
   Name: "Text 04: ."
   PlatformAssetType: 1
@@ -788,6 +833,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_metal_gold_001"
+  }
+}
+Assets {
+  Id: 2453356181987331000
+  Name: "Branches Cluster Medium"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_gen_branches_medium_001"
   }
 }
 Assets {
@@ -845,12 +899,30 @@ Assets {
   }
 }
 Assets {
+  Id: 1067381764946714427
+  Name: "Small Open Crate"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_crate_narrow_open_simple_160cm_001"
+  }
+}
+Assets {
   Id: 898597636720608195
   Name: "Text 04: *"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F7_Text_044"
+  }
+}
+Assets {
+  Id: 524698000969143275
+  Name: "Military Sandbag 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_mil_sandbag_002"
   }
 }
 Assets {

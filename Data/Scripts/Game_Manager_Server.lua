@@ -23,6 +23,8 @@ end
 function load_save_data(player)
 	local data = Storage.GetPlayerData(player) or {}
 
+	data.quest_id = 6
+
 	if(data.quest_id < 3) then
 		data.ocular_built = 0
 	end
@@ -49,6 +51,10 @@ function load_save_data(player)
 		lily_quest_items.collision = Collision.FORCE_OFF
 		excavation_quest_items.visibility = Visibility.FORCE_OFF
 		excavation_quest_items.collision = Collision.FORCE_OFF
+	end
+
+	if(data.quest_id == 6) then
+		Events.Broadcast("open_cave")
 	end
 	
 	player.serverUserData.inventory = {}

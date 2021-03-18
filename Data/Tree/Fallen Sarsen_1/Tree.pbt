@@ -21,7 +21,6 @@ Objects {
     }
   }
   ParentId: 7519210658990955920
-  ChildIds: 7470666330833903324
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -54,60 +53,6 @@ Objects {
         LinearDamping: 0.01
       }
     }
-  }
-}
-Objects {
-  Id: 7470666330833903324
-  Name: "Decal Stains Round 01"
-  Transform {
-    Location {
-      X: 134.153656
-      Y: -82.7203217
-      Z: -63.1541405
-    }
-    Rotation {
-      Pitch: -1.99900496
-      Yaw: 76.8803406
-      Roll: -175.872437
-    }
-    Scale {
-      X: 0.555777788
-      Y: 0.468606
-      Z: 0.275574446
-    }
-  }
-  ParentId: 8830637359427384507
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 0.0473191366
-        G: 0.140625
-        B: 0.0329589844
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 7561221500312249307
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -240,7 +185,6 @@ Objects {
     }
   }
   ParentId: 7519210658990955920
-  ChildIds: 4600470011841445043
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -273,60 +217,6 @@ Objects {
         LinearDamping: 0.01
       }
     }
-  }
-}
-Objects {
-  Id: 4600470011841445043
-  Name: "Decal Stains Round 01"
-  Transform {
-    Location {
-      X: -141.17395
-      Y: 76.7084961
-      Z: -74.9262466
-    }
-    Rotation {
-      Pitch: -6.42704391
-      Yaw: -163.744202
-      Roll: -148.641632
-    }
-    Scale {
-      X: 1.53517807
-      Y: -0.322499752
-      Z: 0.737838745
-    }
-  }
-  ParentId: 3812839349747559576
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 0.0473191366
-        G: 0.140625
-        B: 0.0329589844
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 7561221500312249307
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -511,7 +401,6 @@ Objects {
     }
   }
   ParentId: 7519210658990955920
-  ChildIds: 1301186646448641382
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -552,60 +441,6 @@ Objects {
         LinearDamping: 0.01
       }
     }
-  }
-}
-Objects {
-  Id: 1301186646448641382
-  Name: "Decal Stains Round 01"
-  Transform {
-    Location {
-      X: 3.74146938
-      Y: -6.11722422
-      Z: -116.722664
-    }
-    Rotation {
-      Pitch: 1.95072925
-      Yaw: -90.8846054
-      Roll: -176.614197
-    }
-    Scale {
-      X: 0.369424701
-      Y: 0.305303484
-      Z: 0.960541129
-    }
-  }
-  ParentId: 248635710351091624
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 0.0473191366
-        G: 0.140625
-        B: 0.0329589844
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 7561221500312249307
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -953,7 +788,6 @@ Objects {
     }
   }
   ParentId: 7519210658990955920
-  ChildIds: 10892581394697112915
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -986,60 +820,6 @@ Objects {
         LinearDamping: 0.01
       }
     }
-  }
-}
-Objects {
-  Id: 10892581394697112915
-  Name: "Decal Stains Round 01"
-  Transform {
-    Location {
-      X: -125.412918
-      Y: -4.42255259
-      Z: -71.394165
-    }
-    Rotation {
-      Pitch: -3.61243916
-      Yaw: 94.8251343
-      Roll: -165.453079
-    }
-    Scale {
-      X: 0.963399291
-      Y: 0.620627522
-      Z: 0.364972562
-    }
-  }
-  ParentId: 4650073122827783235
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 0.0473191366
-        G: 0.140625
-        B: 0.0329589844
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 7561221500312249307
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -1224,7 +1004,6 @@ Objects {
     }
   }
   ParentId: 7519210658990955920
-  ChildIds: 1494573261382914052
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1260,60 +1039,6 @@ Objects {
   }
 }
 Objects {
-  Id: 1494573261382914052
-  Name: "Decal Stains Round 01"
-  Transform {
-    Location {
-      X: 108.943459
-      Y: -19.4545
-      Z: -124.395012
-    }
-    Rotation {
-      Pitch: -1.09836268
-      Yaw: -37.0011864
-      Roll: 175.071823
-    }
-    Scale {
-      X: 0.586705863
-      Y: 0.504244208
-      Z: 1.26898479
-    }
-  }
-  ParentId: 12718119000941674800
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 0.0473191366
-        G: 0.140625
-        B: 0.0329589844
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 7561221500312249307
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-}
-Objects {
   Id: 11018261184786272866
   Name: "55b"
   Transform {
@@ -1323,9 +1048,9 @@ Objects {
       Z: 145.230804
     }
     Rotation {
-      Pitch: -174.50885
-      Yaw: -45.9191895
-      Roll: 0.00762939453
+      Pitch: -5.49115753
+      Yaw: 134.08078
+      Roll: -179.99234
     }
     Scale {
       X: 0.575008571
@@ -1334,7 +1059,6 @@ Objects {
     }
   }
   ParentId: 7519210658990955920
-  ChildIds: 15099384717591553403
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1343,6 +1067,7 @@ Objects {
       }
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1367,60 +1092,6 @@ Objects {
         LinearDamping: 0.01
       }
     }
-  }
-}
-Objects {
-  Id: 15099384717591553403
-  Name: "Decal Stains Round 01"
-  Transform {
-    Location {
-      X: -180.443863
-      Y: 70.3623428
-      Z: -42.4875908
-    }
-    Rotation {
-      Pitch: -9.43478394
-      Yaw: -145.837891
-      Roll: -135.77243
-    }
-    Scale {
-      X: 1.73911524
-      Y: 0.546718478
-      Z: 0.402573138
-    }
-  }
-  ParentId: 11018261184786272866
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 0.0473191366
-        G: 0.140625
-        B: 0.0329589844
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 7561221500312249307
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {

@@ -19,6 +19,8 @@ for k, trigger in ipairs(interactables:FindDescendantsByType("Trigger")) do
 	trigger.interactedEvent:Connect(function(obj, player)
 		current_trigger = obj
 
+		Events.Broadcast("play_music", "menu_inspect_inventory")
+
 		Events.BroadcastToServer("hide_interaction_label", obj:GetReference())
 		Events.Broadcast("interacting", true)
 		Events.Broadcast("enable_inventory")
@@ -63,6 +65,7 @@ for k, trigger in ipairs(interactables:FindDescendantsByType("Trigger")) do
 end
 
 back_button.hoveredEvent:Connect(function()
+	Events.Broadcast("play_sound", "hover", true)
 	back_button:FindDescendantByName("Background"):SetColor(back_hover_color)
 end)
 
@@ -71,6 +74,8 @@ back_button.unhoveredEvent:Connect(function()
 end)
 
 back_button.clickedEvent:Connect(function()
+	Events.Broadcast("play_sound", "click", true)
+	Events.Broadcast("stop_music")
 	Events.Broadcast("reset_raycast_distance")
 	Events.Broadcast("put_down_object")
 	
@@ -97,7 +102,6 @@ local_player.bindingPressedEvent:Connect(function(p, binding)
 		print("-------")
 		print("Position: ", inspect_cam:GetWorldPosition())
 		print("Rotation: ", inspect_cam:GetWorldRotation())
-		print("Field of View: ", inspect_cam.fieldOfView)
 	else
 		key_down = true
 	end

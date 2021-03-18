@@ -38,9 +38,15 @@ local container_down_tween = nil
 local location_in_tween = nil
 local location_out_tween = nil
 
+close_button.hoveredEvent:Connect(function()
+	Events.Broadcast("play_sound", "hover", true)
+end)
+
 close_button.clickedEvent:Connect(function()
 	close_button.visibility = Visibility.FORCE_OFF
-	
+
+	Events.Broadcast("play_sound", "click", true)
+
 	-- Letter up
 
 	letter_close_up_tween = YOOTIL.Tween:new(.7, { y = letter.y }, { y = letter.y - (letter.height - 160) })
@@ -66,6 +72,10 @@ close_button.clickedEvent:Connect(function()
 			lid.parent = letter_container
 
 			lid_close_tween = YOOTIL.Tween:new(.5, { y = lid.y }, { y = lid_start_pos })
+
+			lid_close_tween:on_start(function()
+				Events.Broadcast("play_sound", "close_letter")
+			end)
 
 			lid_close_tween:on_change(function(c)
 				lid.y = c.y
@@ -98,7 +108,8 @@ close_button.clickedEvent:Connect(function()
 					Events.Broadcast("can_open_collectables", true)
 					Events.Broadcast("can_open_inventory", true)
 					Events.Broadcast("set_weather_profile", "daytime")
-	
+					
+					Events.Broadcast("stop_music")
 				end)
 			end)
 		end)
@@ -108,7 +119,8 @@ close_button.clickedEvent:Connect(function()
 end)
 
 button.clickedEvent:Connect(function()
-	
+	Events.Broadcast("play_sound", "wax_click", true)
+
 	-- Wax tween
 
 	wax_tween = YOOTIL.Tween:new(.85, { x = seal.x, y = seal.y }, { x = seal.x + 140, y = seal.y + UI.GetScreenSize().y })
@@ -133,10 +145,16 @@ button.clickedEvent:Connect(function()
 			lid_open_tween = nil
 			letter.parent = letter_container
 			front.parent = letter_container
+			
+			Events.Broadcast("play_sound", "open_letter")
 
 			-- Letter tween up
 
 			letter_open_up_tween = YOOTIL.Tween:new(.7, { y = letter.y }, { y = letter.y - (letter.height - 160) })
+
+			letter_open_up_tween:on_start(function()
+				
+			end)
 
 			letter_open_up_tween:on_change(function(c)
 				letter.y = c.y
@@ -252,6 +270,7 @@ function Tick(dt)
 end
 
 Events.Connect("show_letter", function()
+	Events.Broadcast("play_music", "letter_desk")
 	Events.Broadcast("disable_raycast")
 
 	UI.SetCanCursorInteractWithUI(true)

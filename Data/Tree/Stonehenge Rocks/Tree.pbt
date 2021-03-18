@@ -1,339 +1,6 @@
 Name: "Stonehenge Rocks"
 RootId: 5427305723747309504
 Objects {
-  Id: 9831873373541272561
-  Name: "Blue Stone Beam"
-  Transform {
-    Location {
-      X: 1636.04199
-      Y: -4263.34277
-      Z: -66.6768494
-    }
-    Rotation {
-    }
-    Scale {
-      X: 5.26745844
-      Y: 5.26745844
-      Z: 14.368041
-    }
-  }
-  ParentId: 5427305723747309504
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Enable Thick Hexes"
-      Bool: true
-    }
-    Overrides {
-      Name: "bp:Enable Inner Beam"
-      Bool: true
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        G: 0.243531719
-        B: 0.656666517
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Emissive Boost"
-      Float: 35.2360802
-    }
-    Overrides {
-      Name: "bp:Particle Scale Multiplier"
-      Float: 2.0476985
-    }
-    Overrides {
-      Name: "bp:Density"
-      Float: 0.574528098
-    }
-    Overrides {
-      Name: "bp:Z Velocity"
-      Float: 30.5319557
-    }
-    Overrides {
-      Name: "bp:Life"
-      Float: 2.91078329
-    }
-    Overrides {
-      Name: "bp:Inner Fade"
-      Float: 0.171496138
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 17624168504224828761
-    }
-    TeamSettings {
-    }
-    Vfx {
-      AutoPlay: true
-    }
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
-  Id: 3098081976503007193
-  Name: "White Stone Beam"
-  Transform {
-    Location {
-      X: 3938.87158
-      Y: -815.854492
-      Z: 93.9081421
-    }
-    Rotation {
-    }
-    Scale {
-      X: 5.26745844
-      Y: 5.26745844
-      Z: 14.368041
-    }
-  }
-  ParentId: 5427305723747309504
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Enable Thick Hexes"
-      Bool: true
-    }
-    Overrides {
-      Name: "bp:Enable Inner Beam"
-      Bool: true
-    }
-    Overrides {
-      Name: "bp:Inner Fade"
-      Float: 0.0799950212
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Emissive Boost"
-      Float: 26.243803
-    }
-    Overrides {
-      Name: "bp:Particle Scale Multiplier"
-      Float: 2.0476985
-    }
-    Overrides {
-      Name: "bp:Density"
-      Float: 0.574528098
-    }
-    Overrides {
-      Name: "bp:Z Velocity"
-      Float: 30.5319557
-    }
-    Overrides {
-      Name: "bp:Life"
-      Float: 2.91078329
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 17624168504224828761
-    }
-    TeamSettings {
-    }
-    Vfx {
-      AutoPlay: true
-    }
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
-  Id: 15541446922413664559
-  Name: "Yellow Stone Beem"
-  Transform {
-    Location {
-      X: 4122.05225
-      Y: -3544.96851
-      Z: 93.9081421
-    }
-    Rotation {
-    }
-    Scale {
-      X: 5.26745844
-      Y: 5.26745844
-      Z: 14.368041
-    }
-  }
-  ParentId: 5427305723747309504
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Enable Thick Hexes"
-      Bool: true
-    }
-    Overrides {
-      Name: "bp:Enable Inner Beam"
-      Bool: true
-    }
-    Overrides {
-      Name: "bp:Inner Fade"
-      Float: 0.0799950212
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 0.570000052
-        G: 0.513377607
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Emissive Boost"
-      Float: 26.243803
-    }
-    Overrides {
-      Name: "bp:Particle Scale Multiplier"
-      Float: 2.0476985
-    }
-    Overrides {
-      Name: "bp:Density"
-      Float: 0.574528098
-    }
-    Overrides {
-      Name: "bp:Z Velocity"
-      Float: 30.5319557
-    }
-    Overrides {
-      Name: "bp:Life"
-      Float: 2.91078329
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 17624168504224828761
-    }
-    TeamSettings {
-    }
-    Vfx {
-      AutoPlay: true
-    }
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
-  Id: 2361270577450548120
-  Name: "Red Stone Beam"
-  Transform {
-    Location {
-      X: 862.008789
-      Y: -1353.88525
-      Z: 93.9081421
-    }
-    Rotation {
-    }
-    Scale {
-      X: 5.26745844
-      Y: 5.26745844
-      Z: 14.368041
-    }
-  }
-  ParentId: 5427305723747309504
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Enable Thick Hexes"
-      Bool: true
-    }
-    Overrides {
-      Name: "bp:Enable Inner Beam"
-      Bool: true
-    }
-    Overrides {
-      Name: "bp:Inner Fade"
-      Float: 0.0799950212
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 0.823333263
-        G: 3.92595894e-07
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Emissive Boost"
-      Float: 26.243803
-    }
-    Overrides {
-      Name: "bp:Particle Scale Multiplier"
-      Float: 2.0476985
-    }
-    Overrides {
-      Name: "bp:Density"
-      Float: 0.574528098
-    }
-    Overrides {
-      Name: "bp:Z Velocity"
-      Float: 30.5319557
-    }
-    Overrides {
-      Name: "bp:Life"
-      Float: 2.91078329
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 17624168504224828761
-    }
-    TeamSettings {
-    }
-    Vfx {
-      AutoPlay: true
-    }
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
   Id: 1539912988044419087
   Name: "White"
   Transform {
@@ -348,7 +15,7 @@ Objects {
     }
   }
   ParentId: 5427305723747309504
-  ChildIds: 930889249625379605
+  ChildIds: 15140523901020957083
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -363,56 +30,77 @@ Objects {
   }
 }
 Objects {
-  Id: 930889249625379605
-  Name: "White Wheel Symbol"
+  Id: 15140523901020957083
+  Name: "Back"
   Transform {
+    Location {
+      X: 3927.12646
+      Y: -795.114746
+      Z: 181.491119
+    }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 1.24692249
+      Y: 0.902080894
+      Z: 1.50384033
     }
   }
   ParentId: 1539912988044419087
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Shape Index"
+      Int: 12
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color Emissive"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 18103170124130371404
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Back"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.24692249
-            Y: 0.902080894
-            Z: 1.50384033
-          }
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 3927.12646
-            Y: -795.114746
-            Z: 181.491119
-          }
-        }
-      }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 11171792275709422916
     }
-    TemplateAsset {
-      Id: 11165367308870562928
+    TeamSettings {
     }
+    DecalBP {
+    }
+  }
+  InstanceHistory {
+    SelfId: 15140523901020957083
+    SubobjectId: 18103170124130371404
+    InstanceId: 930889249625379605
+    TemplateId: 11165367308870562928
+    WasRoot: true
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
   Id: 297934853354924220
-  Name: "Blue Diamond"
+  Name: "Blue"
   Transform {
     Location {
     }
@@ -425,7 +113,8 @@ Objects {
     }
   }
   ParentId: 5427305723747309504
-  ChildIds: 1923913951715594896
+  ChildIds: 9048344646082535838
+  ChildIds: 13768053552052663893
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -440,62 +129,154 @@ Objects {
   }
 }
 Objects {
-  Id: 1923913951715594896
-  Name: "Blue Diamond Symbol"
+  Id: 13768053552052663893
+  Name: "Decal Elven Symbols"
   Transform {
+    Location {
+      X: 1664.73682
+      Y: -4356.2
+      Z: 6.5335331
+    }
+    Rotation {
+      Pitch: -10.1663399
+      Yaw: 150.532532
+      Roll: -15.906436
+    }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 1.31256318
+      Y: 0.800256133
+      Z: -0.847917438
     }
   }
   ParentId: 297934853354924220
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Shape Index"
+      Int: 5
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color Emissive"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 838574595559107789
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Back"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 1623.26758
-            Y: -4327.88379
-            Z: -2.70580292
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.83400929
-            Y: 1.01944983
-            Z: 0.847917259
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Roll: 18.0709171
-          }
-        }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 11171792275709422916
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+  InstanceHistory {
+    SelfId: 13768053552052663893
+    SubobjectId: 683668987771644894
+    InstanceId: 1923913951715594896
+    TemplateId: 11673079437046201640
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 9048344646082535838
+  Name: "Decal Elven Symbols"
+  Transform {
+    Location {
+      X: 1581.79688
+      Y: -4299.56738
+      Z: -11.9451389
+    }
+    Rotation {
+      Pitch: -9.54639053
+      Yaw: 151.178268
+      Roll: -15.9729242
+    }
+    Scale {
+      X: 1.31256318
+      Y: -0.800256133
+      Z: 0.847917438
+    }
+  }
+  ParentId: 297934853354924220
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Shape Index"
+      Int: 5
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
       }
     }
-    TemplateAsset {
-      Id: 11673079437046201640
+    Overrides {
+      Name: "bp:Color Emissive"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 11171792275709422916
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+  InstanceHistory {
+    SelfId: 9048344646082535838
+    SubobjectId: 14699537063519042581
+    InstanceId: 1923913951715594896
+    TemplateId: 11673079437046201640
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
   Id: 11899477183352431309
-  Name: "Yellow Heart"
+  Name: "Yellow"
   Transform {
     Scale {
       X: 1
@@ -504,8 +285,10 @@ Objects {
     }
   }
   ParentId: 5427305723747309504
-  ChildIds: 1559144318180720362
-  ChildIds: 459278816230631957
+  ChildIds: 3107364214743444521
+  ChildIds: 18219214993902277338
+  ChildIds: 7776739869035311856
+  ChildIds: 13557158136165993475
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -520,18 +303,91 @@ Objects {
   }
 }
 Objects {
-  Id: 459278816230631957
-  Name: "Yellow Heart Symbol"
+  Id: 13557158136165993475
+  Name: "Decal Elven Symbols"
   Transform {
     Location {
-      X: 8839.12793
-      Y: 1998.93237
-      Z: 380
+      X: 3964.46143
+      Y: -3414.27881
+      Z: 381.639221
     }
     Rotation {
-      Pitch: 78.1381683
-      Yaw: -29.7562408
-      Roll: -159.36409
+      Pitch: -70.523056
+      Yaw: -130.904617
+      Roll: -82.7629242
+    }
+    Scale {
+      X: 0.958367646
+      Y: -0.952281058
+      Z: 0.762566626
+    }
+  }
+  ParentId: 11899477183352431309
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Shape Index"
+      Int: 6
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color Emissive"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 11171792275709422916
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+  InstanceHistory {
+    SelfId: 13557158136165993475
+    SubobjectId: 15739334592913941413
+    InstanceId: 459278816230631957
+    TemplateId: 5319894053142481181
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 7776739869035311856
+  Name: "Decal Elven Symbols"
+  Transform {
+    Location {
+      X: 3937.85791
+      Y: -3453.63135
+      Z: 378.360779
+    }
+    Rotation {
+      Pitch: -62.6890717
+      Yaw: 61.0202637
+      Roll: 84.5985
     }
     Scale {
       X: 0.958367646
@@ -540,110 +396,207 @@ Objects {
     }
   }
   ParentId: 11899477183352431309
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Shape Index"
+      Int: 6
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color Emissive"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 13187082396292528170
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Back"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.958367646
-            Y: 0.952281058
-            Z: 0.762566626
-          }
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 3951.15967
-            Y: -3433.95508
-            Z: 380
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 85.4607086
-            Yaw: -94.4408569
-            Roll: -60.4585876
-          }
-        }
-      }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 11171792275709422916
     }
-    TemplateAsset {
-      Id: 5319894053142481181
+    TeamSettings {
     }
+    DecalBP {
+    }
+  }
+  InstanceHistory {
+    SelfId: 7776739869035311856
+    SubobjectId: 983312628588223830
+    InstanceId: 459278816230631957
+    TemplateId: 5319894053142481181
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
-  Id: 1559144318180720362
-  Name: "Yellow Heart Symbol"
+  Id: 18219214993902277338
+  Name: "Decal Elven Symbols"
   Transform {
+    Location {
+      X: 4029.77393
+      Y: -3519.34888
+      Z: 381.72464
+    }
+    Rotation {
+      Pitch: -68.1431274
+      Yaw: 67.8871078
+      Roll: -120.706795
+    }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 0.958367646
+      Y: -0.952281058
+      Z: 0.762566626
     }
   }
   ParentId: 11899477183352431309
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Shape Index"
+      Int: 6
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color Emissive"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 13187082396292528170
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Front"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.958367646
-            Y: 0.952281058
-            Z: 0.762566626
-          }
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 4047.95947
-            Y: -3504.08228
-            Z: 380
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 78.1381836
-            Yaw: -29.7562256
-            Roll: -159.364075
-          }
-        }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 11171792275709422916
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+  InstanceHistory {
+    SelfId: 18219214993902277338
+    SubobjectId: 15739334592913941413
+    InstanceId: 1559144318180720362
+    TemplateId: 5319894053142481181
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 3107364214743444521
+  Name: "Decal Elven Symbols"
+  Transform {
+    Location {
+      X: 4066.14502
+      Y: -3488.81567
+      Z: 378.27536
+    }
+    Rotation {
+      Pitch: -60.6288948
+      Yaw: -160.59198
+      Roll: 112.573929
+    }
+    Scale {
+      X: 0.958367646
+      Y: 0.952281058
+      Z: 0.762566626
+    }
+  }
+  ParentId: 11899477183352431309
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Shape Index"
+      Int: 6
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
       }
     }
-    TemplateAsset {
-      Id: 5319894053142481181
+    Overrides {
+      Name: "bp:Color Emissive"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 11171792275709422916
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+  InstanceHistory {
+    SelfId: 3107364214743444521
+    SubobjectId: 983312628588223830
+    InstanceId: 1559144318180720362
+    TemplateId: 5319894053142481181
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
   Id: 5054897444001026669
-  Name: "Red Squiggle"
+  Name: "Red"
   Transform {
     Location {
     }
@@ -656,8 +609,10 @@ Objects {
     }
   }
   ParentId: 5427305723747309504
-  ChildIds: 10847541859925808533
-  ChildIds: 16724078938419712110
+  ChildIds: 17658844182023885657
+  ChildIds: 199662056451853241
+  ChildIds: 8793089991461583791
+  ChildIds: 10219461876013736783
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -672,18 +627,18 @@ Objects {
   }
 }
 Objects {
-  Id: 16724078938419712110
-  Name: "Red Squiggle Symbol"
+  Id: 10219461876013736783
+  Name: "Decal Elven Symbols"
   Transform {
     Location {
-      X: 5654.03369
-      Y: 4210.09521
-      Z: 379.696625
+      X: 851.304688
+      Y: -1308.44482
+      Z: 392.16748
     }
     Rotation {
-      Pitch: -72.7059174
-      Yaw: 110.135651
-      Roll: 21.5911121
+      Pitch: -56.3832703
+      Yaw: 68.8455658
+      Roll: 59.5796967
     }
     Scale {
       X: 0.895805
@@ -692,104 +647,274 @@ Objects {
     }
   }
   ParentId: 5054897444001026669
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Shape Index"
+      Int: 7
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color Emissive"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 11578906139714976948
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Back"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.895805
-            Y: 0.895805
-            Z: 0.895805
-          }
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 862.865234
-            Y: -1292.91943
-            Z: 379.696625
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: -72.7059326
-            Yaw: 110.135658
-            Roll: 21.591095
-          }
-        }
-      }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 11171792275709422916
     }
-    TemplateAsset {
-      Id: 4420726993591216380
+    TeamSettings {
     }
+    DecalBP {
+    }
+  }
+  InstanceHistory {
+    SelfId: 10219461876013736783
+    SubobjectId: 5605717100043042400
+    InstanceId: 16724078938419712110
+    TemplateId: 4420726993591216380
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
-  Id: 10847541859925808533
-  Name: "Red Squiggle Symbol"
+  Id: 8793089991461583791
+  Name: "Decal Elven Symbols"
   Transform {
+    Location {
+      X: 874.425781
+      Y: -1277.39404
+      Z: 367.225769
+    }
+    Rotation {
+      Pitch: 56.6526
+      Yaw: -111.997826
+      Roll: -60.283123
+    }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 0.895805
+      Y: 0.895805
+      Z: 0.895805
     }
   }
   ParentId: 5054897444001026669
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Shape Index"
+      Int: 7
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color Emissive"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 11578906139714976948
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Front"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.895805
-            Y: 0.895805
-            Z: 0.895805
-          }
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 973.529297
-            Y: -1361.80859
-            Z: 399.355
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: -78.7175
-            Yaw: -127.098312
-            Roll: 94.6019669
-          }
-        }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 11171792275709422916
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+  InstanceHistory {
+    SelfId: 8793089991461583791
+    SubobjectId: 13411161879335396992
+    InstanceId: 16724078938419712110
+    TemplateId: 4420726993591216380
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 199662056451853241
+  Name: "Decal Elven Symbols"
+  Transform {
+    Location {
+      X: 984.462891
+      Y: -1345.03369
+      Z: 410.723938
+    }
+    Rotation {
+      Pitch: -55.4983559
+      Yaw: -123.419052
+      Roll: 91.1968384
+    }
+    Scale {
+      X: 0.895805
+      Y: 0.895805
+      Z: 0.895805
+    }
+  }
+  ParentId: 5054897444001026669
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Shape Index"
+      Int: 7
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
       }
     }
-    TemplateAsset {
-      Id: 4420726993591216380
+    Overrides {
+      Name: "bp:Color Emissive"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 11171792275709422916
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+  InstanceHistory {
+    SelfId: 199662056451853241
+    SubobjectId: 5605717100043042400
+    InstanceId: 10847541859925808533
+    TemplateId: 4420726993591216380
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 17658844182023885657
+  Name: "Decal Elven Symbols"
+  Transform {
+    Location {
+      X: 962.595703
+      Y: -1378.5835
+      Z: 387.986084
+    }
+    Rotation {
+      Pitch: 55.4834175
+      Yaw: 55.6324
+      Roll: -91.9784546
+    }
+    Scale {
+      X: 0.895805
+      Y: 0.895805
+      Z: 0.895805
+    }
+  }
+  ParentId: 5054897444001026669
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Shape Index"
+      Int: 7
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color Emissive"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 11171792275709422916
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+  InstanceHistory {
+    SelfId: 17658844182023885657
+    SubobjectId: 13411161879335396992
+    InstanceId: 10847541859925808533
+    TemplateId: 4420726993591216380
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }

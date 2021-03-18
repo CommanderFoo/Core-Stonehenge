@@ -1,6 +1,217 @@
 Name: "Quest Lookup Data"
 RootId: 15892015409261034309
 Objects {
+  Id: 6977712140497045934
+  Name: "Alien Chamber"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15892015409261034309
+  ChildIds: 5554843934350199335
+  ChildIds: 4516424382557882465
+  ChildIds: 18123246384199152491
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:quest_id"
+      Int: 6
+    }
+    Overrides {
+      Name: "cs:quest_title"
+      String: "Alien Chamber"
+    }
+    Overrides {
+      Name: "cs:quest_line_width"
+      Int: 148
+    }
+    Overrides {
+      Name: "cs:quest_delay"
+      Float: 0
+    }
+    Overrides {
+      Name: "cs:quest_notification"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:quest_notification_delay"
+      Float: 0.5
+    }
+    Overrides {
+      Name: "cs:quest_inventory_item"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:quest_thought_id"
+      Int: 0
+    }
+    Overrides {
+      Name: "cs:broadcast_event"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:broadcast_event_on_start"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:broadcast_event_on_complete"
+      String: ""
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 3474319897268104530
+    }
+  }
+}
+Objects {
+  Id: 18123246384199152491
+  Name: "Quest_Data_Item"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6977712140497045934
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:id"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:title"
+      String: "Read Alien Language"
+    }
+    Overrides {
+      Name: "cs:line_width"
+      Int: 150
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 4937853632588239016
+    }
+  }
+}
+Objects {
+  Id: 4516424382557882465
+  Name: "Quest_Data_Item"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6977712140497045934
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:id"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:title"
+      String: "Enter Chamber"
+    }
+    Overrides {
+      Name: "cs:line_width"
+      Int: 150
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 4937853632588239016
+    }
+  }
+}
+Objects {
+  Id: 5554843934350199335
+  Name: "Quest_Data_Item"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6977712140497045934
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:id"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:title"
+      String: "Enter Cave"
+    }
+    Overrides {
+      Name: "cs:line_width"
+      Int: 150
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 4937853632588239016
+    }
+  }
+}
+Objects {
   Id: 5881419441155335281
   Name: "Strange Rocks"
   Transform {
@@ -19,6 +230,7 @@ Objects {
   ChildIds: 2171600327790302336
   ChildIds: 707726403978052213
   ChildIds: 10248714431777542754
+  ChildIds: 9129278791305464903
   UnregisteredParameters {
     Overrides {
       Name: "cs:quest_id"
@@ -62,7 +274,7 @@ Objects {
     }
     Overrides {
       Name: "cs:broadcast_event_on_complete"
-      String: "open_up_cave"
+      String: "play_quest_effects"
     }
   }
   Collidable_v2 {
@@ -77,6 +289,50 @@ Objects {
   Script {
     ScriptAsset {
       Id: 3474319897268104530
+    }
+  }
+}
+Objects {
+  Id: 9129278791305464903
+  Name: "Quest_Data_Item"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5881419441155335281
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:id"
+      Int: 6
+    }
+    Overrides {
+      Name: "cs:title"
+      String: "Break Alter Rock"
+    }
+    Overrides {
+      Name: "cs:line_width"
+      Int: 150
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 4937853632588239016
     }
   }
 }

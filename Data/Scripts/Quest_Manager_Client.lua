@@ -53,12 +53,14 @@ function next_quest(id)
 		local item = World.SpawnAsset(quest_item, { parent = current_quest_holder })
 		local item_title = item:FindChildByName("Text")
 
-		item_title.text = item_data:GetCustomProperty("title")
+		if(item_data:GetCustomProperty("title") ~= "HIDDEN") then
+			item_title.text = item_data:GetCustomProperty("title")
 
-		item.y = y_offset
-		y_offset = y_offset + 30
+			item.y = y_offset
+			y_offset = y_offset + 30
 
-		item.width = item_data:GetCustomProperty("line_width")
+			item.width = item_data:GetCustomProperty("line_width")
+		end
 			
 		current_quest_items[item_data:GetCustomProperty("id")] = {
 

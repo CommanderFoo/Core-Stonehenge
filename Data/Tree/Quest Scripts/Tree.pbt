@@ -18,6 +18,7 @@ Objects {
   ChildIds: 2971203126402012811
   ChildIds: 1926741659456437005
   ChildIds: 3621706949446435895
+  ChildIds: 17280330074716517188
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -29,6 +30,38 @@ Objects {
   }
   NetworkContext {
     Type: Server
+  }
+}
+Objects {
+  Id: 17280330074716517188
+  Name: "Quest_Chamber_Server"
+  Transform {
+    Location {
+      X: -4791.16846
+      Y: -5503.01465
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 921956513660677611
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 2569019415965554160
+    }
   }
 }
 Objects {
@@ -78,6 +111,12 @@ Objects {
         SubObjectId: 423913690008197879
         InstanceId: 16747101702694671599
         TemplateId: 143747440703481674
+      }
+    }
+    Overrides {
+      Name: "cs:collider_rock"
+      ObjectReference {
+        SelfId: 11018261184786272866
       }
     }
   }
@@ -214,6 +253,7 @@ Objects {
   ChildIds: 3309564819312204076
   ChildIds: 2196393818071005436
   ChildIds: 175640858615260086
+  ChildIds: 1877532149501611667
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -224,6 +264,38 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 1877532149501611667
+  Name: "Quest_Chamber_Client"
+  Transform {
+    Location {
+      X: -4791.16846
+      Y: -5503.01465
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12281289070681835054
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 4391553918667911940
+    }
   }
 }
 Objects {
@@ -241,6 +313,14 @@ Objects {
     }
   }
   ParentId: 12281289070681835054
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:visual_rock"
+      ObjectReference {
+        SelfId: 13277615482823439019
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

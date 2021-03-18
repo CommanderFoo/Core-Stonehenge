@@ -49,6 +49,7 @@ function inspect_object(obj_ref)
 
 	if(not is_interacting) then
 		Events.BroadcastToServer("disable_player", local_player)
+		Events.Broadcast("play_music", "menu_inspect_inventory")
 	end
 
 	orig_ref = obj_ref
@@ -105,6 +106,7 @@ function inspect_object(obj_ref)
 	if(orig_obj:GetCustomProperty("name")) then
 		put_down_text.text = "Put " .. orig_obj:GetCustomProperty("name") .. " Down"
 	end
+	
 	put_down_button.visibility = Visibility.FORCE_ON
 
 	if(using_item == nil) then
@@ -113,6 +115,7 @@ function inspect_object(obj_ref)
 end
 
 put_down_button.hoveredEvent:Connect(function()
+	Events.Broadcast("play_sound", "hover", true)
 	put_down_button:FindDescendantByName("Background"):SetColor(put_down_hover_color)
 end)
 
@@ -155,6 +158,7 @@ function put_down_object(hide)
 	if(not is_interacting and not inventory_open) then
 		Events.BroadcastToServer("enable_player", local_player)
 		Events.BroadcastToServer("show_all_interaction_labels")
+		Events.Broadcast("stop_music")
 	end
 
 	if(not is_interacting) then
@@ -167,6 +171,7 @@ function put_down_object(hide)
 end
 
 put_down_button.clickedEvent:Connect(function()
+	Events.Broadcast("play_sound", "click", true)
 	put_down_object()
 end)
 
@@ -257,6 +262,10 @@ function use_item()
 					Events.Broadcast("add_notification", "You have assembled the Ocular Pulse Device. Press \"R\" to use it to reveal special clues in the area.")
 					Events.Broadcast("enable_ocular_device", true)
 				elseif(using_item:GetCustomProperty("id") == 11 and string.find(type, "remove")) then
+					Events.Broadcast("play_sound", "dig_ground")
+					Events.Broadcast("play_sound", "dig_rock")
+					Events.Broadcast("play_sound", "dig_metal")
+
 					Events.BroadcastToServer("inspector_hide", obj:GetReference())
 					Events.Broadcast("quest_item_complete", 3)
 					Events.Broadcast("inventory_clear_active")
@@ -265,21 +274,33 @@ function use_item()
 					Events.Broadcast("quest_item_complete", 2)
 					Events.Broadcast("inventory_clear_active")
 					Events.Broadcast("enable_symbol", "yellow")
+					Events.Broadcast("enable_beam", "yellow")
+					Events.Broadcast("play_sound", "catalyst_break")
+					Events.Broadcast("play_sound", "catalayst_powered")
 				elseif(using_item:GetCustomProperty("id") == 4 and string.find(type, "remove")) then
 					Events.Broadcast("inventory_remove", using_item:GetCustomProperty("id"))
 					Events.Broadcast("quest_item_complete", 3)
 					Events.Broadcast("inventory_clear_active")
 					Events.Broadcast("enable_symbol", "red")
+					Events.Broadcast("enable_beam", "red")
+					Events.Broadcast("play_sound", "catalyst_break")
+					Events.Broadcast("play_sound", "catalayst_powered")
 				elseif(using_item:GetCustomProperty("id") == 5 and string.find(type, "remove")) then
 					Events.Broadcast("inventory_remove", using_item:GetCustomProperty("id"))
 					Events.Broadcast("quest_item_complete", 4)
 					Events.Broadcast("inventory_clear_active")
 					Events.Broadcast("enable_symbol", "blue")
+					Events.Broadcast("enable_beam", "blue")
+					Events.Broadcast("play_sound", "catalyst_break")
+					Events.Broadcast("play_sound", "catalayst_powered")
 				elseif(using_item:GetCustomProperty("id") == 6 and string.find(type, "remove")) then
 					Events.Broadcast("inventory_remove", using_item:GetCustomProperty("id"))
 					Events.Broadcast("quest_item_complete", 5)
 					Events.Broadcast("inventory_clear_active")
 					Events.Broadcast("enable_symbol", "white")
+					Events.Broadcast("enable_beam", "white")
+					Events.Broadcast("play_sound", "catalyst_break")
+					Events.Broadcast("play_sound", "catalayst_powered")
 				elseif(zoomed) then
 					Task.Wait(.5)
 					can_rotate = true
@@ -289,6 +310,8 @@ function use_item()
 				using_item = nil
 				orig_obj = nil
 				raycast_obj = nil
+			else
+				Events.Broadcast("play_sound", "error", true)
 			end
 		end
 	end

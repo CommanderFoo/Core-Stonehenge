@@ -43,6 +43,8 @@ for i = 1, max_slots do
 
 	inventory[i].button.hoveredEvent:Connect(function()
 		if(inventory[i].data ~= nil and not inventory[i].disabled) then
+			Events.Broadcast("play_sound", "hover", true)
+			
 			inventory[i].background:SetColor(hover_color)
 
 			Events.Broadcast("over_inventory", true)
@@ -73,6 +75,8 @@ for i = 1, max_slots do
 
 	inventory[i].button.clickedEvent:Connect(function()
 		if(inventory[i].data ~= nil and not inventory[i].disabled) then
+			Events.Broadcast("play_sound", "click", true)
+
 			local same_slot = inventory[i] == active_slot
 
 			if(active_slot and active_slot.inspecting) then
@@ -97,14 +101,20 @@ for i = 1, max_slots do
 					active_looking_obj:SetWorldPosition(helper:GetWorldPosition())
 					active_looking_obj:SetWorldScale(Vector3.New(0, 0, 0))
 
-					tween = YOOTIL.Tween:new(.3, { s = 0 }, { s = 1 })
+					local new_scale = Vector3.New(1, 1, 1)
+
+					if(active_looking_obj:GetCustomProperty("override_scale")) then
+						new_scale = active_looking_obj:GetCustomProperty("scale")
+					end
+					
+					tween = YOOTIL.Tween:new(.3, { x = 0, y = 0, z = 0 }, { x = new_scale.x, y = new_scale.y, z = new_scale.z })
 					
 					tween:on_change(function(c)
 						local scale = active_looking_obj:GetWorldScale()
 
-						scale.x = c.s
-						scale.y = c.s
-						scale.z = c.s
+						scale.x = c.x
+						scale.y = c.y
+						scale.z = c.z
 
 						active_looking_obj:SetWorldScale(scale)
 					end)
@@ -456,6 +466,7 @@ end
 local_player.bindingPressedEvent:Connect(function(p, binding)
 	if(not is_inspecting and not is_interacting and can_open_inventory and YOOTIL.Input[key_binding] == binding) then
 		if(inventory_active) then
+			Events.Broadcast("stop_music")
 			Events.Broadcast("override_cursor", false)
 			disable_inventory()
 			Events.Broadcast("hide_cursor")
@@ -465,6 +476,7 @@ local_player.bindingPressedEvent:Connect(function(p, binding)
 			Events.Broadcast("can_open_collectables", true)
 			Events.BroadcastToServer("show_all_interaction_labels")
 		else
+			Events.Broadcast("play_music", "menu_inspect_inventory")
 			enable_inventory()
 			Events.BroadcastToServer("disable_player", local_player)
 			Events.Broadcast("inventory_open", true)

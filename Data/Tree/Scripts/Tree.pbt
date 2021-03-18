@@ -362,7 +362,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:clear_save_data"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "cs:tent_quest_items"
@@ -430,6 +430,7 @@ Objects {
   ChildIds: 1134763625187610630
   ChildIds: 7873356878715661556
   ChildIds: 2244137841673158829
+  ChildIds: 8189325046855239704
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -440,6 +441,148 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 8189325046855239704
+  Name: "Effects_Manager_Client"
+  Transform {
+    Location {
+      X: -4791.16846
+      Y: -5503.01465
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14858104107515101237
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
+      }
+    }
+    Overrides {
+      Name: "cs:red_beam"
+      ObjectReference {
+        SelfId: 2361270577450548120
+      }
+    }
+    Overrides {
+      Name: "cs:white_beam"
+      ObjectReference {
+        SelfId: 12304835516775205931
+      }
+    }
+    Overrides {
+      Name: "cs:blue_beam"
+      ObjectReference {
+        SelfId: 7311205233504550107
+      }
+    }
+    Overrides {
+      Name: "cs:yellow_beam"
+      ObjectReference {
+        SelfId: 10589384617294654415
+      }
+    }
+    Overrides {
+      Name: "cs:ball"
+      ObjectReference {
+        SelfId: 15332744865340532626
+      }
+    }
+    Overrides {
+      Name: "cs:red"
+      ObjectReference {
+        SelfId: 11455682090073605102
+      }
+    }
+    Overrides {
+      Name: "cs:white"
+      ObjectReference {
+        SelfId: 1130757312784774215
+      }
+    }
+    Overrides {
+      Name: "cs:yellow"
+      ObjectReference {
+        SelfId: 5102579985461062835
+      }
+    }
+    Overrides {
+      Name: "cs:blue"
+      ObjectReference {
+        SelfId: 15211355413833835742
+      }
+    }
+    Overrides {
+      Name: "cs:lightning"
+      ObjectReference {
+        SelfId: 10639600114983438584
+      }
+    }
+    Overrides {
+      Name: "cs:target"
+      ObjectReference {
+        SelfId: 11409636400581998967
+      }
+    }
+    Overrides {
+      Name: "cs:zap"
+      ObjectReference {
+        SelfId: 959113035341038110
+      }
+    }
+    Overrides {
+      Name: "cs:blast"
+      ObjectReference {
+        SelfId: 8480222081724484642
+      }
+    }
+    Overrides {
+      Name: "cs:dust"
+      ObjectReference {
+        SelfId: 7734724809191719761
+      }
+    }
+    Overrides {
+      Name: "cs:rocks"
+      ObjectReference {
+        SelfId: 17930289138992123212
+      }
+    }
+    Overrides {
+      Name: "cs:rocks2"
+      ObjectReference {
+        SelfId: 2513608878336156441
+      }
+    }
+    Overrides {
+      Name: "cs:explosion"
+      ObjectReference {
+        SelfId: 13819425417489461205
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 8010285992079281770
+    }
   }
 }
 Objects {
@@ -630,55 +773,46 @@ Objects {
     Overrides {
       Name: "cs:ui_icon"
       ObjectReference {
-        SelfId: 16722360425958379503
-        SubObjectId: 2710473637831060469
-        InstanceId: 15039669915651689308
-        TemplateId: 16509593579720655561
+        SelfId: 2710473637831060469
+        SubObjectId: 3707761901807326545
+        InstanceId: 12612610737163539623
+        TemplateId: 16712513435738967268
       }
     }
     Overrides {
       Name: "cs:pulse"
       ObjectReference {
-        SelfId: 9897259280874359957
-        SubObjectId: 4960270495175141519
-        InstanceId: 15039669915651689308
-        TemplateId: 16509593579720655561
+        SelfId: 4960270495175141519
       }
     }
     Overrides {
       Name: "cs:rock_symbols"
       ObjectReference {
-        SelfId: 9718172679706555354
-        SubObjectId: 5427305723747309504
-        InstanceId: 15039669915651689308
-        TemplateId: 16509593579720655561
+        SelfId: 5427305723747309504
       }
     }
     Overrides {
       Name: "cs:cooldown_ui"
       ObjectReference {
-        SelfId: 4279211357453759798
-        SubObjectId: 17793329956414984492
-        InstanceId: 15039669915651689308
-        TemplateId: 16509593579720655561
+        SelfId: 17793329956414984492
+        SubObjectId: 16143029675258965896
+        InstanceId: 12612610737163539623
+        TemplateId: 16712513435738967268
       }
     }
     Overrides {
       Name: "cs:ui_container"
       ObjectReference {
-        SelfId: 2186850085616302530
-        SubObjectId: 15264119490670403032
-        InstanceId: 15039669915651689308
-        TemplateId: 16509593579720655561
+        SelfId: 15264119490670403032
+        SubObjectId: 14212269066307920764
+        InstanceId: 12612610737163539623
+        TemplateId: 16712513435738967268
       }
     }
     Overrides {
       Name: "cs:red"
       ObjectReference {
-        SelfId: 10064086311419098743
-        SubObjectId: 5054897444001026669
-        InstanceId: 15039669915651689308
-        TemplateId: 16509593579720655561
+        SelfId: 5054897444001026669
       }
     }
     Overrides {
@@ -693,19 +827,59 @@ Objects {
     Overrides {
       Name: "cs:blue"
       ObjectReference {
-        SelfId: 14532607436836703398
-        SubObjectId: 297934853354924220
-        InstanceId: 15039669915651689308
-        TemplateId: 16509593579720655561
+        SelfId: 297934853354924220
       }
     }
     Overrides {
       Name: "cs:white"
       ObjectReference {
-        SelfId: 15623714885225038869
-        SubObjectId: 1539912988044419087
-        InstanceId: 15039669915651689308
-        TemplateId: 16509593579720655561
+        SelfId: 1539912988044419087
+      }
+    }
+    Overrides {
+      Name: "cs:red_color"
+      Color {
+        R: 0.336666584
+        G: 1.60535137e-07
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:yellow_color"
+      Color {
+        R: 0.968763709
+        G: 1
+        B: 0.0566666126
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:blue_color"
+      Color {
+        G: 0.12039718
+        B: 0.336666584
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:white_color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:pulse_sound"
+      ObjectReference {
+        SelfId: 5130122864214634714
+      }
+    }
+    Overrides {
+      Name: "cs:found_item"
+      ObjectReference {
+        SelfId: 7274022636681265916
       }
     }
   }
@@ -1817,6 +1991,120 @@ Objects {
       Name: "cs:pickup_sound"
       ObjectReference {
         SelfId: 8627870878544148169
+      }
+    }
+    Overrides {
+      Name: "cs:menu_inspect_inventory_music"
+      ObjectReference {
+        SelfId: 16249291465687630055
+      }
+    }
+    Overrides {
+      Name: "cs:letter_desk_music"
+      ObjectReference {
+        SelfId: 6242247327900451235
+      }
+    }
+    Overrides {
+      Name: "cs:open_letter"
+      ObjectReference {
+        SelfId: 9576715409030322353
+      }
+    }
+    Overrides {
+      Name: "cs:close_letter"
+      ObjectReference {
+        SelfId: 12676078131160182464
+      }
+    }
+    Overrides {
+      Name: "cs:button_click"
+      ObjectReference {
+        SelfId: 5574140448871403192
+      }
+    }
+    Overrides {
+      Name: "cs:wax_click"
+      ObjectReference {
+        SelfId: 17592873802474174287
+      }
+    }
+    Overrides {
+      Name: "cs:button_hover"
+      ObjectReference {
+        SelfId: 6078847391954909663
+      }
+    }
+    Overrides {
+      Name: "cs:dig_ground"
+      ObjectReference {
+        SelfId: 12481451894388112380
+      }
+    }
+    Overrides {
+      Name: "cs:dig_rock"
+      ObjectReference {
+        SelfId: 7110243737228039429
+      }
+    }
+    Overrides {
+      Name: "cs:dig_metal"
+      ObjectReference {
+        SelfId: 9053670355803532075
+      }
+    }
+    Overrides {
+      Name: "cs:catalyst_powered"
+      ObjectReference {
+        SelfId: 9621869900391140349
+      }
+    }
+    Overrides {
+      Name: "cs:catalyst_break"
+      ObjectReference {
+        SelfId: 9244379505660774069
+      }
+    }
+    Overrides {
+      Name: "cs:error"
+      ObjectReference {
+        SelfId: 421960859839299942
+      }
+    }
+    Overrides {
+      Name: "cs:pulse"
+      ObjectReference {
+        SelfId: 5130122864214634714
+      }
+    }
+    Overrides {
+      Name: "cs:found_item"
+      ObjectReference {
+        SelfId: 7274022636681265916
+      }
+    }
+    Overrides {
+      Name: "cs:red_hum"
+      ObjectReference {
+        SelfId: 2517760562364095620
+      }
+    }
+    Overrides {
+      Name: "cs:blue_dum"
+      ObjectReference {
+        SelfId: 16337727393482370463
+      }
+    }
+    Overrides {
+      Name: "cs:yellow_hum"
+      ObjectReference {
+        SelfId: 17025279786383948511
+      }
+    }
+    Overrides {
+      Name: "cs:white_hum"
+      ObjectReference {
+        SelfId: 18104260673585016680
       }
     }
   }

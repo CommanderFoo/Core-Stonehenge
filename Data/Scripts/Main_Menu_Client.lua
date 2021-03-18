@@ -108,10 +108,12 @@ function display_panel(index)
 end
 
 overwrite_button.clickedEvent:Connect(function()
+	Events.Broadcast("play_sound", "click", true)
 	load_game(2)
 end)
 
 overwrite_button.hoveredEvent:Connect(function()
+	Events.Broadcast("play_sound", "hover", true)
 	overwrite_button:FindDescendantByName("Background"):SetColor(hover_color)
 	overwrite_button:FindChildByName("Text"):SetColor(hover_text_color)
 end)
@@ -157,6 +159,8 @@ for i, b in ipairs(menu.buttons) do
 
 		}
 
+		Events.Broadcast("play_sound", "click", true)
+
 		if(i == 2) then
 			if(local_player:GetResource("has_save") == 0) then
 				if(menu.panels[active_panel]) then
@@ -178,6 +182,8 @@ for i, b in ipairs(menu.buttons) do
 		if(not b.isInteractable) then
 			return
 		end
+
+		Events.Broadcast("play_sound", "hover", true)
 
 		for i = 1, #top_images do
 			if(top_images[i].type == "UIImage") then
@@ -258,6 +264,8 @@ function Tick(dt)
 end
 
 Events.Connect("transition_to_menu", function()
+	Events.Broadcast("play_music", "menu_inspect_inventory")
+
 	if(local_player:GetResource("has_save") == 0) then
 		menu.buttons[1].isInteractable = false
 		menu.buttons[1]:FindDescendantByName("Label"):SetColor(disabled_color)
@@ -267,8 +275,6 @@ Events.Connect("transition_to_menu", function()
 
 	transition_tween:on_complete(function()
 		transition_loader.visibility = Visibility.FORCE_OFF
-
-		Events.Broadcast("play_bird_sounds")
 
 		UI.SetCanCursorInteractWithUI(true)
 		Events.Broadcast("show_cursor")

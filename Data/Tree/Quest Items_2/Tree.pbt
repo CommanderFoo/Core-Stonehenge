@@ -24,22 +24,22 @@ Objects {
       value {
         Overrides {
           Name: "Name"
-          String: "Pickup - Trowel"
+          String: "Pickup - Shovel"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: 3293.75098
-            Y: 2331.27246
-            Z: -247.464828
+            X: 3309.06152
+            Y: 2322.37451
+            Z: -247.464844
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -4.72048712
-            Yaw: -175.868912
-            Roll: -136.948196
+            Pitch: -0.613952637
+            Yaw: -168.20575
+            Roll: -1.57608032
           }
         }
       }

@@ -60,11 +60,29 @@ Events.Connect("start_game", function()
 			Events.Broadcast("set_weather_profile", "daytime rain", true)
 		elseif(quest_id == 5) then
 			Events.Broadcast("set_weather_profile", "nighttime", true)
+			Events.Broadcast("set_weather_rocks_wet", true)
 
+			Events.Broadcast("inventory_add", 11)
 			Events.Broadcast("inventory_add", 3)
 			Events.Broadcast("inventory_add", 4)
 			Events.Broadcast("inventory_add", 5)
 			Events.Broadcast("inventory_add", 6)
+		elseif(quest_id == 6) then
+			Events.Broadcast("set_weather_profile", "nighttime", true)
+			Events.Broadcast("set_weather_rocks_wet", true)
+
+			Events.Broadcast("enable_all_beams")
+			Events.Broadcast("enable_all_symbols")
+
+			Events.Broadcast("play_sound", "red_hum")
+			Events.Broadcast("play_sound", "yellow_hum")
+			Events.Broadcast("play_sound", "blue_hum")
+			Events.Broadcast("play_sound", "white_hum")
+
+			Events.Broadcast("inventory_add", 11)
+
+			Events.Broadcast("energy_to_end_position")
+			Events.Broadcast("open_up_cave", true)
 		end
 	end
 	
@@ -87,9 +105,13 @@ Events.Connect("start_game", function()
 			if(quest_id == 2) then
 				Events.Broadcast("inventory_add", 2)
 			end
+
+			Events.Broadcast("stop_music")
 		else
 			Events.Broadcast("show_letter")
 		end
+
+		Events.Broadcast("play_bird_sounds")
 
 		Events.Broadcast("next_quest", quest_id)
 

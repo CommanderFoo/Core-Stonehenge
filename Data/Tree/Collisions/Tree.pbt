@@ -1301,8 +1301,8 @@ Objects {
   Name: "Boundary"
   Transform {
     Location {
-      X: 8040.46826
-      Y: 85.6928711
+      X: 8154.2749
+      Y: 69.5209961
       Z: -83.7605
     }
     Rotation {
@@ -1355,8 +1355,8 @@ Objects {
   Name: "Boundary"
   Transform {
     Location {
-      X: 9189.61523
-      Y: -2278.9165
+      X: 9303.4
+      Y: -2295.08838
       Z: -83.7602539
     }
     Rotation {

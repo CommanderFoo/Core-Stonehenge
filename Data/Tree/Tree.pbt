@@ -23,6 +23,7 @@ Objects {
   ChildIds: 14500770058990092026
   ChildIds: 18174213881014427721
   ChildIds: 2789780480952860209
+  ChildIds: 8734613791573648180
   ChildIds: 1636163160051171366
   ChildIds: 16188106690642622860
   ChildIds: 13207548860357947295
@@ -32,7 +33,6 @@ Objects {
   ChildIds: 3639717789116575446
   ChildIds: 11591319365004402937
   ChildIds: 9527342958605274553
-  ChildIds: 5533348505260241939
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -45,38 +45,6 @@ Objects {
     Value: "mc:ecollisionsetting:forceon"
   }
   Folder {
-  }
-}
-Objects {
-  Id: 5533348505260241939
-  Name: "Audio"
-  Transform {
-    Location {
-      X: -9431.13867
-      Y: -10115.8506
-      Z: -287.022644
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Audio"
   }
 }
 Objects {
@@ -889,6 +857,1344 @@ Objects {
   }
 }
 Objects {
+  Id: 8734613791573648180
+  Name: "Effects"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 2361270577450548120
+  ChildIds: 12304835516775205931
+  ChildIds: 7311205233504550107
+  ChildIds: 10589384617294654415
+  ChildIds: 1546775753240470696
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 1546775753240470696
+  Name: "Opening Cave Effects"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8734613791573648180
+  ChildIds: 11409636400581998967
+  ChildIds: 7734724809191719761
+  ChildIds: 15332744865340532626
+  ChildIds: 11455682090073605102
+  ChildIds: 1130757312784774215
+  ChildIds: 5102579985461062835
+  ChildIds: 15211355413833835742
+  ChildIds: 8480222081724484642
+  ChildIds: 17930289138992123212
+  ChildIds: 2513608878336156441
+  ChildIds: 13819425417489461205
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 13819425417489461205
+  Name: "Explosion"
+  Transform {
+    Location {
+      X: 6950.8833
+      Y: 3184.33154
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1546775753240470696
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 11715829009177289731
+    }
+    TeamSettings {
+    }
+    AudioBP {
+      Pitch: 405.96875
+      Volume: 1
+      Falloff: 3600
+      Radius: 2529.95117
+      IsSpatializationEnabled: true
+      IsAttenuationEnabled: true
+    }
+  }
+}
+Objects {
+  Id: 2513608878336156441
+  Name: "Rocks 2"
+  Transform {
+    Location {
+      X: 6884.66
+      Y: 3408.25879
+      Z: 81.3760071
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1546775753240470696
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.262250662
+        G: 0.242281124
+        B: 0.266355604
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Density"
+      Float: 15
+    }
+    Overrides {
+      Name: "bp:Gravity"
+      Float: -30
+    }
+    Overrides {
+      Name: "bp:Particle Scale"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Life"
+      Float: 0.953139
+    }
+    Overrides {
+      Name: "bp:Burst Velocity Max"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Burst Velocity Min"
+      Float: 12.2530766
+    }
+    Overrides {
+      Name: "bp:Initial Velocity Multiplier"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Burst Angle Max"
+      Float: 0
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 1740082063109802512
+    }
+    TeamSettings {
+    }
+    Vfx {
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+}
+Objects {
+  Id: 17930289138992123212
+  Name: "Rocks"
+  Transform {
+    Location {
+      X: 6929.33203
+      Y: 3440.08911
+      Z: 131.946167
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1546775753240470696
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.262250662
+        G: 0.242281124
+        B: 0.266355604
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Density"
+      Float: 6.9989109
+    }
+    Overrides {
+      Name: "bp:Gravity"
+      Float: -20
+    }
+    Overrides {
+      Name: "bp:Particle Scale"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Life"
+      Float: 1.57618809
+    }
+    Overrides {
+      Name: "bp:Burst Velocity Max"
+      Float: 52.7511673
+    }
+    Overrides {
+      Name: "bp:Burst Velocity Min"
+      Float: 35.6174393
+    }
+    Overrides {
+      Name: "bp:Initial Velocity Multiplier"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 1740082063109802512
+    }
+    TeamSettings {
+    }
+    Vfx {
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+}
+Objects {
+  Id: 8480222081724484642
+  Name: "Lightning Blast"
+  Transform {
+    Location {
+      X: 4791.16846
+      Y: 5503.01465
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1546775753240470696
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 1275509858991654837
+    }
+    Pitch: -311.541748
+    Volume: 1.39770257
+    Falloff: -1
+    Radius: -1
+  }
+}
+Objects {
+  Id: 15211355413833835742
+  Name: "Blue"
+  Transform {
+    Location {
+      X: 6393.58936
+      Y: 1162.58252
+      Z: -1.74357605
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1546775753240470696
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Target Scene Object Reference"
+      ObjectReference {
+        SelfId: 15332744865340532626
+      }
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        G: 0.12039718
+        B: 0.336666584
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Secondary Color"
+      Color {
+        G: 0.12039718
+        B: 0.336666584
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Tertiary Color"
+      Color {
+        G: 0.12039718
+        B: 0.336666584
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Beam Appearance"
+      Enum {
+        Value: "mc:ebeamtexturetype:4"
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Beam Width"
+      Float: 0
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 10801705342605323080
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 5102579985461062835
+  Name: "Yellow"
+  Transform {
+    Location {
+      X: 8770.99
+      Y: 2024.48291
+      Z: 729.259155
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1546775753240470696
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Target Scene Object Reference"
+      ObjectReference {
+        SelfId: 15332744865340532626
+      }
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.968763709
+        G: 1
+        B: 0.0566666126
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Secondary Color"
+      Color {
+        R: 0.968763709
+        G: 1
+        B: 0.0566666126
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Tertiary Color"
+      Color {
+        R: 0.968763709
+        G: 1
+        B: 0.0566666126
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Beam Appearance"
+      Enum {
+        Value: "mc:ebeamtexturetype:4"
+      }
+    }
+    Overrides {
+      Name: "bp:Beam Width"
+      Float: 0
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 10801705342605323080
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 1130757312784774215
+  Name: "White"
+  Transform {
+    Location {
+      X: 8741.07
+      Y: 4737.48682
+      Z: 191.319046
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1546775753240470696
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Target Scene Object Reference"
+      ObjectReference {
+        SelfId: 15332744865340532626
+      }
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Secondary Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Tertiary Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Beam Appearance"
+      Enum {
+        Value: "mc:ebeamtexturetype:4"
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Beam Width"
+      Float: 0
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 10801705342605323080
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 11455682090073605102
+  Name: "Red"
+  Transform {
+    Location {
+      X: 5673.23926
+      Y: 4191.43359
+      Z: 754.539429
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1546775753240470696
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Target Scene Object Reference"
+      ObjectReference {
+        SelfId: 15332744865340532626
+      }
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.336666584
+        G: 1.60535137e-07
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Secondary Color"
+      Color {
+        R: 0.336666584
+        G: 1.60535137e-07
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Tertiary Color"
+      Color {
+        R: 0.336666584
+        G: 1.60535137e-07
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Beam Appearance"
+      Enum {
+        Value: "mc:ebeamtexturetype:4"
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Beam Width"
+      Float: 0
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 10801705342605323080
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 15332744865340532626
+  Name: "Plasma Ball"
+  Transform {
+    Location {
+      X: 6924.50732
+      Y: 3438.44238
+      Z: 102
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1546775753240470696
+  ChildIds: 10639600114983438584
+  ChildIds: 959113035341038110
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 3
+    }
+    Overrides {
+      Name: "bp:Particle Scale Multiplier"
+      Float: 0.1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 9911077975793651985
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+}
+Objects {
+  Id: 959113035341038110
+  Name: "Electric Zap"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15332744865340532626
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 15124183262850421414
+    }
+    Repeat: true
+    Volume: 1
+    Falloff: 964.115356
+    Radius: 2380.7312
+    IsSpatializationEnabled: true
+    IsAttenuationEnabled: true
+  }
+}
+Objects {
+  Id: 10639600114983438584
+  Name: "Lightning"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15332744865340532626
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Secondary Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Tertiary Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Target Scene Object Reference"
+      ObjectReference {
+        SelfId: 11409636400581998967
+      }
+    }
+    Overrides {
+      Name: "bp:Beam Width"
+      Float: 0.301121831
+    }
+    Overrides {
+      Name: "bp:Displacement Axis Scale"
+      Vector {
+        X: 1
+        Y: 1
+        Z: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Beam Appearance"
+      Enum {
+        Value: "mc:ebeamtexturetype:3"
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 10801705342605323080
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+}
+Objects {
+  Id: 7734724809191719761
+  Name: "Dust Puff VFX"
+  Transform {
+    Location {
+      X: 6947.86816
+      Y: 3380.68726
+      Z: 55.3070679
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1546775753240470696
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.262353748
+        G: 0.247635528
+        B: 0.300543785
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Density"
+      Float: 10
+    }
+    Overrides {
+      Name: "bp:Particle Scale Multiplier"
+      Float: 4.71585
+    }
+    Overrides {
+      Name: "bp:Radius"
+      Float: 3.8057766
+    }
+    Overrides {
+      Name: "bp:Life"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Gravity"
+      Float: -3.63452721
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14176064801652816628
+    }
+    TeamSettings {
+    }
+    Vfx {
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+}
+Objects {
+  Id: 11409636400581998967
+  Name: "Target"
+  Transform {
+    Location {
+      X: 6924.50732
+      Y: 3438.44238
+      Z: 101.895935
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1546775753240470696
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6628731841327595102
+    }
+    Teams {
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 10589384617294654415
+  Name: "Yellow Stone Beam"
+  Transform {
+    Location {
+      X: 8778.77
+      Y: 2024.95178
+      Z: 31.8981323
+    }
+    Rotation {
+      Yaw: -28.5404282
+    }
+    Scale {
+      X: 5.26745844
+      Y: 5.26745844
+      Z: 14.368041
+    }
+  }
+  ParentId: 8734613791573648180
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Enable Thick Hexes"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Enable Inner Beam"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Inner Fade"
+      Float: 0.403942257
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.968763709
+        G: 1
+        B: 0.0566666126
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Particle Scale Multiplier"
+      Float: 2.01726556
+    }
+    Overrides {
+      Name: "bp:Density"
+      Float: 0.59833014
+    }
+    Overrides {
+      Name: "bp:Z Velocity"
+      Float: 30.6326923
+    }
+    Overrides {
+      Name: "bp:Life"
+      Float: 3
+    }
+    Overrides {
+      Name: "bp:Enable Hex Rings"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Inner Height"
+      Float: 2
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 17624168504224828761
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 7311205233504550107
+  Name: "Blue Stone Beam"
+  Transform {
+    Location {
+      X: 6442.70752
+      Y: 1159.29773
+      Z: -133.229187
+    }
+    Rotation {
+      Yaw: -28.5404282
+    }
+    Scale {
+      X: 5.26745844
+      Y: 5.26745844
+      Z: 14.368041
+    }
+  }
+  ParentId: 8734613791573648180
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Enable Thick Hexes"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Enable Inner Beam"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Inner Fade"
+      Float: 0.403942257
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        G: 0.12039718
+        B: 0.336666584
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Particle Scale Multiplier"
+      Float: 2.01726556
+    }
+    Overrides {
+      Name: "bp:Density"
+      Float: 0.59833014
+    }
+    Overrides {
+      Name: "bp:Z Velocity"
+      Float: 30.6326923
+    }
+    Overrides {
+      Name: "bp:Life"
+      Float: 3
+    }
+    Overrides {
+      Name: "bp:Enable Hex Rings"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Inner Height"
+      Float: 2
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 17624168504224828761
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 12304835516775205931
+  Name: "White Stone Beam"
+  Transform {
+    Location {
+      X: 8710.23
+      Y: 4721.20166
+      Z: 42.1067505
+    }
+    Rotation {
+      Yaw: -28.5404282
+    }
+    Scale {
+      X: 5.26745844
+      Y: 5.26745844
+      Z: 14.368041
+    }
+  }
+  ParentId: 8734613791573648180
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Enable Thick Hexes"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Enable Inner Beam"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Inner Fade"
+      Float: 0.403942257
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Particle Scale Multiplier"
+      Float: 2.01726556
+    }
+    Overrides {
+      Name: "bp:Density"
+      Float: 0.59833014
+    }
+    Overrides {
+      Name: "bp:Z Velocity"
+      Float: 30.6326923
+    }
+    Overrides {
+      Name: "bp:Life"
+      Float: 3
+    }
+    Overrides {
+      Name: "bp:Enable Hex Rings"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Inner Height"
+      Float: 2
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 17624168504224828761
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 2361270577450548120
+  Name: "Red Stone Beam"
+  Transform {
+    Location {
+      X: 5677.10449
+      Y: 4205.76758
+      Z: 52.0023804
+    }
+    Rotation {
+      Yaw: -28.5404358
+    }
+    Scale {
+      X: 5.26745844
+      Y: 5.26745844
+      Z: 14.368041
+    }
+  }
+  ParentId: 8734613791573648180
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Enable Thick Hexes"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Enable Inner Beam"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Inner Fade"
+      Float: 0.403942257
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.336666584
+        G: 1.60535137e-07
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Particle Scale Multiplier"
+      Float: 2.01726556
+    }
+    Overrides {
+      Name: "bp:Density"
+      Float: 0.59833014
+    }
+    Overrides {
+      Name: "bp:Z Velocity"
+      Float: 30.6326923
+    }
+    Overrides {
+      Name: "bp:Life"
+      Float: 3
+    }
+    Overrides {
+      Name: "bp:Enable Hex Rings"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Inner Height"
+      Float: 2
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 17624168504224828761
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
   Id: 2789780480952860209
   Name: "UI"
   Transform {
@@ -1061,7 +2367,7 @@ Objects {
   }
   Control {
     Width: 450
-    Height: 60
+    Height: 26
     UIX: 80
     UIY: -50
     RenderTransformPivot {
@@ -1070,18 +2376,18 @@ Objects {
       }
     }
     Text {
-      Label: "Salisbury, Wiltshire, England, 1717"
+      Label: "Stonehenge, Salisbury, Wiltshire, England, 1717"
       Color {
         R: 1
         G: 1
         B: 1
       }
-      Size: 24
+      Size: 16
       Justification {
         Value: "mc:etextjustify:left"
       }
       Font {
-        Id: 841534158063459245
+        Id: 5602189958603134029
       }
     }
     AnchorLayout {
@@ -21834,6 +23140,7 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
+  ChildIds: 5575959002620839955
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -21844,6 +23151,61 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 5575959002620839955
+  Name: "Excavation Light"
+  Transform {
+    Location {
+      X: 2943.04443
+      Y: 2163.38477
+      Z: -118.949341
+    }
+    Rotation {
+      Yaw: 85.5011749
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18174213881014427721
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 2.4
+    Color {
+      R: 1
+      G: 0.94657141
+      B: 0.626000047
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 2901.30396
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
+    }
   }
 }
 Objects {
@@ -21863,8 +23225,8 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  ChildIds: 10805811681648458774
-  ChildIds: 8627870878544148169
+  ChildIds: 1616780706916206490
+  ChildIds: 4143395471928242810
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -21878,41 +23240,8 @@ Objects {
   }
 }
 Objects {
-  Id: 8627870878544148169
-  Name: "Pickup"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 14500770058990092026
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  AudioInstance {
-    AudioAsset {
-      Id: 16759257907029005232
-    }
-    Volume: 1
-    Falloff: -1
-    Radius: -1
-  }
-}
-Objects {
-  Id: 10805811681648458774
-  Name: "Birds"
+  Id: 4143395471928242810
+  Name: "Music"
   Transform {
     Location {
     }
@@ -21936,7 +23265,36 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Birds"
+    FilePartitionName: "Music"
+  }
+}
+Objects {
+  Id: 1616780706916206490
+  Name: "Effects"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14500770058990092026
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Effects"
   }
 }
 Objects {

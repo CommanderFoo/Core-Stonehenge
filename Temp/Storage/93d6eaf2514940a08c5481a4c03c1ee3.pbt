@@ -3,16 +3,15 @@ Entries {
     StringVar: "quest_id"
   }
   SimpleValue {
-    IntVar: 0
+    IntVar: 6
   }
 }
 Entries {
   Key {
-    StringVar: "inventory"
+    StringVar: "ocular_built"
   }
   SimpleValue {
-    Table {
-    }
+    IntVar: 1
   }
 }
 Entries {
@@ -26,9 +25,35 @@ Entries {
 }
 Entries {
   Key {
-    StringVar: "ocular_built"
+    StringVar: "inventory"
   }
   SimpleValue {
-    IntVar: 0
+    Table {
+      Entries {
+        Key {
+          IntVar: 1
+        }
+        SimpleValue {
+          Table {
+            Entries {
+              Key {
+                StringVar: "q"
+              }
+              SimpleValue {
+                IntVar: 6
+              }
+            }
+            Entries {
+              Key {
+                StringVar: "id"
+              }
+              SimpleValue {
+                IntVar: 11
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

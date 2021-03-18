@@ -1,9 +1,9 @@
 Assets {
-  Id: 11171792275709422916
-  Name: "Decal Elven Symbols"
-  PlatformAssetType: 14
+  Id: 17624168504224828761
+  Name: "Sci-fi Item Callout VFX"
+  PlatformAssetType: 8
   PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_decal_elven_symbols_001"
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_scifi_callout"
   }
 }

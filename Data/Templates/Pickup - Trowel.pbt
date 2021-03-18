@@ -16,9 +16,8 @@ Assets {
           }
         }
         ParentId: 2071753453346508907
-        ChildIds: 2201457271517641819
-        ChildIds: 8985601547904302556
-        ChildIds: 15773861181231146186
+        ChildIds: 3120974033112231446
+        ChildIds: 17965039029688065627
         UnregisteredParameters {
           Overrides {
             Name: "cs:type"
@@ -40,34 +39,26 @@ Assets {
         }
       }
       Objects {
-        Id: 2201457271517641819
+        Id: 3120974033112231446
         Name: "Large Round Wood Beam 8m"
         Transform {
           Location {
-            X: -12.633337
-            Y: 0.000537292624
-            Z: 0.000672616647
+            X: -40.4594536
+            Y: -0.00112839451
+            Z: -0.000728988321
           }
           Rotation {
-            Yaw: -2.13443386e-07
+            Pitch: -0.000218566041
+            Yaw: -2.99888361e-05
+            Roll: 2.0490621e-05
           }
           Scale {
-            X: 0.684537172
-            Y: 1.08869874
-            Z: 1.08869874
+            X: 2.34552383
+            Y: 2.34434247
+            Z: 2.34434247
           }
         }
         ParentId: 4117319961845347984
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.616666555
-              G: 2.94049528e-07
-              A: 1
-            }
-          }
-        }
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -76,7 +67,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:forceon"
         }
         CoreMesh {
           MeshAsset {
@@ -95,26 +86,55 @@ Assets {
         }
       }
       Objects {
-        Id: 8985601547904302556
-        Name: "Thorn"
+        Id: 17965039029688065627
+        Name: "Big Shovel"
         Transform {
           Location {
-            X: 8.26721478
-            Y: 0.00104840123
-            Z: -0.000307722134
+            Y: -0.000446279271
+            Z: 0.000477709138
           }
           Rotation {
-            Pitch: 90
-            Yaw: 19.4712238
-            Roll: 19.4712296
           }
           Scale {
-            X: 1.9999975
-            Y: 2.99999714
-            Z: 5.81915665
+            X: 3.20313072
+            Y: 3.20151734
+            Z: 3.20151734
           }
         }
         ParentId: 4117319961845347984
+        ChildIds: 6563556710290265842
+        ChildIds: 5594361642336525343
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 6563556710290265842
+        Name: "Thorn"
+        Transform {
+          Location {
+            X: 8.265625
+          }
+          Rotation {
+            Pitch: 90
+          }
+          Scale {
+            X: 2
+            Y: 3
+            Z: 3
+          }
+        }
+        ParentId: 17965039029688065627
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -135,7 +155,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:forceon"
         }
         CoreMesh {
           MeshAsset {
@@ -154,24 +174,23 @@ Assets {
         }
       }
       Objects {
-        Id: 15773861181231146186
+        Id: 5594361642336525343
         Name: "Large Round Wood Beam 8m"
         Transform {
           Location {
-            X: 4.36606932
-            Y: -0.00113936455
-            Z: -0.000842412352
+            X: 7.30999136
+            Y: -1.25947258e-06
+            Z: -1.92185485e-06
           }
           Rotation {
-            Yaw: -2.13443386e-07
           }
           Scale {
             X: 0.0521036908
-            Y: 1.22147846
-            Z: 1.22147846
+            Y: 1.22147858
+            Z: 1.22147858
           }
         }
-        ParentId: 4117319961845347984
+        ParentId: 17965039029688065627
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -188,7 +207,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:forceon"
         }
         CoreMesh {
           MeshAsset {

@@ -16,7 +16,6 @@ Assets {
           }
         }
         ParentId: 16845918078398887905
-        ChildIds: 10793384670438511305
         ChildIds: 10684797492108600166
         UnregisteredParameters {
           Overrides {
@@ -43,26 +42,64 @@ Assets {
         }
       }
       Objects {
+        Id: 10684797492108600166
+        Name: "Big Shovel"
+        Transform {
+          Location {
+            X: 50.3039856
+            Y: 2.93356061
+            Z: 654.701477
+          }
+          Rotation {
+            Pitch: -85.5990372
+            Yaw: -176.662491
+            Roll: 176.653717
+          }
+          Scale {
+            X: 4.37330675
+            Y: 4.37330675
+            Z: 4.37330675
+          }
+        }
+        ParentId: 2982200214500761694
+        ChildIds: 10793384670438511305
+        ChildIds: 2957308263696269521
+        ChildIds: 8266841884400482278
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
         Id: 10793384670438511305
         Name: "Large Round Wood Beam 8m"
         Transform {
           Location {
-            X: 54.5343513
-            Y: 3.18072653
-            Z: 709.779297
+            X: -12.6311779
+            Y: -0.000326144509
+            Z: -0.000474610308
           }
           Rotation {
-            Pitch: -85.5988159
-            Yaw: -176.66246
-            Roll: 176.653702
+            Pitch: -0.000218566041
+            Yaw: -1.5367963e-05
+            Roll: 2.21981372e-05
           }
           Scale {
-            X: 3.20239663
-            Y: 3.20239663
-            Z: 3.20239663
+            X: 0.73225981
+            Y: 0.73225981
+            Z: 0.73225981
           }
         }
-        ParentId: 2982200214500761694
+        ParentId: 10684797492108600166
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -87,43 +124,6 @@ Assets {
               LinearDamping: 0.01
             }
           }
-        }
-      }
-      Objects {
-        Id: 10684797492108600166
-        Name: "Big Shovel"
-        Transform {
-          Location {
-            X: 50.3039856
-            Y: 2.93356061
-            Z: 654.701477
-          }
-          Rotation {
-            Pitch: -85.5990372
-            Yaw: -176.662491
-            Roll: 176.653717
-          }
-          Scale {
-            X: 4.37330675
-            Y: 4.37330675
-            Z: 4.37330675
-          }
-        }
-        ParentId: 2982200214500761694
-        ChildIds: 2957308263696269521
-        ChildIds: 8266841884400482278
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
         }
       }
       Objects {

@@ -149,6 +149,50 @@ Objects {
   }
 }
 Objects {
+  Id: 10253166488364224386
+  Name: "Fantasy Castle Stairs Spiral Trim 01 - 4m"
+  Transform {
+    Location {
+      X: 701.866943
+      Y: 932.665039
+      Z: 1187.02271
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9527342958605274553
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4286823887220239396
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
   Id: 3424207056900643241
   Name: "Fantasy Castle Stairs Spiral Trim 01 - 4m"
   Transform {
@@ -516,50 +560,6 @@ Objects {
     Location {
       X: 701.866943
       Y: 532.665039
-      Z: 1187.02271
-    }
-    Rotation {
-      Yaw: -89.9999924
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9527342958605274553
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 4286823887220239396
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 10253166488364224386
-  Name: "Fantasy Castle Stairs Spiral Trim 01 - 4m"
-  Transform {
-    Location {
-      X: 701.866943
-      Y: 932.665039
       Z: 1187.02271
     }
     Rotation {

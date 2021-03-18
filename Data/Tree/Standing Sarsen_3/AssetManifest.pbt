@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14719334208926572433
+  Name: "Hex Energy Pulse"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxmi_energy_hex_transition_pulse"
+  }
+}
+Assets {
   Id: 7950434917656616929
   Name: "Rock Block 01"
   PlatformAssetType: 1

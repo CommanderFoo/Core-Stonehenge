@@ -44,21 +44,21 @@ Assets {
   }
 }
 Assets {
+  Id: 16902588904876268774
+  Name: "Bush 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bush_generic_001"
+  }
+}
+Assets {
   Id: 16734101155038105666
   Name: "Wooden Bucket"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_bucket_001"
-  }
-}
-Assets {
-  Id: 16730691576563303740
-  Name: "Chest Big Closed"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_chest_003"
   }
 }
 Assets {
@@ -395,15 +395,6 @@ Assets {
   }
 }
 Assets {
-  Id: 10494625881853564644
-  Name: "Craftsman End Table"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_urb_end_table_001"
-  }
-}
-Assets {
   Id: 10184847056121543272
   Name: "Basic Material"
   PlatformAssetType: 2
@@ -611,6 +602,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6679922266733791299
+  Name: "Crescent - 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_crescent_002"
+  }
+}
+Assets {
   Id: 6281859149628802308
   Name: "Pipe - Spiral"
   PlatformAssetType: 1
@@ -683,6 +683,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5441071377960324669
+  Name: "Bark Oak 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_bark_oak_001_uv"
+  }
+}
+Assets {
   Id: 5159907707418171248
   Name: "Main Street Awning 02"
   PlatformAssetType: 1
@@ -710,12 +719,12 @@ Assets {
   }
 }
 Assets {
-  Id: 4626344285244086110
-  Name: "Cafe Chair"
+  Id: 4100463808968966480
+  Name: "Bush 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_urb_chair_cafe_001"
+    AssetId: "sm_bush_generic_002"
   }
 }
 Assets {

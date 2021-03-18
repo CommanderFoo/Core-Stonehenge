@@ -138,21 +138,13 @@ Objects {
   }
 }
 Objects {
-  Id: 9879626573099835845
+  Id: 4013343815963283222
   Name: "Pickup Sub Collectable - Pickaxe"
   Transform {
-    Location {
-      Y: 284.706635
-    }
-    Rotation {
-      Pitch: 85.6060333
-      Yaw: -179.985931
-      Roll: 179.757355
-    }
     Scale {
-      X: 0.0681157708
-      Y: 0.0681157708
-      Z: 0.0681157708
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 16845918078398887905
@@ -172,14 +164,6 @@ Objects {
           String: "Pickup Sub Collectable - Pickaxe"
         }
         Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: -29.5686646
-            Yaw: -0.00122070313
-            Roll: -0.256011963
-          }
-        }
-        Overrides {
           Name: "Position"
           Vector {
             X: 3135.49561
@@ -188,15 +172,11 @@ Objects {
           }
         }
         Overrides {
-          Name: "cs:collectable_id"
-          Int: 16
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.0681157708
-            Y: 0.0681157708
-            Z: 0.0681157708
+          Name: "Rotation"
+          Rotator {
+            Pitch: -29.5686646
+            Yaw: -0.00122070313
+            Roll: -0.256011963
           }
         }
       }

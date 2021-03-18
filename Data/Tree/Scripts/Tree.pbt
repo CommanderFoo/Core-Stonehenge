@@ -362,7 +362,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:clear_save_data"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:tent_quest_items"
@@ -630,64 +630,82 @@ Objects {
     Overrides {
       Name: "cs:ui_icon"
       ObjectReference {
-        SelfId: 2710473637831060469
-        SubObjectId: 3707761901807326545
-        InstanceId: 12612610737163539623
-        TemplateId: 16712513435738967268
+        SelfId: 16722360425958379503
+        SubObjectId: 2710473637831060469
+        InstanceId: 15039669915651689308
+        TemplateId: 16509593579720655561
       }
     }
     Overrides {
       Name: "cs:pulse"
       ObjectReference {
-        SelfId: 4960270495175141519
+        SelfId: 9897259280874359957
+        SubObjectId: 4960270495175141519
+        InstanceId: 15039669915651689308
+        TemplateId: 16509593579720655561
       }
     }
     Overrides {
       Name: "cs:rock_symbols"
       ObjectReference {
-        SelfId: 5427305723747309504
+        SelfId: 9718172679706555354
+        SubObjectId: 5427305723747309504
+        InstanceId: 15039669915651689308
+        TemplateId: 16509593579720655561
       }
     }
     Overrides {
       Name: "cs:cooldown_ui"
       ObjectReference {
-        SelfId: 17793329956414984492
-        SubObjectId: 16143029675258965896
-        InstanceId: 12612610737163539623
-        TemplateId: 16712513435738967268
+        SelfId: 4279211357453759798
+        SubObjectId: 17793329956414984492
+        InstanceId: 15039669915651689308
+        TemplateId: 16509593579720655561
       }
     }
     Overrides {
       Name: "cs:ui_container"
       ObjectReference {
-        SelfId: 15264119490670403032
-        SubObjectId: 14212269066307920764
-        InstanceId: 12612610737163539623
-        TemplateId: 16712513435738967268
+        SelfId: 2186850085616302530
+        SubObjectId: 15264119490670403032
+        InstanceId: 15039669915651689308
+        TemplateId: 16509593579720655561
       }
     }
     Overrides {
       Name: "cs:red"
       ObjectReference {
-        SelfId: 5054897444001026669
+        SelfId: 10064086311419098743
+        SubObjectId: 5054897444001026669
+        InstanceId: 15039669915651689308
+        TemplateId: 16509593579720655561
       }
     }
     Overrides {
       Name: "cs:yellow"
       ObjectReference {
-        SelfId: 5928711526132361686
+        SelfId: 11899477183352431309
+        SubObjectId: 7543287686998640343
+        InstanceId: 15039669915651689308
+        TemplateId: 16509593579720655561
       }
     }
     Overrides {
       Name: "cs:blue"
       ObjectReference {
-        SelfId: 297934853354924220
+        SelfId: 14532607436836703398
+        SubObjectId: 297934853354924220
+        InstanceId: 15039669915651689308
+        TemplateId: 16509593579720655561
       }
     }
     Overrides {
       Name: "cs:white"
       ObjectReference {
-        SelfId: 1539912988044419087
+        SelfId: 15623714885225038869
+        SubObjectId: 1539912988044419087
+        InstanceId: 15039669915651689308
+        TemplateId: 16509593579720655561
       }
     }
   }

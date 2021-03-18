@@ -11,7 +11,6 @@ end)
 
 function clear_data(player)
 	player:SetResource("quest_id", 0)
-	player:SetResource("ocular_built", 0)
 
 	tent_quest_items.visibility = Visibility.FORCE_ON
 	excavation_quest_items.collision = Collision.FORCE_OFF
@@ -23,20 +22,15 @@ end
 function load_save_data(player)
 	local data = Storage.GetPlayerData(player) or {}
 
-	data.quest_id = 6
-
-	if(data.quest_id < 3) then
-		data.ocular_built = 0
-	end
+	data.quest_id = 5
 
 	player:SetResource("quest_id", data.quest_id or 0)
-	player:SetResource("ocular_built", data.ocular_built or 0)
 
 	if(data.quest_id > 1) then
 		player:SetResource("has_save", 1)
 	end
 
-	if(data.ocular_built == 1) then
+	if(data.quest_id > 2) then
 		tent_quest_items.visibility = Visibility.FORCE_OFF
 		tent_quest_items.collision = Collision.FORCE_OFF
 	end

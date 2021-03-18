@@ -1,9 +1,10 @@
 Entries {
   Key {
-    StringVar: "quest_id"
+    StringVar: "collectables"
   }
   SimpleValue {
-    IntVar: 6
+    Table {
+    }
   }
 }
 Entries {
@@ -11,16 +12,7 @@ Entries {
     StringVar: "ocular_built"
   }
   SimpleValue {
-    IntVar: 1
-  }
-}
-Entries {
-  Key {
-    StringVar: "collectables"
-  }
-  SimpleValue {
-    Table {
-    }
+    IntVar: 0
   }
 }
 Entries {
@@ -37,23 +29,31 @@ Entries {
           Table {
             Entries {
               Key {
-                StringVar: "q"
-              }
-              SimpleValue {
-                IntVar: 6
-              }
-            }
-            Entries {
-              Key {
                 StringVar: "id"
               }
               SimpleValue {
                 IntVar: 11
               }
             }
+            Entries {
+              Key {
+                StringVar: "q"
+              }
+              SimpleValue {
+                IntVar: 31
+              }
+            }
           }
         }
       }
     }
+  }
+}
+Entries {
+  Key {
+    StringVar: "quest_id"
+  }
+  SimpleValue {
+    IntVar: 6
   }
 }

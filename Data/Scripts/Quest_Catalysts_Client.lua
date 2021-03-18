@@ -1,4 +1,5 @@
-local visual_rock = script:GetCustomProperty("visual_rock"):WaitForObject()
+local visual_rock_55b = script:GetCustomProperty("visual_rock_55b"):WaitForObject()
+local visual_rock_55a = script:GetCustomProperty("visual_rock_55a"):WaitForObject()
 
 local total_done = 0
 
@@ -16,11 +17,13 @@ end)
 
 Events.Connect("open_up_cave", function(visual_only)
 	if(visual_only) then
-		visual_rock.visibility = Visibility.FORCE_OFF
+		visual_rock_55b.visibility = Visibility.FORCE_OFF
+		visual_rock_55a.visibility = Visibility.FORCE_OFF
 		return
 	end
 
 	Events.Broadcast("quest_item_complete", 6)
 	Events.BroadcastToServer("open_cave")
-	visual_rock.visibility = Visibility.FORCE_OFF
+	visual_rock_55b.visibility = Visibility.FORCE_OFF
+	visual_rock_55a.visibility = Visibility.FORCE_OFF
 end)

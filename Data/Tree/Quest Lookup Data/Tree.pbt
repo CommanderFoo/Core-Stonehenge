@@ -2,7 +2,7 @@ Name: "Quest Lookup Data"
 RootId: 15892015409261034309
 Objects {
   Id: 6977712140497045934
-  Name: "Alien Chamber"
+  Name: "Hidden Cave"
   Transform {
     Location {
     }
@@ -25,7 +25,7 @@ Objects {
     }
     Overrides {
       Name: "cs:quest_title"
-      String: "Alien Chamber"
+      String: "Hidden Cave"
     }
     Overrides {
       Name: "cs:quest_line_width"

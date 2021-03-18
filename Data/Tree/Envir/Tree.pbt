@@ -21369,7 +21369,6 @@ Objects {
   ChildIds: 11112071989251228379
   ChildIds: 8676912746878094610
   ChildIds: 6451647903552431102
-  ChildIds: 12471047247563855164
   ChildIds: 13918745677583405638
   ChildIds: 12293726355162315674
   ChildIds: 5682309643311783249
@@ -37313,49 +37312,6 @@ Objects {
   CoreMesh {
     MeshAsset {
       Id: 13451967419586926162
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 12471047247563855164
-  Name: "Alignment grid"
-  Transform {
-    Location {
-      X: 4178.55322
-      Y: -4493.65625
-      Z: -887.197388
-    }
-    Rotation {
-    }
-    Scale {
-      X: 158.41243
-      Y: 176.587799
-      Z: 0.99999994
-    }
-  }
-  ParentId: 17087709646935543657
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 198353679974341757
     }
     Teams {
       IsTeamCollisionEnabled: true

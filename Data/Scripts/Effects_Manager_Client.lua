@@ -199,7 +199,7 @@ Events.Connect("energy_to_end_position", function()
 	end
 
 	ball.visibility = Visibility.FORCE_ON
-	ball:SetWorldPosition(Vector3.New(6924.507, 3438.442, 2253))
+	ball:SetWorldPosition(Vector3.New(6732.029, 3619.475, 2253))
 	ball:SetSmartProperty("Particle Scale Multiplier", 3)
 	zap:Play()
 end)

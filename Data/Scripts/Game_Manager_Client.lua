@@ -50,6 +50,7 @@ Events.Connect("start_game", function()
 
 		--Events.Broadcast("inventory_add", 11)
 	else
+		print(quest_id)
 		if(quest_id <= 1) then
 			Events.Broadcast("set_weather_profile", "sunrise", true)
 		elseif(quest_id == 2) then
@@ -97,13 +98,13 @@ Events.Connect("start_game", function()
 			Events.Broadcast("can_open_collectables", true)
 			Events.Broadcast("enable_raycast")
 			
-			if(local_player:GetResource("ocular_built") == 1) then
-				Events.Broadcast("enable_ocular_device_ui")
-				Events.Broadcast("enable_ocular_device", true)
-			end
-
 			if(quest_id == 2) then
 				Events.Broadcast("inventory_add", 2)
+			end
+
+			if(quest_id > 2) then
+				Events.Broadcast("enable_ocular_device_ui")
+				Events.Broadcast("enable_ocular_device", true)
 			end
 
 			Events.Broadcast("stop_music")
@@ -111,7 +112,9 @@ Events.Connect("start_game", function()
 			Events.Broadcast("show_letter")
 		end
 
-		Events.Broadcast("play_bird_sounds")
+		if(quest_id < 5) then
+			Events.Broadcast("play_bird_sounds")
+		end
 
 		Events.Broadcast("next_quest", quest_id)
 

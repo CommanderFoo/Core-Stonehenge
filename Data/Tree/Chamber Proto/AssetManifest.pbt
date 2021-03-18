@@ -26,15 +26,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11171792275709422916
-  Name: "Decal Elven Symbols"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_decal_elven_symbols_001"
-  }
-}
-Assets {
   Id: 9842143421296066252
   Name: "Fantasy Castle Stairs 01 - 150cm"
   PlatformAssetType: 1

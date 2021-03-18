@@ -52,11 +52,12 @@ Objects {
   Name: "Chamber Proto"
   Transform {
     Location {
-      X: -9431.13867
-      Y: -10115.8506
-      Z: -287.022644
+      X: 7530.90332
+      Y: 486.463623
+      Z: -2245.49512
     }
     Rotation {
+      Yaw: 14.8638105
     }
     Scale {
       X: 1
@@ -973,8 +974,8 @@ Objects {
   Name: "Rocks 2"
   Transform {
     Location {
-      X: 6884.66
-      Y: 3408.25879
+      X: 6692.18164
+      Y: 3589.29175
       Z: 81.3760071
     }
     Rotation {
@@ -1056,8 +1057,8 @@ Objects {
   Name: "Rocks"
   Transform {
     Location {
-      X: 6929.33203
-      Y: 3440.08911
+      X: 6736.85352
+      Y: 3621.12207
       Z: 131.946167
     }
     Rotation {
@@ -1525,8 +1526,8 @@ Objects {
   Name: "Plasma Ball"
   Transform {
     Location {
-      X: 6924.50732
-      Y: 3438.44238
+      X: 6732.02881
+      Y: 3619.47534
       Z: 102
     }
     Rotation {
@@ -1714,8 +1715,8 @@ Objects {
   Name: "Dust Puff VFX"
   Transform {
     Location {
-      X: 6947.86816
-      Y: 3380.68726
+      X: 6755.38965
+      Y: 3561.72021
       Z: 55.3070679
     }
     Rotation {
@@ -1785,8 +1786,8 @@ Objects {
   Name: "Target"
   Transform {
     Location {
-      X: 6924.50732
-      Y: 3438.44238
+      X: 6750.43115
+      Y: 3621.85767
       Z: 101.895935
     }
     Rotation {

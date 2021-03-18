@@ -114,9 +114,15 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:collider_rock"
+      Name: "cs:collider_rock_55b"
       ObjectReference {
         SelfId: 11018261184786272866
+      }
+    }
+    Overrides {
+      Name: "cs:collider_rock_55a"
+      ObjectReference {
+        SelfId: 16292385668770916190
       }
     }
   }
@@ -315,9 +321,15 @@ Objects {
   ParentId: 12281289070681835054
   UnregisteredParameters {
     Overrides {
-      Name: "cs:visual_rock"
+      Name: "cs:visual_rock_55b"
       ObjectReference {
         SelfId: 13277615482823439019
+      }
+    }
+    Overrides {
+      Name: "cs:visual_rock_55a"
+      ObjectReference {
+        SelfId: 16518421102946950198
       }
     }
   }

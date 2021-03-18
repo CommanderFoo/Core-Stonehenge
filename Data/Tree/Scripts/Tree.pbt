@@ -362,7 +362,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:clear_save_data"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:tent_quest_items"

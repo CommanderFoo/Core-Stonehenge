@@ -50,7 +50,6 @@ Events.Connect("start_game", function()
 
 		--Events.Broadcast("inventory_add", 11)
 	else
-		print(quest_id)
 		if(quest_id <= 1) then
 			Events.Broadcast("set_weather_profile", "sunrise", true)
 		elseif(quest_id == 2) then

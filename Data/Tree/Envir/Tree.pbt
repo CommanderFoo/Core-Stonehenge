@@ -1,6 +1,39 @@
 Name: "Envir"
 RootId: 14580783129908760267
 Objects {
+  Id: 9527342958605274553
+  Name: "Chamber"
+  Transform {
+    Location {
+      X: 2739.73486
+      Y: -5016.55078
+      Z: -2245.49512
+    }
+    Rotation {
+      Yaw: 14.8638277
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14580783129908760267
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Chamber"
+  }
+}
+Objects {
   Id: 10315545194783356564
   Name: "Collisions"
   Transform {

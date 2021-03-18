@@ -1,4 +1,4 @@
-Name: "Chamber Proto"
+Name: "Chamber"
 RootId: 9527342958605274553
 Objects {
   Id: 7098253292045169412

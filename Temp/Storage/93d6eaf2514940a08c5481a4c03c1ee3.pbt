@@ -1,14 +1,5 @@
 Entries {
   Key {
-    StringVar: "collectables"
-  }
-  SimpleValue {
-    Table {
-    }
-  }
-}
-Entries {
-  Key {
     StringVar: "ocular_built"
   }
   SimpleValue {
@@ -40,12 +31,21 @@ Entries {
                 StringVar: "q"
               }
               SimpleValue {
-                IntVar: 31
+                IntVar: 2
               }
             }
           }
         }
       }
+    }
+  }
+}
+Entries {
+  Key {
+    StringVar: "collectables"
+  }
+  SimpleValue {
+    Table {
     }
   }
 }

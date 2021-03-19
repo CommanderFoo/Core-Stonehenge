@@ -46,12 +46,13 @@ function next_quest(id)
 	
 	local quest_items = current_quest_data.children
 
-	local y_offset = 60
+	local y_offset = 55
 
 	for i = 1, #quest_items do
 		local item_data = quest_items[i]
 		local item = World.SpawnAsset(quest_item, { parent = current_quest_holder })
 		local item_title = item:FindChildByName("Text")
+		local bullet = item:FindChildByName("Bullet")
 
 		if(item_data:GetCustomProperty("title") ~= "HIDDEN") then
 			item_title.text = item_data:GetCustomProperty("title")
@@ -60,6 +61,8 @@ function next_quest(id)
 			y_offset = y_offset + 30
 
 			item.width = item_data:GetCustomProperty("line_width")
+		else
+			item.visibility = Visibility.FORCE_OFF
 		end
 			
 		current_quest_items[item_data:GetCustomProperty("id")] = {
@@ -67,7 +70,8 @@ function next_quest(id)
 			data = item_data,
 			item = item,
 			item_title = item_title,
-			complete = false
+			complete = false,
+			bullet = bullet
 
 		}
 	end
@@ -131,7 +135,13 @@ end
 
 function mark_quest_item_complete(id, delay)
 	if(current_quest_items[id]) then
-		current_quest_items[id].item:SetColor(quest_item_complete_color)
+		--current_quest_items[id].item:SetColor(quest_item_complete_color)
+		local col = current_quest_items[id].item_title:GetColor()
+
+		col.a = .2
+
+		current_quest_items[id].item_title:SetColor(col)
+		current_quest_items[id].bullet:SetColor(col)
 		current_quest_items[id].complete = true
 
 		local thought = current_quest_items[id].data:GetCustomProperty("thought_id")

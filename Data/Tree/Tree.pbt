@@ -2658,7 +2658,6 @@ Objects {
   ChildIds: 12612610737163539623
   ChildIds: 11973429258518757493
   ChildIds: 15544317065579204847
-  ChildIds: 11381702309039399119
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2690,46 +2689,6 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
-    }
-  }
-}
-Objects {
-  Id: 11381702309039399119
-  Name: "Quest Holder"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3139108800441333692
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 13205171618892944490
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Quest Holder"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 8028526601050382838
     }
   }
 }

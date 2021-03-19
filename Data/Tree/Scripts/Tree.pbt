@@ -1865,7 +1865,7 @@ Objects {
     }
     Overrides {
       Name: "cs:transition_time"
-      Float: 1.5
+      Float: 0
     }
     Overrides {
       Name: "cs:debug"

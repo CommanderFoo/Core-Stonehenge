@@ -740,6 +740,18 @@ Objects {
         SelfId: 16731724209154621925
       }
     }
+    Overrides {
+      Name: "cs:support_us"
+      ObjectReference {
+        SelfId: 4154507114834393340
+      }
+    }
+    Overrides {
+      Name: "cs:support_us_panel"
+      ObjectReference {
+        SelfId: 3806280060866113205
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

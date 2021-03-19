@@ -30,12 +30,6 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "NewFolder_10"
   }
-  InstanceHistory {
-    SelfId: 6061743201988415416
-    SubobjectId: 6015517850887023665
-    InstanceId: 4615313895821986510
-    TemplateId: 8791256523911820058
-  }
 }
 Objects {
   Id: 10834823114162375796
@@ -55,7 +49,6 @@ Objects {
     }
   }
   ParentId: 17939633550798248805
-  ChildIds: 9592454258958630996
   ChildIds: 5363595551134699445
   ChildIds: 4591575384966947740
   ChildIds: 18056180313381835906
@@ -75,13 +68,13 @@ Objects {
     Overrides {
       Name: "cs:Template1"
       AssetReference {
-        Id: 8384777989749137067
+        Id: 841534158063459245
       }
     }
     Overrides {
       Name: "cs:Template2"
       AssetReference {
-        Id: 8384777989749137067
+        Id: 841534158063459245
       }
     }
     Overrides {
@@ -104,12 +97,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 10834823114162375796
-    SubobjectId: 10464620582411169789
-    InstanceId: 4615313895821986510
-    TemplateId: 8791256523911820058
   }
 }
 Objects {
@@ -177,12 +164,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 8725861752557578039
-    SubobjectId: 9114361807061927102
-    InstanceId: 4615313895821986510
-    TemplateId: 8791256523911820058
-  }
 }
 Objects {
   Id: 8585936214720062477
@@ -241,12 +222,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 8585936214720062477
-    SubobjectId: 8089473945251727236
-    InstanceId: 4615313895821986510
-    TemplateId: 8791256523911820058
-  }
 }
 Objects {
   Id: 2525219402187367886
@@ -304,12 +279,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 2525219402187367886
-    SubobjectId: 2625505556034586183
-    InstanceId: 4615313895821986510
-    TemplateId: 8791256523911820058
   }
 }
 Objects {
@@ -376,12 +345,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 1108029145847484609
-    SubobjectId: 577666287195927368
-    InstanceId: 4615313895821986510
-    TemplateId: 8791256523911820058
-  }
 }
 Objects {
   Id: 18056180313381835906
@@ -437,12 +400,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 18056180313381835906
-    SubobjectId: 18298330456787678987
-    InstanceId: 4615313895821986510
-    TemplateId: 8791256523911820058
   }
 }
 Objects {
@@ -501,12 +458,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 4591575384966947740
-    SubobjectId: 4097228590904311829
-    InstanceId: 4615313895821986510
-    TemplateId: 8791256523911820058
   }
 }
 Objects {
@@ -569,64 +520,5 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 5363595551134699445
-    SubobjectId: 5551701880535723068
-    InstanceId: 4615313895821986510
-    TemplateId: 8791256523911820058
-  }
-}
-Objects {
-  Id: 9592454258958630996
-  Name: "UniversalObjectSpawner"
-  Transform {
-    Location {
-      X: 4.07519531
-      Y: 22.5615234
-      Z: 1.18994141
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 10834823114162375796
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Root"
-      ObjectReference {
-        SelfId: 10834823114162375796
-      }
-    }
-    Overrides {
-      Name: "cs:ShowHideObject"
-      ObjectReference {
-        SelfId: 5363595551134699445
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 3643196000533729980
-    }
-  }
-  InstanceHistory {
-    SelfId: 9592454258958630996
-    SubobjectId: 9402377602572051421
-    InstanceId: 4615313895821986510
-    TemplateId: 8791256523911820058
   }
 }

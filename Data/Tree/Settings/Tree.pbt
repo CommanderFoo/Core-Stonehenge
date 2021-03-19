@@ -5,8 +5,8 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
-      X: 8471.64063
-      Y: -2253.67871
+      X: 8691.96875
+      Y: -2213.08203
       Z: 611.245
     }
     Rotation {
@@ -62,7 +62,6 @@ Objects {
   Settings {
     IsDefault: true
     GameSettings {
-      RagdollOnDeath: true
       EnablePlayerStorage: true
       ChatMode {
         Value: "mc:echatmode:teamandall"

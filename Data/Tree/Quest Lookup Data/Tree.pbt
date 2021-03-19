@@ -1,6 +1,127 @@
 Name: "Quest Lookup Data"
 RootId: 15892015409261034309
 Objects {
+  Id: 8064084155820989363
+  Name: "Unknown"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15892015409261034309
+  ChildIds: 8365775733516705428
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:quest_id"
+      Int: 7
+    }
+    Overrides {
+      Name: "cs:quest_title"
+      String: "Leap of Faith"
+    }
+    Overrides {
+      Name: "cs:quest_line_width"
+      Int: 148
+    }
+    Overrides {
+      Name: "cs:quest_delay"
+      Float: 0
+    }
+    Overrides {
+      Name: "cs:quest_notification"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:quest_notification_delay"
+      Float: 0.5
+    }
+    Overrides {
+      Name: "cs:quest_inventory_item"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:quest_thought_id"
+      Int: 0
+    }
+    Overrides {
+      Name: "cs:broadcast_event"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:broadcast_event_on_start"
+      String: "enable_portal"
+    }
+    Overrides {
+      Name: "cs:broadcast_event_on_complete"
+      String: ""
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 3474319897268104530
+    }
+  }
+}
+Objects {
+  Id: 8365775733516705428
+  Name: "Quest_Data_Item"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8064084155820989363
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:id"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:title"
+      String: "Visit the Unknown"
+    }
+    Overrides {
+      Name: "cs:line_width"
+      Int: 150
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 4937853632588239016
+    }
+  }
+}
+Objects {
   Id: 6977712140497045934
   Name: "Hidden Cave"
   Transform {
@@ -101,7 +222,7 @@ Objects {
     }
     Overrides {
       Name: "cs:title"
-      String: "Read Alien Language"
+      String: "Create Energy Portal"
     }
     Overrides {
       Name: "cs:line_width"
@@ -314,7 +435,7 @@ Objects {
     }
     Overrides {
       Name: "cs:title"
-      String: "Break Alter Rock"
+      String: "HIDDEN"
     }
     Overrides {
       Name: "cs:line_width"

@@ -298,7 +298,7 @@ function increase(obj_ref, quantity, remove_object)
 				obj_ref = nil
 			end
 
-			Events.BroadcastToServer("inventory_increase", existing_slot_index, quantity, obj_ref, data:GetCustomProperty("remove_from_world"))
+			--Events.BroadcastToServer("inventory_increase", existing_slot_index, quantity, obj_ref, data:GetCustomProperty("remove_from_world"))
 		end
 	end
 end
@@ -323,7 +323,7 @@ function decrease(obj_ref, quantity)
 			if(existing_slot_entry.quantity <= 0) then
 				remove(obj_ref)
 			else
-				Events.BroadcastToServer("inventory_decrease", existing_slot_index, quantity)
+				--Events.BroadcastToServer("inventory_decrease", existing_slot_index, quantity)
 			end
 		end
 	end
@@ -354,14 +354,14 @@ function remove(obj_ref)
 			existing_slot_entry.quantity = 0
 			existing_slot_entry.icon:Destroy()
 
-			Events.BroadcastToServer("inventory_remove", existing_slot_index)
+			--Events.BroadcastToServer("inventory_remove", existing_slot_index)
 		end
 	end
 end
 
 function clear()
 	inventory = {}
-	Events.BroadcastToServer("inventory_clear")
+	--Events.BroadcastToServer("inventory_clear")
 end
 
 function get_item_from_lookup(muid)
@@ -459,7 +459,18 @@ function show_inventory()
 end
 
 function hide_inventory()
-	inventory_ui.visibility = Visibility.FORCE_OFF
+	inventory_in_tween = YOOTIL.Tween:new(1, { x = -30 }, { x = 130 })
+	
+	inventory_in_tween:on_change(function(c)
+		inventory_ui.x = c.x
+	end)
+
+	inventory_in_tween:on_complete(function()
+		inventory_in_tween = nil
+	end)
+
+	inventory_in_tween:set_easing("inBack")
+
 	clean_up_active_data()
 end
 
@@ -497,6 +508,7 @@ Events.Connect("inventory_clear", clear)
 Events.Connect("enable_inventory", enable_inventory)
 Events.Connect("disable_inventory", disable_inventory)
 Events.Connect("show_inventory", show_inventory)
+Events.Connect("hide_inventory", hide_inventory)
 Events.Connect("can_open_inventory", function(can_open)
 	can_open_inventory = can_open
 end)

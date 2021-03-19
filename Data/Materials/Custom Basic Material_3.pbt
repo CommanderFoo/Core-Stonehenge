@@ -4,20 +4,58 @@ Assets {
   PlatformAssetType: 13
   SerializationVersion: 78
   CustomMaterialAsset {
-    BaseMaterialId: 10184847056121543272
+    BaseMaterialId: 15570372970768635194
     ParameterOverrides {
       Overrides {
         Name: "color"
         Color {
-          R: 1
-          G: 1
-          B: 1
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "roughness"
+        Float: 0
+      }
+      Overrides {
+        Name: "specular"
+        Float: 0
+      }
+      Overrides {
+        Name: "fresnel_sharpness"
+        Float: 0
+      }
+      Overrides {
+        Name: "gradient_shift"
+        Float: 0
+      }
+      Overrides {
+        Name: "gradient_falloff"
+        Float: 0
+      }
+      Overrides {
+        Name: "gradient_direction"
+        Vector {
+        }
+      }
+      Overrides {
+        Name: "fresnel_emissive_boost"
+        Float: 0
+      }
+      Overrides {
+        Name: "fresnel_color"
+        Color {
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "gradient_color"
+        Color {
           A: 1
         }
       }
     }
     Assets {
-      Id: 10184847056121543272
+      Id: 15570372970768635194
       Name: "Basic Material"
       PlatformAssetType: 2
       PrimaryAsset {

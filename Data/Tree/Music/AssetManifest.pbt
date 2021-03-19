@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5541148766524439417
+  Name: "\"Epic Dark Descent\" Music Construction Kit (Sections) 01"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "abp_EpicDarkDescentKit_ref"
+  }
+}
+Assets {
   Id: 4446806963437353554
   Name: "\"Interstellar Wonder\" Music Construction Kit (Layers) 01"
   PlatformAssetType: 10

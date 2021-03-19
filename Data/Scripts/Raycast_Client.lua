@@ -16,23 +16,27 @@ local using_item = nil
 local ray_distance = distance
 
 local_player.bindingPressedEvent:Connect(function(p, binding)
-	if(can_raycast and over_pickup and binding == "ability_primary" and Object.IsValid(pickup_obj)) then
-		if(string.find(obj_type, "look") or string.find(obj_type, "remove")) then
-			if(not using_item) then
-				Events.Broadcast("inspect_object", pickup_obj:GetReference(), is_interacting)
-			else
-				Events.Broadcast("raycast_object", pickup_obj)
-			end
-		else
-			if(using_item == nil) then
-				if(string.find(obj_type, "collectable")) then
-					Events.Broadcast("add_collectable", pickup_obj:GetReference())
+	if(can_raycast and binding == "ability_primary" and Object.IsValid(pickup_obj)) then
+		if(over_pickup) then
+			if(string.find(obj_type, "look") or string.find(obj_type, "remove")) then
+				if(not using_item) then
+					Events.Broadcast("inspect_object", pickup_obj:GetReference(), is_interacting)
 				else
-					Events.Broadcast("inventory_add", pickup_obj:GetReference())
+					Events.Broadcast("raycast_object", pickup_obj)
 				end
+			else
+				if(using_item == nil) then
+					if(string.find(obj_type, "collectable")) then
+						Events.Broadcast("add_collectable", pickup_obj:GetReference())
+					else
+						Events.Broadcast("inventory_add", pickup_obj:GetReference())
+					end
 
-				Events.Broadcast("play_sound", "pickup", true)
+					Events.Broadcast("play_sound", "pickup", true)
+				end
 			end
+		elseif(Object.IsValid(pickup_obj.parent) and pickup_obj.parent.name == "Rotators") then
+			Events.Broadcast("rotate_color", string.lower(pickup_obj.name))
 		end
 	end
 end)
@@ -80,25 +84,31 @@ function Tick()
 		end
 
 		if(valid_cast and Object.IsValid(obj)) then
-			obj_type = obj:GetCustomProperty("type")
+			if(not ui_raycasting and obj.name == "Rotators") then
+				obj_type = "rotator"
+				pickup_obj = hit.other
+				pointer = "pickup"
+			else
+				obj_type = obj:GetCustomProperty("type")
 
-			if(obj_type) then
-				if(string.find(obj_type, "look")) then
-					pointer = "look"
-				elseif(string.find(obj_type, "pickup")) then
-					pointer = "pickup"
-				end
-	
-				if(inventory_open and not inventory_obj and not collectables_open) then
-					pointer = "default"
-				else
-					over_pickup = true
-					pickup_obj = obj
-
-					if(not is_interacting and string.find(obj_type, "sub_")) then
-						over_pickup = false
-						pickup_obj = nil
+				if(obj_type) then
+					if(string.find(obj_type, "look")) then
+						pointer = "look"
+					elseif(string.find(obj_type, "pickup")) then
+						pointer = "pickup"
+					end
+		
+					if(inventory_open and not inventory_obj and not collectables_open) then
 						pointer = "default"
+					else
+						over_pickup = true
+						pickup_obj = obj
+
+						if(not is_interacting and string.find(obj_type, "sub_")) then
+							over_pickup = false
+							pickup_obj = nil
+							pointer = "default"
+						end
 					end
 				end
 			end

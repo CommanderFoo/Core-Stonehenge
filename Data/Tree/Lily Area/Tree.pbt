@@ -53,16 +53,16 @@ Objects {
     Overrides {
       Name: "cs:cam_pos"
       Vector {
-        X: -551.116
-        Y: -699.208
-        Z: 284.803
+        X: -752.116
+        Y: -724.208
+        Z: 240.803
       }
     }
     Overrides {
       Name: "cs:cam_rot"
       Rotator {
-        Pitch: -24.823
-        Yaw: -143.533
+        Pitch: -55.32
+        Yaw: -140.033
       }
     }
     Overrides {

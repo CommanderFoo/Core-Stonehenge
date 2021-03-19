@@ -362,7 +362,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:clear_save_data"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "cs:tent_quest_items"
@@ -567,6 +567,18 @@ Objects {
       Name: "cs:explosion"
       ObjectReference {
         SelfId: 13819425417489461205
+      }
+    }
+    Overrides {
+      Name: "cs:general_light"
+      ObjectReference {
+        SelfId: 4821680461781904155
+      }
+    }
+    Overrides {
+      Name: "cs:lightning_light"
+      ObjectReference {
+        SelfId: 1541752757784718980
       }
     }
   }
@@ -1841,7 +1853,7 @@ Objects {
     }
     Overrides {
       Name: "cs:transition_time"
-      Float: 1
+      Float: 1.5
     }
     Overrides {
       Name: "cs:debug"
@@ -2105,6 +2117,18 @@ Objects {
       Name: "cs:white_hum"
       ObjectReference {
         SelfId: 18104260673585016680
+      }
+    }
+    Overrides {
+      Name: "cs:end_game"
+      ObjectReference {
+        SelfId: 12529386565442934943
+      }
+    }
+    Overrides {
+      Name: "cs:energy"
+      ObjectReference {
+        SelfId: 18359025117221041928
       }
     }
   }

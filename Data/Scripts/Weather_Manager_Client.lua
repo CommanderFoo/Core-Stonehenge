@@ -316,3 +316,9 @@ end
 
 Events.Connect("set_weather_profile", set_weather_profile)
 Events.Connect("set_weather_rocks_wet", set_rocks_wet)
+Events.Connect("stop_audio", function()
+	if(current_rain_sound and current_thunder_sound) then
+		current_rain_sound:Stop()
+		current_thunder_sound:Stop()
+	end
+end)

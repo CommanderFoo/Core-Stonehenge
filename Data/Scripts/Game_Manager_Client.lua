@@ -28,62 +28,40 @@ Events.Connect("start_game", function()
 
 	local quest_id = local_player:GetResource("quest_id")
 
-	-- @TODO: Debug remove when done
-
-	-- Use the "debug" property instead now.
-
-	if(debug) then
-		transition_time = 0
+	if(quest_id <= 1) then
+		Events.Broadcast("set_weather_profile", "sunrise", true)
+	elseif(quest_id == 2) then
+		Events.Broadcast("set_weather_profile", "daytime", true)
+	elseif(quest_id == 3) then
 		
-		Events.BroadcastToServer("enable_player", local_player)
-		Events.Broadcast("show_inventory")
-		Events.Broadcast("enable_collectables")
-		Events.Broadcast("can_open_inventory", true)
-		Events.Broadcast("can_open_collectables", true)
-		Events.Broadcast("enable_raycast")
-		Events.Broadcast("set_weather_profile", "daytime")
+	elseif(quest_id == 4) then
+		Events.Broadcast("set_weather_profile", "daytime rain", true)
 
-		--Events.Broadcast("inventory_add", 3)
-		--Events.Broadcast("inventory_add", 4)
-		--Events.Broadcast("inventory_add", 5)
-		--Events.Broadcast("inventory_add", 6)
+		Events.Broadcast("inventory_add", 3)
+		Events.Broadcast("inventory_add", 4)
+	elseif(quest_id == 5) then
+		Events.Broadcast("set_weather_profile", "nighttime", true)
+		Events.Broadcast("set_weather_rocks_wet", true)
 
-		--Events.Broadcast("inventory_add", 11)
-	else
-		if(quest_id <= 1) then
-			Events.Broadcast("set_weather_profile", "sunrise", true)
-		elseif(quest_id == 2) then
-			Events.Broadcast("set_weather_profile", "daytime", true)
-		elseif(quest_id == 3) then
-			
-		elseif(quest_id == 4) then
-			Events.Broadcast("set_weather_profile", "daytime rain", true)
-		elseif(quest_id == 5) then
-			Events.Broadcast("set_weather_profile", "nighttime", true)
-			Events.Broadcast("set_weather_rocks_wet", true)
+		Events.Broadcast("inventory_add", 3)
+		Events.Broadcast("inventory_add", 4)
+		Events.Broadcast("inventory_add", 5)
+		Events.Broadcast("inventory_add", 6)
 
-			Events.Broadcast("inventory_add", 11)
-			Events.Broadcast("inventory_add", 3)
-			Events.Broadcast("inventory_add", 4)
-			Events.Broadcast("inventory_add", 5)
-			Events.Broadcast("inventory_add", 6)
-		elseif(quest_id == 6) then
-			Events.Broadcast("set_weather_profile", "nighttime", true)
-			Events.Broadcast("set_weather_rocks_wet", true)
+		Events.Broadcast("ocular_use_color")
+	elseif(quest_id >= 6) then
+		Events.Broadcast("set_weather_profile", "nighttime", true)
+		Events.Broadcast("set_weather_rocks_wet", true)
 
-			Events.Broadcast("enable_all_beams")
-			Events.Broadcast("enable_all_symbols")
+		Events.Broadcast("enable_all_beams")
+		Events.Broadcast("enable_all_symbols")
 
-			Events.Broadcast("play_sound", "red_hum")
-			Events.Broadcast("play_sound", "yellow_hum")
-			Events.Broadcast("play_sound", "blue_hum")
-			Events.Broadcast("play_sound", "white_hum")
+		Events.Broadcast("energy_to_end_position")
+		Events.Broadcast("open_up_cave", true)
+	end
 
-			Events.Broadcast("inventory_add", 11)
-
-			Events.Broadcast("energy_to_end_position")
-			Events.Broadcast("open_up_cave", true)
-		end
+	if(quest_id > 3) then
+		Events.Broadcast("inventory_add", 11)
 	end
 	
 	transition_tween = YOOTIL.Tween:new(transition_time, {a = 1}, {a = 0})
@@ -113,6 +91,14 @@ Events.Connect("start_game", function()
 
 		if(quest_id < 5) then
 			Events.Broadcast("play_bird_sounds")
+		end
+
+		if(quest_id == 6) then
+			Events.Broadcast("show_cave_waypoint")
+		end
+
+		if(quest_id == 7) then
+			Events.Broadcast("enable_portal_effects")
 		end
 
 		Events.Broadcast("next_quest", quest_id)

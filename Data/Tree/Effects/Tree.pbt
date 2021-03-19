@@ -1,6 +1,35 @@
 Name: "Effects"
 RootId: 1616780706916206490
 Objects {
+  Id: 8212486631732985730
+  Name: "Rotator Sounds"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1616780706916206490
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Rotator Sounds"
+  }
+}
+Objects {
   Id: 10805811681648458774
   Name: "Birds"
   Transform {

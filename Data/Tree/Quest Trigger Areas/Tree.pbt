@@ -1,6 +1,84 @@
 Name: "Quest Trigger Areas"
 RootId: 8800454525094024065
 Objects {
+  Id: 4085984007303472840
+  Name: "Chamber Trigger"
+  Transform {
+    Location {
+      X: 3375.56152
+      Y: -4026.17969
+      Z: -815.931335
+    }
+    Rotation {
+      Yaw: 10.8744078
+    }
+    Scale {
+      X: 5.34683609
+      Y: 7.2956543
+      Z: 5.44287
+    }
+  }
+  ParentId: 8800454525094024065
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 12040618246545199286
+  Name: "Cave Trigger"
+  Transform {
+    Location {
+      X: 2157.45557
+      Y: -2204.74097
+      Z: -278.654572
+    }
+    Rotation {
+      Pitch: 0.406075209
+      Yaw: -34.1248474
+      Roll: -1.88519287
+    }
+    Scale {
+      X: 5.69661427
+      Y: 7.29565239
+      Z: 4.61575
+    }
+  }
+  ParentId: 8800454525094024065
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
   Id: 7316799702262892750
   Name: "Tree Site Trigger"
   Transform {

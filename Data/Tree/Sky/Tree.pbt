@@ -142,7 +142,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Cast Shadows"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "bp:Draw Sun"

@@ -9,6 +9,8 @@ local dust = script:GetCustomProperty("dust"):WaitForObject()
 local rocks = script:GetCustomProperty("rocks"):WaitForObject()
 local rocks2 = script:GetCustomProperty("rocks2"):WaitForObject()
 local explosion = script:GetCustomProperty("explosion"):WaitForObject()
+local general_light = script:GetCustomProperty("general_light"):WaitForObject()
+local lightning_light = script:GetCustomProperty("lightning_light"):WaitForObject()
 
 local local_player = Game.GetLocalPlayer()
 
@@ -58,10 +60,10 @@ Events.Connect("enable_all_beams", function()
 	for k, v in pairs(beams) do
 		v.visibility = Visibility.FORCE_ON
 
-		local e = 5
+		local e = 3
 
 		if(k == "red" or k == "blue") then
-			e = 25
+			e = 16
 		end
 
 		v:SetSmartProperty("Emissive Boost", e)
@@ -70,12 +72,12 @@ end)
 
 Events.Connect("enable_beam", function(color)
 	local start_vals = { e = 0 }
-	local end_vals = { e = 5 }
+	local end_vals = { e = 4 }
 
 	if(color == "red" or color == "blue") then
-		end_vals.e = 25
+		end_vals.e = 16
 	else
-		end_vals.e = 5
+		end_vals.e = 3
 	end
 
 	local t = YOOTIL.Tween:new(10, start_vals, end_vals)
@@ -89,7 +91,7 @@ Events.Connect("enable_beam", function(color)
 	end)
 
 	t:on_complete(function()
-		Events.Broadcast("play_sound", color .. "_hum")
+		--Events.Broadcast("play_sound", color .. "_hum")
 		t = nil
 	end)
 
@@ -99,14 +101,18 @@ end)
 function play_lightning()
 	if(count > 3) then
 		lightning.visibility = Visibility.FORCE_ON
+		lightning_light.visibility = Visibility.FORCE_ON
 		blast:Play()
 		dust:Play()
 		rocks2:Play()
 		explosion:Play()
+
+		Events.Broadcast("stop_additional_music")
+
 		Events.Broadcast("open_up_cave")
 		Task.Wait(0.3)
 		lightning.visibility = Visibility.FORCE_OFF
-
+		lightning_light.visibility = Visibility.FORCE_OFF
 		lightning_task:Cancel()
 		lightning_task = nil
 
@@ -119,19 +125,24 @@ function play_lightning()
 		local flash = math.random(100, 400)
 
 		lightning.visibility = Visibility.FORCE_ON
+		lightning_light.visibility = Visibility.FORCE_ON
 		blast:Play()
 		dust:Play()
 		rocks:Play()
 		Task.Wait(flash / 100)
 		lightning.visibility = Visibility.FORCE_OFF
+		lightning_light.visibility = Visibility.FORCE_OFF
 
 		count = count + 1
 	end
 end
 
 Events.Connect("charge_up_energy", function()
+
+	-- Beams
+
 	for c, b in pairs(energy_beams) do
-		local width_tween = YOOTIL.Tween:new(12, { w = 0 }, { w = .8 })
+		local width_tween = YOOTIL.Tween:new(15, { w = 0 }, { w = .8 })
 
 		width_tween:on_start(function()
 			b.visibility = Visibility.FORCE_ON
@@ -147,20 +158,27 @@ Events.Connect("charge_up_energy", function()
 
 		width_tween:set_delay(4)
 		table.insert(energy_tweens, width_tween)
+
+		Events.Broadcast("play_additional_music", "energy")
 	end
 
-	ball_tween = YOOTIL.Tween:new(6, {
+	-- Move ball up
 
-		z = 102
+	ball_tween = YOOTIL.Tween:new(10, {
+
+		z = 102,
+		l = 0
 
 	}, {
 
-		z = 2253
+		z = 2253,
+		l = 4000
 
 	})
 
 	ball_tween:on_start(function()
 		ball.visibility = Visibility.FORCE_ON
+		general_light.visibility = Visibility.FORCE_ON
 	end)
 
 	ball_tween:on_change(function(c)
@@ -169,10 +187,14 @@ Events.Connect("charge_up_energy", function()
 		p.z = c.z
 
 		ball:SetWorldPosition(p)
+
+		general_light.attenuationRadius = c.l
 	end)
 
 	ball_tween:on_complete(function()
 		zap:Play()
+
+		-- Grow ball
 
 		ball_tween = YOOTIL.Tween:new(6, { s = 0.1 }, { s = 3 })
 
@@ -189,7 +211,8 @@ Events.Connect("charge_up_energy", function()
 		end)
 	end)
 
-	ball_tween:set_delay(3)
+	ball_tween:set_delay(2)
+	ball_tween:set_easing("inQuint")
 end)
 
 Events.Connect("energy_to_end_position", function()
@@ -199,6 +222,8 @@ Events.Connect("energy_to_end_position", function()
 	end
 
 	ball.visibility = Visibility.FORCE_ON
+	general_light.visibility = Visibility.FORCE_ON
+	general_light.attenuationRadius = 4000
 	ball:SetWorldPosition(Vector3.New(6732.029, 3619.475, 2253))
 	ball:SetSmartProperty("Particle Scale Multiplier", 3)
 	zap:Play()

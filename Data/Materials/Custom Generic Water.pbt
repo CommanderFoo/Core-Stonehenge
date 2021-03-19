@@ -12,7 +12,7 @@ Assets {
       }
       Overrides {
         Name: "reflection brightness"
-        Float: 0.0742320195
+        Float: 0.304208308
       }
       Overrides {
         Name: "wind direction"
@@ -29,15 +29,15 @@ Assets {
       }
       Overrides {
         Name: "opacity"
-        Float: 1
+        Float: 0.713179767
       }
       Overrides {
         Name: "opacity distance"
-        Float: 229.005157
+        Float: 86.0901947
       }
       Overrides {
         Name: "edge foam brightness"
-        Float: 0.267698139
+        Float: 0.167884484
       }
       Overrides {
         Name: "foam shape max"
@@ -57,15 +57,31 @@ Assets {
       }
       Overrides {
         Name: "edge normal flattening"
-        Float: 0.623672962
+        Float: 0.647744477
       }
       Overrides {
         Name: "emissive"
-        Float: 0.200620711
+        Float: 1.02449214
       }
       Overrides {
         Name: "foam shape"
-        Float: 2.73172617
+        Float: 2.41974807
+      }
+      Overrides {
+        Name: "deep color"
+        Color {
+          R: 0.00844428688
+          B: 0.266000032
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "shallow color"
+        Color {
+          G: 0.0171111617
+          B: 0.154000044
+          A: 1
+        }
       }
     }
     Assets {

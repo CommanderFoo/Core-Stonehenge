@@ -1,5 +1,8 @@
 local trigger = script:GetCustomProperty("trigger"):WaitForObject()
 local quest_trigger = script:GetCustomProperty("quest_trigger"):WaitForObject()
+local impact = script:GetCustomProperty("impact"):WaitForObject()
+local rocks = script:GetCustomProperty("rocks"):WaitForObject()
+local dust = script:GetCustomProperty("dust"):WaitForObject()
 
 local can_complete_quest = false
 local quest_complete = false
@@ -28,4 +31,11 @@ end)
 Events.Connect("tree_area_quest_complete", function()
 	Events.Broadcast("set_weather_profile", "nighttime")
 	Events.Broadcast("set_weather_rocks_wet", true)
+	Events.Broadcast("ocular_use_color")
+end)
+
+Events.Connect("lily_area_play_vfx", function()
+	impact:Play()
+	rocks:Play()
+	dust:Play()
 end)

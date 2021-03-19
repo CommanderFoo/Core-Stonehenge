@@ -68,6 +68,10 @@ Objects {
         A: 1
       }
     }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -157,9 +161,8 @@ Objects {
     Overrides {
       Name: "bp:Color"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        G: 0.12039718
+        B: 0.336666584
         A: 1
       }
     }
@@ -230,9 +233,8 @@ Objects {
     Overrides {
       Name: "bp:Color"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        G: 0.12039718
+        B: 0.336666584
         A: 1
       }
     }
@@ -331,9 +333,9 @@ Objects {
     Overrides {
       Name: "bp:Color"
       Color {
-        R: 1
+        R: 0.968763709
         G: 1
-        B: 1
+        B: 0.0566666126
         A: 1
       }
     }
@@ -404,9 +406,9 @@ Objects {
     Overrides {
       Name: "bp:Color"
       Color {
-        R: 1
+        R: 0.968763709
         G: 1
-        B: 1
+        B: 0.0566666126
         A: 1
       }
     }
@@ -477,9 +479,9 @@ Objects {
     Overrides {
       Name: "bp:Color"
       Color {
-        R: 1
+        R: 0.968763709
         G: 1
-        B: 1
+        B: 0.0566666126
         A: 1
       }
     }
@@ -550,9 +552,9 @@ Objects {
     Overrides {
       Name: "bp:Color"
       Color {
-        R: 1
+        R: 0.968763709
         G: 1
-        B: 1
+        B: 0.0566666126
         A: 1
       }
     }
@@ -655,9 +657,8 @@ Objects {
     Overrides {
       Name: "bp:Color"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.336666584
+        G: 1.60535137e-07
         A: 1
       }
     }
@@ -728,9 +729,8 @@ Objects {
     Overrides {
       Name: "bp:Color"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.336666584
+        G: 1.60535137e-07
         A: 1
       }
     }
@@ -801,9 +801,8 @@ Objects {
     Overrides {
       Name: "bp:Color"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.336666584
+        G: 1.60535137e-07
         A: 1
       }
     }
@@ -874,9 +873,8 @@ Objects {
     Overrides {
       Name: "bp:Color"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.336666584
+        G: 1.60535137e-07
         A: 1
       }
     }

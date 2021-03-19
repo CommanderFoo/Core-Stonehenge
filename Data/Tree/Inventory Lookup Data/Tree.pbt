@@ -776,7 +776,7 @@ Objects {
     }
     Overrides {
       Name: "cs:use_with"
-      String: "48BFC410C17DC9D8:Look - Ocular Frame"
+      String: "8E812AA7B8C95776:Look - Ocular Frame"
     }
     Overrides {
       Name: "cs:ui_asset"
@@ -806,7 +806,7 @@ Objects {
 }
 Objects {
   Id: 3370465044770235105
-  Name: "48BFC410C17DC9D8:Look - Ocular Frame"
+  Name: "8E812AA7B8C95776:Look - Ocular Frame"
   Transform {
     Location {
     }

@@ -19,6 +19,7 @@ Objects {
   ChildIds: 1926741659456437005
   ChildIds: 3621706949446435895
   ChildIds: 17280330074716517188
+  ChildIds: 4550203403171480337
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -30,6 +31,44 @@ Objects {
   }
   NetworkContext {
     Type: Server
+  }
+}
+Objects {
+  Id: 4550203403171480337
+  Name: "Quest_Unknown_Server"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 921956513660677611
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:portal"
+      ObjectReference {
+        SelfId: 15977208913666398017
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 9375215146473997116
+    }
   }
 }
 Objects {
@@ -260,6 +299,7 @@ Objects {
   ChildIds: 2196393818071005436
   ChildIds: 175640858615260086
   ChildIds: 1877532149501611667
+  ChildIds: 18136122010751220708
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -270,6 +310,128 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 18136122010751220708
+  Name: "Quest_Unknown_Client"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12281289070681835054
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:portal"
+      ObjectReference {
+        SelfId: 15977208913666398017
+      }
+    }
+    Overrides {
+      Name: "cs:ball"
+      ObjectReference {
+        SelfId: 9886569727362114225
+      }
+    }
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
+      }
+    }
+    Overrides {
+      Name: "cs:end_panel"
+      ObjectReference {
+        SelfId: 15544317065579204847
+      }
+    }
+    Overrides {
+      Name: "cs:transition"
+      ObjectReference {
+        SelfId: 16385539254912370512
+      }
+    }
+    Overrides {
+      Name: "cs:back"
+      ObjectReference {
+        SelfId: 1850335544420336254
+      }
+    }
+    Overrides {
+      Name: "cs:support_us"
+      ObjectReference {
+        SelfId: 1365477041652106294
+      }
+    }
+    Overrides {
+      Name: "cs:thanks"
+      ObjectReference {
+        SelfId: 16504378562379632544
+      }
+    }
+    Overrides {
+      Name: "cs:contents"
+      ObjectReference {
+        SelfId: 15032409003927280482
+      }
+    }
+    Overrides {
+      Name: "cs:look_at"
+      ObjectReference {
+        SelfId: 13698632492225599710
+      }
+    }
+    Overrides {
+      Name: "cs:normal_color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:hover_color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:normal_text_color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:hover_text_color"
+      Color {
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 7787791980793544365
+    }
   }
 }
 Objects {
@@ -289,6 +451,134 @@ Objects {
     }
   }
   ParentId: 12281289070681835054
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:cave_trigger"
+      ObjectReference {
+        SelfId: 12040618246545199286
+      }
+    }
+    Overrides {
+      Name: "cs:chamber_trigger"
+      ObjectReference {
+        SelfId: 4085984007303472840
+      }
+    }
+    Overrides {
+      Name: "cs:cave_waypoint_helper"
+      ObjectReference {
+        SelfId: 17337096062158709255
+      }
+    }
+    Overrides {
+      Name: "cs:cave_waypoint_ui"
+      ObjectReference {
+        SelfId: 11973429258518757493
+      }
+    }
+    Overrides {
+      Name: "cs:blue_rotator"
+      ObjectReference {
+        SelfId: 3406590393990027585
+      }
+    }
+    Overrides {
+      Name: "cs:white_rotator"
+      ObjectReference {
+        SelfId: 16330345981550338515
+      }
+    }
+    Overrides {
+      Name: "cs:yellow_rotator"
+      ObjectReference {
+        SelfId: 10666332874225155054
+      }
+    }
+    Overrides {
+      Name: "cs:red_rotator"
+      ObjectReference {
+        SelfId: 1316097554430157904
+      }
+    }
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
+      }
+    }
+    Overrides {
+      Name: "cs:rotator_sound"
+      ObjectReference {
+        SelfId: 10281062341006278802
+      }
+    }
+    Overrides {
+      Name: "cs:success_sound"
+      ObjectReference {
+        SelfId: 1444449119481677557
+      }
+    }
+    Overrides {
+      Name: "cs:red_beam"
+      ObjectReference {
+        SelfId: 8217725396930601142
+      }
+    }
+    Overrides {
+      Name: "cs:white_beam"
+      ObjectReference {
+        SelfId: 10581975478992684135
+      }
+    }
+    Overrides {
+      Name: "cs:yellow_beam"
+      ObjectReference {
+        SelfId: 8416809099858564236
+      }
+    }
+    Overrides {
+      Name: "cs:blue_beam"
+      ObjectReference {
+        SelfId: 4888308466287386559
+      }
+    }
+    Overrides {
+      Name: "cs:mini"
+      ObjectReference {
+        SelfId: 9886569727362114225
+      }
+    }
+    Overrides {
+      Name: "cs:spark_sound"
+      ObjectReference {
+        SelfId: 9745619904137181038
+      }
+    }
+    Overrides {
+      Name: "cs:blue_outline"
+      ObjectReference {
+        SelfId: 9708753677580275772
+      }
+    }
+    Overrides {
+      Name: "cs:white_outline"
+      ObjectReference {
+        SelfId: 10627906296156234297
+      }
+    }
+    Overrides {
+      Name: "cs:yellow_outline"
+      ObjectReference {
+        SelfId: 14652138206977616986
+      }
+    }
+    Overrides {
+      Name: "cs:red_outline"
+      ObjectReference {
+        SelfId: 367290383231798215
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -374,6 +664,24 @@ Objects {
       Name: "cs:trigger"
       ObjectReference {
         SelfId: 8102391460791805462
+      }
+    }
+    Overrides {
+      Name: "cs:impact"
+      ObjectReference {
+        SelfId: 13883767580046498163
+      }
+    }
+    Overrides {
+      Name: "cs:rocks"
+      ObjectReference {
+        SelfId: 10287919875482060065
+      }
+    }
+    Overrides {
+      Name: "cs:dust"
+      ObjectReference {
+        SelfId: 357242463879959137
       }
     }
   }

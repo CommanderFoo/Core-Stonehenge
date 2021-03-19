@@ -28,6 +28,7 @@ local rock_colors = {
 local local_player = Game.GetLocalPlayer()
 
 local can_use = true
+local use_color = false
 local ocular_enabled = false
 
 local fade_in_tweens = {
@@ -88,7 +89,7 @@ function find_rock_symbols_in_range()
 			local symbol_pos = child_symbols[1]:GetWorldPosition()
 			local dist = (start_pos - symbol_pos).size
 
-			if(dist < 4000) then
+			if(dist < 5000) then
 				for ci, c in ipairs(child_symbols) do
 					table.insert(symbols[color], #symbols[color] + 1, c)
 				end
@@ -109,7 +110,23 @@ function fade_in_symbols(symbols)
 
 		for i, sym in ipairs(v) do
 			if(not done) then
-				local t = YOOTIL.Tween:new(5, { e = 0, a = 0 }, { e = 6, a = 1 })
+				local sym_color_emissive = sym:GetSmartProperty("Color Emissive")
+
+				local t = YOOTIL.Tween:new(5, { 
+					
+					e = 0,
+					cex = sym_color_emissive.r,
+					cey = sym_color_emissive.g,
+					cez = sym_color_emissive.b
+
+				}, { 
+					
+					e = 6,
+					cex = colors[k].r,
+					cey = colors[k].g,
+					cez = colors[k].b
+
+				})
 
 				t:on_start(function()
 					Events.Broadcast("play_sound", "found_item", false, true)
@@ -118,6 +135,10 @@ function fade_in_symbols(symbols)
 
 				t:on_change(function(c)
 					sym:SetSmartProperty("Emissive Boost", c.e)
+
+					if(use_color) then
+						sym:SetSmartProperty("Color Emissive", Color.New(c.cex, c.cey, c.cez, 1))
+					end
 				end)
 
 				t:on_complete(function()
@@ -304,7 +325,7 @@ function enable(color)
 
 		t:on_change(function(c)
 			sym:SetSmartProperty("Color Emissive", Color.New(c.cex, c.cey, c.cez, 1))
-			sym:SetSmartProperty("Color", Color.New(c.cx, c.cy, c.cz, 1))
+			--sym:SetSmartProperty("Color", Color.New(c.cx, c.cy, c.cz, 1))
 			sym:SetSmartProperty("Emissive Boost", c.e)
 		end)
 
@@ -318,6 +339,10 @@ end
 
 Events.Connect("enable_ocular_device", function(state)
 	ocular_enabled = state
+end)
+
+Events.Connect("disable_ocular_device_ui", function()
+	ui_container.visibility = Visibility.FORCE_OFF
 end)
 
 Events.Connect("enable_ocular_device_ui", function()
@@ -336,10 +361,13 @@ Events.Connect("enable_all_symbols", function()
 		for ci, c in ipairs(child_symbols) do
 			c.visibility = Visibility.FORCE_ON
 			c:SetSmartProperty("Color Emissive", colors[color])
-			c:SetSmartProperty("Color", colors[color])
+			--c:SetSmartProperty("Color", colors[color])
 			c:SetSmartProperty("Emissive Boost", 7)
 		end
 	end
 end)
 
 Events.Connect("enable_symbol", enable)
+Events.Connect("ocular_use_color", function()
+	use_color = true
+end)

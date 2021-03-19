@@ -30,6 +30,7 @@ Objects {
     AudioAsset {
       Id: 6891694911843830105
     }
+    AutoPlay: true
     Repeat: true
     Pitch: -348.927
     Volume: 1
@@ -69,6 +70,7 @@ Objects {
     AudioAsset {
       Id: 6891694911843830105
     }
+    AutoPlay: true
     Repeat: true
     Pitch: -348.927
     Volume: 1
@@ -108,6 +110,7 @@ Objects {
     AudioAsset {
       Id: 6891694911843830105
     }
+    AutoPlay: true
     Repeat: true
     Pitch: -348.927
     Volume: 1
@@ -147,6 +150,7 @@ Objects {
     AudioAsset {
       Id: 6891694911843830105
     }
+    AutoPlay: true
     Repeat: true
     Pitch: -348.927
     Volume: 1

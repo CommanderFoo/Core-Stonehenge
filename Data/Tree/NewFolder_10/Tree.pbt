@@ -52,12 +52,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 466523555448017641
-    SubobjectId: 80403428221137248
-    InstanceId: 4615313895821986510
-    TemplateId: 8791256523911820058
-  }
 }
 Objects {
   Id: 2408939302080076238
@@ -110,12 +104,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 2408939302080076238
-    SubobjectId: 2741160856065227335
-    InstanceId: 4615313895821986510
-    TemplateId: 8791256523911820058
   }
 }
 Objects {
@@ -170,12 +158,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 819298891692005383
-    SubobjectId: 881147304443165582
-    InstanceId: 4615313895821986510
-    TemplateId: 8791256523911820058
-  }
 }
 Objects {
   Id: 17322176010126232290
@@ -228,12 +210,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 17322176010126232290
-    SubobjectId: 17798350537713969515
-    InstanceId: 4615313895821986510
-    TemplateId: 8791256523911820058
   }
 }
 Objects {
@@ -288,12 +264,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 15705748288809459186
-    SubobjectId: 16038105615299722875
-    InstanceId: 4615313895821986510
-    TemplateId: 8791256523911820058
-  }
 }
 Objects {
   Id: 973634128994510775
@@ -346,12 +316,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 973634128994510775
-    SubobjectId: 785809804997608510
-    InstanceId: 4615313895821986510
-    TemplateId: 8791256523911820058
   }
 }
 Objects {
@@ -406,12 +370,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 2149961133657909233
-    SubobjectId: 1923873274586956920
-    InstanceId: 4615313895821986510
-    TemplateId: 8791256523911820058
-  }
 }
 Objects {
   Id: 18016918716332635025
@@ -461,12 +419,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 18016918716332635025
-    SubobjectId: 18261039665611739160
-    InstanceId: 4615313895821986510
-    TemplateId: 8791256523911820058
   }
 }
 Objects {
@@ -521,12 +473,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 16279670390050829701
-    SubobjectId: 16612032146799875596
-    InstanceId: 4615313895821986510
-    TemplateId: 8791256523911820058
-  }
 }
 Objects {
   Id: 4793260630996744689
@@ -580,12 +526,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 4793260630996744689
-    SubobjectId: 5035552061645658744
-    InstanceId: 4615313895821986510
-    TemplateId: 8791256523911820058
-  }
 }
 Objects {
   Id: 2091817007508416350
@@ -636,12 +576,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 2091817007508416350
-    SubobjectId: 1901480780478285015
-    InstanceId: 4615313895821986510
-    TemplateId: 8791256523911820058
   }
 }
 Objects {
@@ -694,12 +628,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 1946037066450214195
-    SubobjectId: 2046178668879740602
-    InstanceId: 4615313895821986510
-    TemplateId: 8791256523911820058
-  }
 }
 Objects {
   Id: 13143378622899873747
@@ -748,12 +676,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 13143378622899873747
-    SubobjectId: 12754867006342431834
-    InstanceId: 4615313895821986510
-    TemplateId: 8791256523911820058
   }
 }
 Objects {
@@ -808,12 +730,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 3272646851796616175
-    SubobjectId: 3030373028366098534
-    InstanceId: 4615313895821986510
-    TemplateId: 8791256523911820058
-  }
 }
 Objects {
   Id: 2581944563850988423
@@ -864,12 +780,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 2581944563850988423
-    SubobjectId: 2643650540455208974
-    InstanceId: 4615313895821986510
-    TemplateId: 8791256523911820058
-  }
 }
 Objects {
   Id: 1168011775860894358
@@ -919,11 +829,5 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 1168011775860894358
-    SubobjectId: 1680219019625728287
-    InstanceId: 4615313895821986510
-    TemplateId: 8791256523911820058
   }
 }

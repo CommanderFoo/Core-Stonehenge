@@ -21,17 +21,19 @@ local sounds = {
 	blue_hum = script:GetCustomProperty("blue_dum"):WaitForObject(),
 	yellow_hum = script:GetCustomProperty("yellow_hum"):WaitForObject(),
 	white_hum = script:GetCustomProperty("white_hum"):WaitForObject()
-	
 }
 
 local music = {
 
 	
 	menu_inspect_inventory = script:GetCustomProperty("menu_inspect_inventory_music"):WaitForObject(),
-	letter_desk = script:GetCustomProperty("letter_desk_music"):WaitForObject()
+	letter_desk = script:GetCustomProperty("letter_desk_music"):WaitForObject(),
+	end_game = script:GetCustomProperty("end_game"):WaitForObject(),
+	energy = script:GetCustomProperty("energy"):WaitForObject()
 
 }
 
+local additional_music = nil
 local total_bird_sounds = #bird_sounds:GetChildren()
 local bird_sound_task = nil
 local last_music_played = nil
@@ -84,6 +86,21 @@ Events.Connect("play_sound", function(type, rnd_pitch, move_to_player)
 
 		snd:Play()
 	end
+end)
+
+Events.Connect("stop_additional_music", function()
+	if(additional_music ~= nil) then
+		additional_music:Stop()
+	end	
+end)
+
+Events.Connect("play_additional_music", function(type)
+	if(additional_music ~= nil) then
+		additional_music:Stop()
+	end
+
+	additional_music = music[type]
+	additional_music:Play()
 end)
 
 Events.Connect("play_music", function(type)

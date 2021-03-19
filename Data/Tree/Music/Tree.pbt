@@ -1,12 +1,58 @@
 Name: "Music"
 RootId: 4143395471928242810
 Objects {
-  Id: 12529386565442934943
-  Name: "Happy Alien Music  - Post-game credits "
+  Id: 18359025117221041928
+  Name: "\"Epic Dark Descent\" Music Construction Kit (Sections) 01"
   Transform {
     Location {
       X: -4791.16846
       Y: -5503.01465
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4143395471928242810
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Type"
+      Enum {
+        Value: "mc:emx_darkdescentkit01:28"
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 5541148766524439417
+    }
+    TeamSettings {
+    }
+    AudioBP {
+      Volume: 1
+      Falloff: 3600
+      Radius: 400
+      FadeInTime: 0.5
+    }
+  }
+}
+Objects {
+  Id: 12529386565442934943
+  Name: "Happy Alien Music  - Post-game credits "
+  Transform {
+    Location {
     }
     Rotation {
     }
@@ -33,6 +79,7 @@ Objects {
     TeamSettings {
     }
     AudioBP {
+      Repeat: true
       Volume: 1
       Falloff: 3600
       Radius: 400

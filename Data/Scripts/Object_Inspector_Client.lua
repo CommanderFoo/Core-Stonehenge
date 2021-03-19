@@ -266,6 +266,8 @@ function use_item()
 					Events.Broadcast("play_sound", "dig_rock")
 					Events.Broadcast("play_sound", "dig_metal")
 
+					Events.Broadcast("lily_area_play_vfx")
+
 					Events.BroadcastToServer("inspector_hide", obj:GetReference())
 					Events.Broadcast("quest_item_complete", 3)
 					Events.Broadcast("inventory_clear_active")

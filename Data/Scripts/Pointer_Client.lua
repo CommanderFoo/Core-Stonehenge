@@ -137,3 +137,7 @@ Events.Connect("override_cursor", function(type, tpl_id)
 		end
 	end
 end)
+
+Events.Connect("move_cursor_top", function()
+	cursor_ui.parent = cursor_ui.parent
+end)

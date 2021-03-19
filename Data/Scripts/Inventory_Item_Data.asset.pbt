@@ -19,13 +19,13 @@ Assets {
       Overrides {
         Name: "cs:model_asset"
         AssetReference {
-          Id: 841534158063459245
+          Id: 2868003098755762293
         }
       }
       Overrides {
         Name: "cs:ui_asset"
         AssetReference {
-          Id: 841534158063459245
+          Id: 16138989306755419428
         }
       }
       Overrides {

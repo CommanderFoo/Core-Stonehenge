@@ -1,7 +1,7 @@
 Name: "Quest Items_3"
 RootId: 12936176732858694209
 Objects {
-  Id: 10169360158717497169
+  Id: 17623796460592243174
   Name: "Look - Ocular Frame"
   Transform {
     Scale {
@@ -11,15 +11,11 @@ Objects {
     }
   }
   ParentId: 12936176732858694209
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   TemplateInstance {
     ParameterOverrideMap {

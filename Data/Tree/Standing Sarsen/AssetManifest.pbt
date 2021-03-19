@@ -8,12 +8,12 @@ Assets {
   }
 }
 Assets {
-  Id: 15142431304654880679
-  Name: "Rock Flat 02"
-  PlatformAssetType: 1
+  Id: 8936763371593318026
+  Name: "Glitchy Hologram"
+  PlatformAssetType: 2
   PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rock_generic_005"
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxmi_hologram"
   }
 }
 Assets {

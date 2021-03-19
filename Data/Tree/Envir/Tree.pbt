@@ -1,39 +1,6 @@
 Name: "Envir"
 RootId: 14580783129908760267
 Objects {
-  Id: 9527342958605274553
-  Name: "Chamber"
-  Transform {
-    Location {
-      X: 2739.73486
-      Y: -5016.55078
-      Z: -2245.49512
-    }
-    Rotation {
-      Yaw: 14.8638277
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 14580783129908760267
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Chamber"
-  }
-}
-Objects {
   Id: 10315545194783356564
   Name: "Collisions"
   Transform {
@@ -21342,7 +21309,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Dry"
+    FilePartitionName: "Dry_1"
   }
 }
 Objects {
@@ -28853,6 +28820,8 @@ Objects {
   ChildIds: 6009796312481870377
   ChildIds: 11095640811564385635
   ChildIds: 9880521298144143858
+  ChildIds: 9673406710017729395
+  ChildIds: 1558628012245929038
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -28864,6 +28833,201 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 1558628012245929038
+  Name: "Blue Lily Multi"
+  Transform {
+    Location {
+      X: 7938.54834
+      Y: 7970.82861
+      Z: -234.863693
+    }
+    Rotation {
+      Yaw: 61.8200874
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5887832404229818900
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8607962767051339710
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Blue Lily Multi"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -64.2077637
+            Y: -5945.63477
+            Z: 927.917175
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 3.4150944e-06
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 3418298224008827454
+    }
+  }
+}
+Objects {
+  Id: 9673406710017729395
+  Name: "Vase "
+  Transform {
+    Location {
+      X: -66.9304199
+      Y: -5950.90234
+      Z: 900.733704
+    }
+    Rotation {
+      Yaw: 3.4150944e-06
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5887832404229818900
+  ChildIds: 10199803744938792942
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 10199803744938792942
+  Name: "Teardrop - Truncated"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.36205256
+      Y: 0.36205256
+      Z: 0.36205256
+    }
+  }
+  ParentId: 9673406710017729395
+  ChildIds: 4694915827024507016
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14713974192605420314
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14953676844700166582
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 4694915827024507016
+  Name: "Cone - Truncated Hollow Concave"
+  Transform {
+    Location {
+      Z: 164.17186
+    }
+    Rotation {
+      Roll: 180
+    }
+    Scale {
+      X: 0.99999994
+      Y: 0.99999994
+      Z: 0.75
+    }
+  }
+  ParentId: 10199803744938792942
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14713974192605420314
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15311550138640852139
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
   }
 }
 Objects {
@@ -38692,6 +38856,9 @@ Objects {
   ChildIds: 9828914723166502987
   ChildIds: 2458312561795538250
   ChildIds: 13799856604506090651
+  ChildIds: 10485768014595164334
+  ChildIds: 5664945724858814791
+  ChildIds: 16572818312647089415
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -38706,13 +38873,4567 @@ Objects {
   }
 }
 Objects {
+  Id: 16572818312647089415
+  Name: "Camp Shelter"
+  Transform {
+    Location {
+      X: -169.668945
+      Y: 335.045898
+      Z: 1356.54
+    }
+    Rotation {
+      Yaw: 72.2881927
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12720467865097394105
+  ChildIds: 6483243666340365252
+  ChildIds: 14290330670385154172
+  ChildIds: 6805938336749624776
+  ChildIds: 4454844400096637141
+  ChildIds: 1255063716760981247
+  ChildIds: 7687174483767545270
+  ChildIds: 12177996907394406195
+  ChildIds: 4812263062703396628
+  ChildIds: 12718872679814713520
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 12718872679814713520
+  Name: "Victorian Chair "
+  Transform {
+    Location {
+      X: 13230.1299
+      Y: 4037.13281
+      Z: 445.888123
+    }
+    Rotation {
+      Yaw: 77.5520096
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16572818312647089415
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 272224561588871038
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Victorian Chair "
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 340.853149
+            Y: -193.992081
+            Z: -447.577454
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 67.5187759
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4268890243001179159
+    }
+  }
+}
+Objects {
+  Id: 4812263062703396628
+  Name: "Victorian Chair "
+  Transform {
+    Location {
+      X: 119.811935
+      Y: -339.873
+      Z: -447.577454
+    }
+    Rotation {
+      Yaw: 5.2638278
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16572818312647089415
+  ChildIds: 6687916076719014191
+  ChildIds: 7583434098196277700
+  ChildIds: 2487718410160081482
+  ChildIds: 9280602355854254823
+  ChildIds: 12799871584102259075
+  ChildIds: 5248383343568655563
+  ChildIds: 5912548579792298398
+  ChildIds: 14682520568085840372
+  ChildIds: 3358470702424189755
+  ChildIds: 3698949742187846629
+  ChildIds: 13056439613992350728
+  ChildIds: 1226484922405888407
+  ChildIds: 7415544005997284207
+  ChildIds: 7003609318770438366
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 4812263062703396628
+    SubobjectId: 272224561588871038
+    InstanceId: 13154812657767789833
+    TemplateId: 4268890243001179159
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 7003609318770438366
+  Name: "Text 05: A"
+  Transform {
+    Location {
+      X: -7.27368164
+      Y: -9.11377
+      Z: 132.836349
+    }
+    Rotation {
+      Pitch: 6.3224597
+      Yaw: 3.08647251
+      Roll: -153.911865
+    }
+    Scale {
+      X: 0.273680776
+      Y: 0.713858843
+      Z: 0.27332592
+    }
+  }
+  ParentId: 4812263062703396628
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 9943385835622777282
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:id"
+      AssetReference {
+        Id: 13590852762220197411
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Bevel:id"
+      AssetReference {
+        Id: 12619734866397112129
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Font.Faces:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9296031306717703808
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 7003609318770438366
+    SubobjectId: 2323405062310869172
+    InstanceId: 13154812657767789833
+    TemplateId: 4268890243001179159
+  }
+}
+Objects {
+  Id: 7415544005997284207
+  Name: "Text 05: A"
+  Transform {
+    Location {
+      X: 10.2667236
+      Y: -23.6318359
+      Z: 140.486115
+    }
+    Rotation {
+      Pitch: 3.53179502
+      Yaw: 178.281143
+      Roll: 154.029419
+    }
+    Scale {
+      X: 0.273680776
+      Y: 0.713858843
+      Z: 0.27332592
+    }
+  }
+  ParentId: 4812263062703396628
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Font.Sides:id"
+      AssetReference {
+        Id: 13590852762220197411
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Bevel:id"
+      AssetReference {
+        Id: 12619734866397112129
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 9943385835622777282
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Font.Faces:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9296031306717703808
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 7415544005997284207
+    SubobjectId: 2875259131515732741
+    InstanceId: 13154812657767789833
+    TemplateId: 4268890243001179159
+  }
+}
+Objects {
+  Id: 1226484922405888407
+  Name: "Text 05: A"
+  Transform {
+    Location {
+      X: 11.9526978
+      Y: 45.3515625
+      Z: 132.980316
+    }
+    Rotation {
+      Pitch: 3.48787
+      Yaw: -178.193649
+      Roll: -152.601212
+    }
+    Scale {
+      X: 0.273680776
+      Y: 0.713858843
+      Z: 0.27332592
+    }
+  }
+  ParentId: 4812263062703396628
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Font.Sides:id"
+      AssetReference {
+        Id: 13590852762220197411
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Bevel:id"
+      AssetReference {
+        Id: 12619734866397112129
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 9943385835622777282
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Font.Faces:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9296031306717703808
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 1226484922405888407
+    SubobjectId: 5767682308860504573
+    InstanceId: 13154812657767789833
+    TemplateId: 4268890243001179159
+  }
+}
+Objects {
+  Id: 13056439613992350728
+  Name: "Text 05: A"
+  Transform {
+    Location {
+      X: -6.76544189
+      Y: 60.1445313
+      Z: 140.07869
+    }
+    Rotation {
+      Pitch: 6.24374866
+      Yaw: -3.24319482
+      Roll: 152.479126
+    }
+    Scale {
+      X: 0.273680776
+      Y: 0.713858843
+      Z: 0.27332592
+    }
+  }
+  ParentId: 4812263062703396628
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 9943385835622777282
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:id"
+      AssetReference {
+        Id: 13590852762220197411
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Bevel:id"
+      AssetReference {
+        Id: 12619734866397112129
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Font.Faces:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9296031306717703808
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 13056439613992350728
+    SubobjectId: 17599644781558201442
+    InstanceId: 13154812657767789833
+    TemplateId: 4268890243001179159
+  }
+}
+Objects {
+  Id: 3698949742187846629
+  Name: "Text 05: Y"
+  Transform {
+    Location {
+      X: -8.37738
+      Y: -26.8227539
+      Z: 211.918121
+    }
+    Rotation {
+      Pitch: 66.8664856
+      Yaw: -175.253876
+      Roll: 5.15863276
+    }
+    Scale {
+      X: 0.65621531
+      Y: 0.671137214
+      Z: 0.270642102
+    }
+  }
+  ParentId: 4812263062703396628
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Font.Sides:id"
+      AssetReference {
+        Id: 13590852762220197411
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 9943385835622777282
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Bevel:id"
+      AssetReference {
+        Id: 12619734866397112129
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Font.Faces:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17225486284988076514
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 3698949742187846629
+    SubobjectId: 8240173590539817871
+    InstanceId: 13154812657767789833
+    TemplateId: 4268890243001179159
+  }
+}
+Objects {
+  Id: 3358470702424189755
+  Name: "Text 05: Y"
+  Transform {
+    Location {
+      X: 17.4302979
+      Y: -43.4174805
+      Z: 212.95816
+    }
+    Rotation {
+      Pitch: 66.8675919
+      Yaw: -4.74630976
+      Roll: -5.1588769
+    }
+    Scale {
+      X: 0.65621531
+      Y: 0.671137214
+      Z: 0.270642102
+    }
+  }
+  ParentId: 4812263062703396628
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Font.Bevel:id"
+      AssetReference {
+        Id: 12619734866397112129
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 9943385835622777282
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:id"
+      AssetReference {
+        Id: 13590852762220197411
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Font.Faces:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17225486284988076514
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 3358470702424189755
+    SubobjectId: 8040080126471545681
+    InstanceId: 13154812657767789833
+    TemplateId: 4268890243001179159
+  }
+}
+Objects {
+  Id: 14682520568085840372
+  Name: "Text 05: A"
+  Transform {
+    Location {
+      X: 11.2023926
+      Y: -21.7924805
+      Z: 154.732971
+    }
+    Rotation {
+      Pitch: -3.92739964
+      Yaw: -179.999954
+      Roll: 2.35384573e-06
+    }
+    Scale {
+      X: 0.273681104
+      Y: 0.713858843
+      Z: 0.55507642
+    }
+  }
+  ParentId: 4812263062703396628
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Font.Sides:id"
+      AssetReference {
+        Id: 13590852762220197411
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Bevel:id"
+      AssetReference {
+        Id: 12619734866397112129
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 9943385835622777282
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Font.Faces:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9296031306717703808
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 14682520568085840372
+    SubobjectId: 10001790689317276062
+    InstanceId: 13154812657767789833
+    TemplateId: 4268890243001179159
+  }
+}
+Objects {
+  Id: 5912548579792298398
+  Name: "Text 05: A"
+  Transform {
+    Location {
+      X: -9.51367188
+      Y: -38.190918
+      Z: 155.66037
+    }
+    Rotation {
+      Pitch: -7.0328064
+    }
+    Scale {
+      X: 0.273681104
+      Y: 0.713858843
+      Z: 0.55507642
+    }
+  }
+  ParentId: 4812263062703396628
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 9943385835622777282
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:id"
+      AssetReference {
+        Id: 13590852762220197411
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Bevel:id"
+      AssetReference {
+        Id: 12619734866397112129
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Font.Faces:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9296031306717703808
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 5912548579792298398
+    SubobjectId: 1369695250377730548
+    InstanceId: 13154812657767789833
+    TemplateId: 4268890243001179159
+  }
+}
+Objects {
+  Id: 5248383343568655563
+  Name: "Text 04: O"
+  Transform {
+    Location {
+      X: -45.8618164
+      Y: -35.8042
+      Z: 165.683456
+    }
+    Rotation {
+      Roll: -8.1421
+    }
+    Scale {
+      X: 0.660821438
+      Y: 0.598408222
+      Z: 0.744919062
+    }
+  }
+  ParentId: 4812263062703396628
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 9943385835622777282
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Bevel:id"
+      AssetReference {
+        Id: 12619734866397112129
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:id"
+      AssetReference {
+        Id: 13590852762220197411
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Font.Faces:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17306892237270596115
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 5248383343568655563
+    SubobjectId: 709798328509127841
+    InstanceId: 13154812657767789833
+    TemplateId: 4268890243001179159
+  }
+}
+Objects {
+  Id: 12799871584102259075
+  Name: "Text 05: ~"
+  Transform {
+    Location {
+      X: -98.1853
+      Y: -20.2358398
+      Z: 10.0266132
+    }
+    Rotation {
+      Pitch: 78.9625702
+      Yaw: -138.474899
+      Roll: 9.70426
+    }
+    Scale {
+      X: 1.60613084
+      Y: 0.500002801
+      Z: 2.24999762
+    }
+  }
+  ParentId: 4812263062703396628
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 9943385835622777282
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:id"
+      AssetReference {
+        Id: 13590852762220197411
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Bevel:id"
+      AssetReference {
+        Id: 12619734866397112129
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Font.Faces:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 10880116966981183643
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 12799871584102259075
+    SubobjectId: 17342784277884391913
+    InstanceId: 13154812657767789833
+    TemplateId: 4268890243001179159
+  }
+}
+Objects {
+  Id: 9280602355854254823
+  Name: "Text 05: ~"
+  Transform {
+    Location {
+      X: 87.5355835
+      Y: -57.5957031
+      Z: 19.7611198
+    }
+    Rotation {
+      Pitch: 80.6012039
+      Yaw: 1.97121346
+      Roll: 39.740284
+    }
+    Scale {
+      X: 1.73579097
+      Y: 0.499997914
+      Z: 2.24999833
+    }
+  }
+  ParentId: 4812263062703396628
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 9943385835622777282
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:id"
+      AssetReference {
+        Id: 13590852762220197411
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Bevel:id"
+      AssetReference {
+        Id: 12619734866397112129
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Font.Faces:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 10880116966981183643
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 9280602355854254823
+    SubobjectId: 13962539443645049485
+    InstanceId: 13154812657767789833
+    TemplateId: 4268890243001179159
+  }
+}
+Objects {
+  Id: 2487718410160081482
+  Name: "Text 05: ~"
+  Transform {
+    Location {
+      X: -68.5668945
+      Y: 87.519043
+    }
+    Rotation {
+      Pitch: 77.1212387
+      Yaw: 137.797318
+      Roll: -0.303169549
+    }
+    Scale {
+      X: 1.73579097
+      Y: 0.499997914
+      Z: 2.24999833
+    }
+  }
+  ParentId: 4812263062703396628
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 9943385835622777282
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:id"
+      AssetReference {
+        Id: 13590852762220197411
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Bevel:id"
+      AssetReference {
+        Id: 12619734866397112129
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Font.Faces:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 10880116966981183643
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 2487718410160081482
+    SubobjectId: 7172426330586595872
+    InstanceId: 13154812657767789833
+    TemplateId: 4268890243001179159
+  }
+}
+Objects {
+  Id: 7583434098196277700
+  Name: "Text 05: ~"
+  Transform {
+    Location {
+      X: 102.387634
+      Y: 69.934082
+      Z: 20.4522133
+    }
+    Rotation {
+      Pitch: 80.4877396
+      Yaw: 76.7629776
+      Roll: 39.7219582
+    }
+    Scale {
+      X: 1.60613084
+      Y: 0.500002801
+      Z: 2.24999762
+    }
+  }
+  ParentId: 4812263062703396628
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 9943385835622777282
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:id"
+      AssetReference {
+        Id: 13590852762220197411
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Bevel:id"
+      AssetReference {
+        Id: 12619734866397112129
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Font.Faces:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 10880116966981183643
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 7583434098196277700
+    SubobjectId: 2896500842588643758
+    InstanceId: 13154812657767789833
+    TemplateId: 4268890243001179159
+  }
+}
+Objects {
+  Id: 6687916076719014191
+  Name: "Gem - Radiant Polished"
+  Transform {
+    Location {
+      X: 3.76855469
+      Y: 13.6513672
+      Z: 149.988342
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4812263062703396628
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7653252853218163032
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9571615185600317500
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 6687916076719014191
+    SubobjectId: 2152708756750289221
+    InstanceId: 13154812657767789833
+    TemplateId: 4268890243001179159
+  }
+}
+Objects {
+  Id: 12177996907394406195
+  Name: "table"
+  Transform {
+    Location {
+      X: 171.10614
+      Y: -192.776672
+      Z: -463.799744
+    }
+    Rotation {
+      Yaw: 114.471382
+    }
+    Scale {
+      X: 0.0630440265
+      Y: 0.0630440265
+      Z: 0.0630440265
+    }
+  }
+  ParentId: 16572818312647089415
+  ChildIds: 7065056263049769259
+  ChildIds: 12833412882805940536
+  ChildIds: 3673197027015206827
+  ChildIds: 11837154247680548889
+  ChildIds: 4337413077372813420
+  ChildIds: 15157383250517280524
+  ChildIds: 11825348772393725786
+  ChildIds: 14207494344925647371
+  ChildIds: 6951150826990175779
+  ChildIds: 14667998566305853038
+  ChildIds: 7118866173006619857
+  ChildIds: 9324335503501451942
+  ChildIds: 10495185926497154015
+  ChildIds: 16893399523297490907
+  ChildIds: 2924889660821867410
+  ChildIds: 16237724044086063328
+  ChildIds: 15625848397988835845
+  ChildIds: 3505928324252071768
+  ChildIds: 13720633298918547843
+  ChildIds: 4011027378723861373
+  ChildIds: 11711304477585927341
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 11711304477585927341
+  Name: "Craftsman Dining Table"
+  Transform {
+    Location {
+      X: 169.99942
+      Y: 1064.99731
+      Z: 995.809
+    }
+    Rotation {
+    }
+    Scale {
+      X: 11.5000029
+      Y: 17.75
+      Z: 16.8020744
+    }
+  }
+  ParentId: 12177996907394406195
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 12619734866397112129
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 12619734866397112129
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6541284485895121201
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 4011027378723861373
+  Name: "Flower Bellflower 01"
+  Transform {
+    Location {
+      X: 80
+      Y: 1890
+      Z: 3100
+    }
+    Rotation {
+      Pitch: 1.36603776e-05
+      Yaw: 179.999802
+      Roll: -90.0000229
+    }
+    Scale {
+      X: 9
+      Y: 0.1
+      Z: 7
+    }
+  }
+  ParentId: 12177996907394406195
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7170404211956574687
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13720633298918547843
+  Name: "Flower Bellflower 01"
+  Transform {
+    Location {
+      X: 80
+      Y: 285
+      Z: 3100
+    }
+    Rotation {
+      Roll: -89.9999771
+    }
+    Scale {
+      X: 9
+      Y: 0.1
+      Z: 7
+    }
+  }
+  ParentId: 12177996907394406195
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7170404211956574687
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 3505928324252071768
+  Name: "Flower Bellflower Patch 01"
+  Transform {
+    Location {
+      X: 110
+      Y: 1170
+      Z: 3100
+    }
+    Rotation {
+    }
+    Scale {
+      X: 4
+      Y: 5
+      Z: 0.1
+    }
+  }
+  ParentId: 12177996907394406195
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 18020975367606856005
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15625848397988835845
+  Name: "Flower Wild Lily 01"
+  Transform {
+    Location {
+      X: 135
+      Y: -155
+      Z: 3100
+    }
+    Rotation {
+      Yaw: -134.999863
+    }
+    Scale {
+      X: 10
+      Y: 10
+      Z: 0.2
+    }
+  }
+  ParentId: 12177996907394406195
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2290831223625684165
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 16237724044086063328
+  Name: "Flower Wild Lily 01"
+  Transform {
+    Location {
+      X: 180
+      Y: 2335
+      Z: 3100
+    }
+    Rotation {
+      Yaw: 24.9998856
+    }
+    Scale {
+      X: 10
+      Y: 10
+      Z: 0.2
+    }
+  }
+  ParentId: 12177996907394406195
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2290831223625684165
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 2924889660821867410
+  Name: "Flower Wild Lily 01"
+  Transform {
+    Location {
+      X: 135
+      Y: 360
+      Z: 3100
+    }
+    Rotation {
+      Yaw: -134.999863
+    }
+    Scale {
+      X: 13
+      Y: 13
+      Z: 0.2
+    }
+  }
+  ParentId: 12177996907394406195
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2290831223625684165
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 16893399523297490907
+  Name: "Flower Wild Lily 02"
+  Transform {
+    Location {
+      X: 159.99939
+      Y: 1125
+      Z: 3100
+    }
+    Rotation {
+      Yaw: -1.36603776e-05
+    }
+    Scale {
+      X: 13.000001
+      Y: 13.000001
+      Z: 0.200000018
+    }
+  }
+  ParentId: 12177996907394406195
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14816864290304546764
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 10495185926497154015
+  Name: "Flower Wild Lily 01"
+  Transform {
+    Location {
+      X: 180
+      Y: 1775
+      Z: 3100
+    }
+    Rotation {
+      Yaw: 24.9999104
+    }
+    Scale {
+      X: 13
+      Y: 13
+      Z: 0.2
+    }
+  }
+  ParentId: 12177996907394406195
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2290831223625684165
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9324335503501451942
+  Name: "Cube"
+  Transform {
+    Location {
+      X: 95
+      Y: 1065
+      Z: 3050
+    }
+    Rotation {
+    }
+    Scale {
+      X: 9.75000095
+      Y: 43.4999962
+      Z: 1
+    }
+  }
+  ParentId: 12177996907394406195
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10184847056121543272
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.25
+        G: 0.193708599
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7118866173006619857
+  Name: "Cube"
+  Transform {
+    Location {
+      X: 105
+      Y: 1060
+      Z: 3040
+    }
+    Rotation {
+    }
+    Scale {
+      X: 28.5
+      Y: 43.5
+      Z: 1
+    }
+  }
+  ParentId: 12177996907394406195
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7653252853218163032
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1.22457671
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1.22457671
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 14667998566305853038
+  Name: "Road 2-Lane Ramp 6m"
+  Transform {
+    Location {
+      X: -7090
+      Y: 8555
+      Z: 2240
+    }
+    Rotation {
+      Pitch: 64.9995575
+      Yaw: -89.9999161
+      Roll: 3.23226668e-05
+    }
+    Scale {
+      X: 0.5
+      Y: 0.5
+      Z: 0.5
+    }
+  }
+  ParentId: 12177996907394406195
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1424575464785519660
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7488460307553626229
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+        Overrides {
+          Name: "ma:Street_CenterStripe:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8230161190742321142
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9880001657260506509
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9909485920060432913
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+        Overrides {
+          Name: "ma:Street_CenterStripe:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10002383419359815373
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Road 2-Lane Ramp 6m"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -560
+            Y: -1035
+            Z: 2265
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 74.9992
+            Yaw: 90.0004196
+            Roll: 1.97913323e-05
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10136596610682842162
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10368267081330481194
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10585336784170841935
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+        Overrides {
+          Name: "ma:Street_CenterStripe:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15484043747897919394
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6601217003296282997
+    }
+  }
+}
+Objects {
+  Id: 6951150826990175779
+  Name: "Road 2-Lane Ramp 6m"
+  Transform {
+    Location {
+      X: -8415
+      Y: 8555
+      Z: 2240
+    }
+    Rotation {
+      Pitch: 64.9994507
+      Yaw: -89.999649
+      Roll: 2.42419192e-05
+    }
+    Scale {
+      X: 0.5
+      Y: 0.5
+      Z: 0.5
+    }
+  }
+  ParentId: 12177996907394406195
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1313649894745560893
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 1424575464785519660
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6501554057864782013
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7488460307553626229
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+        Overrides {
+          Name: "ma:Street_CenterStripe:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8230161190742321142
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9880001657260506509
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9909485920060432913
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+        Overrides {
+          Name: "ma:Street_CenterStripe:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10002383419359815373
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Road 2-Lane Ramp 6m"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 764.999
+            Y: -1035
+            Z: 2265.00049
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 74.9992752
+            Yaw: 90.0001526
+            Roll: -0.000897212245
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10007463424538767290
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10136596610682842162
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10368267081330481194
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10585336784170841935
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+        Overrides {
+          Name: "ma:Street_CenterStripe:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15484043747897919394
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6601217003296282997
+    }
+  }
+}
+Objects {
+  Id: 14207494344925647371
+  Name: "Road 2-Lane Ramp 6m"
+  Transform {
+    Location {
+      X: -9250
+      Y: 7690
+      Z: 2240
+    }
+    Rotation {
+      Pitch: 64.9998627
+    }
+    Scale {
+      X: 0.5
+      Y: 0.5
+      Z: 0.5
+    }
+  }
+  ParentId: 12177996907394406195
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1424575464785519660
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7488460307553626229
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+        Overrides {
+          Name: "ma:Street_CenterStripe:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8230161190742321142
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9880001657260506509
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9909485920060432913
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+        Overrides {
+          Name: "ma:Street_CenterStripe:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10002383419359815373
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Road 2-Lane Ramp 6m"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1370
+            Y: 2460
+            Z: 2240
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 64.9998627
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10136596610682842162
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10368267081330481194
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10585336784170841935
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+        Overrides {
+          Name: "ma:Street_CenterStripe:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15484043747897919394
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6601217003296282997
+    }
+  }
+}
+Objects {
+  Id: 11825348772393725786
+  Name: "Road 2-Lane Ramp 6m"
+  Transform {
+    Location {
+      X: -9250
+      Y: 6365
+      Z: 2240
+    }
+    Rotation {
+      Pitch: 64.9999084
+    }
+    Scale {
+      X: 0.5
+      Y: 0.5
+      Z: 0.5
+    }
+  }
+  ParentId: 12177996907394406195
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1313649894745560893
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 1424575464785519660
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6501554057864782013
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7488460307553626229
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+        Overrides {
+          Name: "ma:Street_CenterStripe:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8230161190742321142
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9880001657260506509
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9909485920060432913
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+        Overrides {
+          Name: "ma:Street_CenterStripe:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10002383419359815373
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Road 2-Lane Ramp 6m"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1390
+            Y: 1135
+            Z: 2240
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 64.9998856
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10007463424538767290
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10136596610682842162
+      value {
+        Overrides {
+          Name: "ma:Street_Curb:id"
+          AssetReference {
+            Id: 2671347135387560473
+          }
+        }
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10368267081330481194
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10585336784170841935
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+        Overrides {
+          Name: "ma:Street_CenterStripe:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15484043747897919394
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6601217003296282997
+    }
+  }
+}
+Objects {
+  Id: 15157383250517280524
+  Name: "Road 2-Lane Ramp 6m"
+  Transform {
+    Location {
+      X: -9250
+      Y: 7690
+      Z: 2240
+    }
+    Rotation {
+      Pitch: 64.9998627
+    }
+    Scale {
+      X: 0.5
+      Y: 0.5
+      Z: 0.5
+    }
+  }
+  ParentId: 12177996907394406195
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1313649894745560893
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 12594834276768492639
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 1424575464785519660
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6501554057864782013
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 12594834276768492639
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7488460307553626229
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+        Overrides {
+          Name: "ma:Street_CenterStripe:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8230161190742321142
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9880001657260506509
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9909485920060432913
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+        Overrides {
+          Name: "ma:Street_CenterStripe:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10002383419359815373
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Road 2-Lane Ramp 6m"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1595
+            Y: -255
+            Z: 2240
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 64.9991837
+            Yaw: -179.999985
+            Roll: 7.59535687e-05
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10007463424538767290
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 12594834276768492639
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10136596610682842162
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10368267081330481194
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10585336784170841935
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+        Overrides {
+          Name: "ma:Street_CenterStripe:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15484043747897919394
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6601217003296282997
+    }
+  }
+}
+Objects {
+  Id: 4337413077372813420
+  Name: "Road 2-Lane Ramp 6m"
+  Transform {
+    Location {
+      X: -9250
+      Y: 6365
+      Z: 2240
+    }
+    Rotation {
+      Pitch: 64.9999084
+    }
+    Scale {
+      X: 0.5
+      Y: 0.5
+      Z: 0.5
+    }
+  }
+  ParentId: 12177996907394406195
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1313649894745560893
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 1424575464785519660
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6501554057864782013
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7488460307553626229
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+        Overrides {
+          Name: "ma:Street_CenterStripe:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8230161190742321142
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9880001657260506509
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9909485920060432913
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+        Overrides {
+          Name: "ma:Street_CenterStripe:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10002383419359815373
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Road 2-Lane Ramp 6m"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1605
+            Y: 1069.99902
+            Z: 2240
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 64.9992
+            Yaw: -179.999954
+            Roll: 4.01246652e-05
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10007463424538767290
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10136596610682842162
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10368267081330481194
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10585336784170841935
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+        Overrides {
+          Name: "ma:Street_CenterStripe:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15484043747897919394
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6601217003296282997
+    }
+  }
+}
+Objects {
+  Id: 11837154247680548889
+  Name: "Road 2-Lane Ramp 6m"
+  Transform {
+    Location {
+      X: -9250
+      Y: 5020
+      Z: 2240
+    }
+    Rotation {
+      Pitch: 64.9998627
+    }
+    Scale {
+      X: 0.5
+      Y: 0.5
+      Z: 0.5
+    }
+  }
+  ParentId: 12177996907394406195
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1313649894745560893
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 1424575464785519660
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 12594834276768492639
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6501554057864782013
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7488460307553626229
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+        Overrides {
+          Name: "ma:Street_CenterStripe:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8230161190742321142
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9880001657260506509
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 12594834276768492639
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9909485920060432913
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+        Overrides {
+          Name: "ma:Street_CenterStripe:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10002383419359815373
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Road 2-Lane Ramp 6m"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1595.00049
+            Y: 2414.99805
+            Z: 2240
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 64.9990921
+            Yaw: -179.999954
+            Roll: 7.59534742e-05
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10007463424538767290
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 12594834276768492639
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10368267081330481194
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10585336784170841935
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+        Overrides {
+          Name: "ma:Street_CenterStripe:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15484043747897919394
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6601217003296282997
+    }
+  }
+}
+Objects {
+  Id: 3673197027015206827
+  Name: "Road 2-Lane Ramp 6m"
+  Transform {
+    Location {
+      X: -9250
+      Y: -4975
+      Z: 2240
+    }
+    Rotation {
+      Pitch: 64.9999084
+    }
+    Scale {
+      X: 0.5
+      Y: 0.5
+      Z: 0.5
+    }
+  }
+  ParentId: 12177996907394406195
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1424575464785519660
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7488460307553626229
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+        Overrides {
+          Name: "ma:Street_CenterStripe:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8230161190742321142
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9880001657260506509
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9909485920060432913
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+        Overrides {
+          Name: "ma:Street_CenterStripe:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10002383419359815373
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Road 2-Lane Ramp 6m"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 790
+            Y: 3325
+            Z: 2240
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 64.9995575
+            Yaw: -89.9999161
+            Roll: 3.23226668e-05
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10136596610682842162
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10368267081330481194
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10585336784170841935
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+        Overrides {
+          Name: "ma:Street_CenterStripe:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15484043747897919394
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6601217003296282997
+    }
+  }
+}
+Objects {
+  Id: 12833412882805940536
+  Name: "Road 2-Lane Ramp 6m"
+  Transform {
+    Location {
+      X: -9250
+      Y: -4975
+      Z: 2240
+    }
+    Rotation {
+      Pitch: 64.9999084
+    }
+    Scale {
+      X: 0.5
+      Y: 0.5
+      Z: 0.5
+    }
+  }
+  ParentId: 12177996907394406195
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1313649894745560893
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 1424575464785519660
+      value {
+        Overrides {
+          Name: "ma:Street_Curb:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6501554057864782013
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7488460307553626229
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+        Overrides {
+          Name: "ma:Street_CenterStripe:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8230161190742321142
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9909485920060432913
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+        Overrides {
+          Name: "ma:Street_CenterStripe:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10002383419359815373
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Road 2-Lane Ramp 6m"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1370
+            Y: -210
+            Z: 2240
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 64.9998627
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10007463424538767290
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10368267081330481194
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10585336784170841935
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+        Overrides {
+          Name: "ma:Street_CenterStripe:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15484043747897919394
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6601217003296282997
+    }
+  }
+}
+Objects {
+  Id: 7065056263049769259
+  Name: "Road 2-Lane Ramp 6m"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12177996907394406195
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1313649894745560893
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 1424575464785519660
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6501554057864782013
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7488460307553626229
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+        Overrides {
+          Name: "ma:Street_CenterStripe:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8230161190742321142
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9880001657260506509
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9909485920060432913
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+        Overrides {
+          Name: "ma:Street_CenterStripe:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10002383419359815373
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Road 2-Lane Ramp 6m"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -535
+            Y: 3335
+            Z: 2240
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 64.9994278
+            Yaw: -89.9996185
+            Roll: 2.82822148e-05
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10007463424538767290
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10136596610682842162
+      value {
+        Overrides {
+          Name: "ma:Street_Sidewalk:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10368267081330481194
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10585336784170841935
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+        Overrides {
+          Name: "ma:Street_CenterStripe:id"
+          AssetReference {
+            Id: 2732844152825097212
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15484043747897919394
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7653252853218163032
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6601217003296282997
+    }
+  }
+}
+Objects {
+  Id: 7687174483767545270
+  Name: "Shelter Roof"
+  Transform {
+    Location {
+      X: 124.285057
+      Y: 276.467529
+      Z: 79.9597778
+    }
+    Rotation {
+      Pitch: 86.8791351
+      Yaw: 125.51387
+      Roll: 62.2123909
+    }
+    Scale {
+      X: 0.916908205
+      Y: 9.6469717
+      Z: 5.84796286
+    }
+  }
+  ParentId: 16572818312647089415
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 15993422133760117570
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 436792038348082179
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 1255063716760981247
+  Name: "Large Wood Beam 8m"
+  Transform {
+    Location {
+      X: 541.745422
+      Y: 73.2835846
+      Z: -487.109
+    }
+    Rotation {
+      Pitch: 90
+      Yaw: -1.82138374e-05
+      Roll: -9.15527344e-05
+    }
+    Scale {
+      X: 0.77137655
+      Y: 0.375488102
+      Z: 0.375488222
+    }
+  }
+  ParentId: 16572818312647089415
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13451967419586926162
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 4454844400096637141
+  Name: "Large Wood Beam 8m"
+  Transform {
+    Location {
+      X: 299.693
+      Y: -439.685333
+      Z: -487.109
+    }
+    Rotation {
+      Pitch: 90
+      Yaw: -1.82138374e-05
+      Roll: -9.15527344e-05
+    }
+    Scale {
+      X: 0.77137655
+      Y: 0.375488102
+      Z: 0.375488222
+    }
+  }
+  ParentId: 16572818312647089415
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13451967419586926162
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 6805938336749624776
+  Name: "Large Wood Beam 8m"
+  Transform {
+    Location {
+      X: -83.5751
+      Y: -250.835739
+      Z: -487.109
+    }
+    Rotation {
+      Pitch: 90
+      Yaw: -4.55345935e-06
+      Roll: -3.05175781e-05
+    }
+    Scale {
+      X: 0.778004825
+      Y: 0.375488102
+      Z: 0.375488222
+    }
+  }
+  ParentId: 16572818312647089415
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13451967419586926162
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 14290330670385154172
+  Name: "Large Wood Beam 8m"
+  Transform {
+    Location {
+      X: 158.476135
+      Y: 262.131042
+      Z: -487.109
+    }
+    Rotation {
+      Pitch: 90
+      Yaw: -4.55345935e-06
+      Roll: -3.05175781e-05
+    }
+    Scale {
+      X: 0.778004825
+      Y: 0.375488102
+      Z: 0.375488222
+    }
+  }
+  ParentId: 16572818312647089415
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13451967419586926162
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 6483243666340365252
+  Name: "Tent Curtain"
+  Transform {
+    Location {
+      Y: -0.000244140625
+      Z: -0.000122070313
+    }
+    Rotation {
+      Pitch: -64.6228256
+      Yaw: -30.2734966
+      Roll: -85.9735
+    }
+    Scale {
+      X: 1.34474695
+      Y: -1.33887553
+      Z: 1.10904276
+    }
+  }
+  ParentId: 16572818312647089415
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 15993422133760117570
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 6304302580022098235
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3988682018360404677
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 5664945724858814791
+  Name: "Camp Rug"
+  Transform {
+    Location {
+      X: -41.0390625
+      Y: 456.360352
+      Z: 954.356079
+    }
+    Rotation {
+      Yaw: 135.962112
+    }
+    Scale {
+      X: 0.778702199
+      Y: 0.778702199
+      Z: 0.778702199
+    }
+  }
+  ParentId: 12720467865097394105
+  ChildIds: 5754068738746776372
+  ChildIds: 2797645503494551886
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 2797645503494551886
+  Name: "Carpet Tile 02"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.71040606
+      Y: 1.71040606
+      Z: 2.52833271
+    }
+  }
+  ParentId: 5664945724858814791
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2264848090750277462
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.171875
+        G: 0.0207796618
+        B: 0.00954863615
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16968711894981973011
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 5754068738746776372
+  Name: "Carpet Tile 02"
+  Transform {
+    Location {
+      Z: 2.43457031
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.32341266
+      Y: 1.32341266
+      Z: 1.95627558
+    }
+  }
+  ParentId: 5664945724858814791
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14895135613533481689
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.201315343
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.521101
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12005190471954197276
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 10485768014595164334
+  Name: "Stairs"
+  Transform {
+    Location {
+      X: -5645.97217
+      Y: -2275.47656
+      Z: -1291.26025
+    }
+    Rotation {
+      Yaw: 14.8638449
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12720467865097394105
+  ChildIds: 395349812488595533
+  ChildIds: 7076440332125356227
+  ChildIds: 9990839498158884710
+  ChildIds: 11478525171230162483
+  ChildIds: 7537406426890325678
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 7537406426890325678
+  Name: "Fantasy Castle Stairs 01 - 150cm"
+  Transform {
+    Location {
+      X: 393.292
+      Y: 1.29882813
+    }
+    Rotation {
+      Yaw: -89.9999847
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10485768014595164334
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9842143421296066252
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 11478525171230162483
+  Name: "Fantasy Castle Stairs 01 - 150cm"
+  Transform {
+    Location {
+      X: 203.59668
+      Y: 1.29882813
+      Z: 144.5
+    }
+    Rotation {
+      Yaw: -89.9999847
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10485768014595164334
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9842143421296066252
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 9990839498158884710
+  Name: "Fantasy Castle Stairs 01 - 150cm"
+  Transform {
+    Location {
+      X: 10.8173828
+      Y: -0.866210938
+      Z: 291.421875
+    }
+    Rotation {
+      Yaw: -89.9999847
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10485768014595164334
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9842143421296066252
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 7076440332125356227
+  Name: "Fantasy Castle Stairs 01 - 150cm"
+  Transform {
+    Location {
+      X: -203.852539
+      Y: -0.866210938
+      Z: 410.879883
+    }
+    Rotation {
+      Yaw: -89.9999847
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10485768014595164334
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9842143421296066252
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 395349812488595533
+  Name: "Fantasy Castle Stairs 01 - 150cm"
+  Transform {
+    Location {
+      X: -403.852539
+      Y: -0.866210938
+      Z: 539.671387
+    }
+    Rotation {
+      Yaw: -89.9999847
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10485768014595164334
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9842143421296066252
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
   Id: 13799856604506090651
   Name: "Wood"
   Transform {
     Location {
-      X: -146.133789
-      Y: 1147.61963
-      Z: 881.555237
+      X: 275.115234
+      Y: 1266.63232
+      Z: 934.851379
     }
     Rotation {
     }
@@ -38736,7 +43457,6 @@ Objects {
   ChildIds: 18212996462796625177
   ChildIds: 6220650335433852161
   ChildIds: 2883078910803198261
-  ChildIds: 15272583029678642625
   ChildIds: 2508286504679989400
   ChildIds: 12448618548321790147
   ChildIds: 3150742175031347670
@@ -38987,51 +43707,6 @@ Objects {
     }
     Rotation {
       Yaw: 136.659927
-    }
-    Scale {
-      X: 0.420449346
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13799856604506090651
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3092595844519167267
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 15272583029678642625
-  Name: "Large Wood Board 8m"
-  Transform {
-    Location {
-      X: 48.1679688
-      Y: -308.699219
-    }
-    Rotation {
-      Pitch: 62.7652
-      Yaw: -8.75476837
-      Roll: 170.206985
     }
     Scale {
       X: 0.420449346
@@ -39764,8 +44439,8 @@ Objects {
   Name: "Sandbags"
   Transform {
     Location {
-      X: 728.299316
-      Y: 243.344818
+      X: 728.298828
+      Y: -2173.302
       Z: 916.653137
     }
     Rotation {
@@ -40106,7 +44781,7 @@ Objects {
   Name: "Crates"
   Transform {
     Location {
-      X: 98.2092285
+      X: -2684.77246
       Y: 356.421143
       Z: 872.109558
     }
@@ -40119,15 +44794,43 @@ Objects {
     }
   }
   ParentId: 12720467865097394105
-  ChildIds: 10257041469552552274
-  ChildIds: 8366631048896785845
-  ChildIds: 15837848281371257780
-  ChildIds: 15822761859452573714
-  ChildIds: 4532146275527062028
   ChildIds: 17010275560412830342
   ChildIds: 3262891582499324087
   ChildIds: 4318921411186493478
   ChildIds: 5118790862824180988
+  ChildIds: 8569378407447474584
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 8569378407447474584
+  Name: "Rectangle Crate"
+  Transform {
+    Location {
+      X: 2615.4248
+      Y: -1409.21558
+      Z: 74.3384399
+    }
+    Rotation {
+      Yaw: -27.0171814
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9580696146300695488
   ChildIds: 7132384886095364058
   ChildIds: 8287909785846684041
   Collidable_v2 {
@@ -40148,9 +44851,9 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: -240.612305
-      Y: 197.100342
-      Z: 122.81958
+      X: -0.956054688
+      Y: -1.54467773
+      Z: 63.0380859
     }
     Rotation {
       Yaw: -96.2824097
@@ -40161,7 +44864,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9580696146300695488
+  ParentId: 8569378407447474584
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -40192,12 +44895,11 @@ Objects {
   Name: "Small Open Crate"
   Transform {
     Location {
-      X: -238.699219
-      Y: 200.189697
-      Z: 59.7815247
+      X: 0.95703125
+      Y: 1.54467773
     }
     Rotation {
-      Yaw: 82.0363617
+      Yaw: 82.0363464
     }
     Scale {
       X: 1
@@ -40205,7 +44907,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9580696146300695488
+  ParentId: 8569378407447474584
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -40236,12 +44938,12 @@ Objects {
   Name: "Simple Crate 150cm"
   Transform {
     Location {
-      X: -261.470703
-      Y: -545.249
-      Z: 47.6774292
+      X: 2051.46777
+      Y: 267.986572
+      Z: 39.8693237
     }
     Rotation {
-      Yaw: -31.6115723
+      Yaw: -163.748825
     }
     Scale {
       X: 1
@@ -40280,17 +44982,17 @@ Objects {
   Name: "Simple Crate 150cm"
   Transform {
     Location {
-      X: 479.222656
-      Y: -665.506348
-      Z: 51.4740601
+      X: 2699.59277
+      Y: -1255.66577
+      Z: 67.1868896
     }
     Rotation {
-      Yaw: -15.4114704
+      Yaw: -15.4114685
     }
     Scale {
-      X: 1.45720112
-      Y: 1.45720112
-      Z: 1.45720112
+      X: 1.16748619
+      Y: 1.16748619
+      Z: 1.16748619
     }
   }
   ParentId: 9580696146300695488
@@ -40324,11 +45026,12 @@ Objects {
   Name: "Simple Crate 150cm"
   Transform {
     Location {
-      X: -79.2587891
-      Y: -666.348389
-      Z: 56.7996826
+      X: 1756.67188
+      Y: 214.117432
+      Z: -82.008728
     }
     Rotation {
+      Yaw: -132.137466
     }
     Scale {
       X: 1
@@ -40367,12 +45070,12 @@ Objects {
   Name: "Small Open Crate"
   Transform {
     Location {
-      X: 132.269531
-      Y: -577.810059
-      Z: 54.3012085
+      X: 1911.89844
+      Y: 122.164307
+      Z: 43.5976563
     }
     Rotation {
-      Yaw: -109.265068
+      Yaw: 118.597404
     }
     Scale {
       X: 1
@@ -40393,222 +45096,6 @@ Objects {
   CoreMesh {
     MeshAsset {
       Id: 1067381764946714427
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 4532146275527062028
-  Name: "Small Crate Lid"
-  Transform {
-    Location {
-      X: -199.962891
-      Y: 384.920166
-      Z: 162.874939
-    }
-    Rotation {
-      Yaw: -50.1405334
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9580696146300695488
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 10016794863224341395
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 15822761859452573714
-  Name: "Small Open Crate"
-  Transform {
-    Location {
-      X: -48.2783203
-      Y: 329.973389
-      Z: 180.164124
-    }
-    Rotation {
-      Yaw: 63.0116882
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9580696146300695488
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 1067381764946714427
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 15837848281371257780
-  Name: "Simple Crate 150cm"
-  Transform {
-    Location {
-      X: -198.594727
-      Y: 381.436768
-      Z: 13.9819946
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9580696146300695488
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15049846606931455745
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 8366631048896785845
-  Name: "Simple Crate 150cm"
-  Transform {
-    Location {
-      X: -38.8525391
-      Y: 485.262939
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9580696146300695488
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15049846606931455745
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 10257041469552552274
-  Name: "Simple Crate 150cm"
-  Transform {
-    Location {
-      X: -46.5429688
-      Y: 328.071533
-      Z: 29.9784546
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9580696146300695488
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15049846606931455745
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -40627,9 +45114,9 @@ Objects {
   Name: "Tent"
   Transform {
     Location {
-      X: 281.837891
-      Y: 257.078613
-      Z: 915.435913
+      X: 215.100586
+      Y: -409.606934
+      Z: 946.228638
     }
     Rotation {
       Yaw: 3.32664037
@@ -40646,8 +45133,6 @@ Objects {
   ChildIds: 7715721261085817162
   ChildIds: 11724426698324761429
   ChildIds: 8301117760170956476
-  ChildIds: 12422303400708769352
-  ChildIds: 18158575801609093460
   ChildIds: 5750662580765180681
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -40823,93 +45308,6 @@ Objects {
   }
 }
 Objects {
-  Id: 18158575801609093460
-  Name: "Bookshelf? Desk?"
-  Transform {
-    Location {
-      X: 175.687271
-      Y: -169.161194
-      Z: 12.5073881
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1.35861325
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16489317527273204640
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 198353679974341757
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 12422303400708769352
-  Name: "Bed "
-  Transform {
-    Location {
-      X: 141.894638
-      Y: 162.517151
-    }
-    Rotation {
-    }
-    Scale {
-      X: 3.25
-      Y: 1.5
-      Z: 0.5
-    }
-  }
-  ParentId: 16489317527273204640
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 198353679974341757
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
   Id: 8301117760170956476
   Name: "Large Round Wood Beam 8m"
   Transform {
@@ -40966,14 +45364,14 @@ Objects {
   Name: "Tent Floor"
   Transform {
     Location {
-      X: 128.424561
-      Y: -6.91647291
+      X: 106.792404
+      Y: -5.65911293
     }
     Rotation {
     }
     Scale {
-      X: 6.1476965
-      Y: 5.34251
+      X: 5.43264627
+      Y: 5.34250498
       Z: 0.182625145
     }
   }

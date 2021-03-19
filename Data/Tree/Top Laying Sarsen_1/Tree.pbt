@@ -1,7 +1,7 @@
 Name: "Top Laying Sarsen_1"
-RootId: 7118055372379905317
+RootId: 8513984981421112221
 Objects {
-  Id: 13521543144147928053
+  Id: 651181062836862247
   Name: "130"
   Transform {
     Location {
@@ -20,7 +20,7 @@ Objects {
       Z: 0.786058366
     }
   }
-  ParentId: 7118055372379905317
+  ParentId: 8513984981421112221
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -68,7 +68,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15717002029773567309
+  Id: 9904624521282918465
   Name: "158"
   Transform {
     Location {
@@ -85,7 +85,7 @@ Objects {
       Z: 0.666356266
     }
   }
-  ParentId: 7118055372379905317
+  ParentId: 8513984981421112221
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -133,7 +133,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5459631232687645737
+  Id: 8854063236859834008
   Name: "122"
   Transform {
     Location {
@@ -152,7 +152,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 7118055372379905317
+  ParentId: 8513984981421112221
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -196,7 +196,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1976840065402221412
+  Id: 11770350657982197155
   Name: "101"
   Transform {
     Location {
@@ -215,7 +215,7 @@ Objects {
       Z: 0.609361589
     }
   }
-  ParentId: 7118055372379905317
+  ParentId: 8513984981421112221
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -251,7 +251,7 @@ Objects {
   }
 }
 Objects {
-  Id: 565010802701721376
+  Id: 2361129373731244935
   Name: "102"
   Transform {
     Location {
@@ -268,7 +268,7 @@ Objects {
       Z: 0.688148201
     }
   }
-  ParentId: 7118055372379905317
+  ParentId: 8513984981421112221
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -304,7 +304,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5380352911437619486
+  Id: 13534402246233440734
   Name: "105"
   Transform {
     Location {
@@ -323,7 +323,7 @@ Objects {
       Z: 0.786059558
     }
   }
-  ParentId: 7118055372379905317
+  ParentId: 8513984981421112221
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -359,7 +359,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5601776204177723206
+  Id: 17606625891328415745
   Name: "107"
   Transform {
     Location {
@@ -376,7 +376,7 @@ Objects {
       Z: 0.786058366
     }
   }
-  ParentId: 7118055372379905317
+  ParentId: 8513984981421112221
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -412,7 +412,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16169540982204212448
+  Id: 962049529282036653
   Name: "152"
   Transform {
     Location {
@@ -429,7 +429,7 @@ Objects {
       Z: 0.786058366
     }
   }
-  ParentId: 7118055372379905317
+  ParentId: 8513984981421112221
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -465,7 +465,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5131592732475612034
+  Id: 11759515429829896118
   Name: "154"
   Transform {
     Location {
@@ -484,7 +484,7 @@ Objects {
       Z: 0.611460745
     }
   }
-  ParentId: 7118055372379905317
+  ParentId: 8513984981421112221
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"

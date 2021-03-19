@@ -1,4 +1,13 @@
 Assets {
+  Id: 18020975367606856005
+  Name: "Flower Bellflower Patch 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_flower_bell_patch_001_ref"
+  }
+}
+Assets {
   Id: 17765335935549099671
   Name: "Grass Tall"
   PlatformAssetType: 1
@@ -8,12 +17,30 @@ Assets {
   }
 }
 Assets {
+  Id: 17306892237270596115
+  Name: "Text 04: O"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F7_Text_014"
+  }
+}
+Assets {
   Id: 17225486284988076514
   Name: "Text 05: Y"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F6_Text_024"
+  }
+}
+Assets {
+  Id: 16968711894981973011
+  Name: "Carpet Tile 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_carpet_tile_001"
   }
 }
 Assets {
@@ -131,6 +158,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_truncated_teardrop_001"
+  }
+}
+Assets {
+  Id: 14816864290304546764
+  Name: "Flower Wild Lily 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_flower_wild_lily_002_ref"
   }
 }
 Assets {
@@ -323,6 +359,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12095835209017042614
+  Name: "Cube"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_002"
+  }
+}
+Assets {
   Id: 12005190471954197276
   Name: "Carpet Tile 02"
   PlatformAssetType: 1
@@ -395,6 +440,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10880116966981183643
+  Name: "Text 05: ~"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F6_Text_036"
+  }
+}
+Assets {
   Id: 10831211583006885035
   Name: "Cylinder - Chamfered Polished"
   PlatformAssetType: 1
@@ -440,6 +494,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9842143421296066252
+  Name: "Fantasy Castle Stairs 01 - 150cm"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_stairs_001_150cm"
+  }
+}
+Assets {
   Id: 9805942287566312257
   Name: "Glass 01"
   PlatformAssetType: 2
@@ -455,6 +518,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_metal_iron_001"
+  }
+}
+Assets {
+  Id: 9571615185600317500
+  Name: "Gem - Radiant Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_gem_radiant_polished_001"
   }
 }
 Assets {
@@ -491,6 +563,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fan_book_collection_004_ref"
+  }
+}
+Assets {
+  Id: 9296031306717703808
+  Name: "Text 05: A"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F6_Text_000"
   }
 }
 Assets {
@@ -611,6 +692,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7170404211956574687
+  Name: "Flower Bellflower 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_flower_bell_001_ref"
+  }
+}
+Assets {
   Id: 7133138409255185977
   Name: "Sphere - Half Thin"
   PlatformAssetType: 1
@@ -662,6 +752,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_crescent_002"
+  }
+}
+Assets {
+  Id: 6541284485895121201
+  Name: "Craftsman Dining Table"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_table_dining_001"
   }
 }
 Assets {
@@ -923,6 +1022,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_mil_sandbag_002"
+  }
+}
+Assets {
+  Id: 436792038348082179
+  Name: "Pipe - Quarter Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_quarter-pipe_002"
   }
 }
 Assets {

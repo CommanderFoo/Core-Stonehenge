@@ -1,7 +1,7 @@
 Name: "Top Laying Sarsen"
-RootId: 8513984981421112221
+RootId: 3992830829362342688
 Objects {
-  Id: 651181062836862247
+  Id: 9825323539100424148
   Name: "130"
   Transform {
     Location {
@@ -20,12 +20,12 @@ Objects {
       Z: 0.786058366
     }
   }
-  ParentId: 8513984981421112221
+  ParentId: 3992830829362342688
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 347859619137269343
+        Id: 8936763371593318026
       }
     }
     Overrides {
@@ -68,7 +68,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9904624521282918465
+  Id: 2618687137171719276
   Name: "158"
   Transform {
     Location {
@@ -85,12 +85,12 @@ Objects {
       Z: 0.666356266
     }
   }
-  ParentId: 8513984981421112221
+  ParentId: 3992830829362342688
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 347859619137269343
+        Id: 8936763371593318026
       }
     }
     Overrides {
@@ -133,7 +133,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8854063236859834008
+  Id: 17007124425754537985
   Name: "122"
   Transform {
     Location {
@@ -152,12 +152,12 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 8513984981421112221
+  ParentId: 3992830829362342688
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 347859619137269343
+        Id: 8936763371593318026
       }
     }
     Overrides {
@@ -196,7 +196,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11770350657982197155
+  Id: 9092266503864091073
   Name: "101"
   Transform {
     Location {
@@ -215,12 +215,12 @@ Objects {
       Z: 0.609361589
     }
   }
-  ParentId: 8513984981421112221
+  ParentId: 3992830829362342688
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 6061518345080760809
+        Id: 8936763371593318026
       }
     }
   }
@@ -251,7 +251,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2361129373731244935
+  Id: 14867238203826155288
   Name: "102"
   Transform {
     Location {
@@ -268,12 +268,12 @@ Objects {
       Z: 0.688148201
     }
   }
-  ParentId: 8513984981421112221
+  ParentId: 3992830829362342688
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 347859619137269343
+        Id: 8936763371593318026
       }
     }
   }
@@ -304,7 +304,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13534402246233440734
+  Id: 7189875138124418624
   Name: "105"
   Transform {
     Location {
@@ -323,12 +323,12 @@ Objects {
       Z: 0.786059558
     }
   }
-  ParentId: 8513984981421112221
+  ParentId: 3992830829362342688
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 347859619137269343
+        Id: 8936763371593318026
       }
     }
   }
@@ -359,7 +359,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17606625891328415745
+  Id: 9415154459650786620
   Name: "107"
   Transform {
     Location {
@@ -376,12 +376,12 @@ Objects {
       Z: 0.786058366
     }
   }
-  ParentId: 8513984981421112221
+  ParentId: 3992830829362342688
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 6061518345080760809
+        Id: 8936763371593318026
       }
     }
   }
@@ -412,7 +412,7 @@ Objects {
   }
 }
 Objects {
-  Id: 962049529282036653
+  Id: 1156222375359508449
   Name: "152"
   Transform {
     Location {
@@ -429,12 +429,12 @@ Objects {
       Z: 0.786058366
     }
   }
-  ParentId: 8513984981421112221
+  ParentId: 3992830829362342688
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 347859619137269343
+        Id: 8936763371593318026
       }
     }
   }
@@ -465,7 +465,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11759515429829896118
+  Id: 13388323992635189253
   Name: "154"
   Transform {
     Location {
@@ -484,12 +484,12 @@ Objects {
       Z: 0.611460745
     }
   }
-  ParentId: 8513984981421112221
+  ParentId: 3992830829362342688
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 6061518345080760809
+        Id: 8936763371593318026
       }
     }
   }

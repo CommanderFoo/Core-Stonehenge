@@ -1,46 +1,13 @@
 Name: "Dry"
-RootId: 121114553617679531
+RootId: 7622468189874787412
 Objects {
-  Id: 3322984962222113543
-  Name: "Bluestone Rocks"
-  Transform {
-    Location {
-      X: -28.581543
-      Y: 24.548584
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 121114553617679531
-  ChildIds: 17507761675683140033
-  ChildIds: 11688328363199132353
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    Model {
-    }
-  }
-}
-Objects {
-  Id: 11688328363199132353
+  Id: 10986638437840457280
   Name: "Standing Bluestone"
   Transform {
     Location {
-      X: 226.005371
-      Y: -214.674316
-      Z: 57.8701019
+      X: 197.423843
+      Y: -190.125702
+      Z: 57.8701706
     }
     Rotation {
     }
@@ -50,7 +17,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3322984962222113543
+  ParentId: 7622468189874787412
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -66,16 +33,16 @@ Objects {
   }
 }
 Objects {
-  Id: 17507761675683140033
+  Id: 4172426113375977631
   Name: "Broken Bluestone"
   Transform {
     Location {
-      X: -864.790039
-      Y: 1036.59375
-      Z: 9.83995056
+      X: -893.37146
+      Y: 1061.14246
+      Z: 9.83999062
     }
     Rotation {
-      Yaw: -169.996277
+      Yaw: -169.996262
     }
     Scale {
       X: 0.491552263
@@ -83,7 +50,7 @@ Objects {
       Z: 0.491552263
     }
   }
-  ParentId: 3322984962222113543
+  ParentId: 7622468189874787412
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -99,48 +66,13 @@ Objects {
   }
 }
 Objects {
-  Id: 14394247268195157358
-  Name: "Sarsen Rocks"
-  Transform {
-    Location {
-      X: 28.581543
-      Y: -24.548584
-      Z: 166.496429
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 121114553617679531
-  ChildIds: 13047957303374723115
-  ChildIds: 9405132596137673921
-  ChildIds: 8513984981421112221
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    Model {
-    }
-  }
-}
-Objects {
-  Id: 8513984981421112221
+  Id: 3992830829362342688
   Name: "Top Laying Sarsen"
   Transform {
     Location {
-      X: 512.494
-      Y: -179.447128
-      Z: 334.306458
+      X: 541.075317
+      Y: -203.995804
+      Z: 500.80304
     }
     Rotation {
     }
@@ -150,7 +82,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14394247268195157358
+  ParentId: 7622468189874787412
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -166,13 +98,13 @@ Objects {
   }
 }
 Objects {
-  Id: 9405132596137673921
+  Id: 5773061454158822881
   Name: "Standing Sarsen"
   Transform {
     Location {
-      X: 185.020187
-      Y: -74.2323685
-      Z: -112.778152
+      X: 213.60144
+      Y: -98.7810287
+      Z: 53.7184296
     }
     Rotation {
     }
@@ -182,7 +114,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14394247268195157358
+  ParentId: 7622468189874787412
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -198,13 +130,13 @@ Objects {
   }
 }
 Objects {
-  Id: 13047957303374723115
+  Id: 10006300971085763045
   Name: "Fallen Sarsen"
   Transform {
     Location {
-      X: -517.87146
-      Y: -57.4816093
-      Z: -242.627563
+      X: -489.290161
+      Y: -82.0302124
+      Z: -76.131279
     }
     Rotation {
     }
@@ -214,7 +146,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14394247268195157358
+  ParentId: 7622468189874787412
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

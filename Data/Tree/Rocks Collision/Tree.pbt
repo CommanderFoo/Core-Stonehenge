@@ -62,7 +62,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Standing Bluestone_1"
+    FilePartitionName: "Standing Bluestone_2"
   }
 }
 Objects {
@@ -95,7 +95,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Broken Bluestone_1"
+    FilePartitionName: "Broken Bluestone_2"
   }
 }
 Objects {
@@ -162,7 +162,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Top Laying Sarsen_1"
+    FilePartitionName: "Top Laying Sarsen_2"
   }
 }
 Objects {
@@ -194,7 +194,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Standing Sarsen_1"
+    FilePartitionName: "Standing Sarsen_2"
   }
 }
 Objects {
@@ -226,6 +226,6 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Fallen Sarsen_1"
+    FilePartitionName: "Fallen Sarsen_2"
   }
 }

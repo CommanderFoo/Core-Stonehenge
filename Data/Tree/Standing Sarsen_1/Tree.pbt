@@ -1,7 +1,7 @@
 Name: "Standing Sarsen_1"
-RootId: 14622042810338484048
+RootId: 9405132596137673921
 Objects {
-  Id: 6810715745990880226
+  Id: 12336338323505012453
   Name: "60"
   Transform {
     Location {
@@ -18,10 +18,10 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14622042810338484048
-  ChildIds: 9004167562564745707
-  ChildIds: 8458849050873220000
-  ChildIds: 15105682908836638355
+  ParentId: 9405132596137673921
+  ChildIds: 8826598488786747546
+  ChildIds: 15757724155990948203
+  ChildIds: 10066136232912683764
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -36,7 +36,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15105682908836638355
+  Id: 10066136232912683764
   Name: "Rock Flat 01"
   Transform {
     Location {
@@ -55,7 +55,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6810715745990880226
+  ParentId: 12336338323505012453
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -84,7 +84,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8458849050873220000
+  Id: 15757724155990948203
   Name: "Rock Block 01"
   Transform {
     Location {
@@ -103,7 +103,7 @@ Objects {
       Z: 1.13513815
     }
   }
-  ParentId: 6810715745990880226
+  ParentId: 12336338323505012453
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -138,7 +138,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9004167562564745707
+  Id: 8826598488786747546
   Name: "Rock Block 01"
   Transform {
     Location {
@@ -157,7 +157,7 @@ Objects {
       Z: 0.967179239
     }
   }
-  ParentId: 6810715745990880226
+  ParentId: 12336338323505012453
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -192,7 +192,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13883545516096180785
+  Id: 4456504047653151310
   Name: "58"
   Transform {
     Location {
@@ -209,9 +209,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14622042810338484048
-  ChildIds: 6749242967291122657
-  ChildIds: 5038879803004800025
+  ParentId: 9405132596137673921
+  ChildIds: 9799049713378767986
+  ChildIds: 9972361789174048365
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -226,7 +226,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5038879803004800025
+  Id: 9972361789174048365
   Name: "Rock Block 01"
   Transform {
     Location {
@@ -244,7 +244,7 @@ Objects {
       Z: 0.911161
     }
   }
-  ParentId: 13883545516096180785
+  ParentId: 4456504047653151310
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -279,7 +279,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6749242967291122657
+  Id: 9799049713378767986
   Name: "Rock Block 01"
   Transform {
     Location {
@@ -298,8 +298,8 @@ Objects {
       Z: 1.09939885
     }
   }
-  ParentId: 13883545516096180785
-  ChildIds: 9417386620542145050
+  ParentId: 4456504047653151310
+  ChildIds: 1482142036440158288
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -334,7 +334,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9417386620542145050
+  Id: 1482142036440158288
   Name: "Decal Stains Round 01"
   Transform {
     Location {
@@ -353,7 +353,7 @@ Objects {
       Z: 0.909588277
     }
   }
-  ParentId: 6749242967291122657
+  ParentId: 9799049713378767986
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -388,7 +388,7 @@ Objects {
   }
 }
 Objects {
-  Id: 641996571451622381
+  Id: 13140290428199340376
   Name: "57"
   Transform {
     Location {
@@ -405,8 +405,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14622042810338484048
-  ChildIds: 504285554247055430
+  ParentId: 9405132596137673921
+  ChildIds: 14333818168020990837
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -421,7 +421,7 @@ Objects {
   }
 }
 Objects {
-  Id: 504285554247055430
+  Id: 14333818168020990837
   Name: "Rock Block 01"
   Transform {
     Location {
@@ -440,8 +440,8 @@ Objects {
       Z: 1.42600834
     }
   }
-  ParentId: 641996571451622381
-  ChildIds: 5912203468379823280
+  ParentId: 13140290428199340376
+  ChildIds: 18119399666181334257
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -480,7 +480,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5912203468379823280
+  Id: 18119399666181334257
   Name: "Decal Stains Round 01"
   Transform {
     Location {
@@ -499,7 +499,7 @@ Objects {
       Z: 0.7012586
     }
   }
-  ParentId: 504285554247055430
+  ParentId: 14333818168020990837
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -534,7 +534,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14402168317830471906
+  Id: 8510926411368552025
   Name: "56"
   Transform {
     Location {
@@ -551,9 +551,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14622042810338484048
-  ChildIds: 13109500416241028676
-  ChildIds: 7205284608479383701
+  ParentId: 9405132596137673921
+  ChildIds: 5624519862563032664
+  ChildIds: 972231988436120876
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -568,7 +568,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7205284608479383701
+  Id: 972231988436120876
   Name: "Rock Flat 01"
   Transform {
     Location {
@@ -587,7 +587,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14402168317830471906
+  ParentId: 8510926411368552025
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -622,7 +622,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13109500416241028676
+  Id: 5624519862563032664
   Name: "Rock Block 02"
   Transform {
     Location {
@@ -639,7 +639,7 @@ Objects {
       Z: 0.543915331
     }
   }
-  ParentId: 14402168317830471906
+  ParentId: 8510926411368552025
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -674,7 +674,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17222275176344087089
+  Id: 17502737493373570662
   Name: "54"
   Transform {
     Location {
@@ -691,9 +691,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14622042810338484048
-  ChildIds: 1211416446319830409
-  ChildIds: 15334790147104398534
+  ParentId: 9405132596137673921
+  ChildIds: 1510824208679742689
+  ChildIds: 1109348597012942632
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -708,7 +708,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15334790147104398534
+  Id: 1109348597012942632
   Name: "Decal Stains Round 01"
   Transform {
     Location {
@@ -727,7 +727,7 @@ Objects {
       Z: 0.425260097
     }
   }
-  ParentId: 17222275176344087089
+  ParentId: 17502737493373570662
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -762,7 +762,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1211416446319830409
+  Id: 1510824208679742689
   Name: "Rock Block 02"
   Transform {
     Location {
@@ -778,7 +778,7 @@ Objects {
       Z: 1.07528424
     }
   }
-  ParentId: 17222275176344087089
+  ParentId: 17502737493373570662
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -825,7 +825,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11016966249977711392
+  Id: 944879701038897032
   Name: "53"
   Transform {
     Location {
@@ -842,8 +842,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14622042810338484048
-  ChildIds: 3732824484090285078
+  ParentId: 9405132596137673921
+  ChildIds: 7233231642915099511
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -858,7 +858,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3732824484090285078
+  Id: 7233231642915099511
   Name: "Rock Block 01"
   Transform {
     Location {
@@ -873,8 +873,8 @@ Objects {
       Z: 3.83235884
     }
   }
-  ParentId: 11016966249977711392
-  ChildIds: 3732147687219320843
+  ParentId: 944879701038897032
+  ChildIds: 18035417076801435053
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -909,7 +909,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3732147687219320843
+  Id: 18035417076801435053
   Name: "Decal Stains Round 01"
   Transform {
     Location {
@@ -928,7 +928,7 @@ Objects {
       Z: 0.123742886
     }
   }
-  ParentId: 3732824484090285078
+  ParentId: 7233231642915099511
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -963,7 +963,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8756708781889993020
+  Id: 14665446634896477908
   Name: "52"
   Transform {
     Location {
@@ -980,8 +980,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14622042810338484048
-  ChildIds: 7427460311755044927
+  ParentId: 9405132596137673921
+  ChildIds: 5745664021617525219
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -996,7 +996,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7427460311755044927
+  Id: 5745664021617525219
   Name: "Rock Block 02"
   Transform {
     Location {
@@ -1012,8 +1012,8 @@ Objects {
       Z: 1.49999905
     }
   }
-  ParentId: 8756708781889993020
-  ChildIds: 3528996779844504282
+  ParentId: 14665446634896477908
+  ChildIds: 4752068433806711831
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1048,7 +1048,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3528996779844504282
+  Id: 4752068433806711831
   Name: "Decal Stains Round 01"
   Transform {
     Location {
@@ -1067,7 +1067,7 @@ Objects {
       Z: 0.069430761
     }
   }
-  ParentId: 7427460311755044927
+  ParentId: 5745664021617525219
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -1102,7 +1102,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15507550534318925349
+  Id: 17427567036271862082
   Name: "51"
   Transform {
     Location {
@@ -1119,10 +1119,10 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14622042810338484048
-  ChildIds: 3788096191074613846
-  ChildIds: 15029793275861479001
-  ChildIds: 10618553767968977336
+  ParentId: 9405132596137673921
+  ChildIds: 14710368996535248610
+  ChildIds: 6438116123390121725
+  ChildIds: 14240996803291365294
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1137,7 +1137,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10618553767968977336
+  Id: 14240996803291365294
   Name: "Decal Stains Round 01"
   Transform {
     Location {
@@ -1156,7 +1156,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15507550534318925349
+  ParentId: 17427567036271862082
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -1191,7 +1191,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15029793275861479001
+  Id: 6438116123390121725
   Name: "Rock Block 01"
   Transform {
     Location {
@@ -1209,7 +1209,7 @@ Objects {
       Z: 0.93137008
     }
   }
-  ParentId: 15507550534318925349
+  ParentId: 17427567036271862082
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1244,7 +1244,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3788096191074613846
+  Id: 14710368996535248610
   Name: "Rock Block 01"
   Transform {
     Location {
@@ -1260,7 +1260,7 @@ Objects {
       Z: 0.93137008
     }
   }
-  ParentId: 15507550534318925349
+  ParentId: 17427567036271862082
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1295,7 +1295,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14493774883580115377
+  Id: 11804374281523514337
   Name: "30"
   Transform {
     Location {
@@ -1312,9 +1312,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14622042810338484048
-  ChildIds: 13790544358260501088
-  ChildIds: 14680487435207816786
+  ParentId: 9405132596137673921
+  ChildIds: 2301020970931422072
+  ChildIds: 11817418223743714847
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1329,7 +1329,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14680487435207816786
+  Id: 11817418223743714847
   Name: "Rock Block 02"
   Transform {
     Location {
@@ -1347,7 +1347,7 @@ Objects {
       Z: 0.882042527
     }
   }
-  ParentId: 14493774883580115377
+  ParentId: 11804374281523514337
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1382,7 +1382,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13790544358260501088
+  Id: 2301020970931422072
   Name: "Rock Block 02"
   Transform {
     Location {
@@ -1400,7 +1400,7 @@ Objects {
       Z: 0.882042527
     }
   }
-  ParentId: 14493774883580115377
+  ParentId: 11804374281523514337
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1435,7 +1435,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16273467183212106611
+  Id: 7649277812249258459
   Name: "29"
   Transform {
     Location {
@@ -1454,10 +1454,10 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14622042810338484048
-  ChildIds: 13034716008742116634
-  ChildIds: 2108666618507354913
-  ChildIds: 11953612174293115757
+  ParentId: 9405132596137673921
+  ChildIds: 14873937452831755005
+  ChildIds: 13924051290550404766
+  ChildIds: 12234515467030489505
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1472,7 +1472,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11953612174293115757
+  Id: 12234515467030489505
   Name: "Rock Flat 01"
   Transform {
     Location {
@@ -1491,7 +1491,7 @@ Objects {
       Z: 0.300770313
     }
   }
-  ParentId: 16273467183212106611
+  ParentId: 7649277812249258459
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1526,7 +1526,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2108666618507354913
+  Id: 13924051290550404766
   Name: "Green Stain Decal"
   Transform {
     Location {
@@ -1545,7 +1545,7 @@ Objects {
       Z: 0.453262806
     }
   }
-  ParentId: 16273467183212106611
+  ParentId: 7649277812249258459
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -1580,7 +1580,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13034716008742116634
+  Id: 14873937452831755005
   Name: "Rock Block 01"
   Transform {
     Location {
@@ -1595,7 +1595,7 @@ Objects {
       Z: 3.83235908
     }
   }
-  ParentId: 16273467183212106611
+  ParentId: 7649277812249258459
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1630,7 +1630,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6448390301375553579
+  Id: 16945073619108859950
   Name: "28"
   Transform {
     Location {
@@ -1649,8 +1649,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14622042810338484048
-  ChildIds: 6171882830085867551
+  ParentId: 9405132596137673921
+  ChildIds: 10647065726197895690
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1665,7 +1665,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6171882830085867551
+  Id: 10647065726197895690
   Name: "Rock Block 01"
   Transform {
     Location {
@@ -1683,7 +1683,7 @@ Objects {
       Z: 3.73750138
     }
   }
-  ParentId: 6448390301375553579
+  ParentId: 16945073619108859950
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1718,7 +1718,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13724181771484052527
+  Id: 404319749516353260
   Name: "27"
   Transform {
     Location {
@@ -1735,10 +1735,10 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14622042810338484048
-  ChildIds: 11478384297147273235
-  ChildIds: 15397420989194861775
-  ChildIds: 10202773906169857296
+  ParentId: 9405132596137673921
+  ChildIds: 1757778474904547812
+  ChildIds: 14102229593822597051
+  ChildIds: 12714501187423877290
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1753,7 +1753,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10202773906169857296
+  Id: 12714501187423877290
   Name: "Decal Stains Round 01"
   Transform {
     Location {
@@ -1772,7 +1772,7 @@ Objects {
       Z: 0.383520156
     }
   }
-  ParentId: 13724181771484052527
+  ParentId: 404319749516353260
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -1807,7 +1807,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15397420989194861775
+  Id: 14102229593822597051
   Name: "27"
   Transform {
     Location {
@@ -1826,7 +1826,7 @@ Objects {
       Z: 1.77529383
     }
   }
-  ParentId: 13724181771484052527
+  ParentId: 404319749516353260
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1862,7 +1862,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11478384297147273235
+  Id: 1757778474904547812
   Name: "Rock Block 01"
   Transform {
     Location {
@@ -1881,7 +1881,7 @@ Objects {
       Z: 4.25
     }
   }
-  ParentId: 13724181771484052527
+  ParentId: 404319749516353260
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1920,7 +1920,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5014553925076427301
+  Id: 8353993733154305094
   Name: "22"
   Transform {
     Location {
@@ -1937,9 +1937,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14622042810338484048
-  ChildIds: 6744024980432999897
-  ChildIds: 1859330643463513019
+  ParentId: 9405132596137673921
+  ChildIds: 14116031560908814123
+  ChildIds: 15441213674194417346
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1954,7 +1954,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1859330643463513019
+  Id: 15441213674194417346
   Name: "Rock Block 02"
   Transform {
     Location {
@@ -1972,7 +1972,7 @@ Objects {
       Z: 1.25
     }
   }
-  ParentId: 5014553925076427301
+  ParentId: 8353993733154305094
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2007,7 +2007,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6744024980432999897
+  Id: 14116031560908814123
   Name: "Rock Block 02"
   Transform {
     Location {
@@ -2023,7 +2023,7 @@ Objects {
       Z: 1.25
     }
   }
-  ParentId: 5014553925076427301
+  ParentId: 8353993733154305094
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2058,7 +2058,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3465672948634454988
+  Id: 5394770313785586173
   Name: "21"
   Transform {
     Location {
@@ -2075,11 +2075,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14622042810338484048
-  ChildIds: 13866225280792702495
-  ChildIds: 5260732196630443939
-  ChildIds: 17622668028823846902
-  ChildIds: 7169546813434654994
+  ParentId: 9405132596137673921
+  ChildIds: 11548609027121606440
+  ChildIds: 7356354463954113304
+  ChildIds: 7310565815240508822
+  ChildIds: 5232000818087306878
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2094,7 +2094,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7169546813434654994
+  Id: 5232000818087306878
   Name: "Rock Flat 01"
   Transform {
     Location {
@@ -2113,7 +2113,7 @@ Objects {
       Z: 0.590836525
     }
   }
-  ParentId: 3465672948634454988
+  ParentId: 5394770313785586173
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2148,7 +2148,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17622668028823846902
+  Id: 7310565815240508822
   Name: "Decal Stains Round 01"
   Transform {
     Location {
@@ -2167,7 +2167,7 @@ Objects {
       Z: 1.00000179
     }
   }
-  ParentId: 3465672948634454988
+  ParentId: 5394770313785586173
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -2202,7 +2202,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5260732196630443939
+  Id: 7356354463954113304
   Name: "Rock 02"
   Transform {
     Location {
@@ -2221,7 +2221,7 @@ Objects {
       Z: 0.25000003
     }
   }
-  ParentId: 3465672948634454988
+  ParentId: 5394770313785586173
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2256,7 +2256,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13866225280792702495
+  Id: 11548609027121606440
   Name: "Rock Block 02"
   Transform {
     Location {
@@ -2272,7 +2272,7 @@ Objects {
       Z: 5.05656147
     }
   }
-  ParentId: 3465672948634454988
+  ParentId: 5394770313785586173
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2307,7 +2307,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3462805022631651547
+  Id: 5840280990945277427
   Name: "16"
   Transform {
     Location {
@@ -2324,9 +2324,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14622042810338484048
-  ChildIds: 16245277360630708118
-  ChildIds: 11590194521101954402
+  ParentId: 9405132596137673921
+  ChildIds: 193183359993953153
+  ChildIds: 17940625027740603108
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2341,7 +2341,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11590194521101954402
+  Id: 17940625027740603108
   Name: "16"
   Transform {
     Location {
@@ -2360,8 +2360,8 @@ Objects {
       Z: 0.689478457
     }
   }
-  ParentId: 3462805022631651547
-  ChildIds: 15069324671465320397
+  ParentId: 5840280990945277427
+  ChildIds: 14689315496826199934
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2397,7 +2397,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15069324671465320397
+  Id: 14689315496826199934
   Name: "Decal Stains Round 01"
   Transform {
     Location {
@@ -2416,7 +2416,7 @@ Objects {
       Z: 1.45037162
     }
   }
-  ParentId: 11590194521101954402
+  ParentId: 17940625027740603108
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -2451,7 +2451,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16245277360630708118
+  Id: 193183359993953153
   Name: "Rock Block 02"
   Transform {
     Location {
@@ -2467,7 +2467,7 @@ Objects {
       Z: 1.32321334
     }
   }
-  ParentId: 3462805022631651547
+  ParentId: 5840280990945277427
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2502,7 +2502,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14821683542140908216
+  Id: 7750857858643693445
   Name: "11"
   Transform {
     Location {
@@ -2519,9 +2519,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14622042810338484048
-  ChildIds: 11708164590338460161
-  ChildIds: 4172936364522320619
+  ParentId: 9405132596137673921
+  ChildIds: 11721514410436593775
+  ChildIds: 5186499217713567069
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2536,7 +2536,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4172936364522320619
+  Id: 5186499217713567069
   Name: "11"
   Transform {
     Location {
@@ -2555,7 +2555,7 @@ Objects {
       Z: 0.76583904
     }
   }
-  ParentId: 14821683542140908216
+  ParentId: 7750857858643693445
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2591,7 +2591,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11708164590338460161
+  Id: 11721514410436593775
   Name: "Rock Block 02"
   Transform {
     Location {
@@ -2609,7 +2609,7 @@ Objects {
       Z: 1.20705044
     }
   }
-  ParentId: 14821683542140908216
+  ParentId: 7750857858643693445
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2644,7 +2644,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1827469947275186372
+  Id: 2632025344769287845
   Name: "10"
   Transform {
     Location {
@@ -2661,9 +2661,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14622042810338484048
-  ChildIds: 15253889148911358283
-  ChildIds: 10816083507041490749
+  ParentId: 9405132596137673921
+  ChildIds: 1349832772045312941
+  ChildIds: 4505292633731136107
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2678,7 +2678,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10816083507041490749
+  Id: 4505292633731136107
   Name: "10"
   Transform {
     Location {
@@ -2697,9 +2697,9 @@ Objects {
       Z: 1.02692866
     }
   }
-  ParentId: 1827469947275186372
-  ChildIds: 8371371071317556323
-  ChildIds: 13785453763049871745
+  ParentId: 2632025344769287845
+  ChildIds: 5024331672115112432
+  ChildIds: 3250077571796860209
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2735,7 +2735,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13785453763049871745
+  Id: 3250077571796860209
   Name: "Green Stain Decal"
   Transform {
     Location {
@@ -2754,7 +2754,7 @@ Objects {
       Z: 0.441377103
     }
   }
-  ParentId: 10816083507041490749
+  ParentId: 4505292633731136107
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -2789,7 +2789,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8371371071317556323
+  Id: 5024331672115112432
   Name: "Decal Stains Round 01"
   Transform {
     Location {
@@ -2808,7 +2808,7 @@ Objects {
       Z: 1.20294738
     }
   }
-  ParentId: 10816083507041490749
+  ParentId: 4505292633731136107
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -2843,7 +2843,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15253889148911358283
+  Id: 1349832772045312941
   Name: "Rock Block 01"
   Transform {
     Location {
@@ -2859,7 +2859,7 @@ Objects {
       Z: 0.750000417
     }
   }
-  ParentId: 1827469947275186372
+  ParentId: 2632025344769287845
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2894,7 +2894,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18182516995361844521
+  Id: 14402869409523166738
   Name: "7"
   Transform {
     Location {
@@ -2911,9 +2911,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14622042810338484048
-  ChildIds: 16668309821093433927
-  ChildIds: 10915990759603090165
+  ParentId: 9405132596137673921
+  ChildIds: 3698859096797316303
+  ChildIds: 6609257911885668899
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2928,7 +2928,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10915990759603090165
+  Id: 6609257911885668899
   Name: "Green Stain Decal"
   Transform {
     Location {
@@ -2947,7 +2947,7 @@ Objects {
       Z: 0.453262806
     }
   }
-  ParentId: 18182516995361844521
+  ParentId: 14402869409523166738
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -2982,7 +2982,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16668309821093433927
+  Id: 3698859096797316303
   Name: "Rock Block 02"
   Transform {
     Location {
@@ -2999,7 +2999,7 @@ Objects {
       Z: 1.20876241
     }
   }
-  ParentId: 18182516995361844521
+  ParentId: 14402869409523166738
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3034,7 +3034,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8287035336379039367
+  Id: 14136208881020348529
   Name: "6"
   Transform {
     Location {
@@ -3051,10 +3051,10 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14622042810338484048
-  ChildIds: 14354901425048787403
-  ChildIds: 1533786292515370204
-  ChildIds: 13763797549250837407
+  ParentId: 9405132596137673921
+  ChildIds: 15075398325546938894
+  ChildIds: 13077228720822829655
+  ChildIds: 14076791151021317388
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3069,7 +3069,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13763797549250837407
+  Id: 14076791151021317388
   Name: "Green Stain Decal"
   Transform {
     Location {
@@ -3088,7 +3088,7 @@ Objects {
       Z: 0.195189267
     }
   }
-  ParentId: 8287035336379039367
+  ParentId: 14136208881020348529
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -3123,7 +3123,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1533786292515370204
+  Id: 13077228720822829655
   Name: "Rock Block 01"
   Transform {
     Location {
@@ -3141,7 +3141,7 @@ Objects {
       Z: 2.22653484
     }
   }
-  ParentId: 8287035336379039367
+  ParentId: 14136208881020348529
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3176,7 +3176,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14354901425048787403
+  Id: 15075398325546938894
   Name: "Rock Block 01"
   Transform {
     Location {
@@ -3192,7 +3192,7 @@ Objects {
       Z: 4.49982834
     }
   }
-  ParentId: 8287035336379039367
+  ParentId: 14136208881020348529
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3227,7 +3227,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15121819313506087018
+  Id: 16699485530738934173
   Name: "5"
   Transform {
     Location {
@@ -3244,9 +3244,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14622042810338484048
-  ChildIds: 13976896213442582890
-  ChildIds: 7390414670403613469
+  ParentId: 9405132596137673921
+  ChildIds: 11840301097408254948
+  ChildIds: 3690299713890941242
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3261,7 +3261,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7390414670403613469
+  Id: 3690299713890941242
   Name: "Decal Stains Round 01"
   Transform {
     Location {
@@ -3280,7 +3280,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15121819313506087018
+  ParentId: 16699485530738934173
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -3315,7 +3315,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13976896213442582890
+  Id: 11840301097408254948
   Name: "Rock Block 01"
   Transform {
     Location {
@@ -3333,7 +3333,7 @@ Objects {
       Z: 4.26363134
     }
   }
-  ParentId: 15121819313506087018
+  ParentId: 16699485530738934173
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3368,7 +3368,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7628122627087524916
+  Id: 15181510770275873651
   Name: "4"
   Transform {
     Location {
@@ -3385,10 +3385,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14622042810338484048
-  ChildIds: 18210905374861483142
-  ChildIds: 6103089681653939902
-  ChildIds: 5029588891571973661
+  ParentId: 9405132596137673921
+  ChildIds: 2797603465198075810
+  ChildIds: 14324808918653436519
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3403,61 +3402,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5029588891571973661
-  Name: "Rock Block 01"
-  Transform {
-    Location {
-      X: -13482.1406
-      Y: -2865.04492
-      Z: -45.4954224
-    }
-    Rotation {
-      Pitch: 69.9701691
-      Yaw: -53.4010315
-      Roll: 90.0021515
-    }
-    Scale {
-      X: 0.796297133
-      Y: 1.39381266
-      Z: 4.56824112
-    }
-  }
-  ParentId: 7628122627087524916
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 6061518345080760809
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7950434917656616929
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 6103089681653939902
+  Id: 14324808918653436519
   Name: "Rock 02"
   Transform {
     Location {
@@ -3476,7 +3421,7 @@ Objects {
       Z: 0.242788032
     }
   }
-  ParentId: 7628122627087524916
+  ParentId: 15181510770275873651
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3511,7 +3456,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18210905374861483142
+  Id: 2797603465198075810
   Name: "Rock Block 01"
   Transform {
     Location {
@@ -3530,7 +3475,7 @@ Objects {
       Z: 4.56824112
     }
   }
-  ParentId: 7628122627087524916
+  ParentId: 15181510770275873651
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3565,7 +3510,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15695747427245485896
+  Id: 14149208746471162779
   Name: "3"
   Transform {
     Location {
@@ -3582,11 +3527,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14622042810338484048
-  ChildIds: 11717642346904716136
-  ChildIds: 16708008772275502668
-  ChildIds: 14376128747842111435
-  ChildIds: 4827371011123871218
+  ParentId: 9405132596137673921
+  ChildIds: 9281485724081872739
+  ChildIds: 15300074399302921855
+  ChildIds: 15663029991426882321
+  ChildIds: 5996570492882769823
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3601,7 +3546,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4827371011123871218
+  Id: 5996570492882769823
   Name: "Green Stain Decal"
   Transform {
     Location {
@@ -3620,7 +3565,7 @@ Objects {
       Z: 0.792115033
     }
   }
-  ParentId: 15695747427245485896
+  ParentId: 14149208746471162779
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -3655,7 +3600,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14376128747842111435
+  Id: 15663029991426882321
   Name: "Green Stain Decal"
   Transform {
     Location {
@@ -3674,7 +3619,7 @@ Objects {
       Z: 0.792115033
     }
   }
-  ParentId: 15695747427245485896
+  ParentId: 14149208746471162779
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -3709,7 +3654,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16708008772275502668
+  Id: 15300074399302921855
   Name: "Rock Block 01"
   Transform {
     Location {
@@ -3727,7 +3672,7 @@ Objects {
       Z: 4.32158041
     }
   }
-  ParentId: 15695747427245485896
+  ParentId: 14149208746471162779
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3762,7 +3707,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11717642346904716136
+  Id: 9281485724081872739
   Name: "Rock Block 01"
   Transform {
     Location {
@@ -3778,7 +3723,7 @@ Objects {
       Z: 3.68331718
     }
   }
-  ParentId: 15695747427245485896
+  ParentId: 14149208746471162779
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3813,7 +3758,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6660157111757906253
+  Id: 5266648160829691797
   Name: "2"
   Transform {
     Location {
@@ -3831,8 +3776,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14622042810338484048
-  ChildIds: 1959029802389208101
+  ParentId: 9405132596137673921
+  ChildIds: 9857786684426193534
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3847,7 +3792,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1959029802389208101
+  Id: 9857786684426193534
   Name: "Rock Block 01"
   Transform {
     Location {
@@ -3866,7 +3811,7 @@ Objects {
       Z: 4.56824112
     }
   }
-  ParentId: 6660157111757906253
+  ParentId: 5266648160829691797
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3905,7 +3850,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16336733296538458677
+  Id: 16859546859676260831
   Name: "1"
   Transform {
     Location {
@@ -3922,9 +3867,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14622042810338484048
-  ChildIds: 2178338301113844971
-  ChildIds: 6004015845192637856
+  ParentId: 9405132596137673921
+  ChildIds: 1734736169366354640
+  ChildIds: 14643469566369709918
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3939,7 +3884,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6004015845192637856
+  Id: 14643469566369709918
   Name: "Rock 01"
   Transform {
     Location {
@@ -3958,7 +3903,7 @@ Objects {
       Z: 0.225813523
     }
   }
-  ParentId: 16336733296538458677
+  ParentId: 16859546859676260831
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3993,7 +3938,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2178338301113844971
+  Id: 1734736169366354640
   Name: "Rock Block 02"
   Transform {
     Location {
@@ -4012,8 +3957,8 @@ Objects {
       Z: 0.543916
     }
   }
-  ParentId: 16336733296538458677
-  ChildIds: 14622816481050238715
+  ParentId: 16859546859676260831
+  ChildIds: 7228085652306137014
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4052,7 +3997,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14622816481050238715
+  Id: 7228085652306137014
   Name: "Decal Stains Round 01"
   Transform {
     Location {
@@ -4071,7 +4016,7 @@ Objects {
       Z: 1.83851922
     }
   }
-  ParentId: 2178338301113844971
+  ParentId: 1734736169366354640
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"

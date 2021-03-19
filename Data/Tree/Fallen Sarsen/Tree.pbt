@@ -1,7 +1,7 @@
 Name: "Fallen Sarsen"
-RootId: 13047957303374723115
+RootId: 10006300971085763045
 Objects {
-  Id: 4057108819616237894
+  Id: 8942936278118765426
   Name: "12"
   Transform {
     Location {
@@ -20,13 +20,13 @@ Objects {
       Z: 1.70047021
     }
   }
-  ParentId: 13047957303374723115
-  ChildIds: 10364505589756215448
+  ParentId: 10006300971085763045
+  ChildIds: 1973772206512361291
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 347859619137269343
+        Id: 8936763371593318026
       }
     }
   }
@@ -57,7 +57,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10364505589756215448
+  Id: 1973772206512361291
   Name: "Decal Stains Round 01"
   Transform {
     Location {
@@ -76,7 +76,7 @@ Objects {
       Z: 0.275574446
     }
   }
-  ParentId: 4057108819616237894
+  ParentId: 8942936278118765426
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -111,7 +111,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9857176462322932399
+  Id: 7577368439253561512
   Name: "80"
   Transform {
     Location {
@@ -130,12 +130,12 @@ Objects {
       Z: 0.0702908412
     }
   }
-  ParentId: 13047957303374723115
+  ParentId: 10006300971085763045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 6061518345080760809
+        Id: 8936763371593318026
       }
     }
   }
@@ -166,7 +166,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12407700245959634303
+  Id: 6602520647165216382
   Name: "9b"
   Transform {
     Location {
@@ -184,12 +184,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13047957303374723115
+  ParentId: 10006300971085763045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 6061518345080760809
+        Id: 8936763371593318026
       }
     }
   }
@@ -220,7 +220,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7366971951805962786
+  Id: 7977835131952489380
   Name: "23"
   Transform {
     Location {
@@ -239,13 +239,13 @@ Objects {
       Z: 1.35530853
     }
   }
-  ParentId: 13047957303374723115
-  ChildIds: 987095843295717668
+  ParentId: 10006300971085763045
+  ChildIds: 15275174512294507204
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 17384217126992658879
+        Id: 8936763371593318026
       }
     }
   }
@@ -276,7 +276,7 @@ Objects {
   }
 }
 Objects {
-  Id: 987095843295717668
+  Id: 15275174512294507204
   Name: "Decal Stains Round 01"
   Transform {
     Location {
@@ -295,7 +295,7 @@ Objects {
       Z: 0.737838745
     }
   }
-  ParentId: 7366971951805962786
+  ParentId: 7977835131952489380
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -330,7 +330,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13474246871409705028
+  Id: 6532430759136516108
   Name: "127"
   Transform {
     Location {
@@ -348,12 +348,12 @@ Objects {
       Z: 0.530026317
     }
   }
-  ParentId: 13047957303374723115
+  ParentId: 10006300971085763045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 6061518345080760809
+        Id: 8936763371593318026
       }
     }
   }
@@ -384,7 +384,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15674753910598041692
+  Id: 12559992383028171773
   Name: "26"
   Transform {
     Location {
@@ -402,12 +402,12 @@ Objects {
       Z: 0.784016132
     }
   }
-  ParentId: 13047957303374723115
+  ParentId: 10006300971085763045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 17384217126992658879
+        Id: 8936763371593318026
       }
     }
   }
@@ -438,7 +438,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5796914696091601909
+  Id: 16782481132420610672
   Name: "120"
   Transform {
     Location {
@@ -457,12 +457,12 @@ Objects {
       Z: 0.494955897
     }
   }
-  ParentId: 13047957303374723115
+  ParentId: 10006300971085763045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 17384217126992658879
+        Id: 8936763371593318026
       }
     }
   }
@@ -493,7 +493,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14060256763895659015
+  Id: 6420493558159745042
   Name: "19"
   Transform {
     Location {
@@ -510,13 +510,13 @@ Objects {
       Z: 0.618530273
     }
   }
-  ParentId: 13047957303374723115
-  ChildIds: 4335475277113667818
+  ParentId: 10006300971085763045
+  ChildIds: 16590376291719555444
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 347859619137269343
+        Id: 8936763371593318026
       }
     }
     Overrides {
@@ -555,7 +555,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4335475277113667818
+  Id: 16590376291719555444
   Name: "Decal Stains Round 01"
   Transform {
     Location {
@@ -574,7 +574,7 @@ Objects {
       Z: 0.960541129
     }
   }
-  ParentId: 14060256763895659015
+  ParentId: 6420493558159745042
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -609,7 +609,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7333623339390901059
+  Id: 6618381775331262715
   Name: "156"
   Transform {
     Location {
@@ -628,12 +628,12 @@ Objects {
       Z: 1.00000048
     }
   }
-  ParentId: 13047957303374723115
+  ParentId: 10006300971085763045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 6061518345080760809
+        Id: 8936763371593318026
       }
     }
   }
@@ -664,7 +664,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15534542510460198421
+  Id: 848469853102606567
   Name: "160c"
   Transform {
     Location {
@@ -682,12 +682,12 @@ Objects {
       Z: 0.5240376
     }
   }
-  ParentId: 13047957303374723115
+  ParentId: 10006300971085763045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 17384217126992658879
+        Id: 8936763371593318026
       }
     }
   }
@@ -718,7 +718,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6855301803321100230
+  Id: 15684694245234089522
   Name: "59c"
   Transform {
     Location {
@@ -736,12 +736,12 @@ Objects {
       Z: 1.06672919
     }
   }
-  ParentId: 13047957303374723115
+  ParentId: 10006300971085763045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 17384217126992658879
+        Id: 8936763371593318026
       }
     }
   }
@@ -772,7 +772,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16477286862085355721
+  Id: 15474720508845428419
   Name: "160b"
   Transform {
     Location {
@@ -789,12 +789,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13047957303374723115
+  ParentId: 10006300971085763045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 6061518345080760809
+        Id: 8936763371593318026
       }
     }
   }
@@ -825,7 +825,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4843575048609059202
+  Id: 1385571209353070460
   Name: "160a"
   Transform {
     Location {
@@ -842,12 +842,12 @@ Objects {
       Z: 0.580787897
     }
   }
-  ParentId: 13047957303374723115
+  ParentId: 10006300971085763045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 347859619137269343
+        Id: 8936763371593318026
       }
     }
   }
@@ -878,7 +878,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18363616185287564933
+  Id: 8000927725209347139
   Name: "59b"
   Transform {
     Location {
@@ -897,12 +897,12 @@ Objects {
       Z: 0.683579266
     }
   }
-  ParentId: 13047957303374723115
+  ParentId: 10006300971085763045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 6061518345080760809
+        Id: 8936763371593318026
       }
     }
   }
@@ -933,7 +933,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9365794449133817067
+  Id: 11602038071790100708
   Name: "59a"
   Transform {
     Location {
@@ -952,13 +952,13 @@ Objects {
       Z: 1.70047021
     }
   }
-  ParentId: 13047957303374723115
-  ChildIds: 11709529675239706677
+  ParentId: 10006300971085763045
+  ChildIds: 2690103603667709278
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 6061518345080760809
+        Id: 8936763371593318026
       }
     }
   }
@@ -989,7 +989,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11709529675239706677
+  Id: 2690103603667709278
   Name: "Decal Stains Round 01"
   Transform {
     Location {
@@ -1008,7 +1008,7 @@ Objects {
       Z: 0.364972562
     }
   }
-  ParentId: 9365794449133817067
+  ParentId: 11602038071790100708
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -1043,7 +1043,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3224399543446546296
+  Id: 14161342132469504431
   Name: "8"
   Transform {
     Location {
@@ -1061,12 +1061,12 @@ Objects {
       Z: 0.602388799
     }
   }
-  ParentId: 13047957303374723115
+  ParentId: 10006300971085763045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 17384217126992658879
+        Id: 8936763371593318026
       }
     }
   }
@@ -1097,7 +1097,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2918848708553857487
+  Id: 12568892605866994071
   Name: "9a"
   Transform {
     Location {
@@ -1114,12 +1114,12 @@ Objects {
       Z: 0.798188448
     }
   }
-  ParentId: 13047957303374723115
+  ParentId: 10006300971085763045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 6061518345080760809
+        Id: 8936763371593318026
       }
     }
   }
@@ -1150,7 +1150,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11777330651538232502
+  Id: 3981169201762737537
   Name: "15"
   Transform {
     Location {
@@ -1168,12 +1168,12 @@ Objects {
       Z: 0.25
     }
   }
-  ParentId: 13047957303374723115
+  ParentId: 10006300971085763045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 17384217126992658879
+        Id: 8936763371593318026
       }
     }
   }
@@ -1204,7 +1204,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16275944154163200233
+  Id: 7114002261234495883
   Name: "14"
   Transform {
     Location {
@@ -1223,13 +1223,13 @@ Objects {
       Z: 0.574811935
     }
   }
-  ParentId: 13047957303374723115
-  ChildIds: 14460138271266953501
+  ParentId: 10006300971085763045
+  ChildIds: 9874574380941988427
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 17384217126992658879
+        Id: 8936763371593318026
       }
     }
   }
@@ -1260,7 +1260,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14460138271266953501
+  Id: 9874574380941988427
   Name: "Decal Stains Round 01"
   Transform {
     Location {
@@ -1279,7 +1279,7 @@ Objects {
       Z: 1.26898479
     }
   }
-  ParentId: 16275944154163200233
+  ParentId: 7114002261234495883
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -1314,7 +1314,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1712918955444777817
+  Id: 3297357436798352198
   Name: "55b"
   Transform {
     Location {
@@ -1333,13 +1333,13 @@ Objects {
       Z: 1.35805404
     }
   }
-  ParentId: 13047957303374723115
-  ChildIds: 7834288301872811513
+  ParentId: 10006300971085763045
+  ChildIds: 6724320405300726802
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 6061518345080760809
+        Id: 8936763371593318026
       }
     }
   }
@@ -1370,7 +1370,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7834288301872811513
+  Id: 6724320405300726802
   Name: "Decal Stains Round 01"
   Transform {
     Location {
@@ -1389,7 +1389,7 @@ Objects {
       Z: 0.402573138
     }
   }
-  ParentId: 1712918955444777817
+  ParentId: 3297357436798352198
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -1424,7 +1424,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12516539955201983421
+  Id: 1669937960691759178
   Name: "55a"
   Transform {
     Location {
@@ -1443,12 +1443,12 @@ Objects {
       Z: 1.46987307
     }
   }
-  ParentId: 13047957303374723115
+  ParentId: 10006300971085763045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 6061518345080760809
+        Id: 8936763371593318026
       }
     }
   }

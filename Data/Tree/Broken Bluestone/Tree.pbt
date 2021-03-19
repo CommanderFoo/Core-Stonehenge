@@ -1,7 +1,7 @@
 Name: "Broken Bluestone"
-RootId: 17507761675683140033
+RootId: 4172426113375977631
 Objects {
-  Id: 12111138650951804946
+  Id: 8961978134135647803
   Name: "48"
   Transform {
     Location {
@@ -20,12 +20,12 @@ Objects {
       Z: 0.55804193
     }
   }
-  ParentId: 17507761675683140033
+  ParentId: 4172426113375977631
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 8447574563388359200
+        Id: 8936763371593318026
       }
     }
   }
@@ -56,7 +56,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4478177439369385010
+  Id: 7759110969230707876
   Name: "41"
   Transform {
     Location {
@@ -75,12 +75,12 @@ Objects {
       Z: 1.33626986
     }
   }
-  ParentId: 17507761675683140033
+  ParentId: 4172426113375977631
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 8447574563388359200
+        Id: 8936763371593318026
       }
     }
   }
@@ -111,7 +111,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3481361775258708576
+  Id: 9907696890593602168
   Name: "41"
   Transform {
     Location {
@@ -130,12 +130,12 @@ Objects {
       Z: 1.00692546
     }
   }
-  ParentId: 17507761675683140033
+  ParentId: 4172426113375977631
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 8447574563388359200
+        Id: 8936763371593318026
       }
     }
     Overrides {
@@ -178,7 +178,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3860814345407823448
+  Id: 16518883301277536555
   Name: "42"
   Transform {
     Location {
@@ -196,12 +196,12 @@ Objects {
       Z: 0.508592904
     }
   }
-  ParentId: 17507761675683140033
+  ParentId: 4172426113375977631
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 8447574563388359200
+        Id: 8936763371593318026
       }
     }
     Overrides {
@@ -244,7 +244,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3524758990327092134
+  Id: 7231032410006001839
   Name: "42c"
   Transform {
     Location {
@@ -263,12 +263,12 @@ Objects {
       Z: 1.09040654
     }
   }
-  ParentId: 17507761675683140033
+  ParentId: 4172426113375977631
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 8447574563388359200
+        Id: 8936763371593318026
       }
     }
   }
@@ -299,7 +299,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10269705578076089487
+  Id: 10962380154823453175
   Name: "42c"
   Transform {
     Location {
@@ -318,12 +318,12 @@ Objects {
       Z: 0.793435216
     }
   }
-  ParentId: 17507761675683140033
+  ParentId: 4172426113375977631
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 8447574563388359200
+        Id: 8936763371593318026
       }
     }
   }
@@ -354,7 +354,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13149792487688537431
+  Id: 1012357266409587550
   Name: "43"
   Transform {
     Location {
@@ -373,12 +373,12 @@ Objects {
       Z: 0.961720526
     }
   }
-  ParentId: 17507761675683140033
+  ParentId: 4172426113375977631
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 8447574563388359200
+        Id: 8936763371593318026
       }
     }
   }
@@ -409,7 +409,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14902830737956413299
+  Id: 16078982177757855335
   Name: "43"
   Transform {
     Location {
@@ -428,12 +428,12 @@ Objects {
       Z: 1.12477446
     }
   }
-  ParentId: 17507761675683140033
+  ParentId: 4172426113375977631
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 8447574563388359200
+        Id: 8936763371593318026
       }
     }
   }
@@ -464,7 +464,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9239972150589679812
+  Id: 15420070902008481989
   Name: "44"
   Transform {
     Location {
@@ -483,12 +483,12 @@ Objects {
       Z: 0.528710365
     }
   }
-  ParentId: 17507761675683140033
+  ParentId: 4172426113375977631
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 8447574563388359200
+        Id: 8936763371593318026
       }
     }
   }
@@ -519,7 +519,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11855637272508113531
+  Id: 13875268024788606273
   Name: "65"
   Transform {
     Location {
@@ -538,12 +538,12 @@ Objects {
       Z: 1.17605114
     }
   }
-  ParentId: 17507761675683140033
+  ParentId: 4172426113375977631
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 8447574563388359200
+        Id: 8936763371593318026
       }
     }
   }
@@ -574,7 +574,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2379415993534470216
+  Id: 17791323034834230664
   Name: "64"
   Transform {
     Location {
@@ -592,12 +592,12 @@ Objects {
       Z: 0.67542547
     }
   }
-  ParentId: 17507761675683140033
+  ParentId: 4172426113375977631
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 8447574563388359200
+        Id: 8936763371593318026
       }
     }
   }
@@ -628,7 +628,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4989647186556957899
+  Id: 9025083776604778916
   Name: "61a"
   Transform {
     Location {
@@ -646,12 +646,12 @@ Objects {
       Z: 0.36182496
     }
   }
-  ParentId: 17507761675683140033
+  ParentId: 4172426113375977631
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 8447574563388359200
+        Id: 8936763371593318026
       }
     }
   }
@@ -682,7 +682,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17935179646007516637
+  Id: 15707714747312999931
   Name: "32"
   Transform {
     Location {
@@ -701,12 +701,12 @@ Objects {
       Z: 1.52078485
     }
   }
-  ParentId: 17507761675683140033
+  ParentId: 4172426113375977631
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 8447574563388359200
+        Id: 8936763371593318026
       }
     }
   }
@@ -737,7 +737,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8953661901665634337
+  Id: 18129113598658662755
   Name: "150"
   Transform {
     Location {
@@ -756,12 +756,12 @@ Objects {
       Z: 1.41211724
     }
   }
-  ParentId: 17507761675683140033
+  ParentId: 4172426113375977631
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 8447574563388359200
+        Id: 8936763371593318026
       }
     }
   }
@@ -792,7 +792,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13719674915537814328
+  Id: 16889268809671951424
   Name: "35a"
   Transform {
     Location {
@@ -810,12 +810,12 @@ Objects {
       Z: 1.20902312
     }
   }
-  ParentId: 17507761675683140033
+  ParentId: 4172426113375977631
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 8447574563388359200
+        Id: 8936763371593318026
       }
     }
   }
@@ -846,7 +846,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15918159297372628316
+  Id: 5121436943065781115
   Name: "34"
   Transform {
     Location {
@@ -864,12 +864,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17507761675683140033
+  ParentId: 4172426113375977631
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 8447574563388359200
+        Id: 8936763371593318026
       }
     }
   }
@@ -900,7 +900,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5839726413927985524
+  Id: 16896496114675972169
   Name: "37"
   Transform {
     Location {
@@ -919,12 +919,12 @@ Objects {
       Z: 0.612694204
     }
   }
-  ParentId: 17507761675683140033
+  ParentId: 4172426113375977631
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 8447574563388359200
+        Id: 8936763371593318026
       }
     }
   }
@@ -955,7 +955,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13511628153410666481
+  Id: 15500122626114980210
   Name: "48"
   Transform {
     Location {
@@ -974,12 +974,12 @@ Objects {
       Z: 0.558044136
     }
   }
-  ParentId: 17507761675683140033
+  ParentId: 4172426113375977631
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 8447574563388359200
+        Id: 8936763371593318026
       }
     }
   }
@@ -1010,7 +1010,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5290367087874335300
+  Id: 17657426369290120602
   Name: "67"
   Transform {
     Location {
@@ -1028,12 +1028,12 @@ Objects {
       Z: 1.63819754
     }
   }
-  ParentId: 17507761675683140033
+  ParentId: 4172426113375977631
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 8447574563388359200
+        Id: 8936763371593318026
       }
     }
   }
@@ -1064,7 +1064,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7761485906914442425
+  Id: 3028992759419999863
   Name: "40"
   Transform {
     Location {
@@ -1083,12 +1083,12 @@ Objects {
       Z: 0.578465402
     }
   }
-  ParentId: 17507761675683140033
+  ParentId: 4172426113375977631
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 8447574563388359200
+        Id: 8936763371593318026
       }
     }
   }

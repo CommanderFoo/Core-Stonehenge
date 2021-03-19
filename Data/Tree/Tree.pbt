@@ -19413,7 +19413,7 @@ Objects {
   ChildIds: 9376105881924438415
   ChildIds: 17026671537133858265
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"

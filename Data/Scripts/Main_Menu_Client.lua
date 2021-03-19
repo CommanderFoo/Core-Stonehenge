@@ -223,12 +223,22 @@ for i, b in ipairs(menu.buttons) do
 	end)
 end
 
+function hide_all_panels()
+	for i, p in ipairs(menu.panels) do
+		if(p) then
+			p.visibility = Visibility.FORCE_OFF
+		end
+	end
+end
+
 function load_game(i)
 	transition_tween = YOOTIL.Tween:new(transition_time, {a = 0}, {a = 1})
 
 	transition_tween:on_start(function()
 		Events.Broadcast("hide_cursor")
 		Events.Broadcast("hide_reticle")
+
+		hide_all_panels()
 
 		transition_loader.visibility = Visibility.FORCE_ON
 	end)

@@ -3354,7 +3354,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "Although you have completed the game, you may go back to the menu and continue your crrent save and finish collecting all the collectables if you wish."
+      Label: "Although you have completed the game, you may go back to the menu and continue your current save and finish collecting all the collectables if you wish."
       Color {
         R: 1
         G: 1
@@ -7273,7 +7273,7 @@ Objects {
     Width: 478
     Height: 43
     UIX: 115.728638
-    UIY: 610.833
+    UIY: 610.245
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -7343,7 +7343,7 @@ Objects {
     Width: 478
     Height: 43
     UIX: 115.728638
-    UIY: 532.902
+    UIY: 539.769
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -7413,14 +7413,14 @@ Objects {
     Width: 478
     Height: 43
     UIX: 115.728638
-    UIY: 383.087
+    UIY: 396.814
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
     Text {
-      Label: "I have sent you once peice of the Ocular Device.  It\'s a special device that when activated will show special energy markings.  Combine the Ocular Lens with the Ocular Frame to complete the device.  The Ocular Frame should be very close by the tent."
+      Label: "I have sent you once peice of the Ocular Device.  It\'s a special device that when activated will show special energy markings.  Combine the Lens with the Frame to complete the device.  The Frame should be very close by the tent."
       Color {
         R: 0.00999999
         G: 0.00450330786
@@ -7483,7 +7483,7 @@ Objects {
     Width: 478
     Height: 43
     UIX: 115.728638
-    UIY: 315.788
+    UIY: 332.626
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"

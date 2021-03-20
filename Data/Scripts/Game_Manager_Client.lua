@@ -100,7 +100,7 @@ Events.Connect("start_game", function(quest_id)
 		end
 
 		if(quest_id == 6) then
-			Events.Broadcast("show_cave_waypoint")
+	--		Events.Broadcast("show_cave_waypoint")
 		end
 
 		if(quest_id == 7) then

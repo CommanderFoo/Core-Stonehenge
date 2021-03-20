@@ -16,6 +16,8 @@ Events.Connect("enable_beam", function()
 end)
 
 Events.Connect("open_up_cave", function(visual_only)
+	Events.Broadcast("show_cave_waypoint")
+	
 	if(visual_only) then
 		visual_rock_55b.visibility = Visibility.FORCE_OFF
 		visual_rock_55a.visibility = Visibility.FORCE_OFF

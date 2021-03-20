@@ -74008,7 +74008,7 @@ Objects {
   Name: "Grass Tall"
   Transform {
     Location {
-      X: 345.708
+      X: 452.199707
       Y: -481.754395
       Z: -20.3600769
     }
@@ -74061,7 +74061,7 @@ Objects {
     Location {
       X: 629.57959
       Y: -633.545898
-      Z: 3.23980713
+      Z: -58.8675385
     }
     Rotation {
     }
@@ -74112,7 +74112,7 @@ Objects {
     Location {
       X: 824.283203
       Y: -682.173828
-      Z: 31.9070435
+      Z: -71.5903473
     }
     Rotation {
     }

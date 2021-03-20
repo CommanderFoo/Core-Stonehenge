@@ -15,7 +15,8 @@ local helper = look_helper:FindChildByName("Helper")
 
 local local_player = Game.GetLocalPlayer()
 
-local inventory = {}
+local_player.clientUserData.inventory = {}
+
 local max_slots = #slots:GetChildren()
 local inventory_active = false
 local can_open_inventory = false
@@ -29,7 +30,7 @@ local using = false
 local inventory_in_tween = nil
 
 for i = 1, max_slots do
-	inventory[i] = {
+	local_player.clientUserData.inventory[i] = {
 
 		data = nil,
 		quantity = 0,
@@ -41,22 +42,22 @@ for i = 1, max_slots do
 
 	}
 
-	inventory[i].button.hoveredEvent:Connect(function()
-		if(inventory[i].data ~= nil and not inventory[i].disabled) then
+	local_player.clientUserData.inventory[i].button.hoveredEvent:Connect(function()
+		if(local_player.clientUserData.inventory[i].data ~= nil and not local_player.clientUserData.inventory[i].disabled) then
 			Events.Broadcast("play_sound", "hover", true)
 			
-			inventory[i].background:SetColor(hover_color)
+			local_player.clientUserData.inventory[i].background:SetColor(hover_color)
 
 			Events.Broadcast("over_inventory", true)
 
 			local type = "default"
 
-			if((is_inspecting or is_interacting) and inventory[i].data:GetCustomProperty("can_use")) then
+			if((is_inspecting or is_interacting) and local_player.clientUserData.inventory[i].data:GetCustomProperty("can_use")) then
 				type = "use"
 			else
-				if(inventory[i].data:GetCustomProperty("can_combine")) then
+				if(local_player.clientUserData.inventory[i].data:GetCustomProperty("can_combine")) then
 					type = "combine"
-				elseif(inventory[i].data:GetCustomProperty("can_look")) then
+				elseif(local_player.clientUserData.inventory[i].data:GetCustomProperty("can_look")) then
 					type = "inventory_look"
 				end
 			end
@@ -65,37 +66,37 @@ for i = 1, max_slots do
 		end
 	end)
 
-	inventory[i].button.unhoveredEvent:Connect(function()
-		if(inventory[i].data ~= nil and not inventory[i].disabled and not inventory[i].active) then
-			inventory[i].background:SetColor(unhover_color)
+	local_player.clientUserData.inventory[i].button.unhoveredEvent:Connect(function()
+		if(local_player.clientUserData.inventory[i].data ~= nil and not local_player.clientUserData.inventory[i].disabled and not local_player.clientUserData.inventory[i].active) then
+			local_player.clientUserData.inventory[i].background:SetColor(unhover_color)
 		end
 
 		Events.Broadcast("over_inventory", false)
 	end)
 
-	inventory[i].button.clickedEvent:Connect(function()
-		if(inventory[i].data ~= nil and not inventory[i].disabled) then
+	local_player.clientUserData.inventory[i].button.clickedEvent:Connect(function()
+		if(local_player.clientUserData.inventory[i].data ~= nil and not local_player.clientUserData.inventory[i].disabled) then
 			Events.Broadcast("play_sound", "click", true)
 
-			local same_slot = inventory[i] == active_slot
+			local same_slot = local_player.clientUserData.inventory[i] == active_slot
 
 			if(active_slot and active_slot.inspecting) then
 				clean_up_active_data()
 			end
 
 			if(not same_slot) then
-				local data = inventory[i].data
+				local data = local_player.clientUserData.inventory[i].data
 
-				inventory[i].background:SetColor(active_color)
-				inventory[i].active = true
-				active_slot = inventory[i]
+				local_player.clientUserData.inventory[i].background:SetColor(active_color)
+				local_player.clientUserData.inventory[i].active = true
+				active_slot = local_player.clientUserData.inventory[i]
 				active_slot.inspecting = true
 
 				if(data:GetCustomProperty("can_use") and is_interacting or is_inspecting) then
 					using = true
 
-					Events.Broadcast("override_cursor", "use", inventory[i].icon.sourceTemplateId)
-					Events.Broadcast("using_item", inventory[i].data)
+					Events.Broadcast("override_cursor", "use", local_player.clientUserData.inventory[i].icon.sourceTemplateId)
+					Events.Broadcast("using_item", local_player.clientUserData.inventory[i].data)
 				elseif(data:GetCustomProperty("can_look")) then
 					active_looking_obj = World.SpawnAsset(data:GetCustomProperty("model_asset"))
 					active_looking_obj:SetWorldPosition(helper:GetWorldPosition())
@@ -202,7 +203,7 @@ function clean_up_active_data()
 end
 
 function get_free_slot()
-	for i, e in ipairs(inventory) do
+	for i, e in ipairs(local_player.clientUserData.inventory) do
 		if(e.data == nil) then
 			return i, e
 		end
@@ -212,7 +213,7 @@ function get_free_slot()
 end
 
 function get_existing_slot(inventory_id)
-	for i, e in ipairs(inventory) do
+	for i, e in ipairs(local_player.clientUserData.inventory) do
 		if(e.data ~= nil and e.data:GetCustomProperty("id") == inventory_id) then
 			return i, e
 		end
@@ -360,7 +361,7 @@ function remove(obj_ref)
 end
 
 function clear()
-	inventory = {}
+	local_player.clientUserData.inventory = {}
 	--Events.BroadcastToServer("inventory_clear")
 end
 
@@ -387,19 +388,19 @@ end
 
 function update_items()
 	for i = 1, max_slots do
-		if(Object.IsValid(inventory[i].icon)) then
-			local children = inventory[i].icon:GetChildren()
+		if(Object.IsValid(local_player.clientUserData.inventory[i].icon)) then
+			local children = local_player.clientUserData.inventory[i].icon:GetChildren()
 			local alpha = .5
 
-			if((is_inspecting or is_interacting) and inventory[i].data:GetCustomProperty("can_look") and not inventory[i].data:GetCustomProperty("can_use")) then
-				inventory[i].disabled = true
+			if((is_inspecting or is_interacting) and local_player.clientUserData.inventory[i].data:GetCustomProperty("can_look") and not local_player.clientUserData.inventory[i].data:GetCustomProperty("can_use")) then
+				local_player.clientUserData.inventory[i].disabled = true
 				alpha = .5
 			else
 				if(inventory_active) then
 					alpha = 1
 				end
 
-				inventory[i].disabled = false
+				local_player.clientUserData.inventory[i].disabled = false
 			end
 
 			for ci, c in ipairs(children) do
@@ -427,8 +428,8 @@ function disable_inventory()
 	inventory_active = false
 
 	for i = 1, max_slots do
-		if(Object.IsValid(inventory[i].icon)) then
-			local children = inventory[i].icon:GetChildren()
+		if(Object.IsValid(local_player.clientUserData.inventory[i].icon)) then
+			local children = local_player.clientUserData.inventory[i].icon:GetChildren()
 
 			for ci, c in ipairs(children) do
 				local color = c:GetColor()

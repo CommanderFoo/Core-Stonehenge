@@ -121,11 +121,10 @@ Objects {
     AudioAsset {
       Id: 4003044701373196786
     }
-    AutoPlay: true
     Repeat: true
     Volume: 0.546959
     Falloff: 1861.68115
-    Radius: 3660.80078
+    Radius: 2614.93408
     IsSpatializationEnabled: true
     IsAttenuationEnabled: true
   }
@@ -160,7 +159,6 @@ Objects {
     AudioAsset {
       Id: 10103834061545906240
     }
-    AutoPlay: true
     Repeat: true
     Pitch: 923.905273
     Volume: 0.674376
@@ -200,7 +198,6 @@ Objects {
     AudioAsset {
       Id: 6891694911843830105
     }
-    AutoPlay: true
     Repeat: true
     Pitch: 336.650391
     Volume: 0.681194425

@@ -27,13 +27,14 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
-          Width: 100
-          Height: 100
+          Width: 20
+          Height: 20
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
+          AddSizeToParentIfUsingParentSize: true
           UseParentWidth: true
           UseParentHeight: true
           Panel {
@@ -91,11 +92,11 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 10726487168297821283
+              Id: 3790946411829548858
             }
             Color {
-              R: 0.954000115
-              G: 4.54902704e-07
+              R: 0.490000129
+              G: 2.33650269e-07
               A: 1
             }
             TeamSettings {
@@ -117,12 +118,12 @@ Assets {
       }
     }
     Assets {
-      Id: 10726487168297821283
-      Name: "Fantasy Craft Crystal 002"
+      Id: 3790946411829548858
+      Name: "Fantasy Craft Crystal 010"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Crafting_Crystal_002"
+        AssetId: "UI_Fantasy_Crafting_Crystal_010"
       }
     }
     PrimaryAssetId {

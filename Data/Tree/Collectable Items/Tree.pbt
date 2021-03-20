@@ -4,18 +4,10 @@ Objects {
   Id: 4715875678124004730
   Name: "Pickup Sub Collectable - Mallet"
   Transform {
-    Location {
-      Y: 340.577698
-    }
-    Rotation {
-      Pitch: 85.6057587
-      Yaw: -179.985931
-      Roll: 179.757355
-    }
     Scale {
-      X: 0.0681157708
-      Y: 0.0681157708
-      Z: 0.0681157708
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 16845918078398887905
@@ -35,18 +27,6 @@ Objects {
           String: "Pickup Sub Collectable - Mallet"
         }
         Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 20.3270454
-            Yaw: -0.00119018555
-            Roll: -0.257049561
-          }
-        }
-        Overrides {
-          Name: "cs:collectable_id"
-          Int: 18
-        }
-        Overrides {
           Name: "Position"
           Vector {
             X: 2884.38
@@ -55,11 +35,11 @@ Objects {
           }
         }
         Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.0681157708
-            Y: 0.0681157708
-            Z: 0.0681157708
+          Name: "Rotation"
+          Rotator {
+            Pitch: 20.3270454
+            Yaw: -0.00119018555
+            Roll: -0.257049561
           }
         }
       }
@@ -73,17 +53,10 @@ Objects {
   Id: 5014103778854936935
   Name: "Pickup Sub Collectable - Lolipop"
   Transform {
-    Location {
-    }
-    Rotation {
-      Pitch: 85.6059494
-      Yaw: -179.985931
-      Roll: 179.757355
-    }
     Scale {
-      X: 0.0681157708
-      Y: 0.0681157708
-      Z: 0.0681157708
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 16845918078398887905
@@ -103,14 +76,6 @@ Objects {
           String: "Pickup Sub Collectable - Lolipop"
         }
         Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 8.5848093
-            Yaw: 96.2125092
-            Roll: 101.556816
-          }
-        }
-        Overrides {
           Name: "Position"
           Vector {
             X: 3273.5
@@ -119,15 +84,11 @@ Objects {
           }
         }
         Overrides {
-          Name: "cs:collectable_id"
-          Int: 17
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.0681157708
-            Y: 0.0681157708
-            Z: 0.0681157708
+          Name: "Rotation"
+          Rotator {
+            Pitch: 8.5848093
+            Yaw: 96.2125092
+            Roll: 101.556816
           }
         }
       }
@@ -190,18 +151,10 @@ Objects {
   Id: 570346761565917854
   Name: "Pickup Sub Collectable - Ace of Spades"
   Transform {
-    Location {
-      Y: 48.7986755
-    }
-    Rotation {
-      Pitch: 85.6061249
-      Yaw: -179.985931
-      Roll: 179.757355
-    }
     Scale {
-      X: 0.0681157708
-      Y: 0.0681157708
-      Z: 0.0681157708
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 16845918078398887905
@@ -221,14 +174,6 @@ Objects {
           String: "Pickup Sub Collectable - Ace of Spades"
         }
         Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 85.6057587
-            Yaw: -179.985931
-            Roll: 179.757355
-          }
-        }
-        Overrides {
           Name: "Position"
           Vector {
             X: 3196.45947
@@ -237,15 +182,11 @@ Objects {
           }
         }
         Overrides {
-          Name: "cs:collectable_id"
-          Int: 15
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.0681157708
-            Y: 0.0681157708
-            Z: 0.0681157708
+          Name: "Rotation"
+          Rotator {
+            Pitch: 85.6057587
+            Yaw: -179.985931
+            Roll: 179.757355
           }
         }
       }
@@ -257,19 +198,12 @@ Objects {
 }
 Objects {
   Id: 17964361819440254307
-  Name: "Pickup Sub Collectable - mushroom"
+  Name: "Pickup Sub Collectable - Mushroom"
   Transform {
-    Location {
-    }
-    Rotation {
-      Pitch: 85.6062546
-      Yaw: -179.985931
-      Roll: 179.757355
-    }
     Scale {
-      X: 0.0681157708
-      Y: 0.0681157708
-      Z: 0.0681157708
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 16845918078398887905
@@ -289,14 +223,6 @@ Objects {
           String: "Pickup Sub Collectable - Mushroom"
         }
         Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 85.6059494
-            Yaw: -179.985931
-            Roll: 179.757355
-          }
-        }
-        Overrides {
           Name: "Position"
           Vector {
             X: 3300.07422
@@ -305,15 +231,11 @@ Objects {
           }
         }
         Overrides {
-          Name: "cs:collectable_id"
-          Int: 14
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.0681157708
-            Y: 0.0681157708
-            Z: 0.0681157708
+          Name: "Rotation"
+          Rotator {
+            Pitch: 85.6059494
+            Yaw: -179.985931
+            Roll: 179.757355
           }
         }
       }
@@ -327,18 +249,10 @@ Objects {
   Id: 16950642252648442965
   Name: "Pickup Sub Collectable - Crate"
   Transform {
-    Location {
-      Y: -110.575531
-    }
-    Rotation {
-      Pitch: 85.6063919
-      Yaw: -179.985931
-      Roll: 179.757355
-    }
     Scale {
-      X: 0.0681157708
-      Y: 0.0681157708
-      Z: 0.0681157708
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 16845918078398887905
@@ -358,14 +272,6 @@ Objects {
           String: "Pickup Sub Collectable - Crate"
         }
         Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 85.6060333
-            Yaw: -179.985931
-            Roll: 179.757355
-          }
-        }
-        Overrides {
           Name: "Position"
           Vector {
             X: 3205.98682
@@ -374,36 +280,11 @@ Objects {
           }
         }
         Overrides {
-          Name: "cs:collectable_id"
-          Int: 13
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.0681157708
-            Y: 0.0681157708
-            Z: 0.0681157708
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 15730326967886438218
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 0.00178683456
-            Y: -5.81361e-07
-            Z: -0.000137285082
-          }
-        }
-        Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -85.5990295
-            Yaw: -176.662384
-            Roll: 176.65361
+            Pitch: 85.6060333
+            Yaw: -179.985931
+            Roll: 179.757355
           }
         }
       }
@@ -515,19 +396,10 @@ Objects {
   Id: 3448151205023202821
   Name: "Pickup Sub Collectable - Ulna Bone"
   Transform {
-    Location {
-      Y: 243.970093
-      Z: 3.96720886
-    }
-    Rotation {
-      Pitch: 85.6063385
-      Yaw: -179.985931
-      Roll: 179.75737
-    }
     Scale {
-      X: 0.411944389
-      Y: 0.411944389
-      Z: 0.411944389
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 16845918078398887905
@@ -562,18 +434,6 @@ Objects {
             Roll: 179.757355
           }
         }
-        Overrides {
-          Name: "cs:collectable_id"
-          Int: 10
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.411944389
-            Y: 0.411944389
-            Z: 0.411944389
-          }
-        }
       }
     }
     TemplateAsset {
@@ -585,18 +445,10 @@ Objects {
   Id: 17511414926326828534
   Name: "Pickup Sub Collectable - Skull"
   Transform {
-    Location {
-      Y: 134.502823
-    }
-    Rotation {
-      Pitch: 0.479007959
-      Yaw: -0.00106811512
-      Roll: -0.256622344
-    }
     Scale {
-      X: 0.411944389
-      Y: 0.411944389
-      Z: 0.411944389
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 16845918078398887905
@@ -616,14 +468,6 @@ Objects {
           String: "Pickup Sub Collectable - Skull"
         }
         Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 0.479007959
-            Yaw: -138.096802
-            Roll: -0.256622314
-          }
-        }
-        Overrides {
           Name: "Position"
           Vector {
             X: 3192.66113
@@ -632,15 +476,11 @@ Objects {
           }
         }
         Overrides {
-          Name: "cs:collectable_id"
-          Int: 9
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.411944389
-            Y: 0.411944389
-            Z: 0.411944389
+          Name: "Rotation"
+          Rotator {
+            Pitch: 0.479007959
+            Yaw: -138.096802
+            Roll: -0.256622314
           }
         }
       }
@@ -654,19 +494,10 @@ Objects {
   Id: 14259027151803575875
   Name: "Pickup Sub Collectable - Hourglass"
   Transform {
-    Location {
-      Y: 174.113586
-      Z: 21.5316162
-    }
-    Rotation {
-      Pitch: 0.479007959
-      Yaw: -0.00106811512
-      Roll: -0.256622344
-    }
     Scale {
-      X: 0.411944389
-      Y: 0.411944389
-      Z: 0.411944389
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 16845918078398887905
@@ -701,18 +532,6 @@ Objects {
             Roll: -0.256622314
           }
         }
-        Overrides {
-          Name: "cs:collectable_id"
-          Int: 8
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.411944389
-            Y: 0.411944389
-            Z: 0.411944389
-          }
-        }
       }
     }
     TemplateAsset {
@@ -724,19 +543,10 @@ Objects {
   Id: 6507047482227623904
   Name: "Pickup Sub Collectable - Red Crystal"
   Transform {
-    Location {
-      Y: 96.4195557
-      Z: 21.5316162
-    }
-    Rotation {
-      Pitch: 0.479007959
-      Yaw: -0.00106811512
-      Roll: -0.256622344
-    }
     Scale {
-      X: 0.411944389
-      Y: 0.411944389
-      Z: 0.411944389
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 16845918078398887905
@@ -771,18 +581,6 @@ Objects {
             Roll: -0.256622314
           }
         }
-        Overrides {
-          Name: "cs:collectable_id"
-          Int: 7
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.411944389
-            Y: 0.411944389
-            Z: 0.411944389
-          }
-        }
       }
     }
     TemplateAsset {
@@ -794,19 +592,10 @@ Objects {
   Id: 9846784153024217173
   Name: "Pickup Sub Collectable - Nails"
   Transform {
-    Location {
-      Y: 53.228302
-      Z: 21.5316162
-    }
-    Rotation {
-      Pitch: 0.479007959
-      Yaw: -0.00106811512
-      Roll: -0.256622344
-    }
     Scale {
-      X: 0.411944389
-      Y: 0.411944389
-      Z: 0.411944389
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 16845918078398887905
@@ -839,18 +628,6 @@ Objects {
             Pitch: 0.479007959
             Yaw: -0.00106811523
             Roll: -0.256622314
-          }
-        }
-        Overrides {
-          Name: "cs:collectable_id"
-          Int: 6
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.411944389
-            Y: 0.411944389
-            Z: 0.411944389
           }
         }
       }
@@ -913,18 +690,10 @@ Objects {
   Id: 8244580091847212528
   Name: "Pickup Sub Collectable - Bucket"
   Transform {
-    Location {
-      Z: 21.5316162
-    }
-    Rotation {
-      Pitch: 0.479007959
-      Yaw: -0.00106811512
-      Roll: -0.256622344
-    }
     Scale {
-      X: 0.411944389
-      Y: 0.411944389
-      Z: 0.411944389
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 16845918078398887905
@@ -959,18 +728,6 @@ Objects {
             Roll: -0.256622314
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.411944389
-            Y: 0.411944389
-            Z: 0.411944389
-          }
-        }
-        Overrides {
-          Name: "cs:collectable_id"
-          Int: 4
-        }
       }
     }
     TemplateAsset {
@@ -982,18 +739,10 @@ Objects {
   Id: 16328506759447373062
   Name: "Pickup Sub Collectable -Trophy"
   Transform {
-    Location {
-      Z: 21.5316162
-    }
-    Rotation {
-      Pitch: 0.479007959
-      Yaw: -0.00106811512
-      Roll: -0.256622344
-    }
     Scale {
-      X: 0.411944389
-      Y: 0.411944389
-      Z: 0.411944389
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 16845918078398887905
@@ -1027,18 +776,6 @@ Objects {
             Yaw: -0.00106811523
             Roll: -0.256622314
           }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.411944389
-            Y: 0.411944389
-            Z: 0.411944389
-          }
-        }
-        Overrides {
-          Name: "cs:collectable_id"
-          Int: 3
         }
       }
     }
@@ -1088,10 +825,6 @@ Objects {
             Yaw: -0.00106811523
             Roll: -0.256622314
           }
-        }
-        Overrides {
-          Name: "cs:collectable_id"
-          Int: 2
         }
       }
     }

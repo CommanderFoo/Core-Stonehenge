@@ -231,6 +231,7 @@ function use_item()
 
 				if(using_item:GetCustomProperty("id") == 2) then
 					Events.Broadcast("quest_item_complete", 2)
+					Events.Broadcast("show_dig_glowing_flowers")
 					Events.BroadcastToServer("save", "ocular_built", 1)
 					
 					local o = look_obj:GetCustomProperty("alt"):GetObject()
@@ -259,7 +260,6 @@ function use_item()
 					hide_tween:set_delay(3)
 
 					Events.Broadcast("add_ocular_ui")
-					Events.Broadcast("add_notification", "You have assembled the Ocular Pulse Device. Press \"R\" to use it to reveal special clues in the area.")
 					Events.Broadcast("enable_ocular_device", true)
 				elseif(using_item:GetCustomProperty("id") == 11 and string.find(type, "remove")) then
 					Events.Broadcast("play_sound", "dig_ground")

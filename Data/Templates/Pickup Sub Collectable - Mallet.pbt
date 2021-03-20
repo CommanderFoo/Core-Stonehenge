@@ -15,7 +15,7 @@ Assets {
             Z: 0.0681157708
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 16845918078398887905
         ChildIds: 2899992038215405552
         ChildIds: 15026516642023036830
         UnregisteredParameters {
@@ -25,7 +25,7 @@ Assets {
           }
           Overrides {
             Name: "cs:collectable_id"
-            Int: 5
+            Int: 18
           }
         }
         WantsNetworking: true

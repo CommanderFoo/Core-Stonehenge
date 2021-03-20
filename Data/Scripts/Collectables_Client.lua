@@ -3,8 +3,10 @@ local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
 local collectables = script:GetCustomProperty("collectables"):WaitForObject()
 local key = script:GetCustomProperty("key")
 local items = script:GetCustomProperty("items"):WaitForObject()
+local data_holder = script:GetCustomProperty("data_holder"):WaitForObject()
 
 local children = items:GetChildren()
+local dig_collectables = script:GetCustomProperty("dig_collectables"):WaitForObject()
 
 local tween = nil
 
@@ -75,9 +77,19 @@ function close()
 	is_open = false
 end
 
-function enable_collectable(id)
+function check_collectables()
+	for i, c in ipairs(dig_collectables) do
+		print(c:GetCustomProperty("collectable_id"), c.visibility)
+		if(c.visibility == Visibility.FORCE_OFF and c.collision == Collision.FORCE_OFF) then
+			print(c:GetCustomProperty("collectable_id"))
+			enable_collectable(c:GetCustomProperty("collectable_id"))
+		end
+	end
+end
+
+function enable_collectable(id, no_msg)
 	for i, c in ipairs(children) do
-		if(tonumber(c.name) == id) then
+		if(tonumber(c.name) == tonumber(id)) then
 			c:FindChildByName("Name Hidden").visibility = Visibility.FORCE_OFF
 			c:FindChildByName("Desc Hidden").visibility = Visibility.FORCE_OFF
 
@@ -86,14 +98,16 @@ function enable_collectable(id)
 
 			c:FindChildByName("Icon"):SetColor(Color.New(1, 1, 1, 1))
 
-			Events.Broadcast("add_notification", {
-				
-				msg = "\"" .. c:FindChildByName("Name").text .. "\" has been added to your collection.",
-				in_time = .5,
-				out_time = .5,
-				stay_time = 1
+			if(not no_msg) then
+				Events.Broadcast("add_notification", {
+					
+					msg = "\"" .. c:FindChildByName("Name").text .. "\" has been added to your collection.",
+					in_time = .5,
+					out_time = .5,
+					stay_time = 1.2
 
-			})
+				})
+			end
 
 			break
 		end
@@ -127,4 +141,18 @@ Events.Connect("add_collectable", function(obj_ref)
 	
 	enable_collectable(id)
 	Events.BroadcastToServer("add_collectable", local_player, id, obj_ref)
+end)
+
+Events.Connect("check_collectables", check_collectables)
+
+data_holder.networkedPropertyChangedEvent:Connect(function(obj, prop)
+	if(prop == "collectable_data") then
+		local data = data_holder:GetCustomProperty("collectable_data")
+
+		if(data) then
+			for id in string.gmatch(data, "([^|]+)") do
+				enable_collectable(id, true)
+			end
+		end
+	end
 end)

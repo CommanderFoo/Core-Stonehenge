@@ -21,7 +21,15 @@ Objects {
       String: ""
     }
     Overrides {
+      Name: "cs:collectable_data"
+      String: ""
+    }
+    Overrides {
       Name: "cs:inventory_data:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:collectable_data:isrep"
       Bool: true
     }
   }

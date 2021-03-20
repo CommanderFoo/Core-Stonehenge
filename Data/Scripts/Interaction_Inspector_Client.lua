@@ -15,6 +15,11 @@ local local_player = Game.GetLocalPlayer()
 
 local current_trigger = nil
 
+local played_shovel_thought = false
+local played_catalyst_thought = false
+local played_rock_thought = false
+local played_use_catalyst_thought = false
+
 for k, trigger in ipairs(interactables:FindDescendantsByType("Trigger")) do
 	trigger.interactedEvent:Connect(function(obj, player)
 		current_trigger = obj
@@ -61,6 +66,48 @@ for k, trigger in ipairs(interactables:FindDescendantsByType("Trigger")) do
 		if(obj:GetCustomProperty("thought_id") and obj:GetCustomProperty("thought_id") > 0) then
 			Events.Broadcast("add_thought", obj:GetCustomProperty("thought_id"))
 		end
+
+		if(obj.parent and obj.parent) then
+			local inventory = local_player.clientUserData.inventory
+
+			if(inventory) then
+				if(obj.parent.name == "Lily Area" and local_player.clientUserData.quest_id < 4) then
+					local got_shovel = false
+					local got_yellow = false
+					local got_red = false
+
+					for i, item in pairs(inventory) do
+						if(item.data) then
+							local id = item.data:GetCustomProperty("id")
+
+							if(id == 11) then
+								got_shovel = true
+							elseif(id == 3) then
+								got_yellow = true
+							elseif(id == 4) then
+								got_red = true
+							end
+						end
+					end
+
+					if(not played_catalyst_thought and got_shovel and (not got_yellow or not got_red)) then
+						Events.Broadcast("add_thought", 2)
+						played_catalyst_thought = true
+					elseif(not played_shovel_thought and not got_shovel) then
+						Events.Broadcast("add_thought", 3)
+						played_shovel_thought = true
+					end
+				elseif(obj.parent.name == "White Rock" or obj.parent.name == "Red Rock" or obj.parent.name == "Blue Rock" or obj.parent.name == "Yellow Rock" ) then
+					if(not played_rock_thought and local_player.clientUserData.quest_id < 5) then
+						Events.Broadcast("add_thought", 4)
+						played_rock_thought = true
+					elseif(not played_use_catalyst_thought and local_player.clientUserData.quest_id == 5) then
+						Events.Broadcast("add_thought", 5)
+						played_use_catalyst_thought = true
+					end
+				end
+			end
+		end
 	end)
 end
 
@@ -99,9 +146,9 @@ end)
 
 local_player.bindingPressedEvent:Connect(function(p, binding)
 	if(debug and local_player:IsBindingPressed("ability_extra_29")) then -- P
-		print("-------")
-		print("Position: ", inspect_cam:GetWorldPosition())
-		print("Rotation: ", inspect_cam:GetWorldRotation())
+		--print("-------")
+		--print("Position: ", inspect_cam:GetWorldPosition())
+		--print("Rotation: ", inspect_cam:GetWorldRotation())
 	else
 		key_down = true
 	end
@@ -112,6 +159,7 @@ local_player.bindingReleasedEvent:Connect(function(p, binding)
 end)
 
 function Tick()
+	--[[
 	if(debug and key_down) then
 		local pos = inspect_cam:GetWorldPosition()
 		local rot = inspect_cam:GetWorldRotation()
@@ -148,5 +196,5 @@ function Tick()
 
 		inspect_cam:SetWorldPosition(pos)
 		inspect_cam:SetWorldRotation(rot)
-	end
+	end--]]
 end

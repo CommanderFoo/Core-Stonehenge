@@ -300,6 +300,7 @@ Objects {
   ChildIds: 175640858615260086
   ChildIds: 1877532149501611667
   ChildIds: 18136122010751220708
+  ChildIds: 4459834541766883327
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -310,6 +311,64 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 4459834541766883327
+  Name: "Quest_Lily_Flowers_Switcher_Client"
+  Transform {
+    Location {
+      X: -4791.16846
+      Y: -5503.01465
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12281289070681835054
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:dig_normal"
+      ObjectReference {
+        SelfId: 11137859157199852391
+      }
+    }
+    Overrides {
+      Name: "cs:dig_glowing"
+      ObjectReference {
+        SelfId: 6615342702258295258
+      }
+    }
+    Overrides {
+      Name: "cs:grove_normal"
+      ObjectReference {
+        SelfId: 3301681575500954397
+      }
+    }
+    Overrides {
+      Name: "cs:grove_glowing"
+      ObjectReference {
+        SelfId: 1682813434280546198
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 17046783500120358289
+    }
   }
 }
 Objects {
@@ -418,6 +477,12 @@ Objects {
         A: 1
       }
     }
+    Overrides {
+      Name: "cs:final_time"
+      ObjectReference {
+        SelfId: 3619365820644346555
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -479,25 +544,37 @@ Objects {
     Overrides {
       Name: "cs:blue_rotator"
       ObjectReference {
-        SelfId: 3406590393990027585
+        SelfId: 8012908256909681383
+        SubObjectId: 1641279718894758573
+        InstanceId: 11755248568333856431
+        TemplateId: 3679702700024304551
       }
     }
     Overrides {
       Name: "cs:white_rotator"
       ObjectReference {
-        SelfId: 16330345981550338515
+        SelfId: 3055475381032601107
+        SubObjectId: 1641279718894758573
+        InstanceId: 18419771671517971870
+        TemplateId: 3679702700024304551
       }
     }
     Overrides {
       Name: "cs:yellow_rotator"
       ObjectReference {
-        SelfId: 10666332874225155054
+        SelfId: 582489672592134053
+        SubObjectId: 1641279718894758573
+        InstanceId: 4176636789984040048
+        TemplateId: 3679702700024304551
       }
     }
     Overrides {
       Name: "cs:red_rotator"
       ObjectReference {
-        SelfId: 1316097554430157904
+        SelfId: 9067006100597830677
+        SubObjectId: 1641279718894758573
+        InstanceId: 4010629983080973623
+        TemplateId: 3679702700024304551
       }
     }
     Overrides {

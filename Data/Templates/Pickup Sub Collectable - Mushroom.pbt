@@ -7,7 +7,7 @@ Assets {
       RootId: 7735741859292460589
       Objects {
         Id: 7735741859292460589
-        Name: "Pickup Sub Collectable - mushroom"
+        Name: "Pickup Sub Collectable - Mushroom"
         Transform {
           Scale {
             X: 0.0681157708
@@ -15,7 +15,7 @@ Assets {
             Z: 0.0681157708
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 16845918078398887905
         ChildIds: 18139799522672989516
         ChildIds: 3694036269005556691
         UnregisteredParameters {
@@ -25,7 +25,7 @@ Assets {
           }
           Overrides {
             Name: "cs:collectable_id"
-            Int: 5
+            Int: 14
           }
         }
         WantsNetworking: true
@@ -133,10 +133,10 @@ Assets {
         ChildIds: 18063034290347968190
         WantsNetworking: true
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceon"
+          Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"

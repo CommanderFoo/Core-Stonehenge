@@ -341,15 +341,6 @@ Assets {
   }
 }
 Assets {
-  Id: 13578390651348958190
-  Name: "Text 06: 3"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F8_Text_029"
-  }
-}
-Assets {
   Id: 13575683411768208063
   Name: "Gem - Heart Polished"
   PlatformAssetType: 1
@@ -545,15 +536,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fantasy_bottle_001"
-  }
-}
-Assets {
-  Id: 11252462215952648497
-  Name: "Text 06: 1"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F8_Text_027"
   }
 }
 Assets {
@@ -890,15 +872,6 @@ Assets {
   }
 }
 Assets {
-  Id: 7404890342437083261
-  Name: "Text 06: 2"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F8_Text_028"
-  }
-}
-Assets {
   Id: 7283825798727192743
   Name: "Metal Iron Rusted 02"
   PlatformAssetType: 2
@@ -1031,15 +1004,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F6_Text_011"
-  }
-}
-Assets {
-  Id: 5850263722259473622
-  Name: "Text 06: 4"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F8_Text_030"
   }
 }
 Assets {

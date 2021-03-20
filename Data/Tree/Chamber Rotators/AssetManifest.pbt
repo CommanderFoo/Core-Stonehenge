@@ -8,24 +8,6 @@ Assets {
   }
 }
 Assets {
-  Id: 15417241749641278998
-  Name: "Rock Obsidian 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_fresnel_rock_obsidian_001_uv"
-  }
-}
-Assets {
-  Id: 11171792275709422916
-  Name: "Decal Elven Symbols"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_decal_elven_symbols_001"
-  }
-}
-Assets {
   Id: 10831211583006885035
   Name: "Cylinder - Chamfered Polished"
   PlatformAssetType: 1

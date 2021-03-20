@@ -19,6 +19,37 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 683668987771644894
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 49.7226563
+            Y: -29.2174072
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.208557129
+            Yaw: 149.16774
+          }
+        }
+        Overrides {
+          Name: "bp:Color Emissive"
+          Color {
+            G: 0.12039718
+            B: 0.336666584
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "bp:Emissive Boost"
+          Float: 7
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 838574595559107789
       value {
         Overrides {
@@ -28,7 +59,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -556.619629
+            X: -587.174316
             Y: -1017.41028
             Z: 288.848389
           }
@@ -36,9 +67,9 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: 85.3111496
-            Yaw: -172.763977
-            Roll: -83.7415466
+            Pitch: 85.3107224
+            Yaw: 167.342606
+            Roll: -83.7408447
           }
         }
         Overrides {
@@ -48,6 +79,46 @@ Objects {
             Y: 1.06688035
             Z: 1.891644
           }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14699537063519042581
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -49.7246094
+            Y: 29.2174072
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 0.208552986
+            Yaw: 149.959167
+            Roll: 1.33403013e-08
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.57379925
+            Y: -0.784988225
+            Z: 1.00000024
+          }
+        }
+        Overrides {
+          Name: "bp:Color Emissive"
+          Color {
+            G: 0.12039718
+            B: 0.336666584
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "bp:Emissive Boost"
+          Float: 7
         }
       }
     }
@@ -94,9 +165,9 @@ Objects {
   Name: "Back"
   Transform {
     Location {
-      X: 18.2304688
-      Y: 41.4501953
-      Z: 165.771973
+      X: -38.6616631
+      Y: 58.7133
+      Z: 161.248077
     }
     Rotation {
       Pitch: -1.55056763
@@ -186,6 +257,31 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 983312628588223830
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 4.43362522
+            Y: -91.2260132
+            Z: -30.3143559
+          }
+        }
+        Overrides {
+          Name: "bp:Emissive Boost"
+          Float: 7
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.602081299
+            Yaw: 156.265121
+            Roll: -1.91824341
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 13187082396292528170
       value {
         Overrides {
@@ -218,6 +314,31 @@ Objects {
         }
       }
     }
+    ParameterOverrideMap {
+      key: 15739334592913941413
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 4.87887573
+            Y: -41.2888184
+            Z: -32.2158203
+          }
+        }
+        Overrides {
+          Name: "bp:Emissive Boost"
+          Float: 7
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 1.06049609
+            Yaw: -157.261444
+            Roll: -1.9524231
+          }
+        }
+      }
+    }
     TemplateAsset {
       Id: 5319894053142481181
     }
@@ -241,6 +362,38 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 5605717100043042400
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -9.681633
+            Y: -1.718647
+            Z: 2.75038242
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 0.268795252
+            Yaw: -23.250824
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.854381621
+            Y: 0.854381621
+            Z: 0.854381621
+          }
+        }
+        Overrides {
+          Name: "bp:Emissive Boost"
+          Float: 7
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 11578906139714976948
       value {
@@ -271,6 +424,31 @@ Objects {
             Y: 1.30607295
             Z: 1.30607295
           }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13411161879335396992
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 23.9355354
+            Y: -40.612278
+            Z: 2.75017214
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.854381621
+            Y: 0.854381621
+            Z: 0.854381621
+          }
+        }
+        Overrides {
+          Name: "bp:Emissive Boost"
+          Float: 7
         }
       }
     }

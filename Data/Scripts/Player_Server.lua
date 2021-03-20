@@ -1,6 +1,19 @@
 Game.playerJoinedEvent:Connect(function(player)
 	disable_player(player)
 	player:SetVisibility(false)
+
+	
+	player.bindingPressedEvent:Connect(function(obj, binding)
+		if(binding == "ability_feet") then
+			player.maxWalkSpeed = 1300
+		end
+	end)
+
+	player.bindingReleasedEvent:Connect(function(obj, binding) 
+		if(binding == "ability_feet") then
+			player.maxWalkSpeed = 750
+		end
+	end)
 end)
 
 function disable_player(player, stance)

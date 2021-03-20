@@ -1,6 +1,189 @@
 Name: "Collisions"
 RootId: 10315545194783356564
 Objects {
+  Id: 9205940560411174354
+  Name: "Chamber Boundary"
+  Transform {
+    Location {
+      X: 3361.15088
+      Y: -4105.97314
+      Z: -1400
+    }
+    Rotation {
+      Pitch: -90
+      Yaw: 26.565033
+      Roll: -149.478149
+    }
+    Scale {
+      X: 5.13159132
+      Y: 6.71007204
+      Z: 5.13158607
+    }
+  }
+  ParentId: 10315545194783356564
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6915524050451837475
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 8443849819984631043
+  Name: "Chamber Boundary"
+  Transform {
+    Location {
+      X: 3742.36182
+      Y: -5683.59229
+      Z: -1400.00012
+    }
+    Rotation {
+      Pitch: -90
+      Yaw: 9.46233559
+      Roll: 135.939941
+    }
+    Scale {
+      X: 5.13159132
+      Y: 6.71007204
+      Z: 5.13158607
+    }
+  }
+  ParentId: 10315545194783356564
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6915524050451837475
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 9963215676021155756
+  Name: "Chamber Boundary"
+  Transform {
+    Location {
+      X: 2212.73877
+      Y: -5997.02148
+      Z: -1400
+    }
+    Rotation {
+      Pitch: -90
+      Roll: 56.8976974
+    }
+    Scale {
+      X: 5.13159132
+      Y: 6.71007204
+      Z: 5.13158607
+    }
+  }
+  ParentId: 10315545194783356564
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6915524050451837475
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 5774491697190356950
+  Name: "Chamber Boundary"
+  Transform {
+    Location {
+      X: 1860.36768
+      Y: -4486.60059
+      Z: -1371.77502
+    }
+    Rotation {
+      Pitch: -90
+      Yaw: 26.565033
+      Roll: -59.6672974
+    }
+    Scale {
+      X: 5.13159132
+      Y: 6.71007204
+      Z: 5.13158607
+    }
+  }
+  ParentId: 10315545194783356564
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6915524050451837475
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
   Id: 15032985956501915058
   Name: "Ditch Boundary"
   Transform {

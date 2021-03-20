@@ -4,11 +4,15 @@ Events.Connect("enable_portal", function()
 	portal.isInteractable = true
 end)
 
-Events.Connect("disable_portal", function()
+Events.Connect("disable_portal", function(player)
 	portal.isInteractable = false
+	
+	Events.Broadcast("submit_fastest_time", player:GetResource("finished"))
+	player:SetResource("finished", 1)
+	Events.Broadcast("stop_timer")
 end)
 
 Events.ConnectForPlayer("reload_game", function(player)
-	--player:TransferToGame(...)
-	print("Reload game by transferring")
+	player:TransferToGame("923e7b/stonehenge")
+	--print("Reload game by transferring")
 end)

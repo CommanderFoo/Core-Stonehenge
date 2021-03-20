@@ -27,13 +27,12 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
-          Width: 100
-          Height: 100
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
+          AddSizeToParentIfUsingParentSize: true
           UseParentWidth: true
           UseParentHeight: true
           Panel {
@@ -94,8 +93,8 @@ Assets {
               Id: 1808738903976987071
             }
             Color {
-              R: 0.186000049
-              G: 0.237682581
+              R: 1
+              G: 1
               B: 1
               A: 1
             }

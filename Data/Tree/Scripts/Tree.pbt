@@ -52,6 +52,7 @@ Objects {
   ChildIds: 17645753054259915518
   ChildIds: 5347877517916026926
   ChildIds: 14937095057764392733
+  ChildIds: 14811129942185565658
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -63,6 +64,58 @@ Objects {
   }
   NetworkContext {
     Type: Server
+  }
+}
+Objects {
+  Id: 14811129942185565658
+  Name: "Leaderboard_Server"
+  Transform {
+    Location {
+      X: -4791.16846
+      Y: -5503.01465
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1946733176415873648
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:time"
+      NetReference {
+        Key: "13D3D1980BBFAC8B"
+        Type {
+          Value: "mc:enetreferencetype:leaderboard"
+        }
+      }
+    }
+    Overrides {
+      Name: "cs:collectables"
+      NetReference {
+        Key: "881E27267E3067DB"
+        Type {
+          Value: "mc:enetreferencetype:leaderboard"
+        }
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15829262083875556423
+    }
   }
 }
 Objects {
@@ -110,6 +163,20 @@ Objects {
     }
   }
   ParentId: 1946733176415873648
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:dig_collectables"
+      ObjectReference {
+        SelfId: 16845918078398887905
+      }
+    }
+    Overrides {
+      Name: "cs:data_holder"
+      ObjectReference {
+        SelfId: 11472370763536327097
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -431,6 +498,8 @@ Objects {
   ChildIds: 7873356878715661556
   ChildIds: 2244137841673158829
   ChildIds: 8189325046855239704
+  ChildIds: 15521201443443620303
+  ChildIds: 8489843879329551771
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -441,6 +510,127 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 8489843879329551771
+  Name: "Leaderboard_Client"
+  Transform {
+    Location {
+      X: -4791.16846
+      Y: -5503.01465
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14858104107515101237
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:time_entry"
+      AssetReference {
+        Id: 7462981602958556219
+      }
+    }
+    Overrides {
+      Name: "cs:time_panel"
+      ObjectReference {
+        SelfId: 12457425890171098822
+      }
+    }
+    Overrides {
+      Name: "cs:time_lb"
+      NetReference {
+        Key: "13D3D1980BBFAC8B"
+        Type {
+          Value: "mc:enetreferencetype:leaderboard"
+        }
+      }
+    }
+    Overrides {
+      Name: "cs:collectables_lb"
+      NetReference {
+        Key: "881E27267E3067DB"
+        Type {
+          Value: "mc:enetreferencetype:leaderboard"
+        }
+      }
+    }
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
+      }
+    }
+    Overrides {
+      Name: "cs:collectables_panel"
+      ObjectReference {
+        SelfId: 1966793606259019035
+      }
+    }
+    Overrides {
+      Name: "cs:collectable_entry"
+      AssetReference {
+        Id: 2760707212294365746
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 7396156383036612536
+    }
+  }
+}
+Objects {
+  Id: 15521201443443620303
+  Name: "Camera_Shake_Client"
+  Transform {
+    Location {
+      Z: 500
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14858104107515101237
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:camera"
+      ObjectReference {
+        SelfId: 3840927660290209183
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 7171265934528959771
+    }
   }
 }
 Objects {
@@ -958,6 +1148,18 @@ Objects {
       Name: "cs:items"
       ObjectReference {
         SelfId: 17030958101355480687
+      }
+    }
+    Overrides {
+      Name: "cs:dig_collectables"
+      ObjectReference {
+        SelfId: 16845918078398887905
+      }
+    }
+    Overrides {
+      Name: "cs:data_holder"
+      ObjectReference {
+        SelfId: 11472370763536327097
       }
     }
   }
@@ -1867,10 +2069,6 @@ Objects {
       Name: "cs:transition_time"
       Float: 1.5
     }
-    Overrides {
-      Name: "cs:debug"
-      Bool: false
-    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2141,6 +2339,24 @@ Objects {
       Name: "cs:energy"
       ObjectReference {
         SelfId: 18359025117221041928
+      }
+    }
+    Overrides {
+      Name: "cs:grove_pulse"
+      ObjectReference {
+        SelfId: 10696188145082414296
+      }
+    }
+    Overrides {
+      Name: "cs:grove_amb"
+      ObjectReference {
+        SelfId: 4550593616303080752
+      }
+    }
+    Overrides {
+      Name: "cs:grove_chime"
+      ObjectReference {
+        SelfId: 12113986878081595217
       }
     }
   }

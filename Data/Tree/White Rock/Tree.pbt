@@ -1,4 +1,4 @@
-Name: "White"
+Name: "White Rock"
 RootId: 16647472273432662559
 Objects {
   Id: 16747101702694671599

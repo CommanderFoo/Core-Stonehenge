@@ -272,6 +272,10 @@ Objects {
       Name: "cs:line_width"
       Int: 150
     }
+    Overrides {
+      Name: "cs:thought_id"
+      Int: 6
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1339,7 +1343,7 @@ Objects {
     }
     Overrides {
       Name: "cs:notification"
-      String: ""
+      String: "You have assembled the Ocular Device. Press \"R\" to use it to reveal special energy markings in the area."
     }
   }
   Collidable_v2 {
@@ -1385,6 +1389,10 @@ Objects {
       Name: "cs:line_width"
       Int: 202
     }
+    Overrides {
+      Name: "cs:thought_id"
+      Int: 1
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1425,7 +1433,7 @@ Objects {
     }
     Overrides {
       Name: "cs:quest_title"
-      String: "Summoned"
+      String: "Dearest Friend"
     }
     Overrides {
       Name: "cs:quest_line_width"

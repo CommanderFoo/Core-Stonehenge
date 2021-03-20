@@ -15,7 +15,7 @@ Assets {
             Z: 0.411944389
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 16845918078398887905
         ChildIds: 1109042627324257215
         ChildIds: 15270154110332958881
         ChildIds: 18035237021562249934
@@ -26,7 +26,7 @@ Assets {
           }
           Overrides {
             Name: "cs:collectable_id"
-            Int: 5
+            Int: 8
           }
         }
         WantsNetworking: true

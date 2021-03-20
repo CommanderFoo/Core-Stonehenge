@@ -87,7 +87,7 @@ function Tick()
 			if(not ui_raycasting and obj.name == "Rotators") then
 				obj_type = "rotator"
 				pickup_obj = hit.other
-				pointer = "pickup"
+				pointer = "combine"
 			else
 				obj_type = obj:GetCustomProperty("type")
 

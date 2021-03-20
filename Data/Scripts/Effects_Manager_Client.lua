@@ -106,6 +106,7 @@ function play_lightning()
 		dust:Play()
 		rocks2:Play()
 		explosion:Play()
+		Events.Broadcast("shake_screen", 1, 2)
 
 		Events.Broadcast("stop_additional_music")
 
@@ -129,6 +130,9 @@ function play_lightning()
 		blast:Play()
 		dust:Play()
 		rocks:Play()
+
+		Events.Broadcast("shake_screen", 1, math.random(1, 60) / 100)
+
 		Task.Wait(flash / 100)
 		lightning.visibility = Visibility.FORCE_OFF
 		lightning_light.visibility = Visibility.FORCE_OFF

@@ -27,4 +27,5 @@ end)
 
 Events.Connect("excavation_quest_done", function()
 	Events.Broadcast("set_weather_profile", "daytime rain")
+	Events.Broadcast("show_grove_glowing_flowers")
 end)

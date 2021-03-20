@@ -9,6 +9,7 @@ local support_us = script:GetCustomProperty("support_us"):WaitForObject()
 local contents = script:GetCustomProperty("contents"):WaitForObject()
 local thanks = script:GetCustomProperty("thanks"):WaitForObject()
 local look_at = script:GetCustomProperty("look_at"):WaitForObject()
+local final_time = script:GetCustomProperty("final_time"):WaitForObject()
 
 local normal_color = script:GetCustomProperty("normal_color")
 local hover_color = script:GetCustomProperty("hover_color")
@@ -53,7 +54,7 @@ end)
 
 portal.interactedEvent:Connect(function(t, obj)
 	if(obj:IsA("Player") and not entering) then
-		Events.BroadcastToServer("disable_portal")
+		Events.BroadcastToServer("disable_portal", local_player)
 
 		entering = true
 		Events.Broadcast("hide_reticle")
@@ -109,4 +110,8 @@ end)
 
 Events.Connect("enable_portal", function()
 	Events.BroadcastToServer("enable_portal")
+end)
+
+Events.Connect("final_time", function(timer)
+	final_time.text = "Your Time: " .. string.format("%.3f Secs", timer)
 end)

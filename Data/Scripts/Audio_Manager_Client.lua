@@ -1,6 +1,10 @@
 local bird_sounds = script:GetCustomProperty("bird_sounds"):WaitForObject()
 local pickup_sound = script:GetCustomProperty("pickup_sound"):WaitForObject()
 
+local grove_pulse = script:GetCustomProperty("grove_pulse"):WaitForObject()
+local grove_amb = script:GetCustomProperty("grove_amb"):WaitForObject()
+local grove_chime = script:GetCustomProperty("grove_chime"):WaitForObject()
+
 local sounds = {
 
 	pickup = script:GetCustomProperty("pickup_sound"):WaitForObject(),
@@ -124,4 +128,10 @@ Events.Connect("stop_music", function()
 	if(last_music_played ~= nil) then
 		music[last_music_played]:Stop()
 	end
+end)
+
+Events.Connect("enable_misc_audio", function()
+	grove_pulse:Play()
+	grove_amb:Play()
+	grove_chime:Play()
 end)

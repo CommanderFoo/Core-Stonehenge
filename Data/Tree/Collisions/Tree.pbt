@@ -25,6 +25,12 @@ Objects {
       Name: "ma:Shared_BaseMaterial:smart"
       Bool: false
     }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14932373983098326960
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

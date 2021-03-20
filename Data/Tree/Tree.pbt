@@ -2619,6 +2619,7 @@ Objects {
   ChildIds: 3730129137196217546
   ChildIds: 10400721808396098963
   ChildIds: 3139108800441333692
+  ChildIds: 16681614050080226134
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -2629,6 +2630,188 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 16681614050080226134
+  Name: "Catalyst UI Icons"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2789780480952860209
+  ChildIds: 12183132488299491861
+  ChildIds: 11705550732734571524
+  ChildIds: 62270958779313159
+  ChildIds: 9761507430486441833
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Control {
+    Width: 100
+    Height: 100
+    UIX: 115.284729
+    UIY: 96.9039307
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 9761507430486441833
+  Name: "Red Squiggle Icon"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16681614050080226134
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 14269339469619052722
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Red Squiggle Icon"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8110160634961844512
+    }
+  }
+}
+Objects {
+  Id: 62270958779313159
+  Name: "Blue Diamond Icon"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16681614050080226134
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 14209466089886586534
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Blue Diamond Icon"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6899592254291890833
+    }
+  }
+}
+Objects {
+  Id: 11705550732734571524
+  Name: "White Wheel Icon"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16681614050080226134
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5417342047220053137
+      value {
+        Overrides {
+          Name: "Name"
+          String: "White Wheel Icon"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 11177107446118997660
+    }
+  }
+}
+Objects {
+  Id: 12183132488299491861
+  Name: "Yellow Heart Icon"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16681614050080226134
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 14118330909939468471
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Yellow Heart Icon"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2746105645585512321
+    }
   }
 }
 Objects {

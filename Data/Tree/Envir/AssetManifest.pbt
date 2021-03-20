@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17840544093372088016
+  Name: "Prism - 5-Sided Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prism_pentagon_hq_001"
+  }
+}
+Assets {
   Id: 17765335935549099671
   Name: "Grass Tall"
   PlatformAssetType: 1
@@ -116,6 +125,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16760816162544928494
+  Name: "Main Street Wall 02 - Corner Trim 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_urb_dtn_mst_wall_002_corner_ref"
+  }
+}
+Assets {
   Id: 16734101155038105666
   Name: "Wooden Bucket"
   PlatformAssetType: 1
@@ -158,6 +176,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_column_top_001"
+  }
+}
+Assets {
+  Id: 16378995898645307570
+  Name: "Wispy Fog Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_fog_volume_vfx"
   }
 }
 Assets {
@@ -755,6 +782,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8927260937154618589
+  Name: "Prism - 3-Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prism_001"
+  }
+}
+Assets {
   Id: 8733090831012258671
   Name: "Wood Raw"
   PlatformAssetType: 2
@@ -935,12 +971,30 @@ Assets {
   }
 }
 Assets {
+  Id: 6628731841327595102
+  Name: "Cube"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_002"
+  }
+}
+Assets {
   Id: 6541284485895121201
   Name: "Craftsman Dining Table"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_table_dining_001"
+  }
+}
+Assets {
+  Id: 6524217407079190017
+  Name: "Rock 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_002_sm_rock_generic_002_LOD0"
   }
 }
 Assets {

@@ -9,8 +9,8 @@ Assets {
       Overrides {
         Name: "color"
         Color {
-          R: 0.0310329814
-          G: 0.0707349107
+          R: 0.0438729189
+          G: 0.0623146929
           B: 0.270833343
           A: 1
         }
@@ -18,8 +18,8 @@ Assets {
       Overrides {
         Name: "color_secondary"
         Color {
-          R: 0.459999979
-          G: 0.921324313
+          R: 0.453370333
+          G: 0.752047777
           B: 1
           A: 1
         }

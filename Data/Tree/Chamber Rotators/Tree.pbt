@@ -2276,10 +2276,9 @@ Objects {
   }
   ParentId: 1996233857515931477
   ChildIds: 10050806232416618805
-  ChildIds: 10629031100866574518
-  ChildIds: 1024906600534124608
-  ChildIds: 9889648331152006198
-  ChildIds: 9863431660548930680
+  ChildIds: 2938317807958258275
+  ChildIds: 15228678293594789511
+  ChildIds: 16710826689839137974
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2335,293 +2334,170 @@ Objects {
   }
 }
 Objects {
-  Id: 9863431660548930680
-  Name: "Yellow"
+  Id: 16710826689839137974
+  Name: "Blue Diamond Symbol"
   Transform {
-    Location {
-      X: -25.5967045
-      Y: -37.8045082
-      Z: -2.27633905
-    }
-    Rotation {
-      Pitch: -89.2166443
-      Yaw: 142.501022
-      Roll: 89.9985
-    }
     Scale {
-      X: 0.0997324064
-      Y: 0.0997324064
-      Z: 0.296164721
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 3406590393990027585
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Shape Index"
-      Int: 6
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 0.968763709
-        G: 1
-        B: 0.0566666126
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Color Emissive"
-      Color {
-        R: 0.968763709
-        G: 1
-        B: 0.0566666126
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Emissive Boost"
-      Float: 0
-    }
-  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 11171792275709422916
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 838574595559107789
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Blue Diamond Symbol"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -46.176815
+            Y: 21.1870136
+            Z: 0.454096615
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0744979456
+            Y: 0.0689892
+            Z: 0.204869643
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -84.6970215
+            Yaw: -0.87008667
+            Roll: 180
+          }
+        }
+      }
     }
-    TeamSettings {
+    TemplateAsset {
+      Id: 11673079437046201640
     }
-    DecalBP {
-    }
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
   }
 }
 Objects {
-  Id: 9889648331152006198
-  Name: "Blue"
+  Id: 15228678293594789511
+  Name: "Yellow Heart Symbol"
   Transform {
-    Location {
-      X: -43.7647896
-      Y: 22.476202
-      Z: -3.65803766
-    }
-    Rotation {
-      Pitch: 7.51779079
-      Yaw: 45.1571
-      Roll: 89.8211441
-    }
     Scale {
-      X: 0.0855327323
-      Y: 0.0855327323
-      Z: 0.253997445
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 3406590393990027585
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Shape Index"
-      Int: 5
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        G: 0.12039718
-        B: 0.336666584
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Color Emissive"
-      Color {
-        G: 0.12039718
-        B: 0.336666584
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Emissive Boost"
-      Float: 0
-    }
-  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 11171792275709422916
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 13187082396292528170
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Yellow Heart Symbol"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -23.6781082
+            Y: -42.7572021
+            Z: -1.58799958
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 89.5462875
+            Yaw: -0.000216458793
+            Roll: -89.6761627
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.100650482
+            Y: 0.100650482
+            Z: 0.298891
+          }
+        }
+      }
     }
-    TeamSettings {
+    TemplateAsset {
+      Id: 5319894053142481181
     }
-    DecalBP {
-    }
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
   }
 }
 Objects {
-  Id: 1024906600534124608
-  Name: "Red"
+  Id: 2938317807958258275
+  Name: "Red Squiggle Symbol"
   Transform {
-    Location {
-      X: 46.5084114
-      Y: -27.6973896
-      Z: 5.6144681
-    }
-    Rotation {
-      Pitch: -7.29916382
-      Yaw: 69.1447372
-      Roll: 119.312988
-    }
     Scale {
-      X: 0.0912201703
-      Y: 0.086877577
-      Z: 0.564237595
+      X: 0.461563379
+      Y: 0.461563379
+      Z: 1.37065566
     }
   }
   ParentId: 3406590393990027585
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Shape Index"
-      Int: 7
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 0.336666584
-        G: 1.60535137e-07
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Color Emissive"
-      Color {
-        R: 0.336666584
-        G: 1.60535137e-07
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Emissive Boost"
-      Float: 0
-    }
-  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 11171792275709422916
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  InstanceHistory {
-    SelfId: 10219461876013736783
-    SubobjectId: 5605717100043042400
-    InstanceId: 16724078938419712110
-    TemplateId: 4420726993591216380
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-}
-Objects {
-  Id: 10629031100866574518
-  Name: "Red"
-  Transform {
-    Location {
-      X: 50.3760834
-      Y: -24.8505
-      Z: -5.40866899
-    }
-    Rotation {
-      Pitch: 2.53924561
-      Yaw: -109.417603
-      Roll: -61.5438843
-    }
-    Scale {
-      X: 0.0936536565
-      Y: 0.0994998887
-      Z: 0.284366935
-    }
-  }
-  ParentId: 3406590393990027585
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Shape Index"
-      Int: 7
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 0.336666584
-        G: 1.60535137e-07
-        A: 1
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 11578906139714976948
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Red Squiggle Symbol"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 44.6990433
+            Y: -26.4950352
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.105379149
+            Y: 0.105379149
+            Z: 0.312933087
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.2731934
+            Yaw: -148.723816
+            Roll: 91.9406509
+          }
+        }
       }
     }
-    Overrides {
-      Name: "bp:Color Emissive"
-      Color {
-        R: 0.336666584
-        G: 1.60535137e-07
-        A: 1
-      }
+    TemplateAsset {
+      Id: 4420726993591216380
     }
-    Overrides {
-      Name: "bp:Emissive Boost"
-      Float: 0
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 11171792275709422916
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  InstanceHistory {
-    SelfId: 8793089991461583791
-    SubobjectId: 13411161879335396992
-    InstanceId: 16724078938419712110
-    TemplateId: 4420726993591216380
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {

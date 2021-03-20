@@ -21,7 +21,7 @@ Assets {
       Overrides {
         Name: "cmp:Material2"
         AssetReference {
-          Id: 4341056843478302246
+          Id: 16844107203508180063
         }
       }
       Overrides {
@@ -45,9 +45,9 @@ Assets {
       Overrides {
         Name: "cmpc:Material2"
         Color {
-          R: 0.48627454
-          G: 0.58431375
-          B: 0.631372571
+          R: 1.5555563
+          G: 2.47629261
+          B: 7
           A: 1
         }
       }
@@ -66,6 +66,21 @@ Assets {
           R: 0.48627454
           G: 0.58431375
           B: 0.631372571
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "cmp:Material2_Sides"
+        AssetReference {
+          Id: 9891592180303515249
+        }
+      }
+      Overrides {
+        Name: "cmpc:Material2_Sides"
+        Color {
+          R: 1
+          G: 1
+          B: 1
           A: 1
         }
       }
@@ -98,12 +113,12 @@ Assets {
       }
     }
     Assets {
-      Id: 4341056843478302246
-      Name: "Grass Basic"
+      Id: 16844107203508180063
+      Name: "Rubble Concrete 01"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_grass_001_uv"
+        AssetId: "mi_mil_rubble_002_uv_ref"
       }
     }
     Assets {
@@ -131,6 +146,15 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_grass_001_uv"
+      }
+    }
+    Assets {
+      Id: 9891592180303515249
+      Name: "Cliff 02"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "cliff_002"
       }
     }
   }

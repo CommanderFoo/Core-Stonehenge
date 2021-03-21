@@ -79230,6 +79230,19 @@ Objects {
       }
     }
     ParameterOverrideMap {
+      key: 3990414635863802846
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.00735276844
+            Y: 0.357344538
+            Z: 280.817657
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 4457285310240953159
       value {
         Overrides {
@@ -87261,7 +87274,7 @@ Objects {
   Name: "Simple Crate 150cm"
   Transform {
     Location {
-      X: 2051.46777
+      X: 2007.66895
       Y: 267.986572
       Z: 39.8693237
     }

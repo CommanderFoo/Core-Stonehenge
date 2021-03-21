@@ -993,8 +993,8 @@ Objects {
   Name: "Camp Fire Effects"
   Transform {
     Location {
-      X: 12559.6582
-      Y: 3687.25464
+      X: 12575.2559
+      Y: 4225.89453
       Z: 500.949646
     }
     Rotation {
@@ -3822,10 +3822,10 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Control {
-    Width: 390
-    Height: 139
-    UIX: 60
-    UIY: -68.2475
+    Width: 400
+    Height: 145
+    UIX: 70
+    UIY: -70
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -3931,9 +3931,9 @@ Objects {
   }
   Control {
     Width: 232
-    Height: 185
-    UIX: 79.1460724
-    UIY: 23.4180908
+    Height: 212
+    UIX: 78.262
+    UIY: 34.351
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -3989,10 +3989,10 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Control {
-    Width: -20
+    Width: -35
     Height: -30
-    UIX: 10.3581696
-    UIY: 15.5817261
+    UIX: 25
+    UIY: 25
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -4003,9 +4003,8 @@ Objects {
     UseParentHeight: true
     Text {
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.994000077
+        G: 0.930888772
         A: 1
       }
       Size: 15
@@ -4120,8 +4119,8 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Control {
-    Width: 390
-    Height: 139
+    Width: 405
+    Height: 145
     UIY: 50
     RenderTransformPivot {
       Anchor {
@@ -4171,9 +4170,9 @@ Objects {
   }
   Control {
     Width: 232
-    Height: 185
+    Height: 212
     UIX: 78.2617188
-    UIY: 23.3243561
+    UIY: 34.351
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -4231,8 +4230,8 @@ Objects {
   Control {
     Width: -30
     Height: -30
-    UIX: 13.7626953
-    UIY: 16.0191956
+    UIX: 25
+    UIY: 20
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -4415,7 +4414,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6050,13 +6049,14 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Control {
-    Width: 200
-    Height: 200
+    Width: 25
+    Height: 25
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
+    AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     UseParentHeight: true
     Image {
@@ -6066,7 +6066,7 @@ Objects {
       Color {
         R: 0.176666617
         G: 0.1263576
-        A: 1
+        A: 0.5
       }
       TeamSettings {
       }
@@ -6110,13 +6110,14 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Control {
-    Width: 200
-    Height: 200
+    Width: 25
+    Height: 25
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
+    AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     UseParentHeight: true
     Image {
@@ -6126,7 +6127,7 @@ Objects {
       Color {
         R: 0.176666617
         G: 0.1263576
-        A: 0.976000071
+        A: 0.5
       }
       TeamSettings {
       }
@@ -6170,13 +6171,14 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Control {
-    Width: 200
-    Height: 200
+    Width: 15
+    Height: 20
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
+    AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     UseParentHeight: true
     Image {
@@ -8952,7 +8954,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8960,7 +8962,7 @@ Objects {
   Control {
     Width: 400
     Height: 500
-    UIX: -405
+    UIX: -410
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -19749,7 +19751,7 @@ Objects {
       }
     }
     Text {
-      Label: "A fancy plate. "
+      Label: "A skull."
       Color {
         R: 1
         G: 1
@@ -20287,13 +20289,14 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Control {
-    Width: 200
-    Height: 200
+    Width: 25
+    Height: 25
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
+    AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     UseParentHeight: true
     Image {
@@ -20302,7 +20305,7 @@ Objects {
       }
       Color {
         R: 0.363333225
-        G: 0.245430395
+        G: 0.245430306
         A: 1
       }
       TeamSettings {
@@ -20347,13 +20350,14 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Control {
-    Width: 200
-    Height: 200
+    Width: 25
+    Height: 25
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
+    AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     UseParentHeight: true
     Image {
@@ -20362,7 +20366,7 @@ Objects {
       }
       Color {
         R: 0.363333225
-        G: 0.245430395
+        G: 0.245430306
         A: 1
       }
       TeamSettings {
@@ -20407,13 +20411,14 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Control {
-    Width: 200
-    Height: 200
+    Width: 25
+    Height: 25
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
+    AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     UseParentHeight: true
     Image {

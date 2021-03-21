@@ -11,6 +11,12 @@ local tent_collectables = script:GetCustomProperty("tent_collectables"):WaitForO
 local lily_area_collectables = script:GetCustomProperty("lily_area_collectables"):WaitForObject()
 local chamber_area_collectables = script:GetCustomProperty("chamber_area_collectables"):WaitForObject()
 
+local border = script:GetCustomProperty("border"):WaitForObject()
+local corner = script:GetCustomProperty("corner"):WaitForObject()
+
+local border_color = border:GetColor()
+local corner_color = corner:GetColor()
+
 local tween = nil
 
 local local_player = Game.GetLocalPlayer()
@@ -178,6 +184,12 @@ function show()
 
 	tween:set_easing("outBack")
 	is_open = true
+
+	--border_color.a = 1
+	--border:SetColor(border_color)
+
+	--corner_color.a = 1
+	--corner:SetColor(corner_color)
 end
 
 function close()
@@ -185,7 +197,7 @@ function close()
 		return
 	end
 
-	tween = YOOTIL.Tween:new(.5, { x = collectables.x }, { x = -405 })
+	tween = YOOTIL.Tween:new(.5, { x = collectables.x }, { x = -410 })
 	
 	tween:on_change(function(c)
 		collectables.x = c.x
@@ -197,6 +209,12 @@ function close()
 
 	tween:set_easing("inBack")
 	is_open = false
+
+	--border_color.a = 0.5
+	--border:SetColor(border_color)
+
+	--corner_color.a = 0.5
+	--corner:SetColor(corner_color)
 end
 
 function check_collectables()

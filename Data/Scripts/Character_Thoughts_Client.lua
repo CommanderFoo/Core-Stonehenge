@@ -22,12 +22,14 @@ local received_thoughts = {}
 function on_change(c)
 	local bubble_color = bubble_1:GetColor()
 	local txt_color = text:GetColor()
-	
+	local frame_color = bubble_2:GetColor()
+
 	bubble_color.a = c.bg
 	txt_color.a = c.t
+	frame_color.a = c.bg
 
 	bubble_1:SetColor(bubble_color)
-	bubble_2:SetColor(bubble_color)
+	bubble_2:SetColor(frame_color)
 	bubble_3:SetColor(bubble_color)
 
 	text:SetColor(txt_color)

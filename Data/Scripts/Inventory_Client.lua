@@ -5,6 +5,11 @@ local slots = script:GetCustomProperty("slots"):WaitForObject()
 local key_binding = script:GetCustomProperty("key_binding")
 local inventory_ui = script:GetCustomProperty("inventory_ui"):WaitForObject()
 local data_holder = script:GetCustomProperty("data_holder"):WaitForObject()
+local border = script:GetCustomProperty("border"):WaitForObject()
+local corner = script:GetCustomProperty("corner"):WaitForObject()
+
+local border_color = border:GetColor()
+local corner_color = corner:GetColor()
 
 local hover_color = script:GetCustomProperty("hover_color")
 local unhover_color = script:GetCustomProperty("unhover_color")
@@ -417,6 +422,12 @@ end
 function enable_inventory()
 	inventory_active = true
 
+	border_color.a = 1
+	border:SetColor(border_color)
+
+	corner_color.a = 1
+	corner:SetColor(corner_color)
+
 	update_items()
 end
 
@@ -440,6 +451,12 @@ function disable_inventory()
 			end
 		end
 	end
+
+	border_color.a = 0.5
+	border:SetColor(border_color)
+
+	corner_color.a = 0.5
+	corner:SetColor(corner_color)
 
 	clean_up_active_data()
 end

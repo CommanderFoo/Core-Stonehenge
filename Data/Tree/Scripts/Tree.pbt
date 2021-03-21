@@ -1273,6 +1273,18 @@ Objects {
         SelfId: 16520021811109134271
       }
     }
+    Overrides {
+      Name: "cs:border"
+      ObjectReference {
+        SelfId: 8479729839327320098
+      }
+    }
+    Overrides {
+      Name: "cs:corner"
+      ObjectReference {
+        SelfId: 14790002713800077415
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1616,11 +1628,17 @@ Objects {
     }
     Overrides {
       Name: "cs:stay_time"
-      Float: 6
+      Float: 7
     }
     Overrides {
       Name: "cs:out_time"
       Float: 0.5
+    }
+    Overrides {
+      Name: "cs:frame"
+      ObjectReference {
+        SelfId: 6547922648310806666
+      }
     }
   }
   Collidable_v2 {
@@ -1792,6 +1810,18 @@ Objects {
       Name: "cs:data_holder"
       ObjectReference {
         SelfId: 11472370763536327097
+      }
+    }
+    Overrides {
+      Name: "cs:border"
+      ObjectReference {
+        SelfId: 4271157650938056787
+      }
+    }
+    Overrides {
+      Name: "cs:corner"
+      ObjectReference {
+        SelfId: 12775251000415072622
       }
     }
   }

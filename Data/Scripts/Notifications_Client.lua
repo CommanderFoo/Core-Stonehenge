@@ -2,6 +2,7 @@ local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
 
 local background = script:GetCustomProperty("background"):WaitForObject()
 local text = script:GetCustomProperty("text"):WaitForObject()
+local frame = script:GetCustomProperty("frame"):WaitForObject()
 
 local in_time = script:GetCustomProperty("in_time")
 local stay_time = script:GetCustomProperty("stay_time")
@@ -15,12 +16,15 @@ local out_tween = nil
 function on_change(c)
 	local bg_color = background:GetColor()
 	local txt_color = text:GetColor()
-	
+	local fr_color = frame:GetColor()
+
 	bg_color.a = c.bg
 	txt_color.a = c.t
+	fr_color.a = c.bg
 
 	background:SetColor(bg_color)
 	text:SetColor(txt_color)
+	frame:SetColor(fr_color)
 end
 
 function Tick(dt)

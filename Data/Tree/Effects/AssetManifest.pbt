@@ -44,6 +44,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11725832606877138075
+  Name: "Fire Torch Ignite Whoosh Quick 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_fire_torch_ignite_whoosh_quick_01a_Cue_ref"
+  }
+}
+Assets {
   Id: 10447895529915809475
   Name: "Sci-fi Impact Synth Bit Glitch 01 SFX"
   PlatformAssetType: 7

@@ -1,6 +1,36 @@
 Name: "Lily Area"
 RootId: 7545929439889716735
 Objects {
+  Id: 13129468122507211104
+  Name: "Lily Area Collectables"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7545929439889716735
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Lily Area Collectables"
+  }
+}
+Objects {
   Id: 13435184631131098900
   Name: "Quest Items"
   Transform {

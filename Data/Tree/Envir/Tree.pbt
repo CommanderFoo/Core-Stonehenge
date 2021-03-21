@@ -238,13 +238,6 @@ Objects {
   ChildIds: 13546767236127387089
   ChildIds: 7559134370332673539
   ChildIds: 8579603167655612709
-  ChildIds: 5101299331866923968
-  ChildIds: 8427704187334367347
-  ChildIds: 6471872130362468825
-  ChildIds: 12993462207350566051
-  ChildIds: 5782542935819563965
-  ChildIds: 9767653373259901367
-  ChildIds: 11862419890086937726
   ChildIds: 16234017490903890069
   ChildIds: 10049701245347455898
   ChildIds: 12109126090783408358
@@ -261,8 +254,6 @@ Objects {
   ChildIds: 10758507636801505968
   ChildIds: 13352713697784066564
   ChildIds: 5399018765178399033
-  ChildIds: 3013809809044581257
-  ChildIds: 18136683461486742874
   ChildIds: 3809880123969879176
   ChildIds: 13928981852368858149
   ChildIds: 14799169347969425207
@@ -292,8 +283,6 @@ Objects {
   ChildIds: 2967128183510587039
   ChildIds: 7713548129384734290
   ChildIds: 8576026471593390242
-  ChildIds: 4480781850676426012
-  ChildIds: 7789852305711231830
   ChildIds: 8654382676936199256
   ChildIds: 12377814127876645042
   ChildIds: 12642629927432139349
@@ -8189,11 +8178,11 @@ Objects {
     Location {
       X: -1329.15796
       Y: -600.277405
-      Z: -25.1287842
+      Z: -88.7420349
     }
     Rotation {
-      Pitch: -23.9320183
-      Yaw: -52.9902573
+      Pitch: -23.9320068
+      Yaw: -52.9902649
       Roll: 5.57979965
     }
     Scale {
@@ -8673,9 +8662,9 @@ Objects {
   Name: "Flower Wild Lily 01"
   Transform {
     Location {
-      X: -1490.86975
-      Y: -594.874207
-      Z: 40.3376465
+      X: -1344.24072
+      Y: -537.402344
+      Z: -31.7398071
     }
     Rotation {
       Pitch: 8.11506367
@@ -8686,114 +8675,6 @@ Objects {
       X: 1.67690063
       Y: 0.963576138
       Z: 1.19536424
-    }
-  }
-  ParentId: 1682813434280546198
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:id"
-      AssetReference {
-        Id: 16274372387584554087
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 2290831223625684165
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 7789852305711231830
-  Name: "Flower Wild Lily 01"
-  Transform {
-    Location {
-      X: -1443.96692
-      Y: -552.886902
-      Z: 35.5151062
-    }
-    Rotation {
-      Pitch: -27.5770779
-      Yaw: -66.7847672
-      Roll: 12.4935045
-    }
-    Scale {
-      X: 0.788354158
-      Y: 0.630420864
-      Z: 2.62599564
-    }
-  }
-  ParentId: 1682813434280546198
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:id"
-      AssetReference {
-        Id: 16274372387584554087
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 2290831223625684165
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 4480781850676426012
-  Name: "Flower Wild Lily 01"
-  Transform {
-    Location {
-      X: -1406.42273
-      Y: -482.0466
-      Z: 51.9363098
-    }
-    Rotation {
-      Pitch: -3.39491129
-      Yaw: 36.621891
-      Roll: -33.4639931
-    }
-    Scale {
-      X: 1.95687735
-      Y: 1.0648365
-      Z: 2.17676306
     }
   }
   ParentId: 1682813434280546198
@@ -10397,114 +10278,6 @@ Objects {
   }
 }
 Objects {
-  Id: 18136683461486742874
-  Name: "Flower Wild Lily 01"
-  Transform {
-    Location {
-      X: -1243.71411
-      Y: -388.667053
-      Z: 34.0937195
-    }
-    Rotation {
-      Pitch: -13.2318382
-      Yaw: 6.64324379
-      Roll: -30.7424068
-    }
-    Scale {
-      X: 1.82792139
-      Y: 1.87662899
-      Z: 2.69176316
-    }
-  }
-  ParentId: 1682813434280546198
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:id"
-      AssetReference {
-        Id: 16274372387584554087
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 2290831223625684165
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 3013809809044581257
-  Name: "Flower Wild Lily 01"
-  Transform {
-    Location {
-      X: -1193.42
-      Y: -367.162537
-      Z: 32.7388153
-    }
-    Rotation {
-      Pitch: -2.12328029
-      Yaw: -156.796478
-      Roll: 31.565527
-    }
-    Scale {
-      X: 1.48870814
-      Y: 2.43964958
-      Z: 2.76470232
-    }
-  }
-  ParentId: 1682813434280546198
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:id"
-      AssetReference {
-        Id: 16274372387584554087
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 2290831223625684165
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
   Id: 5399018765178399033
   Name: "Flower Wild Lily 01"
   Transform {
@@ -11332,384 +11105,6 @@ Objects {
       X: 1.15764332
       Y: 3.39681697
       Z: 2.61241508
-    }
-  }
-  ParentId: 1682813434280546198
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:id"
-      AssetReference {
-        Id: 16274372387584554087
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 2290831223625684165
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 11862419890086937726
-  Name: "Flower Wild Lily 01"
-  Transform {
-    Location {
-      X: -1402.87585
-      Y: -660.563721
-      Z: 201.177673
-    }
-    Rotation {
-      Pitch: 65.3021851
-      Yaw: 42.5307426
-      Roll: -164.312805
-    }
-    Scale {
-      X: 1.32331312
-      Y: 3.38827157
-      Z: 0.764595509
-    }
-  }
-  ParentId: 1682813434280546198
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:id"
-      AssetReference {
-        Id: 16274372387584554087
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 2290831223625684165
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 9767653373259901367
-  Name: "Flower Wild Lily 01"
-  Transform {
-    Location {
-      X: -1493.08447
-      Y: -654.384399
-      Z: 347.445465
-    }
-    Rotation {
-      Pitch: 44.7147102
-      Yaw: 53.7398605
-      Roll: -103.708122
-    }
-    Scale {
-      X: 0.677892387
-      Y: 1.4957273
-      Z: 2.35995054
-    }
-  }
-  ParentId: 1682813434280546198
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:id"
-      AssetReference {
-        Id: 16274372387584554087
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 2290831223625684165
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 5782542935819563965
-  Name: "Flower Wild Lily 01"
-  Transform {
-    Location {
-      X: -1508.63928
-      Y: -636.924377
-      Z: 291.286926
-    }
-    Rotation {
-      Pitch: -18.1138382
-      Yaw: -69.3241043
-      Roll: 111.017235
-    }
-    Scale {
-      X: 0.697164834
-      Y: 2.13277078
-      Z: 2.59768987
-    }
-  }
-  ParentId: 1682813434280546198
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:id"
-      AssetReference {
-        Id: 16274372387584554087
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 2290831223625684165
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 12993462207350566051
-  Name: "Flower Wild Lily 01"
-  Transform {
-    Location {
-      X: -1470.80176
-      Y: -636.534119
-      Z: 226.347168
-    }
-    Rotation {
-      Pitch: -30.4236755
-      Yaw: 148.370407
-      Roll: -29.4333763
-    }
-    Scale {
-      X: 1.29346597
-      Y: 0.996047854
-      Z: 2.48500013
-    }
-  }
-  ParentId: 1682813434280546198
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:id"
-      AssetReference {
-        Id: 16274372387584554087
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 2290831223625684165
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 6471872130362468825
-  Name: "Flower Wild Lily 01"
-  Transform {
-    Location {
-      X: -1468.76123
-      Y: -608.064819
-      Z: 148.720245
-    }
-    Rotation {
-      Pitch: -12.86479
-      Yaw: 60.3026924
-      Roll: -74.1732864
-    }
-    Scale {
-      X: 0.89391768
-      Y: 3.33101892
-      Z: 1.88424325
-    }
-  }
-  ParentId: 1682813434280546198
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:id"
-      AssetReference {
-        Id: 16274372387584554087
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 2290831223625684165
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 8427704187334367347
-  Name: "Flower Wild Lily 01"
-  Transform {
-    Location {
-      X: -1547.94543
-      Y: -567.189
-      Z: 77.8118286
-    }
-    Rotation {
-      Pitch: -29.3784389
-      Yaw: -10.279665
-      Roll: -16.2714348
-    }
-    Scale {
-      X: 1.65460682
-      Y: 2.74610138
-      Z: 2.09741497
-    }
-  }
-  ParentId: 1682813434280546198
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:id"
-      AssetReference {
-        Id: 16274372387584554087
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 2290831223625684165
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 5101299331866923968
-  Name: "Flower Wild Lily 01"
-  Transform {
-    Location {
-      X: -1533.55408
-      Y: -600.602112
-      Z: 57.7562256
-    }
-    Rotation {
-      Pitch: -16.2713394
-      Yaw: -94.7946625
-      Roll: 24.6506386
-    }
-    Scale {
-      X: 1.20044553
-      Y: 1.84405041
-      Z: 1.34521008
     }
   }
   ParentId: 1682813434280546198
@@ -20672,10 +20067,6 @@ Objects {
   ChildIds: 13556698445257368558
   ChildIds: 13382893837855374580
   ChildIds: 13920988682648606720
-  ChildIds: 17278206015529725009
-  ChildIds: 16569317770729392192
-  ChildIds: 850898391152756154
-  ChildIds: 11248542221190041204
   ChildIds: 15734592541157662128
   ChildIds: 11831357952545854954
   ChildIds: 8694141743043469901
@@ -20694,8 +20085,6 @@ Objects {
   ChildIds: 1964283194379899019
   ChildIds: 345720674296274995
   ChildIds: 6199371304647050468
-  ChildIds: 5335556804202247754
-  ChildIds: 15850663661590875682
   ChildIds: 5559491159319539473
   ChildIds: 12657807837155391924
   ChildIds: 17445200424413638605
@@ -20725,7 +20114,6 @@ Objects {
   ChildIds: 17166159679885021342
   ChildIds: 3511896575884589369
   ChildIds: 9496885104154761014
-  ChildIds: 12072848351754593688
   ChildIds: 2699276530127461275
   ChildIds: 13287153148866847612
   ChildIds: 4494194555819606405
@@ -29106,8 +28494,8 @@ Objects {
   Name: "Flower Wild Lily 01"
   Transform {
     Location {
-      X: -1490.86975
-      Y: -594.874207
+      X: -1255.79639
+      Y: -505.957825
       Z: 40.3376465
     }
     Rotation {
@@ -29160,73 +28548,19 @@ Objects {
   Name: "Flower Wild Lily 01"
   Transform {
     Location {
-      X: -1443.96692
-      Y: -552.886902
-      Z: 35.5151062
+      X: -1341.10229
+      Y: -512.997192
+      Z: -29.6473541
     }
     Rotation {
-      Pitch: -27.5770779
-      Yaw: -66.7847672
+      Pitch: -27.5770874
+      Yaw: -66.7847595
       Roll: 12.4935045
     }
     Scale {
       X: 0.788354158
       Y: 0.630420864
       Z: 2.62599564
-    }
-  }
-  ParentId: 3301681575500954397
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:id"
-      AssetReference {
-        Id: 15912554046531640729
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 2290831223625684165
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 12072848351754593688
-  Name: "Flower Wild Lily 01"
-  Transform {
-    Location {
-      X: -1406.42273
-      Y: -482.0466
-      Z: 51.9363098
-    }
-    Rotation {
-      Pitch: -3.39491129
-      Yaw: 36.621891
-      Roll: -33.4639931
-    }
-    Scale {
-      X: 1.95687735
-      Y: 1.0648365
-      Z: 2.17676306
     }
   }
   ParentId: 3301681575500954397
@@ -30830,114 +30164,6 @@ Objects {
   }
 }
 Objects {
-  Id: 15850663661590875682
-  Name: "Flower Wild Lily 01"
-  Transform {
-    Location {
-      X: -1243.71411
-      Y: -388.667053
-      Z: 34.0937195
-    }
-    Rotation {
-      Pitch: -13.2318382
-      Yaw: 6.64324379
-      Roll: -30.7424068
-    }
-    Scale {
-      X: 1.82792139
-      Y: 1.87662899
-      Z: 2.69176316
-    }
-  }
-  ParentId: 3301681575500954397
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:id"
-      AssetReference {
-        Id: 15912554046531640729
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 2290831223625684165
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 5335556804202247754
-  Name: "Flower Wild Lily 01"
-  Transform {
-    Location {
-      X: -1193.42
-      Y: -367.162537
-      Z: 32.7388153
-    }
-    Rotation {
-      Pitch: -2.12328029
-      Yaw: -156.796478
-      Roll: 31.565527
-    }
-    Scale {
-      X: 1.48870814
-      Y: 2.43964958
-      Z: 2.76470232
-    }
-  }
-  ParentId: 3301681575500954397
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:id"
-      AssetReference {
-        Id: 15912554046531640729
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 2290831223625684165
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
   Id: 6199371304647050468
   Name: "Flower Wild Lily 01"
   Transform {
@@ -31808,7 +31034,7 @@ Objects {
     Location {
       X: -1402.87585
       Y: -660.563721
-      Z: 201.177673
+      Z: 115.014832
     }
     Rotation {
       Pitch: 65.3021851
@@ -31910,233 +31136,17 @@ Objects {
   }
 }
 Objects {
-  Id: 11248542221190041204
-  Name: "Flower Wild Lily 01"
-  Transform {
-    Location {
-      X: -1508.63928
-      Y: -636.924377
-      Z: 291.286926
-    }
-    Rotation {
-      Pitch: -18.1138382
-      Yaw: -69.3241043
-      Roll: 111.017235
-    }
-    Scale {
-      X: 0.697164834
-      Y: 2.13277078
-      Z: 2.59768987
-    }
-  }
-  ParentId: 3301681575500954397
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:id"
-      AssetReference {
-        Id: 15912554046531640729
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 2290831223625684165
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 850898391152756154
-  Name: "Flower Wild Lily 01"
-  Transform {
-    Location {
-      X: -1470.80176
-      Y: -636.534119
-      Z: 226.347168
-    }
-    Rotation {
-      Pitch: -30.4236755
-      Yaw: 148.370407
-      Roll: -29.4333763
-    }
-    Scale {
-      X: 1.29346597
-      Y: 0.996047854
-      Z: 2.48500013
-    }
-  }
-  ParentId: 3301681575500954397
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:id"
-      AssetReference {
-        Id: 15912554046531640729
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 2290831223625684165
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 16569317770729392192
-  Name: "Flower Wild Lily 01"
-  Transform {
-    Location {
-      X: -1468.76123
-      Y: -608.064819
-      Z: 148.720245
-    }
-    Rotation {
-      Pitch: -12.86479
-      Yaw: 60.3026924
-      Roll: -74.1732864
-    }
-    Scale {
-      X: 0.89391768
-      Y: 3.33101892
-      Z: 1.88424325
-    }
-  }
-  ParentId: 3301681575500954397
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:id"
-      AssetReference {
-        Id: 15912554046531640729
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 2290831223625684165
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 17278206015529725009
-  Name: "Flower Wild Lily 01"
-  Transform {
-    Location {
-      X: -1547.94543
-      Y: -567.189
-      Z: 77.8118286
-    }
-    Rotation {
-      Pitch: -29.3784389
-      Yaw: -10.279665
-      Roll: -16.2714348
-    }
-    Scale {
-      X: 1.65460682
-      Y: 2.74610138
-      Z: 2.09741497
-    }
-  }
-  ParentId: 3301681575500954397
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:id"
-      AssetReference {
-        Id: 15912554046531640729
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 2290831223625684165
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
   Id: 13920988682648606720
   Name: "Flower Wild Lily 01"
   Transform {
     Location {
-      X: -1533.55408
-      Y: -600.602112
+      X: -1381.98657
+      Y: -673.110474
       Z: 57.7562256
     }
     Rotation {
-      Pitch: -16.2713394
-      Yaw: -94.7946625
+      Pitch: -16.2713318
+      Yaw: -94.7946777
       Roll: 24.6506386
     }
     Scale {
@@ -55518,9 +54528,9 @@ Objects {
       Yaw: 0.520843804
     }
     Scale {
-      X: 11.0556297
-      Y: 10.8514547
-      Z: 6.54646444
+      X: 12.8064241
+      Y: 12.6072426
+      Z: 8.06780052
     }
   }
   ParentId: 6320409315860153212
@@ -57245,6 +56255,7 @@ Objects {
   ChildIds: 10307358968102455479
   ChildIds: 16190178342010059834
   ChildIds: 7123114360082082074
+  ChildIds: 12195189343965969853
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -57256,6 +56267,57 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 12195189343965969853
+  Name: "Cube - Bottom-Aligned"
+  Transform {
+    Location {
+      X: 924.441406
+      Y: 342.662109
+      Z: -375.456543
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.213398069
+      Y: 0.164664775
+      Z: 1.31939518
+    }
+  }
+  ParentId: 17087709646935543657
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13590852762220197411
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 198353679974341757
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
   }
 }
 Objects {
@@ -63056,9 +62118,9 @@ Objects {
   Name: "Cube - Bottom-Aligned"
   Transform {
     Location {
-      X: 1309.3916
-      Y: 407.208496
-      Z: -391.676483
+      X: 1339.16455
+      Y: 352.319824
+      Z: -381.356293
     }
     Rotation {
     }
@@ -63116,9 +62178,9 @@ Objects {
   Name: "Cube - Bottom-Aligned"
   Transform {
     Location {
-      X: 862.417
-      Y: 407.208496
-      Z: -391.676483
+      X: 924.441406
+      Y: 342.662109
+      Z: -375.456543
     }
     Rotation {
     }
@@ -63129,6 +62191,14 @@ Objects {
     }
   }
   ParentId: 17087709646935543657
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13590852762220197411
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -63159,9 +62229,9 @@ Objects {
   Name: "Cube - Bottom-Aligned"
   Transform {
     Location {
-      X: 862.417
+      X: 926.716309
       Y: 138.611816
-      Z: -391.676483
+      Z: -382.146057
     }
     Rotation {
     }
@@ -63219,9 +62289,9 @@ Objects {
   Name: "Cube - Bottom-Aligned"
   Transform {
     Location {
-      X: 1350.75732
+      X: 1339.57227
       Y: 138.611816
-      Z: -391.676483
+      Z: -379.339935
     }
     Rotation {
     }
@@ -77129,8 +76199,31 @@ Objects {
   ParentId: 14580783129908760267
   ChildIds: 16575490586798734636
   ChildIds: 2168552649371219571
+  ChildIds: 15148059254214727169
+  ChildIds: 11733260949587586264
+  ChildIds: 5304472230586833481
+  ChildIds: 15311531882384699317
+  ChildIds: 11146333813127967269
+  ChildIds: 16960925821246391005
+  ChildIds: 15095977644657172251
+  ChildIds: 16871040244224083141
+  ChildIds: 10985429362962902953
+  ChildIds: 6255915669005219185
+  ChildIds: 17364705080052432281
+  ChildIds: 14539897637540922012
+  ChildIds: 17222949652057835129
+  ChildIds: 5307622507516856898
+  ChildIds: 10506541541968122751
+  ChildIds: 8688024520436241419
+  ChildIds: 14643464083674834745
+  ChildIds: 13018657941237370910
+  ChildIds: 3339579484155798243
+  ChildIds: 10169179982015510883
+  ChildIds: 9320618733334383614
+  ChildIds: 7848544323113602912
+  ChildIds: 2787855557882577371
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -77140,6 +76233,995 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 2787855557882577371
+  Name: "Flower Daisy Patch 01"
+  Transform {
+    Location {
+      X: -176.587402
+      Y: 705.603
+      Z: 50.7067871
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5822866965878578211
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14901047705038900015
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 7848544323113602912
+  Name: "Flower Daisy Patch 01"
+  Transform {
+    Location {
+      X: 6297.18213
+      Y: 462.127441
+      Z: -82.585907
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5822866965878578211
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14901047705038900015
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 9320618733334383614
+  Name: "Flower Daisy Patch 01"
+  Transform {
+    Location {
+      X: 877.105
+      Y: 1207.15332
+      Z: 71.6002808
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5822866965878578211
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14901047705038900015
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 10169179982015510883
+  Name: "Flower Daisy Patch 01"
+  Transform {
+    Location {
+      X: 3091.46
+      Y: -3691.83228
+      Z: 98.5075684
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5822866965878578211
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14901047705038900015
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 3339579484155798243
+  Name: "Flower Daisy Patch 01"
+  Transform {
+    Location {
+      X: 2311.25732
+      Y: -999.800781
+      Z: 173.611053
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5822866965878578211
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14901047705038900015
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 13018657941237370910
+  Name: "Flower Daisy Patch 01"
+  Transform {
+    Location {
+      X: -2235.53467
+      Y: -385.349609
+      Z: 55.5158691
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5822866965878578211
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14901047705038900015
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 14643464083674834745
+  Name: "Flower Daisy Patch 01"
+  Transform {
+    Location {
+      X: 457.677734
+      Y: -4366.01123
+      Z: -88.9696655
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5822866965878578211
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14901047705038900015
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 8688024520436241419
+  Name: "Flower Daisy Patch 01"
+  Transform {
+    Location {
+      X: 6377.81396
+      Y: 366.873047
+      Z: -62.5591431
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5822866965878578211
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14901047705038900015
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 10506541541968122751
+  Name: "Flower Daisy Patch 01"
+  Transform {
+    Location {
+      X: 4923.49365
+      Y: -1855.79053
+      Z: 31.5320435
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5822866965878578211
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14901047705038900015
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 5307622507516856898
+  Name: "Flower Daisy Patch 01"
+  Transform {
+    Location {
+      X: 5769.07178
+      Y: -4942.84863
+      Z: -41.5407104
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5822866965878578211
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14901047705038900015
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 17222949652057835129
+  Name: "Flower Daisy Patch 01"
+  Transform {
+    Location {
+      X: 3339.37793
+      Y: -4864.28418
+      Z: 68.8109131
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5822866965878578211
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14901047705038900015
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 14539897637540922012
+  Name: "Flower Daisy Patch 01"
+  Transform {
+    Location {
+      X: 2050.57373
+      Y: -6446.24707
+      Z: -96.4559631
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5822866965878578211
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14901047705038900015
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 17364705080052432281
+  Name: "Flower Daisy Patch 01"
+  Transform {
+    Location {
+      X: -989.944336
+      Y: -1689.97754
+      Z: 155.427063
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5822866965878578211
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14901047705038900015
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 6255915669005219185
+  Name: "Flower Bellflower 01"
+  Transform {
+    Location {
+      X: 796.172852
+      Y: 2798.80957
+      Z: 12.4648132
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5822866965878578211
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7170404211956574687
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 10985429362962902953
+  Name: "Flower Bellflower 01"
+  Transform {
+    Location {
+      X: 774.59082
+      Y: 2653.06787
+      Z: 17.7748718
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5822866965878578211
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7170404211956574687
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 16871040244224083141
+  Name: "Flower Bellflower 01"
+  Transform {
+    Location {
+      X: 1622.87744
+      Y: 3156.73145
+      Z: 13.8200073
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5822866965878578211
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7170404211956574687
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 15095977644657172251
+  Name: "Flower Wild Lily Patch 01"
+  Transform {
+    Location {
+      X: -3057.51221
+      Y: -1758.48828
+      Z: 26.899292
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5822866965878578211
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9023561908052998223
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 16960925821246391005
+  Name: "Flower Daisy Patch 01"
+  Transform {
+    Location {
+      X: 4980.26709
+      Y: -4088.7478
+      Z: 51.0645142
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5822866965878578211
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14901047705038900015
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 11146333813127967269
+  Name: "Flower Daisy Patch 01"
+  Transform {
+    Location {
+      X: -430.404785
+      Y: -5291.32422
+      Z: 71.7443237
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5822866965878578211
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14901047705038900015
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 15311531882384699317
+  Name: "Flower Daisy Patch 01"
+  Transform {
+    Location {
+      X: 5366.57959
+      Y: 1772.94629
+      Z: -19.1823425
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5822866965878578211
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14901047705038900015
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 5304472230586833481
+  Name: "Branches Cluster Big"
+  Transform {
+    Location {
+      X: -337.000488
+      Y: 1994.16895
+      Z: -41.0344849
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5822866965878578211
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14581672509999327805
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 11733260949587586264
+  Name: "Branches Cluster Medium"
+  Transform {
+    Location {
+      X: 5695.21729
+      Y: -5687.73877
+      Z: -25.2676392
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5822866965878578211
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2453356181987331000
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 15148059254214727169
+  Name: "Branches Cluster Big"
+  Transform {
+    Location {
+      X: -1775.78125
+      Y: -5665.53809
+      Z: 104.792419
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5822866965878578211
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14581672509999327805
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
   }
 }
 Objects {
@@ -77193,7 +77275,7 @@ Objects {
     Location {
       X: -431.877441
       Y: -1122.08545
-      Z: -27.3919525
+      Z: -70.8262787
     }
     Rotation {
     }

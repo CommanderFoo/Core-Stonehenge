@@ -2,8 +2,6 @@ local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
 
 local cave_trigger = script:GetCustomProperty("cave_trigger"):WaitForObject()
 local chamber_trigger = script:GetCustomProperty("chamber_trigger"):WaitForObject()
-local cave_waypoint_helper = script:GetCustomProperty("cave_waypoint_helper"):WaitForObject()
-local cave_waypoint_ui = script:GetCustomProperty("cave_waypoint_ui"):WaitForObject()
 local rotator_sound = script:GetCustomProperty("rotator_sound"):WaitForObject()
 local success_sound = script:GetCustomProperty("success_sound"):WaitForObject()
 local mini = script:GetCustomProperty("mini"):WaitForObject()
@@ -70,18 +68,14 @@ local quest_2_complete = false
 
 local local_player = Game.GetLocalPlayer()
 
-local offset = 50
-local show_cave_waypoint = false
-
 local tweens = {}
 
 cave_trigger.beginOverlapEvent:Connect(function(t, p)
 	if(p:IsA("Player")) then
 		if(not quest_1_complete) then
 			quest_1_complete = true
+			Events.Broadcast("clear_waypoint")
 			Events.Broadcast("quest_item_complete", 1)
-			show_cave_waypoint = false
-			cave_waypoint_ui.visibility = Visibility.FORCE_OFF
 		end
 	end
 end)
@@ -100,40 +94,6 @@ function Tick(dt)
 		if(t ~= nil) then
 			t:tween(dt)
 		end
-	end
-
-	if(not show_cave_waypoint) then
-		return
-	end
-
-	local target_pos = cave_waypoint_helper:GetWorldPosition()
-	local screen = UI.GetScreenSize()
-	local screen_pos = UI.GetScreenPosition(target_pos)
-
-	-- Credit to Team META for the improved code here.
-	-- The second half of this handles the issue when screen_pos is nil.
-	-- We have no info when the object is behind the camera.  Usually we
-	-- can do slope intercept calculations, but there can still be issues.
-	-- The else part of this handles that issue in a much less complicated
-	-- manner.  So thank Team META for that part of the code - CommanderFoo
-
-	if(screen_pos ~= nil) then
-		screen_pos.x = screen_pos.x - screen.x / 2
-		screen_pos.y = screen_pos.y - screen.y / 2
-
-		cave_waypoint_ui.x = CoreMath.Clamp(screen_pos.x, -screen.x / 2 + offset, screen.x / 2 - offset)
-		cave_waypoint_ui.y = CoreMath.Clamp(screen_pos.y, -screen.y / 2 + offset, screen.y / 2 - offset)
-	else
-		local player_pos = local_player:GetWorldPosition()
-		local point = (target_pos - player_pos)
-		local dist = point.sizeSquared
-
-		local view_rot = local_player:GetViewWorldRotation()
-        local view_right = Quaternion.New(view_rot):GetRightVector()
-        local dir = point:GetNormalized()
-
-        cave_waypoint_ui.x = (view_right .. dir) * (screen.x - 110) / 2
-        cave_waypoint_ui.y = screen.y / 2 - offset
 	end
 end
 
@@ -211,11 +171,6 @@ function play_effects()
 		table.insert(tweens, t)
 	end
 end
-
-Events.Connect("show_cave_waypoint", function()
-	cave_waypoint_ui.visibility = Visibility.FORCE_ON
-	show_cave_waypoint = true
-end)
 
 Events.Connect("rotate_color", function(color)
 	local r = rotators[color]

@@ -17,7 +17,7 @@ Assets {
         }
         ParentId: 16845918078398887905
         ChildIds: 8527211557379198406
-        ChildIds: 554290467640131790
+        ChildIds: 17893452317781526245
         UnregisteredParameters {
           Overrides {
             Name: "cs:type"
@@ -104,57 +104,26 @@ Assets {
         }
       }
       Objects {
-        Id: 554290467640131790
-        Name: "RubyStone_05"
-        Transform {
-          Location {
-            X: -0.436971486
-            Y: -0.234095603
-            Z: -52.2659073
-          }
-          Rotation {
-            Pitch: -0.479007959
-            Yaw: -0.0010773323
-            Roll: 0.256622404
-          }
-          Scale {
-            X: 0.237534314
-            Y: 0.237534314
-            Z: 0.237534314
-          }
-        }
-        ParentId: 1994476063807051631
-        ChildIds: 17893452317781526245
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
         Id: 17893452317781526245
         Name: "Group"
         Transform {
           Location {
-            Z: 52.9768829
+            X: -0.331768543
+            Y: -0.177735969
+            Z: -39.6826477
           }
           Rotation {
+            Pitch: -0.479007959
+            Yaw: -0.00107733184
+            Roll: 0.256622374
           }
           Scale {
-            X: 0.444310874
-            Y: 0.444310874
-            Z: 0.444310874
+            X: 0.105539083
+            Y: 0.105539083
+            Z: 0.105539083
           }
         }
-        ParentId: 554290467640131790
+        ParentId: 1994476063807051631
         ChildIds: 14080141772544790889
         ChildIds: 5276540731468752274
         ChildIds: 698840910814010179

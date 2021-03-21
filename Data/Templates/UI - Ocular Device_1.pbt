@@ -194,8 +194,10 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
-          Width: -5
-          Height: -5
+          Width: -50
+          Height: -50
+          UIX: -0.831838608
+          UIY: -44.2845726
           RotationAngle: 301.310699
           RenderTransformPivot {
             Anchor {
@@ -221,12 +223,12 @@ Assets {
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:middlecenter"
+                Value: "mc:euianchor:bottomright"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:middlecenter"
+                Value: "mc:euianchor:bottomright"
               }
             }
           }
@@ -257,10 +259,10 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
-          Width: 125
-          Height: 125
-          UIX: -29.8492432
-          UIY: -64.1794128
+          Width: 80
+          Height: 80
+          UIX: -30.65271
+          UIY: -7.54833508
           RotationAngle: 53.7154045
           RenderTransformPivot {
             Anchor {

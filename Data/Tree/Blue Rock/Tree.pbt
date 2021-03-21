@@ -1,6 +1,136 @@
 Name: "Blue Rock"
 RootId: 15462314122037940146
 Objects {
+  Id: 7470460973101588357
+  Name: "Blue Rock Outline"
+  Transform {
+    Location {
+      X: -4791.16846
+      Y: -5503.01465
+      Z: 3.05175781e-05
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15462314122037940146
+  ChildIds: 205044014289476236
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 205044014289476236
+  Name: "Outline Object"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7470460973101588357
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Object To Outline"
+      ObjectReference {
+        SelfId: 13824855072847399013
+      }
+    }
+    Overrides {
+      Name: "bp:Hierarchy Discovery Depth"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Thickness"
+      Float: 3
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        G: 0.123587608
+        B: 0.458000064
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Dynamic Thickness"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Outline Channel"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Max Distance Thickness"
+      Float: 2.32934117
+    }
+    Overrides {
+      Name: "bp:Max Distance"
+      Float: 16.9642715
+    }
+    Overrides {
+      Name: "bp:Min Distance"
+      Float: 5.9683795
+    }
+    Overrides {
+      Name: "bp:Show Behind Objects"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Solid Behind Objects"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Multi-Color"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Enabled"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 16347485244050219597
+    }
+    TeamSettings {
+    }
+  }
+  InstanceHistory {
+    SelfId: 4947993792418632350
+    SubobjectId: 8810891986624322585
+    InstanceId: 1362143755086093751
+    TemplateId: 1989782424554441499
+  }
+}
+Objects {
   Id: 11024059923477305324
   Name: "Look - Blue Catalyst Holder"
   Transform {

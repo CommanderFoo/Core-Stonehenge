@@ -57,6 +57,11 @@ Events.Connect("start_game", function(quest_id)
 
 		Events.Broadcast("energy_to_end_position")
 		Events.Broadcast("open_up_cave", true)
+
+		Events.Broadcast("disable_white_outline")
+		Events.Broadcast("disable_red_outline")
+		Events.Broadcast("disable_yellow_outline")
+		Events.Broadcast("disable_blue_outline")
 	end
 
 	if(quest_id > 3) then
@@ -68,6 +73,16 @@ Events.Connect("start_game", function(quest_id)
 	transition_tween = YOOTIL.Tween:new(transition_time, {a = 1}, {a = 0})
 
 	transition_tween:on_complete(function()
+		if(quest_id == 2) then
+			Events.Broadcast("show_ocular_waypoint")
+		elseif(quest_id == 3) then
+			Events.Broadcast("show_dig_waypoint")
+		elseif(quest_id == 4) then
+			Events.Broadcast("show_lily_waypoint")
+		elseif(quest_id == 5) then
+			--Events.Broadcast("enable_rock_outlines")
+		end
+
 		if(quest_id > 1) then
 			Events.BroadcastToServer("enable_player", local_player)
 			Events.Broadcast("show_inventory")
@@ -91,7 +106,7 @@ Events.Connect("start_game", function(quest_id)
 			Events.Broadcast("show_letter")
 		end
 
-		if(quest_id >= 3) then
+		if(quest_id > 3) then
 			Events.Broadcast("show_grove_glowing_flowers")
 		end
 
@@ -99,8 +114,8 @@ Events.Connect("start_game", function(quest_id)
 			Events.Broadcast("play_bird_sounds")
 		end
 
-		if(quest_id == 6) then
-	--		Events.Broadcast("show_cave_waypoint")
+		if(quest_id >= 6) then
+			Events.Broadcast("show_cave_waypoint")
 		end
 
 		if(quest_id == 7) then

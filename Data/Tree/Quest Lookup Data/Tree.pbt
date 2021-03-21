@@ -1393,6 +1393,10 @@ Objects {
       Name: "cs:thought_id"
       Int: 1
     }
+    Overrides {
+      Name: "cs:notification"
+      String: "You can combine the Lens in your Inventory to the right with the Frame to make the device."
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

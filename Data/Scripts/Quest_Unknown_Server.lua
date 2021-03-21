@@ -14,5 +14,4 @@ end)
 
 Events.ConnectForPlayer("reload_game", function(player)
 	player:TransferToGame("923e7b/stonehenge")
-	--print("Reload game by transferring")
 end)

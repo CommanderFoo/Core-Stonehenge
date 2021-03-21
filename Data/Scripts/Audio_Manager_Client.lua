@@ -24,7 +24,8 @@ local sounds = {
 	red_hum = script:GetCustomProperty("red_hum"):WaitForObject(),
 	blue_hum = script:GetCustomProperty("blue_dum"):WaitForObject(),
 	yellow_hum = script:GetCustomProperty("yellow_hum"):WaitForObject(),
-	white_hum = script:GetCustomProperty("white_hum"):WaitForObject()
+	white_hum = script:GetCustomProperty("white_hum"):WaitForObject(),
+	new_quest = script:GetCustomProperty("new_quest"):WaitForObject()
 }
 
 local music = {

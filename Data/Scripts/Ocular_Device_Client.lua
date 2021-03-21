@@ -55,7 +55,7 @@ local pulse_min_range_out_tween = nil
 local cooldown_tween = nil
 
 local last_pulse = 0
-local pulse_cooldown = 12
+local pulse_cooldown = 6
 
 local color_done = {
 
@@ -131,6 +131,7 @@ function fade_in_symbols(symbols)
 				t:on_start(function()
 					Events.Broadcast("play_sound", "found_item", false, true)
 					sym.visibility = Visibility.FORCE_ON
+					Events.Broadcast("enable_" .. k .. "_outline")
 				end)
 
 				t:on_change(function(c)
@@ -161,7 +162,7 @@ function fade_out_symbols(symbols)
 
 		for i, sym in ipairs(v) do
 			if(not done) then
-				local t = YOOTIL.Tween:new(5, { e = 6, a = 1 }, { e = 0, a = 0 })
+				local t = YOOTIL.Tween:new(2, { e = 6, a = 1 }, { e = 0, a = 0 })
 
 				t:on_change(function(c)
 					sym:SetSmartProperty("Emissive Boost", c.e)
@@ -170,6 +171,7 @@ function fade_out_symbols(symbols)
 				t:on_complete(function()
 					t = nil
 					sym.visibility = Visibility.FORCE_OFF
+					Events.Broadcast("disable_" .. k .. "_outline")
 				end)
 
 				table.insert(fade_out_tweens[k], #fade_out_tweens[k] + 1, t)
@@ -227,7 +229,7 @@ local_player.bindingPressedEvent:Connect(function(p, binding)
 
 		pulse_min_range_out_tween:set_delay(1)
 
-		Task.Wait(1)
+		Task.Wait(.6)
 
 		local symbols = find_rock_symbols_in_range()
 

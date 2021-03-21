@@ -55,7 +55,7 @@ Objects {
 }
 Objects {
   Id: 5615940596932917341
-  Name: "Pickup - White Gem"
+  Name: "Pickup - Red Catalyst"
   Transform {
     Scale {
       X: 1
@@ -65,8 +65,11 @@ Objects {
   }
   ParentId: 2071753453346508907
   WantsNetworking: true
-  CameraCollidable {
+  Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
     ParameterOverrideMap {
@@ -81,7 +84,7 @@ Objects {
           Vector {
             X: 3088.9751
             Y: 2449.63232
-            Z: -244.387161
+            Z: -240.969925
           }
         }
         Overrides {
@@ -98,7 +101,7 @@ Objects {
 }
 Objects {
   Id: 11147857424518806933
-  Name: "Pickup - Black Crystal"
+  Name: "Pickup - Yellow Catalyst"
   Transform {
     Scale {
       X: 1
@@ -112,7 +115,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
     ParameterOverrideMap {

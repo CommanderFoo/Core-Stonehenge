@@ -163,6 +163,7 @@ function mark_quest_item_complete(id, delay)
 			remove_current_quest()
 			Task.Wait(1)
 			next_quest()
+			Events.Broadcast("play_sound", "new_quest", true)
 		end
 	end
 end

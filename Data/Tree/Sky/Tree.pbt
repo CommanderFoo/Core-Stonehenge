@@ -319,7 +319,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Cloud Opacity"
-      Float: 0.26237449
+      Float: 0.428331047
     }
     Overrides {
       Name: "bp:Cloud Ambient Color"
@@ -359,7 +359,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Brightness"
-      Float: 1
+      Float: 0.909040213
     }
     Overrides {
       Name: "bp:Background Clouds"

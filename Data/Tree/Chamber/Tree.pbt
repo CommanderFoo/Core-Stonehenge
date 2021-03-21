@@ -1,10 +1,13 @@
 Name: "Chamber"
 RootId: 10767560448851720048
 Objects {
-  Id: 17444375320710668282
+  Id: 7200254545071073828
   Name: "Sci-fi Ambience Alien Designed 01 SFX"
   Transform {
     Location {
+      X: 2853.61426
+      Y: -5076.6377
+      Z: -1768.67712
     }
     Rotation {
     }
@@ -29,18 +32,20 @@ Objects {
       Id: 15806676618353501228
     }
     Volume: 1
-    Falloff: -1
-    Radius: -1
-    EnableOcclusion: true
+    Falloff: 402.511
+    Radius: 1304.42603
     IsSpatializationEnabled: true
     IsAttenuationEnabled: true
   }
 }
 Objects {
-  Id: 2562354183102608332
-  Name: "Ambient Dark Cave Dungeon Loop 01 SFX"
+  Id: 15627482058674687471
+  Name: "Sci-fi Alien Wind Ambience Loop 01 SFX"
   Transform {
     Location {
+      X: 2944.82959
+      Y: -4978.01416
+      Z: -1768.677
     }
     Rotation {
     }
@@ -62,12 +67,15 @@ Objects {
   }
   AudioInstance {
     AudioAsset {
-      Id: 10329151591600142767
+      Id: 8717508057156591207
     }
-    Volume: 1
-    Falloff: -1
-    Radius: -1
-    EnableOcclusion: true
+    AutoPlay: true
+    Repeat: true
+    Volume: 0.728616416
+    Falloff: 402.511139
+    Radius: 1304.42639
+    FadeInTime: 1
+    FadeOutTime: 1
     IsSpatializationEnabled: true
     IsAttenuationEnabled: true
   }

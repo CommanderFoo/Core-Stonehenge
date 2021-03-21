@@ -1,6 +1,39 @@
 Name: "Effects"
 RootId: 1616780706916206490
 Objects {
+  Id: 756020615960803964
+  Name: "New Quest"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1616780706916206490
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 11725832606877138075
+    }
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+  }
+}
+Objects {
   Id: 10767560448851720048
   Name: "Chamber"
   Transform {
@@ -325,7 +358,7 @@ Objects {
     AudioAsset {
       Id: 9031542967963011832
     }
-    Volume: 1
+    Volume: 2
     Falloff: -1
     Radius: -1
   }

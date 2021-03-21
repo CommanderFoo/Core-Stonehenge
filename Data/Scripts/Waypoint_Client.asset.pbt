@@ -1,6 +1,6 @@
 Assets {
-  Id: 8354420908521797465
-  Name: "Wiggle Script"
+  Id: 7205819821879444429
+  Name: "Waypoint_Client"
   PlatformAssetType: 3
   TextAsset {
   }

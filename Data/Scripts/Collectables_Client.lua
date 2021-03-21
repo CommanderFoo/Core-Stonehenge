@@ -7,12 +7,134 @@ local data_holder = script:GetCustomProperty("data_holder"):WaitForObject()
 
 local children = items:GetChildren()
 local dig_collectables = script:GetCustomProperty("dig_collectables"):WaitForObject()
+local tent_collectables = script:GetCustomProperty("tent_collectables"):WaitForObject()
+local lily_area_collectables = script:GetCustomProperty("lily_area_collectables"):WaitForObject()
+local chamber_area_collectables = script:GetCustomProperty("chamber_area_collectables"):WaitForObject()
 
 local tween = nil
 
 local local_player = Game.GetLocalPlayer()
 local is_open = false
 local can_open = false
+
+local all_collectables = {}
+local group_collectables = {}
+
+local offset = 20
+
+for i, c in ipairs(items:GetChildren()) do
+	if(c.name == "Area Name") then
+		if(i > 1) then
+			offset = offset + 30
+		end
+
+		c.y = offset
+		offset = offset + 40
+	else
+		c.y = offset
+		offset = offset + 100
+	end
+end
+
+for i, c in ipairs(dig_collectables:GetChildren()) do
+	local data = {
+
+		obj = c,
+		parent = c:GetCustomProperty("collectable_parent_id"),
+		id = c:GetCustomProperty("collectable_id")
+
+	}
+
+	if(data.parent ~= nil and data.parent > 0) then
+		if(not group_collectables[data.parent]) then
+			group_collectables[data.parent] = {
+
+				quantity = 0,
+				ids = {}
+
+			}
+		end
+
+		table.insert(group_collectables[data.parent].ids, #group_collectables[data.parent].ids + 1, data.id)
+	end
+
+	table.insert(all_collectables, #all_collectables + 1, data)
+end
+
+for i, c in ipairs(tent_collectables:GetChildren()) do
+	local data = {
+
+		obj = c,
+		parent = c:GetCustomProperty("collectable_parent_id"),
+		id = c:GetCustomProperty("collectable_id")
+
+	}
+
+	if(data.parent ~= nil and data.parent > 0) then
+		if(not group_collectables[data.parent]) then
+			group_collectables[data.parent] = {
+
+				quantity = 0,
+				ids = {}
+
+			}
+		end
+
+		table.insert(group_collectables[data.parent].ids, #group_collectables[data.parent].ids + 1, data.id)
+	end
+
+	table.insert(all_collectables, #all_collectables + 1, data)
+end
+
+for i, c in ipairs(lily_area_collectables:GetChildren()) do
+	local data = {
+
+		obj = c,
+		parent = c:GetCustomProperty("collectable_parent_id"),
+		id = c:GetCustomProperty("collectable_id")
+
+	}
+
+	if(data.parent ~= nil and data.parent > 0) then
+		if(not group_collectables[data.parent]) then
+			group_collectables[data.parent] = {
+
+				quantity = 0,
+				ids = {}
+
+			}
+		end
+
+		table.insert(group_collectables[data.parent].ids, #group_collectables[data.parent].ids + 1, data.id)
+	end
+
+	table.insert(all_collectables, #all_collectables + 1, data)
+end
+
+for i, c in ipairs(chamber_area_collectables:GetChildren()) do
+	local data = {
+
+		obj = c,
+		parent = c:GetCustomProperty("collectable_parent_id"),
+		id = c:GetCustomProperty("collectable_id")
+
+	}
+
+	if(data.parent ~= nil and data.parent > 0) then
+		if(not group_collectables[data.parent]) then
+			group_collectables[data.parent] = {
+
+				quantity = 0,
+				ids = {}
+
+			}
+		end
+
+		table.insert(group_collectables[data.parent].ids, #group_collectables[data.parent].ids + 1, data.id)
+	end
+
+	table.insert(all_collectables, #all_collectables + 1, data)
+end
 
 local_player.bindingPressedEvent:Connect(function(p, binding)
 	if(can_open and YOOTIL.Input[key] == binding) then
@@ -78,38 +200,53 @@ function close()
 end
 
 function check_collectables()
-	for i, c in ipairs(dig_collectables) do
-		print(c:GetCustomProperty("collectable_id"), c.visibility)
+	for i, c in ipairs(all_collectables) do
 		if(c.visibility == Visibility.FORCE_OFF and c.collision == Collision.FORCE_OFF) then
-			print(c:GetCustomProperty("collectable_id"))
 			enable_collectable(c:GetCustomProperty("collectable_id"))
 		end
 	end
 end
 
-function enable_collectable(id, no_msg)
+function enable_collectable(id, parent_id, no_msg)
 	for i, c in ipairs(children) do
-		if(tonumber(c.name) == tonumber(id)) then
-			c:FindChildByName("Name Hidden").visibility = Visibility.FORCE_OFF
-			c:FindChildByName("Desc Hidden").visibility = Visibility.FORCE_OFF
+		if(c.name ~= "Area Name") then
+			local ui_id = tonumber(id)
+			local item_id = tonumber(c.name)
 
-			c:FindChildByName("Name").visibility = Visibility.FORCE_ON
-			c:FindChildByName("Desc").visibility = Visibility.FORCE_ON
+			if(parent_id ~= nil) then
+				if(c:GetCustomProperty("parent_id") and c:GetCustomProperty("parent_id") == parent_id) then
+					ui_id = tonumber(parent_id)
+					has_quantity = true
 
-			c:FindChildByName("Icon"):SetColor(Color.New(1, 1, 1, 1))
+					if(group_collectables[ui_id]) then
+						group_collectables[ui_id].quantity = group_collectables[ui_id].quantity + 1
 
-			if(not no_msg) then
-				Events.Broadcast("add_notification", {
-					
-					msg = "\"" .. c:FindChildByName("Name").text .. "\" has been added to your collection.",
-					in_time = .5,
-					out_time = .5,
-					stay_time = 1.2
-
-				})
+						c:FindChildByName("Collectables Quantity").visibility = Visibility.FORCE_ON
+						c:FindDescendantByName("Quantity").text = tostring(group_collectables[ui_id].quantity .. " / " .. tostring(#group_collectables[ui_id].ids))
+					end
+				end
 			end
 
-			break
+			if(ui_id == item_id) then
+				c:FindChildByName("Name Hidden").visibility = Visibility.FORCE_OFF
+				c:FindChildByName("Desc Hidden").visibility = Visibility.FORCE_OFF
+
+				c:FindChildByName("Name").visibility = Visibility.FORCE_ON
+				c:FindChildByName("Desc").visibility = Visibility.FORCE_ON
+
+				c:FindChildByName("Icon"):SetColor(Color.New(1, 1, 1, 1))
+
+				if(not no_msg) then
+					Events.Broadcast("add_notification", {
+						
+						msg = "\"" .. c:FindChildByName("Name").text .. "\" has been added to your collection.",
+						in_time = .5,
+						out_time = .5,
+						stay_time = 1.2
+
+					})
+				end
+			end
 		end
 	end
 end
@@ -138,9 +275,11 @@ end)
 
 Events.Connect("add_collectable", function(obj_ref)
 	local id = obj_ref:GetObject():GetCustomProperty("collectable_id")
-	
-	enable_collectable(id)
-	Events.BroadcastToServer("add_collectable", local_player, id, obj_ref)
+	local parent_id = obj_ref:GetObject():GetCustomProperty("collectable_parent_id")
+
+	enable_collectable(id, parent_id, false)
+
+	Events.BroadcastToServer("add_collectable", local_player, id, parent_id, obj_ref)
 end)
 
 Events.Connect("check_collectables", check_collectables)
@@ -151,7 +290,28 @@ data_holder.networkedPropertyChangedEvent:Connect(function(obj, prop)
 
 		if(data) then
 			for id in string.gmatch(data, "([^|]+)") do
-				enable_collectable(id, true)
+				enable_collectable(id, nil, true)
+			end
+		end
+	end
+
+	if(prop == "group_collectable_data") then
+		local data = data_holder:GetCustomProperty("group_collectable_data")
+
+		if(data) then
+			for entry in string.gmatch(data, "([^|]+)") do
+				local count = 1
+				local group = nil
+
+				for str in string.gmatch(entry, "([^,]+)") do
+					if(count == 1) then
+						group = tonumber(str)
+					else
+						enable_collectable(str, group, true)
+					end
+
+					count = count + 1
+				end
 			end
 		end
 	end

@@ -17,7 +17,8 @@ Assets {
         }
         ParentId: 16845918078398887905
         ChildIds: 9483171452287693992
-        ChildIds: 8666625684753737544
+        ChildIds: 16136845398996117355
+        ChildIds: 5657241922335060180
         UnregisteredParameters {
           Overrides {
             Name: "cs:type"
@@ -92,60 +93,26 @@ Assets {
         }
       }
       Objects {
-        Id: 8666625684753737544
-        Name: "Pickaxe"
-        Transform {
-          Location {
-            X: 47.1160049
-            Y: 2.74758339
-            Z: 613.177673
-          }
-          Rotation {
-            Pitch: -85.5986328
-            Yaw: -176.662567
-            Roll: 176.653793
-          }
-          Scale {
-            X: 4.37330675
-            Y: 4.37330675
-            Z: 4.37330675
-          }
-        }
-        ParentId: 442102575301351709
-        ChildIds: 16136845398996117355
-        ChildIds: 5657241922335060180
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
         Id: 16136845398996117355
         Name: "Thorn"
         Transform {
           Location {
-            X: 32.023922
-            Y: -4.25000508e-06
-            Z: -1.11817029e-13
+            X: 36.3908043
+            Y: 2.12157607
+            Z: 473.543
           }
           Rotation {
+            Pitch: -85.5982437
+            Yaw: -176.662567
+            Roll: 176.653763
           }
           Scale {
-            X: 1
-            Y: 2.75
-            Z: 0.5
+            X: 4.37330675
+            Y: 12.0265942
+            Z: 2.18665338
           }
         }
-        ParentId: 8666625684753737544
+        ParentId: 442102575301351709
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -189,19 +156,22 @@ Assets {
         Name: "Large Round Wood Beam 8m"
         Transform {
           Location {
-            X: 9.53218651
-            Y: -1.26504938e-06
-            Z: -3.32832686e-14
+            X: 43.9224205
+            Y: 2.56095409
+            Z: 571.613647
           }
           Rotation {
+            Pitch: -85.5982437
+            Yaw: -176.662567
+            Roll: 176.653763
           }
           Scale {
-            X: 0.0362238958
-            Y: 0.849205077
-            Z: 0.849205077
+            X: 0.158418208
+            Y: 3.71383452
+            Z: 3.71383452
           }
         }
-        ParentId: 8666625684753737544
+        ParentId: 442102575301351709
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"

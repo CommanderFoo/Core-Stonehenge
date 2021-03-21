@@ -16,6 +16,7 @@ Assets {
           }
         }
         ParentId: 16845918078398887905
+        ChildIds: 15281821054023212953
         ChildIds: 8416713994614861890
         ChildIds: 4906941823284610559
         ChildIds: 12642023834024023272
@@ -44,6 +45,55 @@ Assets {
         }
         Folder {
           IsGroup: true
+        }
+      }
+      Objects {
+        Id: 15281821054023212953
+        Name: "Collectable Collider"
+        Transform {
+          Location {
+            X: 60.3656235
+            Y: -26.9599876
+            Z: -56.5938034
+          }
+          Rotation {
+            Yaw: -5.21102e-11
+            Roll: -4.69280483e-21
+          }
+          Scale {
+            X: 0.528739
+            Y: 0.528742492
+            Z: 0.26939559
+          }
+        }
+        ParentId: 3450515032478699395
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12095835209017042614
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableDistanceFieldLighting: true
+          DisableCastShadows: true
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
         }
       }
       Objects {
@@ -626,6 +676,15 @@ Assets {
             }
           }
         }
+      }
+    }
+    Assets {
+      Id: 12095835209017042614
+      Name: "Cube"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_cube_002"
       }
     }
     Assets {

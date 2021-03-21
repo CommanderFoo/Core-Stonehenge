@@ -7,7 +7,7 @@ Assets {
       RootId: 423913690008197879
       Objects {
         Id: 423913690008197879
-        Name: "Look - Ocular Frame"
+        Name: "Look - Ocular Pulse Staff"
         Transform {
           Scale {
             X: 1.71071279

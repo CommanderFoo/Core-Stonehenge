@@ -24,7 +24,7 @@ Objects {
       value {
         Overrides {
           Name: "Name"
-          String: "Look - Ocular Frame"
+          String: "Look - Ocular Pulse Staff"
         }
         Overrides {
           Name: "Position"
@@ -41,6 +41,10 @@ Objects {
             Yaw: -45.4351807
             Roll: 10.3877831
           }
+        }
+        Overrides {
+          Name: "cs:name"
+          String: "Ocular Pulse Staff"
         }
       }
     }

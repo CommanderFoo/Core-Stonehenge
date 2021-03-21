@@ -287,6 +287,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14901047705038900015
+  Name: "Flower Daisy Patch 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_flower_daisy_001"
+  }
+}
+Assets {
   Id: 14816864290304546764
   Name: "Flower Wild Lily 02"
   PlatformAssetType: 1
@@ -806,6 +815,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F6_Text_020"
+  }
+}
+Assets {
+  Id: 9023561908052998223
+  Name: "Flower Wild Lily Patch 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_flower_wild_lily_patch_001_ref"
   }
 }
 Assets {

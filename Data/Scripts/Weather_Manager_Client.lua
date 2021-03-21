@@ -47,14 +47,17 @@ function get_weather_profile(profile)
 	end
 end
 
--- @TODO:  Lightning strikes hitting the ground at random spots
--- @TODO:  Switch rocks to wet if raining
-
 function set_weather_profile(profile, no_tween)
 	local data = get_weather_profile(profile)
 
 	current_profile = data
 
+	if(profile == "nighttime") then
+		sun_light:SetSmartProperty("Size", 0)
+	else
+		sun_light:SetSmartProperty("Size", 20)
+	end		
+	
 	if(no_tween or not data:GetCustomProperty("tween")) then
 		sky_dome:SetSmartProperty("Overall Tint", data:GetCustomProperty("sky_dome_color"))
 		sky_dome:SetSmartProperty("Brightness", data:GetCustomProperty("sky_dome_brightness"))
@@ -285,7 +288,7 @@ function set_rocks_wet(state)
 end
 
 -- @TODO: Disable this at some point
---[[
+-- [[
 local_player.bindingPressedEvent:Connect(function(player, binding)
 	if(binding == "ability_extra_1") then
 		set_weather_profile("sunrise")

@@ -10,10 +10,10 @@ Events.Connect("submit_fastest_time", function(fin)
 		Events.BroadcastToPlayer(player, "final_time", player.serverUserData.timer)
 
 		if(player.name == "CommanderFoo" or player.name == "BlueClairey") then
-			return
+			--return
 		end
 		
-		if(not fin and Leaderboards.HasLeaderboards()) then
+		if(fin == 0 and Leaderboards.HasLeaderboards()) then
 			Leaderboards.SubmitPlayerScore(time_lb, player, player.serverUserData.timer)
 		end
 	end
@@ -22,11 +22,21 @@ end)
 Events.Connect("submit_total_collectables", function()
 	if(Leaderboards.HasLeaderboards() and player ~= nil) then
 		if(player.name == "CommanderFoo" or player.name == "BlueClairey") then
-			return
+			--return
 		end
 
+		local total = 0
+
 		if(player.serverUserData.collectables and #player.serverUserData.collectables > 0) then
-			Leaderboards.SubmitPlayerScore(collectables_lb, player, #player.serverUserData.collectables)
+			total = #player.serverUserData.collectables
+		end
+
+		for k, v in pairs(player.serverUserData.group_collectables) do
+			total = total + #v	
+		end
+
+		if(total > 0) then
+			Leaderboards.SubmitPlayerScore(collectables_lb, player, total)
 		end
 	end
 end)
@@ -34,8 +44,6 @@ end)
 function Tick(dt)
 	if(started and not finished) then
 		player.serverUserData.timer = player.serverUserData.timer + dt
-
-		--print(player.serverUserData.timer)
 	end
 end
 

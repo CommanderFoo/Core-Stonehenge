@@ -61,7 +61,7 @@ Assets {
       }
       Overrides {
         Name: "emissive"
-        Float: 1.02449214
+        Float: 0.261065274
       }
       Overrides {
         Name: "foam shape"
@@ -70,16 +70,16 @@ Assets {
       Overrides {
         Name: "deep color"
         Color {
-          R: 0.00844428688
-          B: 0.266000032
+          G: 0.0195000228
+          B: 0.0260000229
           A: 1
         }
       }
       Overrides {
         Name: "shallow color"
         Color {
-          G: 0.0171111617
-          B: 0.154000044
+          G: 0.0100001097
+          B: 0.0085318191
           A: 1
         }
       }

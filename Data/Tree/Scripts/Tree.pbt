@@ -176,6 +176,30 @@ Objects {
         SelfId: 11472370763536327097
       }
     }
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
+      }
+    }
+    Overrides {
+      Name: "cs:tent_collectables"
+      ObjectReference {
+        SelfId: 8286381177779862723
+      }
+    }
+    Overrides {
+      Name: "cs:lily_collectables"
+      ObjectReference {
+        SelfId: 13129468122507211104
+      }
+    }
+    Overrides {
+      Name: "cs:chamber_collectables"
+      ObjectReference {
+        SelfId: 16520021811109134271
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -449,6 +473,12 @@ Objects {
         SelfId: 13435184631131098900
       }
     }
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -500,6 +530,7 @@ Objects {
   ChildIds: 8189325046855239704
   ChildIds: 15521201443443620303
   ChildIds: 8489843879329551771
+  ChildIds: 15090280342175244308
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -510,6 +541,68 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 15090280342175244308
+  Name: "Waypoint_Client"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14858104107515101237
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:waypoint_ui"
+      ObjectReference {
+        SelfId: 11973429258518757493
+      }
+    }
+    Overrides {
+      Name: "cs:cave_helper"
+      ObjectReference {
+        SelfId: 17337096062158709255
+      }
+    }
+    Overrides {
+      Name: "cs:dig_helper"
+      ObjectReference {
+        SelfId: 6308566783288859877
+      }
+    }
+    Overrides {
+      Name: "cs:ocular_waypoint"
+      ObjectReference {
+        SelfId: 3361019150866744449
+      }
+    }
+    Overrides {
+      Name: "cs:lily_waypoint"
+      ObjectReference {
+        SelfId: 3217289536489893865
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 7205819821879444429
+    }
   }
 }
 Objects {
@@ -1162,6 +1255,24 @@ Objects {
         SelfId: 11472370763536327097
       }
     }
+    Overrides {
+      Name: "cs:tent_collectables"
+      ObjectReference {
+        SelfId: 8286381177779862723
+      }
+    }
+    Overrides {
+      Name: "cs:lily_area_collectables"
+      ObjectReference {
+        SelfId: 13129468122507211104
+      }
+    }
+    Overrides {
+      Name: "cs:chamber_area_collectables"
+      ObjectReference {
+        SelfId: 16520021811109134271
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1639,7 +1750,7 @@ Objects {
     }
     Overrides {
       Name: "cs:key_binding"
-      String: "e"
+      String: "c"
     }
     Overrides {
       Name: "cs:inventory_ui"
@@ -1947,7 +2058,7 @@ Objects {
     Overrides {
       Name: "cs:ocular_device_icon"
       AssetReference {
-        Id: 17404098457123408068
+        Id: 15347877993658735186
       }
     }
     Overrides {
@@ -2357,6 +2468,12 @@ Objects {
       Name: "cs:grove_chime"
       ObjectReference {
         SelfId: 12113986878081595217
+      }
+    }
+    Overrides {
+      Name: "cs:new_quest"
+      ObjectReference {
+        SelfId: 756020615960803964
       }
     }
   }

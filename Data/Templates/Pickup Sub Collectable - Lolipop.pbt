@@ -17,7 +17,10 @@ Assets {
         }
         ParentId: 16845918078398887905
         ChildIds: 549962889149128174
-        ChildIds: 12688597534905185725
+        ChildIds: 5068255836556646210
+        ChildIds: 10953092641308409733
+        ChildIds: 14571274909049197993
+        ChildIds: 5416662520134231414
         UnregisteredParameters {
           Overrides {
             Name: "cs:type"
@@ -102,57 +105,26 @@ Assets {
         }
       }
       Objects {
-        Id: 12688597534905185725
-        Name: "Lolipop"
-        Transform {
-          Location {
-          }
-          Rotation {
-            Pitch: -85.5985489
-            Yaw: -176.662567
-            Roll: 176.653793
-          }
-          Scale {
-            X: 0.960894823
-            Y: 0.960894823
-            Z: 0.960894823
-          }
-        }
-        ParentId: 4381066182077561976
-        ChildIds: 5068255836556646210
-        ChildIds: 10953092641308409733
-        ChildIds: 14571274909049197993
-        ChildIds: 5416662520134231414
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
         Id: 5068255836556646210
         Name: "Ring - Thick"
         Transform {
           Location {
-            Y: -64.3104477
+            X: 0.000931052258
+            Y: -61.7946396
+            Z: 0.275444478
           }
           Rotation {
+            Pitch: -85.5984573
+            Yaw: -176.662582
+            Roll: 176.653793
           }
           Scale {
-            X: 3.24144721
-            Y: 3.24144721
-            Z: 3.24144721
+            X: 3.11468983
+            Y: 3.11468983
+            Z: 3.11468983
           }
         }
-        ParentId: 12688597534905185725
+        ParentId: 4381066182077561976
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -196,18 +168,22 @@ Assets {
         Name: "Ring - Thick"
         Transform {
           Location {
-            Y: -64.3104477
+            X: 0.000931052258
+            Y: -61.7946396
+            Z: 0.275444478
           }
           Rotation {
-            Yaw: -26.17033
+            Pitch: -63.235405
+            Yaw: -98.7818222
+            Roll: 99.7953415
           }
           Scale {
-            X: 1.57515907
-            Y: 1.57515907
-            Z: 5.50514793
+            X: 1.5135622
+            Y: 1.5135622
+            Z: 5.28986835
           }
         }
-        ParentId: 12688597534905185725
+        ParentId: 4381066182077561976
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -251,19 +227,22 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            Y: -64.3104477
-            Z: 28.0759735
+            X: 26.8971043
+            Y: -61.8038788
+            Z: -1.79114151
           }
           Rotation {
-            Yaw: -17.8222446
+            Pitch: -71.4113693
+            Yaw: -103.225945
+            Roll: 103.906654
           }
           Scale {
-            X: 1.18716
-            Y: 1.18716
-            Z: 0.669699073
+            X: 1.14073586
+            Y: 1.14073586
+            Z: 0.643510342
           }
         }
-        ParentId: 12688597534905185725
+        ParentId: 4381066182077561976
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -307,19 +286,22 @@ Assets {
         Name: "Cylinder - Chamfered Polished"
         Transform {
           Location {
-            Y: 257.24176
-            Z: 1.30943298
+            X: 1.24998319
+            Y: 247.179123
+            Z: -1.2022475
           }
           Rotation {
-            Roll: -89.9999924
+            Pitch: -85.5984573
+            Yaw: -176.662552
+            Roll: 86.6537323
           }
           Scale {
-            X: 0.449453831
-            Y: 0.449452907
-            Z: 5.16851425
+            X: 0.431877881
+            Y: 0.431876957
+            Z: 4.96639872
           }
         }
-        ParentId: 12688597534905185725
+        ParentId: 4381066182077561976
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"

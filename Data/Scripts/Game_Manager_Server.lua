@@ -1,3 +1,5 @@
+local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
+
 local clear_save_data = script:GetCustomProperty("clear_save_data")
 local tent_quest_items = script:GetCustomProperty("tent_quest_items"):WaitForObject()
 local excavation_quest_items = script:GetCustomProperty("excavation_quest_items"):WaitForObject()
@@ -25,12 +27,15 @@ function clear_data(player)
 
 	player.serverUserData.inventory = {}
 	player.serverUserData.collectables = {}
+	player.serverUserData.group_collectables = {}
 end
 
 function load_save_data(player)
 	local data = Storage.GetPlayerData(player) or {}
 
-	data.quest_id = 2
+	-- @TODO: disable this
+
+	--data.quest_id = 5
 
 	quest_id = data.quest_id or 0
 
@@ -38,78 +43,54 @@ function load_save_data(player)
 	player:SetResource("finished", data.finished or 0)
 
 	player.serverUserData.collectables = {}
+	player.serverUserData.group_collectables = {}
 	player.serverUserData.timer = data.timer or 0
 
 	if(quest_id > 1) then
 		player:SetResource("has_save", 1)
 	end
-	
-	--[[
-	player.serverUserData.inventory = {}
 
-	if(data.inventory) then
-		for i, v in pairs(data.inventory) do
-			player.serverUserData.inventory[i] = {
-				
-				inventory_id = v.id,
-				quantity = v.q
-			
-			}
-		end
-	end--]]
-
-	if(data.collectables) then
-		for i, v in ipairs(data.collectables) do
+	if(data.v1_collectables) then
+		for i, v in ipairs(data.v1_collectables) do
 			table.insert(player.serverUserData.collectables, #player.serverUserData.collectables + 1, v)
 		end
 	end
+
+	if(data.v1_group_collectables) then
+		for i, v in pairs(data.v1_group_collectables) do
+			player.serverUserData.group_collectables[i] = v
+		end
+	end
+
+	--YOOTIL.Utils.dump(data)
 end
 
 function save_data(player)
 	Events.Broadcast("submit_total_collectables")
 
-	local data = {
-
-		inventory = {},
-		collectables = {}
-
-	}
+	local data = {}
 
 	data.quest_id = player:GetResource("quest_id")
 	data.timer = player.serverUserData.timer or 0
 	data.finished = player:GetResource("finished")
-
-	--[[
-	if(player.serverUserData.inventory) then
-		for i, v in pairs(player.serverUserData.inventory) do
-			local save_item = true
-
-			if(data.quest_id == 3 and (v.inventory_id == 3 or v.inventory_id == 4 or v.inventory_id == 11)) then
-				save_item = false
-			end
-
-			if(data.quest_id == 4 and (v.inventory_id == 5 or v.inventory_id == 6)) then
-				save_item = false
-			end
-
-			if(save_item) then
-				data.inventory[i] = {
-					
-					id = v.inventory_id,
-					q = v.quantity
-				
-				}
-			end
-		end
-	end--]]
 	
-	data.collectables = {}
+	data.v1_collectables = {}
 
 	if(player.serverUserData.collectables) then
 		for i, v in ipairs(player.serverUserData.collectables) do
-			table.insert(data.collectables, #data.collectables + 1, v)
+			table.insert(data.v1_collectables, #data.v1_collectables + 1, v)
 		end
 	end
+
+	data.v1_group_collectables = {}
+
+	if(player.serverUserData.group_collectables) then
+		for k, v in pairs(player.serverUserData.group_collectables) do
+			data.v1_group_collectables[k] = v
+		end
+	end
+	
+	--YOOTIL.Utils.dump(data)
 
 	Storage.SetPlayerData(player, data)
 end

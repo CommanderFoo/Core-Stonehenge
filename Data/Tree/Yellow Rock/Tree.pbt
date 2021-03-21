@@ -1,6 +1,137 @@
 Name: "Yellow Rock"
 RootId: 9657082216612006210
 Objects {
+  Id: 2954262929792462813
+  Name: "Yellow Rock Outline"
+  Transform {
+    Location {
+      X: -4791.16846
+      Y: -5503.01465
+      Z: 3.05175781e-05
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9657082216612006210
+  ChildIds: 18071958956243076656
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 18071958956243076656
+  Name: "Outline Object"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2954262929792462813
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Object To Outline"
+      ObjectReference {
+        SelfId: 11946897974418255570
+      }
+    }
+    Overrides {
+      Name: "bp:Hierarchy Discovery Depth"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Thickness"
+      Float: 3
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 1
+        G: 0.955523729
+        B: 0.0660000443
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Dynamic Thickness"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Outline Channel"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Max Distance Thickness"
+      Float: 2.32934117
+    }
+    Overrides {
+      Name: "bp:Max Distance"
+      Float: 16.9642715
+    }
+    Overrides {
+      Name: "bp:Min Distance"
+      Float: 5.9683795
+    }
+    Overrides {
+      Name: "bp:Show Behind Objects"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Solid Behind Objects"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Multi-Color"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Enabled"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 16347485244050219597
+    }
+    TeamSettings {
+    }
+  }
+  InstanceHistory {
+    SelfId: 4947993792418632350
+    SubobjectId: 8810891986624322585
+    InstanceId: 1362143755086093751
+    TemplateId: 1989782424554441499
+  }
+}
+Objects {
   Id: 3456323361475352302
   Name: "Look - Yellow Catalyst Holder"
   Transform {

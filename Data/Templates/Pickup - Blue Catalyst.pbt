@@ -24,15 +24,15 @@ Assets {
             String: "sub_pickup"
           }
           Overrides {
-            Name: "cs:override"
+            Name: "cs:override_scale"
             Bool: true
           }
           Overrides {
             Name: "cs:scale"
             Vector {
-              X: 0.1
-              Y: 0.1
-              Z: 0.1
+              X: 0.4
+              Y: 0.4
+              Z: 0.4
             }
           }
         }

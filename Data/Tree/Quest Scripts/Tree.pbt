@@ -530,18 +530,6 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:cave_waypoint_helper"
-      ObjectReference {
-        SelfId: 17337096062158709255
-      }
-    }
-    Overrides {
-      Name: "cs:cave_waypoint_ui"
-      ObjectReference {
-        SelfId: 11973429258518757493
-      }
-    }
-    Overrides {
       Name: "cs:blue_rotator"
       ObjectReference {
         SelfId: 8012908256909681383
@@ -697,6 +685,30 @@ Objects {
       Name: "cs:visual_rock_55a"
       ObjectReference {
         SelfId: 16518421102946950198
+      }
+    }
+    Overrides {
+      Name: "cs:red_outline"
+      ObjectReference {
+        SelfId: 4947993792418632350
+      }
+    }
+    Overrides {
+      Name: "cs:yellow_outline"
+      ObjectReference {
+        SelfId: 18071958956243076656
+      }
+    }
+    Overrides {
+      Name: "cs:blue_outline"
+      ObjectReference {
+        SelfId: 205044014289476236
+      }
+    }
+    Overrides {
+      Name: "cs:white_outline"
+      ObjectReference {
+        SelfId: 12145837874599329578
       }
     }
   }

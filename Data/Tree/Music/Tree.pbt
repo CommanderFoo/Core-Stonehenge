@@ -129,8 +129,8 @@ Objects {
     AudioBP {
       Repeat: true
       Volume: 1.2
-      FadeInTime: 0.5
-      FadeOutTime: 0.5
+      FadeInTime: 1
+      FadeOutTime: 5
     }
   }
 }

@@ -111,6 +111,7 @@ function play_lightning()
 		Events.Broadcast("stop_additional_music")
 
 		Events.Broadcast("open_up_cave")
+		Events.Broadcast("show_cave_waypoint")
 		Task.Wait(0.3)
 		lightning.visibility = Visibility.FORCE_OFF
 		lightning_light.visibility = Visibility.FORCE_OFF

@@ -108,6 +108,7 @@ close_button.clickedEvent:Connect(function()
 					Events.Broadcast("can_open_collectables", true)
 					Events.Broadcast("can_open_inventory", true)
 					Events.Broadcast("set_weather_profile", "daytime")
+					Events.Broadcast("show_ocular_waypoint")
 					
 					Events.Broadcast("stop_music")
 				end)

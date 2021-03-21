@@ -31,7 +31,7 @@ function enable_player(player, stance)
 	player.movementControlMode = MovementControlMode.VIEW_RELATIVE
 	player.lookControlMode = LookControlMode.RELATIVE
 	player.maxJumpCount = 1
-	player.isCrouchEnabled = true
+	--player.isCrouchEnabled = true
 
 	if(stance) then
 		set_player_stance(player, stance)

@@ -26,6 +26,10 @@ Assets {
             Name: "cs:collectable_id"
             Int: 9
           }
+          Overrides {
+            Name: "cs:collectable_parent_id"
+            Int: 9
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

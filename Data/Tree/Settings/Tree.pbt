@@ -221,12 +221,12 @@ Objects {
     MinDistance: 300
     MaxDistance: 600
     PositionOffset {
+      Z: 15
     }
     RotationOffset {
     }
     FieldOfView: 90
     ViewWidth: 1200
-    UseCameraSocket: true
     RotationMode {
       Value: "mc:erotationmode:lookangle"
     }
@@ -290,7 +290,7 @@ Objects {
       FacingMode {
         Value: "mc:efacingmode:faceaimalways"
       }
-      DefaultRotationRate: 540
+      DefaultRotationRate: 500
       SlideRotationRate: 20
       LookAtCursorProjectionPlane {
         Value: "mc:eprojectionplane:xy"
@@ -300,7 +300,6 @@ Objects {
       MountedJumpMaxCount: 1
       MountedJumpVelocity: 900
       IsSlideEnabled: true
-      IsCrouchEnabled: true
       IsJumpEnabled: true
       CanMoveForward: true
       CanMoveBackward: true

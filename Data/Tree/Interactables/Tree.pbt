@@ -1,6 +1,35 @@
 Name: "Interactables"
 RootId: 13207548860357947295
 Objects {
+  Id: 16520021811109134271
+  Name: "Chamber Area Collectables"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13207548860357947295
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Chamber Area Collectables"
+  }
+}
+Objects {
   Id: 13115652778135981047
   Name: "Chamber Rotators"
   Transform {

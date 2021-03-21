@@ -1,6 +1,253 @@
 Name: "Collectable Items"
 RootId: 16845918078398887905
 Objects {
+  Id: 15086737035660939206
+  Name: "Pickup Collectable - Skull"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16845918078398887905
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 15809821440587810234
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Pickup Collectable - Skull"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 4265.97412
+            Y: 1808.27295
+            Z: -345.54895
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 95.3561325
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 18443030339376869299
+    }
+  }
+}
+Objects {
+  Id: 932952994293356025
+  Name: "Pickup Collectable - Skull"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16845918078398887905
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 15809821440587810234
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Pickup Collectable - Skull"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 2824.69189
+            Y: 1224.5459
+            Z: -393.687256
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.63471174
+            Y: 1.63471174
+            Z: 1.63471174
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "cs:collectable_id"
+          Int: 21
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 18443030339376869299
+    }
+  }
+}
+Objects {
+  Id: 8058522810951106623
+  Name: "Pickup Sub Collectable - Skull"
+  Transform {
+    Location {
+      X: 8103.71045
+      Y: 8021.91064
+      Z: -118.754478
+    }
+    Rotation {
+      Pitch: 0.479007959
+      Yaw: 156.488602
+      Roll: -0.256622344
+    }
+    Scale {
+      X: 0.411944389
+      Y: 0.411944389
+      Z: 0.411944389
+    }
+  }
+  ParentId: 16845918078398887905
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 15809821440587810234
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Pickup Sub Collectable - Skull"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 3156.57617
+            Y: 2270.646
+            Z: -279.288025
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 0.479007959
+            Yaw: -142.381622
+            Roll: -0.256622314
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.411944389
+            Y: 0.411944389
+            Z: 0.411944389
+          }
+        }
+        Overrides {
+          Name: "cs:collectable_id"
+          Int: 20
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7876156294920058136
+    }
+  }
+}
+Objects {
+  Id: 294222854401752526
+  Name: "Pickup Sub Collectable - Skull"
+  Transform {
+    Location {
+      X: 7983.82959
+      Y: 8009.55664
+      Z: -185.882721
+    }
+    Rotation {
+      Pitch: 0.479007959
+      Yaw: -138.096771
+      Roll: -0.256622314
+    }
+    Scale {
+      X: 0.411944389
+      Y: 0.411944389
+      Z: 0.411944389
+    }
+  }
+  ParentId: 16845918078398887905
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 15809821440587810234
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Pickup Sub Collectable - Skull"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 3312.54199
+            Y: 2518.896
+            Z: -118.754478
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 0.479007959
+            Yaw: 156.488586
+            Roll: -0.256622314
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.411944389
+            Y: 0.411944389
+            Z: 0.411944389
+          }
+        }
+        Overrides {
+          Name: "cs:collectable_id"
+          Int: 19
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7876156294920058136
+    }
+  }
+}
+Objects {
   Id: 4715875678124004730
   Name: "Pickup Sub Collectable - Mallet"
   Transform {
@@ -274,7 +521,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 3205.98682
+            X: 3219.5127
             Y: 2317.09131
             Z: -401.40094
           }
@@ -421,9 +668,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 3001.19482
-            Y: 2493.95264
-            Z: -232.741562
+            X: 2990.24756
+            Y: 2485.0542
+            Z: -248.209961
           }
         }
         Overrides {
@@ -471,8 +718,8 @@ Objects {
           Name: "Position"
           Vector {
             X: 3192.66113
-            Y: 2492.64404
-            Z: -178.064865
+            Y: 2506.54199
+            Z: -185.882721
           }
         }
         Overrides {

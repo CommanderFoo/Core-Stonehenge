@@ -51,7 +51,7 @@ Objects {
     }
     Overrides {
       Name: "cs:sky_light_intensity"
-      Float: 0.621
+      Float: 0.721
     }
     Overrides {
       Name: "cs:star_dome_visibility"
@@ -68,7 +68,7 @@ Objects {
     }
     Overrides {
       Name: "cs:sun_light_intensity"
-      Float: 0.5
+      Float: 0.6
     }
     Overrides {
       Name: "cs:thunder"

@@ -230,6 +230,7 @@ function use_item()
 				-- These should not be hardcoded, but time is running out.
 
 				if(using_item:GetCustomProperty("id") == 2) then
+					Events.Broadcast("show_dig_waypoint")
 					Events.Broadcast("quest_item_complete", 2)
 					Events.Broadcast("show_dig_glowing_flowers")
 					Events.BroadcastToServer("save", "ocular_built", 1)
@@ -257,7 +258,7 @@ function use_item()
 						o:SetWorldScale(cur_scale)
 					end)
 
-					hide_tween:set_delay(3)
+					hide_tween:set_delay(2)
 
 					Events.Broadcast("add_ocular_ui")
 					Events.Broadcast("enable_ocular_device", true)
@@ -279,6 +280,7 @@ function use_item()
 					Events.Broadcast("enable_beam", "yellow")
 					Events.Broadcast("play_sound", "catalyst_break")
 					Events.Broadcast("play_sound", "catalayst_powered")
+					Events.Broadcast("disable_yellow_outline")
 				elseif(using_item:GetCustomProperty("id") == 4 and string.find(type, "remove")) then
 					Events.Broadcast("inventory_remove", using_item:GetCustomProperty("id"))
 					Events.Broadcast("quest_item_complete", 3)
@@ -287,6 +289,7 @@ function use_item()
 					Events.Broadcast("enable_beam", "red")
 					Events.Broadcast("play_sound", "catalyst_break")
 					Events.Broadcast("play_sound", "catalayst_powered")
+					Events.Broadcast("disable_red_outline")
 				elseif(using_item:GetCustomProperty("id") == 5 and string.find(type, "remove")) then
 					Events.Broadcast("inventory_remove", using_item:GetCustomProperty("id"))
 					Events.Broadcast("quest_item_complete", 4)
@@ -295,6 +298,7 @@ function use_item()
 					Events.Broadcast("enable_beam", "blue")
 					Events.Broadcast("play_sound", "catalyst_break")
 					Events.Broadcast("play_sound", "catalayst_powered")
+					Events.Broadcast("disable_blue_outline")
 				elseif(using_item:GetCustomProperty("id") == 6 and string.find(type, "remove")) then
 					Events.Broadcast("inventory_remove", using_item:GetCustomProperty("id"))
 					Events.Broadcast("quest_item_complete", 5)
@@ -303,6 +307,7 @@ function use_item()
 					Events.Broadcast("enable_beam", "white")
 					Events.Broadcast("play_sound", "catalyst_break")
 					Events.Broadcast("play_sound", "catalayst_powered")
+					Events.Broadcast("disable_white_outline")
 				elseif(zoomed) then
 					Task.Wait(.5)
 					can_rotate = true

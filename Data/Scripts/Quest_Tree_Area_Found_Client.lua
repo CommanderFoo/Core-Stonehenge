@@ -26,12 +26,14 @@ end)
 
 Events.Connect("can_collect_tree_area_quest_items", function()
 	can_complete_quest = true
+	Events.Broadcast("show_lily_waypoint")
 end)
 
 Events.Connect("tree_area_quest_complete", function()
 	Events.Broadcast("set_weather_profile", "nighttime")
 	Events.Broadcast("set_weather_rocks_wet", true)
 	Events.Broadcast("ocular_use_color")
+	Events.Broadcast("clear_waypoint")
 end)
 
 Events.Connect("lily_area_play_vfx", function()

@@ -18,14 +18,14 @@ Assets {
         ParentId: 3139108800441333692
         ChildIds: 16051790545984723216
         ChildIds: 10624944761534886735
-        ChildIds: 3707761901807326545
+        ChildIds: 16411188146995970118
         ChildIds: 16143029675258965896
         ChildIds: 15387966742990140431
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceon"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -33,7 +33,7 @@ Assets {
         Control {
           Width: 100
           Height: 100
-          UIX: -200
+          UIX: -45
           UIY: -50
           RenderTransformPivot {
             Anchor {
@@ -173,17 +173,9 @@ Assets {
         }
       }
       Objects {
-        Id: 3707761901807326545
+        Id: 16411188146995970118
         Name: "UI - Ocular Device"
         Transform {
-          Location {
-            X: 8143.63428
-            Y: -2741.85742
-            Z: 301.614838
-          }
-          Rotation {
-            Yaw: 49.6352539
-          }
           Scale {
             X: 1
             Y: 1
@@ -191,6 +183,7 @@ Assets {
           }
         }
         ParentId: 14212269066307920764
+        ChildIds: 18075440753147774582
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -203,6 +196,7 @@ Assets {
         Control {
           Width: -5
           Height: -5
+          RotationAngle: 301.310699
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -213,7 +207,69 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 8092391521752407462
+              Id: 16654575888181619820
+            }
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 18075440753147774582
+        Name: "UI Image"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 16411188146995970118
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Control {
+          Width: 125
+          Height: 125
+          UIX: -29.8492432
+          UIY: -64.1794128
+          RotationAngle: 53.7154045
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Image {
+            Brush {
+              Id: 6936299751404224185
             }
             Color {
               R: 1
@@ -562,12 +618,21 @@ Assets {
       }
     }
     Assets {
-      Id: 8092391521752407462
-      Name: "Fantasy Spyglass 003"
+      Id: 16654575888181619820
+      Name: "Fantasy Staff 026"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Equip_Spyglass_003"
+        AssetId: "UI_Fantasy_Weapon_Staff_026"
+      }
+    }
+    Assets {
+      Id: 6936299751404224185
+      Name: "Sci-fi Parts 032"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_SciFi_Equip_Parts_032"
       }
     }
     Assets {

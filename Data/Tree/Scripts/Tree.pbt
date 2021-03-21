@@ -987,8 +987,8 @@ Objects {
     Overrides {
       Name: "cs:ui_icon"
       ObjectReference {
-        SelfId: 2710473637831060469
-        SubObjectId: 3707761901807326545
+        SelfId: 17665743427289169634
+        SubObjectId: 16411188146995970118
         InstanceId: 12612610737163539623
         TemplateId: 16712513435738967268
       }

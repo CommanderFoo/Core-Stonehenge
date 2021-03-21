@@ -781,7 +781,7 @@ Objects {
     Overrides {
       Name: "cs:ui_asset"
       AssetReference {
-        Id: 1522146674609678815
+        Id: 11131993430399063240
       }
     }
     Overrides {
@@ -853,7 +853,7 @@ Objects {
     Overrides {
       Name: "cs:ui_asset"
       AssetReference {
-        Id: 14062496968318028386
+        Id: 1483490369410831738
       }
     }
     Overrides {

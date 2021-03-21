@@ -42,6 +42,10 @@ Objects {
             Roll: -1.57608032
           }
         }
+        Overrides {
+          Name: "cs:override_scale"
+          Bool: true
+        }
       }
     }
     TemplateAsset {

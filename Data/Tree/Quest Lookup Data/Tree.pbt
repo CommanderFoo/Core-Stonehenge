@@ -1383,7 +1383,7 @@ Objects {
     }
     Overrides {
       Name: "cs:title"
-      String: "Find Ocular Pulse Frame"
+      String: "Find Ocular Pulse Staff"
     }
     Overrides {
       Name: "cs:line_width"

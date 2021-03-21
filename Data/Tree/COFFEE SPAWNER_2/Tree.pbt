@@ -1,6 +1,38 @@
 Name: "COFFEE SPAWNER_2"
 RootId: 17939633550798248805
 Objects {
+  Id: 6350638000864060669
+  Name: "Camp Fire Rocks"
+  Transform {
+    Location {
+      X: -8.48632813
+      Y: 12.8088379
+      Z: -97.1494141
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17939633550798248805
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Camp Fire Rocks"
+  }
+}
+Objects {
   Id: 6061743201988415416
   Name: "NewFolder"
   Transform {

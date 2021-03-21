@@ -30,7 +30,7 @@ end
 function load_save_data(player)
 	local data = Storage.GetPlayerData(player) or {}
 
-	--data.quest_id = 5
+	data.quest_id = 2
 
 	quest_id = data.quest_id or 0
 

@@ -116,6 +116,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16779138328527542709
+  Name: "Text 05: 0"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F6_Text_026"
+  }
+}
+Assets {
   Id: 16776912205547856454
   Name: "Pipe - 4-Sided Thin"
   PlatformAssetType: 1
@@ -185,6 +194,33 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_fog_volume_vfx"
+  }
+}
+Assets {
+  Id: 16149953234805841189
+  Name: "Text 05: 7"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F6_Text_033"
+  }
+}
+Assets {
+  Id: 15873777444981848580
+  Name: "Text 05: S"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F6_Text_018"
+  }
+}
+Assets {
+  Id: 15622306461920055999
+  Name: "Text 06: P"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F8_Text_015"
   }
 }
 Assets {
@@ -521,6 +557,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11776457317267698894
+  Name: "Office Pencil 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_off_desktop_pen_03_ref"
+  }
+}
+Assets {
   Id: 11757842166016445749
   Name: "Heart"
   PlatformAssetType: 1
@@ -617,6 +662,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_invisible_001"
+  }
+}
+Assets {
+  Id: 10398712652928304845
+  Name: "Candle Flame VFX"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "fxsm_candleflame"
   }
 }
 Assets {
@@ -926,6 +980,24 @@ Assets {
   }
 }
 Assets {
+  Id: 6890722025722690557
+  Name: "Text 05: P"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F6_Text_015"
+  }
+}
+Assets {
+  Id: 6805392400730493012
+  Name: "Text 06: E"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F8_Text_004"
+  }
+}
+Assets {
   Id: 6747614045051753376
   Name: "Cylinder - Bottom-Aligned"
   PlatformAssetType: 1
@@ -971,6 +1043,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6327460229963629510
+  Name: "Text 05: R"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F6_Text_017"
+  }
+}
+Assets {
   Id: 6281859149628802308
   Name: "Pipe - Spiral"
   PlatformAssetType: 1
@@ -1007,12 +1088,30 @@ Assets {
   }
 }
 Assets {
+  Id: 5796819961846696153
+  Name: "Text 06: S"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F8_Text_018"
+  }
+}
+Assets {
   Id: 5772966795193676662
   Name: "Large Round Wood Beam 8m"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_large_beam_round_6m"
+  }
+}
+Assets {
+  Id: 5771179548319610400
+  Name: "Text 05: C"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F6_Text_002"
   }
 }
 Assets {
@@ -1079,6 +1178,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4940513130547301682
+  Name: "Fantasy Bookshelf Bottom"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fantasy_bookshelf_base_001_ref"
+  }
+}
+Assets {
   Id: 4390353906889216331
   Name: "Trim Bottom 8m"
   PlatformAssetType: 1
@@ -1094,6 +1202,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_stucco_tint_001_uv"
+  }
+}
+Assets {
+  Id: 4241954836035827010
+  Name: "Candle Holder 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fantasy_candle_holder_table_002"
   }
 }
 Assets {
@@ -1283,6 +1400,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_tooth_002"
+  }
+}
+Assets {
+  Id: 1245509821683836630
+  Name: "Text 06: R"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F8_Text_017"
   }
 }
 Assets {

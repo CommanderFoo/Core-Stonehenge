@@ -143,6 +143,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14682289963701316438
+  Name: "Frame Outlined 012"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameSolid4px_029"
+  }
+}
+Assets {
   Id: 14518196033395157467
   Name: "Alien Symbol 1"
   PlatformAssetType: 9
@@ -215,6 +224,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12738109254262876004
+  Name: "Fantasy Corners 004"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Corners_004"
+  }
+}
+Assets {
   Id: 12121308474663325117
   Name: "Smoke Volume VFX"
   PlatformAssetType: 8
@@ -239,6 +257,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioBlueprintAssetRef"
     AssetId: "sfxabp_epic_explosion_set_01_ref"
+  }
+}
+Assets {
+  Id: 11383436273032311153
+  Name: "BG Flat 011"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_28"
   }
 }
 Assets {
@@ -314,6 +341,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9659642934112156497
+  Name: "BG Gradient 011"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundFlat_028"
+  }
+}
+Assets {
   Id: 9440580825021071479
   Name: "Survival Pencil 001"
   PlatformAssetType: 9
@@ -347,6 +383,15 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "sfxbp_reverb_zone"
+  }
+}
+Assets {
+  Id: 8414351534511479843
+  Name: "BG Gradient 012"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundFlat_029"
   }
 }
 Assets {
@@ -558,5 +603,14 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Equip_Tool_017"
+  }
+}
+Assets {
+  Id: 857611128339213279
+  Name: "Military Frame 006"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Military_Frame_006"
   }
 }

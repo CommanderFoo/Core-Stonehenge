@@ -28,7 +28,7 @@ Assets {
           }
           Overrides {
             Name: "cs:collectable_id"
-            Int: 17
+            Int: 14
           }
         }
         WantsNetworking: true

@@ -35,7 +35,7 @@ function load_save_data(player)
 
 	-- @TODO: disable this
 
-	data.quest_id = 3
+	--data.quest_id = 3
 
 	quest_id = data.quest_id or 0
 
@@ -78,7 +78,7 @@ function save_data(player)
 
 	if(player.serverUserData.collectables) then
 		for i, v in ipairs(player.serverUserData.collectables) do
-			--table.insert(data.v1_collectables, #data.v1_collectables + 1, v)
+			table.insert(data.v1_collectables, #data.v1_collectables + 1, v)
 		end
 	end
 
@@ -86,7 +86,7 @@ function save_data(player)
 
 	if(player.serverUserData.group_collectables) then
 		for k, v in pairs(player.serverUserData.group_collectables) do
-			--data.v1_group_collectables[k] = v
+			data.v1_group_collectables[k] = v
 		end
 	end
 	

@@ -197,7 +197,7 @@ function close()
 		return
 	end
 
-	tween = YOOTIL.Tween:new(.5, { x = collectables.x }, { x = -410 })
+	tween = YOOTIL.Tween:new(.5, { x = collectables.x }, { x = -420 })
 	
 	tween:on_change(function(c)
 		collectables.x = c.x
@@ -252,7 +252,11 @@ function enable_collectable(id, parent_id, no_msg)
 				c:FindChildByName("Name").visibility = Visibility.FORCE_ON
 				c:FindChildByName("Desc").visibility = Visibility.FORCE_ON
 
-				c:FindChildByName("Icon"):SetColor(Color.New(1, 1, 1, 1))
+				if(ui_id == 32) then
+					c:FindChildByName("Icon"):SetColor(Color.New(2, 91, 0, 1))
+				else
+					c:FindChildByName("Icon"):SetColor(Color.New(1, 1, 1, 1))
+				end
 
 				if(not no_msg) then
 					Events.Broadcast("add_notification", {

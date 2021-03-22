@@ -53,9 +53,9 @@ Assets {
             Roll: -90
           }
           Scale {
-            X: 0.431982517
-            Y: 0.431982517
-            Z: 0.431982517
+            X: 0.431982577
+            Y: 0.431982696
+            Z: 0.783207953
           }
         }
         ParentId: 17925031349245252806
@@ -88,7 +88,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 9571615185600317500
+            Id: 12083954618690686897
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -268,12 +268,12 @@ Assets {
       }
     }
     Assets {
-      Id: 9571615185600317500
-      Name: "Gem - Radiant Polished"
+      Id: 12083954618690686897
+      Name: "Gem - Round Polished"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_gem_radiant_polished_001"
+        AssetId: "sm_gem_round_polished_001"
       }
     }
     Assets {

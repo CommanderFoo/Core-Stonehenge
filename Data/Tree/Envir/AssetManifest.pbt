@@ -107,15 +107,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16907668846585397910
-  Name: "Metal Iron Rusted 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_iron_002"
-  }
-}
-Assets {
   Id: 16878811242617323194
   Name: "Bricks Cobblestone Floor 01"
   PlatformAssetType: 2
@@ -197,15 +188,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16486985046141881098
-  Name: "Column Topper 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_column_top_001"
-  }
-}
-Assets {
   Id: 16378995898645307570
   Name: "Wispy Fog Volume VFX"
   PlatformAssetType: 8
@@ -257,15 +239,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_basic_pbr_material_001"
-  }
-}
-Assets {
-  Id: 15403062398953975630
-  Name: "Fantasy Castle Accessory Roof 01 "
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_acc_roof_001"
   }
 }
 Assets {
@@ -359,15 +332,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14673124126145030216
-  Name: "Text 05: $"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F6_Text_040"
-  }
-}
-Assets {
   Id: 14585115278136566691
   Name: "Gem - Baguette Polished"
   PlatformAssetType: 1
@@ -410,15 +374,6 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_letters_001"
-  }
-}
-Assets {
-  Id: 14167124509382939262
-  Name: "Text 05: ,"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F6_Text_062"
   }
 }
 Assets {
@@ -485,15 +440,6 @@ Assets {
   }
 }
 Assets {
-  Id: 13343750050239405500
-  Name: "Text 01: $"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F1_Text_040"
-  }
-}
-Assets {
   Id: 13054853190822377588
   Name: "Heart - Polished"
   PlatformAssetType: 1
@@ -530,15 +476,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12560420085238163895
-  Name: "Metal Chrome"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "chrome_001"
-  }
-}
-Assets {
   Id: 12348469323180891352
   Name: "Wallpaper Fleur De Lis 02"
   PlatformAssetType: 2
@@ -563,15 +500,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_bones_human_skull_01_ref"
-  }
-}
-Assets {
-  Id: 12192473803957732373
-  Name: "Text 01: ."
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F1_Text_063"
   }
 }
 Assets {
@@ -617,15 +545,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cone_001"
-  }
-}
-Assets {
-  Id: 11885571140579718875
-  Name: "Pipe - 8-Sided"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_pipe_eightsided_002"
   }
 }
 Assets {
@@ -971,15 +890,6 @@ Assets {
   }
 }
 Assets {
-  Id: 7591405424643006620
-  Name: "Text 03: $"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F5_Text_040"
-  }
-}
-Assets {
   Id: 7564214716136625929
   Name: "Fabric Burlap New 01"
   PlatformAssetType: 2
@@ -1304,15 +1214,6 @@ Assets {
   }
 }
 Assets {
-  Id: 4303059059807632391
-  Name: "Callout Sparkle"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_sparkles_volume_vfx"
-  }
-}
-Assets {
   Id: 4247430867898109902
   Name: "Stucco Tintable"
   PlatformAssetType: 2
@@ -1430,15 +1331,6 @@ Assets {
   }
 }
 Assets {
-  Id: 2758719130896277310
-  Name: "Text 04: ."
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F7_Text_063"
-  }
-}
-Assets {
   Id: 2748302153268683930
   Name: "Fantasy Book Open 01"
   PlatformAssetType: 1
@@ -1544,15 +1436,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F8_Text_017"
-  }
-}
-Assets {
-  Id: 1137112816547272582
-  Name: "Cylinder"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_002"
   }
 }
 Assets {

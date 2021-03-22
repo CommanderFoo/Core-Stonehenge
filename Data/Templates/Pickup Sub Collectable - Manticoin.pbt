@@ -25,11 +25,11 @@ Assets {
           }
           Overrides {
             Name: "cs:collectable_id"
-            Int: 11
+            Int: 10
           }
           Overrides {
             Name: "cs:collectable_parent_id"
-            Int: 11
+            Int: 10
           }
         }
         WantsNetworking: true

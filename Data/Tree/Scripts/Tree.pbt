@@ -87,7 +87,7 @@ Objects {
     Overrides {
       Name: "cs:time"
       NetReference {
-        Key: "13D3D1980BBFAC8B"
+        Key: "0E28A882BA74B66A"
         Type {
           Value: "mc:enetreferencetype:leaderboard"
         }
@@ -96,7 +96,7 @@ Objects {
     Overrides {
       Name: "cs:collectables"
       NetReference {
-        Key: "881E27267E3067DB"
+        Key: "040C00AF157976E9"
         Type {
           Value: "mc:enetreferencetype:leaderboard"
         }
@@ -638,7 +638,7 @@ Objects {
     Overrides {
       Name: "cs:time_lb"
       NetReference {
-        Key: "13D3D1980BBFAC8B"
+        Key: "0E28A882BA74B66A"
         Type {
           Value: "mc:enetreferencetype:leaderboard"
         }
@@ -647,7 +647,7 @@ Objects {
     Overrides {
       Name: "cs:collectables_lb"
       NetReference {
-        Key: "881E27267E3067DB"
+        Key: "040C00AF157976E9"
         Type {
           Value: "mc:enetreferencetype:leaderboard"
         }

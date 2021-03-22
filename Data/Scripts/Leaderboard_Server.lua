@@ -14,7 +14,7 @@ Events.Connect("submit_fastest_time", function(fin)
 		end
 		
 		if(fin == 0 and Leaderboards.HasLeaderboards()) then
-			--Leaderboards.SubmitPlayerScore(time_lb, player, player.serverUserData.timer)
+			Leaderboards.SubmitPlayerScore(time_lb, player, player.serverUserData.timer)
 		end
 	end
 end)
@@ -35,8 +35,10 @@ Events.Connect("submit_total_collectables", function()
 			total = total + #v	
 		end
 
+		--print(total)
+
 		if(total > 0) then
-			--Leaderboards.SubmitPlayerScore(collectables_lb, player, total)
+			Leaderboards.SubmitPlayerScore(collectables_lb, player, total)
 		end
 	end
 end)

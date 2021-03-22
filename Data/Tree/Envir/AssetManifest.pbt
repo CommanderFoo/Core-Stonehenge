@@ -35,6 +35,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17329295947487291966
+  Name: "Glass 01 (no distortion)"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_basic_glass_001"
+  }
+}
+Assets {
   Id: 17306892237270596115
   Name: "Text 04: O"
   PlatformAssetType: 1
@@ -152,6 +161,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16689327351437480814
+  Name: "Cube - Chamfered Small Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_hq_003"
+  }
+}
+Assets {
   Id: 16609254708742162583
   Name: "Plastic Shiny"
   PlatformAssetType: 2
@@ -206,6 +224,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15934210186397621780
+  Name: "Cylinder - Rounded"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_rounded_002"
+  }
+}
+Assets {
   Id: 15873777444981848580
   Name: "Text 05: S"
   PlatformAssetType: 1
@@ -248,6 +275,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cone_truncated_hollow_convex_001"
+  }
+}
+Assets {
+  Id: 15266978144427084740
+  Name: "Kelp Tile 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_kelp_tile_02"
   }
 }
 Assets {
@@ -359,6 +395,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14231809728886464860
+  Name: "Wood Raw White"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_raw_white_001_uv"
+  }
+}
+Assets {
   Id: 14223115488508204358
   Name: "Decal Letters 01"
   PlatformAssetType: 14
@@ -374,6 +419,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F6_Text_062"
+  }
+}
+Assets {
+  Id: 13740446764822429585
+  Name: "Kelp Bush 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_kelp_bush_01"
   }
 }
 Assets {
@@ -419,6 +473,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_large_beam_6m"
+  }
+}
+Assets {
+  Id: 13388951550382507575
+  Name: "Kelp Tall Bush 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_kelp_tall_bush_01"
   }
 }
 Assets {
@@ -818,15 +881,6 @@ Assets {
   }
 }
 Assets {
-  Id: 9023561908052998223
-  Name: "Flower Wild Lily Patch 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_foliage_gen_flower_wild_lily_patch_001_ref"
-  }
-}
-Assets {
   Id: 8938438425858112672
   Name: "Tree Oak 01"
   PlatformAssetType: 1
@@ -842,6 +896,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prism_001"
+  }
+}
+Assets {
+  Id: 8888115498211777799
+  Name: "Bone Human Ulna 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bones_human_ulna_01_ref"
   }
 }
 Assets {
@@ -1106,6 +1169,24 @@ Assets {
   }
 }
 Assets {
+  Id: 5879481406115424181
+  Name: "Bubble Stream VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_bubble_stream"
+  }
+}
+Assets {
+  Id: 5836430349218932838
+  Name: "Pipe - Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pipe_003"
+  }
+}
+Assets {
   Id: 5796819961846696153
   Name: "Text 06: S"
   PlatformAssetType: 1
@@ -1214,6 +1295,24 @@ Assets {
   }
 }
 Assets {
+  Id: 4329665094128711302
+  Name: "Leafy Patch 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_leafy_groundcover_002"
+  }
+}
+Assets {
+  Id: 4303059059807632391
+  Name: "Callout Sparkle"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_sparkles_volume_vfx"
+  }
+}
+Assets {
   Id: 4247430867898109902
   Name: "Stucco Tintable"
   PlatformAssetType: 2
@@ -1286,6 +1385,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3329143163531823611
+  Name: "Cube - Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_hq_test_001"
+  }
+}
+Assets {
   Id: 3140273821349055562
   Name: "Cylinder - Chamfered Small Polished"
   PlatformAssetType: 1
@@ -1346,6 +1454,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_metal_gold_001"
+  }
+}
+Assets {
+  Id: 2723232960546970913
+  Name: "Wood Floor Dark"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_floor_dark_001_uv"
   }
 }
 Assets {
@@ -1466,6 +1583,15 @@ Assets {
   }
 }
 Assets {
+  Id: 504879366409160674
+  Name: "Craftsman Nightstand Drawer"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_drawer_nightstand_001_drawer2"
+  }
+}
+Assets {
   Id: 436792038348082179
   Name: "Pipe - Quarter Thin"
   PlatformAssetType: 1
@@ -1493,11 +1619,29 @@ Assets {
   }
 }
 Assets {
+  Id: 144804802914401026
+  Name: "Craftsman Nightstand Drawer - Deep"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_drawer_nightstand_002"
+  }
+}
+Assets {
   Id: 132672053610873933
   Name: "Plastic Matte"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "plastic_matte_001"
+  }
+}
+Assets {
+  Id: 46061843978868412
+  Name: "Ring"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_torus_004"
   }
 }

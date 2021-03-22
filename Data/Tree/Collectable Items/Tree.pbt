@@ -1,6 +1,148 @@
 Name: "Collectable Items"
 RootId: 16845918078398887905
 Objects {
+  Id: 12020018633423142813
+  Name: "Pickup Sub Collectable - Manticoin"
+  Transform {
+    Location {
+      X: 8048.75
+      Y: 7895.08545
+      Z: -236.708755
+    }
+    Rotation {
+      Pitch: 85.6059494
+      Yaw: -179.985931
+      Roll: 179.757355
+    }
+    Scale {
+      X: 0.15348433
+      Y: 0.15348433
+      Z: 0.15348433
+    }
+  }
+  ParentId: 16845918078398887905
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 15926102487203776946
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Pickup Sub Collectable - Manticoin"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 3050.53955
+            Y: 2392.0708
+            Z: -236.708755
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 85.6057587
+            Yaw: -179.985931
+            Roll: 179.757355
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.15348433
+            Y: 0.15348433
+            Z: 0.15348433
+          }
+        }
+        Overrides {
+          Name: "cs:collectable_id"
+          Int: 24
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8643345906113162656
+    }
+  }
+}
+Objects {
+  Id: 8258279849822761813
+  Name: "Pickup Sub Collectable - Manticoin"
+  Transform {
+    Location {
+      X: 7998.06396
+      Y: 7967.89209
+      Z: -236.708755
+    }
+    Rotation {
+      Pitch: 85.6061249
+      Yaw: -179.985931
+      Roll: 179.757355
+    }
+    Scale {
+      X: 0.15348433
+      Y: 0.15348433
+      Z: 0.15348433
+    }
+  }
+  ParentId: 16845918078398887905
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 15926102487203776946
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Pickup Sub Collectable - Manticoin"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 3257.58154
+            Y: 2392.0708
+            Z: -236.708755
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 85.6060333
+            Yaw: -179.985931
+            Roll: 179.757355
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.15348433
+            Y: 0.15348433
+            Z: 0.15348433
+          }
+        }
+        Overrides {
+          Name: "cs:collectable_id"
+          Int: 23
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8643345906113162656
+    }
+  }
+}
+Objects {
   Id: 15086737035660939206
   Name: "Pickup Collectable - Skull"
   Transform {
@@ -277,7 +419,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 2884.38
-            Y: 2548.62744
+            Y: 2347.90234
             Z: -169.939545
           }
         }
@@ -374,17 +516,17 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 3135.49561
-            Y: 2281.81152
-            Z: -249.83252
+            X: 3162.53809
+            Y: 2390.1167
+            Z: -227.027206
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -29.5686646
-            Yaw: -0.00122070313
-            Roll: -0.256011963
+            Pitch: -86.3160095
+            Yaw: -17.4643555
+            Roll: -0.240081787
           }
         }
       }
@@ -489,104 +631,6 @@ Objects {
     }
     TemplateAsset {
       Id: 13527674371313813357
-    }
-  }
-}
-Objects {
-  Id: 16950642252648442965
-  Name: "Pickup Sub Collectable - Crate"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16845918078398887905
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12321968322413288320
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Pickup Sub Collectable - Crate"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 3219.5127
-            Y: 2317.09131
-            Z: -401.40094
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 85.6060333
-            Yaw: -179.985931
-            Roll: 179.757355
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14656422688933385803
-    }
-  }
-}
-Objects {
-  Id: 4240192593685153660
-  Name: "Pickup Sub Collectable - Big Shovel"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16845918078398887905
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 2982200214500761694
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Pickup Sub Collectable - Big Shovel"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 2871.33643
-            Y: 2394.30371
-            Z: -190.427887
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: -51.6569519
-            Yaw: 116.045975
-            Roll: -142.470642
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14883627992296095316
     }
   }
 }
@@ -766,8 +810,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 2958.83154
-            Y: 2446.98535
+            X: 2939.54
+            Y: 2377.06201
             Z: -232.881546
           }
         }
@@ -1011,8 +1055,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 3142.17529
-            Y: 2409.30664
+            X: 3045.91797
+            Y: 2489.71875
             Z: -233.214478
           }
         }
@@ -1020,7 +1064,7 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: 0.479007959
-            Yaw: -0.00106811523
+            Yaw: -86.416748
             Roll: -0.256622314
           }
         }

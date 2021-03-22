@@ -35,7 +35,7 @@ function load_save_data(player)
 
 	-- @TODO: disable this
 
-	--data.quest_id = 4
+	data.quest_id = 3
 
 	quest_id = data.quest_id or 0
 

@@ -222,7 +222,7 @@ Objects {
     }
     Overrides {
       Name: "cs:title"
-      String: "Create Energy Portal"
+      String: "Align the Energies to Unlock Portal"
     }
     Overrides {
       Name: "cs:line_width"
@@ -266,7 +266,7 @@ Objects {
     }
     Overrides {
       Name: "cs:title"
-      String: "Enter Chamber"
+      String: "Enter Mystic Chamber"
     }
     Overrides {
       Name: "cs:line_width"
@@ -483,7 +483,7 @@ Objects {
     }
     Overrides {
       Name: "cs:title"
-      String: "Break White Catalyst on White Rock"
+      String: "Break White Wheel Catalyst on White Wheel  Rock"
     }
     Overrides {
       Name: "cs:line_width"
@@ -527,7 +527,7 @@ Objects {
     }
     Overrides {
       Name: "cs:title"
-      String: "Break Blue Catalyst on Blue Rock"
+      String: "Break Blue Diamond Catalyst on Blue Diamond Rock"
     }
     Overrides {
       Name: "cs:line_width"
@@ -571,7 +571,7 @@ Objects {
     }
     Overrides {
       Name: "cs:title"
-      String: "Break Red Catalyst on Red Rock"
+      String: "Break Red Squiggle Catalyst on Red Squiggle Rock"
     }
     Overrides {
       Name: "cs:line_width"
@@ -615,7 +615,7 @@ Objects {
     }
     Overrides {
       Name: "cs:title"
-      String: "Break Yellow Catalyst on Yellow Rock"
+      String: "Break Yellow Heart Catalyst on Yellow Heart Rock"
     }
     Overrides {
       Name: "cs:line_width"
@@ -740,7 +740,7 @@ Objects {
     }
     Overrides {
       Name: "cs:title"
-      String: "Find White Catalyst"
+      String: "Find White Wheel Catalyst"
     }
     Overrides {
       Name: "cs:line_width"
@@ -784,7 +784,7 @@ Objects {
     }
     Overrides {
       Name: "cs:title"
-      String: "Find Blue Catalyst"
+      String: "Find Blue Diamond Catalyst"
     }
     Overrides {
       Name: "cs:line_width"
@@ -832,7 +832,7 @@ Objects {
     }
     Overrides {
       Name: "cs:title"
-      String: "Dig Up Dirt"
+      String: "Dig Up Dirt Using Shovel"
     }
     Overrides {
       Name: "cs:line_width"
@@ -1045,7 +1045,7 @@ Objects {
     }
     Overrides {
       Name: "cs:title"
-      String: "Pickup Shovel"
+      String: "Pick Up Shovel"
     }
     Overrides {
       Name: "cs:line_width"
@@ -1089,7 +1089,7 @@ Objects {
     }
     Overrides {
       Name: "cs:title"
-      String: "Find Red Catalyst"
+      String: "Find Red Squiggle Catalyst"
     }
     Overrides {
       Name: "cs:line_width"
@@ -1133,7 +1133,7 @@ Objects {
     }
     Overrides {
       Name: "cs:title"
-      String: "Find Yellow Catalyst"
+      String: "Find Yellow Heart Catalyst"
     }
     Overrides {
       Name: "cs:line_width"
@@ -1343,7 +1343,7 @@ Objects {
     }
     Overrides {
       Name: "cs:notification"
-      String: "You have assembled the Ocular Device. Press \"R\" to use it to reveal special energy markings in the area."
+      String: "You have assembled the Ocular Pulse Device. Press \"R\"  to reveal mystic symbols on four rocks of Stonehenge. ."
     }
   }
   Collidable_v2 {
@@ -1395,7 +1395,7 @@ Objects {
     }
     Overrides {
       Name: "cs:notification"
-      String: "You can combine the Lens in your Inventory to the right with the Frame to make the device."
+      String: "Click and Drag the Orb from your inventory onto the Staff. "
     }
   }
   Collidable_v2 {
@@ -1437,7 +1437,7 @@ Objects {
     }
     Overrides {
       Name: "cs:quest_title"
-      String: "Dearest Friend"
+      String: "Welcome Friend"
     }
     Overrides {
       Name: "cs:quest_line_width"
@@ -1549,7 +1549,7 @@ Objects {
     }
     Overrides {
       Name: "cs:title"
-      String: "Open and Read Letter"
+      String: "Click Wax Seal to Open Letter "
     }
     Overrides {
       Name: "cs:line_width"

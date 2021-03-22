@@ -17,7 +17,8 @@ Assets {
         }
         ParentId: 16845918078398887905
         ChildIds: 2899992038215405552
-        ChildIds: 15026516642023036830
+        ChildIds: 215067850600138423
+        ChildIds: 1353775298495019946
         UnregisteredParameters {
           Overrides {
             Name: "cs:type"
@@ -92,61 +93,26 @@ Assets {
         }
       }
       Objects {
-        Id: 15026516642023036830
-        Name: "Mallet"
-        Transform {
-          Location {
-            X: 0.00111677067
-            Y: -3.63396964e-07
-            Z: -8.5811429e-05
-          }
-          Rotation {
-            Pitch: -85.5983276
-            Yaw: -176.66272
-            Roll: 176.653961
-          }
-          Scale {
-            X: 4.37330675
-            Y: 4.37330675
-            Z: 4.37330675
-          }
-        }
-        ParentId: 8061155647130298278
-        ChildIds: 215067850600138423
-        ChildIds: 1353775298495019946
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
         Id: 215067850600138423
         Name: "Thorn"
         Transform {
           Location {
-            X: 8.26560211
-            Y: -1.09695668e-06
-            Z: 6.02619734e-12
+            X: -2.7713356
+            Y: -0.161485747
+            Z: -36.0405159
           }
           Rotation {
-            Pitch: 90
+            Pitch: -4.39414072
+            Yaw: -0.0186351
+            Roll: 0.257412702
           }
           Scale {
-            X: 0.479861826
-            Y: 1.45688081
-            Z: 0.664003491
+            X: 2.09858298
+            Y: 6.371387
+            Z: 2.90389109
           }
         }
-        ParentId: 15026516642023036830
+        ParentId: 8061155647130298278
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -190,19 +156,22 @@ Assets {
         Name: "Large Round Wood Beam 8m"
         Transform {
           Location {
-            X: 26.1744423
-            Y: -3.47370064e-06
-            Z: -9.13925714e-14
+            X: -8.76716518
+            Y: -0.511389077
+            Z: -114.132248
           }
           Rotation {
+            Pitch: -85.5982819
+            Yaw: -176.66272
+            Roll: 176.653961
           }
           Scale {
-            X: 0.0362238958
-            Y: 0.849205077
-            Z: 0.849205077
+            X: 0.158418208
+            Y: 3.71383452
+            Z: 3.71383452
           }
         }
-        ParentId: 15026516642023036830
+        ParentId: 8061155647130298278
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"

@@ -22,7 +22,7 @@ Objects {
     }
     Overrides {
       Name: "cs:message"
-      String: "This Chamber looks thousands of years old."
+      String: "Could all of this have been made by... something more than humans?"
     }
   }
   Collidable_v2 {
@@ -62,7 +62,7 @@ Objects {
     }
     Overrides {
       Name: "cs:message"
-      String: "Looks like I can use the Catalysts on these rocks by matching the color.  Maybe the Ocular Device will help me."
+      String: "I need to break the Catalysts on the Rocks that match their symbol and color. The Ocular Pulse might  help me decide. "
     }
   }
   Collidable_v2 {
@@ -142,7 +142,7 @@ Objects {
     }
     Overrides {
       Name: "cs:message"
-      String: "Looks like I need to find a Shovel to dig this dirt up.  I can feel the energy coming from it."
+      String: "I need a Shovel to dig here. I bet I can find one at the Excavation Site. "
     }
   }
   Collidable_v2 {
@@ -182,7 +182,7 @@ Objects {
     }
     Overrides {
       Name: "cs:message"
-      String: "There is some sort of energy blocking me from digging.  Maybe I should look for the other Catalysts."
+      String: "An energy is blocking me from digging.  Maybe I should look for the other Catalysts."
     }
   }
   Collidable_v2 {
@@ -222,7 +222,7 @@ Objects {
     }
     Overrides {
       Name: "cs:message"
-      String: "Looks like I can combine the Lens in the inventory with the Frame to complete the device."
+      String: "Maybe I\'ll try dragging clicking and dragging the orb from the inventory onto the Staff."
     }
   }
   Collidable_v2 {

@@ -253,7 +253,7 @@ function enable_collectable(id, parent_id, no_msg)
 				c:FindChildByName("Desc").visibility = Visibility.FORCE_ON
 
 				if(ui_id == 32) then
-					c:FindChildByName("Icon"):SetColor(Color.New(2, 91, 0, 1))
+					c:FindChildByName("Icon"):SetColor(Color.New(0.196, 0.80, 0.196, 1))
 				else
 					c:FindChildByName("Icon"):SetColor(Color.New(1, 1, 1, 1))
 				end

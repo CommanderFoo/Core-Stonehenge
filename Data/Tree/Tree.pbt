@@ -9977,7 +9977,7 @@ Objects {
       }
     }
     Text {
-      Label: "Pineapple"
+      Label: "A pretty flower."
       Color {
         R: 0.97
         G: 1
@@ -18755,7 +18755,7 @@ Objects {
       }
     }
     Text {
-      Label: "A fancy plate. "
+      Label: "Not a plate."
       Color {
         R: 1
         G: 1
@@ -19752,7 +19752,7 @@ Objects {
       }
     }
     Text {
-      Label: "Bean"
+      Label: "Potion"
       Color {
         R: 0.97
         G: 1
@@ -20323,7 +20323,7 @@ Objects {
       }
     }
     Text {
-      Label: "Bean"
+      Label: "Fork"
       Color {
         R: 0.97
         G: 1
@@ -20894,7 +20894,7 @@ Objects {
       }
     }
     Text {
-      Label: "Bean"
+      Label: "Mug of Beer"
       Color {
         R: 0.97
         G: 1
@@ -21099,7 +21099,7 @@ Objects {
       }
     }
     Text {
-      Label: "A big mug of Beer."
+      Label: "No beans in this beer."
       Color {
         R: 1
         G: 1

@@ -1,26 +1,34 @@
 Entries {
   Key {
-    StringVar: "quest_id"
-  }
-  SimpleValue {
-    IntVar: 7
-  }
-}
-Entries {
-  Key {
     StringVar: "v1_collectables"
   }
   SimpleValue {
     Table {
+      Entries {
+        Key {
+          IntVar: 1
+        }
+        SimpleValue {
+          IntVar: 35
+        }
+      }
+      Entries {
+        Key {
+          IntVar: 2
+        }
+        SimpleValue {
+          IntVar: 35
+        }
+      }
     }
   }
 }
 Entries {
   Key {
-    StringVar: "timer"
+    StringVar: "quest_id"
   }
   SimpleValue {
-    FloatVar: 126.034668
+    IntVar: 7
   }
 }
 Entries {
@@ -33,10 +41,35 @@ Entries {
 }
 Entries {
   Key {
+    StringVar: "timer"
+  }
+  SimpleValue {
+    FloatVar: 222.76059
+  }
+}
+Entries {
+  Key {
     StringVar: "v1_group_collectables"
   }
   SimpleValue {
     Table {
+      Entries {
+        Key {
+          IntVar: 32
+        }
+        SimpleValue {
+          Table {
+            Entries {
+              Key {
+                IntVar: 1
+              }
+              SimpleValue {
+                IntVar: 33
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

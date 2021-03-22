@@ -4,6 +4,12 @@ GlobalEntries {
   ScoreFormatted: "43.0"
   DateTime: "2021-03-22T17:56:39.631Z"
 }
+GlobalEntries {
+  Id: "BOT_Bot1"
+  Name: "Bot1"
+  ScoreFormatted: "22.0"
+  DateTime: "2021-03-22T19:32:21.697Z"
+}
 Config {
   SortType {
     Value: "mc:ecoresdkleaderboardsorting:higherisbetter"

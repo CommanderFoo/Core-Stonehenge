@@ -60,6 +60,17 @@ Objects {
         }
       }
     }
+    ParameterOverrideMap {
+      key: 9520775038996232748
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
     TemplateAsset {
       Id: 607199379774015429
     }

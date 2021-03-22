@@ -2,7 +2,7 @@ Name: "Quest Items_3"
 RootId: 12936176732858694209
 Objects {
   Id: 17623796460592243174
-  Name: "Look - Ocular Frame"
+  Name: "Look - Ocular Pulse Staff"
   Transform {
     Scale {
       X: 1
@@ -29,8 +29,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 7865.66064
-            Y: -1984.94971
+            X: 7871.85107
+            Y: -2026.43115
             Z: 628.241638
           }
         }
@@ -38,23 +38,8 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: 5.232
-            Yaw: -45.4351807
-            Roll: 10.3877831
-          }
-        }
-        Overrides {
-          Name: "cs:name"
-          String: "Ocular Pulse Staff"
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 2551839547138121019
-      value {
-        Overrides {
-          Name: "ma:Shared_BaseMaterial:id"
-          AssetReference {
-            Id: 2381104215590920803
+            Yaw: -32.5169678
+            Roll: 10.3881435
           }
         }
       }

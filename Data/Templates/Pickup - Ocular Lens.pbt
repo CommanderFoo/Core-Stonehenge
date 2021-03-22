@@ -63,15 +63,15 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 6115249997681587181
+              Id: 828021840759750774
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 1
-              G: 1
-              B: 1
+              R: 0.011764707
+              G: 0.0901960507
+              B: 0.0980392247
               A: 1
             }
           }
@@ -274,15 +274,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_gem_round_polished_001"
-      }
-    }
-    Assets {
-      Id: 6115249997681587181
-      Name: "Magic Glass"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "fxmi_magic_glass"
       }
     }
     Assets {

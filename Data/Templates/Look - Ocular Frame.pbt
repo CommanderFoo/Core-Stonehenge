@@ -47,7 +47,7 @@ Assets {
           }
           Overrides {
             Name: "cs:name"
-            String: "Ocular Frame"
+            String: "Ocular Pulse Staff"
           }
           Overrides {
             Name: "cs:use_alt:isrep"
@@ -185,7 +185,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 7180373136087985887
+              Id: 828021840759750774
             }
           }
         }
@@ -501,7 +501,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 7180373136087985887
+              Id: 828021840759750774
             }
           }
         }
@@ -722,7 +722,16 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 7180373136087985887
+              Id: 828021840759750774
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.011764707
+              G: 0.0901960805
+              B: 0.0980392247
+              A: 1
             }
           }
         }
@@ -1111,6 +1120,12 @@ Assets {
             Name: "bp:Enabled"
             Bool: true
           }
+          Overrides {
+            Name: "bp:Object To Outline"
+            ObjectReference {
+              SubObjectId: 423913690008197879
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1191,15 +1206,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_sphere_002"
-      }
-    }
-    Assets {
-      Id: 7180373136087985887
-      Name: "Radar Screen Transparent"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "fxmi_radar_trans"
       }
     }
     Assets {

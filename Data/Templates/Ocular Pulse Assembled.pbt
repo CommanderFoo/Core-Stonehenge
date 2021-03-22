@@ -7,7 +7,7 @@ Assets {
       RootId: 16352708009655534503
       Objects {
         Id: 16352708009655534503
-        Name: "Ocular Pulse Assembled "
+        Name: "Ocular Pulse Assembled"
         Transform {
           Scale {
             X: 0.473705858
@@ -115,7 +115,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 7180373136087985887
+              Id: 828021840759750774
             }
           }
         }
@@ -426,7 +426,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 7180373136087985887
+              Id: 828021840759750774
             }
           }
         }
@@ -481,15 +481,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_sphere_002"
-      }
-    }
-    Assets {
-      Id: 7180373136087985887
-      Name: "Radar Screen Transparent"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "fxmi_radar_trans"
       }
     }
     Assets {

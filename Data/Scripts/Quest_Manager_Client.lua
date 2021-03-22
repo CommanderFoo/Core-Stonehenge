@@ -16,6 +16,8 @@ local current_quest_data = nil
 
 local quest_tween = nil
 
+local local_player = Game.GetLocalPlayer()
+
 function next_quest(id)
 	if(has_quest) then
 		remove_current_quest()
@@ -34,6 +36,7 @@ function next_quest(id)
 	end
 
 	if(not id) then
+		local_player.clientUserData.quest_id = current_quest_id
 		Events.BroadcastToServer("save", "quest_id", current_quest_id)
 	end
 

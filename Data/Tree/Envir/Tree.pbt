@@ -42561,8 +42561,8 @@ Objects {
   Name: "railing"
   Transform {
     Location {
-      X: -550.59436
-      Y: 442.114075
+      X: -582.527466
+      Y: 449.838074
     }
     Rotation {
       Yaw: 89.9999847
@@ -49766,7 +49766,9 @@ Objects {
   Name: "Pipe - 4-Sided Thin"
   Transform {
     Location {
-      X: -4.75878906
+      X: -4.75888681
+      Y: 1.23046339e-05
+      Z: 39.0942383
     }
     Rotation {
     }
@@ -58380,9 +58382,9 @@ Objects {
   Name: "Point Light"
   Transform {
     Location {
-      X: 2.8350749
-      Y: 8.67703533
-      Z: 57.0189056
+      X: 59.0554695
+      Y: -8.625947
+      Z: 133.572906
     }
     Rotation {
     }
@@ -58416,7 +58418,7 @@ Objects {
     Light {
       Temperature: 6500
       LocalLight {
-        AttenuationRadius: 265.642212
+        AttenuationRadius: 416.016022
         PointLight {
           SourceRadius: 20
           SoftSourceRadius: 20
@@ -59763,13 +59765,13 @@ Objects {
   Name: "Text 06: 0"
   Transform {
     Location {
-      X: 189.697876
-      Y: 42.5466614
-      Z: 7.58151245
+      X: 189.697189
+      Y: 82.2621078
+      Z: 7.58306551
     }
     Rotation {
       Yaw: 89.9999542
-      Roll: -89.9999924
+      Roll: -90
     }
     Scale {
       X: 0.451508641
@@ -59828,13 +59830,13 @@ Objects {
   Name: "Text 06: 0"
   Transform {
     Location {
-      X: 184.353394
-      Y: -18.4612732
-      Z: 2.62808228
+      X: 184.35257
+      Y: 15.8463631
+      Z: 2.62996912
     }
     Rotation {
       Yaw: 89.9999695
-      Roll: -89.9999924
+      Roll: -90
     }
     Scale {
       X: 0.770764589

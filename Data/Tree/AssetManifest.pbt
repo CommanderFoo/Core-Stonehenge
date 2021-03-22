@@ -323,6 +323,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10016794863224341395
+  Name: "Small Crate Lid"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_crate_narrow_lid_simple_160cm_001"
+  }
+}
+Assets {
   Id: 9911077975793651985
   Name: "Plasma Ball Projectile VFX"
   PlatformAssetType: 8
@@ -612,6 +621,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Equip_Tool_017"
+  }
+}
+Assets {
+  Id: 1067381764946714427
+  Name: "Small Open Crate"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_crate_narrow_open_simple_160cm_001"
   }
 }
 Assets {

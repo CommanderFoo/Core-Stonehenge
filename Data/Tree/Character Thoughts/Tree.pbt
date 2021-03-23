@@ -222,7 +222,7 @@ Objects {
     }
     Overrides {
       Name: "cs:message"
-      String: "Maybe I\'ll try dragging clicking and dragging the orb from the inventory onto the Staff."
+      String: "Maybe I\'ll try clicking and dragging the orb from the inventory onto the Staff."
     }
   }
   Collidable_v2 {

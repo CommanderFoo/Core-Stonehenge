@@ -100,7 +100,7 @@ for k, trigger in ipairs(interactables:FindDescendantsByType("Trigger")) do
 						played_shovel_thought = true
 					end
 				elseif(obj.parent.name == "Lily Area" and local_player.clientUserData.quest_id == 4) then
-					Events.Broadcast("add_notification", "You can drag the Shovel onto the dirt to dig it up and reveal the items below it.")
+					Events.Broadcast("add_notification", "Click and drag the Shovel onto the dirt to dig it up and reveal the items below it.")
 					played_shovel_notification = true
 				elseif(obj.parent.name == "White Rock" or obj.parent.name == "Red Rock" or obj.parent.name == "Blue Rock" or obj.parent.name == "Yellow Rock" ) then
 					if(not played_rock_thought and local_player.clientUserData.quest_id < 5) then

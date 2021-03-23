@@ -27719,7 +27719,7 @@ Objects {
       }
     }
     Text {
-      Label: "Aggripina, AwkwardGameDev, DracoWolfie, Fexelitche, Grimland, KonzZwodrei, LotusCracker, Luxludicium, mariouso423, Nezhul, NoobDadGamer, Shigeryu, Slinkous, StayPunny, TheHauntedTopHat, Tobs, varglbargl, mjcortes782, omartin311"
+      Label: "Aggripina, AwkwardGameDev, DracoWolfie, Fexelitche, Grimland, KonzZwodrei, LotusCracker, Luxludicium, marious0423, Nezhul, NoobDadGamer, Shigeryu, Slinkous, StayPunny, TheHauntedTopHat, Tobs, varglbargl, mjcortes782, omartin311"
       Color {
         R: 1
         G: 1
@@ -29732,7 +29732,7 @@ Objects {
       }
     }
     Text {
-      Label: "This will clear your existing quest and collectables progress."
+      Label: "This will clear your existing quest and collectibles progress."
       Color {
         R: 1
         G: 1

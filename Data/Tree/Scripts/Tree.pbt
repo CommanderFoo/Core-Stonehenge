@@ -531,6 +531,7 @@ Objects {
   ChildIds: 15521201443443620303
   ChildIds: 8489843879329551771
   ChildIds: 15090280342175244308
+  ChildIds: 9755570134632506240
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -541,6 +542,38 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 9755570134632506240
+  Name: "Changes"
+  Transform {
+    Location {
+      X: -4791.16846
+      Y: -5503.01465
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14858104107515101237
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 10621437116121287705
+    }
   }
 }
 Objects {

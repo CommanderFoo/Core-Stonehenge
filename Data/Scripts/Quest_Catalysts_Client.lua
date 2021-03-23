@@ -67,7 +67,7 @@ Events.Connect("open_up_cave", function(visual_only)
 		return
 	end
 
-	Events.Broadcast("quest_item_complete", 6)
+	--Events.Broadcast("quest_item_complete", 6)
 	Events.BroadcastToServer("open_cave")
 	
 	visual_rock_55b.visibility = Visibility.FORCE_OFF

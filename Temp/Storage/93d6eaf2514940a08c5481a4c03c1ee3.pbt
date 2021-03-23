@@ -1,26 +1,9 @@
 Entries {
   Key {
-    StringVar: "v1_collectables"
+    StringVar: "finished"
   }
   SimpleValue {
-    Table {
-      Entries {
-        Key {
-          IntVar: 1
-        }
-        SimpleValue {
-          IntVar: 35
-        }
-      }
-      Entries {
-        Key {
-          IntVar: 2
-        }
-        SimpleValue {
-          IntVar: 35
-        }
-      }
-    }
+    IntVar: 1
   }
 }
 Entries {
@@ -33,10 +16,20 @@ Entries {
 }
 Entries {
   Key {
-    StringVar: "finished"
+    StringVar: "v1_group_collectables"
   }
   SimpleValue {
-    IntVar: 0
+    Table {
+    }
+  }
+}
+Entries {
+  Key {
+    StringVar: "v1_collectables"
+  }
+  SimpleValue {
+    Table {
+    }
   }
 }
 Entries {
@@ -44,32 +37,6 @@ Entries {
     StringVar: "timer"
   }
   SimpleValue {
-    FloatVar: 222.76059
-  }
-}
-Entries {
-  Key {
-    StringVar: "v1_group_collectables"
-  }
-  SimpleValue {
-    Table {
-      Entries {
-        Key {
-          IntVar: 32
-        }
-        SimpleValue {
-          Table {
-            Entries {
-              Key {
-                IntVar: 1
-              }
-              SimpleValue {
-                IntVar: 33
-              }
-            }
-          }
-        }
-      }
-    }
+    FloatVar: 142.682861
   }
 }

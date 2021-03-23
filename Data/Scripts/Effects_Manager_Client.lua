@@ -99,6 +99,10 @@ Events.Connect("enable_beam", function(color)
 end)
 
 function play_lightning()
+	if(count == 3) then
+		Events.Broadcast("quest_item_complete", 6)
+	end
+
 	if(count > 3) then
 		lightning.visibility = Visibility.FORCE_ON
 		lightning_light.visibility = Visibility.FORCE_ON

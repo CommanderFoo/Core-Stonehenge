@@ -2,7 +2,7 @@ Assets {
   Id: 3248409325108026106
   Name: "Clover Flower Material "
   PlatformAssetType: 13
-  SerializationVersion: 78
+  SerializationVersion: 81
   CustomMaterialAsset {
     BaseMaterialId: 12378445655007168677
     ParameterOverrides {

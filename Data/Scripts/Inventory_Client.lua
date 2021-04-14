@@ -260,7 +260,7 @@ function add(obj_ref, q, no_broadcast)
 				end
 
 				if(not no_broadcast) then
-					Events.BroadcastToServer("inventory_add", free_slot_index, inventory_id, quantity, obj_ref, data:GetCustomProperty("remove_from_world"))
+					YOOTIL.Events.broadcast_to_server("inventory_add", free_slot_index, inventory_id, quantity, obj_ref, data:GetCustomProperty("remove_from_world"))
 				end
 			else
 				print("We run out of free inventory slots, this shouldn't be possible.")
@@ -499,20 +499,20 @@ local_player.bindingPressedEvent:Connect(function(p, binding)
 			Events.Broadcast("override_cursor", false)
 			disable_inventory()
 			Events.Broadcast("hide_cursor")
-			Events.BroadcastToServer("enable_player", local_player)
+			YOOTIL.Events.broadcast_to_server("enable_player", local_player)
 			UI.SetCanCursorInteractWithUI(false)
 			Events.Broadcast("inventory_open", false)
 			Events.Broadcast("can_open_collectables", true)
-			Events.BroadcastToServer("show_all_interaction_labels")
+			YOOTIL.Events.broadcast_to_server("show_all_interaction_labels")
 		else
 			Events.Broadcast("play_music", "menu_inspect_inventory")
 			enable_inventory()
-			Events.BroadcastToServer("disable_player", local_player)
+			YOOTIL.Events.broadcast_to_server("disable_player", local_player)
 			Events.Broadcast("inventory_open", true)
 			Events.Broadcast("can_open_collectables", false)
 			UI.SetCanCursorInteractWithUI(true)
 
-			Events.BroadcastToServer("hide_all_interaction_labels")
+			YOOTIL.Events.broadcast_to_server("hide_all_interaction_labels")
 		end
 	end
 end)
@@ -564,3 +564,11 @@ data_holder.networkedPropertyChangedEvent:Connect(function(obj, prop)
 		end
 	end
 end)
+
+local debug_task = Task.Spawn(function()
+	print("----- INVENTORY -----")
+	YOOTIL.Utils.dump(local_player.clientUserData.inventory)
+end)
+
+debug_task.repeatCount = -1
+debug_task.repeatInterval = 5

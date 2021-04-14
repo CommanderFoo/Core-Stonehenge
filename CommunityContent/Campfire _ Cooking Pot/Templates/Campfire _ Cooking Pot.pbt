@@ -3449,6 +3449,6 @@ Assets {
   Marketplace {
     Description: "Cozy Campfire with a cooking pot on a wooden framework"
   }
-  SerializationVersion: 78
+  SerializationVersion: 81
   DirectlyPublished: true
 }

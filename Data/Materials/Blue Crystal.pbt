@@ -2,7 +2,7 @@ Assets {
   Id: 14932373983098326960
   Name: "Blue Crystal "
   PlatformAssetType: 13
-  SerializationVersion: 78
+  SerializationVersion: 81
   CustomMaterialAsset {
     BaseMaterialId: 16844107203508180063
     ParameterOverrides {

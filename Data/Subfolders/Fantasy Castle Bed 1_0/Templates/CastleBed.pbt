@@ -1510,6 +1510,6 @@ Assets {
   Marketplace {
     Description: "Fantasy Castle Bed to match Fantasy Chest design"
   }
-  SerializationVersion: 78
+  SerializationVersion: 81
   DirectlyPublished: true
 }

@@ -48,18 +48,18 @@ back.unhoveredEvent:Connect(function()
 end)
 
 back.clickedEvent:Connect(function()
-	Events.BroadcastToServer("reload_game")
+	YOOTIL.Events.broadcast_to_server("reload_game")
 	Events.Broadcast("play_sound", "click", true)
 end)
 
 portal.interactedEvent:Connect(function(t, obj)
 	if(obj:IsA("Player") and not entering) then
-		Events.BroadcastToServer("disable_portal", local_player)
+		YOOTIL.Events.broadcast_to_server("disable_portal", local_player)
 
 		entering = true
 		Events.Broadcast("hide_reticle")
 		Events.Broadcast("disable_raycast")
-		Events.BroadcastToServer("disable_player", Game.GetLocalPlayer())
+		YOOTIL.Events.broadcast_to_server("disable_player", Game.GetLocalPlayer())
 		Events.Broadcast("hide_inventory")
 		Events.Broadcast("show_collectables", false)
 		Events.Broadcast("can_open_collectables", false)
@@ -109,7 +109,7 @@ portal.interactedEvent:Connect(function(t, obj)
 end)
 
 Events.Connect("enable_portal", function()
-	Events.BroadcastToServer("enable_portal")
+	YOOTIL.Events.broadcast_to_server("enable_portal")
 end)
 
 Events.Connect("final_time", function(timer)

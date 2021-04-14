@@ -1,3 +1,5 @@
+local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
+
 local trigger = script:GetCustomProperty("trigger"):WaitForObject()
 local quest_trigger = script:GetCustomProperty("quest_trigger"):WaitForObject()
 local impact = script:GetCustomProperty("impact"):WaitForObject()
@@ -16,7 +18,7 @@ quest_trigger.beginOverlapEvent:Connect(function(t, p)
 end)
 
 trigger.interactedEvent:Connect(function()
-	Events.BroadcastToServer("enable_tree_area_items", can_complete_quest)
+	YOOTIL.Events.broadcast_to_server("enable_tree_area_items", can_complete_quest)
 
 	if(can_complete_quest and not quest_complete) then
 		quest_complete = true

@@ -92,6 +92,5 @@ Events.Connect("add_thought", function(id)
 	if(thought_id and thought_message) then
 		queue:push(thought_message)
 		add_thought_to_notebook(thought_id, thought_message)
-		--Events.BroadcastToServer("save_thought", thought_id)
 	end
 end)

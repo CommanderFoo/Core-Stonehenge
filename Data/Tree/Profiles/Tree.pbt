@@ -80,7 +80,7 @@ Objects {
     }
     Overrides {
       Name: "cs:rain_density"
-      Int: 150
+      Int: 120
     }
     Overrides {
       Name: "cs:star_dome_color"
@@ -151,7 +151,7 @@ Objects {
     }
     Overrides {
       Name: "cs:rain_density"
-      Int: 100
+      Int: 80
     }
     Overrides {
       Name: "cs:sky_dome_brightness"

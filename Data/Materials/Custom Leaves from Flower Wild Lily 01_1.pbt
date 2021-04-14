@@ -2,7 +2,7 @@ Assets {
   Id: 10996090701121909426
   Name: "Lily tablecloth"
   PlatformAssetType: 13
-  SerializationVersion: 78
+  SerializationVersion: 81
   CustomMaterialAsset {
     BaseMaterialId: 2134073981989469851
     ParameterOverrides {

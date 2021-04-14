@@ -2,7 +2,7 @@ Assets {
   Id: 16206858327785825599
   Name: "Custom Vinyl Floor Diamond 02"
   PlatformAssetType: 13
-  SerializationVersion: 78
+  SerializationVersion: 81
   CustomMaterialAsset {
     BaseMaterialId: 15193213893626347554
     ParameterOverrides {

@@ -2,7 +2,7 @@ Assets {
   Id: 13178410267906990623
   Name: "Blue Lily Diagram"
   PlatformAssetType: 13
-  SerializationVersion: 78
+  SerializationVersion: 81
   CustomMaterialAsset {
     BaseMaterialId: 1711434102804666437
     ParameterOverrides {

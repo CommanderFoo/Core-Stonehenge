@@ -1,3 +1,5 @@
+local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
+
 local time_lb = script:GetCustomProperty("time")
 local collectables_lb = script:GetCustomProperty("collectables")
 
@@ -7,7 +9,7 @@ local player = nil
 
 Events.Connect("submit_fastest_time", function(fin)
 	if(player ~= nil and player.serverUserData.timer > 0) then
-		Events.BroadcastToPlayer(player, "final_time", player.serverUserData.timer)
+		YOOTIL.Events.broadcast_to_player(player, "final_time", player.serverUserData.timer)
 
 		if(player.name == "CommanderFoo" or player.name == "BlueClairey") then
 			--return
@@ -49,8 +51,9 @@ function Tick(dt)
 	end
 end
 
-Events.Connect("stop_timer", function()
+Events.Connect("stop_timer", function(p)
 	finished = true
+	YOOTIL.Events.broadcast_to_player(p, "stop_client_timer")
 end)
 
 Events.Connect("start_timer", function(p)
@@ -58,7 +61,9 @@ Events.Connect("start_timer", function(p)
 
 	if(p:GetResource("finished") == 1) then
 		finished = true
+		YOOTIL.Events.broadcast_to_player(p, "stop_client_timer")
 	else
 		started = true
+		YOOTIL.Events.broadcast_to_player(p, "start_client_timer", player.serverUserData.timer)
 	end
 end)

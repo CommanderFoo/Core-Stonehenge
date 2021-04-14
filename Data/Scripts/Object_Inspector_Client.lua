@@ -48,7 +48,7 @@ function inspect_object(obj_ref)
 	Events.Broadcast("can_open_collectables", false)
 
 	if(not is_interacting) then
-		Events.BroadcastToServer("disable_player", local_player)
+		YOOTIL.Events.broadcast_to_server("disable_player", local_player)
 		Events.Broadcast("play_music", "menu_inspect_inventory")
 	end
 
@@ -80,7 +80,7 @@ function inspect_object(obj_ref)
 		end
 	end
 
-	Events.BroadcastToServer("inspector_hide", obj_ref)
+	YOOTIL.Events.broadcast_to_server("inspector_hide", obj_ref)
 
 	look_obj:SetWorldPosition(orig_obj:GetWorldPosition())
 
@@ -100,7 +100,7 @@ function inspect_object(obj_ref)
 	UI.SetCanCursorInteractWithUI(true)
 
 	if(not is_interacting) then
-		Events.BroadcastToServer("hide_all_interaction_labels")
+		YOOTIL.Events.broadcast_to_server("hide_all_interaction_labels")
 	end
 
 	if(orig_obj:GetCustomProperty("name")) then
@@ -148,7 +148,7 @@ function put_down_object(hide)
 	end
 
 	if(not hide) then
-		Events.BroadcastToServer("inspector_show", orig_ref)
+		YOOTIL.Events.broadcast_to_server("inspector_show", orig_ref)
 	end
 	
 	look_obj:Destroy()
@@ -156,8 +156,8 @@ function put_down_object(hide)
 	orig_ref = nil
 	
 	if(not is_interacting and not inventory_open) then
-		Events.BroadcastToServer("enable_player", local_player)
-		Events.BroadcastToServer("show_all_interaction_labels")
+		YOOTIL.Events.broadcast_to_server("enable_player", local_player)
+		YOOTIL.Events.broadcast_to_server("show_all_interaction_labels")
 		Events.Broadcast("stop_music")
 	end
 
@@ -211,6 +211,8 @@ function use_item()
 		local obj = orig_obj or raycast_obj
 
 		if(Object.IsValid(obj)) then
+			print("Current object: ", obj.id)
+
 			if(using_item:GetCustomProperty("use_with") == obj.id) then
 				if(Object.IsValid(look_obj)) then
 					look_obj:GetCustomProperty("alt"):GetObject().visibility = Visibility.INHERIT
@@ -220,7 +222,7 @@ function use_item()
 				local type = obj:GetCustomProperty("type")
 
 				if(not string.find(type, "remove")) then
-					Events.BroadcastToServer("inspector_switch", obj:GetReference())
+					YOOTIL.Events.broadcast_to_server("inspector_switch", obj:GetReference())
 					Events.Broadcast("inventory_remove", using_item:GetCustomProperty("id"))
 				end
 
@@ -233,7 +235,7 @@ function use_item()
 					Events.Broadcast("show_dig_waypoint")
 					Events.Broadcast("quest_item_complete", 2)
 					Events.Broadcast("show_dig_glowing_flowers")
-					Events.BroadcastToServer("save", "ocular_built", 1)
+					YOOTIL.Events.broadcast_to_server("save", "ocular_built", 1)
 					
 					local o = look_obj:GetCustomProperty("alt"):GetObject()
 					local scale = o:GetWorldScale()
@@ -269,9 +271,11 @@ function use_item()
 
 					Events.Broadcast("lily_area_play_vfx")
 
-					Events.BroadcastToServer("inspector_hide", obj:GetReference())
+					YOOTIL.Events.broadcast_to_server("inspector_hide", obj:GetReference())
 					Events.Broadcast("quest_item_complete", 3)
 					Events.Broadcast("inventory_clear_active")
+
+					print("Dig ground complete")
 				elseif(using_item:GetCustomProperty("id") == 3 and string.find(type, "remove")) then
 					Events.Broadcast("inventory_remove", using_item:GetCustomProperty("id"))
 					Events.Broadcast("quest_item_complete", 2)
@@ -281,6 +285,8 @@ function use_item()
 					Events.Broadcast("play_sound", "catalyst_break")
 					Events.Broadcast("play_sound", "catalayst_powered")
 					Events.Broadcast("disable_yellow_outline")
+
+					print("Used yellow catalyst")
 				elseif(using_item:GetCustomProperty("id") == 4 and string.find(type, "remove")) then
 					Events.Broadcast("inventory_remove", using_item:GetCustomProperty("id"))
 					Events.Broadcast("quest_item_complete", 3)
@@ -290,6 +296,8 @@ function use_item()
 					Events.Broadcast("play_sound", "catalyst_break")
 					Events.Broadcast("play_sound", "catalayst_powered")
 					Events.Broadcast("disable_red_outline")
+
+					print("Used red catalyst")
 				elseif(using_item:GetCustomProperty("id") == 5 and string.find(type, "remove")) then
 					Events.Broadcast("inventory_remove", using_item:GetCustomProperty("id"))
 					Events.Broadcast("quest_item_complete", 4)
@@ -299,6 +307,8 @@ function use_item()
 					Events.Broadcast("play_sound", "catalyst_break")
 					Events.Broadcast("play_sound", "catalayst_powered")
 					Events.Broadcast("disable_blue_outline")
+
+					print("Used blue catalyst")
 				elseif(using_item:GetCustomProperty("id") == 6 and string.find(type, "remove")) then
 					Events.Broadcast("inventory_remove", using_item:GetCustomProperty("id"))
 					Events.Broadcast("quest_item_complete", 5)
@@ -308,6 +318,8 @@ function use_item()
 					Events.Broadcast("play_sound", "catalyst_break")
 					Events.Broadcast("play_sound", "catalayst_powered")
 					Events.Broadcast("disable_white_outline")
+
+					print("Used white catalyst")
 				elseif(zoomed) then
 					Task.Wait(.5)
 					can_rotate = true
@@ -318,6 +330,7 @@ function use_item()
 				orig_obj = nil
 				raycast_obj = nil
 			else
+				print("Wrong item??", obj.id)
 				Events.Broadcast("play_sound", "error", true)
 			end
 		end

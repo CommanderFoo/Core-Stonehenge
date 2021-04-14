@@ -35,7 +35,7 @@ function load_save_data(player)
 
 	-- @TODO: disable this
 
-	--data.quest_id = 5
+	--data.quest_id = 7
 
 	quest_id = data.quest_id or 0
 
@@ -98,7 +98,7 @@ end
 Game.playerLeftEvent:Connect(save_data)
 
 Events.ConnectForPlayer("game_ready", function(player)
-	Events.BroadcastToPlayer(player, "transition_to_menu")
+	YOOTIL.Events.broadcast_to_player(player, "transition_to_menu")
 end)
 
 Events.ConnectForPlayer("load_game", function(player, i)
@@ -135,7 +135,7 @@ Events.ConnectForPlayer("load_game", function(player, i)
 
 	Events.Broadcast("hide_picked_collectables", player)
 	
-	Events.BroadcastToPlayer(player, "start_game", player:GetResource("quest_id"))
+	YOOTIL.Events.broadcast_to_player(player, "start_game", player:GetResource("quest_id"))
 	Events.Broadcast("start_timer", player)
 end)
 

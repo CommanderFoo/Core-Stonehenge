@@ -7,6 +7,8 @@ local collectables_lb = script:GetCustomProperty("collectables_lb")
 local collectables_panel = script:GetCustomProperty("collectables_panel"):WaitForObject()
 local collectable_entry = script:GetCustomProperty("collectable_entry")
 
+local timer = script:GetCustomProperty("timer"):WaitForObject()
+
 local offset = 0
 local counter = 1
 
@@ -75,3 +77,24 @@ end)
 
 updater.repeatInterval = 15
 updater.repeatCount = -1
+
+local client_timer = 0
+local started = false
+local finished = false
+
+function Tick(dt)
+	if(started and not finished) then
+		client_timer = client_timer + dt
+		timer.text = string.format("Client Timer: %.3f", client_timer)
+	end
+end
+
+Events.Connect("start_client_timer", function(ct)
+	timer.visibility = Visibility.FORCE_ON
+	client_timer = ct or 0
+	started = true
+end)
+
+Events.Connect("stop_client_timer", function()
+	finished = true
+end)

@@ -2,7 +2,7 @@ Assets {
   Id: 14401449456534991302
   Name: "Stable Flower"
   PlatformAssetType: 13
-  SerializationVersion: 78
+  SerializationVersion: 81
   CustomMaterialAsset {
     BaseMaterialId: 2637450204744195739
     ParameterOverrides {

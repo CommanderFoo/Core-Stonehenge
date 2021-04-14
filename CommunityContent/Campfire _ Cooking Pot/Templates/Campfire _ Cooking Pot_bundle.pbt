@@ -49,5 +49,5 @@ Assets {
     Version: "1.0.0"
     Description: "Cozy Campfire with a cooking pot on a wooden framework"
   }
-  SerializationVersion: 78
+  SerializationVersion: 81
 }

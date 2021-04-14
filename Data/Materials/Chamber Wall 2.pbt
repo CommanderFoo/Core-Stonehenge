@@ -2,7 +2,7 @@ Assets {
   Id: 14158303174801051815
   Name: "Chamber Wall 2"
   PlatformAssetType: 13
-  SerializationVersion: 78
+  SerializationVersion: 81
   CustomMaterialAsset {
     BaseMaterialId: 9891592180303515249
     ParameterOverrides {

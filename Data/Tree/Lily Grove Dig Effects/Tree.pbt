@@ -24,7 +24,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Density"
-      Float: 10
+      Float: 1.91132069
     }
     Overrides {
       Name: "bp:Color"
@@ -37,11 +37,15 @@ Objects {
     }
     Overrides {
       Name: "bp:Particle Scale Multiplier"
-      Float: 3.68680072
+      Float: 3.35452485
     }
     Overrides {
       Name: "bp:Gravity"
       Float: 0.333205223
+    }
+    Overrides {
+      Name: "bp:Life"
+      Float: 1.99296081
     }
   }
   Collidable_v2 {
@@ -87,11 +91,11 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "bp:Particle Scale"
-      Float: 1.51491416
+      Float: 1.22236657
     }
     Overrides {
       Name: "bp:Density"
-      Float: 9.17988873
+      Float: 3.19628239
     }
     Overrides {
       Name: "bp:Gravity"
@@ -145,7 +149,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "bp:Life"
-      Float: 1.23374987
+      Float: 1.0812031
     }
     Overrides {
       Name: "bp:Emissive Boost"

@@ -9,7 +9,7 @@ Events.Connect("disable_portal", function(player)
 	
 	Events.Broadcast("submit_fastest_time", player:GetResource("finished"))
 	player:SetResource("finished", 1)
-	Events.Broadcast("stop_timer")
+	Events.Broadcast("stop_timer", player)
 end)
 
 Events.ConnectForPlayer("reload_game", function(player)

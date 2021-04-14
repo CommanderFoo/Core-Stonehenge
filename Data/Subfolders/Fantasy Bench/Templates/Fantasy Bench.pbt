@@ -43,5 +43,5 @@ Assets {
     Version: "1.0.0"
     Description: "Fantasy Bench\r\n\r\nWishing well by Staypunny not included"
   }
-  SerializationVersion: 78
+  SerializationVersion: 81
 }

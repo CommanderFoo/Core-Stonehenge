@@ -253,7 +253,7 @@ function load_game(i)
 		camera:StopRotate()
 		target:StopRotate()
 
-		Events.BroadcastToServer("load_game", i)
+		YOOTIL.Events.broadcast_to_server("load_game", i)
 	end)
 
 	transition_tween:on_change(function(v)

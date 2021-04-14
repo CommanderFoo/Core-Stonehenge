@@ -28,7 +28,7 @@ for k, trigger in ipairs(interactables:FindDescendantsByType("Trigger")) do
 
 		Events.Broadcast("play_music", "menu_inspect_inventory")
 
-		Events.BroadcastToServer("hide_interaction_label", obj:GetReference())
+		YOOTIL.Events.broadcast_to_server("hide_interaction_label", obj:GetReference())
 		Events.Broadcast("interacting", true)
 		Events.Broadcast("enable_inventory")
 		Events.Broadcast("can_open_collectables", false)
@@ -138,7 +138,7 @@ back_button.clickedEvent:Connect(function()
 	Task.Wait(lerp_time)
 
 	if(current_trigger ~= nil) then
-		Events.BroadcastToServer("show_interaction_label", current_trigger:GetReference())
+		YOOTIL.Events.broadcast_to_server("show_interaction_label", current_trigger:GetReference())
 		current_trigger = nil
 	end
 

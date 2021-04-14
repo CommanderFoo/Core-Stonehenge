@@ -30,6 +30,10 @@ local randomseed = math.randomseed
 -- https://stackoverflow.com/questions/9168058/how-to-dump-a-table-to-console
 
 function Utils.dump(node)
+	if(not node) then
+		return
+	end
+
 	local cache, stack, output = {}, {}, {}
 	local depth = 1
 	local output_str = "{\n"

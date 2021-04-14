@@ -147,22 +147,22 @@ local_player.bindingPressedEvent:Connect(function(p, binding)
 		if(not is_open) then
 			show()
 			Events.Broadcast("play_music", "menu_inspect_inventory")
-			Events.BroadcastToServer("disable_player", local_player)
+			YOOTIL.Events.broadcast_to_server("disable_player", local_player)
 			Events.Broadcast("can_open_inventory", false)
 			Events.Broadcast("collectables_open", true)
 			UI.SetCanCursorInteractWithUI(true)
 
-			Events.BroadcastToServer("hide_all_interaction_labels")
+			YOOTIL.Events.broadcast_to_server("hide_all_interaction_labels")
 		else
 			close()
 			Events.Broadcast("stop_music")
 			Events.Broadcast("hide_cursor")
-			Events.BroadcastToServer("enable_player", local_player)
+			YOOTIL.Events.broadcast_to_server("enable_player", local_player)
 			Events.Broadcast("can_open_inventory", true)
 			Events.Broadcast("collectables_open", false)
 			UI.SetCanCursorInteractWithUI(false)
 		
-			Events.BroadcastToServer("show_all_interaction_labels")
+			YOOTIL.Events.broadcast_to_server("show_all_interaction_labels")
 		end
 	end
 end)
@@ -301,7 +301,7 @@ Events.Connect("add_collectable", function(obj_ref)
 
 	enable_collectable(id, parent_id, false)
 
-	Events.BroadcastToServer("add_collectable", local_player, id, parent_id, obj_ref)
+	YOOTIL.Events.broadcast_to_server("add_collectable", local_player, id, parent_id, obj_ref)
 end)
 
 Events.Connect("check_collectables", check_collectables)

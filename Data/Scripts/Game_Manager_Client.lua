@@ -19,7 +19,7 @@ function Tick(dt)
 end
 
 Task.Spawn(function()
-	Events.BroadcastToServer("game_ready")
+	YOOTIL.Events.broadcast_to_server("game_ready")
 end, transition_time)
 
 Events.Connect("start_game", function(quest_id)
@@ -84,7 +84,7 @@ Events.Connect("start_game", function(quest_id)
 		end
 
 		if(quest_id > 1) then
-			Events.BroadcastToServer("enable_player", local_player)
+			YOOTIL.Events.broadcast_to_server("enable_player", local_player)
 			Events.Broadcast("show_inventory")
 			Events.Broadcast("enable_collectables")
 			Events.Broadcast("can_open_inventory", true)

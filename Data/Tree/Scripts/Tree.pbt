@@ -102,6 +102,12 @@ Objects {
         }
       }
     }
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -539,7 +545,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   NetworkContext {
   }
@@ -702,6 +708,12 @@ Objects {
       Name: "cs:collectable_entry"
       AssetReference {
         Id: 2760707212294365746
+      }
+    }
+    Overrides {
+      Name: "cs:timer"
+      ObjectReference {
+        SelfId: 16636512835927071289
       }
     }
   }

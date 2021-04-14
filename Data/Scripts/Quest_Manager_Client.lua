@@ -212,15 +212,3 @@ end
 
 Events.Connect("next_quest", next_quest)
 Events.Connect("quest_item_complete", mark_quest_item_complete)
-
-local debug_task = Task.Spawn(function()
-	print("----- QUEST -----")
-	print("Current ID: ", current_quest_id)
-	print("----- QUEST ITEMS -----")
-	YOOTIL.Utils.dump(current_quest_items or nil)
-	print("----- QUEST DATA -----")
-	YOOTIL.Utils.dump(current_quest_data or nil)
-end)
-
-debug_task.repeatCount = -1
-debug_task.repeatInterval = 5

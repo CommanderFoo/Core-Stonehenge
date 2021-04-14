@@ -147,6 +147,7 @@ back_button.clickedEvent:Connect(function()
 	Events.Broadcast("disable_inventory")
 	Events.Broadcast("show_collectables", false)
 	Events.Broadcast("can_open_collectables", true)
+	Events.Broadcast("clear_old_refs")
 end)
 
 local_player.bindingPressedEvent:Connect(function(p, binding)

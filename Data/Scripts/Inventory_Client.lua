@@ -564,11 +564,3 @@ data_holder.networkedPropertyChangedEvent:Connect(function(obj, prop)
 		end
 	end
 end)
-
-local debug_task = Task.Spawn(function()
-	print("----- INVENTORY -----")
-	YOOTIL.Utils.dump(local_player.clientUserData.inventory)
-end)
-
-debug_task.repeatCount = -1
-debug_task.repeatInterval = 5

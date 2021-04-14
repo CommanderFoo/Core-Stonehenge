@@ -211,8 +211,6 @@ function use_item()
 		local obj = orig_obj or raycast_obj
 
 		if(Object.IsValid(obj)) then
-			print("Current object: ", obj.id)
-
 			if(using_item:GetCustomProperty("use_with") == obj.id) then
 				if(Object.IsValid(look_obj)) then
 					look_obj:GetCustomProperty("alt"):GetObject().visibility = Visibility.INHERIT
@@ -274,8 +272,6 @@ function use_item()
 					YOOTIL.Events.broadcast_to_server("inspector_hide", obj:GetReference())
 					Events.Broadcast("quest_item_complete", 3)
 					Events.Broadcast("inventory_clear_active")
-
-					print("Dig ground complete")
 				elseif(using_item:GetCustomProperty("id") == 3 and string.find(type, "remove")) then
 					Events.Broadcast("inventory_remove", using_item:GetCustomProperty("id"))
 					Events.Broadcast("quest_item_complete", 2)
@@ -285,8 +281,6 @@ function use_item()
 					Events.Broadcast("play_sound", "catalyst_break")
 					Events.Broadcast("play_sound", "catalayst_powered")
 					Events.Broadcast("disable_yellow_outline")
-
-					print("Used yellow catalyst")
 				elseif(using_item:GetCustomProperty("id") == 4 and string.find(type, "remove")) then
 					Events.Broadcast("inventory_remove", using_item:GetCustomProperty("id"))
 					Events.Broadcast("quest_item_complete", 3)
@@ -296,8 +290,6 @@ function use_item()
 					Events.Broadcast("play_sound", "catalyst_break")
 					Events.Broadcast("play_sound", "catalayst_powered")
 					Events.Broadcast("disable_red_outline")
-
-					print("Used red catalyst")
 				elseif(using_item:GetCustomProperty("id") == 5 and string.find(type, "remove")) then
 					Events.Broadcast("inventory_remove", using_item:GetCustomProperty("id"))
 					Events.Broadcast("quest_item_complete", 4)
@@ -307,8 +299,6 @@ function use_item()
 					Events.Broadcast("play_sound", "catalyst_break")
 					Events.Broadcast("play_sound", "catalayst_powered")
 					Events.Broadcast("disable_blue_outline")
-
-					print("Used blue catalyst")
 				elseif(using_item:GetCustomProperty("id") == 6 and string.find(type, "remove")) then
 					Events.Broadcast("inventory_remove", using_item:GetCustomProperty("id"))
 					Events.Broadcast("quest_item_complete", 5)
@@ -318,8 +308,6 @@ function use_item()
 					Events.Broadcast("play_sound", "catalyst_break")
 					Events.Broadcast("play_sound", "catalayst_powered")
 					Events.Broadcast("disable_white_outline")
-
-					print("Used white catalyst")
 				elseif(zoomed) then
 					Task.Wait(.5)
 					can_rotate = true
@@ -330,7 +318,6 @@ function use_item()
 				orig_obj = nil
 				raycast_obj = nil
 			else
-				print("Wrong item??", obj.id)
 				Events.Broadcast("play_sound", "error", true)
 			end
 		end
@@ -367,4 +354,10 @@ end)
 Events.Connect("raycast_object", function(obj)
 	raycast_obj = obj
 	use_item()
+end)
+
+Events.Connect("clear_old_refs", function()
+	using_item = nil
+	orig_obj = nil
+	raycast_obj = nil
 end)

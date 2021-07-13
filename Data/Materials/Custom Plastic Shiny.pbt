@@ -2,7 +2,7 @@ Assets {
   Id: 17739647103545179627
   Name: "Custom Plastic Shiny"
   PlatformAssetType: 13
-  SerializationVersion: 81
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 16609254708742162583
     ParameterOverrides {

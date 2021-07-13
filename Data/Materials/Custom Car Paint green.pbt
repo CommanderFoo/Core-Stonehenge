@@ -2,7 +2,7 @@ Assets {
   Id: 6079435186062484817
   Name: "Custom Car Paint green"
   PlatformAssetType: 13
-  SerializationVersion: 81
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 10963809711859695996
     ParameterOverrides {

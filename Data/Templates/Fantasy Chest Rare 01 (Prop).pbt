@@ -68,6 +68,7 @@ Assets {
           StaticMesh {
             Physics {
             }
+            BoundsScale: 1
           }
         }
       }
@@ -110,6 +111,7 @@ Assets {
           StaticMesh {
             Physics {
             }
+            BoundsScale: 1
           }
         }
       }
@@ -167,6 +169,7 @@ Assets {
           StaticMesh {
             Physics {
             }
+            BoundsScale: 1
           }
         }
       }
@@ -203,5 +206,5 @@ Assets {
       AssetId: "Fantasy_Chest_Rare_01__Prop_"
     }
   }
-  SerializationVersion: 81
+  SerializationVersion: 85
 }

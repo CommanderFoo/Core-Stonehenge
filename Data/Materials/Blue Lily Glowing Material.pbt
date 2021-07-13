@@ -2,7 +2,7 @@ Assets {
   Id: 16274372387584554087
   Name: "Blue Lily Glowing Material"
   PlatformAssetType: 13
-  SerializationVersion: 81
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 1711434102804666437
     ParameterOverrides {

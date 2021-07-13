@@ -51,5 +51,5 @@ Assets {
     Version: "1.5.0"
     Description: "A room and a few things to furnish it with."
   }
-  SerializationVersion: 81
+  SerializationVersion: 85
 }

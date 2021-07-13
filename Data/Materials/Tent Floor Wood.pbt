@@ -2,7 +2,7 @@ Assets {
   Id: 9395230684824422138
   Name: "Tent Floor Wood"
   PlatformAssetType: 13
-  SerializationVersion: 81
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 3605030238014728915
     ParameterOverrides {

@@ -2,7 +2,7 @@ Assets {
   Id: 6545286511135782256
   Name: "Birch Material 1 "
   PlatformAssetType: 13
-  SerializationVersion: 81
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 177802606819173695
     ParameterOverrides {

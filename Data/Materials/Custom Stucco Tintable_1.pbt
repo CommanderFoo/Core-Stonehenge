@@ -2,7 +2,7 @@ Assets {
   Id: 17115270058452015503
   Name: "Pottery Material"
   PlatformAssetType: 13
-  SerializationVersion: 81
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 15449607076393427372
     ParameterOverrides {

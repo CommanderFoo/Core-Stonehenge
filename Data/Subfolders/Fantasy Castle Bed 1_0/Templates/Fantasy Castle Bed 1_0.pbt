@@ -43,5 +43,5 @@ Assets {
     Version: "1.0.0"
     Description: "Fantasy Castle Bed to match Fantasy Chest design"
   }
-  SerializationVersion: 85
+  SerializationVersion: 92
 }

@@ -2,7 +2,7 @@ Assets {
   Id: 14519081376116349390
   Name: "Custom Base Material from Humanoid 1 Cyber Sweater"
   PlatformAssetType: 13
-  SerializationVersion: 85
+  SerializationVersion: 92
   CustomMaterialAsset {
     BaseMaterialId: 3280573404967940722
     ParameterOverrides {

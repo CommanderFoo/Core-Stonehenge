@@ -2,7 +2,7 @@ Assets {
   Id: 8260475755799581342
   Name: "White Marble "
   PlatformAssetType: 13
-  SerializationVersion: 85
+  SerializationVersion: 92
   CustomMaterialAsset {
     BaseMaterialId: 4236087486643775936
     ParameterOverrides {

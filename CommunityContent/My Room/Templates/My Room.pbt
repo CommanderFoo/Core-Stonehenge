@@ -2788,6 +2788,6 @@ Assets {
   Marketplace {
     Description: "A room and a few things to furnish it with."
   }
-  SerializationVersion: 85
+  SerializationVersion: 92
   DirectlyPublished: true
 }

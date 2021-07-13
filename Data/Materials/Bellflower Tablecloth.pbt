@@ -2,7 +2,7 @@ Assets {
   Id: 8359480630536255701
   Name: "Bellflower Tablecloth"
   PlatformAssetType: 13
-  SerializationVersion: 85
+  SerializationVersion: 92
   CustomMaterialAsset {
     BaseMaterialId: 2637450204744195739
     ParameterOverrides {

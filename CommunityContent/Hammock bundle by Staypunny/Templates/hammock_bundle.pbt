@@ -3237,7 +3237,7 @@ Assets {
     }
     Assets {
       Id: 5261607679401533019
-      Name: "Wood Planks Dark"
+      Name: "Wood Planks"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
@@ -3297,6 +3297,6 @@ Assets {
   Marketplace {
     Description: "Hey all!\r\n\r\nHere is a hammock bundle that you can use in multiple ways!\r\n\r\n- Fully adjustable\r\n- Incredibly comfortable\r\n- Including a soft duck feather pillow!\r\n\r\nIf you use my content be sure to refer to me! :D\r\n\r\nHave an awesome day and want wait to see it hanging around!"
   }
-  SerializationVersion: 85
+  SerializationVersion: 92
   DirectlyPublished: true
 }

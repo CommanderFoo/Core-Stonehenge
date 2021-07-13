@@ -41,7 +41,7 @@ Assets {
     OwnerAccountId: "e6df8617a8e94a57aae55ade80a7981f"
     OwnerName: "marious0423"
     Version: "1.0.0"
-    Description: "Fantasy Bench\r\n\r\nWishing well by Staypunny not included"
+    Description: "Fantasy Bench\r\n\r\nWishing well by Staypunny not included\r\n\r\nUpdated so you can sit on it"
   }
-  SerializationVersion: 85
+  SerializationVersion: 92
 }

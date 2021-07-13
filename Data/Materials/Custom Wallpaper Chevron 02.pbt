@@ -2,7 +2,7 @@ Assets {
   Id: 298811586908400614
   Name: "Custom Wallpaper Chevron 02"
   PlatformAssetType: 13
-  SerializationVersion: 85
+  SerializationVersion: 92
   CustomMaterialAsset {
     BaseMaterialId: 13968286859173003921
     ParameterOverrides {

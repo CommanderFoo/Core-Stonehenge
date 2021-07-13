@@ -2,7 +2,7 @@ Assets {
   Id: 8447574563388359200
   Name: "Bluestone Material 1"
   PlatformAssetType: 13
-  SerializationVersion: 85
+  SerializationVersion: 92
   CustomMaterialAsset {
     BaseMaterialId: 9891592180303515249
     ParameterOverrides {

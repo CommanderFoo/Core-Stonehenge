@@ -4613,6 +4613,6 @@ Assets {
   Marketplace {
     Description: "Fantasy Bench\r\n\r\nWishing well by Staypunny not included"
   }
-  SerializationVersion: 85
+  SerializationVersion: 92
   DirectlyPublished: true
 }

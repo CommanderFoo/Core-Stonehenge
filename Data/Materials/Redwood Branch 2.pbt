@@ -2,7 +2,7 @@ Assets {
   Id: 15770955986279307691
   Name: "Redwood Branch 2"
   PlatformAssetType: 13
-  SerializationVersion: 85
+  SerializationVersion: 92
   CustomMaterialAsset {
     BaseMaterialId: 2165822805856095811
     ParameterOverrides {

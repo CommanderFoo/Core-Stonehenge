@@ -2,7 +2,7 @@ Assets {
   Id: 12966955606541377930
   Name: "Composition Book Cover (Tobs)"
   PlatformAssetType: 13
-  SerializationVersion: 85
+  SerializationVersion: 92
   CustomMaterialAsset {
     BaseMaterialId: 8163204580629135587
     ParameterOverrides {

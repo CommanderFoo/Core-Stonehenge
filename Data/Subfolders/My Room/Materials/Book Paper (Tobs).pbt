@@ -2,7 +2,7 @@ Assets {
   Id: 2446680764938991078
   Name: "Book Paper (Tobs)"
   PlatformAssetType: 13
-  SerializationVersion: 85
+  SerializationVersion: 92
   CustomMaterialAsset {
     BaseMaterialId: 17234901675252430152
     ParameterOverrides {

@@ -2,7 +2,7 @@ Assets {
   Id: 6304302580022098235
   Name: "Tent Tie Rope"
   PlatformAssetType: 13
-  SerializationVersion: 85
+  SerializationVersion: 92
   CustomMaterialAsset {
     BaseMaterialId: 3090596827184957478
     ParameterOverrides {

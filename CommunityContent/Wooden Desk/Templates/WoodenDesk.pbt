@@ -813,6 +813,6 @@ Assets {
   Marketplace {
     Description: "Wooden desk from my futur Core game!"
   }
-  SerializationVersion: 85
+  SerializationVersion: 92
   DirectlyPublished: true
 }

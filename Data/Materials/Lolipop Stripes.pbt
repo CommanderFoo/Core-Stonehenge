@@ -2,7 +2,7 @@ Assets {
   Id: 1786852726354484399
   Name: "Lolipop Stripes"
   PlatformAssetType: 13
-  SerializationVersion: 85
+  SerializationVersion: 92
   CustomMaterialAsset {
     BaseMaterialId: 3695710696641822210
     ParameterOverrides {

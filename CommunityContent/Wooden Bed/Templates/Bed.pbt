@@ -2390,6 +2390,6 @@ Assets {
   Marketplace {
     Description: "A simple wooden bed."
   }
-  SerializationVersion: 85
+  SerializationVersion: 92
   DirectlyPublished: true
 }

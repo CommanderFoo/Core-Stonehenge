@@ -514,5 +514,5 @@ Assets {
       AssetId: "Fantasy_Bookshelf_-_Tall_With_Books_Template"
     }
   }
-  SerializationVersion: 85
+  SerializationVersion: 92
 }

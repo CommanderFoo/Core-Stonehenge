@@ -206,5 +206,5 @@ Assets {
       AssetId: "Fantasy_Chest_Rare_01__Prop_"
     }
   }
-  SerializationVersion: 85
+  SerializationVersion: 92
 }

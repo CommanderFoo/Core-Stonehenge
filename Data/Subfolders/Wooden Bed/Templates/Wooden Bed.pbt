@@ -43,5 +43,5 @@ Assets {
     Version: "1.0.0"
     Description: "A simple wooden bed."
   }
-  SerializationVersion: 85
+  SerializationVersion: 92
 }

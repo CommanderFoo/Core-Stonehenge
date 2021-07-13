@@ -2,7 +2,7 @@ Assets {
   Id: 6196606386139495735
   Name: "Poster Canvas "
   PlatformAssetType: 13
-  SerializationVersion: 85
+  SerializationVersion: 92
   CustomMaterialAsset {
     BaseMaterialId: 15449607076393427372
     ParameterOverrides {

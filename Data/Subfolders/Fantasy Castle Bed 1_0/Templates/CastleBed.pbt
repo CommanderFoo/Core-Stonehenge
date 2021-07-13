@@ -1449,7 +1449,7 @@ Assets {
     }
     Assets {
       Id: 18435900372558987437
-      Name: "Wood Planks Dark"
+      Name: "Wood Planks"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
@@ -1536,6 +1536,6 @@ Assets {
   Marketplace {
     Description: "Fantasy Castle Bed to match Fantasy Chest design"
   }
-  SerializationVersion: 85
+  SerializationVersion: 92
   DirectlyPublished: true
 }

@@ -7,8 +7,16 @@ local lily_quest_items = script:GetCustomProperty("lily_area_quest_items"):WaitF
 
 local quest_id = 0
 
+local REWARD_AMOUNT = 100
+local REWARD_NAME = "Daily"
+
 Game.playerJoinedEvent:Connect(function(player)
 	if(not clear_save_data) then
+		if(first_join_today(player)) then
+			player:GrantRewardPoints(REWARD_AMOUNT, REWARD_NAME)
+			print("received")
+		end
+
 		load_save_data(player)
 	end
 end)
@@ -67,6 +75,26 @@ function load_save_data(player)
 	--YOOTIL.Utils.dump(data)
 end
 
+function first_join_today(player)
+    local today = os.date("*t")
+    local day = today.day
+    local month = today.month
+
+    local data = Storage.GetPlayerData(player)
+
+    if(day ~= data.last_day or month ~= data.last_month) then
+		data.last_day = day
+        data.last_month = month
+
+        player:SetResource("last_day", day)
+		player:SetResource("last_month", month)
+
+        return true
+    end
+
+    return false
+end
+
 function save_data(player)
 	Events.Broadcast("submit_total_collectables")
 
@@ -94,6 +122,9 @@ function save_data(player)
 	
 	--YOOTIL.Utils.dump(data)
 
+	data.last_day = player:GetResource("last_day") or 0
+	data.last_month = player:GetResource("last_month") or 0
+	
 	Storage.SetPlayerData(player, data)
 end
 

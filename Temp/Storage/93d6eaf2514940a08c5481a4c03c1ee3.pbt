@@ -9,31 +9,16 @@ Entries {
 }
 Entries {
   Key {
-    StringVar: "last_month"
+    StringVar: "v1_collectables"
   }
   SimpleValue {
-    IntVar: 0
-  }
-}
-Entries {
-  Key {
-    StringVar: "quest_id"
-  }
-  SimpleValue {
-    IntVar: 0
+    Table {
+    }
   }
 }
 Entries {
   Key {
     StringVar: "finished"
-  }
-  SimpleValue {
-    IntVar: 0
-  }
-}
-Entries {
-  Key {
-    StringVar: "last_day"
   }
   SimpleValue {
     IntVar: 0
@@ -49,10 +34,9 @@ Entries {
 }
 Entries {
   Key {
-    StringVar: "v1_collectables"
+    StringVar: "quest_id"
   }
   SimpleValue {
-    Table {
-    }
+    IntVar: 0
   }
 }

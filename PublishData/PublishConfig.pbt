@@ -12,7 +12,7 @@ ScreenshotPaths: "C:\\Users\\pixel\\Documents\\My Games\\CORE\\Saved\\Maps\\Ston
 ScreenshotPaths: "C:\\Users\\pixel\\Documents\\My Games\\CORE\\Saved\\Maps\\Stonehenge\\Screenshots\\2.png"
 ScreenshotPaths: "C:\\Users\\pixel\\Documents\\My Games\\CORE\\Saved\\Maps\\Stonehenge\\Screenshots\\3.png"
 ScreenshotPaths: "C:\\Users\\pixel\\Documents\\My Games\\CORE\\Saved\\Maps\\Stonehenge\\Screenshots\\4.png"
-ReleaseNotes: "Daily login reward points added."
+ReleaseNotes: "Daily login reward points changed (will change in the future to be mini quests once API is updated)."
 OwnerId: "93d6eaf2514940a08c5481a4c03c1ee3"
 SerializationVersion: 1
 PublishedState: Public

@@ -1,7 +1,6 @@
 Game.playerJoinedEvent:Connect(function(player)
 	disable_player(player)
-	player:SetVisibility(false)
-
+	player.isVisible = false
 	
 	player.bindingPressedEvent:Connect(function(obj, binding)
 		if(binding == "ability_feet") then

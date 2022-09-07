@@ -62,6 +62,10 @@ Objects {
       Id: 18443030339376869299
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 768560437271220633
@@ -125,6 +129,10 @@ Objects {
       Id: 18443030339376869299
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 7593189877450065839
@@ -156,7 +164,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 3229.64844
-            Y: -5422.26563
+            Y: -5422.26562
             Z: -1605.70068
           }
         }
@@ -192,6 +200,10 @@ Objects {
       Id: 7876156294920058136
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 2653350608867325148
@@ -280,6 +292,10 @@ Objects {
       Id: 7876156294920058136
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 3178253246639206551
@@ -346,6 +362,10 @@ Objects {
       Id: 7876156294920058136
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 3684132877560444887
@@ -413,6 +433,10 @@ Objects {
       Id: 7876156294920058136
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 8342785317284336941
@@ -501,4 +525,8 @@ Objects {
       Id: 7876156294920058136
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }

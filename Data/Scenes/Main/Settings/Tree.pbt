@@ -33,7 +33,13 @@ Objects {
   PlayerSpawnPoint {
     TeamInt: 1
     PlayerScaleMultiplier: 1
+    SpawnEffectsTemplate {
+    }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 7367735074338159388
@@ -103,6 +109,22 @@ Objects {
         }
       }
       RelevanceSettings {
+        key: "mergedmesh"
+        value {
+          LowDistance: 4500
+          MediumDistance: 7000
+          HighDistance: 9000
+        }
+      }
+      RelevanceSettings {
+        key: "mesh"
+        value {
+          LowDistance: 4500
+          MediumDistance: 7000
+          HighDistance: 9000
+        }
+      }
+      RelevanceSettings {
         key: "vfx"
         value {
           LowDistance: 4500
@@ -110,10 +132,49 @@ Objects {
           HighDistance: 9000
         }
       }
+      VoiceChatSettings {
+        VoiceChatMode {
+          Value: "mc:evoicechatmode:none"
+        }
+        VoiceChannelType {
+          Value: "mc:evoicechanneltype:normal"
+        }
+        AudibleDistance: 6000
+        ConversationalDistance: 1500
+        AudioFadeModel {
+          Value: "mc:evoiceaudiofademodel:inverse"
+        }
+        AudioFadeIntensityByDistance: 1
+        VoiceChatPosition {
+          X: -40
+          Y: 40
+        }
+        VoiceChatHorizontalAlignment {
+          Value: "mc:ecorehorizontalalign:right"
+        }
+        VoiceChatVerticalAlignment {
+          Value: "mc:ecoreverticalalign:top"
+        }
+        VoiceChatEntryHorizontalFlow {
+          Value: "mc:ecorehorizontalflow:righttoleft"
+        }
+        VoiceChatEntryVerticalFlow {
+          Value: "mc:ecoreverticalflow:toptobottom"
+        }
+        IsVoiceChatWidgetVisible: true
+      }
       PlayerInteractDistance: 500
       PlayerInteractAngleDeg: 50
+      PlayerStorageMode {
+        Value: "mc:eplayerstoragemode:writable"
+      }
+      EnableNetworkedEventsQueuing: true
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 9843494520129937759
@@ -153,6 +214,10 @@ Objects {
     TemplateId: 5189858054097932166
     WasRoot: true
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 16150491161066528130
@@ -182,6 +247,12 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   NetworkContext {
+    MinDetailLevel {
+      Value: "mc:edetaillevel:low"
+    }
+    MaxDetailLevel {
+      Value: "mc:edetaillevel:ultra"
+    }
   }
   InstanceHistory {
     SelfId: 16150491161066528130
@@ -189,6 +260,10 @@ Objects {
     InstanceId: 1023850042715320700
     TemplateId: 5189858054097932166
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 3840927660290209183
@@ -235,6 +310,8 @@ Objects {
     }
     MinPitch: -89
     MaxPitch: 89
+    UseAsAudioListener: true
+    IsCameraCollisionEnabled: true
   }
   InstanceHistory {
     SelfId: 3840927660290209183
@@ -242,6 +319,10 @@ Objects {
     InstanceId: 1023850042715320700
     TemplateId: 5189858054097932166
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 8479646325199133209
@@ -317,6 +398,8 @@ Objects {
       CanMoveUp: true
       CanMoveDown: true
       MaxHitpoints: 100
+      PlayerMasterVolumeMultiplier: 1
+      ComplexCollision: true
     }
   }
   InstanceHistory {
@@ -325,4 +408,8 @@ Objects {
     InstanceId: 1023850042715320700
     TemplateId: 5189858054097932166
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }

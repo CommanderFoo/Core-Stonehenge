@@ -2,7 +2,7 @@ Assets {
   Id: 14075991580494681043
   Name: "Custom Wood Floor Chevron Light"
   PlatformAssetType: 13
-  SerializationVersion: 92
+  SerializationVersion: 118
   CustomMaterialAsset {
     BaseMaterialId: 5748614461845406776
     ParameterOverrides {

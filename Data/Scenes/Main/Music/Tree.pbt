@@ -47,6 +47,10 @@ Objects {
       FadeInTime: 0.5
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 12529386565442934943
@@ -85,6 +89,10 @@ Objects {
       Radius: 400
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 6242247327900451235
@@ -133,6 +141,10 @@ Objects {
       FadeOutTime: 5
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 16249291465687630055
@@ -206,4 +218,8 @@ Objects {
       FadeOutTime: 0.5
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }

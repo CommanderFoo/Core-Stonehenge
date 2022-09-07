@@ -3,6 +3,8 @@ Assets {
   Name: "Character_Thoughts_Client"
   PlatformAssetType: 3
   TextAsset {
+    CustomParameters {
+    }
   }
-  SerializationVersion: 92
+  SerializationVersion: 118
 }

@@ -3,6 +3,8 @@ Assets {
   Name: "Leaderboard_Server"
   PlatformAssetType: 3
   TextAsset {
+    CustomParameters {
+    }
   }
-  SerializationVersion: 92
+  SerializationVersion: 118
 }

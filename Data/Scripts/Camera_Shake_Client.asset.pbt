@@ -3,6 +3,8 @@ Assets {
   Name: "Camera_Shake_Client"
   PlatformAssetType: 3
   TextAsset {
+    CustomParameters {
+    }
   }
-  SerializationVersion: 92
+  SerializationVersion: 118
 }

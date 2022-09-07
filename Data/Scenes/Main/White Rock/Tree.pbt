@@ -30,7 +30,17 @@ Objects {
     Value: "mc:ecollisionsetting:forceoff"
   }
   NetworkContext {
+    MinDetailLevel {
+      Value: "mc:edetaillevel:low"
+    }
+    MaxDetailLevel {
+      Value: "mc:edetaillevel:ultra"
+    }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 12145837874599329578
@@ -124,12 +134,10 @@ Objects {
     TeamSettings {
     }
   }
-  InstanceHistory {
-    SelfId: 4947993792418632350
-    SubobjectId: 8810891986624322585
-    InstanceId: 1362143755086093751
-    TemplateId: 1989782424554441499
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 16747101702694671599
@@ -179,6 +187,10 @@ Objects {
       Id: 143747440703481674
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 13073896173444103109
@@ -204,7 +216,7 @@ Objects {
       Name: "cs:cam_pos"
       Vector {
         X: 8782.83594
-        Y: 4735.32813
+        Y: 4735.32812
         Z: 262.983
       }
     }
@@ -248,5 +260,13 @@ Objects {
     TriggerShape_v2 {
       Value: "mc:etriggershape:box"
     }
+    InteractionTemplate {
+    }
+    BreadcrumbTemplate {
+    }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }

@@ -39,6 +39,10 @@ Objects {
     IsSpatializationEnabled: true
     IsAttenuationEnabled: true
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 17025279786383948511
@@ -79,6 +83,10 @@ Objects {
     IsSpatializationEnabled: true
     IsAttenuationEnabled: true
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 16337727393482370463
@@ -119,6 +127,10 @@ Objects {
     IsSpatializationEnabled: true
     IsAttenuationEnabled: true
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 2517760562364095620
@@ -159,4 +171,8 @@ Objects {
     IsSpatializationEnabled: true
     IsAttenuationEnabled: true
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }

@@ -2,7 +2,7 @@ Assets {
   Id: 18115048909486129914
   Name: "Catalyst Material"
   PlatformAssetType: 13
-  SerializationVersion: 92
+  SerializationVersion: 118
   CustomMaterialAsset {
     BaseMaterialId: 12594834276768492639
     ParameterOverrides {

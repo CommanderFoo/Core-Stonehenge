@@ -38,6 +38,10 @@ Objects {
     IsSpatializationEnabled: true
     IsAttenuationEnabled: true
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 11096670513401717557
@@ -77,4 +81,8 @@ Objects {
     IsSpatializationEnabled: true
     IsAttenuationEnabled: true
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }

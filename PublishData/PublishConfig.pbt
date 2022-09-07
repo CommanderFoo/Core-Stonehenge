@@ -12,9 +12,14 @@ ScreenshotPaths: "C:\\Users\\pixel\\Documents\\My Games\\CORE\\Saved\\Maps\\Ston
 ScreenshotPaths: "C:\\Users\\pixel\\Documents\\My Games\\CORE\\Saved\\Maps\\Stonehenge\\Screenshots\\2.png"
 ScreenshotPaths: "C:\\Users\\pixel\\Documents\\My Games\\CORE\\Saved\\Maps\\Stonehenge\\Screenshots\\3.png"
 ScreenshotPaths: "C:\\Users\\pixel\\Documents\\My Games\\CORE\\Saved\\Maps\\Stonehenge\\Screenshots\\4.png"
-ReleaseNotes: "Daily login reward points changed (will change in the future to be mini quests once API is updated)."
 OwnerId: "93d6eaf2514940a08c5481a4c03c1ee3"
-SerializationVersion: 1
+SerializationVersion: 4
 PublishedState: Public
 CubemapPath: "C:/Users/pixel/Documents/My Games/CORE/Saved/Maps/Stonehenge/Screenshots/Cubemaps/Cubemap0001.png"
 ContainsRewardPointEvents: true
+SceneNameToSceneIdMap {
+  key: "Main"
+  value: "90caa84f4a52b970cd590d826a6245b8"
+}
+MaxPlayersForMainScene: 1
+EnableForPC: true

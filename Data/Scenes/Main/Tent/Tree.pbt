@@ -28,6 +28,10 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Tent Area Collectables"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 12936176732858694209
@@ -58,4 +62,8 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Quest Items_3"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }

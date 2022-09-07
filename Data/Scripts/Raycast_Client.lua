@@ -67,7 +67,7 @@ function Tick()
 
 	local inventory_obj = false
 
-	if(hit ~= nil and Object.IsValid(hit.other)) then
+	if(hit ~= nil and Object.IsValid(hit.other) and Object.IsValid(hit.other.parent)) then
 		local obj = hit.other.parent
 		
 		if(string.find(obj.name, "_inventory")) then

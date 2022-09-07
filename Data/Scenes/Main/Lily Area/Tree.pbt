@@ -29,6 +29,10 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Lily Area Collectables"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 13435184631131098900
@@ -59,6 +63,10 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Quest Items_1"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 8102391460791805462
@@ -128,5 +136,13 @@ Objects {
     TriggerShape_v2 {
       Value: "mc:etriggershape:box"
     }
+    InteractionTemplate {
+    }
+    BreadcrumbTemplate {
+    }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }

@@ -32,6 +32,13 @@ Objects {
     Model {
     }
   }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 11688328363199132353
@@ -64,6 +71,10 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Standing Bluestone_1"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 17507761675683140033
@@ -97,6 +108,10 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Broken Bluestone_1"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 14394247268195157358
@@ -132,6 +147,13 @@ Objects {
     Model {
     }
   }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 8513984981421112221
@@ -164,6 +186,10 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Top Laying Sarsen_1"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 9405132596137673921
@@ -196,6 +222,10 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Standing Sarsen_1"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 13047957303374723115
@@ -228,4 +258,8 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Fallen Sarsen_1"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }

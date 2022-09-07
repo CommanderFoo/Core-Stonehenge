@@ -29,7 +29,7 @@ Assets {
         Control {
           Width: 100
           Height: 100
-          UIX: -6.10351563e-05
+          UIX: -6.10351562e-05
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -61,6 +61,10 @@ Assets {
             }
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
       }
       Objects {
         Id: 17487770246936723235
@@ -118,6 +122,10 @@ Assets {
             }
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
       }
     }
     Assets {
@@ -143,5 +151,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 118
 }

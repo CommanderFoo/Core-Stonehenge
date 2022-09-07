@@ -31,6 +31,10 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Beams"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 9886569727362114225
@@ -116,6 +120,10 @@ Objects {
   Relevance {
     Value: "mc:eproxyrelevance:medium"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 9745619904137181038
@@ -152,4 +160,8 @@ Objects {
     IsSpatializationEnabled: true
     IsAttenuationEnabled: true
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }

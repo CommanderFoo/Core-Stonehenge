@@ -29,6 +29,10 @@ Assets {
             }
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
       }
     }
     PrimaryAssetId {
@@ -43,5 +47,5 @@ Assets {
     Version: "1.0.0"
     Description: "Fantasy Bench\r\n\r\nWishing well by Staypunny not included\r\n\r\nUpdated so you can sit on it"
   }
-  SerializationVersion: 92
+  SerializationVersion: 118
 }

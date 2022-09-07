@@ -3,6 +3,8 @@ Assets {
   Name: "Quest_Chamber_Client"
   PlatformAssetType: 3
   TextAsset {
+    CustomParameters {
+    }
   }
-  SerializationVersion: 92
+  SerializationVersion: 118
 }

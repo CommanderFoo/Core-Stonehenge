@@ -2,7 +2,7 @@ Assets {
   Id: 17384217126992658879
   Name: "Sarsen material 3"
   PlatformAssetType: 13
-  SerializationVersion: 92
+  SerializationVersion: 118
   CustomMaterialAsset {
     BaseMaterialId: 9891592180303515249
     ParameterOverrides {

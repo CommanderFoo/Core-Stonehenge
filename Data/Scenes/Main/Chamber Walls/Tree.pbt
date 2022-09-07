@@ -24,7 +24,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 49.7226563
+            X: 49.7226562
             Y: -29.2174072
           }
         }
@@ -126,6 +126,10 @@ Objects {
       Id: 11673079437046201640
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 17593389206947285303
@@ -159,6 +163,10 @@ Objects {
   Folder {
     IsGroup: true
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 16579459608820335222
@@ -227,16 +235,13 @@ Objects {
     DecalBP {
     }
   }
-  InstanceHistory {
-    SelfId: 15140523901020957083
-    SubobjectId: 18103170124130371404
-    InstanceId: 930889249625379605
-    TemplateId: 11165367308870562928
-    WasRoot: true
-  }
   Relevance {
     Value: "mc:eproxyrelevance:critical"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 7868464625154859219
@@ -343,6 +348,10 @@ Objects {
       Id: 5319894053142481181
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 16913540604264799550
@@ -456,4 +465,8 @@ Objects {
       Id: 4420726993591216380
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }

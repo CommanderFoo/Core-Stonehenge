@@ -55,6 +55,10 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Data Holder"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 3531142988586757998
@@ -84,6 +88,10 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Character Thoughts"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 15892015409261034309
@@ -113,6 +121,10 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Quest Lookup Data"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 17488655066859996786
@@ -142,4 +154,8 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Inventory Lookup Data"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }

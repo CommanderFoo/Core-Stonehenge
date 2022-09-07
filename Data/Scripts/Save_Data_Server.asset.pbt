@@ -3,6 +3,8 @@ Assets {
   Name: "Save_Data_Server"
   PlatformAssetType: 3
   TextAsset {
+    CustomParameters {
+    }
   }
-  SerializationVersion: 92
+  SerializationVersion: 118
 }

@@ -2,7 +2,7 @@ Assets {
   Id: 13511425505623308833
   Name: "Stairs material"
   PlatformAssetType: 13
-  SerializationVersion: 92
+  SerializationVersion: 118
   CustomMaterialAsset {
     BaseMaterialId: 6968508824743406962
     ParameterOverrides {

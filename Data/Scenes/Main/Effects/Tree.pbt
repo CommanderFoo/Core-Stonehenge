@@ -32,6 +32,10 @@ Objects {
     Falloff: -1
     Radius: -1
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 10767560448851720048
@@ -61,6 +65,10 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Chamber"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 3499206684774572563
@@ -90,6 +98,10 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Cave"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 8212486631732985730
@@ -119,6 +131,10 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Rotator Sounds"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 10805811681648458774
@@ -148,6 +164,10 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Birds"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 5762394698956718129
@@ -181,6 +201,10 @@ Objects {
   Folder {
     IsGroup: true
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 12113986878081595217
@@ -219,6 +243,10 @@ Objects {
     IsSpatializationEnabled: true
     IsAttenuationEnabled: true
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 4550593616303080752
@@ -258,6 +286,10 @@ Objects {
     IsSpatializationEnabled: true
     IsAttenuationEnabled: true
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 10696188145082414296
@@ -297,6 +329,10 @@ Objects {
     IsSpatializationEnabled: true
     IsAttenuationEnabled: true
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 15932940055084474733
@@ -329,6 +365,10 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Rock Hums"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 421960859839299942
@@ -362,6 +402,10 @@ Objects {
     Falloff: -1
     Radius: -1
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 15416077943908845775
@@ -394,6 +438,10 @@ Objects {
   Folder {
     IsGroup: true
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 9244379505660774069
@@ -428,6 +476,10 @@ Objects {
     Falloff: -1
     Radius: -1
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 9621869900391140349
@@ -461,6 +513,10 @@ Objects {
     Falloff: -1
     Radius: -1
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 11817245516180533998
@@ -493,6 +549,10 @@ Objects {
   Folder {
     IsGroup: true
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 7274022636681265916
@@ -527,6 +587,10 @@ Objects {
     Falloff: -1
     Radius: -1
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 5130122864214634714
@@ -561,6 +625,10 @@ Objects {
     Falloff: -1
     Radius: -1
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 14617606060845097179
@@ -594,6 +662,10 @@ Objects {
   Folder {
     IsGroup: true
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 9053670355803532075
@@ -625,6 +697,10 @@ Objects {
     }
     Volume: 0.369669557
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 7110243737228039429
@@ -656,6 +732,10 @@ Objects {
     }
     Volume: 0.712348819
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 12481451894388112380
@@ -687,6 +767,10 @@ Objects {
     }
     Volume: 0.712348819
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 6078847391954909663
@@ -718,6 +802,10 @@ Objects {
     }
     Volume: 4
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 17592873802474174287
@@ -751,6 +839,10 @@ Objects {
     Falloff: -1
     Radius: -1
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 5574140448871403192
@@ -784,6 +876,10 @@ Objects {
     Falloff: -1
     Radius: -1
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 12676078131160182464
@@ -817,6 +913,10 @@ Objects {
     }
     Volume: 1
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 9576715409030322353
@@ -850,6 +950,10 @@ Objects {
     }
     Volume: 1
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 8627870878544148169
@@ -883,4 +987,8 @@ Objects {
     Falloff: -1
     Radius: -1
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }

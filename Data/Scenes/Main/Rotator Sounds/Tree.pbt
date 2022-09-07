@@ -32,6 +32,10 @@ Objects {
     Falloff: -1
     Radius: -1
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 10281062341006278802
@@ -66,4 +70,8 @@ Objects {
     Falloff: -1
     Radius: -1
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }

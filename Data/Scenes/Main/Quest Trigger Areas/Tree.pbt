@@ -36,7 +36,15 @@ Objects {
     TriggerShape_v2 {
       Value: "mc:etriggershape:box"
     }
+    InteractionTemplate {
+    }
+    BreadcrumbTemplate {
+    }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 12040618246545199286
@@ -76,7 +84,15 @@ Objects {
     TriggerShape_v2 {
       Value: "mc:etriggershape:box"
     }
+    InteractionTemplate {
+    }
+    BreadcrumbTemplate {
+    }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 7316799702262892750
@@ -114,7 +130,15 @@ Objects {
     TriggerShape_v2 {
       Value: "mc:etriggershape:box"
     }
+    InteractionTemplate {
+    }
+    BreadcrumbTemplate {
+    }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 13959005270884086005
@@ -152,5 +176,13 @@ Objects {
     TriggerShape_v2 {
       Value: "mc:etriggershape:box"
     }
+    InteractionTemplate {
+    }
+    BreadcrumbTemplate {
+    }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }

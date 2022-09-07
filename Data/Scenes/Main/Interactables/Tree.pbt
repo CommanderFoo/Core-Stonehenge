@@ -28,6 +28,10 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Chamber Area Collectables"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 13115652778135981047
@@ -60,6 +64,10 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Chamber Rotators"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 16647472273432662559
@@ -90,6 +98,10 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "White Rock"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 15462314122037940146
@@ -120,6 +132,10 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Blue Rock"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 634600162205877151
@@ -150,6 +166,10 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Red Rock"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 9657082216612006210
@@ -180,6 +200,10 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Yellow Rock"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 7545929439889716735
@@ -210,6 +234,10 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Lily Area"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 11515639102854451372
@@ -240,6 +268,10 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Excavation Site"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 14496764963604168968
@@ -269,4 +301,8 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Tent"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }

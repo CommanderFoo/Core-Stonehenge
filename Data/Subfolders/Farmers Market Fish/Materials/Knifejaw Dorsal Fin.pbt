@@ -2,7 +2,7 @@ Assets {
   Id: 6141047184112985311
   Name: "Knifejaw Dorsal Fin"
   PlatformAssetType: 13
-  SerializationVersion: 92
+  SerializationVersion: 118
   CustomMaterialAsset {
     BaseMaterialId: 18034974964752450918
     ParameterOverrides {

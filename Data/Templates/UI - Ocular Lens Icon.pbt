@@ -38,6 +38,8 @@ Assets {
           UseParentHeight: true
           Panel {
             Opacity: 1
+            OpacityMaskBrush {
+            }
           }
           AnchorLayout {
             SelfAnchor {
@@ -52,6 +54,10 @@ Assets {
             }
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
       }
       Objects {
         Id: 1109390840516043344
@@ -116,6 +122,10 @@ Assets {
             }
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
       }
     }
     Assets {
@@ -132,5 +142,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 118
 }

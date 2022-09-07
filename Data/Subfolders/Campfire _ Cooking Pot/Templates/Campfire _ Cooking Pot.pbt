@@ -35,6 +35,10 @@ Assets {
             }
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
       }
     }
     PrimaryAssetId {
@@ -49,5 +53,5 @@ Assets {
     Version: "1.0.0"
     Description: "Cozy Campfire with a cooking pot on a wooden framework"
   }
-  SerializationVersion: 92
+  SerializationVersion: 118
 }

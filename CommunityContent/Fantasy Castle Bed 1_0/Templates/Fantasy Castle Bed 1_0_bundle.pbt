@@ -29,6 +29,10 @@ Assets {
             }
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
       }
     }
     PrimaryAssetId {
@@ -43,5 +47,5 @@ Assets {
     Version: "1.0.0"
     Description: "Fantasy Castle Bed to match Fantasy Chest design"
   }
-  SerializationVersion: 92
+  SerializationVersion: 118
 }

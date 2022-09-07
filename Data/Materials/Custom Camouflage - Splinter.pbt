@@ -2,7 +2,7 @@ Assets {
   Id: 12433524629825964104
   Name: "Custom Camouflage - Splinter"
   PlatformAssetType: 13
-  SerializationVersion: 92
+  SerializationVersion: 118
   CustomMaterialAsset {
     BaseMaterialId: 14797379581934700522
     ParameterOverrides {

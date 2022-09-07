@@ -2,7 +2,7 @@ Assets {
   Id: 5007314559237406114
   Name: "Chamber Pond"
   PlatformAssetType: 13
-  SerializationVersion: 92
+  SerializationVersion: 118
   CustomMaterialAsset {
     BaseMaterialId: 2419801972700833283
     ParameterOverrides {

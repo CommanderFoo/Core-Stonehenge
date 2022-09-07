@@ -30,7 +30,17 @@ Objects {
     Value: "mc:ecollisionsetting:forceoff"
   }
   NetworkContext {
+    MinDetailLevel {
+      Value: "mc:edetaillevel:low"
+    }
+    MaxDetailLevel {
+      Value: "mc:edetaillevel:ultra"
+    }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 18071958956243076656
@@ -124,12 +134,10 @@ Objects {
     TeamSettings {
     }
   }
-  InstanceHistory {
-    SelfId: 4947993792418632350
-    SubobjectId: 8810891986624322585
-    InstanceId: 1362143755086093751
-    TemplateId: 1989782424554441499
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
   }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 3456323361475352302
@@ -179,6 +187,10 @@ Objects {
       Id: 11707131961769597204
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 18303776719649945801
@@ -248,5 +260,13 @@ Objects {
     TriggerShape_v2 {
       Value: "mc:etriggershape:box"
     }
+    InteractionTemplate {
+    }
+    BreadcrumbTemplate {
+    }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }

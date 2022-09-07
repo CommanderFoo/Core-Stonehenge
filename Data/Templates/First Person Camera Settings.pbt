@@ -32,6 +32,10 @@ Assets {
         Folder {
           IsGroup: true
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
       }
       Objects {
         Id: 503681998163126313
@@ -109,8 +113,14 @@ Assets {
             CanMoveDown: true
             IsMountEnabled: true
             MaxHitpoints: 100
+            PlayerMasterVolumeMultiplier: 1
+            ComplexCollision: true
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
       }
       Objects {
         Id: 10624734070703239090
@@ -140,7 +150,17 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         NetworkContext {
+          MinDetailLevel {
+            Value: "mc:edetaillevel:low"
+          }
+          MaxDetailLevel {
+            Value: "mc:edetaillevel:ultra"
+          }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
       }
       Objects {
         Id: 5052201122922792879
@@ -187,7 +207,13 @@ Assets {
           }
           MinPitch: -89
           MaxPitch: 89
+          UseAsAudioListener: true
+          IsCameraCollisionEnabled: true
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
       }
     }
     PrimaryAssetId {
@@ -195,5 +221,5 @@ Assets {
       AssetId: "First_Person_Camera_Settings"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 118
 }

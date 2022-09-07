@@ -30,7 +30,7 @@ Assets {
         Control {
           Width: 196
           Height: 189
-          UIX: -6.10351563e-05
+          UIX: -6.10351562e-05
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -62,6 +62,10 @@ Assets {
             }
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
       }
       Objects {
         Id: 10863276915410187662
@@ -121,6 +125,10 @@ Assets {
             }
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
       }
       Objects {
         Id: 2080143944700820463
@@ -180,6 +188,10 @@ Assets {
             }
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
       }
     }
     Assets {
@@ -214,5 +226,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 118
 }

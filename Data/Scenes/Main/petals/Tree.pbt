@@ -66,12 +66,13 @@ Objects {
       BoundsScale: 1
     }
   }
-  InstanceHistory {
-    SelfId: 8926612075027808882
-    SubobjectId: 12686277864527152227
-    InstanceId: 15470997293430146275
-    TemplateId: 6269479604617720633
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 4677679604826523535
@@ -139,12 +140,13 @@ Objects {
       BoundsScale: 1
     }
   }
-  InstanceHistory {
-    SelfId: 17205491907163360971
-    SubobjectId: 2677719114547497178
-    InstanceId: 15470997293430146275
-    TemplateId: 6269479604617720633
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 173506929405942574
@@ -212,12 +214,13 @@ Objects {
       BoundsScale: 1
     }
   }
-  InstanceHistory {
-    SelfId: 8602232376783725602
-    SubobjectId: 13586867661857022515
-    InstanceId: 15470997293430146275
-    TemplateId: 6269479604617720633
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 13656613862467001730
@@ -285,12 +288,13 @@ Objects {
       BoundsScale: 1
     }
   }
-  InstanceHistory {
-    SelfId: 5670196637179749742
-    SubobjectId: 9610559762945188735
-    InstanceId: 15470997293430146275
-    TemplateId: 6269479604617720633
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 3265183744572588172
@@ -358,12 +362,13 @@ Objects {
       BoundsScale: 1
     }
   }
-  InstanceHistory {
-    SelfId: 4192076533202992610
-    SubobjectId: 17420551758259993587
-    InstanceId: 15470997293430146275
-    TemplateId: 6269479604617720633
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 1981119071320810136
@@ -431,12 +436,13 @@ Objects {
       BoundsScale: 1
     }
   }
-  InstanceHistory {
-    SelfId: 14439064560771760815
-    SubobjectId: 256380086898361534
-    InstanceId: 15470997293430146275
-    TemplateId: 6269479604617720633
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 17860586463489479175
@@ -503,12 +509,13 @@ Objects {
       BoundsScale: 1
     }
   }
-  InstanceHistory {
-    SelfId: 16687125101969520143
-    SubobjectId: 3205321852076535838
-    InstanceId: 15470997293430146275
-    TemplateId: 6269479604617720633
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 10984010089724249552
@@ -576,12 +583,13 @@ Objects {
       BoundsScale: 1
     }
   }
-  InstanceHistory {
-    SelfId: 8924986810034975527
-    SubobjectId: 12697029247829177654
-    InstanceId: 15470997293430146275
-    TemplateId: 6269479604617720633
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 12943444993489683789
@@ -648,12 +656,13 @@ Objects {
       BoundsScale: 1
     }
   }
-  InstanceHistory {
-    SelfId: 6842392063286021118
-    SubobjectId: 10743912745623195119
-    InstanceId: 15470997293430146275
-    TemplateId: 6269479604617720633
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 4862946609374350552
@@ -721,10 +730,11 @@ Objects {
       BoundsScale: 1
     }
   }
-  InstanceHistory {
-    SelfId: 659923776847733870
-    SubobjectId: 14035329487355503231
-    InstanceId: 15470997293430146275
-    TemplateId: 6269479604617720633
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }

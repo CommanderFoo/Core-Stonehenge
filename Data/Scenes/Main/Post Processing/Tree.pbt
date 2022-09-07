@@ -116,6 +116,10 @@ Objects {
     TeamSettings {
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 14889859277598113452
@@ -226,6 +230,10 @@ Objects {
     TeamSettings {
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 1019140721159124216
@@ -264,6 +272,10 @@ Objects {
     TeamSettings {
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 12413757627095537710
@@ -306,4 +318,8 @@ Objects {
     TeamSettings {
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }

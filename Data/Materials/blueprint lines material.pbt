@@ -2,7 +2,7 @@ Assets {
   Id: 3726160796120134247
   Name: "blueprint lines material"
   PlatformAssetType: 13
-  SerializationVersion: 92
+  SerializationVersion: 118
   CustomMaterialAsset {
     BaseMaterialId: 12827530473249900764
     ParameterOverrides {

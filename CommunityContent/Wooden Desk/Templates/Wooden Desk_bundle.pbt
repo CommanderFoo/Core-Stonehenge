@@ -29,6 +29,10 @@ Assets {
             }
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
       }
     }
     PrimaryAssetId {
@@ -43,5 +47,5 @@ Assets {
     Version: "1.0.0"
     Description: "Wooden desk from my futur Core game!"
   }
-  SerializationVersion: 92
+  SerializationVersion: 118
 }

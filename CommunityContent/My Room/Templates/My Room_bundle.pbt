@@ -37,6 +37,10 @@ Assets {
             }
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
       }
     }
     PrimaryAssetId {
@@ -46,10 +50,10 @@ Assets {
   }
   Marketplace {
     Id: "bc5ff9f476864fb28bca3ecaf14ab858"
-    OwnerAccountId: "54d6c37e71a546f7bfd480d8e654f45e"
-    OwnerName: "Tobs"
+    OwnerAccountId: "deaddeadcafecafedeaddeadcafecafe"
+    OwnerName: "_UnknownCreator"
     Version: "1.5.0"
     Description: "A room and a few things to furnish it with."
   }
-  SerializationVersion: 92
+  SerializationVersion: 118
 }
